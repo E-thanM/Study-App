@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Icon, MenuButton, Progress, TopBar, toast } from '../../components/ui';
-import { buildQueue, childDecks, deckPath, emptyFiltered, rebuildFiltered, subtreeIds, unburyDeck } from '../../lib/collection';
+import { buildQueue, childDecks, deckPath, deckTotals, emptyFiltered, rebuildFiltered, subtreeIds, unburyDeck } from '../../lib/collection';
 import { compileSearch } from '../../lib/search';
 import { getPreset } from '../../lib/seed';
 import { all, get, patch, useVersion } from '../../lib/store';
 import { CardState } from '../../lib/types';
-import { dayNumber, fmtInterval } from '../../lib/util';
+import { dayNumber, fmtHours, fmtInterval } from '../../lib/util';
 import { DeckOptions } from './DeckOptions';
 import { FilteredDeckModal } from './DeckList';
 
@@ -36,7 +36,7 @@ export function DeckOverview() {
       else young++;
       if (c.state !== CardState.New && c.due > Date.now()) nextDue = Math.min(nextDue, c.due);
     }
-    return { q, total: cards.length, neu, learning, young, mature, suspended, buried, nextDue };
+    return { q, total: cards.length, neu, learning, young, mature, suspended, buried, nextDue, totals: deckTotals(id) };
   }, [deck, id, v]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!deck || !info) return <><TopBar crumbs={[{ to: '/cards', label: 'Flashcards' }, { label: 'Not found' }]} /><div className="empty">Deck not found.</div></>;
@@ -133,6 +133,13 @@ export function DeckOverview() {
               <span><span className="dot" style={{ background: 'var(--bad)' }} /> Learning {info.learning}</span>
               <span><span className="dot" style={{ background: 'var(--accent)' }} /> New {info.neu}</span>
               {info.suspended > 0 && <span><span className="dot" style={{ background: 'var(--warn)' }} /> Suspended {info.suspended}</span>}
+            </div>
+            <hr />
+            <div className="kv">
+              <span>Reviews done (cycles)</span><span>{info.totals.reviews}</span>
+              <span>Average reviews per card</span><span>{info.total ? (info.totals.reviews / info.total).toFixed(1) : '0'}</span>
+              <span>Time spent on this deck</span><span>{fmtHours(info.totals.ms)}</span>
+              <span>Next recommended review</span><span>{info.nextDue < Infinity ? (info.nextDue <= Date.now() ? 'now' : `${new Date(info.nextDue).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })} (in ${fmtInterval(info.nextDue - Date.now())})`) : '–'}</span>
             </div>
           </div>
         )}

@@ -1,0 +1,157 @@
+@deck Design & Technology
+@board OCR GCSE Design and Technology (J310)
+
+# 1 Identifying requirements
+What is user-centred design? :: Designing with the needs, wants and values of the end user at the centre, involving them throughout the process
+What is a design brief? :: A short statement describing the problem/need, the target user and what is to be designed
+What is a design specification? :: A list of measurable criteria (requirements) the product must meet – used to evaluate the final design
+What does ACCESS FM stand for? :: Aesthetics, Cost, Customer, Environment, Size, Safety, Function, Materials
+What is primary research? :: Research you collect yourself – interviews, questionnaires, observations, product analysis, testing
+What is secondary research? :: Using existing information – books, internet, magazines, data from others
+Why is it important to consider ergonomics? :: So the product is comfortable, safe and efficient to use – suits the human body and interaction
+What is anthropometrics? :: Data about the sizes of the human body, used to design products to fit users (often 5th–95th percentile)
+Why do designers design for the 5th to 95th percentile? :: It covers 90% of the population – designing for extremes is impractical and costly
+What is inclusive design? :: Designing products that can be used by as many people as possible, including those with disabilities, the elderly and children
+
+# 2 Learning from existing products
+What is product analysis? :: Examining existing products to understand function, materials, manufacture, aesthetics and user needs – to inform new designs
+What is iterative design? :: A cyclical process of designing, prototyping, testing and evaluating, then improving, repeated many times
+What is market pull? :: Products developed in response to consumer demand/needs
+What is technology push? :: New technology/materials drive the development of new products
+What is planned obsolescence? :: Designing a product to have a limited lifespan so consumers must replace it
+What is functional obsolescence vs style obsolescence? :: Functional – product stops working or can't be repaired/updated ;; Style – product goes out of fashion
+Name influential designers and their key work. :: Dieter Rams (Braun, 'less but better'); Philippe Starck (Juicy Salif); Marcel Breuer (Wassily chair, tubular steel); Charles & Ray Eames (moulded plywood chairs); Alec Issigonis (Mini); James Dyson (cyclone vacuum)
+What are Dieter Rams' principles of good design (examples)? :: Innovative, useful, aesthetic, understandable, unobtrusive, honest, long-lasting, thorough, environmentally friendly, as little design as possible
+Name influential design companies. :: Apple, Dyson, Braun, Alessi, Under Armour, Gap, Primark (design and manufacturing approaches)
+
+# 3 Wider issues – sustainability and ethics
+What are the 6Rs of sustainability? :: Reduce, Reuse, Recycle, Rethink, Refuse, Repair
+What is a life cycle assessment (LCA)? :: An evaluation of the environmental impact of a product from raw material extraction, manufacture, distribution, use, to disposal
+What is the circular economy? :: Keeping resources in use for as long as possible, recovering and regenerating materials at end of life rather than 'take–make–dispose'
+What are finite and non-finite resources? :: Finite – will run out (oil, metal ores) ;; Non-finite – renewable (timber from managed forests, wool, cotton)
+What is a carbon footprint? :: Total greenhouse gas emissions caused by a product over its life
+What is Fairtrade? :: A scheme ensuring producers in developing countries receive fair pay and working conditions
+What are ethical considerations in design? :: Working conditions/fair pay, child labour, environmental damage, safety, cultural sensitivity, honest marketing
+What is the impact of globalisation on manufacturing? :: Production moved to countries with cheaper labour; global supply chains; increased transport emissions; cheaper products; job loss locally
+What is the WEEE directive? :: Waste Electrical and Electronic Equipment regulations – manufacturers responsible for recycling electronic products
+What is design for disassembly? :: Designing products so parts can be easily separated for repair, reuse or recycling (e.g. screws instead of glue)
+
+# 4 Design thinking and communication
+What is an isometric drawing? :: A 3D drawing with vertical lines and horizontal lines at 30°
+What is an orthographic projection? :: 2D views of a product (front, side, plan) drawn to scale with dimensions – third angle in the UK
+What is an exploded view? :: A drawing showing parts of a product separated to show how they fit together
+What is a working drawing? :: A detailed technical drawing with dimensions, scale and materials for manufacture
+Give benefits of CAD. :: Accurate, easy to modify, can be shared electronically, 3D modelling and virtual testing, links to CAM, rendering
+Give drawbacks of CAD. :: Expensive software and training; time to learn; files can be corrupted; can stifle creativity
+What is modelling and why is it used? :: Making 3D prototypes (card, foam, 3D print) to test ideas, proportion, ergonomics and function before final manufacture
+What is the purpose of a flowchart in manufacture? :: To show the sequence of manufacturing stages, including quality control checks (diamonds)
+What is a mood board? :: A collection of images, colours and textures to inspire design and show the target market/style
+
+# 5 Material considerations – categories
+What are the main types of paper and board? :: Copier paper, cartridge paper, tracing paper, bleed-proof paper, card, corrugated card, duplex board, foil-backed board, foam board, solid white board
+What are hardwoods and give examples. :: From deciduous broad-leaved trees, slow growing, generally dense ;; Oak, beech, mahogany, balsa, ash
+What are softwoods and give examples. :: From coniferous evergreen trees, fast growing, cheaper ;; Pine, larch, spruce, cedar
+What are manufactured boards and give examples. :: Sheets made from wood fibres/veneers and adhesive ;; MDF, plywood, chipboard
+Advantages of manufactured boards? :: Available in large stable sheets, consistent quality, cheaper, uses waste wood, don't warp as much
+What are ferrous metals and give examples. :: Contain iron, magnetic, can rust ;; Mild steel, cast iron, high-carbon steel
+What are non-ferrous metals and give examples. :: Contain no iron, not magnetic, don't rust ;; Aluminium, copper, tin, zinc, silver
+What is an alloy and give examples. :: A mixture of a metal with other elements ;; Brass (copper + zinc), stainless steel (steel + chromium), bronze (copper + tin), duralumin
+What are thermoforming polymers? :: Can be heated and reshaped many times (recyclable) ;; Acrylic (PMMA), HIPS, PET, PVC, polypropylene, ABS
+What are thermosetting polymers? :: Set permanently when heated – cannot be reshaped ;; Epoxy resin, melamine formaldehyde, polyester resin, urea formaldehyde
+Where do most polymers come from? :: Crude oil (finite); some biopolymers from plants (e.g. PLA from corn starch)
+What are natural fibres and give examples. :: From plants or animals ;; Cotton, linen (plant); wool, silk (animal)
+What are synthetic fibres and give examples. :: Made from oil-based polymers ;; Polyester, nylon (polyamide), acrylic, elastane (Lycra)
+Compare woven, knitted and non-woven textiles. :: Woven – interlaced warp and weft, strong, frays ;; Knitted – interlocking loops, stretchy, comfortable ;; Non-woven – fibres bonded by heat/pressure/adhesive (felt), no grain, doesn't fray
+What is a blended fabric? :: Two or more fibres combined to get the best properties of each, e.g. polycotton (crease-resistant, breathable)
+
+# 5 Material properties
+Define strength, hardness, toughness and elasticity. :: Strength – withstand force without breaking ;; Hardness – resist scratching/wear ;; Toughness – absorb impact without breaking ;; Elasticity – return to original shape
+Define malleability, ductility and plasticity. :: Malleability – shaped by pressing/hammering without cracking ;; Ductility – can be drawn into wire ;; Plasticity – permanently deforms without breaking
+Define thermal and electrical conductivity. :: Ability of a material to transfer heat or electricity
+What is absorbency? :: Ability to soak up moisture (e.g. cotton, paper)
+Give properties and uses of aluminium. :: Lightweight, corrosion resistant, malleable, good conductor ;; Drinks cans, foil, window frames, bicycle frames
+Give properties and uses of mild steel. :: Tough, strong, ductile, cheap but rusts ;; Car bodies, nuts and bolts, construction girders
+Give properties and uses of acrylic. :: Rigid, hard, glossy, transparent or coloured, scratches/shatters ;; Signs, display stands, light units
+Give properties and uses of oak. :: Hard, tough, strong, attractive grain, durable ;; Quality furniture, flooring, beams
+Give properties and uses of pine. :: Lightweight, easy to work, knotty, cheap ;; Construction, interior joinery, flat-pack furniture
+Give properties and uses of MDF. :: Smooth, stable, easy to machine, takes paint well but absorbs water ;; Flat-pack furniture, panels
+Give properties and uses of polypropylene. :: Tough, flexible, chemical resistant, can make living hinges ;; Food containers, chairs, packaging
+
+# 5 Smart and modern materials
+What is a smart material? :: A material whose properties change in response to an external stimulus (heat, light, stress) and change back
+Give examples of smart materials and uses. :: Shape memory alloy (nitinol) – glasses frames, stents ;; Thermochromic pigment – kettles, baby spoons ;; Photochromic pigment – sunglasses ;; Quantum tunnelling composite (QTC) – touch switches
+What is a modern material? :: A material developed through new technology with enhanced properties, e.g. graphene, Kevlar, titanium, carbon fibre, nanomaterials
+What are composite materials? :: Two or more materials combined to give improved properties ;; e.g. carbon fibre reinforced polymer (CFRP), glass reinforced plastic (GRP), concrete
+What is a technical textile? :: Fabrics engineered for performance, e.g. Kevlar (bulletproof), Gore-Tex (breathable waterproof), conductive fabrics, microencapsulated fabrics
+What is graphene? :: A single layer of carbon atoms – extremely strong, lightweight and conductive
+
+# 6 Technical understanding – energy and systems
+How is electricity generated from fossil fuels? :: Burning coal/oil/gas heats water into steam → turns turbines → generators
+Name renewable energy sources. :: Solar, wind, hydroelectric, tidal, wave, geothermal, biomass
+What is kinetic energy storage in products? :: Wind-up mechanisms or flywheels storing energy (e.g. wind-up torch/radio)
+Compare batteries: alkaline vs rechargeable. :: Alkaline – single use, cheap, disposal issues ;; Rechargeable (Li-ion, NiMH) – reusable, more expensive, better for environment
+What is a system diagram? :: Input → process → output (with feedback)
+Give examples of input components. :: Switches, light-dependent resistor (LDR), thermistor, pressure sensor, microphone
+Give examples of process components. :: Microcontroller (PIC/Arduino/micro:bit), timer (555), counter, logic gates
+Give examples of output components. :: LED, buzzer, speaker, motor, bulb, solenoid, LCD screen
+What is a microcontroller? :: A small programmable computer on a single chip that processes inputs and controls outputs
+Why use programmable components? :: Flexible, reprogrammable, fewer components, smaller circuits, can carry out complex functions
+
+# 6 Mechanical devices and forces
+Name the four types of motion. :: Linear (straight line), reciprocating (back and forth), rotary (circular), oscillating (swinging in an arc)
+Name the three classes of lever and give examples. :: 1st class – fulcrum in middle (see-saw, scissors) ;; 2nd class – load in middle (wheelbarrow, nutcracker) ;; 3rd class – effort in middle (tweezers, fishing rod)
+What is mechanical advantage? :: Load ÷ effort – how much a mechanism multiplies force
+What is velocity ratio (gear ratio)? :: Teeth on driven gear ÷ teeth on driver gear
+What does a cam and follower do? :: Converts rotary motion into reciprocating motion
+What does a crank and slider do? :: Converts rotary motion to reciprocating motion (or vice versa), e.g. pistons
+What does a rack and pinion do? :: Converts rotary motion into linear motion (e.g. car steering)
+What is the purpose of an idler gear? :: Makes the driver and driven gears turn in the same direction without changing the ratio
+Name the five types of force. :: Tension, compression, torsion, bending, shear
+How can materials be reinforced or stiffened? :: Laminating, ribs, webs, folding/corrugating, triangulation, adding composite fibres
+
+# 7 Manufacturing processes
+What are the scales of production? :: One-off (bespoke), batch, mass production, continuous production
+What is one-off production? :: A single, unique product made to order – highly skilled labour, expensive (e.g. wedding dress, bridge)
+What is batch production? :: A set number of identical products made together; jigs and templates used (e.g. bread, furniture)
+What is mass production? :: Large numbers of identical products made on a production line, often automated; cheaper per unit (e.g. cars, phones)
+What is continuous production? :: 24/7 production of products in huge quantities (e.g. steel, chemicals, paper)
+What is just-in-time (JIT) manufacturing? :: Materials and components arrive exactly when needed – reduces storage costs and waste, but vulnerable to supply delays
+What is lean manufacturing? :: Minimising waste (materials, time, energy) at every stage
+What is a jig? :: A device that holds work and guides a tool to make repeated identical operations (e.g. drilling jig)
+What is a template? :: A shape used to mark out repeated identical outlines
+What is quality control? :: Checks during manufacture to make sure products meet the specification (e.g. tolerance checks, go/no-go gauges)
+What is quality assurance? :: The overall system/procedures to ensure quality throughout design and manufacture
+What is tolerance? :: The acceptable range of variation from a stated dimension (e.g. 50 mm ± 0.5 mm)
+Describe injection moulding. :: Polymer granules heated and forced by a screw into a mould under pressure, cooled, ejected – high volume, complex shapes
+Describe vacuum forming. :: Thermoforming sheet heated until soft, mould raised, air sucked out so sheet forms over the mould
+Describe blow moulding. :: A heated tube (parison) of polymer is placed in a mould and air blown in to form a hollow shape (bottles)
+Describe extrusion. :: Material forced through a shaped die to make a continuous profile (pipes, rods, window frames)
+Describe sand casting. :: Molten metal poured into a sand mould made from a pattern; cooled and removed
+Describe die casting. :: Molten metal forced into a steel die under pressure – accurate, high volume
+Describe line bending of acrylic. :: Heat along a line with a strip heater until soft, then bend using a former/jig
+Name methods of joining wood. :: Butt, dowel, mortise and tenon, dovetail, finger/comb, housing joints; knock-down fittings; adhesives (PVA)
+Name methods of joining metal. :: Welding, brazing, soldering, rivets, nuts and bolts, adhesives (epoxy resin)
+What is laminating (wood)? :: Gluing thin layers of veneer together over a former to create curved shapes
+Name printing processes for paper/board. :: Offset lithography (high volume, CMYK), screen printing, flexography, digital printing
+What is CMYK? :: Cyan, magenta, yellow, key (black) – the four process colours used in printing
+Give benefits of CAM. :: Accurate, repeatable, fast, can run continuously, reduced labour costs and waste
+Give examples of CAM machines. :: Laser cutter, CNC router, 3D printer, CNC lathe, vinyl cutter, embroidery machine
+What is additive vs subtractive manufacture? :: Additive – building up layers (3D printing) ;; Subtractive – removing material (milling, laser cutting)
+Why are finishes applied to materials? :: Protect from moisture/corrosion/UV, improve appearance, improve hygiene or grip
+Name finishes for wood. :: Varnish, paint, wood stain, oil, wax, sanding sealer
+Name finishes for metals. :: Painting, powder coating, galvanising, anodising (aluminium), electroplating, dip coating
+Name finishes for paper and board. :: Lamination, varnishing (UV), embossing, debossing, foil blocking, spot varnish
+
+# 8 Viability and 9 Health and safety
+How do you evaluate the viability of a design? :: Test against the specification, user feedback, cost/profit, manufacturability, environmental impact, market need
+What is a risk assessment? :: Identifying hazards, who might be harmed, the level of risk and control measures to reduce risk
+What does COSHH stand for? :: Control of Substances Hazardous to Health – regulations for handling chemicals safely
+Give PPE used in workshops. :: Goggles, aprons, gloves, ear defenders, dust masks, protective footwear
+What safety legislation applies to products? :: Health and Safety at Work Act (1974), Consumer Rights Act, General Product Safety Regulations, BSI/CE marks, Toy Safety
+What does the BSI Kitemark show? :: The product has been tested by the British Standards Institution and meets safety and quality standards
+What does the CE/UKCA mark show? :: The product meets safety requirements to be sold in Europe/the UK
+What is a lifecycle cost? :: All costs of a product over its life including materials, manufacture, transport, use and disposal
+What is the difference between a prototype and a final product? :: A prototype is a model to test the design; the final product is manufactured for the user
+How can you calculate the area of material needed? :: Length × width (convert units carefully; add waste allowance)
+What is stock form? :: The standard forms materials are supplied in, e.g. sheets, rods, bars, tubes, planks, granules, rolls
+Give common stock sizes of paper. :: A-series: A4 = 210 × 297 mm; each size up doubles area (A3, A2…); paper weight in gsm

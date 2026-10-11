@@ -1,0 +1,293 @@
+@deck Biology
+@board Edexcel International GCSE Biology (4BI1)
+
+# 1 Variety of living organisms
+What are the eight characteristics shared by living organisms? :: Nutrition, respiration, excretion, response to surroundings, movement, control of internal conditions, reproduction, growth and development
+C: Plants are multicellular, contain {{c1::chloroplasts}} and carry out {{c2::photosynthesis}}.
+What are plant cell walls made of? :: Cellulose
+How do plants store carbohydrate? :: As starch (and sucrose)
+Give two examples of plants. :: A flowering cereal (e.g. maize) and a herbaceous legume (e.g. peas or beans)
+C: Animals are multicellular, do not contain {{c1::chloroplasts}} so cannot photosynthesise, and usually have {{c2::nervous coordination}} and can move.
+How do animals store carbohydrate? :: As glycogen
+Give two examples of animals. :: A mammal (e.g. humans) and an insect (e.g. housefly or mosquito)
+Describe the structure of fungi. :: Usually a mycelium of thread-like hyphae containing many nuclei; some (e.g. yeast) are single-celled
+What are fungal cell walls made of? :: Chitin
+How do fungi feed? :: Saprotrophic nutrition – they secrete extracellular digestive enzymes onto food and absorb the soluble products
+How do fungi store carbohydrate? :: As glycogen
+Give two examples of fungi. :: Mucor (multicellular, hyphae) and yeast (single-celled)
+What are protoctists? :: Microscopic single-celled organisms; some have chloroplasts (like plants), others feed like animals
+Give two examples of protoctists. :: Amoeba (animal-like) and Chlorella (plant-like)
+Name a protoctist that is a pathogen and the disease it causes. :: Plasmodium – causes malaria
+Describe the structure of bacteria. :: Single-celled; cell wall, cell membrane, cytoplasm, plasmids; no nucleus – a circular chromosome of DNA
+How do bacteria feed? :: Some photosynthesise; most feed off other organisms (living or dead)
+Give two examples of bacteria. :: Lactobacillus bulgaricus (rod-shaped, makes yoghurt) and Pneumococcus (spherical, causes pneumonia)
+Describe the structure of a virus. :: Not living cells; a protein coat surrounding DNA or RNA; much smaller than bacteria
+How do viruses reproduce? :: Only inside living cells – they are parasites that can infect every type of organism
+Give two examples of viruses. :: Tobacco mosaic virus (discolours leaves) and influenza virus; also HIV (causes AIDS)
+What is a pathogen? :: A microorganism that causes disease
+Name the four types of pathogen. :: Fungi, bacteria, protoctists and viruses
+
+# 2a–b Cells and organisation
+List the levels of organisation in an organism, smallest first. :: Organelles → cells → tissues → organs → organ systems
+What is a tissue? :: A group of similar cells working together to perform a particular function
+What is an organ? :: A group of different tissues working together to perform a particular function
+What is the function of the nucleus? :: Contains genetic material (DNA) that controls the activities of the cell
+What is the function of the cytoplasm? :: Where most chemical reactions take place; contains enzymes
+What is the function of the cell membrane? :: Controls what enters and leaves the cell
+What is the function of the cell wall? :: Made of cellulose; strengthens and supports the cell
+What is the function of chloroplasts? :: Absorb light energy for photosynthesis (contain chlorophyll)
+What is the function of mitochondria? :: Site of aerobic respiration – releases energy
+What is the function of ribosomes? :: Site of protein synthesis
+What is the function of the vacuole? :: Contains cell sap; keeps the cell turgid (rigid)
+Which structures are found in plant cells but not animal cells? :: Cell wall, chloroplasts and a large permanent vacuole
+What is cell differentiation? :: The process by which cells become specialised for a particular function
+What are stem cells? :: Undifferentiated cells that can divide and differentiate into many different types of cell
+Where are stem cells found in animals and plants? :: Animals: embryos (embryonic stem cells) and some adult tissues e.g. bone marrow ;; Plants: meristems (tips of roots and shoots)
+Give two potential uses of stem cells in medicine. :: Replacing damaged cells/tissues (e.g. treating diabetes, paralysis, Parkinson's) and growing organs for transplant
+Give two issues with using embryonic stem cells. :: Ethical objections (embryos destroyed); risk of rejection; risk of cells becoming cancerous; risk of viral infection
+
+# 2c Biological molecules
+Which elements are in carbohydrates? :: Carbon, hydrogen and oxygen
+Which elements are in proteins? :: Carbon, hydrogen, oxygen and nitrogen (sometimes sulfur)
+Which elements are in lipids? :: Carbon, hydrogen and oxygen
+What are the building blocks of starch and glycogen? :: Simple sugars – glucose
+What are the building blocks of proteins? :: Amino acids
+What are the building blocks of lipids? :: Fatty acids and glycerol
+How do you test for glucose? :: Add Benedict's solution and heat in a water bath – blue turns green/yellow/orange/brick-red if a reducing sugar is present
+How do you test for starch? :: Add iodine solution – orange-brown turns blue-black
+How do you test for protein? :: Add biuret solution – blue turns purple/lilac
+How do you test for lipids (fat)? :: Ethanol emulsion test – shake with ethanol, add water; a cloudy white emulsion forms
+What is an enzyme? :: A biological catalyst – a protein that speeds up reactions without being used up
+Explain why enzymes are specific. :: The active site has a specific shape that only fits a complementary substrate (lock and key)
+Explain the effect of increasing temperature on enzyme activity. :: Rate rises as molecules gain kinetic energy and collide more; above the optimum the active site changes shape (denatures) so the substrate no longer fits and rate falls
+Explain how pH affects enzymes. :: Each enzyme has an optimum pH; pH far from the optimum changes the shape of the active site (denaturing it), so the substrate can't bind
+Describe an investigation into the effect of temperature on enzyme activity. :: E.g. amylase + starch in water baths at different temperatures; take samples every 30 s onto spotting tile with iodine; time until no blue-black; keep pH, concentrations and volumes constant
+
+# 2d Movement of substances
+Define diffusion. :: The net movement of particles from a region of higher concentration to a region of lower concentration, down a concentration gradient (passive)
+Define osmosis. :: The net movement of water molecules from a dilute solution to a more concentrated solution across a partially permeable membrane
+Define active transport. :: Movement of substances against a concentration gradient (low to high) using energy from respiration and carrier proteins
+Give an example of active transport in plants and in humans. :: Plants: root hair cells absorbing mineral ions from soil ;; Humans: absorbing glucose in the small intestine (and kidney tubules)
+List the factors that affect the rate of movement of substances into and out of cells. :: Surface area to volume ratio, distance (diffusion path), temperature and concentration gradient
+Why do larger organisms need exchange surfaces and transport systems? :: They have a smaller surface area to volume ratio, so diffusion across the body surface is too slow over long distances
+Describe the osmosis practical with potato. :: Cut equal potato cylinders, measure mass, place in different sucrose concentrations for a set time, blot dry, reweigh; calculate % change in mass; where the line crosses 0% is the concentration of the cell sap
+What happens to an animal cell in pure water? :: Water enters by osmosis; it swells and may burst (lysis)
+What happens to a plant cell in pure water? :: Water enters; the cell becomes turgid but the cell wall stops it bursting
+What happens to a plant cell in a concentrated solution? :: Water leaves; it becomes flaccid and then plasmolysed (membrane pulls away from wall)
+
+# 2e Plant nutrition
+Write the word equation for photosynthesis. :: carbon dioxide + water → glucose + oxygen (in the presence of light and chlorophyll)
+Write the balanced symbol equation for photosynthesis. :: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂
+C: Photosynthesis converts {{c1::light}} energy into {{c2::chemical}} energy stored in glucose.
+Name three limiting factors of photosynthesis. :: Light intensity, carbon dioxide concentration and temperature
+Explain what a limiting factor is. :: The factor in shortest supply that stops the rate of photosynthesis increasing further
+How is a leaf adapted for photosynthesis? :: Large surface area; thin (short diffusion distance); many chloroplasts in palisade layer; stomata for gas exchange; air spaces in spongy mesophyll; veins (xylem/phloem) to transport water and sugars
+Why do plants need magnesium ions? :: To make chlorophyll – deficiency causes yellowing of leaves (chlorosis)
+Why do plants need nitrate ions? :: To make amino acids/proteins – deficiency causes stunted growth
+How do you test a leaf for starch? :: Boil in water (kill cells), boil in ethanol in a water bath (remove chlorophyll), rinse in water (soften), add iodine – blue-black shows starch
+How can you show that chlorophyll is needed for photosynthesis? :: Test a variegated leaf for starch – only the green parts turn blue-black
+How can you show that light is needed for photosynthesis? :: Destarch a plant, cover part of a leaf with foil, leave in light, test for starch – covered part stays orange-brown
+How can you show that CO₂ is needed for photosynthesis? :: Destarch plant, enclose a leaf in a bag with soda lime (absorbs CO₂), leave in light, test for starch – no starch
+Describe an investigation into the effect of light intensity on photosynthesis. :: Pondweed in water with sodium hydrogencarbonate; lamp at different distances; count bubbles or measure gas volume per minute; keep temperature constant (heat shield/water bath)
+What is the inverse square law for light intensity? :: Light intensity ∝ 1/distance²
+
+# 2e Human nutrition
+What makes up a balanced diet? :: Carbohydrates, proteins, lipids, vitamins, minerals, water and dietary fibre in the right proportions
+Function and source of carbohydrates? :: Energy; bread, pasta, rice, potatoes
+Function and source of protein? :: Growth and repair; meat, fish, eggs, beans
+Function and source of lipids? :: Energy store and insulation; butter, oil, nuts
+Function and source of vitamin A? :: Healthy skin and vision (night vision); liver, carrots
+Function and source of vitamin C? :: Prevents scurvy (needed for connective tissue); citrus fruits
+Function and source of vitamin D? :: Absorption of calcium for bones and teeth (prevents rickets); oily fish, sunlight on skin
+Function and source of calcium? :: Strong bones and teeth, blood clotting; milk, cheese
+Function and source of iron? :: Making haemoglobin (prevents anaemia); red meat, spinach
+Why do we need dietary fibre? :: Gives bulk to food so it can be pushed through the gut by peristalsis – prevents constipation
+Why do energy requirements vary? :: With activity level, age and pregnancy (also sex and body size)
+Name the organs of the alimentary canal in order. :: Mouth → oesophagus → stomach → small intestine (duodenum, ileum) → large intestine (colon, rectum) → anus
+Which organs produce digestive juices but food does not pass through? :: Salivary glands, pancreas and liver (gall bladder stores bile)
+Define ingestion, digestion, absorption, assimilation and egestion. :: Ingestion – taking food in ;; Digestion – breaking large insoluble molecules into small soluble ones ;; Absorption – into the blood ;; Assimilation – used by cells ;; Egestion – removing undigested food as faeces
+What is peristalsis? :: Waves of contraction of circular and longitudinal muscles in the gut wall that push food along
+What does amylase do and where is it made? :: Starch → maltose; made in salivary glands and pancreas
+What does maltase do? :: Maltose → glucose (in the small intestine)
+What do proteases do? Give an example. :: Proteins → amino acids; e.g. pepsin in the stomach, trypsin from the pancreas
+What does lipase do and where is it made? :: Lipids → fatty acids + glycerol; made in the pancreas
+Where is bile made and stored? :: Made in the liver, stored in the gall bladder
+What are the two functions of bile? :: Neutralises stomach acid (alkaline) – giving the optimum pH for enzymes in the small intestine ;; Emulsifies fats into small droplets – larger surface area for lipase
+Why does the stomach contain hydrochloric acid? :: Kills bacteria and provides the acidic optimum pH for pepsin
+How is the small intestine (ileum) adapted for absorption? :: Very long; villi and microvilli give a large surface area; walls one cell thick; good blood supply (capillaries) maintains concentration gradient; lacteals absorb fatty acids and glycerol
+What is absorbed in the large intestine (colon)? :: Water
+Describe how to measure the energy in a food sample. :: Burn a known mass of food under a boiling tube containing a known volume of water; measure temperature rise ;; energy (J) = mass of water (g) × 4.2 × temperature change
+How do you calculate energy per gram of food? :: Energy (J) = mass of water × 4.2 × ΔT, then divide by mass of food burned
+
+# 2f Respiration
+What is respiration? :: A chemical process in all living cells that releases energy from glucose (to make ATP)
+Write the word equation for aerobic respiration. :: glucose + oxygen → carbon dioxide + water (+ energy)
+Write the balanced equation for aerobic respiration. :: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O
+Write the word equation for anaerobic respiration in animals. :: glucose → lactic acid
+Write the word equation for anaerobic respiration in plants and yeast. :: glucose → ethanol + carbon dioxide
+Compare aerobic and anaerobic respiration. :: Aerobic needs oxygen and releases much more energy; anaerobic needs no oxygen, releases much less energy and makes lactic acid (animals) or ethanol + CO₂ (plants/yeast)
+What is ATP? :: The molecule that stores and provides energy for cells
+Why do muscles respire anaerobically during vigorous exercise? :: Not enough oxygen can be supplied, so extra energy is released without oxygen – lactic acid builds up (oxygen debt)
+Describe an investigation into heat production by germinating seeds. :: Two vacuum flasks: germinating seeds and boiled (dead) seeds, both rinsed in disinfectant; thermometers sealed with cotton wool; record temperature over days – germinating seeds get warmer
+How can hydrogencarbonate indicator show respiration? :: It turns from red to yellow as CO₂ concentration increases
+
+# 2g Gas exchange
+How are leaves adapted for gas exchange? :: Stomata; air spaces in spongy mesophyll; thin leaf; large surface area
+Explain gas exchange in leaves in light and dark. :: Dark – only respiration: O₂ in, CO₂ out ;; Light – photosynthesis faster than respiration: net CO₂ in, O₂ out
+How do guard cells open stomata? :: Guard cells take in water, become turgid and bend apart, opening the pore
+Describe the effect of light intensity on gas exchange using hydrogencarbonate indicator. :: Bright light: purple (CO₂ used up) ;; Dim (compensation point): red ;; Dark: yellow (CO₂ produced)
+Name the structures of the human thorax. :: Ribs, intercostal muscles, diaphragm, trachea, bronchi, bronchioles, alveoli, pleural membranes
+Describe what happens during inhalation. :: External intercostal muscles contract, ribs move up and out; diaphragm contracts and flattens; thorax volume increases, pressure decreases, air rushes in
+Describe what happens during exhalation. :: Intercostal muscles relax, ribs move down and in; diaphragm relaxes and domes up; volume decreases, pressure increases, air is forced out
+How are alveoli adapted for gas exchange? :: Huge surface area; walls one cell thick (short diffusion distance); moist; surrounded by many capillaries (good blood supply keeps a steep concentration gradient); ventilation
+Give the effects of smoking on the lungs. :: Tar damages cilia and coats alveoli; carbon monoxide reduces oxygen carried by haemoglobin; causes COPD (emphysema, bronchitis), lung cancer and coronary heart disease
+What does carbon monoxide in cigarette smoke do? :: Binds irreversibly to haemoglobin, reducing the oxygen-carrying capacity of the blood
+How does exercise affect breathing? :: Breathing rate and depth increase to supply more oxygen for respiration and remove CO₂
+
+# 2h Transport
+Why do multicellular organisms need transport systems? :: Small surface area to volume ratio – diffusion alone is too slow to supply all cells
+What does xylem transport? :: Water and mineral ions from roots to the leaves (one direction)
+What does phloem transport? :: Sucrose and amino acids (translocation) – up and down the plant
+How are root hair cells adapted? :: Long extension gives a large surface area for absorbing water (osmosis) and mineral ions (active transport)
+What is transpiration? :: Evaporation of water from the surface of leaves (mesophyll cells) and diffusion out of the stomata
+Name four factors that increase the rate of transpiration. :: Higher temperature, higher light intensity (stomata open), lower humidity, more wind/air movement
+How do you measure the rate of transpiration? :: Potometer – measure the distance moved by an air bubble in a capillary tube in a given time (measures water uptake)
+Name the components of blood and their functions. :: Red blood cells – carry oxygen ;; White blood cells – defend against pathogens ;; Platelets – clotting ;; Plasma – transports CO₂, digested food, urea, hormones and heat
+How are red blood cells adapted? :: Biconcave shape (large surface area); no nucleus (more room for haemoglobin); contain haemoglobin which binds oxygen
+How do phagocytes defend the body? :: They engulf and digest pathogens (phagocytosis)
+How do lymphocytes defend the body? :: They produce antibodies that bind to specific antigens on pathogens, helping to destroy them; also memory cells
+How does vaccination work? :: A dead/weakened pathogen (antigens) is injected; lymphocytes make antibodies and memory cells; on later infection memory cells produce antibodies rapidly in large numbers, so you don't get ill
+Why does blood clot? :: Platelets release chemicals that make fibrinogen turn into insoluble fibrin, forming a mesh that traps red blood cells – stops blood loss and pathogens entering
+Describe the route of blood through the heart. :: Vena cava → right atrium → right ventricle → pulmonary artery → lungs → pulmonary vein → left atrium → left ventricle → aorta
+Why is the left ventricle wall thicker than the right? :: It pumps blood at higher pressure around the whole body, not just to the lungs
+What is the function of valves in the heart? :: Prevent backflow of blood
+How does the heart rate change during exercise and why? :: Increases (via adrenaline and nervous control) to deliver more oxygen and glucose to muscles and remove more CO₂
+Give risk factors for coronary heart disease. :: Diet high in saturated fat/salt, smoking, stress, lack of exercise, genetic factors (inheritance)
+Compare arteries, veins and capillaries. :: Arteries – thick muscular elastic walls, high pressure, away from heart ;; Veins – thin walls, large lumen, valves, low pressure, to heart ;; Capillaries – walls one cell thick for exchange
+Name the blood vessels to and from the liver. :: Hepatic artery (to), hepatic vein (from), hepatic portal vein (from gut to liver)
+Name the blood vessels to and from the kidneys. :: Renal artery (to), renal vein (from)
+What is the double circulatory system? :: Blood passes through the heart twice per circuit: heart→lungs→heart (pulmonary) and heart→body→heart (systemic)
+
+# 2i Excretion
+What are the excretory organs in humans? :: Lungs (CO₂), kidneys (urea, water, salts) and skin (sweat)
+What are the excretory products of plants? :: Oxygen (from photosynthesis) and carbon dioxide (from respiration), through the leaves
+Name the parts of the urinary system. :: Kidneys, ureters, bladder, urethra
+What are the two main functions of the kidney? :: Excretion (removing urea) and osmoregulation (controlling water content of blood)
+Describe ultrafiltration. :: High pressure in the glomerulus forces small molecules (water, glucose, salts, urea) out of the blood into Bowman's capsule; blood cells and proteins stay in the blood
+What is selective reabsorption? :: All glucose is reabsorbed back into the blood in the proximal convoluted tubule (by active transport)
+Where is water reabsorbed in the nephron? :: In the collecting duct (and loop of Henle)
+What is ADH and where is it released from? :: Antidiuretic hormone, released by the pituitary gland
+How does ADH control the water content of the blood? :: If blood is too concentrated, more ADH is released; it makes the collecting duct more permeable so more water is reabsorbed – small volume of concentrated urine
+What does urine contain? :: Water, urea and salts
+
+# 2j Coordination and response
+What is homeostasis? :: Maintaining a constant internal environment (e.g. body temperature, blood glucose, water content)
+What is a stimulus? :: A change in the environment that is detected by a receptor
+What is the sequence of a coordinated response? :: Stimulus → receptor → coordinator (CNS) → effector → response
+What is phototropism? :: Plant growth response towards light (positive phototropism in shoots)
+What is geotropism (gravitropism)? :: Growth response to gravity – roots grow down (positive), shoots grow up (negative)
+Explain how auxin causes phototropism. :: Auxin moves to the shaded side of the shoot tip and causes cells there to elongate more, so the shoot bends towards the light
+Compare nervous and hormonal control. :: Nervous – electrical impulses, very fast, short-lived, precise ;; Hormonal – chemicals in blood, slower, longer-lasting, widespread
+What makes up the central nervous system? :: The brain and spinal cord
+What is a reflex arc? :: Stimulus → receptor → sensory neurone → relay neurone (spinal cord) → motor neurone → effector → response; rapid and automatic
+What is a synapse? :: A gap between neurones; an impulse causes release of neurotransmitter which diffuses across and triggers an impulse in the next neurone
+State the function of the cornea, iris, lens, retina and optic nerve. :: Cornea – refracts light ;; Iris – controls pupil size ;; Lens – focuses light onto retina ;; Retina – contains light-sensitive receptor cells (rods and cones) ;; Optic nerve – carries impulses to brain
+How does the eye respond to bright light? :: Circular muscles of the iris contract, radial muscles relax – pupil constricts
+How does the eye focus on a near object? :: Ciliary muscles contract, suspensory ligaments slacken, lens becomes fatter (more convex) – refracts light more
+How does the eye focus on a distant object? :: Ciliary muscles relax, suspensory ligaments tighten, lens is pulled thin
+How does the body respond to being too hot? :: Sweating (evaporation cools skin); vasodilation – arterioles near skin widen so more heat lost by radiation; hairs lie flat
+How does the body respond to being too cold? :: Shivering (respiration releases heat); vasoconstriction – less blood to skin; hairs stand up trapping insulating air; no sweating
+Source and effect of adrenaline? :: Adrenal glands; increases heart rate (and breathing rate), raises blood glucose – prepares for 'fight or flight'
+Source and effect of insulin? :: Pancreas; lowers blood glucose by making liver and muscles convert glucose to glycogen
+Source and effect of testosterone? :: Testes; male secondary sexual characteristics
+Source and effect of progesterone? :: Ovaries; maintains the lining of the uterus during the menstrual cycle and pregnancy
+Source and effect of oestrogen? :: Ovaries; female secondary sexual characteristics, repairs/thickens uterus lining, controls menstrual cycle
+Source and effect of ADH? :: Pituitary gland; controls water content of the blood (more water reabsorbed in kidney)
+Source and effect of FSH? :: Pituitary gland; causes an egg to mature in the ovary and stimulates oestrogen production
+Source and effect of LH? :: Pituitary gland; stimulates ovulation (release of an egg)
+Source and effect of glucagon? :: Pancreas; raises blood glucose by converting glycogen to glucose in the liver
+What is Type 1 diabetes and how is it treated? :: The pancreas does not produce enough insulin; treated with insulin injections and controlled diet
+
+# 3a Reproduction
+Compare sexual and asexual reproduction. :: Sexual – two parents, gametes fuse, offspring genetically varied ;; Asexual – one parent, no gametes, offspring genetically identical (clones)
+What is fertilisation? :: The fusion of a male and female gamete nucleus to form a zygote
+Describe the structure of an insect-pollinated flower. :: Large, brightly coloured petals, scent and nectar; anthers and stigma inside the flower; sticky/spiky pollen
+Describe the structure of a wind-pollinated flower. :: Small dull petals, no nectar; anthers and feathery stigma hang outside; large amounts of light smooth pollen
+What is pollination? :: Transfer of pollen from an anther to a stigma
+Describe fertilisation in flowering plants. :: Pollen tube grows down the style to the ovary; the male nucleus travels down and fuses with the ovule (egg) nucleus
+After fertilisation, what do the ovule and ovary become? :: Ovule → seed; ovary → fruit
+What are the conditions needed for germination? :: Water, oxygen and a suitable temperature
+How do germinating seeds get energy before they can photosynthesise? :: From food stores in the seed (cotyledons/endosperm)
+Give examples of natural asexual reproduction in plants. :: Runners (strawberry plants), tubers (potatoes), bulbs
+How do gardeners use cuttings? :: Cut a stem with leaves, dip in rooting powder (auxin), plant in moist compost – produces clones quickly
+What are the roles of oestrogen and progesterone in the menstrual cycle? :: Oestrogen – repairs and thickens the uterus lining (and stimulates LH) ;; Progesterone – maintains the lining; falling progesterone causes menstruation
+What happens on approximately day 14 of the menstrual cycle? :: Ovulation – an egg is released from the ovary (triggered by LH)
+What is the role of the placenta? :: Exchange of materials between mother and fetus: oxygen and nutrients into fetal blood, CO₂ and urea out; acts as a barrier to some toxins and pathogens
+What is the role of amniotic fluid? :: Protects the developing embryo from bumps
+What are the secondary sexual characteristics in males? :: Voice deepens, growth of facial/body hair, testes produce sperm, muscles develop (testosterone)
+What are the secondary sexual characteristics in females? :: Breasts develop, hips widen, menstruation begins, pubic and underarm hair (oestrogen)
+
+# 3b Inheritance
+What is a gene? :: A section of DNA that codes for a specific protein
+What is an allele? :: A different version of the same gene
+Describe the structure of DNA. :: Two strands coiled to form a double helix, linked by complementary base pairs: A–T and C–G
+What is a chromosome? :: A long strand of DNA in the nucleus carrying many genes
+How many chromosomes are in a human body cell? :: 46 (23 pairs) – diploid
+How many chromosomes are in a human gamete? :: 23 – haploid
+Define dominant and recessive. :: Dominant – allele expressed if present (one copy needed) ;; Recessive – only expressed when two copies are present
+Define homozygous and heterozygous. :: Homozygous – two identical alleles (AA or aa) ;; Heterozygous – two different alleles (Aa)
+Define genotype and phenotype. :: Genotype – the alleles an organism has ;; Phenotype – its physical characteristics
+What is codominance? :: Both alleles are expressed in the phenotype of a heterozygote (e.g. blood group AB)
+How many alleles control human ABO blood groups? :: Three: Iᴬ and Iᴮ are codominant; Iᴼ is recessive
+What is the expected ratio from a monohybrid cross Aa × Aa? :: 3 : 1 (dominant : recessive phenotype); genotypes 1 AA : 2 Aa : 1 aa
+What is a test cross? :: Cross an organism showing the dominant phenotype with a homozygous recessive – if any offspring show the recessive trait, the parent was heterozygous
+How is sex determined in humans? :: Females XX, males XY; the father's sperm (X or Y) decides – 50% chance of each
+What is mitosis and what is it used for? :: Cell division producing two genetically identical diploid cells – used for growth, repair and asexual reproduction
+What is meiosis and where does it happen? :: Cell division producing four genetically different haploid gametes – happens in the testes and ovaries
+Why does meiosis produce variation? :: Chromosomes are shuffled (independent assortment) so each gamete gets a different combination; plus random fertilisation
+What are the two causes of variation? :: Genetic (alleles inherited) and environmental (e.g. diet, climate) – often both
+What is a mutation? :: A rare, random change in the base sequence of DNA; most have no effect, some are harmful, a few are beneficial
+What increases the rate of mutation? :: Ionising radiation (gamma, X-rays, UV) and some chemicals (mutagens, e.g. in tobacco smoke)
+Describe evolution by natural selection. :: Variation exists in a population; some individuals have alleles that make them better adapted; they survive and reproduce more; pass on the advantageous alleles; over many generations the allele frequency increases
+Explain how antibiotic resistance develops in bacteria. :: A random mutation makes a bacterium resistant; antibiotics kill non-resistant bacteria; resistant ones survive and reproduce rapidly, passing on the resistance allele
+What does a pedigree diagram show? :: How a characteristic (often a genetic disorder) is inherited through generations of a family
+
+# 4 Ecology and environment
+Define population, community, habitat and ecosystem. :: Population – all organisms of one species in an area ;; Community – all populations in an area ;; Habitat – where an organism lives ;; Ecosystem – a community and its physical environment interacting
+How do you use a quadrat to estimate population size? :: Place quadrats randomly (random coordinates); count organisms in each; mean per quadrat × (total area ÷ quadrat area)
+How do you use a quadrat to investigate distribution along a gradient? :: Place quadrats at regular intervals along a transect (tape measure) and record organisms and abiotic factors at each point
+Name some biotic and abiotic factors affecting populations. :: Biotic – predators, competition, disease, food ;; Abiotic – temperature, light, water, pH, soil minerals, CO₂/O₂
+Define producer, primary consumer, secondary consumer, decomposer. :: Producer – makes its own food by photosynthesis ;; Primary consumer – eats producers (herbivore) ;; Secondary consumer – eats primary consumers ;; Decomposer – breaks down dead material
+What does a pyramid of biomass show? :: The mass of living material at each trophic level
+Why is energy lost between trophic levels? :: Not all of the organism is eaten; some is indigestible (lost in faeces); energy is lost as heat from respiration and used for movement; only ~10% passes on
+Why are food chains rarely longer than five trophic levels? :: Energy is lost at each level, so not enough remains to support more levels
+Describe the carbon cycle. :: CO₂ removed by photosynthesis → carbon compounds in plants → animals by feeding → returned by respiration of plants, animals and decomposers, and combustion of fossil fuels
+Describe the nitrogen cycle. :: Nitrogen-fixing bacteria (soil/root nodules) and lightning make nitrates/ammonium ;; plants absorb nitrates → proteins → animals ;; decomposers make ammonium (putrefaction) ;; nitrifying bacteria: ammonium → nitrite → nitrate ;; denitrifying bacteria (waterlogged soil) turn nitrates into N₂
+Name the gases that cause the enhanced greenhouse effect. :: Carbon dioxide, methane, water vapour, nitrous oxide, CFCs
+What are the effects of global warming? :: Rising sea levels, flooding, extreme weather, changes in species distribution, loss of habitats, crop failures
+What are the effects of sulfur dioxide and how is it produced? :: Produced by burning fossil fuels; dissolves to form acid rain – kills trees and aquatic organisms, damages buildings
+How does carbon monoxide pollution form and what does it do? :: Incomplete combustion of fuels; binds to haemoglobin reducing oxygen transport
+Describe eutrophication. :: Fertiliser/sewage runs into water → algae grow rapidly (algal bloom) → block light, plants die → decomposers break down dead matter and use up oxygen → fish and other organisms die
+What are the effects of deforestation? :: Loss of habitat and biodiversity; soil erosion; less CO₂ absorbed and more released (burning) – increases greenhouse effect; disturbs water cycle; leaching of nutrients
+
+# 5 Use of biological resources
+How do glasshouses increase crop yield? :: Control temperature, light and CO₂ (e.g. paraffin heaters raise CO₂ and temperature) – removes limiting factors
+Why do farmers use fertilisers? :: Replace minerals (e.g. nitrates) used by crops so they grow better – increases yield
+Compare pesticides and biological control. :: Pesticides – chemicals that kill pests; quick, but can harm other organisms and bioaccumulate; pests become resistant ;; Biological control – a natural predator is introduced; long-term, no chemicals, but may become a pest itself
+What is the role of yeast in making bread? :: Yeast respires anaerobically, producing CO₂ that makes the dough rise
+What is the role of bacteria in making yoghurt? :: Lactobacillus converts lactose into lactic acid, which lowers the pH and thickens/sours the milk
+Describe how yoghurt is made. :: Pasteurise milk (kill bacteria), cool, add Lactobacillus, incubate ~40 °C, lactic acid produced, cool and package
+What happens in an industrial fermenter? :: Microorganisms grow in controlled conditions: aseptic precautions, nutrients, optimum temperature (water jacket) and pH, oxygen supply (aeration) and stirring – to make e.g. penicillin, insulin
+Why is it important to use aseptic precautions in fermenters? :: To prevent contamination by other microorganisms that would compete or produce unwanted products
+How are fish farmed to increase yield? :: Controlled water quality; nets to protect from predators; intraspecific predation prevented by separating sizes; disease controlled; high-protein food; selective breeding
+What is selective breeding? :: Humans choose plants or animals with desired characteristics and breed them together over many generations
+Give examples of selective breeding. :: High-yield cereal crops, disease-resistant plants, cows with high milk yield, animals with more meat
+What are restriction enzymes? :: Enzymes that cut DNA at specific base sequences, leaving sticky ends
+What are ligase enzymes? :: Enzymes that join pieces of DNA together
+What is a vector in genetic modification? :: Something that carries the gene into a cell – e.g. a plasmid or virus
+Describe how human insulin is made using bacteria. :: Insulin gene cut out with restriction enzyme; plasmid cut with same enzyme; gene inserted with ligase (recombinant plasmid); plasmid put into bacteria; bacteria grown in fermenter and produce insulin
+What is a transgenic organism? :: An organism that contains genes from a different species
+Give an example of a GM crop and its advantage. :: Insect-resistant crops (Bt gene) – higher yield, less pesticide; or crops resistant to herbicide
+How are plants cloned by micropropagation? :: Small pieces (explants) of a plant are grown on agar with nutrients and hormones in sterile conditions – many identical plants quickly
+Describe how Dolly the sheep was cloned. :: Nucleus removed from an egg cell; nucleus from a body (udder) cell of the donor inserted; electric shock to make it divide; embryo implanted into a surrogate mother
+Give uses of cloned transgenic animals. :: Producing human proteins/antibodies in their milk; organs for transplantation

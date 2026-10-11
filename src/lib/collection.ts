@@ -101,7 +101,8 @@ export function makeCard(note: Note, ord: number, deckId: string): Card {
   };
 }
 
-export function addNote(input: { noteTypeId: string; deckId: string; fields: Record<string, string>; tags?: string[] }): { note: Note; cards: Card[] } | null {
+/** Build a note and its cards without saving (use put() to save, e.g. in bulk). */
+export function buildNote(input: { noteTypeId: string; deckId: string; fields: Record<string, string>; tags?: string[]; guid?: string }): { note: Note; cards: Card[] } | null {
   const nt = get('notetype', input.noteTypeId);
   if (!nt) return null;
   const note: Note = {
@@ -113,12 +114,17 @@ export function addNote(input: { noteTypeId: string; deckId: string; fields: Rec
     fields: Object.fromEntries(nt.fields.map((f) => [f, input.fields[f] ?? ''])),
     tags: normaliseTags(input.tags || []),
     createdAt: Date.now(),
+    ...(input.guid ? { guid: input.guid } : {}),
   };
   const ords = cardOrdsFor(note, nt);
   if (!ords.length) return null;
-  const cards = ords.map((o) => makeCard(note, o, input.deckId));
-  put([note, ...cards]);
-  return { note, cards };
+  return { note, cards: ords.map((o) => makeCard(note, o, input.deckId)) };
+}
+
+export function addNote(input: { noteTypeId: string; deckId: string; fields: Record<string, string>; tags?: string[]; guid?: string }): { note: Note; cards: Card[] } | null {
+  const r = buildNote(input);
+  if (r) put([r.note, ...r.cards]);
+  return r;
 }
 
 export function normaliseTags(tags: string[]): string[] {
@@ -539,4 +545,27 @@ export function unburyDeck(deckId: string) {
   const ids = new Set(subtreeIds(deckId));
   const cards = all('card').filter((c) => ids.has(c.deckId) && (c.queue === 'buried' || c.queue === 'userBuried'));
   put(cards.map((c) => ({ ...c, queue: 'normal' as const, buriedDay: undefined })));
+}
+
+/** Review time (ms) and review count per deck, including subdecks. */
+let timeCache: { key: string; map: Map<string, { ms: number; reviews: number }> } | null = null;
+export function deckTotals(deckId: string): { ms: number; reviews: number } {
+  const logs = all('revlog');
+  const key = `${logs.length}:${logs[logs.length - 1]?.id ?? ''}`;
+  if (timeCache?.key !== key) {
+    const map = new Map<string, { ms: number; reviews: number }>();
+    for (const r of logs) {
+      const cur = map.get(r.deckId) || { ms: 0, reviews: 0 };
+      cur.ms += r.timeMs;
+      cur.reviews++;
+      map.set(r.deckId, cur);
+    }
+    timeCache = { key, map };
+  }
+  let ms = 0, reviews = 0;
+  for (const id of subtreeIds(deckId)) {
+    const t = timeCache.map.get(id);
+    if (t) { ms += t.ms; reviews += t.reviews; }
+  }
+  return { ms, reviews };
 }

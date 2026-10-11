@@ -5,6 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 // BASE_PATH lets the same build work on GitHub Pages (/Study-App/) or at a root domain (/).
 export default defineConfig({
   base: process.env.BASE_PATH || '/',
+  build: { chunkSizeWarningLimit: 1600 },
   plugins: [
     react(),
     VitePWA({

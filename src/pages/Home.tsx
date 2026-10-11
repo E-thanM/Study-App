@@ -82,7 +82,7 @@ export function Home() {
             </div>
             <div className="week-bars" style={{ height: 28, marginTop: 6 }}>
               {data.wk.perDay.map((ms, i) => (
-                <div key={i} className={`bar ${ms ? '' : 'empty'} ${i === todayIdx ? 'today' : ''}`} style={{ height: `${Math.max(8, (ms / maxDay) * 100)}%` }} title={fmtHours(ms)} />
+                <div key={i} className={`bar ${ms ? '' : 'zero'} ${i === todayIdx ? 'today' : ''}`} style={{ height: `${Math.max(8, (ms / maxDay) * 100)}%` }} title={fmtHours(ms)} />
               ))}
             </div>
             <div className="week-labels">{DAY_LETTERS.map((d, i) => <span key={i} style={i === todayIdx ? { color: 'var(--ink)', fontWeight: 700 } : undefined}>{d}</span>)}</div>

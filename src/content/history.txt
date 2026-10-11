@@ -1,0 +1,168 @@
+@deck History
+@board Edexcel GCSE History (1HI0) – Medicine, Elizabethan England, Cold War, Weimar & Nazi Germany
+
+# Paper 1 Medicine in Britain c1250–present
+## c1250–1500 Medieval
+What were the main supernatural ideas about the cause of disease in medieval England? :: Disease was a punishment from God for sin; astrology (alignment of the planets) also blamed
+What was the Theory of the Four Humours? :: Hippocrates' idea that the body has four humours – blood, phlegm, yellow bile, black bile – and illness comes from an imbalance
+How did Galen develop the Four Humours? :: Theory of Opposites – treat an excess humour with its opposite (e.g. a cold with something hot like pepper); his books were the basis of medical training
+Why did Galen's ideas last so long? :: The Church supported them (fitted the idea of a creator); dissection was rare; physicians trained on his books; challenging them was discouraged
+What was miasma? :: The belief that bad air (from rotting matter) caused disease
+Give medieval treatments based on the Four Humours. :: Bloodletting, purging (vomiting/laxatives), Theory of Opposites
+Give religious and supernatural treatments in medieval England. :: Prayer, pilgrimage, flagellation, buying charms, astrology-based treatment
+Name three medieval prevention methods. :: Regimen sanitatis (healthy lifestyle), keeping clean/bathing, carrying posies against miasma, prayer and fasting
+Who were the main medical practitioners in medieval England? :: Physicians (university-trained, expensive), apothecaries (made remedies), barber surgeons (bloodletting, minor surgery), women/wise women at home
+What was the role of hospitals in medieval England? :: Run by the Church; mainly care (rest, food, prayer) for the poor/elderly rather than treatment; often refused infectious patients
+When did the Black Death arrive in England and what did people think caused it? :: 1348 ;; God's punishment, miasma, alignment of planets, imbalance of humours
+How did people try to treat and prevent the Black Death? :: Prayer, flagellants, bloodletting, carrying posies, cleaning streets (Edward III ordered London cleaned), avoiding the sick
+What role did the Church play in medieval medicine? :: Controlled universities and training; promoted Galen; ran hospitals; encouraged prayer and religious explanations; restricted dissection
+## c1500–c1700 Renaissance
+How did ideas about the cause of disease change in the Renaissance? :: Less belief in religious causes; Four Humours declined among scientists; Sydenham's careful observation; miasma still believed; new ideas spread through printing
+What did Vesalius do? :: Published 'The Fabric of the Human Body' (1543) based on dissection; corrected Galen's mistakes (e.g. jawbone, no holes in septum); encouraged dissection
+What did William Harvey discover? :: Circulation of the blood (1628) – the heart is a pump and blood circulates (veins and arteries)
+Why did Harvey's discovery have little impact on treatment at the time? :: Didn't help cure disease; doctors kept using bloodletting; took time to be accepted
+What did Thomas Sydenham contribute? :: 'English Hippocrates' – observed symptoms closely, treated disease based on observation not books; classified diseases
+How did the printing press help medicine? :: Ideas (e.g. Vesalius) spread quickly and accurately; harder for the Church to control knowledge
+What was the Royal Society (1660)? :: A group of scientists who shared ideas and experiments; published journal (Philosophical Transactions)
+How did people respond to the Great Plague of 1665? :: Prayer, posies, smoking tobacco, killing cats and dogs; council: quarantine (houses shut with red cross), bodies buried at night in pits, searchers, banning public gatherings
+How did hospitals change in the Renaissance? :: After the Dissolution of the Monasteries (1536) many closed; some reopened run by councils/charities; more treatment of sick (e.g. St Bartholomew's)
+## c1700–c1900 18th & 19th centuries
+What was Louis Pasteur's germ theory (1861)? :: Microbes in the air cause decay (and disease) – disproved spontaneous generation
+What did Robert Koch contribute? :: Identified specific bacteria causing specific diseases (anthrax 1876, TB 1882, cholera 1883); staining techniques, agar plates
+How did Edward Jenner develop vaccination (1796)? :: Noticed milkmaids who caught cowpox didn't catch smallpox; infected James Phipps with cowpox then smallpox – he didn't get ill
+Why was there opposition to Jenner's vaccination? :: Religious objections; people didn't understand how it worked; inoculators lost money; fear of cow material; government forcing it (compulsory 1853)
+What three problems faced surgeons before c1850? :: Pain, infection, bleeding
+How did James Simpson help surgery? :: Discovered chloroform as an anaesthetic (1847)
+What were problems with chloroform? :: Difficult to get the dose right – could kill (Hannah Greener 1848); patients unconscious so surgeons attempted longer operations, raising infection
+How did Joseph Lister help surgery? :: Used carbolic acid spray on wounds, instruments and dressings (antiseptic surgery, 1867) – reduced death rates
+Why was there opposition to Lister? :: Carbolic acid irritated skin; slowed operations; some didn't accept germ theory; early results inconsistent
+What did Florence Nightingale do for hospitals? :: Improved hygiene and nursing (Crimea, Scutari); 'Notes on Nursing' (1859); pavilion-style hospitals; trained nurses at St Thomas' (1860)
+What did John Snow discover in 1854? :: Mapped cholera deaths in Broad Street, London; removed the pump handle – showed cholera spread through contaminated water
+What was the 1875 Public Health Act? :: Made councils provide clean water, sewers, drainage, street lighting, and appoint a Medical Officer of Health – compulsory
+Why did government attitudes change to allow the 1875 Public Health Act? :: Working men got the vote (1867); Snow's work; Great Stink (1858) and Bazalgette's sewers; germ theory; end of laissez-faire
+What was the Great Stink? :: Summer 1858 – smell of sewage in the Thames was so bad Parliament acted; Joseph Bazalgette built London's sewer system
+## c1900–present Modern
+What causes of disease were understood in the 20th century? :: Genetic and lifestyle factors (smoking, diet, alcohol) as well as germs; improved diagnosis (blood tests, X-rays, MRI, CT scans)
+Who discovered the structure of DNA and when? :: Watson and Crick (with Rosalind Franklin's X-ray images), 1953
+What was the Human Genome Project? :: 1990–2003 – mapped all human genes; helps identify genetic conditions
+What was the first magic bullet? :: Salvarsan 606 (Paul Ehrlich's team, Hata) – cured syphilis, 1909
+How did Alexander Fleming discover penicillin? :: 1928 – noticed mould killing bacteria on a Petri dish left out; published but couldn't produce it in quantity
+How did Florey and Chain develop penicillin? :: 1940s – purified it, tested on mice and a policeman (Albert Alexander); US government funded mass production during WW2
+What were the key features of the NHS (1948)? :: Free at the point of use, funded by taxation, for everyone; set up by Aneurin Bevan; based on the Beveridge Report (1942)
+How did the government tackle lifestyle diseases? :: Campaigns (Change4Life, anti-smoking), smoking ban in public places (2007), banning cigarette advertising, Clean Air Acts (1956, 1968), sugar tax
+What new treatments developed in the 20th century? :: Antibiotics, chemotherapy, radiotherapy, transplants, keyhole surgery, dialysis, insulin, vaccines
+Case study: lung cancer – diagnosis and treatment? :: Linked to smoking (Doll and Hill 1950) ;; Diagnosis: CT/PET scans, bronchoscopy ;; Treatment: surgery, chemotherapy, radiotherapy, transplants
+Case study: lung cancer – government action? :: Ban on TV cigarette adverts (1965), health warnings on packets, smoking ban in public places 2007, plain packaging, higher taxes
+Name key factors in the development of medicine. :: Individuals, science and technology, institutions (Church, government), war, attitudes in society, chance
+
+# Paper 1 The British sector of the Western Front 1914–18
+What was the Ypres Salient? :: A bulge in the British line around Ypres, Belgium; surrounded on three sides – heavy fighting (1st Ypres 1914, 2nd 1915 gas, 3rd Passchendaele 1917)
+Name four key battles on the Western Front in the specification. :: Ypres (1914–17), Arras (1917), the Somme (1916), Cambrai (1917)
+What was significant about the tunnels at Arras? :: Old quarries extended by New Zealand tunnellers to hold 24 000 men, with a hospital (700 beds) underground
+What was the Battle of Cambrai (1917) significant for? :: First large-scale use of tanks (around 450); also the first use of stored blood (blood bank) to treat casualties
+Describe the trench system. :: Front-line, support and reserve trenches connected by communication trenches; zig-zag shape; no man's land; barbed wire
+What conditions in the trenches caused illness? :: Mud, rats, lice, cold, standing water, poor food, unburied bodies
+What was trench foot and how was it prevented? :: Feet rotting from standing in cold water; prevented by dry socks, whale oil, duckboards
+What was trench fever? :: Flu-like illness spread by lice; treated by rest; prevented by delousing stations
+What effect did gas attacks have and how was it dealt with? :: Chlorine (1915, Ypres), phosgene, mustard gas (1917) – choking, blisters, blindness ;; Gas masks/respirators
+What was shell shock? :: Psychological trauma (now PTSD) from constant shelling; around 80 000 cases; treated with rest, sometimes at Craiglockhart
+Why were head injuries common and what helped? :: Shrapnel in trenches; Brodie steel helmet introduced 1915–16
+Describe the chain of evacuation. :: Stretcher bearers → Regimental Aid Post → Dressing Station (Advanced and Main) → Casualty Clearing Station → Base Hospital → home (Blighty)
+What was the role of the RAMC? :: Royal Army Medical Corps – doctors, stretcher bearers and orderlies providing care
+What was the role of FANY? :: First Aid Nursing Yeomanry – women who drove ambulances, ran mobile baths and canteens
+What were Casualty Clearing Stations? :: Field hospitals a few miles behind the line; carried out surgery; triage of wounded
+What was the Thomas splint? :: Kept a broken leg rigid and straight; reduced deaths from compound femur fractures from 80% to 20% (1916)
+How did X-rays help on the Western Front? :: Located bullets and shrapnel; mobile X-ray units; Marie Curie's 'petites Curies'
+How was blood transfusion developed during WW1? :: Sodium citrate prevented clotting (1915); blood stored – first blood bank at Cambrai (1917)
+How was the problem of infection tackled? :: Carrel–Dakin method (sterile salt solution through tubes); debridement (cutting away infected tissue); amputation
+What was plastic surgery's development in WW1? :: Harold Gillies treated facial injuries with skin grafts at Queen's Hospital, Sidcup
+What sources would you use to investigate injuries on the Western Front? :: Army records, hospital records, diaries/letters, photographs, RAMC records, official histories
+
+# Paper 2 Early Elizabethan England 1558–88
+When did Elizabeth become queen and what problems did she face? :: 1558 ;; legitimacy (Henry VIII's marriage to Anne Boleyn), gender, marriage/succession, religion, financial weakness (£300 000 debt), threats from France, Spain, Scotland
+What was Elizabeth's Privy Council? :: Her main advisers (about 19), e.g. William Cecil (Secretary of State), Francis Walsingham (spymaster), Robert Dudley
+What was the role of Parliament under Elizabeth? :: Granted taxes and passed laws; only met when called; Elizabeth controlled the agenda and banned discussion of marriage/religion
+What were the problems with religion in 1558? :: Divided between Catholics (north, nobles) and Protestants (south-east, London); Puritans wanted more reform
+What was the Religious Settlement (1559)? :: Act of Supremacy (Elizabeth Supreme Governor), Act of Uniformity (Book of Common Prayer, church attendance, fine 1 shilling), Royal Injunctions
+Why was the Settlement called the 'middle way'? :: Protestant in doctrine (English Bible, services) but kept some Catholic features (bishops, vestments, crucifixes)
+What were the challenges from the Puritans? :: Objected to crucifixes and vestments (Vestment Controversy 1566); some wanted prophesyings; Archbishop Grindal suspended for supporting them
+Why was Mary Queen of Scots a threat? :: Catholic; legitimate claim to the English throne (great-granddaughter of Henry VII); focus for Catholic plots; arrived in England 1568
+What was the Revolt of the Northern Earls (1569)? :: Northumberland and Westmorland rebelled to make Mary Queen of Scots queen and restore Catholicism; marched south, heard mass at Durham; collapsed; about 450 executed
+What was the papal bull of 1570? :: Pope Pius V excommunicated Elizabeth and told Catholics not to obey her – made Catholics seem traitors
+Describe the Ridolfi Plot (1571). :: Florentine banker planned a Spanish invasion to put Mary on the throne, marry Norfolk; discovered; Norfolk executed 1572
+Describe the Throckmorton Plot (1583). :: French-backed invasion (Duke of Guise) to free Mary; Throckmorton arrested and tortured by Walsingham's agents; Spanish ambassador expelled
+Describe the Babington Plot (1586). :: Plan to murder Elizabeth and free Mary; letters smuggled in beer barrels intercepted by Walsingham; Mary approved the plot – executed February 1587
+How did Walsingham protect Elizabeth? :: Network of spies and informers, codebreakers, double agents, agents provocateurs
+Why was Mary Queen of Scots executed in 1587? :: Evidence of involvement in the Babington Plot; ended Catholic hope of a Catholic successor
+Name reasons for conflict with Spain. :: Religion (Philip II Catholic), trade with New World, English privateers (Drake), English support for Dutch Protestant rebels, execution of Mary
+What was the Treaty of Nonsuch (1585)? :: Elizabeth agreed to send an army (led by Robert Dudley) to help the Dutch Protestants against Spain – effectively war
+What was the 'singeing of the King of Spain's beard' (1587)? :: Drake attacked Cadiz, destroying around 30 ships and supplies – delayed the Armada by a year
+Why did the Spanish Armada fail in 1588? :: English fireships at Calais broke the crescent formation; Battle of Gravelines; better English ships and cannon; bad weather ('Protestant wind'); poor Spanish planning (Medina Sidonia inexperienced, couldn't meet Parma's army)
+Describe education in Elizabethan England. :: Petty schools, grammar schools (boys, Latin), universities (Oxford, Cambridge); rich educated at home; girls mainly at home
+Describe leisure activities in Elizabethan England. :: Theatre (the Globe), blood sports (bear-baiting, cockfighting), hunting, football, music, dancing
+What caused poverty and vagabondage under Elizabeth? :: Population growth, rising prices (inflation), enclosure of land, bad harvests, decline of the cloth trade, dissolution of the monasteries
+How did attitudes to the poor change and what laws were passed? :: Distinguished deserving and undeserving poor ;; Vagabonds Act 1572 (whipping, ear bored), Poor Relief Act 1576 (work for able-bodied), poor rate collected locally
+What were the reasons for exploration under Elizabeth? :: New technology (astrolabe, galleons), trade opportunities, rivalry with Spain, wealth from privateering
+Describe Drake's circumnavigation (1577–80). :: First English circumnavigation of the globe in the Golden Hind; captured Spanish treasure worth £400 000; knighted 1581
+Why did Raleigh's attempt to colonise Virginia (1585) fail? :: Poor relations with Native Americans, lack of supplies, bad weather, poor planning; Roanoke 'lost colony' 1587
+Historic environment (2026 onward): how should you study it? :: Use your school's chosen site; learn its location, function, structure, people connected, and how it reflects the period (check the specification list for your exam year)
+
+# Paper 2 Superpower relations and the Cold War 1941–91
+What were the Grand Alliance conferences? :: Tehran (1943), Yalta (Feb 1945), Potsdam (July 1945)
+What was agreed at Yalta (1945)? :: Germany divided into four zones; free elections in Eastern Europe; USSR to join war against Japan; United Nations set up; Poland in Soviet sphere
+What changed at Potsdam (1945)? :: Truman replaced Roosevelt, Attlee replaced Churchill; disagreements over Germany and reparations; US had the atomic bomb
+What were the Long and Novikov Telegrams (1946)? :: Kennan (Long) – USSR wanted to spread communism, US should contain it ;; Novikov – US wanted world domination
+What was the Iron Curtain? :: Churchill's 1946 phrase for the division of Europe between communist east and capitalist west
+What was the Truman Doctrine (1947)? :: US would support countries threatened by communism (containment) – first applied to Greece and Turkey
+What was Marshall Aid? :: US economic aid ($13 billion) to rebuild Europe and stop the spread of communism ('dollar imperialism' to the USSR)
+How did Stalin respond to Marshall Aid? :: Cominform (1947) to control communist parties; Comecon (1949) as an economic alternative
+What was the Berlin Blockade (1948–49)? :: Stalin cut off road, rail and canal access to West Berlin; the West responded with the Berlin Airlift; ended May 1949
+What were the consequences of the Berlin Blockade? :: Germany split into FRG (West) and GDR (East) 1949; NATO formed 1949; Warsaw Pact 1955
+What was the arms race? :: Competition to build more nuclear weapons: US A-bomb 1945, USSR 1949, H-bombs 1952/53, ICBMs; Sputnik 1957
+Why did Hungary rise up in 1956? :: Hatred of Rákosi's rule, Khrushchev's destalinisation speech; Nagy promised reforms and leaving the Warsaw Pact
+What happened in the Hungarian Uprising? :: Soviet tanks invaded Budapest November 1956; ~20 000 Hungarians killed; Nagy executed; Kádár installed; West did not intervene
+Why was the Berlin Wall built (1961)? :: To stop the 'brain drain' of skilled East Germans fleeing to the West (around 3 million by 1961)
+What were the consequences of the Berlin Wall? :: Ended refugee crisis; symbol of the Cold War; Kennedy's 'Ich bin ein Berliner' speech (1963); reduced tension over Berlin
+What was the Bay of Pigs invasion (1961)? :: CIA-trained Cuban exiles invaded Cuba to overthrow Castro; failed; pushed Castro closer to the USSR
+Describe the Cuban Missile Crisis (October 1962). :: US U-2 spy planes found Soviet missile sites in Cuba; Kennedy imposed a naval blockade; 13 days; Khrushchev removed missiles in exchange for no US invasion of Cuba and (secretly) removal of US Jupiter missiles from Turkey
+What were the consequences of the Cuban Missile Crisis? :: Hotline (1963), Limited Test Ban Treaty (1963), Outer Space Treaty (1967), Nuclear Non-Proliferation Treaty (1968) – start of détente
+What was the Prague Spring (1968)? :: Dubček's reforms in Czechoslovakia ('socialism with a human face') – free speech, less censorship; Warsaw Pact invaded August 1968
+What was the Brezhnev Doctrine? :: USSR would intervene in any communist country that threatened the Warsaw Pact
+What was détente? :: Easing of tension in the 1970s: SALT 1 (1972), Apollo–Soyuz (1975), Helsinki Agreement (1975)
+Why did détente end? :: Soviet invasion of Afghanistan (1979); Carter Doctrine; US boycott of Moscow Olympics (1980); SALT 2 not ratified
+What was Reagan's 'second Cold War'? :: Called USSR the 'evil empire'; increased arms spending; Strategic Defense Initiative (SDI/'Star Wars', 1983)
+What were Gorbachev's 'new thinking' policies? :: Perestroika (economic restructuring), glasnost (openness), Sinatra Doctrine (let Eastern Europe choose its own path)
+Which summits and treaties improved relations in the late 1980s? :: Geneva (1985), Reykjavik (1986), Washington – INF Treaty (1987), Malta (1989)
+When did the Berlin Wall fall and when did the USSR collapse? :: Wall fell November 1989; Germany reunified 1990; Warsaw Pact dissolved 1991; USSR collapsed December 1991
+
+# Paper 3 Weimar and Nazi Germany 1918–39
+What problems faced the Weimar Republic in 1919? :: Treaty of Versailles, political extremism (left and right), economic problems, weak constitution (Article 48, proportional representation)
+What were the terms of the Treaty of Versailles? :: Land lost (13%, Alsace-Lorraine, colonies), army limited to 100 000, no air force, Rhineland demilitarised, reparations (£6.6 billion), War Guilt Clause (Article 231)
+What was the 'stab in the back' myth? :: The belief that the army had not been defeated but betrayed by politicians ('November Criminals') who signed the armistice
+What were the weaknesses of the Weimar constitution? :: Proportional representation – many small parties, coalitions, weak government ;; Article 48 – president could rule by decree
+What was the Spartacist Revolt (1919)? :: Communist uprising in Berlin led by Rosa Luxemburg and Karl Liebknecht; crushed by the Freikorps
+What was the Kapp Putsch (1920)? :: Right-wing Freikorps under Wolfgang Kapp took over Berlin; failed due to a general strike by workers
+Why did hyperinflation happen in 1923? :: Germany missed reparations; France and Belgium occupied the Ruhr; workers went on strike (passive resistance); government printed money
+What were the effects of hyperinflation? :: Savings worthless (middle classes hit hard); prices soared (loaf of bread 200 billion marks by Nov 1923); people with debts/mortgages benefited
+How did Stresemann bring recovery (1924–29)? :: Rentenmark (1923); Dawes Plan (1924) – US loans, reparations reduced; Young Plan (1929); Locarno Pact (1925); League of Nations (1926); Kellogg–Briand Pact (1928)
+What were the limitations of recovery under Stresemann? :: Reliance on US loans; farmers struggled; extremist parties still had support; unemployment remained
+What were cultural changes in Weimar Germany? :: Freedom of expression: Bauhaus architecture, Expressionist art, cinema (Metropolis), cabaret; new women (more freedom, vote, work)
+What were the early aims of the Nazi Party (Twenty-Five Point Programme, 1920)? :: Abolish Versailles, union of all Germans, Lebensraum, only Germans as citizens (anti-Semitism), strong central government
+What was the Munich Putsch (1923)? :: Hitler's attempt to seize power in Bavaria, Beer Hall; failed; Hitler tried and sentenced to 5 years (served 9 months), wrote Mein Kampf
+How did the Nazis change tactics after the Munich Putsch? :: Use democracy (elections) to gain power; Bamberg Conference (1926); Hitler Youth; reorganised party nationally; propaganda
+How did the Depression (1929) help the Nazis? :: Unemployment rose to 6 million; Weimar seemed weak; people turned to extremists – Nazis became largest party in July 1932 (37%)
+Why did Hitler become Chancellor in January 1933? :: Backstairs intrigue – von Papen and Hindenburg thought they could control him; Nazi popularity; fear of communism
+What was the Reichstag Fire (February 1933)? :: Fire blamed on communist van der Lubbe; Hitler used it to get Hindenburg to pass the Decree for the Protection of People and State – arrests of communists
+What was the Enabling Act (March 1933)? :: Allowed Hitler to pass laws without the Reichstag for four years – effectively a dictatorship
+What was the Night of the Long Knives (June 1934)? :: Hitler had Ernst Röhm and other SA leaders (and opponents) murdered by the SS – secured army support
+How did Hitler become Führer? :: Hindenburg died August 1934; Hitler combined roles of Chancellor and President; army swore oath of loyalty to him
+What was the police state in Nazi Germany? :: SS (Himmler), Gestapo (secret police), SD, concentration camps, informers, courts controlled by Nazis
+How did the Nazis use propaganda? :: Ministry of Propaganda under Goebbels: radio (cheap People's Receivers), rallies (Nuremberg), newspapers, films, 1936 Berlin Olympics, censorship
+How did the Nazis deal with the churches? :: Concordat with the Catholic Church (1933) – later broken; Reich Church (Protestant) under Müller; Pastor Niemöller's Confessing Church opposed – sent to camps
+How did the Nazis treat young people? :: Hitler Youth and League of German Maidens (compulsory 1939); school curriculum changed (race studies, PE, history); teachers in Nazi Teachers' League
+What were Nazi policies towards women? :: Kinder, Küche, Kirche (children, kitchen, church); Law for Encouragement of Marriage (loans); Mother's Cross medals; discouraged from working
+How did the Nazis reduce unemployment? :: National Labour Service (RAD), public works (autobahns), rearmament, conscription (1935), invisible unemployment (women and Jews not counted)
+What were Strength Through Joy and Beauty of Labour? :: Part of the German Labour Front (DAF): KdF – cheap holidays/leisure; SdA – improved workplaces
+How were Jews persecuted 1933–39? :: Boycott of Jewish shops (1933); Nuremberg Laws (1935) – removed citizenship, banned marriage with Germans; Kristallnacht (November 1938) – synagogues and shops destroyed, 20 000+ sent to camps
+Which other groups were persecuted by the Nazis? :: Roma and Sinti, homosexuals, disabled people (sterilisation law 1933), Slavs, 'asocials', Jehovah's Witnesses
+Who opposed the Nazis in the 1930s? :: Some churches (Niemöller, Galen later), youth groups (Swing Youth, Edelweiss Pirates)

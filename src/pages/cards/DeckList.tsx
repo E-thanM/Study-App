@@ -6,14 +6,16 @@ import { compileSearch } from '../../lib/search';
 import { all, patch, put, useVersion } from '../../lib/store';
 import type { Deck, FilteredConfig } from '../../lib/types';
 import { dayNumber, download, fmtHours, uid } from '../../lib/util';
-import { todayDone } from '../../lib/collection';
+import { deckTotals, todayDone } from '../../lib/collection';
 import { DeckOptions } from './DeckOptions';
+import { StarterDecksModal } from './StarterDecks';
 
 export function DeckList() {
   const v = useVersion('deck', 'card', 'revlog', 'preset');
   const nav = useNavigate();
   const [optionsFor, setOptionsFor] = useState<string | null>(null);
   const [filteredOpen, setFilteredOpen] = useState<{ deck?: Deck; search?: string } | null>(null);
+  const [starterOpen, setStarterOpen] = useState(false);
 
   const top = useMemo(() => childDecks(null), [v]); // eslint-disable-line react-hooks/exhaustive-deps
   const done = useMemo(() => todayDone(), [v]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -43,6 +45,7 @@ export function DeckList() {
             className="btn icon"
             items={[
               { label: 'Create deck', icon: 'folder', onClick: () => newDeck() },
+              { label: 'Add GCSE exam decks', icon: 'sparkle', onClick: () => setStarterOpen(true) },
               { label: 'Create filtered deck', icon: 'search', onClick: () => setFilteredOpen({}) },
               { label: 'Import (Anki, CSV, text)', icon: 'upload', onClick: () => nav('/cards/import') },
               { label: 'Note types', icon: 'note', onClick: () => nav('/cards/notetypes') },
@@ -57,11 +60,8 @@ export function DeckList() {
             <h3>No decks yet</h3>
             <p>Make a deck per subject (e.g. <b>Biology</b>) with subdecks per topic (<b>Biology::Cells</b>), import an Anki deck, or convert a Quick Learn set.</p>
             <div className="row" style={{ justifyContent: 'center', marginTop: 18, flexWrap: 'wrap' }}>
-              <button className="btn primary" onClick={() => newDeck()}><Icon name="folder" /> Create deck</button>
-              <button className="btn" onClick={() => {
-                ['Biology', 'Chemistry', 'Physics', 'Maths', 'English Literature', 'English Language', 'History', 'Geography'].forEach((s) => ensureDeckPath(s));
-                toast('Created GCSE subject decks');
-              }}>Create GCSE subjects</button>
+              <button className="btn primary" onClick={() => setStarterOpen(true)}><Icon name="sparkle" /> Add GCSE exam decks</button>
+              <button className="btn" onClick={() => newDeck()}><Icon name="folder" /> Create deck</button>
               <Link to="/cards/import" className="btn"><Icon name="upload" /> Import</Link>
             </div>
           </div>
@@ -73,6 +73,7 @@ export function DeckList() {
             <span className="num">New</span>
             <span className="num">Learn</span>
             <span className="num">Due</span>
+            <span className="num hide-sm" title="Total time studied">Time</span>
             <span />
           </div>
           {top.map((d) => (
@@ -83,6 +84,7 @@ export function DeckList() {
 
       <p className="muted small mt center">Tip: tap a deck to study. Keyboard: <kbd>Space</kbd> show answer · <kbd>1</kbd>–<kbd>4</kbd> rate · <kbd>E</kbd> edit · <kbd>Z</kbd> undo</p>
 
+      {starterOpen && <StarterDecksModal onClose={() => setStarterOpen(false)} />}
       {optionsFor && <DeckOptions deckId={optionsFor} onClose={() => setOptionsFor(null)} />}
       {filteredOpen && <FilteredDeckModal deck={filteredOpen.deck?.filtered ? filteredOpen.deck : undefined} initialSearch={filteredOpen.deck && !filteredOpen.deck.filtered ? `deck:"${deckPath(filteredOpen.deck)}"` : filteredOpen.search} onClose={() => setFilteredOpen(null)} />}
     </>
@@ -93,6 +95,7 @@ function DeckRow({ deck, depth, onOptions, onNewSub, onFiltered }: { deck: Deck;
   const nav = useNavigate();
   const kids = childDecks(deck.id);
   const c = deckCounts(deck.id);
+  const totals = deckTotals(deck.id);
   const open = !deck.collapsed;
   const n = (x: number, cls: string) => <span className={`num ${x ? cls : 'n-zero'}`}>{x}</span>;
 
@@ -127,6 +130,7 @@ function DeckRow({ deck, depth, onOptions, onNewSub, onFiltered }: { deck: Deck;
         {n(c.new, 'n-new')}
         {n(c.learn, 'n-learn')}
         {n(c.review, 'n-review')}
+        <span className="num hide-sm muted small" title={`${totals.reviews} reviews`}>{totals.ms ? fmtHours(totals.ms) : '–'}</span>
         <MenuButton
           items={[
             { label: 'Study', icon: 'cards', onClick: () => nav(`/cards/review/${deck.id}`) },

@@ -1,4 +1,3 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { stripHtml } from './util';
 
 /*
@@ -126,6 +125,8 @@ const CARD_SCHEMA = {
 /** Call the Claude API directly from the browser with the user's own key. */
 export async function generateWithClaude(prompt: string, settings: AiSettings): Promise<AiCard[]> {
   if (!settings.apiKey) throw new Error('Add your Claude API key in Settings first.');
+  // loaded on demand so the SDK isn't in the main bundle
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: settings.apiKey, dangerouslyAllowBrowser: true });
   // Opus/Sonnet: retry on a different model automatically if a safety classifier declines.
   const withFallback = settings.model !== 'claude-haiku-5-5';

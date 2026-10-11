@@ -1,0 +1,268 @@
+@deck Chemistry
+@board Edexcel International GCSE Chemistry (4CH1)
+
+# 1a States of matter
+Describe the arrangement and movement of particles in a solid. :: Close together in a regular pattern; vibrate about fixed positions
+Describe the arrangement and movement of particles in a liquid. :: Close together, random arrangement; move around each other
+Describe the arrangement and movement of particles in a gas. :: Far apart, random; move quickly in all directions
+Name the state changes: solid→liquid, liquid→gas, gas→liquid, liquid→solid, solid→gas. :: Melting, boiling/evaporating, condensing, freezing, sublimation
+What happens to particles when a substance is heated and melts? :: They gain energy, vibrate more, overcome some forces of attraction and start to move around each other
+What is diffusion? :: The random movement of particles from high to low concentration, so they spread out and mix
+Describe an experiment showing diffusion of gases. :: Cotton wool soaked in ammonia at one end of a tube and conc. hydrochloric acid at the other; white ring of ammonium chloride forms nearer the HCl end because ammonia particles are lighter and move faster
+What is the difference between dilute and concentrated solution? :: Dilute – small amount of solute per volume of solvent; concentrated – large amount
+Define solvent, solute, solution and saturated solution. :: Solvent – liquid that dissolves; solute – substance dissolved; solution – mixture of the two; saturated – no more solute can dissolve at that temperature
+What does a solubility curve show? :: How the mass of solute that dissolves in 100 g of water varies with temperature
+How do you investigate the solubility of a solid at different temperatures? :: Dissolve solute in a known mass of water at a set temperature until saturated, evaporate a sample to dryness, weigh the solid; repeat at different temperatures
+
+# 1b Elements, compounds and mixtures
+Define element, compound and mixture. :: Element – one type of atom ;; Compound – two or more elements chemically combined ;; Mixture – substances not chemically joined, can be separated physically
+How can you tell if a substance is pure using melting point? :: A pure substance melts at a specific temperature; an impure substance melts over a range (and at a lower temperature)
+Name the separation technique for an insoluble solid from a liquid. :: Filtration
+Name the separation technique for a soluble solid from a solution. :: Crystallisation (evaporate some solvent, leave to cool and crystallise)
+Name the separation technique for a liquid from a solution. :: Simple distillation
+Name the separation technique for a mixture of liquids with different boiling points. :: Fractional distillation
+Name the separation technique for different dyes in ink. :: Paper chromatography
+How do you calculate an Rf value? :: Rf = distance moved by spot ÷ distance moved by solvent front
+In chromatography, what does a single spot show? :: The substance is pure (one compound)
+Why is the baseline drawn in pencil in chromatography? :: Pencil is insoluble in the solvent so it won't run
+Why must the baseline be above the solvent level? :: So the spots don't dissolve into the solvent in the beaker
+
+# 1c Atomic structure
+Give the relative mass and charge of a proton, neutron and electron. :: Proton: mass 1, charge +1 ;; Neutron: mass 1, charge 0 ;; Electron: mass 1/1836 (negligible), charge −1
+What is the atomic number? :: The number of protons in an atom
+What is the mass number? :: The total number of protons and neutrons in an atom
+What are isotopes? :: Atoms of the same element with the same number of protons but different numbers of neutrons
+What is relative atomic mass (Ar)? :: The average mass of an atom of an element compared to 1/12 of the mass of a carbon-12 atom (weighted mean of its isotopes)
+How do you calculate relative atomic mass from isotope abundances? :: Ar = Σ(isotope mass × % abundance) ÷ 100
+What is the maximum number of electrons in the first three shells? :: 2, 8, 8
+Write the electron configuration of sodium. :: 2.8.1
+What does the group number tell you about electrons? :: The number of electrons in the outer shell
+What does the period number tell you? :: The number of occupied electron shells
+
+# 1d The Periodic Table
+How are elements arranged in the Periodic Table? :: In order of increasing atomic number, in groups (columns) with similar properties and periods (rows)
+Where are metals and non-metals in the Periodic Table? :: Metals on the left and centre; non-metals on the right
+How can you classify an element as a metal or non-metal using its oxide? :: Metal oxides are basic; non-metal oxides are acidic
+Why are noble gases unreactive? :: They have full outer shells of electrons (stable)
+Why do elements in the same group have similar reactions? :: They have the same number of outer electrons
+
+# 1e Chemical formulae, equations and calculations
+What is relative formula mass (Mr)? :: The sum of the relative atomic masses of all the atoms in the formula
+What is a mole? :: The amount of substance containing 6 × 10²³ particles (Avogadro constant); mass in grams equal to Mr
+Write the equation linking moles, mass and Mr. :: moles = mass ÷ Mr
+Write the equation linking concentration, moles and volume. :: concentration (mol/dm³) = moles ÷ volume (dm³)
+What volume does one mole of any gas occupy at room temperature and pressure? :: 24 dm³ (24 000 cm³)
+How do you calculate percentage yield? :: % yield = (actual yield ÷ theoretical yield) × 100
+How do you find an empirical formula? :: Divide the mass (or %) of each element by its Ar, divide by the smallest answer to get a whole-number ratio
+What is an empirical formula? :: The simplest whole-number ratio of atoms of each element in a compound
+What is a molecular formula? :: The actual number of atoms of each element in one molecule
+How do you find the molecular formula from the empirical formula? :: Divide Mr by the empirical formula mass, then multiply the empirical formula by that number
+Describe an experiment to find the formula of magnesium oxide. :: Weigh crucible + Mg; heat strongly with lid lifted occasionally until no more change; reweigh; calculate masses of Mg and O; find moles and ratio
+What is water of crystallisation? :: Water molecules chemically bonded within a crystal (e.g. CuSO₄·5H₂O)
+How do you calculate the percentage of water of crystallisation? :: Heat a hydrated salt to constant mass; mass lost = water; find mole ratio of anhydrous salt to water
+How do you convert cm³ to dm³? :: Divide by 1000
+
+# 1f Ionic bonding
+What is an ion? :: An atom or group of atoms with a charge, formed by losing or gaining electrons
+How are ionic bonds formed? :: Electrons are transferred from metal atoms to non-metal atoms, forming oppositely charged ions held by strong electrostatic attraction
+What charge do ions of group 1, 2, 3, 5, 6, 7 elements have? :: +1, +2, +3, −3, −2, −1
+Give the formulae of hydroxide, nitrate, carbonate, sulfate and ammonium ions. :: OH⁻, NO₃⁻, CO₃²⁻, SO₄²⁻, NH₄⁺
+Describe the structure of an ionic compound. :: Giant ionic lattice – a regular arrangement of oppositely charged ions held by strong electrostatic forces
+Why do ionic compounds have high melting points? :: Lots of energy is needed to overcome the strong electrostatic forces between oppositely charged ions in the giant lattice
+When do ionic compounds conduct electricity? :: When molten or dissolved in water – the ions are free to move and carry charge
+
+# 1g Covalent bonding
+What is a covalent bond? :: A shared pair of electrons between two non-metal atoms (strong electrostatic attraction between the shared pair and the nuclei)
+Why do simple molecular substances have low melting and boiling points? :: Only weak intermolecular forces need to be overcome, not the strong covalent bonds
+How does the size of a molecule affect boiling point? :: Larger molecules (higher Mr) have stronger intermolecular forces, so higher boiling points
+Why don't simple molecular substances conduct electricity? :: There are no charged particles (ions or delocalised electrons) free to move
+Describe the structure of diamond and its properties. :: Each carbon bonded covalently to 4 others in a giant lattice – very hard, very high melting point, doesn't conduct electricity – used in cutting tools
+Describe the structure of graphite and its properties. :: Each carbon bonded to 3 others in layers; weak forces between layers so they slide (soft, lubricant); one delocalised electron per atom so it conducts electricity (electrodes)
+Describe the structure of C₆₀ fullerene. :: Simple molecular – a hollow sphere of 60 carbon atoms; weak intermolecular forces so it is soft and slippery, low sublimation point
+Why do giant covalent substances have high melting points? :: Many strong covalent bonds must be broken
+
+# 1h Metallic bonding
+Describe metallic bonding. :: A giant lattice of positive metal ions in a sea of delocalised electrons, held by strong electrostatic attraction
+Why do metals conduct electricity? :: Delocalised electrons are free to move through the structure
+Why are metals malleable? :: The layers of positive ions can slide over each other without breaking the metallic bonds
+
+# 1i Electrolysis
+What is electrolysis? :: Breaking down an ionic compound (molten or in solution) using electricity
+What is an electrolyte? :: A molten or dissolved ionic compound that conducts electricity
+Which electrode do positive ions go to? :: The cathode (negative electrode)
+What forms at the cathode when an aqueous solution is electrolysed? :: Hydrogen, unless the metal is less reactive than hydrogen (e.g. copper, silver), then the metal forms
+What forms at the anode when an aqueous solution is electrolysed? :: Oxygen, unless the solution contains halide ions – then the halogen forms
+What are the products of electrolysis of molten lead(II) bromide? :: Lead at the cathode; bromine at the anode
+What are the products of electrolysis of concentrated sodium chloride solution? :: Hydrogen at the cathode, chlorine at the anode (sodium hydroxide left in solution)
+What are the products of electrolysis of copper(II) sulfate solution with inert electrodes? :: Copper at the cathode, oxygen at the anode
+Write the half-equation at the cathode for copper ions. :: Cu²⁺ + 2e⁻ → Cu
+Write the half-equation for chloride ions at the anode. :: 2Cl⁻ → Cl₂ + 2e⁻
+Write the half-equation for hydroxide ions at the anode. :: 4OH⁻ → O₂ + 2H₂O + 4e⁻
+What is OIL RIG? :: Oxidation Is Loss of electrons, Reduction Is Gain of electrons
+What is a Faraday? :: The charge on one mole of electrons (96 500 C)
+How do you calculate charge? :: Q = I × t (coulombs = amps × seconds)
+
+# 2a Group 1 – alkali metals
+How do group 1 metals react with water? :: Float, fizz (hydrogen), move around; lithium fizzes steadily, sodium melts into a ball, potassium ignites with a lilac flame ;; metal + water → metal hydroxide + hydrogen
+Why does reactivity increase down group 1? :: Atoms get larger, outer electron is further from the nucleus and more shielded, so it is lost more easily
+Predict the properties of rubidium. :: Even more reactive than potassium – reacts explosively with water; soft, low melting point
+
+# 2b Group 7 – halogens
+Give the colour and state of chlorine, bromine and iodine at room temperature. :: Chlorine – pale yellow-green gas ;; Bromine – red-brown liquid (orange vapour) ;; Iodine – grey-black solid (purple vapour)
+How do melting and boiling points change down group 7? :: They increase
+Why does reactivity decrease down group 7? :: Atoms get larger; the outer shell is further from the nucleus, so it is harder to gain an electron
+What is a displacement reaction of halogens? :: A more reactive halogen displaces a less reactive one from its salt solution, e.g. Cl₂ + 2KBr → 2KCl + Br₂
+In Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂, which species is oxidised? :: Bromide ions are oxidised (lose electrons); chlorine is reduced
+What does hydrogen chloride form when dissolved in water vs methylbenzene? :: In water: hydrochloric acid (ionises – acidic, turns litmus red) ;; In methylbenzene: no ions form, so not acidic
+
+# 2c Gases in the atmosphere
+Give the approximate composition of dry air. :: 78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide
+How can you find the percentage of oxygen in air? :: Pass air over heated copper (or use iron rusting / phosphorus) and measure the decrease in volume
+How do metals burn in oxygen? :: Magnesium – bright white flame, white MgO ;; Sodium – yellow/orange flame ;; Hydrogen – burns to water
+How do non-metals react with oxygen? :: Carbon burns to CO₂; sulfur burns with a blue flame to SO₂ (acidic oxides)
+How is carbon dioxide made in the lab? :: React calcium carbonate (marble chips) with dilute hydrochloric acid
+What is thermal decomposition of metal carbonates? :: Heating breaks them down into a metal oxide and carbon dioxide, e.g. CuCO₃ → CuO + CO₂
+Give properties and uses of carbon dioxide. :: Denser than air, doesn't support combustion – fire extinguishers; dissolves in water under pressure – fizzy drinks
+Why is carbon dioxide a greenhouse gas? :: It absorbs infrared radiation emitted by the Earth, keeping the Earth warm; increasing levels cause global warming/climate change
+
+# 2d Reactivity series
+Give the reactivity series from potassium to gold. :: Potassium, sodium, lithium, calcium, magnesium, aluminium, (carbon), zinc, iron, (hydrogen), copper, silver, gold
+What is a metal displacement reaction? :: A more reactive metal displaces a less reactive metal from its compound, e.g. Mg + CuSO₄ → MgSO₄ + Cu
+Define oxidation and reduction in terms of oxygen. :: Oxidation – gain of oxygen ;; Reduction – loss of oxygen
+What is a redox reaction? :: A reaction where both oxidation and reduction occur
+What are the conditions needed for iron to rust? :: Water and oxygen
+Name three ways to prevent rusting. :: Barrier methods: painting, oiling, plastic coating ;; Galvanising (zinc coating); sacrificial protection with a more reactive metal (e.g. zinc or magnesium blocks)
+How does sacrificial protection work? :: A more reactive metal (e.g. zinc) is attached; it oxidises instead of the iron
+Describe an experiment showing water and oxygen are needed for rusting. :: Three tubes of iron nails: water + air; boiled water with oil layer (no air); air with calcium chloride drying agent (no water) – only the first rusts
+
+# 2e Extraction and uses of metals
+How are metals extracted depending on reactivity? :: More reactive than carbon – electrolysis (e.g. aluminium) ;; Less reactive than carbon – reduction with carbon (e.g. iron) ;; Very unreactive (gold) found native
+Why is aluminium used for aircraft and overhead cables? :: Low density, resists corrosion (oxide layer); good conductor
+Why is copper used for wiring? :: Good electrical conductor and ductile
+Why is iron made into steel (alloys)? :: Alloys are harder/stronger because different sized atoms disrupt the layers so they can't slide as easily
+Why is stainless steel used for cutlery? :: Resists corrosion (contains chromium)
+
+# 2f Acids, alkalis and titrations
+What colour is litmus, phenolphthalein and methyl orange in acid and alkali? :: Litmus: red in acid, blue in alkali ;; Phenolphthalein: colourless in acid, pink in alkali ;; Methyl orange: red in acid, yellow in alkali
+What is the pH scale? :: 0–14; below 7 acidic, 7 neutral, above 7 alkaline
+What ions do acids and alkalis produce in water? :: Acids – H⁺ ions; alkalis – OH⁻ ions
+What is the ionic equation for neutralisation? :: H⁺ + OH⁻ → H₂O
+Define an acid and a base in terms of protons. :: Acid – proton (H⁺) donor ;; Base – proton acceptor
+Describe how to carry out an acid–alkali titration. :: Pipette a known volume of alkali into a conical flask, add indicator; fill burette with acid; add acid until the indicator just changes colour; record volume; repeat until concordant results (within 0.10 cm³)
+
+# 2g Acids, bases and salt preparations
+Which salts are soluble? :: All sodium, potassium and ammonium salts; all nitrates; most chlorides (not silver or lead); most sulfates (not barium, calcium or lead)
+Which carbonates and hydroxides are soluble? :: Only sodium, potassium and ammonium carbonates/hydroxides
+Write the general equations for reactions of acids with metals, bases and carbonates. :: Acid + metal → salt + hydrogen ;; Acid + base → salt + water ;; Acid + carbonate → salt + water + carbon dioxide
+Describe how to make a pure dry soluble salt from an insoluble base. :: Add excess base (e.g. copper oxide) to warm acid; filter off excess; heat filtrate to evaporate some water; leave to crystallise; filter and dry crystals
+How do you make a soluble salt from an acid and alkali? :: Titration to find exact volumes; repeat without indicator; evaporate and crystallise
+How do you make an insoluble salt? :: Precipitation – mix two soluble salt solutions; filter the precipitate; wash with distilled water; dry
+Why do we add excess insoluble base when making a salt? :: To make sure all the acid has reacted
+
+# 2h Chemical tests
+Test for hydrogen. :: Lit splint – squeaky pop
+Test for oxygen. :: Glowing splint – relights
+Test for carbon dioxide. :: Bubble through limewater – turns milky/cloudy
+Test for ammonia. :: Damp red litmus paper turns blue
+Test for chlorine. :: Damp blue litmus paper turns red then bleaches white
+Flame test colours: Li⁺, Na⁺, K⁺, Ca²⁺, Cu²⁺. :: Li⁺ red ;; Na⁺ yellow ;; K⁺ lilac ;; Ca²⁺ orange-red ;; Cu²⁺ blue-green
+Test for NH₄⁺ ions. :: Add NaOH solution and warm – ammonia gas turns damp red litmus blue
+Precipitate colours with NaOH: Cu²⁺, Fe²⁺, Fe³⁺. :: Cu²⁺ blue ;; Fe²⁺ green ;; Fe³⁺ orange-brown
+Test for halide ions. :: Add dilute nitric acid then silver nitrate: Cl⁻ white ;; Br⁻ cream ;; I⁻ yellow precipitate
+Test for sulfate ions. :: Add dilute hydrochloric acid then barium chloride – white precipitate
+Test for carbonate ions. :: Add dilute acid – bubbles of CO₂ which turn limewater milky
+Test for water. :: Anhydrous copper(II) sulfate turns from white to blue (or cobalt chloride paper blue → pink)
+How do you test if water is pure? :: Boils at exactly 100 °C (freezes at 0 °C)
+
+# 3a Energetics
+What is an exothermic reaction? :: A reaction that releases heat energy to the surroundings – temperature rises; ΔH is negative
+What is an endothermic reaction? :: A reaction that takes in heat energy from the surroundings – temperature falls; ΔH is positive
+Give examples of exothermic and endothermic reactions. :: Exothermic: combustion, neutralisation, displacement, respiration ;; Endothermic: thermal decomposition, photosynthesis, dissolving ammonium nitrate
+How do you calculate heat energy change? :: Q = m × c × ΔT (c for water = 4.2 J/g/°C)
+How do you calculate molar enthalpy change? :: ΔH = −Q ÷ moles (convert J to kJ)
+Explain energy changes in terms of bonds. :: Bond breaking is endothermic; bond making is exothermic ;; ΔH = energy to break bonds − energy released making bonds
+What does an energy level (profile) diagram show? :: Energy of reactants and products, activation energy and ΔH; exothermic – products lower than reactants
+What is activation energy? :: The minimum energy needed for particles to react
+Why is a polystyrene cup used in calorimetry? :: Insulates – reduces heat loss to the surroundings
+
+# 3b Rates of reaction
+What must happen for particles to react (collision theory)? :: Particles must collide with energy greater than or equal to the activation energy
+How does increasing concentration (or pressure) affect rate? :: More particles per unit volume, so more frequent collisions – faster rate
+How does increasing surface area affect rate? :: More particles exposed, so more frequent collisions
+How does increasing temperature affect rate? :: Particles move faster: more frequent collisions and more collisions have energy ≥ activation energy
+How does a catalyst work? :: Provides an alternative reaction pathway with lower activation energy; it is not used up
+Describe an experiment to measure the rate of reaction between marble chips and acid. :: Measure the mass lost (CO₂ escaping) on a balance every 30 s, or collect gas in a gas syringe; compare chip sizes/concentrations
+Describe the sodium thiosulfate 'disappearing cross' experiment. :: Mix sodium thiosulfate with HCl over a cross; time until the cross disappears (sulfur precipitate); repeat at different temperatures/concentrations
+How do you calculate rate from a graph? :: Gradient of the curve (tangent at a point) = change in amount ÷ time
+How can you show manganese(IV) oxide catalyses the decomposition of hydrogen peroxide? :: Measure the volume of oxygen produced over time with and without MnO₂; mass of MnO₂ is unchanged at the end
+
+# 3c Reversible reactions and equilibria
+What symbol shows a reversible reaction? :: ⇌
+Give an example of a reversible reaction. :: Heating hydrated copper(II) sulfate (blue → white anhydrous) and adding water back; or ammonium chloride ⇌ ammonia + hydrogen chloride
+What is dynamic equilibrium? :: In a closed system, the forward and backward reactions occur at the same rate, so concentrations stay constant
+What happens to the equilibrium if temperature is increased? :: It shifts in the endothermic direction
+What happens to the equilibrium if pressure is increased? :: It shifts towards the side with fewer gas molecules
+What happens to the equilibrium if a catalyst is added? :: No change in position – equilibrium is reached faster
+Write the equation and conditions for the Haber process. :: N₂ + 3H₂ ⇌ 2NH₃ ;; 450 °C, 200 atm, iron catalyst
+Why is a compromise temperature used in the Haber process? :: Lower temperature gives a higher yield (forward reaction is exothermic) but the rate would be too slow
+Write the equation and conditions for the Contact process. :: 2SO₂ + O₂ ⇌ 2SO₃ ;; 450 °C, 1–2 atm, vanadium(V) oxide catalyst
+What are the uses of ammonia and sulfuric acid? :: Ammonia – making fertilisers (ammonium nitrate) and nitric acid ;; Sulfuric acid – fertilisers, detergents, paints
+
+# 4a Introduction to organic chemistry
+What is a hydrocarbon? :: A compound containing only hydrogen and carbon
+What is a homologous series? :: A family of compounds with the same general formula, same functional group, similar chemical properties and a trend in physical properties; each member differs by CH₂
+What are structural isomers? :: Compounds with the same molecular formula but different structural formulae
+What is a functional group? :: The atom or group of atoms that determines the chemical reactions of a compound
+Define saturated and unsaturated. :: Saturated – only single C–C bonds ;; Unsaturated – contains at least one C=C double bond
+Name prefixes for 1–5 carbons. :: Meth- (1), eth- (2), prop- (3), but- (4), pent- (5)
+What is an addition reaction? :: Two molecules join to form one product (e.g. alkene + bromine)
+What is a substitution reaction? :: An atom is replaced by another atom (e.g. alkane + halogen in UV light)
+
+# 4b Crude oil
+What is crude oil? :: A mixture of hydrocarbons (mostly alkanes) formed from ancient marine organisms
+How is crude oil separated? :: Fractional distillation – heated and vapour enters a fractionating column, hot at the bottom and cool at the top; fractions condense at different heights by boiling point
+Name the main fractions of crude oil from top to bottom. :: Refinery gases, gasoline (petrol), kerosene, diesel oil, fuel oil, bitumen
+Give uses of the fractions. :: Refinery gases – bottled gas/heating ;; Gasoline – petrol for cars ;; Kerosene – aircraft fuel ;; Diesel – lorries/trains ;; Fuel oil – ships, power stations ;; Bitumen – roads, roofing
+How do properties change with chain length? :: Longer chains: higher boiling point, more viscous, darker colour, harder to ignite
+What is produced in complete and incomplete combustion of hydrocarbons? :: Complete: CO₂ + H₂O ;; Incomplete: CO and/or C (soot) + H₂O
+Why is carbon monoxide poisonous? :: It binds to haemoglobin, reducing the blood's ability to carry oxygen
+How are nitrogen oxides formed in engines? :: High temperatures cause nitrogen and oxygen from the air to react
+How is sulfur dioxide pollution formed and what does it cause? :: Sulfur impurities in fuels burn to SO₂; it dissolves in rain water to form acid rain
+What is cracking? :: Breaking long-chain alkanes into shorter, more useful alkanes and alkenes using a catalyst (silica/alumina) at 600–700 °C
+Why is cracking needed? :: There is more demand for short-chain fractions (petrol) than supply; alkenes are needed to make polymers
+
+# 4c Alkanes
+What is the general formula of alkanes? :: CₙH₂ₙ₊₂
+How do alkanes react with bromine? :: Substitution in UV light: e.g. CH₄ + Br₂ → CH₃Br + HBr
+
+# 4d Alkenes
+What is the general formula of alkenes? :: CₙH₂ₙ
+What is the functional group of alkenes? :: C=C double bond
+How do you test for an alkene? :: Add bromine water – orange to colourless
+Write the equation for ethene reacting with bromine. :: C₂H₄ + Br₂ → C₂H₄Br₂ (1,2-dibromoethane)
+
+# 4e Alcohols
+What is the functional group of alcohols? :: –OH
+How is ethanol made by fermentation? :: Glucose (sugar) with yeast at about 30 °C, without oxygen: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂
+How is ethanol made from ethene? :: Hydration with steam: C₂H₄ + H₂O → C₂H₅OH ;; 300 °C, 60–70 atm, phosphoric acid catalyst
+Compare fermentation and hydration of ethene. :: Fermentation: renewable, low energy, slow, batch, impure product ;; Hydration: non-renewable (crude oil), fast, continuous, pure product, high energy
+How is ethanol oxidised? :: Combustion to CO₂ + H₂O; or oxidised to ethanoic acid by potassium dichromate (orange → green) or by microbes (wine turns to vinegar)
+How can ethanol be dehydrated? :: Pass vapour over hot aluminium oxide to make ethene and water
+
+# 4f Carboxylic acids
+What is the functional group of carboxylic acids? :: –COOH
+How do carboxylic acids react with metals and carbonates? :: Like weak acids: metal → salt + hydrogen; carbonate → salt + water + CO₂
+What is vinegar? :: An aqueous solution of ethanoic acid
+
+# 4g Esters
+What is the functional group of esters? :: –COO–
+How are esters made? :: Alcohol + carboxylic acid with a conc. sulfuric acid catalyst, heated: e.g. ethanol + ethanoic acid → ethyl ethanoate + water
+What are esters used for? :: Food flavourings and perfumes (sweet fruity smells)
+
+# 4h Synthetic polymers
+What is addition polymerisation? :: Many small unsaturated monomers (alkenes) join together to form a long chain polymer; the C=C opens
+Name the polymers made from ethene, propene and chloroethene. :: Poly(ethene), poly(propene), poly(chloroethene) (PVC)
+What are problems with disposing of addition polymers? :: Non-biodegradable – landfill problems; burning releases toxic gases (e.g. HCl from PVC)
+What is condensation polymerisation? :: Monomers with two functional groups join, releasing a small molecule (often water) for each bond made
+How are polyesters formed? :: A dicarboxylic acid and a diol undergo condensation polymerisation, eliminating water
+Why are some polyesters biodegradable? :: The ester links can be broken down (hydrolysed) by microorganisms

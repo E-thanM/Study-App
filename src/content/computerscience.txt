@@ -1,0 +1,176 @@
+@deck Computer Science
+@board Edexcel International GCSE Computer Science (4CP0)
+
+# 1 Problem solving
+What is an algorithm? :: A precise sequence of steps to solve a problem or complete a task
+What is decomposition? :: Breaking a problem down into smaller, more manageable sub-problems
+What is abstraction? :: Removing unnecessary detail to focus on the important features of a problem
+What are the three basic programming constructs? :: Sequence, selection, iteration
+What do the flowchart symbols mean? :: Oval/terminator – start/end ;; Parallelogram – input/output ;; Rectangle – process ;; Diamond – decision ;; Rectangle with double sides – subprogram
+What is a trace table used for? :: To track the values of variables step by step as an algorithm runs – to find errors or work out output
+Describe a linear search. :: Check each item in turn from the start until the target is found or the end is reached; works on unsorted data
+Describe a binary search. :: On sorted data: compare with the middle item; if not equal, discard the half that can't contain the target; repeat until found or no items left
+Compare linear and binary search. :: Linear – simple, works on unsorted lists, slow for large lists ;; Binary – much faster (halves each time) but list must be sorted
+Describe a bubble sort. :: Compare adjacent pairs and swap if in the wrong order; repeat passes until a pass has no swaps
+Describe a merge sort. :: Split the list into halves repeatedly until each sublist has one item; then merge sublists back together in order
+Compare bubble sort and merge sort. :: Bubble – simple, little memory, slow on large lists ;; Merge – much faster on large lists but uses more memory and is more complex
+What makes one algorithm more efficient than another? :: It uses fewer steps/comparisons (time) or less memory for the same task
+What is a logic error? :: The program runs but gives incorrect output (e.g. wrong operator)
+What is a syntax error? :: Code breaks the rules of the language and won't run/compile (e.g. missing colon)
+What is a runtime error? :: An error that occurs while the program is running, e.g. division by zero, index out of range
+
+# 2 Programming
+Name the main data types. :: Integer, real (float), Boolean, character, string
+What is a variable? :: A named memory location whose value can change during the program
+What is a constant? :: A named value that cannot change while the program runs
+What is a one-dimensional array? :: A data structure holding multiple items of the same type under one name, accessed by index
+What is a two-dimensional array? :: A table of data with rows and columns, accessed with two indices
+What is a record? :: A data structure that stores related items of different data types (fields) together
+What is the difference between local and global variables? :: Local – declared inside a subprogram, only accessible there ;; Global – accessible throughout the program
+Why use subprograms? :: Avoid repeating code, easier to test/debug, easier to read, can be reused, teams can work on separate parts
+What is the difference between a function and a procedure? :: A function returns a value; a procedure does not
+What is a parameter? :: A value passed into a subprogram
+What are the arithmetic operators DIV and MOD? :: DIV – integer division (whole number quotient) ;; MOD – remainder ;; e.g. 17 DIV 5 = 3, 17 MOD 5 = 2
+What are relational operators? :: = (==), ≠ (!=), <, <=, >, >= – compare values, giving True/False
+What are Boolean operators? :: AND, OR, NOT
+What is a count-controlled loop? :: A loop that repeats a set number of times (FOR)
+What is a condition-controlled loop? :: A loop that repeats until/while a condition is met (WHILE, REPEAT…UNTIL)
+What is validation? :: Checking that input data is sensible/reasonable before it is processed
+Name types of validation check. :: Range check, type check, length check, presence check, format check, lookup check
+What is the difference between validation and verification? :: Validation – data is sensible ;; Verification – data has been entered correctly (double entry, proofreading)
+What is normal, boundary and erroneous test data? :: Normal – typical valid data ;; Boundary – at the edges of the valid range ;; Erroneous – invalid data that should be rejected
+Why is it important to test programs? :: To find and fix errors and ensure the program meets requirements and handles unexpected input
+How do you open and write to a text file in Python? :: file = open("data.txt", "w") ;; file.write("text\n") ;; file.close()
+How do you read lines from a text file in Python? :: with open("data.txt", "r") as f: ;; for line in f: ;; print(line.strip())
+What does string slicing s[1:4] return in Python? :: Characters at index 1, 2 and 3
+Name string functions you should know. :: len(), upper(), lower(), slicing, concatenation (+), find/index, isdigit()
+What is the purpose of comments and meaningful identifiers? :: Make code easier to read, maintain and debug
+
+# 3 Data – binary and hexadecimal
+Why do computers use binary? :: Circuits have two states (on/off) – transistors act as switches
+Define bit, nibble, byte, kilobyte. :: Bit – 0 or 1 ;; Nibble – 4 bits ;; Byte – 8 bits ;; Kibibyte (KiB) – 1024 bytes (IGCSE uses binary prefixes: KiB, MiB, GiB, TiB)
+Convert 10110101 to denary. :: 128 + 32 + 16 + 4 + 1 = 181
+Convert 200 to 8-bit binary. :: 11001000
+What is the largest denary number that can be stored in 8 bits (unsigned)? :: 255
+How do you add binary numbers? :: Column by column right to left: 0+0=0, 1+0=1, 1+1=0 carry 1, 1+1+1=1 carry 1
+What is overflow? :: When the result of a calculation is too large to be stored in the number of bits available
+What is two's complement? :: A way of representing negative numbers: the most significant bit has a negative value (−128 in 8 bits)
+How do you convert a negative denary number to two's complement? :: Write the positive binary, flip all the bits, add 1
+What is the range of 8-bit two's complement? :: −128 to +127
+What does a logical shift left by 1 do? :: Moves bits one place left (fills with 0) – multiplies an unsigned number by 2
+What does a logical shift right by 1 do? :: Moves bits one place right – divides by 2 (losing the remainder)
+What is an arithmetic shift right? :: Shifts right but keeps the sign bit (copies the MSB) – preserves the sign of a two's complement number
+Why is hexadecimal used? :: Easier for humans to read/write than binary; each hex digit = 4 bits; fewer errors
+Convert hex 3F to denary. :: 3 × 16 + 15 = 63
+Convert binary 11011010 to hex. :: 1101 = D, 1010 = A → DA
+
+# 3 Data – representation
+What is ASCII? :: A 7-bit character set representing 128 characters (English letters, digits, symbols)
+Why was Unicode developed? :: To represent characters from all languages (and emoji) – uses more bits per character
+How are bitmap images stored? :: As a grid of pixels; each pixel's colour stored as a binary number
+What is colour depth? :: The number of bits used to store each pixel's colour; n bits give 2ⁿ colours
+What is resolution? :: The number of pixels in an image (width × height)
+How do you calculate the file size of an image? :: width × height × colour depth (bits) ;; divide by 8 for bytes
+How is sound stored digitally? :: The analogue wave is sampled at regular intervals and each sample's amplitude stored as a binary number
+What is sample rate? :: The number of samples taken per second (Hz)
+What is bit depth (sound)? :: The number of bits used to store each sample
+How do you calculate the size of a sound file? :: sample rate × bit depth × duration (s) × channels ;; divide by 8 for bytes
+Why compress files? :: Smaller files use less storage and transmit faster over networks
+Compare lossy and lossless compression. :: Lossy – permanently removes data, much smaller files (JPEG, MP3), quality reduced ;; Lossless – no data lost, original restored exactly (PNG, ZIP), less reduction
+Describe run-length encoding (RLE). :: Lossless compression that stores repeated data as a count and value, e.g. AAAAABBB → 5A3B
+What is encryption? :: Scrambling data using an algorithm and key so it can't be understood if intercepted
+How does a Caesar cipher work? :: Each letter is shifted a fixed number of places along the alphabet (the key)
+Why is a Caesar cipher weak? :: Only 25 possible keys – easily cracked by brute force or frequency analysis
+What is the difference between symmetric and asymmetric encryption? :: Symmetric – same key to encrypt and decrypt ;; Asymmetric – public key encrypts, private key decrypts
+
+# 3 Data – databases
+What is a database? :: An organised, persistent store of data, usually in tables of records and fields
+What is a primary key? :: A field that uniquely identifies each record in a table
+What is a foreign key? :: A field in one table that is a primary key in another, linking the tables
+What is a relational database? :: Data stored in multiple linked tables to reduce data redundancy
+What does SQL SELECT … FROM … WHERE … do? :: Retrieves specified fields from a table where records match a condition, e.g. SELECT name FROM Students WHERE age > 15
+
+# 4 Computers – hardware
+Describe the Von Neumann architecture. :: Program instructions and data are stored together in the same memory; the CPU fetches and executes instructions one at a time
+What are the main components of the CPU? :: Control unit (CU), arithmetic logic unit (ALU), registers, clock, cache
+What does the ALU do? :: Carries out arithmetic and logical operations
+What does the control unit do? :: Decodes instructions and sends control signals to coordinate the CPU and other components
+Describe the fetch–decode–execute cycle. :: Fetch – address from PC goes to MAR, instruction loaded from RAM into MDR, PC incremented ;; Decode – CU interprets the instruction ;; Execute – instruction carried out (e.g. by ALU)
+What is the role of the program counter (PC)? :: Holds the address of the next instruction to be fetched
+What are the MAR and MDR? :: Memory Address Register – holds the address being read/written ;; Memory Data Register – holds the data/instruction being transferred
+What are the buses in a computer system? :: Address bus (addresses, one direction), data bus (data, both directions), control bus (control signals)
+What three factors affect CPU performance? :: Clock speed, number of cores, cache size
+Compare RAM and ROM. :: RAM – volatile, read/write, holds running programs and data ;; ROM – non-volatile, read-only, holds boot-up instructions (BIOS)
+What is cache memory? :: Small, very fast memory in/near the CPU storing frequently used instructions and data
+What is virtual memory? :: Using part of secondary storage as extra RAM when RAM is full – slower
+Why is secondary storage needed? :: It is non-volatile, so data and programs are kept when power is off
+Describe magnetic storage. :: Hard disk drive – spinning platters with magnetised regions read by a moving head; cheap, high capacity, but moving parts
+Describe optical storage. :: CD/DVD/Blu-ray – laser reads pits and lands; cheap, portable, low capacity, easily scratched
+Describe solid-state storage. :: Flash memory (SSD, USB) – no moving parts; fast, robust, low power, but more expensive per GB
+What is an embedded system? :: A computer system built into a larger device to perform a dedicated function, e.g. washing machine, car engine management
+What is the difference between input and output devices? :: Input – sends data into the computer (keyboard, sensor) ;; Output – presents data from the computer (monitor, printer, actuator)
+What is a sensor? :: An input device that measures a physical quantity (temperature, light, pressure) for a control system
+
+# 4 Computers – software and languages
+What is an operating system? :: System software that manages hardware and provides a platform for applications
+Name functions of an operating system. :: Process management (multitasking), memory management, file management, peripheral management (drivers), user interface, security (user accounts)
+What is utility software? Give examples. :: Software that maintains the computer ;; Defragmentation, backup, compression, anti-malware, disk clean-up
+Compare high-level and low-level languages. :: High-level – English-like, portable, easier to write, needs translating ;; Low-level (machine code/assembly) – specific to the CPU, fast, direct control of hardware
+What is a compiler? :: Translates the whole high-level program into machine code in one go, creating an executable file; reports all errors at the end
+What is an interpreter? :: Translates and runs a high-level program line by line; stops at the first error; no executable produced
+What is an assembler? :: Translates assembly language into machine code
+Give an advantage of a compiler and of an interpreter. :: Compiler – executable runs fast and code is hidden ;; Interpreter – easier to debug, errors shown immediately
+
+# 4 Computers – logic
+Give the truth table for AND. :: Output 1 only when both inputs are 1
+Give the truth table for OR. :: Output 1 when either or both inputs are 1
+Give the truth table for NOT. :: Output is the opposite of the input
+How many rows are needed in a truth table with 3 inputs? :: 2³ = 8
+What is the output of NOT(A AND B) when A = 1, B = 1? :: 0
+
+# 5 Communication and the Internet
+What is a network? :: Two or more computers connected to share data and resources
+Compare a LAN and a WAN. :: LAN – small geographical area (school, home), own hardware ;; WAN – large area (countries), often uses third-party infrastructure; the Internet is the largest WAN
+What is a PAN? :: Personal area network – devices connected around one person, e.g. Bluetooth
+Describe a bus topology. :: All devices connected to a single cable (backbone) with terminators; cheap but collisions and single point of failure
+Describe a star topology. :: All devices connect to a central switch; reliable (one cable failing doesn't affect others), but depends on the switch
+Describe a mesh topology. :: Each device connected to several others; very reliable (many routes), but expensive
+Describe a ring topology. :: Devices connected in a circle; data travels in one direction; a break can stop the network
+Compare wired and wireless networks. :: Wired – faster, more secure, reliable, but cables ;; Wireless – mobile, easy to set up, but slower, interference, less secure
+What is a protocol? :: A set of rules for how data is transmitted across a network
+What is TCP/IP? :: Protocol stack for the Internet: TCP splits data into packets and ensures they arrive correctly; IP addresses and routes packets
+Name the four layers of the TCP/IP model. :: Application, transport, internet (network), link (data link)
+What do HTTP and HTTPS do? :: Transfer web pages; HTTPS encrypts the data (SSL/TLS)
+What do SMTP, POP3 and IMAP do? :: SMTP – sends email ;; POP3 – downloads email from server (deletes from server) ;; IMAP – accesses email kept on server (synced across devices)
+What does FTP do? :: File Transfer Protocol – transfers files between computers
+What is Ethernet? :: A family of protocols for wired LANs
+What is Wi-Fi? :: A family of protocols for wireless LANs
+What is packet switching? :: Data split into packets (with header: source, destination, sequence number); each sent by the best route; reassembled in order at destination
+What is the difference between the Internet and the World Wide Web? :: Internet – global network of networks (hardware) ;; WWW – collection of web pages accessed via the Internet
+What is an IP address? :: A unique address identifying a device on a network (IPv4 32-bit, IPv6 128-bit)
+What is a MAC address? :: A unique hardware address assigned to a network interface card (48-bit, in hex)
+What is a router? :: Forwards packets between networks using IP addresses
+What is a switch? :: Connects devices on a LAN and sends data only to the intended device using MAC addresses
+What is DNS? :: Domain Name System – translates domain names (URLs) into IP addresses
+How is bandwidth measured? :: Bits per second (bps, Mbps) – the amount of data that can be transmitted per second
+How do you calculate transmission time? :: time = file size (bits) ÷ bandwidth (bits per second)
+
+# 5 Network security
+What is malware? Give examples. :: Malicious software ;; Viruses, worms, Trojans, ransomware, spyware, adware
+What is phishing? :: Fake emails or websites trying to trick users into revealing personal information
+What is social engineering? :: Manipulating people into giving away confidential information (phishing, pretexting, shoulder surfing)
+What is a brute-force attack? :: Trying every possible password combination until the correct one is found
+What is a denial-of-service (DoS) attack? :: Flooding a server with requests so it cannot respond to legitimate users (DDoS uses many computers)
+What is a firewall? :: Hardware or software that monitors and filters incoming and outgoing traffic according to rules
+How can networks be protected? :: Firewalls, anti-malware, strong passwords, two-factor authentication, encryption, user access levels, physical security, regular updates/patches, backups, staff training
+What is SQL injection? :: Entering malicious SQL code into an input box to access or damage a database
+
+# 6 The bigger picture
+Give environmental impacts of technology. :: Energy use (data centres), e-waste with toxic materials, mining rare metals, carbon emissions ;; positives: smart devices save energy, remote working reduces travel
+Give ethical issues with technology. :: Privacy and surveillance, digital divide, job losses from automation, AI bias, misuse of personal data
+What is the digital divide? :: The gap between people who have access to technology and the Internet and those who don't
+What is intellectual property and how is it protected? :: Creations of the mind; protected by copyright, patents, trademarks and licences
+What is the difference between open-source and proprietary software? :: Open-source – source code freely available to view and modify ;; Proprietary – code is hidden, paid licence, can't be modified
+What is artificial intelligence? :: Computer systems performing tasks that normally require human intelligence (learning, decision-making)
+What is machine learning? :: A type of AI where computers improve their performance by learning from data rather than being explicitly programmed
+Give issues with AI. :: Bias in training data, lack of transparency, accountability for decisions, job losses, privacy
