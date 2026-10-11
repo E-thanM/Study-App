@@ -10,11 +10,12 @@ import { escapeHtml } from './util';
  *   # Topic               ## Subtopic
  *   Question :: Answer    (" ;; " = line break, **bold**)
  *   C: Cloze text with {{c1::deletions}}
+ *   German <> English   (vocabulary: makes a card in each direction)
  */
 
 const files = import.meta.glob('../content/*.txt', { query: '?raw', import: 'default' }) as Record<string, () => Promise<string>>;
 
-export interface StarterNote { deckPath: string; type: 'basic' | 'cloze'; front: string; back: string; topic: string }
+export interface StarterNote { deckPath: string; type: 'basic' | 'reversed' | 'cloze'; front: string; back: string; topic: string }
 export interface StarterDeck { key: string; name: string; board: string; notes: StarterNote[]; topics: string[] }
 
 export const STARTER_PRESET_ID = 'preset-gcse-starter';
@@ -45,7 +46,12 @@ export function parseStarter(key: string, text: string): StarterDeck {
       continue;
     }
     const i = line.indexOf(' :: ');
-    if (i > 0) notes.push({ deckPath: path, type: 'basic', front: fmt(line.slice(0, i)), back: fmt(line.slice(i + 4)), topic });
+    if (i > 0) {
+      notes.push({ deckPath: path, type: 'basic', front: fmt(line.slice(0, i)), back: fmt(line.slice(i + 4)), topic });
+      continue;
+    }
+    const j = line.indexOf(' <> ');
+    if (j > 0) notes.push({ deckPath: path, type: 'reversed', front: fmt(line.slice(0, j)), back: fmt(line.slice(j + 4)), topic });
   }
   return { key, name, board, notes, topics };
 }
@@ -56,7 +62,7 @@ export async function loadStarterDecks(): Promise<StarterDeck[]> {
     const key = path.split('/').pop()!.replace('.txt', '');
     out.push(parseStarter(key, await load()));
   }
-  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit'];
+  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german'];
   return out.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
@@ -107,7 +113,7 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
     const r =
       n.type === 'cloze'
         ? buildNote({ noteTypeId: 'nt-cloze', deckId, fields: { Text: n.front, 'Back Extra': '' }, tags, guid })
-        : buildNote({ noteTypeId: 'nt-basic', deckId, fields: { Front: n.front, Back: n.back }, tags, guid });
+        : buildNote({ noteTypeId: n.type === 'reversed' ? 'nt-basic-reversed' : 'nt-basic', deckId, fields: { Front: n.front, Back: n.back }, tags, guid });
     if (!r) continue;
     recs.push(r.note, ...r.cards);
     notes++;

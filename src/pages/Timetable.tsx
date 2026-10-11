@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { FileDrop, Icon, MenuButton, Modal, Progress, Seg, TopBar, toast } from '../components/ui';
-import { parseTimetable, readSpreadsheet, type Cell, type ParsedSession } from '../lib/importers';
+import { guessDelimiter, parseCsv, parseTimetable, readSpreadsheet, type Cell, type ParsedSession } from '../lib/importers';
 import { getSettings } from '../lib/seed';
 import { all, patch, put, remove, useAll } from '../lib/store';
 import { durationMin, isDone, occNote, sessionsOn, setDone } from '../lib/timetable';
@@ -344,6 +344,22 @@ function ImportModal({ onClose, currentTt, onDone, createTt }: { onClose: () => 
     }
   };
 
+  const loadBuiltIn = async () => {
+    setError('');
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}revision-timetable.csv`);
+      if (!res.ok) throw new Error('Could not load the built-in timetable');
+      const text = await res.text();
+      setSheets([{ name: 'GCSE revision timetable', rows: parseCsv(text, guessDelimiter(text)) }]);
+      setSheetIdx(0);
+      setFileName('GCSE revision timetable');
+      setEdits({});
+      setSkip(new Set());
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    }
+  };
+
   const doImport = () => {
     if (!parsed) return;
     let tt = currentTt;
@@ -381,6 +397,8 @@ function ImportModal({ onClose, currentTt, onDone, createTt }: { onClose: () => 
     >
       {!sheets ? (
         <div className="col">
+          <button className="btn primary" onClick={loadBuiltIn}>Use my GCSE timetable (16 h/week, Friday off)</button>
+          <div className="center muted small">or</div>
           <FileDrop accept=".xlsx,.xlsm,.csv,.tsv,.txt" onFile={load} label={<><b>Drop your spreadsheet here</b><div className="small">Excel (.xlsx) or CSV · Google Sheets: File → Download → .xlsx</div></>} />
           {error && <div className="callout warn">{error}</div>}
           <div className="callout small">

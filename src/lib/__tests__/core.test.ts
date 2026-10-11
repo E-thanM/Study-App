@@ -144,3 +144,37 @@ describe('daily limits', async () => {
     expect(buildQueue(parent).new).toHaveLength(2);
   });
 });
+
+describe('bundled content', async () => {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  const root = path.resolve(__dirname, '../../..');
+
+  it('parses the built-in revision timetable', () => {
+    const text = fs.readFileSync(path.join(root, 'public/revision-timetable.csv'), 'utf8');
+    const { sessions, layout } = parseTimetable(parseCsv(text, ','));
+    expect(layout).toBe('list');
+    expect(sessions).toHaveLength(24);
+    const count = (s: string) => sessions.filter((x) => x.subject === s).length;
+    expect([count('English Literature'), count('Biology'), count('History')]).toEqual([4, 4, 4]);
+    expect([count('Physics'), count('Chemistry'), count('Computer Science'), count('German')]).toEqual([2, 2, 2, 3]);
+    expect([count('English Language'), count('Maths'), count('Design & Technology')]).toEqual([1, 1, 1]);
+    expect(sessions.some((x) => x.weekday === 4)).toBe(false); // Friday off
+    const mins = (d: number) => sessions.filter((x) => x.weekday === d).reduce((m, x) => m + (Number(x.end.slice(0, 2)) * 60 + Number(x.end.slice(3)) - Number(x.start.slice(0, 2)) * 60 - Number(x.start.slice(3))), 0);
+    expect([0, 1, 2, 3].map(mins)).toEqual([120, 120, 120, 120]);
+    expect([5, 6].map(mins)).toEqual([240, 240]);
+  });
+
+  it('every starter deck line parses and fronts are unique', () => {
+    const dir = path.join(root, 'src/content');
+    for (const f of fs.readdirSync(dir)) {
+      const text = fs.readFileSync(path.join(dir, f), 'utf8');
+      const deck = parseStarter(f, text);
+      const contentLines = text.split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith('@') && !l.startsWith('#'));
+      expect(deck.notes.length, f).toBe(contentLines.length);
+      const fronts = deck.notes.map((n) => n.front);
+      expect(new Set(fronts).size, `${f} duplicate fronts`).toBe(fronts.length);
+      for (const n of deck.notes) if (n.type === 'cloze') expect(n.front, f).toMatch(/\{\{c\d+::/);
+    }
+  });
+});

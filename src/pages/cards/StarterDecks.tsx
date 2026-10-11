@@ -3,6 +3,11 @@ import { Modal, toast } from '../../components/ui';
 import { ensureStarterPreset, installStarter, loadStarterDecks, type StarterDeck } from '../../lib/starter';
 import { all } from '../../lib/store';
 
+function installed(d: StarterDeck) {
+  const prefix = `starter:${d.key}:`;
+  return all('note').filter((n) => n.guid?.startsWith(prefix)).length;
+}
+
 export function StarterDecksModal({ onClose }: { onClose: () => void }) {
   const [decks, setDecks] = useState<StarterDeck[] | null>(null);
   const [chosen, setChosen] = useState<Set<string>>(new Set());
@@ -12,14 +17,11 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
     void loadStarterDecks().then((d) => {
       setDecks(d);
-      setChosen(new Set(d.map((x) => x.key)));
+      // pre-select only decks that aren't fully installed yet
+      setChosen(new Set(d.filter((x) => installed(x) < x.notes.length).map((x) => x.key)));
     });
   }, []);
 
-  const installed = (d: StarterDeck) => {
-    const prefix = `starter:${d.key}:`;
-    return all('note').filter((n) => n.guid?.startsWith(prefix)).length;
-  };
 
   const install = () => {
     if (!decks) return;
@@ -36,7 +38,7 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
     onClose();
   };
 
-  const total = decks?.filter((d) => chosen.has(d.key)).reduce((s, d) => s + d.notes.length, 0) || 0;
+  const total = decks?.filter((d) => chosen.has(d.key)).reduce((s, d) => s + Math.max(0, d.notes.length - installed(d)), 0) || 0;
   const days = Math.ceil(Math.max(...(decks || []).filter((d) => chosen.has(d.key)).map((d) => d.notes.length), 0) / Math.max(1, perDay));
 
   return (
@@ -44,7 +46,7 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
       title="GCSE exam decks"
       size="wide"
       onClose={onClose}
-      footer={<><button className="btn" onClick={onClose}>Cancel</button><button className="btn primary" disabled={!chosen.size || busy} onClick={install}>Add {total} notes</button></>}
+      footer={<><button className="btn" onClick={onClose}>Cancel</button><button className="btn primary" disabled={!total || busy} onClick={install}>{total ? `Add ${total} notes` : 'Nothing new to add'}</button></>}
     >
       {!decks ? (
         <div className="row"><span className="spinner" /> Loading…</div>
