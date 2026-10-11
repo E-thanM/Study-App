@@ -122,3 +122,25 @@ describe('starter decks', () => {
     expect(d.notes[1].type).toBe('cloze');
   });
 });
+
+describe('daily limits', async () => {
+  const store = await import('../store');
+  const { ensureDeckPath, addNote, buildQueue, answerCard, deckByPath } = await import('../collection');
+  const { ensureSeed } = await import('../seed');
+  it('counts subdeck reviews against the parent limit', () => {
+    ensureSeed();
+    store.put({ ...store.get('preset', 'preset-default')!, newPerDay: 3 });
+    const a = ensureDeckPath('Sci::A');
+    const b = ensureDeckPath('Sci::B');
+    for (let i = 0; i < 5; i++) {
+      addNote({ noteTypeId: 'nt-basic', deckId: a, fields: { Front: `a${i}`, Back: 'x' } });
+      addNote({ noteTypeId: 'nt-basic', deckId: b, fields: { Front: `b${i}`, Back: 'x' } });
+    }
+    const parent = deckByPath('Sci')!.id;
+    expect(buildQueue(parent).new).toHaveLength(3);
+    const first = buildQueue(a).new[0];
+    answerCard(first, 3, 1000);
+    expect(buildQueue(a).new).toHaveLength(2);
+    expect(buildQueue(parent).new).toHaveLength(2);
+  });
+});

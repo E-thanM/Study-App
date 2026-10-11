@@ -296,9 +296,15 @@ export function todayDone(): TodayDone {
 function limitsFor(deck: Deck, done: TodayDone, today: number) {
   const p = getPreset(deck.presetId);
   const ext = deck.extend && deck.extend.day === today ? deck.extend : { newExtra: 0, revExtra: 0 };
+  // like Anki, cards studied in subdecks count towards a parent's limit
+  let newDone = 0, revDone = 0;
+  for (const id of subtreeIds(deck.id)) {
+    newDone += done.newByDeck.get(id) || 0;
+    revDone += done.revByDeck.get(id) || 0;
+  }
   return {
-    newLeft: Math.max(0, p.newPerDay + ext.newExtra - (done.newByDeck.get(deck.id) || 0)),
-    revLeft: Math.max(0, p.reviewsPerDay + ext.revExtra - (done.revByDeck.get(deck.id) || 0)),
+    newLeft: Math.max(0, p.newPerDay + ext.newExtra - newDone),
+    revLeft: Math.max(0, p.reviewsPerDay + ext.revExtra - revDone),
   };
 }
 
