@@ -106,7 +106,7 @@ export function StatsPage() {
       <TopBar crumbs={[{ to: '/cards', label: 'Flashcards' }, { label: 'Stats' }]} />
       <div className="page-head">
         <h1>Statistics</h1>
-        <select value={deckId} onChange={(e) => { setDeckId(e.target.value); setParams(e.target.value ? { deck: e.target.value } : {}); }} style={{ width: 'auto' }}>
+        <select value={deckId} onChange={(e) => { setDeckId(e.target.value); setParams(e.target.value ? { deck: e.target.value } : {}); }} style={{ width: 'auto', maxWidth: '100%' }}>
           <option value="">Whole collection</option>
           {all('deck').map((d) => ({ d, p: deckPath(d) })).sort((a, b) => a.p.localeCompare(b.p)).map(({ d, p }) => <option key={d.id} value={d.id}>{p}</option>)}
         </select>

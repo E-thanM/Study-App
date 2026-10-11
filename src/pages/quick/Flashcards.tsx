@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { speak } from '../../components/CardView';
 import { Icon, Progress, Seg, TopBar, useKey } from '../../components/ui';
@@ -19,6 +19,8 @@ export function FlashcardsMode() {
   const [learning, setLearning] = useState<Set<string>>(new Set());
   const [anim, setAnim] = useState('');
   const [round, setRound] = useState<string[] | null>(null);
+  const touch = useRef<{ x: number; y: number; swiped: boolean } | null>(null);
+  const [drag, setDrag] = useState(0);
 
   const deckIds = useMemo(() => {
     if (!set) return [];
@@ -77,9 +79,29 @@ export function FlashcardsMode() {
         </div>
       ) : cur ? (
         <>
-          <div className="flip-stage">
-            <div className={anim}>
-              <div className={`flipcard ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
+          <div
+            className="flip-stage"
+            onTouchStart={(e) => { touch.current = { x: e.touches[0].clientX, y: e.touches[0].clientY, swiped: false }; }}
+            onTouchMove={(e) => {
+              if (!touch.current) return;
+              const dx = e.touches[0].clientX - touch.current.x;
+              const dy = e.touches[0].clientY - touch.current.y;
+              if (Math.abs(dx) > Math.abs(dy)) setDrag(dx);
+            }}
+            onTouchEnd={() => {
+              if (touch.current && Math.abs(drag) > 70) {
+                touch.current.swiped = true;
+                if (track) mark(drag > 0); else go(drag > 0 ? -1 : 1);
+              }
+              setDrag(0);
+            }}
+          >
+            <div className={anim} style={drag ? { transform: `translateX(${drag}px) rotate(${drag / 30}deg)`, transition: 'none' } : undefined}>
+              <div
+                className={`flipcard ${flipped ? 'flipped' : ''}`}
+                style={track && Math.abs(drag) > 30 ? { boxShadow: `0 0 0 3px ${drag > 0 ? 'var(--good)' : 'var(--warn)'}`, borderRadius: 24 } : undefined}
+                onClick={() => { if (touch.current?.swiped) { touch.current = null; return; } setFlipped(!flipped); }}
+              >
                 <div className="side">
                   <span className="corner">{front === 'term' ? 'Term' : 'Definition'}</span>
                   <span className="star" onClick={(e) => { e.stopPropagation(); toggleStar(set, cur.id); }}>
@@ -110,7 +132,11 @@ export function FlashcardsMode() {
               </>
             )}
           </div>
-          <div className="center muted small mt">{idx + 1} / {deckIds.length} · <kbd>Space</kbd> flip · <kbd>←</kbd><kbd>→</kbd> {track ? 'still learning / know' : 'navigate'} · <kbd>S</kbd> star</div>
+          <div className="center muted small mt">
+            {idx + 1} / {deckIds.length}
+            <span className="hide-touch"> · <kbd>Space</kbd> flip · <kbd>←</kbd><kbd>→</kbd> {track ? 'still learning / know' : 'navigate'} · <kbd>S</kbd> star</span>
+            <span className="show-touch"> · tap to flip · swipe {track ? 'right if you know it, left if not' : 'to move'}</span>
+          </div>
           <div style={{ maxWidth: 760, margin: '14px auto 0' }}><Progress parts={[{ value: idx, color: 'var(--ink)' }, { value: deckIds.length - idx, color: 'transparent' }]} /></div>
         </>
       ) : (

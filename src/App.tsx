@@ -1,5 +1,5 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import { Toasts } from './components/ui';
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { BottomNav, ScrollToTop, Toasts, isFocusRoute } from './components/ui';
 import { Home } from './pages/Home';
 import { TimetablePage } from './pages/Timetable';
 import { CalendarPage } from './pages/Calendar';
@@ -25,7 +25,18 @@ import { ConvertPage } from './pages/quick/Convert';
 export function App() {
   return (
     <HashRouter>
-      <div className="app">
+      <ScrollToTop />
+      <Shell />
+      <BottomNav />
+      <Toasts />
+    </HashRouter>
+  );
+}
+
+function Shell() {
+  const { pathname } = useLocation();
+  return (
+      <div className={`app ${isFocusRoute(pathname) ? 'focus' : 'has-bottomnav'}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/timetable" element={<TimetablePage />} />
@@ -54,7 +65,5 @@ export function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </div>
-      <Toasts />
-    </HashRouter>
   );
 }

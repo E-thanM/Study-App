@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useSyncStatus } from '../lib/sync';
 
 /* ───────── icons (1.6px stroke, 24 grid) ───────── */
 
 const paths: Record<string, ReactNode> = {
+  home: <path d="M4 10.5 12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19v-8.5Z" />,
   timetable: <><rect x="3.5" y="4.5" width="17" height="16" rx="3" /><path d="M3.5 9.5h17M8 3v3M16 3v3M8 13.5h3M8 17h6" /></>,
   cards: <><rect x="6.5" y="3.5" width="13" height="16" rx="2.5" /><path d="M4.5 7v11a3 3 0 0 0 3 3H15" /><path d="M10 9.5h6M10 13h4" /></>,
   calendar: <><rect x="3.5" y="4.5" width="17" height="16" rx="3" /><path d="M3.5 9.5h17M8 3v3M16 3v3" /><circle cx="8.5" cy="14" r="1" /><circle cx="12" cy="14" r="1" /><circle cx="15.5" cy="14" r="1" /><circle cx="8.5" cy="17.5" r="1" /></>,
@@ -58,20 +59,37 @@ export function Icon({ name, size, className }: { name: keyof typeof paths | str
 
 /* ───────── top bar ───────── */
 
+const SECTIONS = [
+  { to: '/', label: 'Home', icon: 'home', end: true },
+  { to: '/timetable', label: 'Timetable', icon: 'timetable' },
+  { to: '/cards', label: 'Flashcards', icon: 'cards' },
+  { to: '/quick', label: 'Quick Learn', icon: 'bolt' },
+  { to: '/calendar', label: 'Calendar', icon: 'calendar' },
+];
+
 export function TopBar({ crumbs, right }: { crumbs?: { to?: string; label: string }[]; right?: ReactNode }) {
   const st = useSyncStatus();
   const color =
     st.state === 'error' ? 'var(--bad)' : st.state === 'syncing' ? 'var(--warn)' : st.state === 'idle' ? 'var(--good)' : 'var(--faint)';
   const title =
     st.state === 'local' ? 'Not syncing – set up Supabase in Settings' : st.state === 'signed-out' ? 'Signed out – sign in to sync' : st.state === 'error' ? `Sync error: ${st.error}` : st.state === 'offline' ? 'Offline – changes saved on this device' : st.state === 'syncing' ? 'Syncing…' : 'Synced';
+  // on phones: a back arrow to the parent page plus the current page title
+  const parent = crumbs ? [...crumbs.slice(0, -1)].reverse().find((c) => c.to)?.to ?? '/' : null;
+  const current = crumbs?.[crumbs.length - 1]?.label;
   return (
     <header className="topbar">
-      <Link to="/" className="brand" aria-label="Home">
+      <Link to="/" className={`brand ${crumbs?.length ? 'hide-sm' : ''}`} aria-label="Home">
         <span className="brand-dot" />
-        <span className="hide-sm">Study</span>
+        <span>Study</span>
       </Link>
+      {parent !== null && (
+        <Link to={parent} className="btn ghost icon show-sm topbar-back" aria-label="Back">
+          <Icon name="back" />
+        </Link>
+      )}
+      {current && <span className="show-sm topbar-title">{current}</span>}
       {crumbs && crumbs.length > 0 && (
-        <nav className="crumbs">
+        <nav className="crumbs hide-sm">
           {crumbs.map((c, i) => (
             <span key={i} className="row" style={{ gap: 6, minWidth: 0 }}>
               <span className="sep">/</span>
@@ -81,6 +99,11 @@ export function TopBar({ crumbs, right }: { crumbs?: { to?: string; label: strin
         </nav>
       )}
       <div className="spacer" />
+      <nav className="topnav">
+        {SECTIONS.slice(1).map((s) => (
+          <NavLink key={s.to} to={s.to} className={({ isActive }) => (isActive ? 'on' : '')}>{s.label}</NavLink>
+        ))}
+      </nav>
       {right}
       <Link to="/settings" className="btn ghost icon" title={title} aria-label="Settings" style={{ position: 'relative' }}>
         <Icon name="settings" />
@@ -88,6 +111,47 @@ export function TopBar({ crumbs, right }: { crumbs?: { to?: string; label: strin
       </Link>
     </header>
   );
+}
+
+/** Routes where the bottom tab bar is hidden so study screens get the full height. */
+export const isFocusRoute = (path: string) =>
+  /^\/cards\/review\//.test(path) || /^\/quick\/[^/]+\/(flashcards|learn|test|match|spell)$/.test(path);
+
+/** Phone-only tab bar for moving between the four sections. */
+export function BottomNav() {
+  const { pathname } = useLocation();
+  if (isFocusRoute(pathname)) return null;
+  return (
+    <nav className="bottomnav" aria-label="Sections">
+      {SECTIONS.map((s) => (
+        <NavLink key={s.to} to={s.to} end={s.end} className={({ isActive }) => (isActive ? 'on' : '')}>
+          <Icon name={s.icon} size={22} />
+          <span>{s.label === 'Quick Learn' ? 'Quick' : s.label}</span>
+        </NavLink>
+      ))}
+    </nav>
+  );
+}
+
+/** Scroll to the top whenever the page changes (otherwise phones keep the old scroll position). */
+export function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
+/** True on phone-sized screens. */
+export function useIsMobile(query = '(max-width: 640px)') {
+  const [m, setM] = useState(() => typeof window !== 'undefined' && window.matchMedia(query).matches);
+  useEffect(() => {
+    const mq = window.matchMedia(query);
+    const on = () => setM(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, [query]);
+  return m;
 }
 
 /* ───────── modal ───────── */
@@ -172,7 +236,11 @@ export function MenuButton({ items, label, className }: { items: (MenuItem | nul
   const toggle = () => {
     const r = ref.current!.getBoundingClientRect();
     const width = 220;
-    setPos({ top: r.bottom + 6 + window.scrollY, left: Math.max(8, Math.min(r.right - width, window.innerWidth - width - 8)) + window.scrollX });
+    // open upwards when there isn't room below (e.g. the last deck on a phone)
+    const height = Math.min(items.filter(Boolean).length * 38 + 12, window.innerHeight - 24);
+    const below = r.bottom + 6 + height < window.innerHeight;
+    const top = below ? r.bottom + 6 : Math.max(12, r.top - 6 - height);
+    setPos({ top: top + window.scrollY, left: Math.max(8, Math.min(r.right - width, window.innerWidth - width - 8)) + window.scrollX });
     setOpen((o) => !o);
   };
   return (
@@ -182,7 +250,7 @@ export function MenuButton({ items, label, className }: { items: (MenuItem | nul
       </button>
       {open &&
         createPortal(
-          <div className="menu" style={{ top: pos.top, left: pos.left, width: 220 }}>
+          <div className="menu" style={{ top: pos.top, left: pos.left, width: 220, maxHeight: 'calc(100dvh - 24px)', overflowY: 'auto' }}>
             {items.filter(Boolean).map((it, i) =>
               it!.divider ? <hr key={i} /> : (
                 <button key={i} className={it!.danger ? 'danger' : ''} onClick={() => { setOpen(false); it!.onClick(); }}>

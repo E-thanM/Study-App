@@ -16,9 +16,9 @@ export function ImportPage() {
       <div className="page-head"><div><h1>Import</h1><div className="sub">Bring in Anki decks, spreadsheets, or Quizlet exports.</div></div></div>
       <div style={{ maxWidth: 860 }}>
         <div className="tabs">
-          <button className={tab === 'apkg' ? 'on' : ''} onClick={() => setTab('apkg')}>Anki deck (.apkg)</button>
-          <button className={tab === 'text' ? 'on' : ''} onClick={() => setTab('text')}>Text / CSV / Excel</button>
-          <button className={tab === 'paste' ? 'on' : ''} onClick={() => setTab('paste')}>Paste (Quizlet format)</button>
+          <button className={tab === 'apkg' ? 'on' : ''} onClick={() => setTab('apkg')}>Anki file</button>
+          <button className={tab === 'text' ? 'on' : ''} onClick={() => setTab('text')}>CSV / Excel</button>
+          <button className={tab === 'paste' ? 'on' : ''} onClick={() => setTab('paste')}>Paste from Quizlet</button>
         </div>
         {tab === 'apkg' && <ApkgImport />}
         {tab === 'text' && <TextImport />}

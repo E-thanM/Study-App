@@ -121,6 +121,7 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
   }
   if (recs.length) put(recs);
   const top = all('deck').find((d) => !d.parentId && d.name === deck.name);
-  if (top) patch('deck', top.id, { description: deck.board, presetId: STARTER_PRESET_ID });
+  // install collapsed so the deck list stays short (tap the arrow to see topics)
+  if (top) patch('deck', top.id, { description: deck.board, presetId: STARTER_PRESET_ID, collapsed: true });
   return { notes, cards, skipped };
 }

@@ -179,7 +179,14 @@ export function Review() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }} onClick={() => !showAnswer && reveal()}>
+        <div
+          style={{ display: 'flex', flexDirection: 'column', flex: 1 }}
+          onClick={(e) => {
+            // tapping the card reveals the answer – but not when tapping the answer box, audio or a hint
+            if ((e.target as HTMLElement).closest('input, button, a, details, summary')) return;
+            if (!showAnswer) reveal();
+          }}
+        >
           <CardView
             note={note}
             noteType={nt}

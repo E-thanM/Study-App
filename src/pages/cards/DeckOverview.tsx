@@ -64,7 +64,7 @@ export function DeckOverview() {
                 <div><div className="muted small">To review</div><div className="n-review" style={{ fontSize: 30 }}>{counts.review}</div></div>
               </div>
               {anyNow ? (
-                <button className="btn primary lg" style={{ minWidth: 200, alignSelf: 'center' }} onClick={() => nav(`/cards/review/${id}`)} autoFocus>Study now</button>
+                <button className="btn primary lg" style={{ minWidth: 200, alignSelf: 'center' }} onClick={() => nav(`/cards/review/${id}`)}>Study now</button>
               ) : (
                 <div className="muted">Learning cards will be ready in {fmtInterval(Math.max(0, Math.min(...all('card').filter((c) => subtreeIds(id).includes(c.deckId) && (c.state === CardState.Learning || c.state === CardState.Relearning)).map((c) => c.due)) - Date.now()))}.</div>
               )}

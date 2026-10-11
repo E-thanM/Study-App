@@ -38,6 +38,8 @@ export function Browse() {
   const [limit, setLimit] = useState(300);
   const [modal, setModal] = useState<null | { kind: 'deck' | 'tags' | 'due' | 'info' | 'notetype' | 'replace' | 'edit'; tagMode?: 'add' | 'remove' }>(null);
   const [sidebar, setSidebar] = useState(false);
+  const touchUI = typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches;
+  const [selectMode, setSelectMode] = useState(false);
 
   useEffect(() => { setParams(applied ? { q: applied } : {}, { replace: true }); }, [applied, setParams]);
 
@@ -79,6 +81,18 @@ export function Browse() {
   const run = (q: string) => { setQuery(q); setApplied(q); setSel(new Set()); setLimit(300); };
 
   const clickRow = (e: React.MouseEvent, c: Card) => {
+    if (touchUI) {
+      // touch screens: tap opens the card; in Select mode taps toggle selection
+      if (selectMode) {
+        const n = new Set(sel);
+        if (n.has(c.id)) n.delete(c.id); else n.add(c.id);
+        setSel(n);
+      } else {
+        setSel(new Set([c.id]));
+        setModal({ kind: 'edit' });
+      }
+      return;
+    }
     if (e.shiftKey && anchor) {
       const ids = results.map((x) => x.id);
       const [a, b] = [ids.indexOf(anchor), ids.indexOf(c.id)].sort((x, y) => x - y);
@@ -136,15 +150,15 @@ export function Browse() {
       <div className="row wrap" style={{ margin: '12px 0 14px' }}>
         <button className="btn icon" onClick={() => setSidebar(!sidebar)} aria-label="Filters"><Icon name="list" /></button>
         <form className="grow row" onSubmit={(e) => { e.preventDefault(); run(query); }}>
-          <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder='Search – e.g.  deck:Biology tag:cells is:due  "cell membrane"  -is:suspended' />
+          <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder='Search cards (e.g. deck:Biology is:due)' />
           <button className="btn primary" type="submit"><Icon name="search" /></button>
         </form>
         <label className="check small"><input type="checkbox" checked={notesMode} onChange={(e) => setNotesMode(e.target.checked)} /> Notes</label>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: sidebar ? '220px minmax(0,1fr)' : 'minmax(0,1fr)', gap: 14 }}>
+      <div className={`browse-grid ${sidebar ? 'with-side' : ''}`}>
         {sidebar && (
-          <aside className="panel" style={{ padding: 8, maxHeight: '75vh', overflow: 'auto', fontSize: 13 }}>
+          <aside className="panel browse-side" onClick={(e) => { if ((e.target as HTMLElement).closest('button') && window.matchMedia('(max-width: 640px)').matches) setSidebar(false); }}>
             {QUICK.map((q) => <button key={q.label} className="btn ghost sm" style={{ width: '100%', justifyContent: 'flex-start' }} onClick={() => run(q.q)}>{q.label}</button>)}
             <div className="section-title" style={{ margin: '12px 8px 4px' }}>Decks</div>
             {decks.map((d) => <button key={d} className="btn ghost sm" style={{ width: '100%', justifyContent: 'flex-start', paddingLeft: 8 + (d.split('::').length - 1) * 12 }} onClick={() => run(`deck:"${d}"`)}>{d.split('::').pop()}</button>)}
@@ -158,7 +172,8 @@ export function Browse() {
           <div className="row between wrap">
             <span className="muted small">{results.length} {notesMode ? 'notes' : 'cards'}{sel.size ? ` · ${sel.size} selected` : ''}</span>
             <div className="row wrap">
-              <button className="btn sm" onClick={() => setSel(sel.size === results.length ? new Set() : new Set(results.map((c) => c.id)))}>{sel.size === results.length && results.length ? 'Select none' : 'Select all'}</button>
+              {touchUI && <button className={`btn sm ${selectMode ? 'primary' : ''}`} onClick={() => { setSelectMode(!selectMode); setSel(new Set()); }}>{selectMode ? 'Done' : 'Select'}</button>}
+              <button className="btn sm" onClick={() => { if (touchUI) setSelectMode(true); setSel(sel.size === results.length ? new Set() : new Set(results.map((c) => c.id))); }}>{sel.size === results.length && results.length ? 'Select none' : 'Select all'}</button>
               {sel.size > 0 && (
                 <MenuButton className="btn sm primary" label={<>Actions ({sel.size})</>} items={[
                   single ? { label: 'Edit note', icon: 'edit', onClick: () => setModal({ kind: 'edit' }) } : null,
@@ -209,6 +224,7 @@ export function Browse() {
                         <div className="row" style={{ gap: 6 }}>
                           {c.flag > 0 && <span className="dot" style={{ background: FLAG_COLORS[c.flag] }} />}
                           <span className="ellipsis">{stripHtml(Object.values(n?.fields || {})[0] || '').slice(0, 140) || <i className="faint">empty</i>}</span>
+                          {!notesMode && nt?.type !== 'cloze' && c.ord > 0 && <span className="pill show-sm" style={{ fontSize: 10 }}>reverse</span>}
                         </div>
                       </td>
                       {!notesMode && <td className="hide-sm nowrap small muted">{nt?.type === 'cloze' ? `Cloze ${c.ord}` : nt?.templates[c.ord]?.name}</td>}

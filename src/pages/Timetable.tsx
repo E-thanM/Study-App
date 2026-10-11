@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { FileDrop, Icon, MenuButton, Modal, Progress, Seg, TopBar, toast } from '../components/ui';
+import { FileDrop, Icon, MenuButton, Modal, Progress, Seg, TopBar, toast, useIsMobile } from '../components/ui';
 import { guessDelimiter, parseCsv, parseTimetable, readSpreadsheet, type Cell, type ParsedSession } from '../lib/importers';
 import { getSettings } from '../lib/seed';
 import { all, patch, put, remove, useAll } from '../lib/store';
@@ -19,6 +19,8 @@ export function TimetablePage() {
   const [editing, setEditing] = useState<{ session: Session | null; date?: string } | null>(null);
   const [importOpen, setImportOpen] = useState(false);
   const [subjectFilter, setSubjectFilter] = useState('');
+  const isMobile = useIsMobile();
+  const [dayIdx, setDayIdx] = useState(() => (getSettings().weekStartsMonday ? (new Date().getDay() + 6) % 7 : new Date().getDay()));
 
   const selectTt = (id: string) => {
     setTtId(id);
@@ -109,12 +111,12 @@ export function TimetablePage() {
         </div>
       ) : (
         <>
-          <div className="row between wrap mb">
+          <div className="row between wrap mb tt-toolbar">
             <div className="row">
               <button className="btn icon" onClick={() => setWeekStart(addDays(weekStart, -7))} aria-label="Previous week"><Icon name="back" /></button>
-              <button className="btn sm" onClick={() => setWeekStart(startOfWeek(new Date(), getSettings().weekStartsMonday))}>This week</button>
+              <button className="btn sm" onClick={() => { const ws = startOfWeek(new Date(), getSettings().weekStartsMonday); setWeekStart(ws); setDayIdx(getSettings().weekStartsMonday ? (new Date().getDay() + 6) % 7 : new Date().getDay()); }}>This week</button>
               <button className="btn icon" onClick={() => setWeekStart(addDays(weekStart, 7))} aria-label="Next week"><Icon name="chevron" /></button>
-              <b style={{ marginLeft: 6 }}>{weekLabel}</b>
+              <b style={{ marginLeft: 'auto' }} className="small nowrap">{weekLabel}</b>
             </div>
             <div className="row">
               {subjects.length > 1 && (
@@ -128,7 +130,9 @@ export function TimetablePage() {
           </div>
           <div className="mb"><Progress parts={[{ value: weekData.done, color: 'var(--good)' }, { value: weekData.total - weekData.done, color: 'transparent' }]} /></div>
 
-          {view === 'week' ? (
+          {view === 'week' && isMobile ? (
+            <MobileDay data={weekData.perDay} dayIdx={dayIdx} setDayIdx={setDayIdx} todayIso={todayIso} onOpen={(s, iso) => setEditing({ session: s, date: iso })} />
+          ) : view === 'week' ? (
             <div className="panel" style={{ overflow: 'hidden' }}>
               <div className="week-grid">
                 {weekData.perDay.map(({ d, iso, list }) => (
@@ -170,17 +174,50 @@ export function TimetablePage() {
   );
 }
 
-function SessionChip({ s, iso, onOpen }: { s: Session; iso: string; onOpen: () => void }) {
+/** Phones: pick a day from the week strip and see that day's sessions full-width. */
+function MobileDay({ data, dayIdx, setDayIdx, todayIso, onOpen }: {
+  data: { d: Date; iso: string; list: Session[] }[];
+  dayIdx: number;
+  setDayIdx: (i: number) => void;
+  todayIso: string;
+  onOpen: (s: Session | null, iso: string) => void;
+}) {
+  const day = data[dayIdx] || data[0];
+  const done = day.list.filter((s) => isDone(s, day.iso)).length;
+  return (
+    <>
+      <div className="day-picker">
+        {data.map(({ d, iso, list }, i) => (
+          <button key={iso} className={`${i === dayIdx ? 'on' : ''} ${iso === todayIso ? 'today' : ''}`} onClick={() => setDayIdx(i)} aria-label={d.toDateString()}>
+            <span className="wd">{d.toLocaleDateString('en-GB', { weekday: 'narrow' })}</span>
+            <span className="d">{d.getDate()}</span>
+            <span className="dots">{list.slice(0, 4).map((s) => <i key={s.id} className={isDone(s, iso) ? 'done' : ''} />)}</span>
+          </button>
+        ))}
+      </div>
+      <div className="row between" style={{ margin: '4px 2px 10px' }}>
+        <b>{day.d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</b>
+        {day.list.length > 0 && <span className="muted small">{done}/{day.list.length} done</span>}
+      </div>
+      <div className="col" style={{ gap: 8 }}>
+        {day.list.length ? day.list.map((s) => <SessionChip key={s.id} s={s} iso={day.iso} big onOpen={() => onOpen(s, day.iso)} />) : <div className="panel pad center muted">Nothing planned – a day off 🎉</div>}
+        <button className="btn" onClick={() => onOpen(null, day.iso)}><Icon name="plus" /> Add session</button>
+      </div>
+    </>
+  );
+}
+
+function SessionChip({ s, iso, onOpen, big }: { s: Session; iso: string; onOpen: () => void; big?: boolean }) {
   const done = isDone(s, iso);
   const note = occNote(s, iso) || s.notes;
   return (
-    <div className={`session ${done ? 'done' : ''}`} style={{ ['--c' as string]: subjectColor(s.subject) }} onClick={onOpen}>
+    <div className={`session ${done ? 'done' : ''} ${big ? 'big' : ''}`} style={{ ['--c' as string]: subjectColor(s.subject) }} onClick={onOpen}>
       <input type="checkbox" checked={done} onClick={(e) => e.stopPropagation()} onChange={(e) => setDone(s, iso, e.target.checked)} aria-label="Completed" />
       <div className="grow">
         <div className="s-time">{s.start}–{s.end}</div>
         <div className="s-title">{s.subject || 'Untitled'}</div>
         {s.topic && <div className="s-topic">{s.topic}</div>}
-        {note && <div className="s-note">📝 {note.length > 40 ? note.slice(0, 40) + '…' : note}</div>}
+        {note && <div className="s-note">📝 {!big && note.length > 40 ? note.slice(0, 40) + '…' : note}</div>}
       </div>
     </div>
   );
@@ -291,7 +328,7 @@ function SessionModal({ timetableId, session, date, subjects, onClose }: { timet
         <div className="row wrap">
           <Seg value={repeat} onChange={setRepeat} options={[{ value: 'once', label: 'One-off' }, { value: 'weekly', label: 'Every week' }]} />
         </div>
-        <div className="form-grid" style={{ gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' }}>
+        <div className="form-grid time-grid">
           {repeat === 'once' ? (
             <label className="field">Date<input type="date" value={s.date || date} onChange={(e) => set({ date: e.target.value })} /></label>
           ) : (

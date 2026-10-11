@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Icon, Seg, TopBar } from '../components/ui';
+import { Icon, Modal, Seg, TopBar, useIsMobile } from '../components/ui';
 import { getSettings } from '../lib/seed';
 import { patch, put, remove, useAll } from '../lib/store';
 import { isDone, sessionsOn } from '../lib/timetable';
@@ -15,6 +15,20 @@ export function CalendarPage() {
   const [year, setYear] = useState(() => new Date().getFullYear());
   const [sel, setSel] = useState(today);
   const mondayFirst = getSettings().weekStartsMonday;
+  const isMobile = useIsMobile();
+  const [month, setMonth] = useState(() => new Date().getMonth());
+  const [sheet, setSheet] = useState(false);
+  const pick = (iso: string) => {
+    setSel(iso);
+    if (isMobile) setSheet(true);
+  };
+  const shiftMonth = (d: number) => {
+    let m = month + d, y = year;
+    if (m < 0) { m = 11; y--; }
+    if (m > 11) { m = 0; y++; }
+    setMonth(m);
+    setYear(y);
+  };
 
   const byDate = useMemo(() => {
     const m = new Map<string, Target[]>();
@@ -49,6 +63,33 @@ export function CalendarPage() {
 
   const wdLabels = mondayFirst ? ['M', 'T', 'W', 'T', 'F', 'S', 'S'] : ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
+  const renderMonth = (m: number, big = false) => {
+    const first = new Date(year, m, 1);
+    const offset = mondayFirst ? (first.getDay() + 6) % 7 : first.getDay();
+    const daysIn = new Date(year, m + 1, 0).getDate();
+    const monthTargets = targets.filter((t) => t.date.startsWith(`${year}-${String(m + 1).padStart(2, '0')}`) && t.type === 'target');
+    return (
+      <div key={m} className={`month ${big ? 'month-big' : ''}`}>
+        <h3>
+          <span>{MONTHS[m]}{big ? ` ${year}` : ''}</span>
+          {monthTargets.length > 0 && <span className="faint tiny" style={{ fontWeight: 500 }}>{monthTargets.filter((t) => t.done).length}/{monthTargets.length} met</span>}
+        </h3>
+        <div className="month-days">
+          {wdLabels.map((w, i) => <div key={i} className="wd">{w}</div>)}
+          {Array.from({ length: offset }, (_, i) => <div key={'e' + i} />)}
+          {Array.from({ length: daysIn }, (_, i) => {
+            const iso = isoDate(new Date(year, m, i + 1));
+            return (
+              <button key={iso} className={`cal-day ${dayClass(iso)}`} onClick={() => pick(iso)} title={(byDate.get(iso) || []).map((t) => t.title).join(', ')}>
+                {i + 1}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <TopBar crumbs={[{ label: 'Revision Calendar' }]} />
@@ -60,7 +101,7 @@ export function CalendarPage() {
             {overdue.length > 0 && <span style={{ color: 'var(--bad)' }}> · {overdue.length} missed</span>}
           </div>
         </div>
-        <div className="row">
+        <div className="row hide-sm">
           <button className="btn icon" onClick={() => setYear(year - 1)} aria-label="Previous year"><Icon name="back" /></button>
           <b style={{ minWidth: 48, textAlign: 'center' }}>{year}</b>
           <button className="btn icon" onClick={() => setYear(year + 1)} aria-label="Next year"><Icon name="chevron" /></button>
@@ -76,38 +117,23 @@ export function CalendarPage() {
             <span><i style={{ background: 'var(--bad-soft)', border: '1px solid var(--bad)' }} /> Missed</span>
             <span><i style={{ background: 'var(--warn)', borderRadius: '50%', width: 6, height: 6 }} /> Exam</span>
           </div>
-          <div className="year-grid">
-            {MONTHS.map((name, m) => {
-              const first = new Date(year, m, 1);
-              const offset = mondayFirst ? (first.getDay() + 6) % 7 : first.getDay();
-              const daysIn = new Date(year, m + 1, 0).getDate();
-              const monthTargets = targets.filter((t) => t.date.startsWith(`${year}-${String(m + 1).padStart(2, '0')}`) && t.type === 'target');
-              return (
-                <div key={m} className="month">
-                  <h3>
-                    <span>{name}</span>
-                    {monthTargets.length > 0 && <span className="faint tiny" style={{ fontWeight: 500 }}>{monthTargets.filter((t) => t.done).length}/{monthTargets.length}</span>}
-                  </h3>
-                  <div className="month-days">
-                    {wdLabels.map((w, i) => <div key={i} className="wd">{w}</div>)}
-                    {Array.from({ length: offset }, (_, i) => <div key={'e' + i} />)}
-                    {Array.from({ length: daysIn }, (_, i) => {
-                      const iso = isoDate(new Date(year, m, i + 1));
-                      return (
-                        <button key={iso} className={`cal-day ${dayClass(iso)}`} onClick={() => setSel(iso)} title={(byDate.get(iso) || []).map((t) => t.title).join(', ')}>
-                          {i + 1}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {isMobile ? (
+            <>
+              <div className="row between mb">
+                <button className="btn icon" onClick={() => shiftMonth(-1)} aria-label="Previous month"><Icon name="back" /></button>
+                {(month !== new Date().getMonth() || year !== new Date().getFullYear()) && <button className="btn sm" onClick={() => { setMonth(new Date().getMonth()); setYear(new Date().getFullYear()); }}>Today</button>}
+                <button className="btn icon" onClick={() => shiftMonth(1)} aria-label="Next month"><Icon name="chevron" /></button>
+              </div>
+              {renderMonth(month, true)}
+              <p className="muted small center" style={{ marginTop: 8 }}>Tap a day to add or tick off targets.</p>
+            </>
+          ) : (
+            <div className="year-grid">{MONTHS.map((_, m) => renderMonth(m))}</div>
+          )}
         </div>
 
         <aside className="sticky-side col" style={{ gap: 16 }}>
-          <DayPanel iso={sel} targets={byDate.get(sel) || []} />
+          {!isMobile && <DayPanel iso={sel} targets={byDate.get(sel) || []} />}
           {overdue.length > 0 && (
             <div className="panel">
               <div className="panel-head"><h3>Missed targets</h3><span className="pill bad">{overdue.length}</span></div>
@@ -124,6 +150,11 @@ export function CalendarPage() {
           </div>
         </aside>
       </div>
+      {isMobile && sheet && (
+        <Modal title={parseIso(sel).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })} onClose={() => setSheet(false)}>
+          <div style={{ margin: '0 -16px' }}><DayPanel iso={sel} targets={byDate.get(sel) || []} bare /></div>
+        </Modal>
+      )}
     </>
   );
 }
@@ -148,7 +179,7 @@ function TargetRow({ t, showDate, onSelect }: { t: Target; showDate?: boolean; o
   );
 }
 
-function DayPanel({ iso, targets }: { iso: string; targets: Target[] }) {
+function DayPanel({ iso, targets, bare }: { iso: string; targets: Target[]; bare?: boolean }) {
   const [title, setTitle] = useState('');
   const [subject, setSubject] = useState('');
   const [type, setType] = useState<Target['type']>('target');
@@ -163,13 +194,15 @@ function DayPanel({ iso, targets }: { iso: string; targets: Target[] }) {
   };
   const d = parseIso(iso);
   return (
-    <div className="panel">
-      <div className="panel-head">
-        <div>
-          <h3>{d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</h3>
-          {iso === isoDate() && <div className="tiny muted">Today</div>}
+    <div className={bare ? '' : 'panel'}>
+      {!bare && (
+        <div className="panel-head">
+          <div>
+            <h3>{d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</h3>
+            {iso === isoDate() && <div className="tiny muted">Today</div>}
+          </div>
         </div>
-      </div>
+      )}
       <div className="list">
         {targets.map((t) =>
           editing === t.id ? (

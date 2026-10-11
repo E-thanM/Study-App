@@ -68,7 +68,7 @@ export function DeckList() {
         </div>
       ) : (
         <div className="panel">
-          <div className="deck-row deck-head" style={{ padding: '10px 14px' }}>
+          <div className="deck-row deck-head">
             <span>Deck</span>
             <span className="num">New</span>
             <span className="num">Learn</span>
@@ -82,7 +82,8 @@ export function DeckList() {
         </div>
       )}
 
-      <p className="muted small mt center">Tip: tap a deck to study. Keyboard: <kbd>Space</kbd> show answer · <kbd>1</kbd>–<kbd>4</kbd> rate · <kbd>E</kbd> edit · <kbd>Z</kbd> undo</p>
+      <p className="muted small mt center hide-touch">Tip: click a deck to study. Keyboard: <kbd>Space</kbd> show answer · <kbd>1</kbd>–<kbd>4</kbd> rate · <kbd>E</kbd> edit · <kbd>Z</kbd> undo</p>
+      <p className="muted small mt center show-touch" style={{ display: undefined }}>Tip: tap a deck to study · tap the arrow to see its topics · ⋯ for options</p>
 
       {starterOpen && <StarterDecksModal onClose={() => setStarterOpen(false)} />}
       {optionsFor && <DeckOptions deckId={optionsFor} onClose={() => setOptionsFor(null)} />}

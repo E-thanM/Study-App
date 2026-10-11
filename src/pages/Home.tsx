@@ -8,7 +8,8 @@ import { useAll, useVersion } from '../lib/store';
 import { isDone, sessionsOn, setDone } from '../lib/timetable';
 import { HOUR, fmtHours, isoDate, parseIso, subjectColor } from '../lib/util';
 
-const DAY_LETTERS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+const DAY_LETTERS_MON = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+const DAY_LETTERS_SUN = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
 export function Home() {
   const v = useVersion('revlog', 'studylog', 'session', 'card', 'deck', 'target', 'set', 'settings');
@@ -46,7 +47,8 @@ export function Home() {
   const greeting = hour < 5 ? 'Late night' : hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const doneToday = data.todaySessions.filter((s) => isDone(s, data.today)).length;
   const maxDay = Math.max(...data.wk.perDay, 1);
-  const todayIdx = (new Date().getDay() + 6) % 7;
+  const todayIdx = settings.weekStartsMonday ? (new Date().getDay() + 6) % 7 : new Date().getDay();
+  const DAY_LETTERS = settings.weekStartsMonday ? DAY_LETTERS_MON : DAY_LETTERS_SUN;
   const goalMs = settings.weeklyGoalHours * HOUR;
   const lastSet = [...sets].sort((a, b) => (b.lastStudied || b.createdAt) - (a.lastStudied || a.createdAt))[0];
 
