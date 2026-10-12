@@ -4,6 +4,7 @@ import { Icon, Progress, TopBar } from '../../components/ui';
 import { all, useAll } from '../../lib/store';
 import type { StudySet } from '../../lib/types';
 import { StarterSetsModal } from './StarterSets';
+import { StarterUpdates } from '../../components/StarterUpdates';
 
 export function SetList() {
   const sets = useAll('set');
@@ -61,6 +62,7 @@ export function SetList() {
           <Link to="/quick/new" className="btn primary"><Icon name="plus" /> New set</Link>
         </div>
       </div>
+      <StarterUpdates kind="sets" />
       {sets.length > 0 && (
         <div className="col mb" style={{ gap: 10 }}>
           <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search sets" style={{ maxWidth: 360 }} />

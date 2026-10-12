@@ -244,6 +244,8 @@ export interface Settings extends BaseRec {
   weekStartsMonday: boolean;
   countTimetableHours: boolean;
   weeklyGoalHours: number;
+  /** content signature of each starter deck/set when the user last added or dismissed updates */
+  starterSig?: Record<string, string>;
 }
 
 export type AnyRec =

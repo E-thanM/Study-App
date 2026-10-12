@@ -9,6 +9,7 @@ import { dayNumber, download, fmtHours, uid } from '../../lib/util';
 import { deckTotals, todayDone } from '../../lib/collection';
 import { DeckOptions } from './DeckOptions';
 import { StarterDecksModal } from './StarterDecks';
+import { StarterUpdates } from '../../components/StarterUpdates';
 
 export function DeckList() {
   const v = useVersion('deck', 'card', 'revlog', 'preset');
@@ -53,6 +54,8 @@ export function DeckList() {
           />
         </div>
       </div>
+
+      <StarterUpdates kind="cards" />
 
       {top.length === 0 ? (
         <div className="panel pad">

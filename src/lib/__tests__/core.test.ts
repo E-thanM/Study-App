@@ -261,3 +261,55 @@ describe('Quick Learn topic sets', async () => {
     expect(installSets(bio)).toMatchObject({ sets: 0, terms: 1, updated: 1 });
   });
 });
+
+describe('starter content updates', async () => {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  const { installStarter, pendingCards, markSeen, installSets, pendingSets } = await import('../starter');
+  const store = await import('../store');
+  const { ensureSeed } = await import('../seed');
+  const { deckByPath } = await import('../collection');
+  const text = fs.readFileSync(path.resolve(__dirname, '../../content/chemistry.txt'), 'utf8');
+  const full = parseStarter('chemistry', text);
+  const subset = { ...full, notes: full.notes.slice(0, 40) };
+
+  it('offers only the missing cards after an update, once', () => {
+    ensureSeed();
+    expect(pendingCards(full)).toBe(0); // never installed -> no banner
+    installStarter(subset);
+    const top = deckByPath('Chemistry')!;
+    expect(top.collapsed).toBe(true);
+    // the user expands the deck and picks their own preset
+    store.patch('deck', top.id, { collapsed: false, presetId: 'preset-default' });
+    // app update: the content has grown, the user hasn't seen the new cards
+    store.put({ ...store.get('settings', 'settings')!, starterSig: {} });
+    expect(pendingCards(full)).toBe(full.notes.length - 40);
+    installStarter(full);
+    expect(pendingCards(full)).toBe(0);
+    // updates must not undo the user's own choices
+    const after = deckByPath('Chemistry')!;
+    expect(after.collapsed).toBe(false);
+    expect(after.presetId).toBe('preset-default');
+  });
+
+  it('does not nag again if cards are deleted, until the content changes', () => {
+    const top = deckByPath('Chemistry')!;
+    const victims = store.all('note').filter((n) => n.guid?.startsWith('starter:chemistry:')).slice(0, 5);
+    store.remove('note', victims.map((n) => n.id));
+    expect(pendingCards(full)).toBe(0); // signature matches -> deleted cards stay deleted
+    const grown = { ...full, notes: [...full.notes, { ...full.notes[0], front: 'A brand new chemistry question?', back: 'Yes' }] };
+    expect(pendingCards(grown)).toBe(6); // 5 deleted + 1 new, offered again because the content changed
+    markSeen('cards', grown);
+    expect(pendingCards(grown)).toBe(0);
+    expect(top).toBeTruthy();
+  });
+
+  it('offers new topic-set terms for subjects whose sets were added', () => {
+    expect(pendingSets(full)).toBe(0);
+    installSets(subset);
+    store.put({ ...store.get('settings', 'settings')!, starterSig: {} });
+    expect(pendingSets(full)).toBeGreaterThan(0);
+    installSets(full);
+    expect(pendingSets(full)).toBe(0);
+  });
+});

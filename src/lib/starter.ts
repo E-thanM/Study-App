@@ -1,7 +1,7 @@
 import { buildNote, ensureDeckPath } from './collection';
 import { all, get, patch, put } from './store';
 import type { StudySet } from './types';
-import { DEFAULT_PRESET } from './seed';
+import { DEFAULT_PRESET, getSettings } from './seed';
 import type { AnyRec, Preset } from './types';
 import { escapeHtml } from './util';
 
@@ -99,11 +99,12 @@ export function ensureStarterPreset(newPerDay: number) {
 /** Install a starter deck. Notes already installed (matched by guid) are skipped. Returns cards added. */
 export function installStarter(deck: StarterDeck): { notes: number; cards: number; skipped: number } {
   const have = new Set(all('note').map((n) => n.guid).filter(Boolean));
+  const firstInstall = !deck.notes.some((n) => have.has(noteGuid(deck, n.front)));
   const deckIds = new Map<string, string>();
   const recs: AnyRec[] = [];
   let notes = 0, cards = 0, skipped = 0;
   for (const n of deck.notes) {
-    const guid = `starter:${deck.key}:${hash(n.front)}`;
+    const guid = noteGuid(deck, n.front);
     if (have.has(guid)) { skipped++; continue; }
     let deckId = deckIds.get(n.deckPath);
     if (!deckId) {
@@ -122,9 +123,52 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
   }
   if (recs.length) put(recs);
   const top = all('deck').find((d) => !d.parentId && d.name === deck.name);
-  // install collapsed so the deck list stays short (tap the arrow to see topics)
-  if (top) patch('deck', top.id, { description: deck.board, presetId: STARTER_PRESET_ID, collapsed: true });
+  // first install only: start collapsed so the deck list stays short, and use the exam preset.
+  // Later updates must not undo the user's own choices.
+  if (top) patch('deck', top.id, firstInstall ? { description: deck.board, presetId: STARTER_PRESET_ID, collapsed: true } : { description: deck.board });
+  markSeen('cards', deck);
   return { notes, cards, skipped };
+}
+
+/* ───────────── updates: tell the user when new starter content exists ───────────── */
+
+const sig = (parts: string[]) => hash(parts.join('\u0001'));
+const cardsSig = (d: StarterDeck) => sig(d.notes.map((n) => n.front));
+const setsSig = (d: StarterDeck) => sig(buildSets(d).flatMap((s) => [s.id, ...s.terms.map((t) => t.id)]));
+const noteGuid = (d: StarterDeck, front: string) => `starter:${d.key}:${hash(front)}`;
+
+/** Remember that the user has seen (added or dismissed) the current content of a starter deck. */
+export function markSeen(kind: 'cards' | 'sets', d: StarterDeck) {
+  const cur = getSettings();
+  const key = `${kind}:${d.key}`;
+  const value = kind === 'cards' ? cardsSig(d) : setsSig(d);
+  if (cur.starterSig?.[key] === value) return;
+  put({ ...cur, starterSig: { ...(cur.starterSig || {}), [key]: value } });
+}
+
+/** How many starter notes are missing from a deck the user already added (0 if never added or already seen). */
+export function pendingCards(d: StarterDeck): number {
+  const prefix = `starter:${d.key}:`;
+  const have = new Set(all('note').filter((n) => n.guid?.startsWith(prefix)).map((n) => n.guid));
+  if (!have.size) return 0;
+  if (getSettings().starterSig?.[`cards:${d.key}`] === cardsSig(d)) return 0;
+  return d.notes.filter((n) => !have.has(noteGuid(d, n.front))).length;
+}
+
+/** How many topic-set terms are missing for a subject whose sets the user already added. */
+export function pendingSets(d: StarterDeck): number {
+  if (!installedSetCount(d)) return 0;
+  if (getSettings().starterSig?.[`sets:${d.key}`] === setsSig(d)) return 0;
+  let missing = 0;
+  for (const s of buildSets(d)) {
+    const cur = get('set', s.id);
+    if (!cur) missing += s.terms.length;
+    else {
+      const have = new Set(cur.terms.map((t) => t.id));
+      missing += s.terms.filter((t) => !have.has(t.id)).length;
+    }
+  }
+  return missing;
 }
 
 
@@ -238,6 +282,7 @@ export function installSets(deck: StarterDeck): { sets: number; terms: number; u
     terms += d.terms.length;
   }
   if (out.length) put(out);
+  markSeen('sets', deck);
   return { sets, terms, updated };
 }
 
