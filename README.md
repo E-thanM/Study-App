@@ -20,6 +20,22 @@ npm test           # unit tests
 npm run build      # production build in dist/
 ```
 
+## Run it on your own computer (localhost)
+
+You don't need to host it anywhere. Install **Node.js** (the LTS version from nodejs.org) once, then:
+
+- **Mac:** double-click `Start Study.command` (first time: right-click → Open).
+- **Windows:** double-click `Start Study.bat`.
+- **Any system:** run `npm run local` in a terminal.
+
+The first run installs and builds (about a minute) and asks for your Supabase URL and publishable key. Press Enter to skip and add them later under Settings → Sync. After that it starts in seconds and opens **http://localhost:5173**. Press Ctrl+C in the window to stop it. It rebuilds automatically after code changes.
+
+Good to know:
+- It only works while that window is open. Your data is saved in the browser at `localhost:5173`, so always use that exact address (not 127.0.0.1 or a different port).
+- Data at `localhost:5173` is separate from any hosted copy. With Supabase sync, sign in with the same account and it carries over.
+- **iPhone on the same Wi-Fi:** the start-up window also prints a Network address like `http://192.168.1.20:5173`. Open that in Safari. It works, but iPhones only allow offline mode and installing to the Home Screen from `https` addresses, so for the iPhone app a hosted copy is better.
+- In Supabase, under Authentication → URL Configuration, add `http://localhost:5173` to **Redirect URLs** if you use email links. Turning off "Confirm email" avoids needing them.
+
 ## Set up sync (Supabase, free)
 
 1. Create a project at [supabase.com](https://supabase.com).
