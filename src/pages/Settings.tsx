@@ -159,9 +159,10 @@ function SyncSection() {
     const kp = keyProblem(key);
     if (!u) return setMsg({ kind: 'error', text: 'Paste your Project URL.' });
     if (kp) return setMsg({ kind: 'error', text: kp });
+    const tidied = u !== url.trim();
     saveConfig({ url: u, anonKey: key });
     setUrl(u);
-    setMsg({ kind: 'ok', text: 'Connection saved – now create an account or sign in above.' });
+    setMsg({ kind: 'ok', text: `Connection saved${tidied ? ` – I tidied the URL to ${u}` : ''}. Now create an account or sign in above.` });
     setShowCfg(false);
     void runTest({ url: u, anonKey: key });
   };

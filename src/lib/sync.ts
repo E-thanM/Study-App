@@ -27,13 +27,25 @@ export interface SupaConfig {
   anonKey: string;
 }
 
-/** Tidy a pasted Project URL: add https://, drop trailing slashes and /rest/v1-style suffixes. */
+/**
+ * Tidy a pasted Project URL down to just the address: https://<ref>.supabase.co
+ * Handles quotes, spaces, a missing https://, trailing slashes, /rest/v1/ (shown on the
+ * Data API page) and dashboard links like https://supabase.com/dashboard/project/<ref>/….
+ */
 export function normaliseUrl(raw: string): string {
-  let u = (raw || '').trim();
+  let u = (raw || '').trim().replace(/^["'`<]+|["'`>]+$/g, '').trim();
   if (!u) return '';
-  if (!/^https?:\/\//i.test(u)) u = 'https://' + u;
-  u = u.replace(/\/+(rest|auth|realtime|storage)\/v1.*$/i, '').replace(/\/+$/, '');
-  return u;
+  if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(u)) u = 'https://' + u;
+  try {
+    const x = new URL(u);
+    if (/(^|\.)supabase\.com$/i.test(x.hostname)) {
+      const ref = /\/project\/([a-z0-9]{15,30})(?:\/|$)/i.exec(x.pathname)?.[1];
+      if (ref) return `https://${ref.toLowerCase()}.supabase.co`;
+    }
+    return x.origin;
+  } catch {
+    return u.replace(/\/+$/, '');
+  }
 }
 
 /** Problems with a key that we can spot before talking to Supabase. */
@@ -118,6 +130,8 @@ export function friendlyAuthError(e: unknown): string {
   if (/already registered|already been registered|user already exists/i.test(msg)) return 'There is already an account with this email – tap Sign in instead.';
   if (/signups? not allowed|signup is disabled/i.test(msg)) return "New accounts are switched off in Supabase. Turn on 'Allow new users to sign up' under Authentication → Sign In / Providers.";
   if (/rate limit|too many/i.test(msg)) return "Too many attempts – wait a minute and try again. (Supabase's free plan only sends a few emails per hour.)";
+  if (/invalid path specified|PGRST125/i.test(msg))
+    return `Supabase says the address is wrong – the Project URL has extra text on the end (the app is using ${getConfig()?.url ?? 'no URL'}). It should be only https://yourproject.supabase.co. Tap Change under "Supabase connection", fix it, and tap Test connection. If it came from Vercel, fix VITE_SUPABASE_URL there and redeploy.`;
   if (/invalid api key|no api key|apikey/i.test(msg)) return 'Supabase rejected the key. Check you copied the publishable key (sb_publishable_…) and tap Test connection.';
   if (/failed to fetch|networkerror|load failed|network request failed/i.test(msg))
     return "Couldn't reach Supabase. Check your internet connection and that the Project URL is right – tap Test connection.";
@@ -162,6 +176,11 @@ export async function testConnection(cfg: SupaConfig): Promise<CheckResult[]> {
       return out;
     }
     if (!r.ok) {
+      const t = await r.text().catch(() => '');
+      if (/invalid path specified|PGRST125/i.test(t)) {
+        out.push({ label: 'Project URL', ok: false, detail: 'The address has extra text on the end. It should be only https://yourproject.supabase.co – nothing after .supabase.co.' });
+        return out;
+      }
       out.push({ label: 'Connection', ok: false, detail: `Supabase answered with an error (${r.status}). Check the Project URL, and that the project isn't paused (free projects pause after a week unused – press Restore in Supabase).` });
       return out;
     }

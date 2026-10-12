@@ -186,6 +186,10 @@ describe('sync connection helpers', async () => {
     expect(normaliseUrl(' https://abcd.supabase.co/ ')).toBe('https://abcd.supabase.co');
     expect(normaliseUrl('https://abcd.supabase.co/rest/v1/')).toBe('https://abcd.supabase.co');
     expect(normaliseUrl('https://abcd.supabase.co/auth/v1/settings')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl('"https://abcd.supabase.co/rest/v1/"')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl('https://abcd.supabase.co/dashboard/anything?x=1#y')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl('https://supabase.com/dashboard/project/abcdefghijklmnopqrst/settings/api')).toBe('https://abcdefghijklmnopqrst.supabase.co');
+    expect(normaliseUrl('http://localhost:54321/rest/v1/')).toBe('http://localhost:54321');
   });
   it('spots wrong keys', () => {
     expect(keyProblem('sb_publishable_abc')).toBeNull();
@@ -200,5 +204,6 @@ describe('sync connection helpers', async () => {
     expect(friendlyAuthError(new Error('Email not confirmed'))).toMatch(/Confirm email/);
     expect(friendlyAuthError(new TypeError('Failed to fetch'))).toMatch(/Couldn't reach Supabase/);
     expect(friendlySyncError('Could not find the function public.push_records(rows) PGRST202')).toMatch(/schema\.sql/);
+    expect(friendlyAuthError(new Error('Invalid path specified in request URL'))).toMatch(/extra text on the end/);
   });
 });
