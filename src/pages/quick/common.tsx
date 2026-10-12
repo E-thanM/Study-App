@@ -96,3 +96,22 @@ export function isVocabLike(terms: Term[]): boolean {
   if (!real.length) return false;
   return real.filter((t) => t.term.length <= 30 && !t.term.includes('\n')).length / real.length >= 0.6;
 }
+
+/** Size class for flashcard text so long answers (quotes, mark schemes) fit without clipping. */
+export function textSize(s: string): 'xs' | 'sm' | 'md' | 'lg' {
+  const n = s.length + (s.split('\n').length - 1) * 30;
+  return n <= 40 ? 'lg' : n <= 120 ? 'md' : n <= 260 ? 'sm' : 'xs';
+}
+
+/** Card text with line breaks kept and leading labels ("Quote:", "Analysis:") in bold. */
+export function FlipText({ text }: { text: string }) {
+  const size = textSize(text);
+  return (
+    <div className={`side-body ${size}`}>
+      {text.split('\n').map((line, i) => {
+        const m = /^([A-Z][A-Za-z ]{1,18}:)(\s.*)$/.exec(line);
+        return <p key={i}>{m ? <><b>{m[1]}</b>{m[2]}</> : line || ' '}</p>;
+      })}
+    </div>
+  );
+}

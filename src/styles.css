@@ -380,7 +380,19 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .flip-stage { perspective: 1600px; width: 100%; max-width: 760px; margin: 0 auto; }
 .flipcard { position: relative; width: 100%; aspect-ratio: 16 / 10; cursor: pointer; transform-style: preserve-3d; transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.3, 1); }
 .flipcard.flipped { transform: rotateX(180deg); }
-.flipcard .side { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; padding: 32px; text-align: center; font-size: clamp(18px, 3.2vw, 30px); overflow: auto; overflow-wrap: anywhere; white-space: pre-wrap; }
+.flipcard .side { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); display: flex; flex-direction: column; padding: 40px 32px 28px; text-align: center; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; overflow-wrap: anywhere; }
+/* hide the face pointing away halfway through the flip – avoids iOS backface bleed and lets the visible face scroll */
+.flipcard .side { transition: visibility 0s 0.2s; }
+.flipcard:not(.flipped) .side.back, .flipcard.flipped .side:not(.back) { visibility: hidden; }
+.flipcard .side-body { margin: auto; width: 100%; max-width: 640px; line-height: 1.35; }
+.flipcard .side-body p { margin: 0; white-space: pre-wrap; }
+.flipcard .side-body p + p { margin-top: 0.45em; }
+.flipcard .side-body b { font-weight: 650; }
+.flipcard .side-body.lg { font-size: clamp(22px, 3.4vw, 32px); }
+.flipcard .side-body.md { font-size: clamp(19px, 2.6vw, 25px); }
+.flipcard .side-body.sm { font-size: clamp(16px, 2vw, 20px); text-align: left; }
+.flipcard .side-body.xs { font-size: clamp(15px, 1.7vw, 18px); text-align: left; line-height: 1.45; }
+.flipcard.preview { aspect-ratio: auto; height: 300px; }
 .flipcard .side.back { transform: rotateX(180deg); }
 .flipcard .side .corner { position: absolute; top: 14px; left: 18px; font-size: 12px; color: var(--faint); }
 .flipcard .side .star { position: absolute; top: 10px; right: 12px; }
@@ -547,8 +559,18 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
   .deck-row .num { font-size: 13px; }
 
   /* flashcards (Quick Learn) – keep the buttons on screen */
-  .flipcard { aspect-ratio: auto; height: min(52dvh, 440px); }
-  .flipcard .side { padding: 22px; font-size: 22px; }
+  .flipcard { aspect-ratio: auto; height: clamp(300px, calc(100dvh - 300px - env(safe-area-inset-bottom)), 560px); }
+  .flipcard.preview { height: 240px; }
+  .flipcard .side { padding: 36px 18px 18px; border-radius: 20px; }
+  .flipcard .side-body.lg { font-size: 24px; }
+  .flipcard .side-body.md { font-size: 19px; }
+  .flipcard .side-body.sm { font-size: 16px; }
+  .flipcard .side-body.xs { font-size: 15px; }
+  .fc-toolbar { flex-wrap: nowrap !important; margin: 4px 0 12px !important; gap: 8px; }
+  .fc-toolbar > .row { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; min-width: 0; gap: 6px; }
+  .fc-toolbar > .row::-webkit-scrollbar { display: none; }
+  .fc-toolbar > .row > * { flex: none; }
+  .fc-toolbar .check { flex: none; font-size: 13px; white-space: nowrap; }
 
   .card-face { padding: 24px 18px; min-height: 220px; }
   .review-wrap { min-height: calc(100dvh - 70px); }
@@ -645,3 +667,6 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .pill-scroll { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .pill-scroll::-webkit-scrollbar { display: none; }
 .pill-scroll .btn { flex: none; }
+@media (max-width: 400px) {
+  .flip-stage + .row .btn.lg { white-space: nowrap; font-size: 13px; padding: 12px 6px; }
+}

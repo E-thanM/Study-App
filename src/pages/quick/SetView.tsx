@@ -5,7 +5,7 @@ import { Icon, MenuButton, Progress, TopBar, toast } from '../../components/ui';
 import { get, put, remove } from '../../lib/store';
 import { deckPath } from '../../lib/collection';
 import { download, uid } from '../../lib/util';
-import { isVocabLike, resetProgress, toggleStar, useProgress, useSet } from './common';
+import { FlipText, isVocabLike, resetProgress, toggleStar, useProgress, useSet } from './common';
 
 export function SetView() {
   const { id = '' } = useParams();
@@ -61,9 +61,9 @@ export function SetView() {
 
       {t && (
         <div className="flip-stage mb" style={{ maxWidth: 720, margin: '0 0 18px' }}>
-          <div className={`flipcard ${flipped ? 'flipped' : ''}`} style={{ aspectRatio: '16 / 8' }} onClick={() => setFlipped(!flipped)}>
-            <div className="side"><span className="corner">Term</span>{t.term}</div>
-            <div className="side back"><span className="corner">Definition</span>{t.definition}</div>
+          <div className={`flipcard preview ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
+            <div className="side"><span className="corner">Term</span><FlipText text={t.term} /></div>
+            <div className="side back"><span className="corner">Definition</span><FlipText text={t.definition} /></div>
           </div>
           <div className="row" style={{ justifyContent: 'center', marginTop: 10 }}>
             <button className="btn icon" onClick={() => { setIdx((idx - 1 + set.terms.length) % set.terms.length); setFlipped(false); }} aria-label="Previous"><Icon name="back" /></button>

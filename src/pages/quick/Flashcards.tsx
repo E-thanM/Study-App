@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { speak } from '../../components/CardView';
 import { Icon, Progress, Seg, TopBar, useKey } from '../../components/ui';
 import { shuffle } from '../../lib/util';
-import { setKnown, toggleStar, useSet, useStudyTimer } from './common';
+import { FlipText, setKnown, toggleStar, useSet, useStudyTimer } from './common';
 
 export function FlashcardsMode() {
   const { id = '' } = useParams();
@@ -57,13 +57,13 @@ export function FlashcardsMode() {
   return (
     <>
       <TopBar crumbs={[{ to: '/quick', label: 'Quick Learn' }, { to: `/quick/${id}`, label: set.title }, { label: 'Flashcards' }]} />
-      <div className="row between wrap" style={{ margin: '12px 0 16px' }}>
+      <div className="row between wrap fc-toolbar" style={{ margin: '12px 0 16px' }}>
         <div className="row wrap">
           <Seg value={front} onChange={setFront} options={[{ value: 'term', label: 'Term first' }, { value: 'definition', label: 'Definition first' }]} />
           <button className={`btn sm ${order ? 'primary' : ''}`} onClick={() => { setOrder(order ? null : shuffle(set.terms.map((t) => t.id))); setIdx(0); }}><Icon name="shuffle" /> Shuffle</button>
           <button className={`btn sm ${starredOnly ? 'primary' : ''}`} onClick={() => { setStarredOnly(!starredOnly); setIdx(0); }} disabled={!set.terms.some((t) => t.starred)}><Icon name="star" /> Starred</button>
         </div>
-        <label className="check small"><input type="checkbox" checked={track} onChange={(e) => setTrack(e.target.checked)} /> Track progress</label>
+        <label className="check small"><input type="checkbox" checked={track} onChange={(e) => setTrack(e.target.checked)} /> <span className="hide-sm">Track progress</span><span className="show-sm">Track</span></label>
       </div>
 
       {finished ? (
@@ -107,9 +107,9 @@ export function FlashcardsMode() {
                   <span className="star" onClick={(e) => { e.stopPropagation(); toggleStar(set, cur.id); }}>
                     <svg viewBox="0 0 24 24" width="20" height="20" fill={cur.starred ? 'var(--warn)' : 'none'} stroke={cur.starred ? 'var(--warn)' : 'var(--faint)'} strokeWidth="1.6"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8L12 3.5Z" /></svg>
                   </span>
-                  {showFront}
+                  <FlipText text={showFront || ''} />
                 </div>
-                <div className="side back"><span className="corner">{front === 'term' ? 'Definition' : 'Term'}</span>{showBack}</div>
+                <div className="side back"><span className="corner">{front === 'term' ? 'Definition' : 'Term'}</span><FlipText text={showBack || ''} /></div>
               </div>
             </div>
           </div>
