@@ -84,3 +84,15 @@ function hashBool(s: string) {
 export function newTerm(term = '', definition = ''): Term {
   return { id: uid(), term, definition };
 }
+
+/** Long, sentence-style answers (e.g. "Describe…" cards) are poor for typing, spelling and tile games. */
+export function isLongText(text: string): boolean {
+  return text.length > 60 || text.split(/\s+/).length > 9 || text.includes('\n');
+}
+
+/** True when most terms are short words/phrases (vocabulary-style), so Spell makes sense. */
+export function isVocabLike(terms: Term[]): boolean {
+  const real = terms.filter((t) => t.term.trim());
+  if (!real.length) return false;
+  return real.filter((t) => t.term.length <= 30 && !t.term.includes('\n')).length / real.length >= 0.6;
+}

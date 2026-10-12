@@ -5,7 +5,7 @@ import { Icon, MenuButton, Progress, TopBar, toast } from '../../components/ui';
 import { get, put, remove } from '../../lib/store';
 import { deckPath } from '../../lib/collection';
 import { download, uid } from '../../lib/util';
-import { resetProgress, toggleStar, useProgress, useSet } from './common';
+import { isVocabLike, resetProgress, toggleStar, useProgress, useSet } from './common';
 
 export function SetView() {
   const { id = '' } = useParams();
@@ -27,7 +27,8 @@ export function SetView() {
     { to: 'learn', icon: 'learn', label: 'Learn' },
     { to: 'test', icon: 'test', label: 'Test' },
     { to: 'match', icon: 'match', label: 'Match' },
-    { to: 'spell', icon: 'speaker', label: 'Spell' },
+    // Spell types out each term, so it only suits vocabulary-style sets
+    ...(isVocabLike(set.terms) ? [{ to: 'spell', icon: 'speaker', label: 'Spell' }] : []),
   ];
 
   return (

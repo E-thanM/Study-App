@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Seg, TopBar } from '../../components/ui';
 import type { Term } from '../../lib/types';
 import { answersMatch, shuffle } from '../../lib/util';
-import { qa, recordAnswer, useSet, useStudyTimer, type AnswerWith } from './common';
+import { isLongText, qa, recordAnswer, useSet, useStudyTimer, type AnswerWith } from './common';
 
 type QType = 'tf' | 'mc' | 'written' | 'match';
 interface TQ { id: string; type: QType; term: Term; prompt: string; answer: string; shown?: string; choices?: string[] }
@@ -38,6 +38,7 @@ export function TestMode() {
       if (type === 'match' && matchItems.length >= 6) type = enabled.find((x) => x !== 'match') || 'mc';
       if (type === 'match' && pool.length < 3) type = 'mc';
       const { prompt, answer, promptIsTerm } = qa(t, answerWith);
+      if (type === 'written' && isLongText(answer) && types.mc) type = 'mc';
       const otherAnswers = shuffle(pool.filter((o) => o.id !== t.id).map((o) => (promptIsTerm ? o.definition : o.term))).filter((x) => x !== answer);
       const q: TQ = { id: t.id, type, term: t, prompt, answer };
       if (type === 'tf') q.shown = Math.random() < 0.5 || !otherAnswers.length ? answer : otherAnswers[0];

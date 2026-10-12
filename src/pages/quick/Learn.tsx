@@ -4,7 +4,7 @@ import { Icon, Modal, Progress, Seg, TopBar, useKey } from '../../components/ui'
 import { get } from '../../lib/store';
 import type { Term } from '../../lib/types';
 import { answersMatch, shuffle } from '../../lib/util';
-import { qa, recordAnswer, resetProgress, useProgress, useSet, useStudyTimer, type AnswerWith } from './common';
+import { isLongText, qa, recordAnswer, resetProgress, useProgress, useSet, useStudyTimer, type AnswerWith } from './common';
 
 const ROUND = 7;
 interface Q { term: Term; kind: 'mc' | 'written'; prompt: string; answer: string; choices?: string[] }
@@ -38,7 +38,8 @@ export function LearnMode() {
   const makeQ = (t: Term): Q => {
     const { prompt, answer, promptIsTerm } = qa(t, answerWith);
     const lv = level(t.id);
-    const kind: Q['kind'] = !useMc ? 'written' : !useWritten ? 'mc' : lv >= 2 ? 'written' : 'mc';
+    // long sentence answers stay multiple choice (typing a paragraph exactly isn't useful)
+    const kind: Q['kind'] = !useMc ? 'written' : !useWritten || isLongText(answer) ? 'mc' : lv >= 2 ? 'written' : 'mc';
     if (kind === 'written') return { term: t, kind, prompt, answer };
     const others = shuffle(pool.filter((o) => o.id !== t.id).map((o) => (promptIsTerm ? o.definition : o.term)))
       .filter((x, i, a) => x && x !== answer && a.indexOf(x) === i)
@@ -77,7 +78,8 @@ export function LearnMode() {
   const submit = (given: string, override?: boolean) => {
     if (!q || result) return;
     const ok = override ?? (q.kind === 'mc' ? given === q.answer : answersMatch(given, q.answer));
-    recordAnswer(id, q.term.id, ok, q.kind === 'written' || !useWritten);
+    // for long answers a second correct multiple-choice answer counts as mastered
+    recordAnswer(id, q.term.id, ok, q.kind === 'written' || !useWritten || (isLongText(q.answer) && level(q.term.id) >= 2));
     setResult(ok ? 'right' : 'wrong');
     if (ok) setTimeout(() => advance(true), 850);
   };

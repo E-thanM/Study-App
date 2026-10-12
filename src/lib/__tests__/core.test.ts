@@ -207,3 +207,57 @@ describe('sync connection helpers', async () => {
     expect(friendlyAuthError(new Error('Invalid path specified in request URL'))).toMatch(/extra text on the end/);
   });
 });
+
+describe('Quick Learn topic sets', async () => {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  const { buildSets, clozeToTerm, htmlToText, installSets } = await import('../starter');
+  const store = await import('../store');
+  const dir = path.resolve(__dirname, '../../content');
+  const decks = fs.readdirSync(dir).map((f) => parseStarter(f.replace('.txt', ''), fs.readFileSync(path.join(dir, f), 'utf8')));
+
+  it('converts html and cloze text', () => {
+    expect(htmlToText('A &amp; B<br><b>C</b> &quot;x&quot;')).toBe('A & B\nC "x"');
+    expect(clozeToTerm('The {{c1::heart}} pumps')).toEqual({ term: 'The […] pumps', definition: 'heart' });
+    expect(clozeToTerm('{{c1::a}} and {{c2::b::hint}}')).toEqual({ term: '[…] and [hint]', definition: '1. a\n2. b' });
+  });
+
+  it('builds sensible sets for every subject', () => {
+    let total = 0;
+    for (const d of decks) {
+      const sets = buildSets(d);
+      total += sets.length;
+      expect(new Set(sets.map((s) => s.id)).size, d.key).toBe(sets.length);
+      expect(new Set(sets.map((s) => s.title)).size, `${d.key} titles`).toBe(sets.length);
+      for (const s of sets) {
+        expect(s.terms.length, `${d.key}: ${s.title}`).toBeGreaterThanOrEqual(6);
+        for (const t of s.terms) {
+          expect(t.term, s.title).not.toMatch(/\{\{|<\/?b>|<br>|&quot;|&amp;/);
+          expect(t.definition, s.title).not.toMatch(/\{\{|<\/?b>|<br>|&quot;|&amp;/);
+          expect(t.term.length).toBeGreaterThan(0);
+          expect(t.definition.length).toBeGreaterThan(0);
+        }
+      }
+      // nothing is lost: every note ends up in exactly one set
+      expect(sets.reduce((n, s) => n + s.terms.length, 0), d.key).toBeLessThanOrEqual(d.notes.length);
+      expect(sets.reduce((n, s) => n + s.terms.length, 0), d.key).toBeGreaterThan(d.notes.length * 0.97);
+    }
+    expect(total).toBeGreaterThan(80);
+  });
+
+  it('installs once and keeps user progress when added again', () => {
+    const bio = decks.find((d) => d.key === 'biology')!;
+    const first = installSets(bio);
+    expect(first.sets).toBe(buildSets(bio).length);
+    const id = buildSets(bio)[0].id;
+    const set = store.get('set', id)!;
+    expect(set.folder).toBe('Biology');
+    store.put({ ...set, title: 'My renamed set' });
+    const again = installSets(bio);
+    expect(again).toEqual({ sets: 0, terms: 0, updated: 0 });
+    expect(store.get('set', id)!.title).toBe('My renamed set');
+    // a term added later in the content is merged into the existing set
+    store.put({ ...store.get('set', id)!, terms: store.get('set', id)!.terms.slice(1) });
+    expect(installSets(bio)).toMatchObject({ sets: 0, terms: 1, updated: 1 });
+  });
+});

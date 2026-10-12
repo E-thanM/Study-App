@@ -642,3 +642,6 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
   .tt-toolbar select { flex: 1; width: auto; min-width: 0; }
 }
 @media (hover: none) { p.show-touch { display: block; } }
+.pill-scroll { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.pill-scroll::-webkit-scrollbar { display: none; }
+.pill-scroll .btn { flex: none; }

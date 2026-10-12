@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { TopBar } from '../../components/ui';
 import { patch } from '../../lib/store';
 import { shuffle } from '../../lib/util';
-import { useSet, useStudyTimer } from './common';
+import { isLongText, useSet, useStudyTimer } from './common';
 
 interface Tile { key: string; termId: string; text: string }
 
@@ -23,7 +23,10 @@ export function MatchMode() {
 
   const begin = () => {
     if (!set) return;
-    const picks = shuffle(set.terms.filter((t) => t.term.trim() && t.definition.trim())).slice(0, 6);
+    const usable = set.terms.filter((t) => t.term.trim() && t.definition.trim());
+    // tiles are small, so prefer short terms and definitions when the set has enough of them
+    const short = usable.filter((t) => t.term.length <= 70 && t.definition.length <= 70 && !isLongText(t.term));
+    const picks = shuffle(short.length >= 6 ? short : usable).slice(0, 6);
     setTiles(shuffle(picks.flatMap((t) => [{ key: t.id + ':t', termId: t.id, text: t.term }, { key: t.id + ':d', termId: t.id, text: t.definition }])));
     setGone(new Set());
     setSel(null);

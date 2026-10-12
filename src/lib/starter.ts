@@ -1,5 +1,6 @@
 import { buildNote, ensureDeckPath } from './collection';
 import { all, get, patch, put } from './store';
+import type { StudySet } from './types';
 import { DEFAULT_PRESET } from './seed';
 import type { AnyRec, Preset } from './types';
 import { escapeHtml } from './util';
@@ -15,7 +16,7 @@ import { escapeHtml } from './util';
 
 const files = import.meta.glob('../content/*.txt', { query: '?raw', import: 'default' }) as Record<string, () => Promise<string>>;
 
-export interface StarterNote { deckPath: string; type: 'basic' | 'reversed' | 'cloze'; front: string; back: string; topic: string }
+export interface StarterNote { deckPath: string; type: 'basic' | 'reversed' | 'cloze'; front: string; back: string; topic: string; sub: string }
 export interface StarterDeck { key: string; name: string; board: string; notes: StarterNote[]; topics: string[] }
 
 export const STARTER_PRESET_ID = 'preset-gcse-starter';
@@ -42,16 +43,16 @@ export function parseStarter(key: string, text: string): StarterDeck {
     if (line.startsWith('# ')) { topic = line.slice(2).trim(); sub = ''; topics.push(topic); continue; }
     const path = [name, topic, sub].filter(Boolean).join('::');
     if (line.startsWith('C: ')) {
-      notes.push({ deckPath: path, type: 'cloze', front: fmt(line.slice(3)), back: '', topic });
+      notes.push({ deckPath: path, type: 'cloze', front: fmt(line.slice(3)), back: '', topic, sub });
       continue;
     }
     const i = line.indexOf(' :: ');
     if (i > 0) {
-      notes.push({ deckPath: path, type: 'basic', front: fmt(line.slice(0, i)), back: fmt(line.slice(i + 4)), topic });
+      notes.push({ deckPath: path, type: 'basic', front: fmt(line.slice(0, i)), back: fmt(line.slice(i + 4)), topic, sub });
       continue;
     }
     const j = line.indexOf(' <> ');
-    if (j > 0) notes.push({ deckPath: path, type: 'reversed', front: fmt(line.slice(0, j)), back: fmt(line.slice(j + 4)), topic });
+    if (j > 0) notes.push({ deckPath: path, type: 'reversed', front: fmt(line.slice(0, j)), back: fmt(line.slice(j + 4)), topic, sub });
   }
   return { key, name, board, notes, topics };
 }
@@ -124,4 +125,123 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
   // install collapsed so the deck list stays short (tap the arrow to see topics)
   if (top) patch('deck', top.id, { description: deck.board, presetId: STARTER_PRESET_ID, collapsed: true });
   return { notes, cards, skipped };
+}
+
+
+/* ───────────── Quick Learn sets (one per topic) ───────────── */
+
+const MIN_SET = 6;
+
+/** Starter-deck HTML (escaped text, <b>, <br>) → plain text for Quick Learn terms. */
+export function htmlToText(html: string): string {
+  return html
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .trim();
+}
+
+const CLOZE_RE = /\{\{c(\d+)::([\s\S]*?)(?:::([\s\S]*?))?\}\}/g;
+
+/** "The {{c1::mitochondria}} makes ATP" → term "The […] makes ATP", definition "mitochondria". */
+export function clozeToTerm(html: string): { term: string; definition: string } {
+  const answers: string[] = [];
+  const text = html.replace(CLOZE_RE, (_m, _n: string, ans: string, hint?: string) => {
+    answers.push(htmlToText(ans));
+    return hint ? `[${htmlToText(hint)}]` : '[…]';
+  });
+  return {
+    term: htmlToText(text),
+    definition: answers.length === 1 ? answers[0] : answers.map((a, i) => `${i + 1}. ${a}`).join('\n'),
+  };
+}
+
+export interface StarterSetData {
+  id: string;
+  subject: string;
+  board: string;
+  title: string;
+  terms: { id: string; term: string; definition: string }[];
+}
+
+/** One set per topic (or topic + subtopic); tiny neighbouring topics are joined so no set is trivially small. */
+export function buildSets(deck: StarterDeck): StarterSetData[] {
+  const groups: { title: string; topics: string[]; notes: StarterNote[] }[] = [];
+  const index = new Map<string, number>();
+  for (const n of deck.notes) {
+    const key = `${n.topic}\u0000${n.sub}`;
+    let i = index.get(key);
+    if (i === undefined) {
+      i = groups.length;
+      index.set(key, i);
+      groups.push({ title: n.sub ? `${n.topic} – ${n.sub}` : n.topic, topics: [key], notes: [] });
+    }
+    groups[i].notes.push(n);
+  }
+  // join runs of tiny groups with the following group (or the previous one at the end)
+  const merged: typeof groups = [];
+  let carry: (typeof groups)[number] | null = null;
+  for (const g of groups) {
+    if (carry) {
+      g.title = `${carry.title} + ${g.title}`;
+      g.topics = [...carry.topics, ...g.topics];
+      g.notes = [...carry.notes, ...g.notes];
+      carry = null;
+    }
+    if (g.notes.length < MIN_SET) carry = g;
+    else merged.push(g);
+  }
+  if (carry) {
+    if (merged.length) {
+      const last = merged[merged.length - 1];
+      last.title = `${last.title} + ${carry.title}`;
+      last.topics = [...last.topics, ...carry.topics];
+      last.notes = [...last.notes, ...carry.notes];
+    } else merged.push(carry);
+  }
+  return merged.map((g) => ({
+    id: `starter-set:${deck.key}:${hash(g.topics[0])}`,
+    subject: deck.name,
+    board: deck.board,
+    title: g.title,
+    terms: g.notes
+      .map((n) => {
+        const t = n.type === 'cloze' ? clozeToTerm(n.front) : { term: htmlToText(n.front), definition: htmlToText(n.back) };
+        return { id: `t-${hash(n.front)}`, ...t };
+      })
+      .filter((t) => t.term && t.definition),
+  }));
+}
+
+/** Install a subject's topic sets. Existing sets keep their progress and edits; only missing terms are added. */
+export function installSets(deck: StarterDeck): { sets: number; terms: number; updated: number } {
+  const out: StudySet[] = [];
+  let sets = 0, terms = 0, updated = 0;
+  for (const d of buildSets(deck)) {
+    const cur = get('set', d.id);
+    if (cur) {
+      const have = new Set(cur.terms.map((t) => t.id));
+      const extra = d.terms.filter((t) => !have.has(t.id));
+      if (extra.length) {
+        out.push({ ...cur, terms: [...cur.terms, ...extra] });
+        terms += extra.length;
+        updated++;
+      }
+      continue;
+    }
+    out.push({ id: d.id, kind: 'set', updatedAt: 0, title: d.title, description: d.board, folder: d.subject, terms: d.terms, createdAt: Date.now() });
+    sets++;
+    terms += d.terms.length;
+  }
+  if (out.length) put(out);
+  return { sets, terms, updated };
+}
+
+export function installedSetCount(deck: StarterDeck): number {
+  const prefix = `starter-set:${deck.key}:`;
+  return all('set').filter((s) => s.id.startsWith(prefix)).length;
 }
