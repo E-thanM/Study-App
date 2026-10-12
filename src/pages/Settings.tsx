@@ -3,7 +3,7 @@ import { Icon, Seg, TopBar, toast } from '../components/ui';
 import { AI_MODELS, getAiSettings, saveAiSettings } from '../lib/ai';
 import { getSettings } from '../lib/seed';
 import { clearAll, exportAll, put, useRec } from '../lib/store';
-import { getConfig, saveConfig, supabase, syncNow, useSyncStatus } from '../lib/sync';
+import { configSource, friendlyAuthError, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
 import type { AnyRec } from '../lib/types';
 import { download, setDayStartHour } from '../lib/util';
 
@@ -71,95 +71,181 @@ export function SettingsPage() {
   );
 }
 
+type Msg = { kind: 'error' | 'ok' | 'info'; text: string } | null;
+
+function Notice({ msg }: { msg: Msg }) {
+  if (!msg) return null;
+  const style = msg.kind === 'error' ? { background: 'var(--bad-soft)', color: 'var(--ink)' } : msg.kind === 'ok' ? { background: 'var(--good-soft)', color: 'var(--ink)' } : undefined;
+  return (
+    <div className="callout small" role={msg.kind === 'error' ? 'alert' : 'status'} style={style}>
+      {msg.kind === 'error' ? '⚠️ ' : msg.kind === 'ok' ? '✓ ' : ''}{msg.text}
+    </div>
+  );
+}
+
 function SyncSection() {
   const st = useSyncStatus();
   const cfg = getConfig();
+  const source = configSource();
   const [url, setUrl] = useState(cfg?.url || '');
   const [key, setKey] = useState(cfg?.anonKey || '');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [busy, setBusy] = useState(false);
+  const [showPw, setShowPw] = useState(false);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [msg, setMsg] = useState<Msg>(() => {
+    const pending = sessionStorage.getItem('study.authMessage');
+    if (pending) { sessionStorage.removeItem('study.authMessage'); return JSON.parse(pending) as Msg; }
+    return null;
+  });
+  const [checks, setChecks] = useState<CheckResult[] | null>(null);
   const [showCfg, setShowCfg] = useState(!cfg);
+  const clientErr = supabaseClientError();
 
-  const auth = async (mode: 'in' | 'up' | 'magic') => {
-    const sb = supabase();
-    if (!sb) return;
-    setBusy(true);
+  const runTest = async (c = cfg) => {
+    if (!c) return;
+    setBusy('test');
+    setChecks(null);
     try {
-      if (mode === 'magic') {
-        const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname } });
-        if (error) throw error;
-        toast('Check your email for a sign-in link');
-      } else if (mode === 'up') {
-        const { data, error } = await sb.auth.signUp({ email, password, options: { emailRedirectTo: location.origin + location.pathname } });
-        if (error) throw error;
-        toast(data.session ? 'Account created – syncing' : 'Account created – confirm your email, then sign in');
-      } else {
-        const { error } = await sb.auth.signInWithPassword({ email, password });
-        if (error) throw error;
-        toast('Signed in – syncing');
-      }
-    } catch (e) {
-      toast(e instanceof Error ? e.message : String(e), undefined, 5000);
+      setChecks(await testConnection(c));
     } finally {
-      setBusy(false);
+      setBusy(null);
     }
   };
+
+  const auth = async (mode: 'in' | 'up' | 'magic') => {
+    setMsg(null);
+    const sb = supabase();
+    if (!sb) {
+      setMsg({ kind: 'error', text: `The connection settings aren't valid${clientErr ? ` (${clientErr})` : ''}. Open "Supabase connection" below, check the Project URL and key, and tap Test connection.` });
+      setShowCfg(true);
+      return;
+    }
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) return setMsg({ kind: 'error', text: 'Enter your email address.' });
+    if (mode !== 'magic' && password.length < 6) return setMsg({ kind: 'error', text: 'Passwords need at least 6 characters.' });
+    setBusy(mode);
+    const redirect = location.origin + location.pathname;
+    try {
+      if (mode === 'magic') {
+        const { error } = await sb.auth.signInWithOtp({ email: email.trim(), options: { emailRedirectTo: redirect } });
+        if (error) throw error;
+        setMsg({ kind: 'info', text: 'Check your email for a sign-in link. Open it on this device. On iPhone it opens in Safari – if you use the Home Screen app, sign in there with a password instead.' });
+      } else if (mode === 'up') {
+        const { data, error } = await sb.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: redirect } });
+        if (error) throw error;
+        if (data.user && Array.isArray(data.user.identities) && data.user.identities.length === 0) {
+          setMsg({ kind: 'error', text: 'There is already an account with this email – tap Sign in instead.' });
+        } else if (data.session) {
+          setMsg({ kind: 'ok', text: 'Account created and signed in – syncing now.' });
+        } else {
+          setMsg({ kind: 'info', text: "Account created. Your Supabase project asks people to confirm their email: open the email from Supabase and tap the link, then come back here and tap Sign in. (To skip this, turn off 'Confirm email' in Supabase → Authentication → Sign In / Providers → Email.)" });
+        }
+      } else {
+        const { error } = await sb.auth.signInWithPassword({ email: email.trim(), password });
+        if (error) throw error;
+        setMsg({ kind: 'ok', text: 'Signed in – syncing now.' });
+      }
+    } catch (e) {
+      const text = friendlyAuthError(e);
+      setMsg({ kind: 'error', text });
+      if (/reach Supabase|rejected the key/.test(text)) void runTest();
+    } finally {
+      setBusy(null);
+    }
+  };
+
+  const saveConnection = () => {
+    const u = normaliseUrl(url);
+    const kp = keyProblem(key);
+    if (!u) return setMsg({ kind: 'error', text: 'Paste your Project URL.' });
+    if (kp) return setMsg({ kind: 'error', text: kp });
+    saveConfig({ url: u, anonKey: key });
+    setUrl(u);
+    setMsg({ kind: 'ok', text: 'Connection saved – now create an account or sign in above.' });
+    setShowCfg(false);
+    void runTest({ url: u, anonKey: key });
+  };
+
+  const stateLabel = st.user
+    ? st.state === 'syncing' ? 'Syncing…' : st.state === 'error' ? 'Sync problem' : st.state === 'offline' ? 'Offline' : 'Synced'
+    : cfg ? 'Not signed in' : 'This device only';
 
   return (
     <section className="panel pad col" style={{ gap: 14 }}>
       <div className="row between">
         <h2>Sync</h2>
-        <span className={`pill ${st.state === 'idle' ? 'good' : st.state === 'error' ? 'bad' : st.state === 'syncing' ? 'warn' : ''}`}>
-          {st.state === 'idle' ? 'Synced' : st.state === 'syncing' ? 'Syncing…' : st.state === 'error' ? 'Error' : st.state === 'offline' ? 'Offline' : st.state === 'signed-out' ? 'Signed out' : 'This device only'}
-        </span>
+        <span className={`pill ${st.user && st.state === 'idle' ? 'good' : st.state === 'error' ? 'bad' : st.state === 'syncing' ? 'warn' : ''}`}>{stateLabel}</span>
       </div>
-      <p className="muted small">Everything is saved on this device instantly and works offline. Connect your free Supabase project to sync between your MacBook, Windows PC and iPhone.</p>
+      <p className="muted small">Everything is saved on this device instantly and works offline. Sign in to sync between your MacBook, Windows PC and iPhone.</p>
 
       {st.user ? (
         <div className="col">
-          <div className="row between wrap">
-            <div>
-              Signed in as <b>{st.user.email}</b>
-              {st.lastSync && <div className="muted small">Last synced {new Date(st.lastSync).toLocaleTimeString()}</div>}
-              {st.error && <div className="small" style={{ color: 'var(--bad)' }}>{st.error}</div>}
-            </div>
-            <div className="row">
-              <button className="btn" onClick={() => void syncNow()}><Icon name="sync" /> Sync now</button>
-              <button className="btn" onClick={() => void supabase()?.auth.signOut()}>Sign out</button>
-            </div>
+          <div>Signed in as <b>{st.user.email}</b></div>
+          {st.lastSync && st.state !== 'error' && <div className="muted small">Last synced {new Date(st.lastSync).toLocaleTimeString()}</div>}
+          {st.state === 'error' && st.error ? <Notice msg={{ kind: 'error', text: st.error }} /> : <Notice msg={msg} />}
+          <div className="row wrap">
+            <button className="btn" onClick={() => void syncNow()} disabled={st.state === 'syncing'}><Icon name="sync" /> Sync now</button>
+            <button className="btn" onClick={() => { setMsg(null); void supabase()?.auth.signOut(); }}>Sign out</button>
           </div>
         </div>
       ) : cfg ? (
-        <div className="col">
-          <div className="form-grid">
-            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
-            <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" onKeyDown={(e) => e.key === 'Enter' && auth('in')} />
-          </div>
+        <form className="col" onSubmit={(e) => { e.preventDefault(); void auth('in'); }}>
+          {clientErr && <Notice msg={{ kind: 'error', text: `The connection settings aren't valid: ${clientErr}. Fix them under "Supabase connection" below.` }} />}
+          <label className="field">Email
+            <input type="email" inputMode="email" autoCapitalize="off" autoCorrect="off" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+          </label>
+          <label className="field">Password
+            <div className="row">
+              <input type={showPw ? 'text' : 'password'} placeholder="At least 6 characters" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" />
+              <button type="button" className="btn sm" onClick={() => setShowPw(!showPw)}>{showPw ? 'Hide' : 'Show'}</button>
+            </div>
+          </label>
+          <Notice msg={msg} />
           <div className="row wrap">
-            <button className="btn primary" disabled={busy || !email || !password} onClick={() => auth('in')}>Sign in</button>
-            <button className="btn" disabled={busy || !email || password.length < 6} onClick={() => auth('up')}>Create account</button>
-            <button className="btn ghost" disabled={busy || !email} onClick={() => auth('magic')}>Email me a link</button>
+            <button type="submit" className="btn primary" disabled={!!busy}>{busy === 'in' ? <span className="spinner" /> : null} Sign in</button>
+            <button type="button" className="btn" disabled={!!busy} onClick={() => void auth('up')}>{busy === 'up' ? <span className="spinner" /> : null} Create account</button>
           </div>
-        </div>
-      ) : null}
+          <p className="muted small">First time? Type your email and a new password, then tap <b>Create account</b>. On your other devices use <b>Sign in</b> with the same details.</p>
+          <button type="button" className="btn ghost sm" style={{ alignSelf: 'flex-start' }} disabled={!!busy} onClick={() => void auth('magic')}>Email me a sign-in link instead</button>
+        </form>
+      ) : (
+        <Notice msg={msg || { kind: 'info', text: 'Step 1: connect your Supabase project below. Step 2: create an account.' }} />
+      )}
 
-      <div>
-        <button className="btn ghost sm" onClick={() => setShowCfg(!showCfg)}>{showCfg ? 'Hide' : 'Show'} Supabase connection</button>
+      <hr style={{ margin: '4px 0' }} />
+      <div className="row between wrap">
+        <div className="small">
+          <b>Supabase connection</b>
+          <div className="muted">{source === 'build' ? 'Built into this site (Vercel settings)' : source === 'device' ? 'Saved on this device' : 'Not set up'}{cfg ? ` · ${cfg.url.replace(/^https:\/\//, '')}` : ''}</div>
+        </div>
+        <div className="row">
+          {cfg && <button className="btn sm" onClick={() => void runTest()} disabled={busy === 'test'}>{busy === 'test' ? <span className="spinner" /> : null} Test connection</button>}
+          <button className="btn ghost sm" onClick={() => setShowCfg(!showCfg)}>{showCfg ? 'Hide' : cfg ? 'Change' : 'Set up'}</button>
+        </div>
       </div>
+      {checks && (
+        <div className="panel" style={{ boxShadow: 'none' }}>
+          {checks.map((c, i) => (
+            <div key={i} className="list-row small" style={{ alignItems: 'flex-start' }}>
+              <span style={{ width: 18 }}>{c.ok === true ? '✅' : c.ok === false ? '❌' : '⚠️'}</span>
+              <div className="grow"><b>{c.label}</b><div className="muted">{c.detail}</div></div>
+            </div>
+          ))}
+        </div>
+      )}
       {showCfg && (
         <div className="col">
           <ol className="small muted" style={{ margin: 0, paddingLeft: 18 }}>
-            <li>Create a free project at supabase.com.</li>
-            <li>In <b>SQL Editor</b>, paste and run <code>supabase/schema.sql</code> from this app's repository.</li>
-            <li>In <b>Project Settings → API</b>, copy the Project URL and the <i>anon public</i> key below.</li>
-            <li>Do the same on each device (or bake them into the build with <code>VITE_SUPABASE_URL</code>/<code>VITE_SUPABASE_ANON_KEY</code>), then sign in with the same account.</li>
+            <li>In Supabase open <b>SQL Editor → New query</b>, paste all of <code>supabase/schema.sql</code> and press <b>Run</b>.</li>
+            <li>Copy the <b>Project URL</b> (Project Settings → Data API) and the <b>publishable key</b> (Project Settings → API Keys, starts with <code>sb_publishable_</code>).</li>
+            <li>Paste them here and tap Save. Never use the secret key.</li>
           </ol>
-          <label className="field">Project URL<input type="url" value={url} onChange={(e) => setUrl(e.target.value.trim())} placeholder="https://abcd1234.supabase.co" /></label>
-          <label className="field">Anon public key<input type="text" value={key} onChange={(e) => setKey(e.target.value.trim())} placeholder="eyJhbGciOi…" /></label>
-          <div className="row">
-            <button className="btn primary" disabled={!url || !key} onClick={() => { saveConfig({ url, anonKey: key }); toast('Saved – now sign in'); setShowCfg(false); }}>Save connection</button>
-            {cfg && <button className="btn danger" onClick={() => { saveConfig(null); setUrl(''); setKey(''); }}>Disconnect</button>}
+          <label className="field">Project URL<input type="url" inputMode="url" autoCapitalize="off" autoCorrect="off" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="https://abcdwxyz.supabase.co" /></label>
+          <label className="field">Publishable key<input type="text" autoCapitalize="off" autoCorrect="off" spellCheck={false} value={key} onChange={(e) => setKey(e.target.value)} placeholder="sb_publishable_…" /></label>
+          <div className="row wrap">
+            <button className="btn primary" disabled={!url || !key} onClick={saveConnection}>Save connection</button>
+            {url && key && <button className="btn" onClick={() => void runTest({ url, anonKey: key })}>Test these</button>}
+            {source === 'device' && <button className="btn danger" onClick={() => { saveConfig(null); const c = getConfig(); setUrl(c?.url || ''); setKey(c?.anonKey || ''); setChecks(null); setMsg({ kind: 'info', text: c ? 'Using the connection built into this site again.' : 'Disconnected.' }); }}>Remove from this device</button>}
           </div>
         </div>
       )}

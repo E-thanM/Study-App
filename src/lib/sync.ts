@@ -27,40 +27,172 @@ export interface SupaConfig {
   anonKey: string;
 }
 
+/** Tidy a pasted Project URL: add https://, drop trailing slashes and /rest/v1-style suffixes. */
+export function normaliseUrl(raw: string): string {
+  let u = (raw || '').trim();
+  if (!u) return '';
+  if (!/^https?:\/\//i.test(u)) u = 'https://' + u;
+  u = u.replace(/\/+(rest|auth|realtime|storage)\/v1.*$/i, '').replace(/\/+$/, '');
+  return u;
+}
+
+/** Problems with a key that we can spot before talking to Supabase. */
+export function keyProblem(key: string): string | null {
+  const k = (key || '').trim();
+  if (!k) return 'Paste your publishable key.';
+  if (k.startsWith('sb_secret_')) return "That's the secret key – never put it in the app. Use the publishable key (starts with sb_publishable_).";
+  if (k.startsWith('eyJ')) {
+    try {
+      const payload = JSON.parse(atob(k.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+      if (payload.role === 'service_role') return "That's the service_role key – never put it in the app. Use the anon (or publishable) key.";
+    } catch {
+      return "That key looks incomplete – copy it again with the copy button.";
+    }
+    return null;
+  }
+  if (k.startsWith('sb_publishable_')) return null;
+  return "That doesn't look like a Supabase key – it should start with sb_publishable_ (or eyJ for the legacy anon key).";
+}
+
 export function getConfig(): SupaConfig | null {
   try {
     const raw = localStorage.getItem(CFG_KEY);
     if (raw) {
       const c = JSON.parse(raw) as SupaConfig;
-      if (c.url && c.anonKey) return c;
+      if (c.url && c.anonKey) return { url: normaliseUrl(c.url), anonKey: c.anonKey.trim() };
     }
   } catch {
     /* ignore */
   }
   const url = import.meta.env.VITE_SUPABASE_URL as string | undefined;
   const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
-  return url && anonKey ? { url, anonKey } : null;
+  return url && anonKey ? { url: normaliseUrl(url), anonKey: anonKey.trim() } : null;
+}
+
+/** Where the current connection came from, for the Settings page. */
+export function configSource(): 'device' | 'build' | null {
+  try {
+    if (localStorage.getItem(CFG_KEY)) return 'device';
+  } catch {
+    /* ignore */
+  }
+  return import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY ? 'build' : null;
 }
 
 export function saveConfig(c: SupaConfig | null) {
-  if (c) localStorage.setItem(CFG_KEY, JSON.stringify(c));
+  if (c) localStorage.setItem(CFG_KEY, JSON.stringify({ url: normaliseUrl(c.url), anonKey: c.anonKey.trim() }));
   else localStorage.removeItem(CFG_KEY);
   client = null;
+  clientError = null;
   void startSync();
 }
 
 let client: SupabaseClient | null = null;
+let clientError: string | null = null;
 export function supabase(): SupabaseClient | null {
   if (client) return client;
   const c = getConfig();
   if (!c) return null;
   try {
-    client = createClient(c.url, c.anonKey, { auth: { persistSession: true, autoRefreshToken: true } });
+    client = createClient(c.url, c.anonKey, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'implicit' },
+    });
+    clientError = null;
   } catch (e) {
     console.error(e);
+    clientError = e instanceof Error ? e.message : String(e);
     client = null;
   }
   return client;
+}
+
+/** Why the Supabase client couldn't be created (e.g. a malformed URL). */
+export const supabaseClientError = () => clientError;
+
+/** Turn Supabase auth errors into plain-English advice. */
+export function friendlyAuthError(e: unknown): string {
+  const msg = e instanceof Error ? e.message : (e as { message?: string })?.message || String(e);
+  if (/invalid login credentials/i.test(msg)) return "Wrong email or password. If you haven't made an account yet, tap Create account.";
+  if (/email not confirmed/i.test(msg))
+    return "Your email isn't confirmed yet. Either tap the link in the confirmation email (then come back and sign in), or in Supabase go to Authentication → Sign In / Providers → Email, turn off 'Confirm email', and sign in again.";
+  if (/already registered|already been registered|user already exists/i.test(msg)) return 'There is already an account with this email – tap Sign in instead.';
+  if (/signups? not allowed|signup is disabled/i.test(msg)) return "New accounts are switched off in Supabase. Turn on 'Allow new users to sign up' under Authentication → Sign In / Providers.";
+  if (/rate limit|too many/i.test(msg)) return "Too many attempts – wait a minute and try again. (Supabase's free plan only sends a few emails per hour.)";
+  if (/invalid api key|no api key|apikey/i.test(msg)) return 'Supabase rejected the key. Check you copied the publishable key (sb_publishable_…) and tap Test connection.';
+  if (/failed to fetch|networkerror|load failed|network request failed/i.test(msg))
+    return "Couldn't reach Supabase. Check your internet connection and that the Project URL is right – tap Test connection.";
+  if (/password/i.test(msg) && /at least|characters|weak/i.test(msg)) return msg;
+  if (/invalid email|unable to validate email/i.test(msg)) return "That email address doesn't look right.";
+  return msg;
+}
+
+/** Turn sync (database) errors into plain-English advice. */
+export function friendlySyncError(msg: string): string {
+  if (/push_records|could not find the function|PGRST202/i.test(msg)) return "Your Supabase database isn't set up yet. In Supabase open SQL Editor → New query, paste all of supabase/schema.sql and press Run.";
+  if (/records.*does not exist|could not find the table|PGRST205|42P01/i.test(msg)) return "The 'records' table is missing. In Supabase open SQL Editor → New query, paste all of supabase/schema.sql and press Run.";
+  if (/permission denied|42501|row-level security/i.test(msg)) return 'Supabase refused permission. Re-run supabase/schema.sql in the SQL Editor, then sign out and in again.';
+  if (/jwt|token.*expired|invalid claim/i.test(msg)) return 'Your sign-in has expired – sign out and sign in again.';
+  if (/failed to fetch|network|load failed/i.test(msg)) return "Couldn't reach Supabase – changes are saved on this device and will sync when you're back online.";
+  return msg;
+}
+
+export interface CheckResult { label: string; ok: boolean | null; detail: string }
+
+/** Step-by-step check of the connection: URL, key, auth settings, database table and function. */
+export async function testConnection(cfg: SupaConfig): Promise<CheckResult[]> {
+  const url = normaliseUrl(cfg.url);
+  const key = cfg.anonKey.trim();
+  const out: CheckResult[] = [];
+  const kp = keyProblem(key);
+  if (!/^https:\/\/[a-z0-9-]+\.supabase\.(co|in)$/i.test(url) && !/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(url)) {
+    out.push({ label: 'Project URL', ok: false, detail: `"${url}" doesn't look like a Supabase URL. It should look like https://abcdwxyz.supabase.co (Project Settings → Data API).` });
+    return out;
+  }
+  out.push({ label: 'Project URL', ok: true, detail: url });
+  if (kp) {
+    out.push({ label: 'Key', ok: false, detail: kp });
+    return out;
+  }
+  const headers = { apikey: key };
+  let settings: { disable_signup?: boolean; mailer_autoconfirm?: boolean; external?: { email?: boolean } } | null = null;
+  try {
+    const r = await fetch(`${url}/auth/v1/settings`, { headers });
+    if (r.status === 401 || r.status === 403) {
+      out.push({ label: 'Key', ok: false, detail: 'Supabase rejected this key. Copy the publishable key again (Project Settings → API Keys).' });
+      return out;
+    }
+    if (!r.ok) {
+      out.push({ label: 'Connection', ok: false, detail: `Supabase answered with an error (${r.status}). Check the Project URL, and that the project isn't paused (free projects pause after a week unused – press Restore in Supabase).` });
+      return out;
+    }
+    settings = await r.json();
+    out.push({ label: 'Key', ok: true, detail: 'Accepted' });
+  } catch {
+    out.push({ label: 'Connection', ok: false, detail: "Couldn't reach that URL. Check it's typed correctly, that you're online, and that the project isn't paused in Supabase." });
+    return out;
+  }
+  if (settings?.external?.email === false) out.push({ label: 'Email sign-in', ok: false, detail: 'Email sign-in is turned off. Turn on Email under Authentication → Sign In / Providers.' });
+  else if (settings?.disable_signup) out.push({ label: 'New accounts', ok: false, detail: "Sign-ups are disabled – turn on 'Allow new users to sign up' in Authentication → Sign In / Providers (or sign in with an existing account)." });
+  else out.push({ label: 'Email sign-in', ok: true, detail: 'Enabled' });
+  out.push(
+    settings?.mailer_autoconfirm
+      ? { label: 'Email confirmation', ok: true, detail: 'Off – you can sign in straight after creating an account' }
+      : { label: 'Email confirmation', ok: null, detail: "On – after Create account you must tap the link in the email before you can sign in. Easier: turn off 'Confirm email' in Authentication → Sign In / Providers → Email." },
+  );
+  try {
+    const r = await fetch(`${url}/rest/v1/records?select=id&limit=1`, { headers });
+    const body = await r.text();
+    if (r.ok) out.push({ label: 'Database table', ok: true, detail: 'Found' });
+    else if (/PGRST205|42P01|does not exist|could not find/i.test(body)) out.push({ label: 'Database table', ok: false, detail: 'Missing – open SQL Editor in Supabase, paste all of supabase/schema.sql and press Run.' });
+    else out.push({ label: 'Database table', ok: null, detail: `Couldn't check (${r.status}).` });
+    const f = await fetch(`${url}/rest/v1/rpc/push_records`, { method: 'POST', headers: { ...headers, 'Content-Type': 'application/json' }, body: JSON.stringify({ rows: [] }) });
+    const fb = await f.text();
+    if (f.status === 404 || /PGRST202|could not find the function/i.test(fb)) out.push({ label: 'Sync function', ok: false, detail: 'Missing – re-run all of supabase/schema.sql in the SQL Editor.' });
+    else out.push({ label: 'Sync function', ok: true, detail: 'Found' });
+  } catch {
+    out.push({ label: 'Database', ok: null, detail: "Couldn't check the database." });
+  }
+  return out;
 }
 
 /* ───────── status for the UI ───────── */
@@ -168,9 +300,10 @@ export async function syncNow(): Promise<void> {
     } while (again);
     setStatus({ state: 'idle', lastSync: Date.now() });
   } catch (e: unknown) {
-    const msg = e instanceof Error ? e.message : (e as { message?: string })?.message || String(e);
+    const msg = e instanceof Error ? e.message : (e as { message?: string; code?: string })?.message || String(e);
+    const code = (e as { code?: string })?.code || '';
     console.error('sync failed', e);
-    setStatus({ state: 'error', error: msg });
+    setStatus({ state: 'error', error: friendlySyncError(`${msg} ${code}`.trim()) });
   } finally {
     running = false;
   }
@@ -215,16 +348,25 @@ export async function startSync() {
   const sb = supabase();
   if (!sb) {
     onSignedOut();
-    setStatus({ configured: false, state: 'local' });
+    setStatus({ configured: !!getConfig(), state: getConfig() ? 'error' : 'local', error: clientError ? `Connection settings are invalid: ${clientError}` : undefined });
     return;
   }
   setStatus({ configured: true });
-  const { data } = await sb.auth.getSession();
-  if (data.session?.user) await onSignedIn(sb, data.session.user);
-  else onSignedOut();
+  try {
+    const { data } = await sb.auth.getSession();
+    if (data.session?.user) await onSignedIn(sb, data.session.user);
+    else onSignedOut();
+  } catch (e) {
+    console.error(e);
+    onSignedOut();
+  }
   const sub = sb.auth.onAuthStateChange((event, session) => {
-    if (event === 'SIGNED_IN' && session?.user && session.user.id !== status.user?.id) void onSignedIn(sb, session.user);
-    if (event === 'SIGNED_OUT') onSignedOut();
+    // Supabase warns against calling its API inside this callback (it can deadlock), so defer.
+    if ((event === 'SIGNED_IN' || event === 'INITIAL_SESSION' || event === 'TOKEN_REFRESHED') && session?.user && session.user.id !== status.user?.id) {
+      const u = session.user;
+      setTimeout(() => void onSignedIn(sb, u), 0);
+    }
+    if (event === 'SIGNED_OUT') setTimeout(onSignedOut, 0);
   });
   authSub = sub.data.subscription;
 }

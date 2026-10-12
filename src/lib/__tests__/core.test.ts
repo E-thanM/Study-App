@@ -178,3 +178,27 @@ describe('bundled content', async () => {
     }
   });
 });
+
+describe('sync connection helpers', async () => {
+  const { normaliseUrl, keyProblem, friendlyAuthError, friendlySyncError } = await import('../sync');
+  it('normalises pasted project URLs', () => {
+    expect(normaliseUrl('abcd.supabase.co')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl(' https://abcd.supabase.co/ ')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl('https://abcd.supabase.co/rest/v1/')).toBe('https://abcd.supabase.co');
+    expect(normaliseUrl('https://abcd.supabase.co/auth/v1/settings')).toBe('https://abcd.supabase.co');
+  });
+  it('spots wrong keys', () => {
+    expect(keyProblem('sb_publishable_abc')).toBeNull();
+    expect(keyProblem('sb_secret_abc')).toMatch(/secret key/);
+    const jwt = (role: string) => `x.${btoa(JSON.stringify({ role })).replace(/=+$/, '')}.y`;
+    expect(keyProblem('eyJ' + jwt('anon').slice(1))).toBeNull();
+    expect(keyProblem('eyJ' + jwt('service_role').slice(1))).toMatch(/service_role/);
+    expect(keyProblem('hello')).toMatch(/doesn't look like/);
+  });
+  it('explains common errors', () => {
+    expect(friendlyAuthError(new Error('Invalid login credentials'))).toMatch(/Wrong email or password/);
+    expect(friendlyAuthError(new Error('Email not confirmed'))).toMatch(/Confirm email/);
+    expect(friendlyAuthError(new TypeError('Failed to fetch'))).toMatch(/Couldn't reach Supabase/);
+    expect(friendlySyncError('Could not find the function public.push_records(rows) PGRST202')).toMatch(/schema\.sql/);
+  });
+});
