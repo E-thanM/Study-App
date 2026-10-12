@@ -150,6 +150,134 @@ Write the transformer equation. :: Vp ÷ Vs = Np ÷ Ns
 Write the power equation for a 100% efficient transformer. :: Vp × Ip = Vs × Is
 Why is electricity transmitted at high voltage? :: Step-up transformers increase voltage and reduce current, so less energy is lost as heat in the cables
 
+# 6 Electromagnetic induction in depth
+## Induction basics
+C: A voltage is induced in a conductor when it {{c1::cuts}} magnetic field lines, or when the magnetic field through a coil {{c2::changes}}.
+What are the two ways to induce a voltage in a coil? :: **1.** Move a magnet towards or away from the coil (or move the coil through a magnetic field) ;; **2.** Keep everything still but change the magnetic field through the coil, e.g. switch an electromagnet on or off, or vary its current
+A bar magnet is held still inside a coil connected to a sensitive voltmeter. What does the meter show and why? :: Zero – there is no relative movement (and no changing field), so no voltage is induced
+What happens to the meter when a bar magnet is pushed into a coil? :: The needle deflects briefly in one direction – a voltage is induced only while the magnet is moving
+What happens to the meter when the magnet is pulled out of the coil again? :: The needle deflects in the opposite direction
+What happens to the meter reading if the magnet is pushed in and then stops moving? :: It returns to zero straight away – the voltage lasts only while the magnetic field is changing
+Why does a faster-moving magnet induce a larger voltage? :: The coil's wire cuts the magnetic field lines at a faster rate
+List the ways to increase the size of an induced voltage. :: Move the magnet (or coil) faster ;; Use a stronger magnet ;; Use more turns of wire on the coil ;; Use a coil with a larger area ;; Add a soft iron core to concentrate the field
+Why does using more turns of wire increase the induced voltage? :: A voltage is induced in every turn and the voltages add together, because the turns are connected in series
+Why does a soft iron core increase the induced voltage? :: The iron concentrates the magnetic field lines through the coil, so the field changes more strongly
+How can you reverse the direction of the induced voltage? :: Reverse the direction of movement (push in instead of pull out), or swap the poles of the magnet ;; Doing both at once leaves it unchanged
+What kind of voltage is induced if a magnet is moved in and out of a coil repeatedly? :: An alternating voltage (AC) – it changes direction every time the movement reverses
+A coil that is not part of a complete circuit has a magnet pushed into it. Is a voltage induced? Does a current flow? :: A voltage is still induced across its ends, but no current flows because the circuit is not complete
+How can a voltage be induced in a single straight wire? :: Move the wire across a magnetic field (e.g. between the poles of a magnet) so that it cuts the field lines, with its ends connected to a sensitive meter
+In which direction should a wire be moved through a magnetic field to induce the largest voltage? :: At right angles to the field lines. Moving it parallel to the field lines cuts none, so induces no voltage
+Describe an investigation into the factors affecting induced voltage. :: Connect a coil to a voltmeter or data logger ;; Push a bar magnet into the coil at a controlled speed and record the maximum reading ;; Change only one variable (speed, magnet strength or number of turns), keep the others the same ;; Repeat and take an average
+Compare the motor effect and electromagnetic induction. :: **Motor effect:** current + magnetic field → force and movement (electrical → kinetic) ;; **Induction:** movement + magnetic field → voltage and current (kinetic → electrical)
+Name some uses of electromagnetic induction. :: Generators in power stations, wind turbines and bicycle dynamos ;; Transformers ;; Moving-coil microphones ;; Wireless phone chargers and induction hobs
+How does a moving-coil microphone use electromagnetic induction? :: Sound waves make a diaphragm vibrate, moving a coil attached to it (or a magnet) relative to a magnet, which induces a small alternating voltage with the same pattern as the sound
+Why is induced voltage described as a form of 'generator effect'? :: Because moving a conductor in a magnetic field generates electricity from kinetic energy – the opposite energy transfer to the motor effect
+## Lenz's law and energy
+State Lenz's law. :: The direction of an induced voltage (and current) is always such that it **opposes the change** that produces it
+C: By Lenz's law, an induced current produces a magnetic field that {{c1::opposes}} the {{c2::change}} that caused it.
+A north pole is pushed towards a coil. What pole forms at the end of the coil nearest the magnet? :: A north pole – it repels the approaching magnet, opposing the push
+A north pole is pulled away from a coil. What pole forms at the end of the coil nearest the magnet? :: A south pole – it attracts the magnet, opposing its removal
+How does Lenz's law show that energy is conserved? :: You must do work against the opposing force to move the magnet, and that work is transferred to electrical energy. If the induced current helped the movement, energy would be created from nothing, which is impossible
+Why is it harder to push a magnet into a coil that is part of a complete circuit than into an open coil? :: In a complete circuit a current flows, and its magnetic field opposes the magnet's movement. In an open coil there is no current, so no opposing force
+A strong magnet is dropped down a vertical copper tube and falls very slowly. Explain why. :: The moving magnet induces circulating currents in the copper ;; By Lenz's law their magnetic field opposes the magnet's motion ;; This gives an upward force, so the magnet falls more slowly than it would through air
+Why would a magnet stop falling slowly if the copper tube had a long slit cut down its side? :: The slit stops the induced current flowing around the tube, so the opposing magnetic field is much weaker
+A magnet is pushed faster into a coil. Why is more force needed? :: A bigger voltage and current are induced, so the opposing force is larger, and more work is done each second
+What happens to the energy transferred when you push a magnet into a coil connected to a lamp? :: Your work (kinetic) → electrical energy in the coil → light and heat in the lamp
+Fleming's right-hand rule (extra – not needed for Edexcel) :: Thumb = Motion of the wire, First finger = Field (N to S), Second finger = induced Current. It gives the direction of induced current in a wire moving through a field ;; In the exam use Lenz's law (opposes the change) to explain direction
+## AC generators and dynamos
+Name the main parts of a simple AC generator. :: A coil of wire (armature), a magnet or magnets (poles N and S), slip rings, carbon brushes, and connections to an external circuit
+Explain how a simple AC generator produces a voltage. :: The coil is turned in the magnetic field, so its sides cut the field lines ;; This induces a voltage across the coil ;; The voltage is delivered to the circuit through slip rings and brushes
+What is the job of the slip rings? :: To keep the rotating coil connected to the external circuit all the time, so the wires don't twist
+What is the job of the carbon brushes? :: They press against the slip rings and carry current between the rotating coil and the fixed external circuit
+Why are carbon brushes used? :: Carbon conducts electricity and is slippery (low friction), so it makes good contact without wearing the rings away too quickly
+Why does the output of a simple generator alternate? :: Each side of the coil moves up through the field, then down. The direction in which it cuts the field lines reverses every half turn, so the induced voltage reverses
+Describe the voltage–time graph for an AC generator. :: A repeating wave (sine curve) that goes positive, then negative ;; One complete cycle for each complete rotation of the coil
+When is the voltage from an AC generator largest? :: When the coil is parallel to the field lines – its sides cut the lines at right angles and cut the most lines per second
+When is the voltage from an AC generator zero? :: When the coil is perpendicular to the field lines (facing the magnet poles) – its sides move along the field lines and cut none
+How is the frequency of the AC output related to the rotation of the coil? :: The frequency (Hz) equals the number of complete rotations per second – one rotation gives one cycle
+What happens to the graph if the coil is spun faster? :: Higher peak voltage (lines cut faster) and a shorter period (higher frequency), so more cycles in a given time
+What happens to the graph if the coil has more turns but spins at the same speed? :: The peak voltage is larger but the frequency is unchanged
+List the ways to increase the output voltage of a generator. :: Spin the coil faster ;; Use stronger magnets ;; Use more turns on the coil ;; Use a coil with a larger area ;; Use a soft iron core
+How does a DC generator differ from an AC generator? :: It uses a split-ring commutator instead of slip rings, so the output always flows in one direction (but rises and falls in pulses)
+How does a bicycle dynamo light a lamp? :: The wheel turns a magnet next to a fixed coil, changing the magnetic field through the coil, which induces an alternating voltage that lights the lamp
+Why does a bicycle lamp get brighter when you pedal faster and dim when you slow down? :: Faster rotation cuts the field lines more quickly, inducing a larger voltage and current. Slower rotation induces a smaller voltage; if you stop, no voltage is induced and the lamp goes out
+Describe the energy transfers in a power station generator. :: Fuel (chemical or nuclear) → thermal → steam turns a turbine (kinetic) → generator → electrical energy (with some wasted as heat)
+How do wind turbines and hydroelectric stations generate electricity? :: Moving wind or water turns a turbine, which turns a generator, using electromagnetic induction
+## Transformers
+What are the parts of a transformer? :: A primary coil, a secondary coil, and a laminated soft iron core that links the two coils
+Explain how a transformer works, step by step. :: Alternating current in the primary coil produces a changing magnetic field ;; The iron core carries this changing field through the secondary coil ;; The changing field induces an alternating voltage across the secondary coil
+Why must the supply to a transformer be AC? :: Only a changing current makes a changing magnetic field. With DC the field is steady, so no voltage is induced in the secondary coil (apart from a brief pulse when switched on or off)
+Why is the core made of iron? :: Iron concentrates the magnetic field and guides it from the primary coil through the secondary coil
+Why is soft iron used rather than steel? :: Soft iron is easy to magnetise and demagnetise, so it keeps up with the alternating field and wastes little energy
+Why is the core laminated (made of thin insulated sheets)? :: To reduce eddy currents, which would heat the core and waste energy
+What is a step-up transformer? :: A transformer that increases the voltage – the secondary coil has more turns than the primary
+What is a step-down transformer? :: A transformer that decreases the voltage – the secondary coil has fewer turns than the primary
+What does a step-up transformer do to the current? :: It reduces it: the power stays about the same, so if the voltage goes up the current goes down
+Write the turns–voltage equation for a transformer. :: Vp ÷ Vs = Np ÷ Ns ;; (voltage across primary ÷ voltage across secondary = turns on primary ÷ turns on secondary)
+Write the power equation for an ideal (100% efficient) transformer. :: Vp × Ip = Vs × Is ;; (power in = power out)
+Write the equation for the efficiency of a transformer. :: efficiency = (power out ÷ power in) × 100%
+Why are real transformers not 100% efficient? :: Heat in the coils (resistance) ;; Eddy currents in the core ;; Some magnetic field leaks and doesn't pass through the secondary ;; Energy used to keep magnetising and demagnetising the core
+How are energy losses in transformers reduced? :: Thick, low-resistance copper wire ;; Laminated core to cut eddy currents ;; Soft iron core ;; Winding coils over each other on the same core to cut leakage
+Where are transformers used in everyday life? :: Phone and laptop chargers (step down 230 V), power stations and the National Grid, substations, and mains adaptors for appliances
+## Power transmission and the National Grid
+Write the equation for electrical power. :: power = current × voltage ;; P = I × V
+Write the equation for power wasted as heat in a cable. :: power loss = I² × R ;; (current squared × resistance of the cable)
+Why is electricity transmitted at very high voltage? :: For the same power (P = IV), a high voltage means a low current. A low current means much less heating in the cables (power loss = I²R), so less energy is wasted
+If the current in a cable is halved, what happens to the power wasted? :: It falls to one quarter, because power loss depends on I²
+Why not simply use thicker cables with less resistance instead of high voltage? :: Thick cables are very expensive, heavy and need stronger pylons
+Why is AC used for the National Grid? :: Its voltage can easily be stepped up and down with transformers (a DC supply cannot use a transformer)
+Describe how electricity gets from a power station to a home. :: Generated at about 25 kV → step-up transformer to 275–400 kV → transmission lines (pylons) → step-down transformers at substations (132 kV, 33 kV, 11 kV) → 230 V to homes
+Why is the voltage stepped down before reaching homes? :: High voltages are dangerous and unsuitable for household use. Appliances are designed for 230 V
+What is the voltage and frequency of UK mains electricity? :: 230 V, 50 Hz
+How fast must a generator coil spin to produce a 50 Hz output? :: 50 rotations per second (3000 per minute), if the generator has one pair of poles
+## Calculations
+A transformer has 500 turns on the primary coil and 100 on the secondary. The primary voltage is 230 V. What is the secondary voltage? :: Vs = Vp × Ns ÷ Np = 230 × 100 ÷ 500 = **46 V** (step-down)
+A step-up transformer has 50 turns on the primary coil. How many turns are needed on the secondary to change 12 V to 240 V? :: Ns = Np × Vs ÷ Vp = 50 × 240 ÷ 12 = **1000 turns**
+A transformer changes 230 V to 12 V. The primary coil has 920 turns. How many turns does the secondary have? :: Ns = 920 × 12 ÷ 230 = **48 turns**
+An ideal transformer changes 240 V to 12 V. The secondary current is 2.0 A. What is the primary current? :: Power out = 12 × 2.0 = 24 W ;; Ip = 24 ÷ 240 = **0.10 A**
+A transformer takes 100 W in and gives 96 W out. What is its efficiency? :: 96 ÷ 100 × 100% = **96%**
+A power station sends 50 MW of power at 25 kV. What is the current in the cables? :: I = P ÷ V = 50 000 000 ÷ 25 000 = **2000 A**
+The same 50 MW is sent at 400 kV. What is the current? :: I = 50 000 000 ÷ 400 000 = **125 A**
+The voltage is raised from 25 kV to 400 kV (16 times higher). How many times smaller is the power lost as heat in the cables? :: The current is 16 times smaller, so the loss (I²R) is 16² = **256 times smaller**
+A cable of resistance 10 Ω carries 100 A. How much power is wasted as heat? :: P = I²R = 100² × 10 = 100 000 W = **100 kW**
+A generator coil turns 25 times each second. What is the frequency of the output? :: **25 Hz** (one cycle per rotation)
+How do you work out the turns ratio for a transformer? :: Turns ratio = Np : Ns = Vp : Vs ;; e.g. 230 V to 11.5 V is 20 : 1 (a step-down transformer)
+## Exam-style explanations
+Explain why a voltmeter connected to a coil shows a reading when a magnet is pushed into the coil, and returns to zero when the magnet stops. :: The coil's wire cuts the magnetic field lines as the magnet moves (the magnetic field through the coil changes) ;; This induces a voltage across the coil ;; When the magnet stops, the field no longer changes, so no voltage is induced
+Explain why a transformer does not work with a direct current supply. :: A DC current gives a steady magnetic field in the core ;; The field through the secondary coil does not change ;; So no voltage is induced in the secondary coil
+Explain why a step-up transformer is used at a power station. :: It increases the voltage and reduces the current ;; Lower current means less energy lost as heat in the transmission cables (P = I²R) ;; So transmission is more efficient
+Describe how a generator produces an alternating voltage. :: A coil rotates between the poles of a magnet ;; The sides of the coil cut the magnetic field lines, inducing a voltage ;; Every half turn the sides cut the field in the opposite direction, so the voltage reverses ;; Slip rings and brushes connect the coil to the circuit
+Suggest how the voltage output of a generator can be doubled. :: Double the speed of rotation, or double the number of turns on the coil (also: stronger magnets or a larger coil)
+Explain why the output from a transformer is zero when the primary current is constant. :: A constant current produces a steady magnetic field ;; No change in field means no induced voltage in the secondary coil
+Explain why the lamp in a bicycle dynamo goes out when the cyclist stops. :: When the wheel stops, the magnet stops moving relative to the coil ;; The magnetic field through the coil no longer changes ;; No voltage is induced, so no current flows
+Explain how Lenz's law applies when a magnet is pulled out of a coil. :: The induced current flows in the direction that opposes the removal of the magnet ;; The end of the coil nearest the magnet becomes the opposite pole and attracts it ;; Work is done against this force and transferred to electrical energy
+
+## Revision sheet: questions and mark scheme
+(2 marks) What is electromagnetic induction? :: A voltage (emf) is induced across a conductor when it moves through a magnetic field / cuts field lines, or when the magnetic field around it changes (1) ;; If the circuit is complete, a current is induced (1)
+(3 marks) Give three ways to increase the induced voltage. :: Move the magnet or coil faster (1) ;; Use a stronger magnet (1) ;; Use more turns of wire on the coil (1) ;; **Extra:** reversing the direction of movement or the magnet's poles reverses the voltage. No movement means no voltage.
+(4 marks) Explain why a simple generator (dynamo) produces AC. :: The coil rotates in a magnetic field, so its sides cut field lines (1) ;; The voltage is maximum when the coil is horizontal, cutting field lines fastest (1) ;; The voltage is zero when the coil is vertical, moving parallel to the field (1) ;; Every half turn the sides swap direction through the field, so the voltage reverses (1) ;; **Note:** horizontal/vertical assumes the field runs horizontally between the magnets. In general: maximum when the coil is parallel to the field, zero when it is perpendicular to it
+(2 marks) How do you make the generator give DC? :: Replace the slip rings with a split-ring commutator (1) ;; It swaps the connections every half turn, so the current always flows the same way (1)
+(2 marks) Sketch the voltage–time graphs for an AC generator and a DC generator. :: **AC:** a sine wave that goes above and below zero ;; **DC:** a series of humps that all stay above zero
+(2 marks) How does speeding up the rotation of a generator change the graph? :: Higher peak voltage (1) ;; Higher frequency, so more waves close together (1)
+(3 marks) Describe the structure of a transformer. :: Primary coil and secondary coil (1) ;; Both wound on a soft iron core (1) ;; The core is easily magnetised and demagnetised (1)
+(4 marks) Explain how a transformer works. :: AC in the primary coil creates a changing magnetic field (1) ;; The iron core carries this field to the secondary coil (1) ;; The changing field cuts the secondary coil (1) ;; This induces an alternating voltage in the secondary (1)
+(2 marks) Why won't a transformer work with DC? :: DC gives a constant magnetic field, not a changing one (1) ;; No changing field means no voltage is induced (1)
+(2 marks) What is the difference between a step-up and a step-down transformer? :: **Step-up:** more turns on the secondary, so voltage increases (Ns > Np) ;; **Step-down:** fewer turns on the secondary, so voltage decreases (Ns < Np)
+Learn both: what are the two transformer equations? :: Vp ÷ Vs = Np ÷ Ns ;; Vp × Ip = Vs × Is ;; (the second one is for a 100% efficient transformer)
+(3 marks) A transformer has 1000 primary turns, 50 secondary turns and a 230 V input. Find the output voltage. :: Vs = Vp × Ns ÷ Np ;; Vs = 230 × 50 ÷ 1000 ;; Vs = **11.5 V**
+(4 marks) Why are step-up transformers used in the National Grid? :: Stepping up the voltage lowers the current for the same power (P = I × V) (1) ;; Less heat is lost in the cables (P = I²R) (1) ;; So the transmission is more efficient (1) ;; Thinner, cheaper cables can be used (1)
+(2 marks) Why are step-down transformers used near homes? :: Lower voltage is safer for homes and users (1) ;; Appliances need lower voltages than the grid carries (1)
+(6 marks) Plan an investigation into how drop height affects the voltage induced when a magnet falls through a coil. :: 1. Clamp the tube vertically with the coil wound round it, connected to a data logger or voltmeter (1) ;; 2. Use a metre rule to mark different heights above the coil, e.g. 10, 20, 30, 40, 50 cm (1) ;; 3. Start the logger, drop the magnet from the first height, and record the peak voltage (1) ;; 4. Repeat for each height (1) ;; 5. Repeat each height 3 times and calculate a mean (1) ;; 6. Keep these the same: magnet, coil, tube, coil position, and drop without pushing the magnet (1) ;; **Independent variable:** drop height. **Dependent variable:** peak voltage. **Control variables:** everything in step 6
+(3 marks) In the magnet drop experiment, what result do you expect and why? :: Higher drop height gives a higher peak voltage (1) ;; The magnet is moving faster when it reaches the coil (1) ;; So the magnetic field changes faster, inducing more voltage (1)
+(2 marks) In the magnet drop experiment, why does the trace show two peaks in opposite directions? :: The magnet entering the coil induces a voltage in one direction (1) ;; The magnet leaving the coil induces a voltage in the opposite direction (1)
+(1 mark) Why use a data logger rather than reading a voltmeter by eye? :: The voltage lasts a fraction of a second, and the logger records it accurately and quickly
+(2 marks) Extension: why does a magnet fall slowly in a copper tube? :: The moving magnet induces currents in the tube (1) ;; These produce a magnetic field that opposes the magnet's motion, slowing it (1)
+Exam answer checklist: what should you always include in induction answers? :: Always say "changing magnetic field", not just "magnetic field" ;; Always say "induces a voltage", then "current if the circuit is complete" ;; For transformers, always mention AC and the iron core ;; For practicals, mention repeats, mean and controls
+C: Exam tip: always say "{{c1::changing}} magnetic field", not just "magnetic field".
+C: Exam tip: always say "induces a {{c1::voltage}}", then "{{c2::current}} if the circuit is complete".
+C: Exam tip: for transformers, always mention {{c1::AC}} and the {{c2::iron core}}.
+C: Exam tip: for practicals, mention {{c1::repeats}}, a {{c2::mean}} and {{c3::controls}}.
+
 # 7 Radioactivity and particles
 Describe the structure of an atom. :: Small positive nucleus of protons and neutrons, surrounded by electrons in shells
 What are isotopes? :: Atoms of the same element with the same number of protons but different numbers of neutrons
