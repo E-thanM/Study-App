@@ -138,7 +138,7 @@ function SyncSection() {
         } else if (data.session) {
           setMsg({ kind: 'ok', text: 'Account created and signed in – syncing now.' });
         } else {
-          setMsg({ kind: 'info', text: "Account created. Your Supabase project asks people to confirm their email: open the email from Supabase and tap the link, then come back here and tap Sign in. (To skip this, turn off 'Confirm email' in Supabase → Authentication → Sign In / Providers → Email.)" });
+          setMsg({ kind: 'info', text: `Account created. Your Supabase project asks people to confirm their email: open the email from Supabase and tap the link, then come back here and tap Sign in. If the link opens a page that can't be reached, set Supabase → Authentication → URL Configuration → Site URL to ${location.origin} and tap 'Email me a sign-in link instead'. (Or skip emails entirely: turn off 'Confirm email' in Authentication → Sign In / Providers → Email.)` });
         }
       } else {
         const { error } = await sb.auth.signInWithPassword({ email: email.trim(), password });

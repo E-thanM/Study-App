@@ -198,6 +198,8 @@ export async function testConnection(cfg: SupaConfig): Promise<CheckResult[]> {
       ? { label: 'Email confirmation', ok: true, detail: 'Off – you can sign in straight after creating an account' }
       : { label: 'Email confirmation', ok: null, detail: "On – after Create account you must tap the link in the email before you can sign in. Easier: turn off 'Confirm email' in Authentication → Sign In / Providers → Email." },
   );
+  if (!settings?.mailer_autoconfirm && typeof location !== 'undefined' && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname))
+    out.push({ label: 'Email links', ok: null, detail: `Emails link back to Supabase's Site URL, which starts as http://localhost:3000. In Authentication → URL Configuration set Site URL to ${location.origin} and add ${location.origin}/** under Redirect URLs.` });
   try {
     const r = await fetch(`${url}/rest/v1/records?select=id&limit=1`, { headers });
     const body = await r.text();
