@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { buildPrompt, convertOffline, generateWithClaude, getAiSettings, parseAiReply, type AiCard } from '../lib/ai';
 import { addNote, deckPath, ensureDeckPath } from '../lib/collection';
 import { all } from '../lib/store';
@@ -63,6 +63,8 @@ export function AiCardsPanel({
   const [busy, setBusy] = useState(false);
   const [offlineMode, setOfflineMode] = useState<'auto' | 'basic' | 'reversed' | 'cloze'>('auto');
   const [deckId, setDeckId] = useState(defaultDeckId || '');
+  // a deck created after the panel opened (e.g. "Create it") becomes the choice without losing generated cards
+  useEffect(() => { if (defaultDeckId) setDeckId(defaultDeckId); }, [defaultDeckId]);
   const prompt = useMemo(() => buildPrompt({ subject, terms, notes }), [subject, terms, notes]);
   const hasInput = (terms && terms.length > 0) || notes.trim().length > 0;
 

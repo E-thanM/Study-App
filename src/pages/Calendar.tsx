@@ -22,6 +22,12 @@ export function CalendarPage() {
     setSel(iso);
     if (isMobile) setSheet(true);
   };
+  /** Show a date from the lists: select it, move the month/year view there and open the day on phones. */
+  const jump = (iso: string) => {
+    setYear(Number(iso.slice(0, 4)));
+    setMonth(Number(iso.slice(5, 7)) - 1);
+    pick(iso);
+  };
   const shiftMonth = (d: number) => {
     let m = month + d, y = year;
     if (m < 0) { m = 11; y--; }
@@ -138,14 +144,14 @@ export function CalendarPage() {
             <div className="panel">
               <div className="panel-head"><h3>Missed targets</h3><span className="pill bad">{overdue.length}</span></div>
               <div className="list">
-                {overdue.slice(0, 6).map((t) => <TargetRow key={t.id} t={t} showDate onSelect={() => { setSel(t.date); setYear(Number(t.date.slice(0, 4))); }} />)}
+                {overdue.slice(0, 6).map((t) => <TargetRow key={t.id} t={t} showDate onSelect={() => jump(t.date)} />)}
               </div>
             </div>
           )}
           <div className="panel">
             <div className="panel-head"><h3>Coming up</h3></div>
             <div className="list">
-              {upcoming.length ? upcoming.map((t) => <TargetRow key={t.id} t={t} showDate onSelect={() => { setSel(t.date); setYear(Number(t.date.slice(0, 4))); }} />) : <div className="list-row muted small">Nothing planned – pick a day to add a target.</div>}
+              {upcoming.length ? upcoming.map((t) => <TargetRow key={t.id} t={t} showDate onSelect={() => jump(t.date)} />) : <div className="list-row muted small">Nothing planned – pick a day to add a target.</div>}
             </div>
           </div>
         </aside>
@@ -217,8 +223,8 @@ function DayPanel({ iso, targets, bare }: { iso: string; targets: Target[]; bare
       </div>
       <div style={{ padding: 14, borderTop: targets.length ? '1px solid var(--line)' : undefined }} className="col">
         <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && add()} placeholder="Add a target, e.g. Finish 2 past papers" />
-        <div className="row">
-          <input type="text" list="cal-subjects" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" />
+        <div className="row wrap">
+          <input type="text" list="cal-subjects" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" style={{ flex: '1 1 140px', minWidth: 0 }} />
           <datalist id="cal-subjects">{subjects.map((s) => <option key={s} value={s} />)}</datalist>
           <Seg value={type} onChange={setType} options={[{ value: 'target', label: 'Target' }, { value: 'exam', label: 'Exam' }, { value: 'event', label: 'Event' }]} />
         </div>

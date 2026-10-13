@@ -60,6 +60,9 @@ export function parseQuizlet(text: string, termSep: string, rowSep: string): { t
     if (i < 0) out.push({ term: r.trim(), definition: '' });
     else out.push({ term: r.slice(0, i).trim(), definition: r.slice(i + ts.length).trim() });
   }
+  // drop a header row such as "term,definition" from spreadsheets
+  const h = out[0];
+  if (h && /^(terms?|words?|front|questions?)$/i.test(h.term) && /^(definitions?|meanings?|back|answers?)$/i.test(h.definition)) out.shift();
   return out;
 }
 

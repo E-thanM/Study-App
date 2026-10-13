@@ -32,7 +32,9 @@ export function MatchMode() {
     setSel(null);
     setPenalty(0);
     setDone(null);
-    setStart(Date.now());
+    const t = Date.now();
+    setNow(t);
+    setStart(t);
   };
 
   useEffect(() => {

@@ -61,6 +61,7 @@ describe('importers', () => {
   });
   it('parses Quizlet text', () => {
     expect(parseQuizlet('dog\tchien\ncat\tchat', 'tab', 'newline')).toEqual([{ term: 'dog', definition: 'chien' }, { term: 'cat', definition: 'chat' }]);
+    expect(parseQuizlet('term,definition\ndog,chien', 'comma', 'newline')).toEqual([{ term: 'dog', definition: 'chien' }]);
     expect(parseQuizlet('a - b;c - d', 'dash', 'semicolon')).toHaveLength(2);
   });
   it('reads Anki text headers', () => {

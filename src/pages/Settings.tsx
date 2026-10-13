@@ -48,7 +48,7 @@ export function SettingsPage() {
               <span className="hint">Like Anki: reviews done after midnight count toward the previous day until this hour.</span>
             </label>
             <label className="field">Weekly study goal (hours)
-              <input type="number" min={1} max={100} value={settings.weeklyGoalHours} onChange={(e) => update({ weeklyGoalHours: Math.max(1, Number(e.target.value) || 1) })} />
+              <GoalInput value={settings.weeklyGoalHours} onChange={(n) => update({ weeklyGoalHours: n })} />
             </label>
           </div>
           <label className="check"><input type="checkbox" checked={settings.weekStartsMonday} onChange={(e) => update({ weekStartsMonday: e.target.checked })} /> Weeks start on Monday</label>
@@ -358,5 +358,21 @@ function BackupSection() {
         </button>
       </div>
     </section>
+  );
+}
+
+/** Number box that can be cleared while typing; saves whole hours between 1 and 100. */
+function GoalInput({ value, onChange }: { value: number; onChange: (n: number) => void }) {
+  const [draft, setDraft] = useState(String(value));
+  const commit = (v: string) => {
+    const n = Math.round(Number(v));
+    if (v.trim() && Number.isFinite(n) && n >= 1 && n <= 100) onChange(n);
+  };
+  return (
+    <input
+      type="number" inputMode="numeric" min={1} max={100} value={draft}
+      onChange={(e) => { setDraft(e.target.value); commit(e.target.value); }}
+      onBlur={() => { const n = Math.min(100, Math.max(1, Math.round(Number(draft)) || value)); setDraft(String(n)); onChange(n); }}
+    />
   );
 }

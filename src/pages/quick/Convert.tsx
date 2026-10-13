@@ -40,7 +40,6 @@ export function ConvertPage() {
         )}
         <div className="panel pad">
           <AiCardsPanel
-            key={defaultDeck}
             terms={terms}
             subject={[set.folder, set.title].filter(Boolean).join(' – ')}
             defaultDeckId={defaultDeck}

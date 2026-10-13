@@ -469,8 +469,8 @@ function ImportModal({ onClose, currentTt, onDone, createTt }: { onClose: () => 
                         <td><input type="checkbox" checked={!skip.has(i)} onChange={() => setSkip((s) => { const n = new Set(s); if (n.has(i)) n.delete(i); else n.add(i); return n; })} /></td>
                         <td className="nowrap small">{p.date ? parseIso(p.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }) : `Every ${WEEKDAYS[p.weekday ?? 0]}`}</td>
                         <td className="nowrap small">{p.start}–{p.end}</td>
-                        <td><input type="text" value={p.subject} onChange={(e) => ed({ subject: e.target.value })} style={{ padding: '4px 8px', fontSize: 13 }} /></td>
-                        <td><input type="text" value={p.topic} onChange={(e) => ed({ topic: e.target.value })} style={{ padding: '4px 8px', fontSize: 13 }} /></td>
+                        <td><input type="text" value={p.subject} onChange={(e) => ed({ subject: e.target.value })} style={{ padding: '4px 8px', fontSize: 13, minWidth: 120 }} /></td>
+                        <td><input type="text" value={p.topic} onChange={(e) => ed({ topic: e.target.value })} style={{ padding: '4px 8px', fontSize: 13, minWidth: 150 }} /></td>
                       </tr>
                     );
                   })}

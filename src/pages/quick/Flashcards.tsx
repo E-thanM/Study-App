@@ -60,8 +60,8 @@ export function FlashcardsMode() {
       <div className="row between wrap fc-toolbar" style={{ margin: '12px 0 16px' }}>
         <div className="row wrap">
           <Seg value={front} onChange={setFront} options={[{ value: 'term', label: 'Term first' }, { value: 'definition', label: 'Definition first' }]} />
-          <button className={`btn sm ${order ? 'primary' : ''}`} onClick={() => { setOrder(order ? null : shuffle(set.terms.map((t) => t.id))); setIdx(0); }}><Icon name="shuffle" /> Shuffle</button>
-          <button className={`btn sm ${starredOnly ? 'primary' : ''}`} onClick={() => { setStarredOnly(!starredOnly); setIdx(0); }} disabled={!set.terms.some((t) => t.starred)}><Icon name="star" /> Starred</button>
+          <button className={`btn sm ${order ? 'primary' : ''}`} onClick={() => { setOrder(order ? null : shuffle(set.terms.map((t) => t.id))); setIdx(0); setFlipped(false); }}><Icon name="shuffle" /> Shuffle</button>
+          <button className={`btn sm ${starredOnly ? 'primary' : ''}`} onClick={() => { setStarredOnly(!starredOnly); setIdx(0); setFlipped(false); }} disabled={!starredOnly && !set.terms.some((t) => t.starred)}><Icon name="star" /> Starred</button>
         </div>
         <label className="check small"><input type="checkbox" checked={track} onChange={(e) => setTrack(e.target.checked)} /> <span className="hide-sm">Track progress</span><span className="show-sm">Track</span></label>
       </div>

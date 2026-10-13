@@ -567,7 +567,8 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
   .flipcard .side-body.sm { font-size: 16px; }
   .flipcard .side-body.xs { font-size: 15px; }
   .fc-toolbar { flex-wrap: nowrap !important; margin: 4px 0 12px !important; gap: 8px; }
-  .fc-toolbar > .row { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; min-width: 0; gap: 6px; }
+  .fc-toolbar { align-items: flex-start !important; }
+  .fc-toolbar > .row { min-width: 0; gap: 6px; }
   .fc-toolbar > .row::-webkit-scrollbar { display: none; }
   .fc-toolbar > .row > * { flex: none; }
   .fc-toolbar .check { flex: none; font-size: 13px; white-space: nowrap; }
