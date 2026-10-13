@@ -1,12 +1,14 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Icon, TopBar } from '../components/ui';
+import { Icon, TopBar, toast } from '../components/ui';
 import { childDecks, deckCounts } from '../lib/collection';
 import { getSettings } from '../lib/seed';
 import { activityByDay, streak, weekMs } from '../lib/stats';
 import { useAll, useVersion } from '../lib/store';
 import { useSyncStatus } from '../lib/sync';
+import { autoCompleteGoals, isMoved, isSkipped, studyToday, useGoalIndex } from '../lib/goals';
 import { isDone, sessionsOn, setDone } from '../lib/timetable';
+import { GoalLines } from './Timetable';
 import { HOUR, fmtHours, isoDate, parseIso, subjectColor } from '../lib/util';
 
 const DAY_LETTERS_MON = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
@@ -28,8 +30,9 @@ export function Home() {
       due += c.review + c.learn;
       newC += c.new;
     }
-    const today = isoDate();
-    const todaySessions = sessionsOn(today);
+    // the study day rolls over at dayStartHour, like stats and session goals
+    const today = studyToday();
+    const todaySessions = sessionsOn(today).filter((s) => !isMoved(s, today) && !isSkipped(s, today));
     return { st, wk, due, newC, today, todaySessions };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [v]);
@@ -52,6 +55,11 @@ export function Home() {
   const DAY_LETTERS = settings.weekStartsMonday ? DAY_LETTERS_MON : DAY_LETTERS_SUN;
   const goalMs = settings.weeklyGoalHours * HOUR;
   const sync = useSyncStatus();
+  const goalIdx = useGoalIndex();
+  useEffect(() => {
+    const n = autoCompleteGoals(data.todaySessions.map((s) => ({ session: s, iso: data.today })), goalIdx);
+    if (n) toast(n === 1 ? 'Goals met – session ticked off ✓' : `Goals met – ${n} sessions ticked off ✓`);
+  }, [goalIdx, data]);
   const lastSet = [...sets].sort((a, b) => (b.lastStudied || b.createdAt) - (a.lastStudied || a.createdAt))[0];
 
   return (
@@ -160,14 +168,19 @@ export function Home() {
             {data.todaySessions.map((s) => {
               const done = isDone(s, data.today);
               return (
-                <label key={s.id} className="list-row" style={{ cursor: 'pointer' }}>
-                  <input type="checkbox" checked={done} onChange={(e) => setDone(s, data.today, e.target.checked)} />
-                  <span className="dot" style={{ background: subjectColor(s.subject) }} />
-                  <span className="grow" style={{ textDecoration: done ? 'line-through' : undefined, opacity: done ? 0.6 : 1 }}>
-                    <b>{s.subject}</b> {s.topic && <span className="muted">· {s.topic}</span>}
-                  </span>
-                  <span className="muted small nowrap">{s.start}–{s.end}</span>
-                </label>
+                <div key={s.id} className="list-row home-sess">
+                  <label className="row" style={{ gap: 12, cursor: 'pointer', minWidth: 0 }}>
+                    <input type="checkbox" checked={done} onChange={(e) => setDone(s, data.today, e.target.checked)} />
+                    <span className="dot" style={{ background: subjectColor(s.subject) }} />
+                    <span className="grow" style={{ textDecoration: done ? 'line-through' : undefined, opacity: done ? 0.6 : 1, minWidth: 0 }}>
+                      <b>{s.subject}</b> {s.topic && <span className="muted">· {s.topic}</span>}
+                    </span>
+                    <span className="muted small nowrap">{s.start}–{s.end}</span>
+                  </label>
+                  <div style={{ ['--c' as string]: subjectColor(s.subject) }}>
+                    <GoalLines s={s} iso={data.today} idx={goalIdx} todayIso={data.today} />
+                  </div>
+                </div>
               );
             })}
           </div>

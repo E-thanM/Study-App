@@ -1,0 +1,128 @@
+/* Session goals, missed-session banner and rescheduling (timetable + home). Uses the app's colour tokens, so dark mode just works. */
+
+/* ───────── goal lines on a session ───────── */
+.goal-lines { list-style: none; margin: 6px 0 2px; padding: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.goal-line { display: flex; align-items: flex-start; gap: 7px; min-width: 0; font-size: 13px; }
+.goal-line .goal-tick {
+  flex: none; width: 16px; height: 16px; margin-top: 1px; border-radius: 50%;
+  border: 1.5px solid var(--line-strong); display: grid; place-items: center;
+  font-size: 10px; font-weight: 700; color: #fff; line-height: 1;
+}
+.goal-line.met .goal-tick { background: var(--good); border-color: var(--good); }
+.goal-line input[type='checkbox'] { flex: none; width: 16px; height: 16px; margin: 1px 0 0; }
+.goal-main { flex: 1; min-width: 0; }
+.goal-top { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.goal-label { flex: 1; min-width: 0; overflow-wrap: anywhere; line-height: 1.3; }
+.goal-line.met .goal-label { color: var(--muted); }
+.goal-count { flex: none; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.goal-line.met .goal-count { color: var(--good); font-weight: 600; }
+.goal-bar { height: 4px; border-radius: 99px; background: var(--line); overflow: hidden; margin-top: 3px; }
+.goal-bar > i { display: block; height: 100%; background: var(--c, var(--accent)); border-radius: inherit; transition: width 0.3s ease; }
+.goal-line.met .goal-bar > i { background: var(--good); }
+.goal-go {
+  flex: none; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+  border-radius: 8px; padding: 2px 9px; line-height: 1.5; white-space: nowrap;
+}
+.goal-go:hover { filter: brightness(0.96); }
+
+/* compact = the narrow desktop week grid */
+.goal-lines.compact { gap: 5px; }
+.goal-lines.compact .goal-line { font-size: 11.5px; gap: 5px; }
+.goal-lines.compact .goal-tick { width: 13px; height: 13px; font-size: 8px; }
+.goal-lines.compact input[type='checkbox'] { width: 13px; height: 13px; }
+.goal-lines.compact .goal-count { font-size: 11px; }
+.goal-lines.compact .goal-go { font-size: 11px; padding: 1px 6px; border-radius: 6px; }
+.goal-lines.compact .goal-top { flex-wrap: wrap; gap: 0 4px; }
+
+/* a session in the done state is faded already – keep goals readable */
+.session.done .goal-lines { opacity: 0.9; }
+.session.away { opacity: 0.55; border-left-style: dashed; }
+.session.away .s-title { text-decoration: none; }
+.session.big .goal-line { font-size: 14px; }
+.session.big .goal-go { font-size: 13px; padding: 4px 12px; }
+
+.goal-summary { overflow-wrap: anywhere; }
+
+/* ───────── occurrence status pills ───────── */
+.occ-status {
+  display: inline-block; margin-top: 3px; font-size: 11px; font-weight: 600; padding: 1px 7px;
+  border-radius: 99px; background: var(--line); color: var(--muted); max-width: 100%; overflow-wrap: anywhere;
+}
+.occ-status.missed { background: var(--bad-soft); color: var(--bad); }
+.occ-status.moved, .occ-status.from { background: var(--accent-soft); color: var(--accent); }
+.session.big .occ-status { font-size: 12px; }
+
+.day-picker button .dots i.missed { background: var(--bad); }
+
+/* ───────── missed banner ───────── */
+.missed-banner {
+  background: var(--warn-soft); border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent);
+  border-radius: 16px; padding: 12px 14px; margin-bottom: 14px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+}
+.missed-head { display: flex; gap: 10px; align-items: center; flex: 1 1 260px; min-width: 0; }
+.missed-ic {
+  flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--warn); color: #fff;
+  display: grid; place-items: center; font-weight: 800; font-size: 15px;
+}
+.missed-actions { display: flex; gap: 6px; flex: none; margin-left: auto; }
+.missed-list { flex-basis: 100%; display: flex; flex-direction: column; gap: 8px; margin-top: 2px; }
+.missed-row {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 9px 10px;
+  display: flex; flex-direction: column; gap: 8px; min-width: 0;
+}
+.missed-what { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.missed-what .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.missed-move { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.missed-move input[type='date'], .missed-move input[type='time'] { width: auto; flex: 1 1 130px; max-width: 170px; min-width: 0; padding: 6px 9px; }
+@media (min-width: 861px) {
+  .missed-row { flex-direction: row; align-items: center; justify-content: space-between; }
+  .missed-what { flex: 1 1 auto; }
+  .missed-move { flex: none; flex-wrap: nowrap; }
+  .missed-move input[type='date'] { width: 150px; flex: none; }
+  .missed-move input[type='time'] { width: 136px; max-width: none; flex: none; }
+}
+.missed-move .btn { flex: none; }
+
+/* ───────── goal editor (session modal) ───────── */
+.goal-editor {
+  border: 1px solid var(--line); border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 10px;
+  background: var(--surface);
+}
+.goal-edit-row {
+  display: grid; grid-template-columns: minmax(0, 170px) 110px minmax(0, 1fr) 28px; gap: 6px; align-items: center;
+}
+.goal-edit-row > select:first-child { grid-column: 1; }
+.goal-edit-row .goal-target { display: flex; align-items: center; gap: 5px; min-width: 0; }
+.goal-edit-row .goal-target input { width: 100%; min-width: 0; padding: 6px 8px; }
+.goal-edit-row .goal-wide { grid-column: 3; min-width: 0; width: 100%; }
+/* custom item / paper etc.: let the text box use the target column too */
+.goal-edit-row:not(:has(.goal-target)) .goal-wide { grid-column: 2 / 4; }
+.goal-edit-row > .btn { grid-column: 4; }
+.goal-edit-row select, .goal-edit-row input { font-size: 14px; }
+.goal-add { width: auto; max-width: 100%; }
+
+@media (max-width: 640px) {
+  .goal-edit-row {
+    grid-template-columns: minmax(0, 1fr) 110px 32px;
+    padding-bottom: 10px; border-bottom: 1px dashed var(--line);
+  }
+  .goal-edit-row > select:first-child { grid-column: 1; }
+  .goal-edit-row .goal-target { grid-column: 2; }
+  .goal-edit-row > .btn { grid-column: 3; grid-row: 1; }
+  .goal-edit-row .goal-wide, .goal-edit-row:not(:has(.goal-target)) .goal-wide { grid-column: 1 / -1; grid-row: 2; }
+  .goal-edit-row select, .goal-edit-row input, .missed-move input[type='date'], .missed-move input[type='time'], .goal-add { font-size: 16px; }
+  .missed-move input[type='date'], .missed-move input[type='time'] { min-height: 40px; max-width: none; }
+  .missed-actions { width: 100%; }
+  .missed-actions .btn { flex: 1; }
+}
+
+/* ───────── home: today's sessions ───────── */
+.list-row.home-sess { flex-direction: column; align-items: stretch; gap: 0; }
+.home-sess > label { width: 100%; }
+.home-sess .goal-lines { margin: 6px 0 0 48px; }
+@media (max-width: 640px) { .home-sess .goal-lines { margin-left: 28px; } }
+.missed-list, .missed-row, .missed-what > .grow { min-width: 0; }
+.missed-list { width: 100%; }
+.missed-banner > * { min-width: 0; }
+.missed-nofit { font-size: 12px; color: var(--bad); flex-basis: 100%; }

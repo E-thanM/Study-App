@@ -1,0 +1,66 @@
+/* Quote learner (src/pages/tools/Quotes.tsx) – everything prefixed qt- */
+
+/* overview */
+.qt-works { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
+.qt-work h3 { font-size: 17px; }
+.qt-learn { margin-top: 4px; min-height: 44px; justify-content: center; }
+.qt-toolbar { display: flex; gap: 10px; margin: 24px 0 0; }
+.qt-toolbar select { width: auto; max-width: 45%; flex: none; min-height: 42px; }
+.qt-search { position: relative; flex: 1; min-width: 0; }
+.qt-search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--faint); pointer-events: none; }
+.qt-search input { padding-left: 36px; min-height: 42px; }
+.qt-row { align-items: flex-start; }
+.qt-row-text { font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif; font-size: 16px; line-height: 1.45; overflow-wrap: anywhere; }
+.qt-row-actions { gap: 2px; flex: none; margin: -4px -6px -4px 0; }
+.qt-row-actions .btn.icon { width: 40px; height: 40px; }
+
+/* practice */
+.qt-practice { max-width: 720px; margin: 10px auto 0; }
+.qt-card { gap: 12px; }
+.qt-stages { display: flex; gap: 4px; }
+.qt-stages i { flex: 1; height: 4px; border-radius: 4px; background: var(--line); }
+.qt-stages i.done { background: var(--good); }
+.qt-stages i.on { background: var(--accent); }
+.qt-source { font-size: 15px; overflow-wrap: anywhere; }
+.qt-quote {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-size: 22px; line-height: 1.75; overflow-wrap: anywhere;
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px;
+}
+.qt-w { white-space: nowrap; }
+.qt-gap, .qt-blank { display: inline-block; vertical-align: baseline; height: 1em; border-bottom: 2px solid var(--faint); }
+.qt-gap { border-bottom: 1.5px solid var(--line-strong); margin-left: 1px; }
+.qt-blank { border-bottom-color: var(--accent); }
+.qt-memory { padding: 22px 16px; text-align: center; border: 1px dashed var(--line-strong); border-radius: 14px; }
+textarea.qt-input { font-size: 17px; min-height: 96px; line-height: 1.5; }
+.qt-actions .btn.lg { min-width: 140px; justify-content: center; }
+.qt-actions .btn.ghost { min-height: 44px; }
+.qt-kbd { color: inherit; opacity: 0.6; border-color: currentColor; margin-left: 4px; }
+.qt-move { font-weight: 600; margin-left: 4px; white-space: nowrap; }
+.qt-card > .col > .btn.lg { align-self: flex-end; min-width: 160px; justify-content: center; }
+
+/* word-by-word diff */
+.qt-diff { display: flex; flex-wrap: wrap; gap: 4px 8px; line-height: 1.5; }
+.qt-d { border-radius: 6px; font-style: normal; }
+.qt-d.missed { background: var(--warn-soft); color: var(--warn); padding: 0 4px; text-decoration: underline wavy; text-underline-offset: 4px; }
+.qt-d.wrong { background: var(--bad-soft); color: var(--bad); padding: 0 4px; font-weight: 600; }
+.qt-d.extra { color: var(--faint); text-decoration: line-through; padding: 0 2px; }
+.qt-typed { font-size: 0.7em; font-weight: 400; opacity: 0.85; margin-right: 5px; }
+.qt-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.qt-legend .qt-d { font-size: 12px; }
+
+/* summary */
+.qt-sum-row { padding-left: 0; padding-right: 0; }
+.qt-sum-actions { justify-content: flex-end; flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  .qt-works { gap: 10px; }
+  .qt-toolbar { margin-top: 18px; }
+  .qt-quote { font-size: 19px; padding: 12px 13px; line-height: 1.7; }
+  .qt-actions .btn.lg { flex: 1; }
+  .qt-card > .col > .btn.lg, .qt-sum-actions .btn { flex: 1; align-self: stretch; }
+}
+.qt-you { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .qt-work.panel.pad { padding: 14px 16px; gap: 8px; }
+}
