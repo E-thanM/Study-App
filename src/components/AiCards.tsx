@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { buildPrompt, convertOffline, generateWithClaude, getAiSettings, parseAiReply, type AiCard } from '../lib/ai';
+import { buildPrompt, convertOffline, directAiLabel, generateWithClaude, getAiSettings, hasDirectAi, parseAiReply, type AiCard } from '../lib/ai';
 import { addNote, deckPath, ensureDeckPath } from '../lib/collection';
 import { all } from '../lib/store';
 import { escapeHtml } from '../lib/util';
@@ -55,7 +55,7 @@ export function AiCardsPanel({
   tags?: string[];
 }) {
   const ai = getAiSettings();
-  const [route, setRoute] = useState<'claudeai' | 'api' | 'offline'>(ai.apiKey ? 'api' : 'claudeai');
+  const [route, setRoute] = useState<'claudeai' | 'api' | 'offline'>(hasDirectAi(ai) ? 'api' : 'claudeai');
   const [notes, setNotes] = useState(initialNotes || '');
   const [reply, setReply] = useState('');
   const [cards, setCards] = useState<AiCard[] | null>(null);
@@ -123,22 +123,23 @@ export function AiCardsPanel({
           <textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Paste class notes, a revision guide page or a list of facts…" style={{ minHeight: 140 }} />
         </label>
       )}
-      <Seg value={route} onChange={setRoute} options={[{ value: 'claudeai', label: 'Claude.ai (free)' }, { value: 'api', label: 'Claude API' }, { value: 'offline', label: 'No AI' }]} />
+      <Seg value={route} onChange={setRoute} options={[{ value: 'claudeai', label: 'Copy & paste (free)' }, { value: 'api', label: 'One-click AI' }, { value: 'offline', label: 'No AI' }]} />
 
       {route === 'claudeai' && (
         <div className="col">
-          <div className="small muted">1. Copy this prompt → 2. paste it into <a href="https://claude.ai/new" target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>claude.ai</a> → 3. paste Claude's reply below.</div>
+          <div className="small muted">1. Copy this prompt → 2. paste it into <a href="https://claude.ai/new" target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>claude.ai</a> or <a href="https://chat.qwen.ai" target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>Qwen Chat</a> → 3. paste the reply below.</div>
           <div className="code-box">{hasInput ? prompt : 'Add some material first.'}</div>
           <div className="row">
             <button className="btn" onClick={copy} disabled={!hasInput}><Icon name="copy" /> Copy prompt</button>
-            <a className="btn ghost" href="https://claude.ai/new" target="_blank" rel="noreferrer">Open Claude.ai ↗</a>
+            <a className="btn ghost" href="https://claude.ai/new" target="_blank" rel="noreferrer">Claude.ai ↗</a>
+            <a className="btn ghost" href="https://chat.qwen.ai" target="_blank" rel="noreferrer">Qwen Chat ↗</a>
           </div>
-          <textarea value={reply} onChange={(e) => setReply(e.target.value)} placeholder="Paste Claude's reply here (the JSON list)…" style={{ minHeight: 100, fontFamily: 'var(--mono)', fontSize: 12 }} />
+          <textarea value={reply} onChange={(e) => setReply(e.target.value)} placeholder="Paste the reply here (the JSON list)…" style={{ minHeight: 100, fontFamily: 'var(--mono)', fontSize: 12 }} />
         </div>
       )}
       {route === 'api' && (
         <div className="small muted">
-          {ai.apiKey ? <>Uses <b>{ai.model}</b> with your API key. </> : <span style={{ color: 'var(--bad)' }}>Add an API key in Settings first. </span>}
+          {hasDirectAi(ai) ? <>Uses <b>{directAiLabel(ai)}</b>. </> : <span style={{ color: 'var(--bad)' }}>Set up one-click AI in Settings first (free options available). </span>}
           Cards are split into atomic facts, clozes are made for definitions and processes, and exam keywords are kept.
         </div>
       )}
@@ -149,7 +150,7 @@ export function AiCardsPanel({
         </div>
       )}
 
-      <button className="btn primary" onClick={run} disabled={busy || !hasInput || (route === 'claudeai' && !reply.trim()) || (route === 'api' && !ai.apiKey)}>
+      <button className="btn primary" onClick={run} disabled={busy || !hasInput || (route === 'claudeai' && !reply.trim()) || (route === 'api' && !hasDirectAi(ai))}>
         {busy ? <><span className="spinner" /> Generating…</> : route === 'claudeai' ? 'Read reply' : <><Icon name="sparkle" /> Generate cards</>}
       </button>
 

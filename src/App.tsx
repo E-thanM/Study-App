@@ -21,6 +21,12 @@ import { TestMode } from './pages/quick/Test';
 import { MatchMode } from './pages/quick/Match';
 import { SpellMode } from './pages/quick/Spell';
 import { ConvertPage } from './pages/quick/Convert';
+import { ToolsPage } from './pages/tools/Tools';
+import { BlurtPage } from './pages/tools/Blurt';
+import { MarkPage } from './pages/tools/Mark';
+import { QuotesPage } from './pages/tools/Quotes';
+import { PapersPage } from './pages/tools/Papers';
+import { PaperViewPage } from './pages/tools/PaperView';
 
 export function App() {
   return (
@@ -62,6 +68,13 @@ function Shell() {
           <Route path="/quick/:id/match" element={<MatchMode />} />
           <Route path="/quick/:id/spell" element={<SpellMode />} />
           <Route path="/quick/:id/convert" element={<ConvertPage />} />
+
+          <Route path="/tools" element={<ToolsPage />} />
+          <Route path="/tools/blurt" element={<BlurtPage />} />
+          <Route path="/tools/mark" element={<MarkPage />} />
+          <Route path="/tools/quotes" element={<QuotesPage />} />
+          <Route path="/tools/papers" element={<PapersPage />} />
+          <Route path="/tools/papers/:id" element={<PaperViewPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </div>

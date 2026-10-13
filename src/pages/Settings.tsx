@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Icon, Seg, TopBar, toast } from '../components/ui';
-import { AI_MODELS, getAiSettings, saveAiSettings } from '../lib/ai';
+import { AI_MODELS, OA_PRESETS, askAi, getAiSettings, hasDirectAi, openRouterFreeModels, saveAiSettings } from '../lib/ai';
 import { getSettings } from '../lib/seed';
 import { exportAll, put, useRec } from '../lib/store';
 import { configSource, eraseAccountData, friendlyAuthError, signOut as signOutUser, signOutAndClear, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
@@ -288,29 +288,94 @@ function SyncSection() {
 function AiSection() {
   const [s, setS] = useState(getAiSettings());
   const [show, setShow] = useState(false);
-  const save = (n: typeof s) => { setS(n); saveAiSettings(n); };
+  const [models, setModels] = useState<string[] | null>(null);
+  const [test, setTest] = useState<Msg>(null);
+  const [busy, setBusy] = useState(false);
+  const save = (n: typeof s) => { setS(n); saveAiSettings(n); setTest(null); };
+  const provider = s.provider || 'claude';
+  const preset = s.oaPreset || OA_PRESETS.find((p) => p.base && p.base === s.oaBase)?.id || (s.oaBase ? 'custom' : 'openrouter');
+  const loadModels = async () => {
+    try {
+      const list = await openRouterFreeModels();
+      setModels(list);
+      if (!s.oaModel && list[0]) save({ ...s, oaModel: list[0] });
+    } catch {
+      setTest({ kind: 'error', text: "Couldn't load the model list – type a model name instead." });
+    }
+  };
+  const runTest = async () => {
+    setBusy(true);
+    setTest(null);
+    try {
+      const reply = await askAi('Reply with just the word: ready');
+      setTest({ kind: 'ok', text: `Working – the AI replied "${reply.trim().slice(0, 40)}".` });
+    } catch (e) {
+      setTest({ kind: 'error', text: e instanceof Error ? e.message : String(e) });
+    } finally {
+      setBusy(false);
+    }
+  };
   return (
     <section className="panel pad col" style={{ gap: 12 }}>
-      <h2>AI card optimiser</h2>
+      <h2>AI (cards, marking, blurt feedback)</h2>
       <div className="callout small">
-        <b>Free with your Claude Pro plan:</b> when converting a set (or generating cards from notes), choose <i>Use Claude.ai</i>. The app writes the prompt for you – paste it into claude.ai, then paste Claude's reply back. No API key needed.
+        <b>Free, no setup:</b> every AI feature has a <i>Copy &amp; paste</i> option – the app writes the prompt, you paste it into claude.ai (free with your Pro plan) or Qwen Chat, then paste the reply back.
       </div>
-      <p className="muted small">
-        Optional: for one-click conversion, add a Claude API key from console.anthropic.com. The API is billed separately from Pro (pay-as-you-go; converting a typical 50-term set costs well under 1p on Haiku and roughly 5–15p on Opus). The key is stored only on this device and never synced.
-      </p>
-      <div className="form-grid">
-        <label className="field">Claude API key
-          <div className="row">
-            <input type={show ? 'text' : 'password'} value={s.apiKey} onChange={(e) => save({ ...s, apiKey: e.target.value.trim() })} placeholder="sk-ant-…" autoComplete="off" />
-            <button className="btn sm" onClick={() => setShow(!show)}>{show ? 'Hide' : 'Show'}</button>
+      <p className="muted small">For one click instead, connect a service below. Keys are stored only on this device and never synced.</p>
+      <Seg value={provider} onChange={(p) => save({ ...s, provider: p, ...(p === 'openai' && !s.oaBase ? { oaBase: OA_PRESETS[0].base } : {}) })} options={[{ value: 'openai', label: 'Qwen 3 / open models (free)' }, { value: 'claude', label: 'Claude API (paid)' }]} />
+      {provider === 'openai' ? (
+        <div className="col" style={{ gap: 10 }}>
+          <label className="field">Service
+            <select value={preset} onChange={(e) => { const p = OA_PRESETS.find((x) => x.id === e.target.value)!; save({ ...s, oaPreset: p.id, oaBase: p.base, oaModel: p.id === 'ollama' ? 'qwen3' : s.oaModel }); setModels(null); }}>
+              {OA_PRESETS.map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
+            </select>
+          </label>
+          {preset === 'openrouter' && <p className="muted small">Make a free account at <a href="https://openrouter.ai/keys" target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>openrouter.ai/keys</a>, create a key and paste it here. Models ending in <code>:free</code> cost nothing (they have a daily limit).</p>}
+          {preset === 'ollama' && <p className="muted small">Install <a href="https://ollama.com" target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>Ollama</a> on your Mac or PC, run <code>ollama pull qwen3</code>, then start it with <code>OLLAMA_ORIGINS=* ollama serve</code> so this site can talk to it. Works offline; only on that computer.</p>}
+          {preset === 'custom' && (
+            <label className="field">API address (ends in /v1)
+              <input type="url" value={s.oaBase || ''} onChange={(e) => save({ ...s, oaBase: e.target.value.trim() })} placeholder="https://api.example.com/v1" />
+            </label>
+          )}
+          {preset !== 'ollama' && (
+            <label className="field">API key
+              <div className="row">
+                <input type={show ? 'text' : 'password'} value={s.oaKey || ''} onChange={(e) => save({ ...s, oaKey: e.target.value.trim() })} placeholder={preset === 'openrouter' ? 'sk-or-…' : 'API key'} autoComplete="off" />
+                <button className="btn sm" onClick={() => setShow(!show)}>{show ? 'Hide' : 'Show'}</button>
+              </div>
+            </label>
+          )}
+          <label className="field">Model
+            <div className="row">
+              <input type="text" list="ai-models" value={s.oaModel || ''} onChange={(e) => save({ ...s, oaModel: e.target.value.trim() })} placeholder={preset === 'ollama' ? 'qwen3' : 'e.g. a qwen/…:free model'} autoCapitalize="off" autoCorrect="off" />
+              {preset === 'openrouter' && <button className="btn sm" onClick={() => void loadModels()}>Free models</button>}
+            </div>
+            <datalist id="ai-models">{(models || []).map((m) => <option key={m} value={m} />)}</datalist>
+            {models && <span className="hint">{models.length} free models found – Qwen ones are listed first. Tap the box to choose.</span>}
+          </label>
+        </div>
+      ) : (
+        <div className="col" style={{ gap: 10 }}>
+          <p className="muted small">A Claude API key from console.anthropic.com is billed separately from Pro (pay-as-you-go; converting a typical 50-term set costs well under 1p on Haiku and roughly 5–15p on Opus).</p>
+          <div className="form-grid">
+            <label className="field">Claude API key
+              <div className="row">
+                <input type={show ? 'text' : 'password'} value={s.apiKey} onChange={(e) => save({ ...s, apiKey: e.target.value.trim() })} placeholder="sk-ant-…" autoComplete="off" />
+                <button className="btn sm" onClick={() => setShow(!show)}>{show ? 'Hide' : 'Show'}</button>
+              </div>
+            </label>
+            <label className="field">Model
+              <select value={s.model} onChange={(e) => save({ ...s, model: e.target.value })}>
+                {AI_MODELS.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
+              </select>
+            </label>
           </div>
-        </label>
-        <label className="field">Model
-          <select value={s.model} onChange={(e) => save({ ...s, model: e.target.value })}>
-            {AI_MODELS.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
-          </select>
-        </label>
+        </div>
+      )}
+      <div className="row wrap">
+        <button className="btn" onClick={() => void runTest()} disabled={busy || !hasDirectAi(s)}>{busy ? <><span className="spinner" /> Testing…</> : 'Test AI'}</button>
       </div>
+      <Notice msg={test} />
     </section>
   );
 }

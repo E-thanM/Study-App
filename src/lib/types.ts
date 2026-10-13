@@ -22,6 +22,9 @@ export type Kind =
   | 'timetable'
   | 'session'
   | 'target'
+  | 'paper'
+  | 'blurt'
+  | 'quote'
   | 'settings';
 
 /* ───────────── Long-term flashcards (Anki-style) ───────────── */
@@ -220,8 +223,22 @@ export interface Session extends BaseRec {
   subject: string;
   topic: string;
   notes: string;
-  /** completion/notes per occurrence date (YYYY-MM-DD) */
-  log: Record<string, { done?: boolean; note?: string }>;
+  /** completion/notes per occurrence date (YYYY-MM-DD); moved = date it was rescheduled to */
+  log: Record<string, { done?: boolean; note?: string; moved?: string; goalsDone?: string[] }>;
+  /** what to get done in the session, e.g. review 40 cards – progress is tracked automatically */
+  goals?: SessionGoal[];
+}
+
+export interface SessionGoal {
+  id: string;
+  /** review = flashcard reviews, new = new flashcards learnt, set = study a Quick Learn set,
+   *  paper = log a past paper, blurt = blurt a topic, quotes = practise quotes, custom = tick yourself */
+  type: 'review' | 'new' | 'set' | 'paper' | 'blurt' | 'quotes' | 'custom';
+  target: number;
+  /** deck for review/new goals (defaults to the deck matching the subject) */
+  deckId?: string;
+  setId?: string;
+  text?: string;
 }
 
 /* ───────────── Calendar ───────────── */
@@ -234,6 +251,73 @@ export interface Target extends BaseRec {
   type: 'target' | 'exam' | 'event';
   done: boolean;
   notes: string;
+}
+
+/* ───────────── Revision tools ───────────── */
+
+export interface PaperMistake {
+  id: string;
+  /** question number, e.g. "3b" */
+  q: string;
+  topic: string;
+  /** marks lost */
+  lost: number;
+  /** what went wrong */
+  why: string;
+  /** correct answer / how to fix it */
+  fix: string;
+  /** flashcard note made from this mistake */
+  noteId?: string;
+}
+
+export interface PastPaper extends BaseRec {
+  kind: 'paper';
+  subject: string;
+  /** e.g. "Paper 1 Higher" */
+  title: string;
+  /** exam series, e.g. "June 2023" */
+  series: string;
+  /** date sat, YYYY-MM-DD */
+  date: string;
+  score: number | null;
+  max: number;
+  /** marks needed for each grade ("9" … "1"), optional */
+  boundaries?: Record<string, number>;
+  notes: string;
+  mistakes: PaperMistake[];
+  createdAt: number;
+}
+
+export interface Blurt extends BaseRec {
+  kind: 'blurt';
+  subject: string;
+  topic: string;
+  text: string;
+  date: number;
+  /** points covered / total points in the topic (offline check) */
+  covered?: number;
+  total?: number;
+  /** points missed (card fronts) */
+  missing?: string[];
+  /** AI feedback, if used */
+  feedback?: string;
+}
+
+export interface Quote extends BaseRec {
+  kind: 'quote';
+  /** the text it comes from, e.g. "Macbeth" */
+  work: string;
+  text: string;
+  /** who says it / where, e.g. "Lady Macbeth, Act 1 Scene 5" */
+  source: string;
+  /** 0 = read, 1 = first letters, 2 = half hidden, 3 = from memory, 4 = mastered */
+  stage: number;
+  correct: number;
+  wrong: number;
+  last?: number;
+  /** practice count per day (YYYY-MM-DD) for goals and streaks */
+  history?: Record<string, number>;
+  custom?: boolean;
 }
 
 /* ───────────── Settings ───────────── */
@@ -264,6 +348,9 @@ export type AnyRec =
   | Timetable
   | Session
   | Target
+  | PastPaper
+  | Blurt
+  | Quote
   | Settings;
 
 export type RecOf<K extends Kind> = Extract<AnyRec, { kind: K }>;

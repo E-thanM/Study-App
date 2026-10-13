@@ -65,6 +65,7 @@ const SECTIONS = [
   { to: '/cards', label: 'Flashcards', icon: 'cards' },
   { to: '/quick', label: 'Quick Learn', icon: 'bolt' },
   { to: '/calendar', label: 'Calendar', icon: 'calendar' },
+  { to: '/tools', label: 'Tools', icon: 'target' },
 ];
 
 export function TopBar({ crumbs, right }: { crumbs?: { to?: string; label: string }[]; right?: ReactNode }) {

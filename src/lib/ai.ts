@@ -28,8 +28,31 @@ export const AI_MODELS = [
 
 const AI_KEY = 'study.ai';
 export interface AiSettings {
+  /** which service runs one-click AI: the Claude API, or any OpenAI-compatible one (OpenRouter, Ollama…) */
+  provider?: 'claude' | 'openai';
   apiKey: string;
   model: string;
+  /** which OA_PRESETS entry is chosen */
+  oaPreset?: string;
+  oaBase?: string;
+  oaKey?: string;
+  oaModel?: string;
+}
+
+/** OpenAI-compatible services that can run Qwen 3 and other open models for free. */
+export const OA_PRESETS = [
+  { id: 'openrouter', label: 'OpenRouter – free Qwen 3 and other models (free account)', base: 'https://openrouter.ai/api/v1', needsKey: true },
+  { id: 'ollama', label: 'Ollama on this computer – Qwen 3 offline, no account', base: 'http://localhost:11434/v1', needsKey: false },
+  { id: 'custom', label: 'Other OpenAI-compatible service', base: '', needsKey: true },
+];
+
+/** True when one-click AI is set up (otherwise the copy-and-paste route is used). */
+export function hasDirectAi(s = getAiSettings()): boolean {
+  return s.provider === 'openai' ? !!(s.oaBase && s.oaModel) : !!s.apiKey;
+}
+
+export function directAiLabel(s = getAiSettings()): string {
+  return s.provider === 'openai' ? s.oaModel || 'your AI' : AI_MODELS.find((m) => m.id === s.model)?.label.split(' (')[0] || s.model;
 }
 export function getAiSettings(): AiSettings {
   try {
@@ -122,8 +145,83 @@ const CARD_SCHEMA = {
   additionalProperties: false,
 };
 
+/** Qwen 3 and other reasoning models may include their thinking in <think> tags – keep only the answer. */
+export const stripThinking = (s: string) => s.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+
+/** Send a prompt to an OpenAI-compatible chat API (OpenRouter, Ollama, Groq…) and return the reply text. */
+async function askOpenAiCompatible(prompt: string, s: AiSettings): Promise<string> {
+  const base = (s.oaBase || '').replace(/\/+$/, '');
+  let r: Response;
+  try {
+    r = await fetch(`${base}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(s.oaKey ? { Authorization: `Bearer ${s.oaKey}` } : {}),
+        ...(/openrouter\.ai/.test(base) ? { 'HTTP-Referer': location.origin, 'X-Title': 'Study' } : {}),
+      },
+      body: JSON.stringify({ model: s.oaModel, messages: [{ role: 'user', content: prompt }], temperature: 0.3 }),
+    });
+  } catch {
+    throw new Error(/localhost|127\.0\.0\.1/.test(base)
+      ? "Couldn't reach Ollama. Make sure it's running and allows this site: quit Ollama, then start it with OLLAMA_ORIGINS=* ollama serve."
+      : `Couldn't reach ${base} – check the address and your connection.`);
+  }
+  const body = await r.text();
+  if (!r.ok) {
+    if (r.status === 401 || r.status === 403) throw new Error('The AI service rejected your key – check it in Settings.');
+    if (r.status === 429) throw new Error('The free model is busy or you hit its daily limit – wait a bit, or pick another model in Settings.');
+    if (r.status === 404) throw new Error(`Model "${s.oaModel}" wasn't found – pick another in Settings.`);
+    throw new Error(`AI error ${r.status}: ${body.slice(0, 200)}`);
+  }
+  const data = JSON.parse(body) as { choices?: { message?: { content?: string } }[] };
+  const text = data.choices?.[0]?.message?.content || '';
+  if (!text) throw new Error('The AI sent back an empty reply – try again or pick another model.');
+  return stripThinking(text);
+}
+
+/** Free models currently offered by OpenRouter (Qwen first). */
+export async function openRouterFreeModels(): Promise<string[]> {
+  const r = await fetch('https://openrouter.ai/api/v1/models');
+  const data = (await r.json()) as { data: { id: string }[] };
+  const ids = data.data.map((m) => m.id).filter((id) => id.endsWith(':free'));
+  return ids.sort((a, b) => Number(!/qwen/i.test(a)) - Number(!/qwen/i.test(b)) || a.localeCompare(b));
+}
+
+/** Ask the configured AI a free-text question (marking, blurt feedback…). */
+export async function askAi(prompt: string, s = getAiSettings()): Promise<string> {
+  if (s.provider === 'openai') return askOpenAiCompatible(prompt, s);
+  if (!s.apiKey) throw new Error('Set up an AI service in Settings first.');
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
+  const client = new Anthropic({ apiKey: s.apiKey, dangerouslyAllowBrowser: true });
+  try {
+    const msg = await client.messages.stream({ model: s.model, max_tokens: 16000, messages: [{ role: 'user', content: prompt }] }).finalMessage();
+    if (msg.stop_reason === 'refusal') throw new Error('Claude declined to process this content.');
+    return msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('');
+  } catch (e) {
+    if (e instanceof Anthropic.AuthenticationError) throw new Error('Your Claude API key was rejected – check it in Settings.');
+    if (e instanceof Anthropic.RateLimitError) throw new Error('Rate limited by the Claude API – wait a minute and try again.');
+    if (e instanceof Anthropic.APIConnectionError) throw new Error('Could not reach the Claude API – check your connection.');
+    throw e;
+  }
+}
+
+/** Pull the first JSON object out of a model reply (handles code fences and chatter around it). */
+export function extractJson<T>(reply: string): T | null {
+  const s = stripThinking(reply).replace(/```(?:json)?/gi, '');
+  const start = s.indexOf('{');
+  const end = s.lastIndexOf('}');
+  if (start < 0 || end <= start) return null;
+  try {
+    return JSON.parse(s.slice(start, end + 1)) as T;
+  } catch {
+    return null;
+  }
+}
+
 /** Call the Claude API directly from the browser with the user's own key. */
 export async function generateWithClaude(prompt: string, settings: AiSettings): Promise<AiCard[]> {
+  if (settings.provider === 'openai') return parseAiReply(await askOpenAiCompatible(prompt, settings));
   if (!settings.apiKey) throw new Error('Add your Claude API key in Settings first.');
   // loaded on demand so the SDK isn't in the main bundle
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
