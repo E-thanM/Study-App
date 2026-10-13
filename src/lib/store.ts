@@ -8,8 +8,32 @@ import type { AnyRec, Kind, RecOf } from './types';
  *    records to Supabase and pulls remote changes, resolving conflicts by updatedAt.
  */
 
-const DB_NAME = 'study-app';
 const DB_VERSION = 1;
+
+/*
+ * Each account has its own database on the device ("study-app:<user id>"), so progress is tied to
+ * the account: signing out switches to the empty signed-out database, and signing back in brings
+ * the account's data straight back (even offline). "study-app" is used while signed out.
+ */
+export const GUEST_DB = 'study-app';
+const ACTIVE_KEY = 'study.activeDb';
+export const dbNameFor = (userId: string | null | undefined) => (userId ? `${GUEST_DB}:${userId}` : GUEST_DB);
+export function activeDbName(): string {
+  try {
+    return localStorage.getItem(ACTIVE_KEY) || GUEST_DB;
+  } catch {
+    return GUEST_DB;
+  }
+}
+/** Use another database from the next page load. */
+export function setActiveDb(name: string) {
+  try {
+    if (name === GUEST_DB) localStorage.removeItem(ACTIVE_KEY);
+    else localStorage.setItem(ACTIVE_KEY, name);
+  } catch {
+    /* ignore */
+  }
+}
 
 type Listener = () => void;
 
@@ -32,9 +56,9 @@ function mapFor(kind: Kind) {
   return m;
 }
 
-function openIdb(): Promise<IDBDatabase> {
+function openIdb(name = activeDbName()): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    const req = indexedDB.open(name, DB_VERSION);
     req.onupgradeneeded = () => {
       const d = req.result;
       if (!d.objectStoreNames.contains('records')) d.createObjectStore('records');
@@ -251,6 +275,85 @@ export async function clearAll() {
     });
   }
   for (const k of versions.keys()) bump(k);
+}
+
+/** True if the open database holds anything besides the given default records. */
+export function hasUserContent(defaultIds: Set<string>): boolean {
+  for (const m of maps.values()) for (const r of m.values()) if (!r.deleted && !defaultIds.has(r.id)) return true;
+  return false;
+}
+
+/**
+ * Copy the open database's records into another database (newer copy wins).
+ * allDirty: mark every copied record for upload. withMeta: also copy sync bookkeeping
+ * (dirty list, sync cursor, last user) – used when moving an account's own data.
+ */
+export async function copyToDb(name: string, opts: { allDirty: boolean; withMeta: boolean }): Promise<number> {
+  await flushNow();
+  const srcMeta: [string, unknown][] = [];
+  if (opts.withMeta && idb) {
+    await new Promise<void>((resolve) => {
+      const src = idb!.transaction('meta', 'readonly').objectStore('meta');
+      const ks = src.getAllKeys();
+      const vs = src.getAll();
+      vs.onsuccess = () => {
+        (ks.result as string[]).forEach((k, i) => { if (k !== 'dirty') srcMeta.push([k, vs.result[i]]); });
+        resolve();
+      };
+      vs.onerror = () => resolve();
+    });
+  }
+  const target = await openIdb(name);
+  let written = 0;
+  await new Promise<void>((resolve) => {
+    const tx = target.transaction(['records', 'meta'], 'readwrite');
+    const os = tx.objectStore('records');
+    const meta = tx.objectStore('meta');
+    const copied: string[] = [];
+    for (const [kind, m] of maps)
+      for (const [id, rec] of m) {
+        const k = key(kind, id);
+        const g = os.get(k);
+        g.onsuccess = () => {
+          const cur = g.result as AnyRec | undefined;
+          if (!cur || cur.updatedAt < rec.updatedAt) {
+            os.put(rec, k);
+            copied.push(k);
+            written++;
+          }
+        };
+      }
+    // runs after the gets above, as requests in a transaction complete in order
+    const d = meta.get('dirty');
+    d.onsuccess = () => {
+      const merged = new Set<string>((d.result as string[] | undefined) || []);
+      for (const k of opts.allDirty ? copied : copied.filter((x) => dirty.has(x))) merged.add(k);
+      meta.put([...merged], 'dirty');
+    };
+    for (const [k, v] of srcMeta) meta.put(v, k);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => resolve();
+  });
+  target.close();
+  return written;
+}
+
+/** Delete every database this app has made on the device (all accounts). */
+export async function deleteAllLocalDbs(): Promise<void> {
+  idb?.close();
+  idb = null;
+  const names = new Set<string>([GUEST_DB, activeDbName()]);
+  try {
+    const list = await (indexedDB as IDBFactory & { databases?: () => Promise<{ name?: string }[]> }).databases?.();
+    list?.forEach((d) => { if (d.name?.startsWith(GUEST_DB)) names.add(d.name); });
+  } catch {
+    /* ignore */
+  }
+  await Promise.all([...names].map((n) => new Promise<void>((resolve) => {
+    const r = indexedDB.deleteDatabase(n);
+    r.onsuccess = r.onerror = r.onblocked = () => resolve();
+  })));
+  setActiveDb(GUEST_DB);
 }
 
 export function exportAll(): AnyRec[] {

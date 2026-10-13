@@ -5,6 +5,7 @@ import { childDecks, deckCounts } from '../lib/collection';
 import { getSettings } from '../lib/seed';
 import { activityByDay, streak, weekMs } from '../lib/stats';
 import { useAll, useVersion } from '../lib/store';
+import { useSyncStatus } from '../lib/sync';
 import { isDone, sessionsOn, setDone } from '../lib/timetable';
 import { HOUR, fmtHours, isoDate, parseIso, subjectColor } from '../lib/util';
 
@@ -50,11 +51,18 @@ export function Home() {
   const todayIdx = settings.weekStartsMonday ? (new Date().getDay() + 6) % 7 : new Date().getDay();
   const DAY_LETTERS = settings.weekStartsMonday ? DAY_LETTERS_MON : DAY_LETTERS_SUN;
   const goalMs = settings.weeklyGoalHours * HOUR;
+  const sync = useSyncStatus();
   const lastSet = [...sets].sort((a, b) => (b.lastStudied || b.createdAt) - (a.lastStudied || a.createdAt))[0];
 
   return (
     <>
       <TopBar />
+      {sync.configured && !sync.user && sync.state === 'signed-out' && (
+        <Link to="/settings" className="callout row between mb" style={{ display: 'flex' }}>
+          <span>You're signed out – sign in to see your progress.</span>
+          <b>Sign in</b>
+        </Link>
+      )}
       <div className="hero">
         <div>
           <div className="muted small">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>

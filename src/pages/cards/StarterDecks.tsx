@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Modal, toast } from '../../components/ui';
 import { ensureStarterPreset, installStarter, loadStarterDecks, type StarterDeck } from '../../lib/starter';
 import { all } from '../../lib/store';
+import { NO_LIMIT } from '../../lib/seed';
 
 function installed(d: StarterDeck) {
   const prefix = `starter:${d.key}:`;
@@ -11,7 +12,8 @@ function installed(d: StarterDeck) {
 export function StarterDecksModal({ onClose }: { onClose: () => void }) {
   const [decks, setDecks] = useState<StarterDeck[] | null>(null);
   const [chosen, setChosen] = useState<Set<string>>(new Set());
-  const [perDay, setPerDay] = useState(6);
+  const [spread, setSpread] = useState(false);
+  const [perDay, setPerDay] = useState(10);
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
@@ -26,7 +28,7 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
   const install = () => {
     if (!decks) return;
     setBusy(true);
-    ensureStarterPreset(perDay);
+    ensureStarterPreset(spread ? perDay : NO_LIMIT);
     let cards = 0, skipped = 0;
     for (const d of decks.filter((x) => chosen.has(x.key))) {
       const r = installStarter(d);
@@ -70,11 +72,16 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
               );
             })}
           </div>
-          <label className="field">
-            New cards per subject per day: <b style={{ color: 'var(--ink)' }}>{perDay}</b> (about {perDay * chosen.size} a day in total)
-            <input type="range" min={2} max={20} value={perDay} onChange={(e) => setPerDay(Number(e.target.value))} />
-            <span className="hint">At this pace every chosen deck is fully introduced in about {days} days. You can change it later in deck Options.</span>
-          </label>
+          <label className="check"><input type="checkbox" checked={spread} onChange={(e) => setSpread(e.target.checked)} /> Spread new cards out over several days</label>
+          {spread ? (
+            <label className="field">
+              New cards per subject per day: <b style={{ color: 'var(--ink)' }}>{perDay}</b> (about {perDay * chosen.size} a day in total)
+              <input type="range" min={2} max={50} value={perDay} onChange={(e) => setPerDay(Number(e.target.value))} />
+              <span className="hint">At this pace every chosen deck is fully introduced in about {days} days. You can change it later in deck Options.</span>
+            </label>
+          ) : (
+            <span className="hint">Every card is available to study straight away. You can set a daily limit later in deck Options.</span>
+          )}
           <div className="callout small">
             History uses the most common Edexcel options (Medicine + Western Front, Early Elizabethan England, Cold War, Weimar & Nazi Germany) – delete any subdeck you don't study. Edit any card with <kbd>E</kbd> while reviewing to match your teacher's notes.
           </div>

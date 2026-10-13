@@ -1,12 +1,19 @@
 import { createClient, type SupabaseClient, type User } from '@supabase/supabase-js';
 import { useSyncExternalStore } from 'react';
 import type { AnyRec, Kind } from './types';
-import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS, EXAM_PRESET } from './seed';
+import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS, EXAM_PRESET, migrateUnlimitedNew } from './seed';
 import {
+  GUEST_DB,
+  activeDbName,
   applyRemote,
   clearAll,
+  copyToDb,
+  dbNameFor,
+  deleteAllLocalDbs,
   dirtyCount,
   dirtyRecords,
+  hasUserContent,
+  setActiveDb,
   finishRemoteBatch,
   markAllDirty,
   markClean,
@@ -323,6 +330,7 @@ export async function syncNow(): Promise<void> {
       await pull(sb, user.id);
     } while (again);
     setStatus({ state: 'idle', lastSync: Date.now() });
+    migrateUnlimitedNew();
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : (e as { message?: string; code?: string })?.message || String(e);
     const code = (e as { code?: string })?.code || '';
@@ -338,19 +346,15 @@ function schedulePush() {
   pushTimer = setTimeout(() => void syncNow(), 1500);
 }
 
-/* ───────── accounts: each account gets its own data on this device ───────── */
+/* ───────── accounts: each account has its own database on this device ───────── */
 
-// other open tabs/windows reload when this device is wiped, so they can't re-upload stale data
+// other open tabs/windows reload when the active database changes
 const resetChannel = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('study-reset') : null;
 resetChannel?.addEventListener('message', () => location.reload());
 
-/** Remove every local record (and per-device picks that point at them), then restart the app clean. */
-export async function wipeDevice(): Promise<never> {
+function restartOn(db: string): Promise<never> {
   setOnDirty(null);
-  await clearAll();
-  for (const k of ['study.timetable', 'study.addnote']) {
-    try { localStorage.removeItem(k); } catch { /* ignore */ }
-  }
+  setActiveDb(db);
   resetChannel?.postMessage('reset');
   location.reload();
   return new Promise<never>(() => {});
@@ -359,17 +363,26 @@ export async function wipeDevice(): Promise<never> {
 /** Changes made on this device that haven't reached Supabase yet. */
 export const unsyncedCount = () => dirtyCount();
 
-/**
- * Sign out and leave a clean slate, so the next account starts fresh.
- * The caller should run syncNow() first and warn if unsyncedCount() > 0.
- */
-export async function signOutAndClear(): Promise<void> {
+/** Sign out. The account's progress stays saved to the account (and on this device for when you sign back in). */
+export async function signOut(): Promise<void> {
   try {
-    await supabase()?.auth.signOut();
+    // 'local' clears the session even when offline
+    await supabase()?.auth.signOut({ scope: 'local' });
   } catch (e) {
     console.error(e);
   }
-  await wipeDevice();
+  await restartOn(GUEST_DB);
+}
+
+/** Sign out and remove every account's data from this device (synced data stays in Supabase). */
+export async function signOutAndClear(): Promise<void> {
+  try {
+    await supabase()?.auth.signOut({ scope: 'local' });
+  } catch (e) {
+    console.error(e);
+  }
+  await deleteAllLocalDbs();
+  await restartOn(GUEST_DB);
 }
 
 /** The default records every account starts with (same ids on every device). */
@@ -403,22 +416,40 @@ export async function eraseAccountData(): Promise<void> {
     const { error } = await sb.rpc('push_records', { rows: rows.slice(i, i + CHUNK) });
     if (error) throw new Error(friendlySyncError(error.message));
   }
-  await wipeDevice();
+  await clearAll();
+  await restartOn(activeDbName());
+}
+
+/**
+ * Switching from the signed-out database to an account's: decide what (if anything) moves across.
+ *  - data this account synced before accounts had separate databases → moves with its sync state
+ *  - things made while signed out → added to the account if the person agrees
+ *  - another account's old data → stays put, never mixed in
+ */
+async function moveIntoAccount(user: User) {
+  if (activeDbName() !== GUEST_DB) return;
+  const lastUser = await metaGet<string>('lastUser');
+  const seedIds = new Set(seedRecords().map((r) => r.id));
+  if (lastUser === user.id) {
+    await copyToDb(dbNameFor(user.id), { allDirty: false, withMeta: true });
+    await clearAll();
+  } else if (!lastUser && hasUserContent(seedIds)) {
+    const ok = confirm(`You added things while signed out. Add them to ${user.email ?? 'this account'}?\n\nOK = add them to this account\nCancel = keep them only while signed out`);
+    if (ok) {
+      await copyToDb(dbNameFor(user.id), { allDirty: true, withMeta: false });
+      await clearAll();
+    }
+  }
 }
 
 async function onSignedIn(sb: SupabaseClient, user: User) {
-  const lastUser = await metaGet<string>('lastUser');
-  if (lastUser && lastUser !== user.id) {
-    // A different account from the one this device last synced: never mix their data.
-    // Normal sign-out syncs and wipes first, so this only happens after a session expired.
-    await clearAll();
-    await metaSet('lastUser', user.id);
-    resetChannel?.postMessage('reset');
-    location.reload();
+  if (activeDbName() !== dbNameFor(user.id)) {
+    await moveIntoAccount(user);
+    await restartOn(dbNameFor(user.id));
     return;
   }
-  if (!lastUser) {
-    // First sign-in since this device was cleared: anything made while signed out joins this account.
+  if ((await metaGet<string>('lastUser')) !== user.id) {
+    // this account's database is new on this device (or was just filled from signed-out data)
     markAllDirty();
     await metaSet('lastUser', user.id);
   }
@@ -437,11 +468,14 @@ async function onSignedIn(sb: SupabaseClient, user: User) {
 }
 
 function onSignedOut() {
+  // an account's database is only shown while that account is signed in
+  if (activeDbName() !== GUEST_DB) void restartOn(GUEST_DB);
   setOnDirty(null);
   channel?.unsubscribe();
   channel = null;
   if (interval) clearInterval(interval);
   setStatus({ user: null, state: 'signed-out' });
+  migrateUnlimitedNew();
 }
 
 export async function startSync() {
@@ -454,12 +488,14 @@ export async function startSync() {
   }
   setStatus({ configured: true });
   try {
-    const { data } = await sb.auth.getSession();
+    const { data, error } = await sb.auth.getSession();
     if (data.session?.user) await onSignedIn(sb, data.session.user);
+    else if (error && activeDbName() !== GUEST_DB) setStatus({ state: 'offline' }); // e.g. couldn't refresh the session offline – keep the account's data showing
     else onSignedOut();
   } catch (e) {
     console.error(e);
-    onSignedOut();
+    if (activeDbName() === GUEST_DB) onSignedOut();
+    else setStatus({ state: 'offline' });
   }
   const sub = sb.auth.onAuthStateChange((event, session) => {
     // Supabase warns against calling its API inside this callback (it can deadlock), so defer.

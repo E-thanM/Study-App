@@ -2,6 +2,9 @@ import { all, get, put } from './store';
 import type { NoteType, Preset, Settings } from './types';
 import { setDayStartHour } from './util';
 
+/** A daily limit this high means every new card is available straight away. */
+export const NO_LIMIT = 9999;
+
 const DEFAULT_CSS = `.card { font-size: 22px; text-align: center; line-height: 1.5; }`;
 
 // Seed records use updatedAt = 1 so that any real edit on any device wins the merge.
@@ -74,7 +77,7 @@ export const DEFAULT_PRESET: Preset = {
   kind: 'preset',
   updatedAt: 1,
   name: 'Default',
-  newPerDay: 20,
+  newPerDay: NO_LIMIT,
   reviewsPerDay: 200,
   learningSteps: ['1m', '10m'],
   relearningSteps: ['10m'],
@@ -105,7 +108,7 @@ export const EXAM_PRESET: Preset = {
   ...DEFAULT_PRESET,
   id: 'preset-exam',
   name: 'GCSE cram (higher retention)',
-  newPerDay: 30,
+  newPerDay: NO_LIMIT,
   reviewsPerDay: 9999,
   desiredRetention: 0.92,
   maxInterval: 180,
@@ -140,3 +143,15 @@ export function getPreset(id: string | undefined): Preset {
 }
 
 export const allPresets = () => all('preset');
+
+/**
+ * One-off change: new cards are no longer trickled in (e.g. 6 a day) – every preset shows them all.
+ * Runs once per account (flag stored in synced settings), after its data has been pulled.
+ */
+export function migrateUnlimitedNew() {
+  const s = getSettings();
+  if (s.allNewCards) return;
+  const capped = all('preset').filter((p) => !p.deleted && p.newPerDay < NO_LIMIT);
+  if (capped.length) put(capped.map((p) => ({ ...p, newPerDay: NO_LIMIT })));
+  put({ ...s, allNewCards: true });
+}

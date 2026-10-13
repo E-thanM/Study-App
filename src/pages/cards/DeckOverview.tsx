@@ -75,7 +75,7 @@ export function DeckOverview() {
               <h3>Congratulations! You've finished this deck for now.</h3>
               <p className="muted small">
                 {info.nextDue < Infinity ? `Next card due in ${fmtInterval(info.nextDue - Date.now())}.` : info.total ? 'Nothing scheduled.' : 'This deck is empty.'}
-                {info.neu > 0 && ` ${info.neu} new cards waiting (limit ${preset.newPerDay}/day).`}
+                {info.neu > 0 && (preset.newPerDay >= 9999 ? ` ${info.neu} new cards waiting.` : ` ${info.neu} new cards waiting (limit ${preset.newPerDay}/day).`)}
               </p>
               <div className="row" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
                 {!deck.filtered && <button className="btn" onClick={() => setCustom(true)}>Custom study</button>}

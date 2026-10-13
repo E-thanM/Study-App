@@ -91,7 +91,7 @@ export function DeckOptions({ deckId, onClose }: { deckId: string; onClose: () =
 
         {tab === 'daily' && (
           <div className="form-grid">
-            <Num label="New cards/day" value={p.newPerDay} onChange={(n) => set({ newPerDay: n })} hint="Each new card creates ~10 reviews over the next weeks." />
+            <Num label="New cards/day" value={p.newPerDay} onChange={(n) => set({ newPerDay: n })} hint="9999 = no limit (every new card straight away). Each new card creates ~10 reviews over the next weeks." />
             <Num label="Maximum reviews/day" value={p.reviewsPerDay} onChange={(n) => set({ reviewsPerDay: n })} />
             <label className="field">Learning steps<input type="text" value={learnText} onChange={(e) => setLearnText(e.target.value)} /><span className="hint">e.g. "1m 10m" – s, m, h, d units</span></label>
             <label className="field">Relearning steps<input type="text" value={relearnText} onChange={(e) => setRelearnText(e.target.value)} /><span className="hint">for cards you forget</span></label>

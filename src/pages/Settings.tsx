@@ -3,7 +3,7 @@ import { Icon, Seg, TopBar, toast } from '../components/ui';
 import { AI_MODELS, getAiSettings, saveAiSettings } from '../lib/ai';
 import { getSettings } from '../lib/seed';
 import { exportAll, put, useRec } from '../lib/store';
-import { configSource, eraseAccountData, friendlyAuthError, signOutAndClear, unsyncedCount, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
+import { configSource, eraseAccountData, friendlyAuthError, signOut as signOutUser, signOutAndClear, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
 import type { AnyRec } from '../lib/types';
 import { download, setDayStartHour } from '../lib/util';
 
@@ -172,9 +172,7 @@ function SyncSection() {
     setBusy('out');
     try {
       await syncNow();
-      const left = unsyncedCount();
-      if (left && !confirm(`${left} change${left === 1 ? '' : 's'} on this device haven't synced yet${navigator.onLine ? '' : ' (you are offline)'}. Signing out removes them. Sign out anyway?`)) return;
-      await signOutAndClear();
+      await signOutUser();
     } finally {
       setBusy(null);
     }
@@ -213,7 +211,7 @@ function SyncSection() {
             <button className="btn" onClick={() => void syncNow()} disabled={st.state === 'syncing'}><Icon name="sync" /> Sync now</button>
             <button className="btn" disabled={!!busy} onClick={() => void signOut()}>Sign out</button>
           </div>
-          <p className="muted tiny">Signing out removes this account's data from this device, so the next person or account starts with a clean slate. It all comes back when you sign in again.</p>
+          <p className="muted tiny">Your progress is saved to this account. Signing out hides it on this device, so another account starts with a clean slate – sign back in (on any device) and it's all there.</p>
           <details className="small">
             <summary className="muted" style={{ cursor: 'pointer' }}>Start this account again from scratch</summary>
             <div className="col" style={{ gap: 8, marginTop: 8 }}>
