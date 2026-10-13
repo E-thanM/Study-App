@@ -192,7 +192,8 @@ const toastListeners = new Set<() => void>();
 let toastId = 0;
 export function toast(text: string, action?: ToastItem['action'], ms = 3200) {
   const t = { id: ++toastId, text, action };
-  toasts = [...toasts, t];
+  // keep at most two on screen so quick reviewing doesn't stack them over the card
+  toasts = [...toasts.slice(-1), t];
   toastListeners.forEach((l) => l());
   setTimeout(() => {
     toasts = toasts.filter((x) => x.id !== t.id);

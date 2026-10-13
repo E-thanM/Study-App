@@ -101,7 +101,7 @@ function termPred(raw: string): Pred {
     case 'flag': return (c) => c.flag === Number(val);
     case 'card': {
       const n = Number(val);
-      if (Number.isFinite(n)) return (c) => c.ord === n - 1 || (get('notetype', get('note', c.noteId)?.noteTypeId)?.type === 'cloze' && c.ord === n);
+      if (Number.isFinite(n)) return (c) => (get('notetype', get('note', c.noteId)?.noteTypeId)?.type === 'cloze' ? c.ord === n : c.ord === n - 1);
       const re = wildcardRe(val, true);
       return (c) => {
         const nt = get('notetype', get('note', c.noteId)?.noteTypeId);

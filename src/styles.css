@@ -479,7 +479,7 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .legend i { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
 
 .split { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 18px; align-items: start; }
-@media (max-width: 980px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 980px) { .split { grid-template-columns: minmax(0, 1fr); } }
 .sticky-side { position: sticky; top: 76px; }
 
 /* ───────── stats ───────── */
@@ -680,3 +680,5 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
   .card-face.long .long-ans { font-size: 16px; line-height: 1.5; }
   .answer-bar { background: linear-gradient(transparent, var(--bg) 22px); padding-top: 24px; }
 }
+td.browse-first { max-width: 360px; }
+@media (max-width: 640px) { td.browse-first { max-width: 170px; } }

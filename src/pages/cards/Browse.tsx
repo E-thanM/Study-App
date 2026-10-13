@@ -220,7 +220,7 @@ export function Browse() {
                   const nt = get('notetype', n?.noteTypeId);
                   return (
                     <tr key={c.id} className={`${sel.has(c.id) ? 'sel' : ''} ${c.queue === 'suspended' ? 'susp' : ''}`} onClick={(e) => clickRow(e, c)} onDoubleClick={() => { setSel(new Set([c.id])); setModal({ kind: 'edit' }); }}>
-                      <td style={{ maxWidth: 360 }}>
+                      <td className="browse-first">
                         <div className="row" style={{ gap: 6 }}>
                           {c.flag > 0 && <span className="dot" style={{ background: FLAG_COLORS[c.flag] }} />}
                           <span className="ellipsis">{stripHtml(Object.values(n?.fields || {})[0] || '').slice(0, 140) || <i className="faint">empty</i>}</span>

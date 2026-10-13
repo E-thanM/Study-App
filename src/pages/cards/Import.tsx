@@ -171,7 +171,7 @@ function TextImport() {
               <div key={i} className="row">
                 <span className="small muted" style={{ width: 80 }}>Column {i + 1}</span>
                 <span className="small ellipsis grow" style={{ maxWidth: 260 }}>{stripHtml(body[0]?.[i] || '')}</span>
-                <select value={mapOf(i)} onChange={(e) => setMapping({ ...mapping, [i]: e.target.value })} style={{ width: 200 }}>
+                <select value={mapOf(i)} onChange={(e) => setMapping({ ...mapping, [i]: e.target.value })} style={{ width: 200, maxWidth: '45%', flex: 'none' }}>
                   <option value="">(ignore)</option>
                   {nt.fields.map((f) => <option key={f} value={f}>{f}</option>)}
                   <option value="__tags">Tags</option>
@@ -209,7 +209,7 @@ function PasteImport() {
   const [ntId, setNtId] = useState('nt-basic');
   const [deckId, setDeckId] = useState(all('deck').find((d) => !d.filtered)?.id || '');
   const items = useMemo(
-    () => parseQuizlet(text, termSep === 'custom' ? customTerm || '\t' : termSep, rowSep === 'custom' ? customRow || '\n' : rowSep).filter((i) => i.term),
+    () => parseQuizlet(text, termSep === 'custom' ? customTerm || '\t' : termSep, rowSep === 'custom' ? customRow.replace(/\\n/g, '\n').replace(/\\t/g, '\t') || '\n' : rowSep).filter((i) => i.term),
     [text, termSep, customTerm, rowSep, customRow],
   );
   const doImport = () => {

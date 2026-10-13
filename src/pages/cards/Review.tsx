@@ -104,8 +104,9 @@ export function Review() {
     if (showAnswer && ['1', '2', '3', '4'].includes(k)) { answer(Number(k) as Rating); return; }
     if (!live) return;
     switch (k.toLowerCase()) {
-      case 'e': setModal('edit'); break;
-      case 'i': setModal('info'); break;
+      // preventDefault so the key doesn't get typed into the editor that opens
+      case 'e': e.preventDefault(); setModal('edit'); break;
+      case 'i': e.preventDefault(); setModal('info'); break;
       case 'z': doUndo(); break;
       case '-': bury([live.id]); toast('Card buried'); advance(live.id); break;
       case '=': bury(cardsOfNote(live.noteId).map((c) => c.id)); toast('Note buried'); advance(live.id); break;

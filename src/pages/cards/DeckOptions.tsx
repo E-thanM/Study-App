@@ -63,12 +63,12 @@ export function DeckOptions({ deckId, onClose }: { deckId: string; onClose: () =
     >
       <div className="col" style={{ gap: 14 }}>
         <div className="row wrap">
-          <label className="field grow">Preset
+          <label className="field grow" style={{ flex: '1 1 220px', minWidth: 200 }}>Preset
             <select value={presetId} onChange={(e) => switchPreset(e.target.value)}>
               {presets.map((x) => <option key={x.id} value={x.id}>{x.name} (used by {usage(x.id)})</option>)}
             </select>
           </label>
-          <div className="row" style={{ alignSelf: 'flex-end' }}>
+          <div className="row wrap" style={{ alignSelf: 'flex-end' }}>
             <button className="btn sm" onClick={() => { const name = prompt('New preset name', `${p.name} copy`); if (!name) return; const np = { ...p, id: uid(), name }; put(np); switchPreset(np.id); }}>Clone</button>
             <button className="btn sm" onClick={() => { const name = prompt('Rename preset', p.name); if (name) set({ name }); }}>Rename</button>
             <button className="btn sm" onClick={() => { const np = { ...DEFAULT_PRESET, id: presetId, name: p.name }; setP(np); setLearnText(np.learningSteps.join(' ')); setRelearnText(np.relearningSteps.join(' ')); }}>Defaults</button>
