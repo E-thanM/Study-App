@@ -1,8 +1,11 @@
 import { createClient, type SupabaseClient, type User } from '@supabase/supabase-js';
 import { useSyncExternalStore } from 'react';
 import type { AnyRec, Kind } from './types';
+import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS, EXAM_PRESET } from './seed';
 import {
   applyRemote,
+  clearAll,
+  dirtyCount,
   dirtyRecords,
   finishRemoteBatch,
   markAllDirty,
@@ -335,10 +338,87 @@ function schedulePush() {
   pushTimer = setTimeout(() => void syncNow(), 1500);
 }
 
+/* ───────── accounts: each account gets its own data on this device ───────── */
+
+// other open tabs/windows reload when this device is wiped, so they can't re-upload stale data
+const resetChannel = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('study-reset') : null;
+resetChannel?.addEventListener('message', () => location.reload());
+
+/** Remove every local record (and per-device picks that point at them), then restart the app clean. */
+export async function wipeDevice(): Promise<never> {
+  setOnDirty(null);
+  await clearAll();
+  for (const k of ['study.timetable', 'study.addnote']) {
+    try { localStorage.removeItem(k); } catch { /* ignore */ }
+  }
+  resetChannel?.postMessage('reset');
+  location.reload();
+  return new Promise<never>(() => {});
+}
+
+/** Changes made on this device that haven't reached Supabase yet. */
+export const unsyncedCount = () => dirtyCount();
+
+/**
+ * Sign out and leave a clean slate, so the next account starts fresh.
+ * The caller should run syncNow() first and warn if unsyncedCount() > 0.
+ */
+export async function signOutAndClear(): Promise<void> {
+  try {
+    await supabase()?.auth.signOut();
+  } catch (e) {
+    console.error(e);
+  }
+  await wipeDevice();
+}
+
+/** The default records every account starts with (same ids on every device). */
+const seedRecords = (): AnyRec[] => [...BUILTIN_NOTETYPES, DEFAULT_PRESET, EXAM_PRESET, DEFAULT_SETTINGS];
+
+/**
+ * Delete everything synced for the signed-in account (on every device) and start again.
+ * Records become tombstones so other devices remove them too; defaults are reset.
+ */
+export async function eraseAccountData(): Promise<void> {
+  const sb = supabase();
+  const user = status.user;
+  if (!sb || !user) throw new Error('Sign in first.');
+  setOnDirty(null);
+  const ids: { id: string; kind: Kind }[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await sb.from('records').select('id,kind').eq('deleted', false).order('seq').range(from, from + 999);
+    if (error) throw new Error(friendlySyncError(error.message));
+    ids.push(...((data || []) as { id: string; kind: Kind }[]));
+    if (!data || data.length < 1000) break;
+  }
+  const now = Date.now();
+  const seeds = new Map(seedRecords().map((r) => [r.id, r]));
+  const rows = ids.map(({ id, kind }) => {
+    const seed = seeds.get(id);
+    return seed
+      ? { id, kind, data: { ...seed, updatedAt: now }, updated_at: now, deleted: false }
+      : { id, kind, data: { id, kind, deleted: true, updatedAt: now }, updated_at: now, deleted: true };
+  });
+  for (let i = 0; i < rows.length; i += CHUNK) {
+    const { error } = await sb.rpc('push_records', { rows: rows.slice(i, i + CHUNK) });
+    if (error) throw new Error(friendlySyncError(error.message));
+  }
+  await wipeDevice();
+}
+
 async function onSignedIn(sb: SupabaseClient, user: User) {
   const lastUser = await metaGet<string>('lastUser');
-  if (lastUser !== user.id) {
-    // First sign-in on this device (or a different account): upload everything local.
+  if (lastUser && lastUser !== user.id) {
+    // A different account from the one this device last synced: never mix their data.
+    // Normal sign-out syncs and wipes first, so this only happens after a session expired.
+    await clearAll();
+    await metaSet('lastUser', user.id);
+    resetChannel?.postMessage('reset');
+    location.reload();
+    return;
+  }
+  if (!lastUser) {
+    // First sign-in since this device was cleared: anything made while signed out joins this account.
     markAllDirty();
     await metaSet('lastUser', user.id);
   }

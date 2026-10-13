@@ -1,0 +1,387 @@
+@deck Geography
+@board Eduqas GCSE Geography B (C112) – Changing Places, Changing Environments, Environmental Challenges
+
+# Theme 1 Changing Places – Urbanisation in the UK
+## Key terms and processes
+What is urbanisation? :: An increase in the proportion of a country's population living in towns and cities
+What is suburbanisation? :: The outward growth of towns and cities as people and businesses move from the inner city to the edge (suburbs), helped by better transport
+What is counter-urbanisation? :: The movement of people from large urban areas to smaller towns, villages and the countryside
+What is re-urbanisation? :: The movement of people back into city centres and inner cities, often after regeneration (e.g. new flats, waterfront developments)
+C: The movement of people from cities to rural areas is {{c1::counter-urbanisation}}; moving back into regenerated city centres is {{c2::re-urbanisation}}.
+Give three reasons for counter-urbanisation in the UK. :: Better transport and car ownership allow commuting ;; Internet and home working ;; Desire for a quieter, safer, less polluted environment; retirement to the countryside
+What is a commuter village (dormitory settlement)? :: A rural village where many residents live but travel to work in a nearby town or city
+What is the rural–urban fringe? :: The zone at the edge of a city where urban and rural land uses meet (e.g. business parks, retail parks, golf courses, farmland)
+What is the urban–rural continuum? :: The idea that settlements range gradually from large cities to remote rural areas rather than falling into two separate types
+What is a greenfield site? :: Land that has not been built on before, usually on the edge of a town or in the countryside
+What is a brownfield site? :: Land that has been built on before and is now derelict or available for redevelopment, often in inner cities
+Give advantages of building on brownfield sites. :: Reuses derelict land and improves the area ;; Services (water, power) often already in place ;; Protects the countryside ;; Close to jobs and transport
+Give disadvantages of building on brownfield sites. :: May need expensive decontamination ;; Old buildings must be cleared ;; Plots can be small and awkward
+What is a green belt? :: A protected zone of open land around a city where building is strictly controlled to stop urban sprawl
+## Rural change
+Give positive impacts of counter-urbanisation on rural areas. :: Supports some local services (e.g. pubs, schools) ;; Old buildings renovated ;; New money in the local economy
+Give negative impacts of counter-urbanisation on rural areas. :: House prices rise so young locals are priced out ;; Second homes left empty much of the year ;; Commuters shop in towns so village shops and buses close ;; More traffic on narrow roads
+What is rural depopulation? :: The decline in population of remote rural areas as (mainly young) people move away for jobs, education and services
+Why do remote rural areas suffer depopulation? :: Few well-paid jobs (decline of farming, quarrying and fishing) ;; Poor services and transport ;; Limited broadband ;; Expensive housing due to second homes
+What is rural deprivation? :: A lack of access to jobs, services, housing and transport in rural areas leading to a lower quality of life
+Give ways rural areas can diversify their economies. :: Farm diversification (farm shops, campsites, holiday lets) ;; Tourism and outdoor activities ;; Renewable energy (wind farms) ;; Home working with improved broadband
+What is a second home and why are they controversial? :: A property owned in addition to a main home, used for holidays ;; They push up prices and leave villages empty in winter (an issue in Wales and Cornwall, where councils can now charge extra council tax)
+## UK urban change and regeneration
+What is deindustrialisation? :: The decline of manufacturing industry in an area, leading to job losses, derelict factories and docks
+Why did many UK inner cities decline after the 1960s? :: Closure of docks and factories (deindustrialisation) ;; Unemployment ;; People and businesses moved to suburbs ;; Poor-quality housing and derelict land
+What is urban regeneration? :: Improving a run-down urban area economically, socially and environmentally, e.g. by new housing, jobs, transport and public spaces
+What is gentrification? :: When wealthier people move into a run-down area and renovate housing, raising prices and changing its character; poorer residents may be displaced
+What is the difference between top-down and bottom-up regeneration? :: **Top-down** – led by government or large organisations, often big flagship projects ;; **Bottom-up** – led by local communities, small-scale and meeting local needs
+Case study: what was Cardiff Bay like before regeneration? :: Former coal-exporting docks (Tiger Bay) that declined after coal exports collapsed; derelict land, mudflats at low tide, high unemployment
+Case study: how was Cardiff Bay regenerated? :: Cardiff Bay Development Corporation (1987–2000) ;; Cardiff Bay Barrage (completed 1999) created a freshwater lake ;; Senedd (Welsh Parliament), Wales Millennium Centre, offices, flats, bars and restaurants
+Give criticisms of the Cardiff Bay regeneration. :: Many new jobs and expensive flats did not benefit original Butetown residents ;; Loss of mudflat habitat for wading birds ;; Some areas felt cut off from the rest of the city
+Case study: how were the London Docklands regenerated? :: London Docklands Development Corporation (1981–1998) ;; Canary Wharf financial district ;; Docklands Light Railway, Jubilee line extension, London City Airport ;; Criticised for rising house prices and few jobs for local dockers
+How did the 2012 Olympics regenerate Stratford, East London? :: Derelict industrial land cleaned up ;; Olympic Park, Westfield shopping centre, new homes (East Village) ;; Improved transport ;; Concerns about gentrification and affordability
+What is a sustainable city? :: One that meets present needs without harming future generations – e.g. efficient public transport, renewable energy, recycling, green spaces, affordable housing and community involvement
+Give examples of sustainable urban transport. :: Trams and light rail, bus lanes, park and ride, cycle lanes and bike hire, congestion charging (London 2003), low-emission zones
+## Retailing changes
+How has UK retailing changed since the 1970s? :: Growth of out-of-town retail parks and shopping centres ;; Decline of many high streets ;; Rapid growth of online shopping ;; Growth of supermarket convenience stores and discount chains
+Why did out-of-town shopping centres grow? :: Cheap, large plots of land ;; Free parking ;; Near motorway junctions ;; Rising car ownership ;; Everything under one roof
+Name two UK out-of-town shopping centres. :: Trafford Centre (Manchester), Cribbs Causeway (Bristol), Meadowhall (Sheffield), Merry Hill (Dudley)
+Why have many high streets declined? :: Competition from out-of-town centres and online shopping ;; High rents and business rates ;; Chain store closures ;; Covid-19 lockdowns accelerated the shift online
+What is a clone town? :: A town whose high street is dominated by the same national chain stores found everywhere, losing local character
+How can high streets be revitalised? :: Pedestrianisation, cheaper parking, events and markets, converting empty shops to housing, leisure and cafés, supporting independent shops
+What is the impact of online shopping on the UK? :: Fewer high-street shops ;; Growth of large distribution warehouses near motorways ;; More delivery vans ;; New jobs in logistics
+
+# Theme 1 Changing Places – Global Cities
+## Global urbanisation
+What proportion of the world's population lives in urban areas? :: Over half (about 55–57%), rising to an estimated two-thirds by 2050
+Where is urbanisation happening fastest today? :: In LICs and NEEs, especially in Africa and Asia; HICs are already highly urbanised
+What is a megacity? :: A city with a population of over 10 million people
+Name four megacities. :: Tokyo, Delhi, Shanghai, Mumbai, São Paulo, Lagos, Cairo, Mexico City
+What is a world (global) city? :: A city with major influence on the global economy, finance, culture and politics, e.g. London, New York, Tokyo
+What is rural–urban migration? :: The movement of people from the countryside to towns and cities
+What is natural increase and why does it add to urban growth? :: Birth rate minus death rate ;; Migrants are often young adults of child-bearing age, and healthcare in cities lowers death rates
+Give push factors that encourage rural–urban migration. :: Drought, crop failure and natural hazards ;; Lack of jobs and low farm wages ;; Poor healthcare and education ;; Conflict ;; Mechanisation of farming
+Give pull factors that attract migrants to cities. :: Jobs and higher wages ;; Better schools and hospitals ;; Clean water and electricity ;; Family already in the city ;; Perceived better quality of life
+What is an informal settlement (squatter settlement/slum)? :: Housing built illegally on land the residents do not own, usually from scrap materials, lacking basic services like clean water, sanitation and electricity
+What is the informal economy? :: Jobs not officially recognised or taxed, e.g. street selling, recycling waste, shoe shining; no job security, sick pay or protection
+Give problems faced by people living in informal settlements. :: Overcrowding ;; Lack of clean water and sanitation spreads disease (e.g. cholera) ;; Fire and flood risk ;; Insecure tenure – threat of eviction ;; Crime
+What is site and service? :: A scheme where the authorities provide land with basic services (water, sewerage, electricity) and residents build their own homes
+What is self-help housing? :: Residents are given materials, loans or legal tenure to improve their own homes, often with community groups
+## Case study: Mumbai (NEE city)
+Where is Mumbai and why is it important? :: West coast of India on the Arabian Sea ;; India's financial and commercial capital – stock exchange, port, Bollywood film industry ;; Megacity of around 20 million (metro area)
+Why has Mumbai grown so rapidly? :: Rural–urban migration from across India (push of rural poverty, pull of jobs) plus high natural increase among a young population
+What is Dharavi? :: One of Asia's largest informal settlements, in central Mumbai; around 1 million people in roughly 2 km²
+Describe the informal economy of Dharavi. :: Thousands of small workshops – recycling plastic and metal, pottery, leather, textiles and garments ;; Estimated turnover of hundreds of millions of US dollars a year
+Give social challenges in Mumbai. :: Around 40% of people live in slums ;; Shared toilets and poor sanitation ;; Water shortages ;; Disease ;; Overcrowded housing
+Give environmental challenges in Mumbai. :: Air pollution from traffic and industry ;; Untreated sewage and waste in rivers and Mahim Creek ;; Monsoon flooding (e.g. 2005 floods killed hundreds)
+Give transport challenges in Mumbai. :: Severely congested roads ;; Suburban trains extremely overcrowded (millions of journeys daily) ;; Long commutes from outer suburbs
+What is the Dharavi Redevelopment Project? :: A plan to replace slum housing with high-rise flats and free apartments for eligible residents, with land sold for commercial development ;; Criticised for breaking up communities and businesses and excluding residents who cannot prove tenure
+Give examples of improvements to Mumbai's transport. :: Mumbai Metro (first line opened 2014) ;; Bandra–Worli Sea Link bridge (2009) ;; Mumbai Trans Harbour Link (2024)
+Give an alternative NEE city case study and one fact about it. :: Rio de Janeiro, Brazil ;; Favela-Bairro project upgraded favelas with paved roads, sanitation and community facilities; Rocinha is Rio's largest favela
+## Urban issues and challenges
+Give urban challenges in HIC cities. :: Inequality and deprivation in inner cities ;; Traffic congestion and air pollution ;; Housing shortages and high prices ;; Waste disposal ;; Urban sprawl onto greenfield land
+What is urban sprawl? :: The uncontrolled outward spread of a city onto surrounding countryside
+How can traffic congestion be reduced in cities? :: Integrated public transport, congestion charges, park and ride, bus lanes, cycle schemes, car sharing
+What are the main sources of urban air pollution? :: Vehicle exhausts (especially diesel), industry, burning fuel for heating and cooking, construction dust
+What is a low-emission zone? :: An area where the most polluting vehicles are charged or banned, e.g. London ULEZ
+How can urban waste be managed sustainably? :: Reduce, reuse, recycle ;; Composting food waste ;; Energy-from-waste incinerators instead of landfill
+
+# Theme 1 Changing Economies – Global Development
+## Measuring development
+What is development? :: Improvement in people's standard of living and quality of life, including economic, social and political progress
+What is GNI per capita? :: Gross National Income – the total value of goods and services produced by a country plus income from abroad, divided by population; usually in US$
+Why is GNI per capita sometimes adjusted for PPP? :: Purchasing power parity takes account of the cost of living, so it compares what money can actually buy in each country
+What is the Human Development Index (HDI)? :: A composite measure from 0 to 1 combining **life expectancy**, **education** (mean and expected years of schooling) and **GNI per capita (PPP)**
+Why is HDI a better measure than GNI alone? :: It combines social and economic measures, so gives a broader picture of quality of life
+What is the Gini coefficient? :: A measure of income inequality within a country, from 0 (perfect equality) to 1 (one person has all the income); sometimes given as 0–100
+What is infant mortality rate? :: Number of babies who die before their first birthday per 1,000 live births
+Give other social indicators of development. :: Life expectancy, literacy rate, access to clean water, doctors per 1,000 people, birth rate, death rate
+Give limitations of single development indicators. :: Averages hide inequality within a country ;; Data may be inaccurate in poorer countries ;; GNI ignores the informal economy ;; One measure cannot show all aspects of development
+What are HICs, NEEs and LICs? :: **HIC** – high-income country (e.g. UK, USA) ;; **NEE** – newly emerging economy with rapid industrial growth (e.g. India, Brazil, Nigeria, China) ;; **LIC** – low-income country (e.g. Chad, Malawi, Afghanistan)
+What was the Brandt Line? :: A line drawn in 1980 dividing the richer 'North' from the poorer 'South'; now outdated as many 'South' countries have developed
+What is the Demographic Transition Model? :: A model showing how birth rates, death rates and total population change as a country develops, through five stages
+C: In stage 2 of the DTM the {{c1::death rate}} falls rapidly while the {{c2::birth rate}} stays high, so population grows rapidly.
+## The development gap
+What is the development gap? :: The difference in standards of living between the world's richest and poorest countries
+Give physical causes of uneven development. :: Landlocked location limits trade ;; Natural hazards (floods, drought, tropical storms) ;; Few natural resources ;; Climate and poor soils limit farming ;; Tropical diseases (e.g. malaria)
+Give economic causes of uneven development. :: Reliance on exporting low-value primary products whose prices fluctuate ;; Unfair trade and tariffs ;; Debt repayments ;; Lack of investment and infrastructure
+Give historical and political causes of uneven development. :: Colonialism exploited resources and drew artificial borders ;; Conflict and civil war ;; Corruption and poor governance
+What was Rostow's model of development? :: A model of five stages of economic growth: traditional society, pre-conditions for take-off, take-off, drive to maturity, age of high mass consumption
+What is dependency theory (Frank)? :: The idea that rich 'core' countries keep poorer 'periphery' countries underdeveloped by exploiting their raw materials and cheap labour
+What is aid and what are its main types? :: Help given to a country ;; **Short-term/emergency** (after disasters) ;; **Long-term/development** ;; **Bilateral** (government to government), **multilateral** (via World Bank, UN), **NGO/charity** aid ;; **Tied aid** must be spent on the donor's goods
+Give advantages and disadvantages of aid. :: **For** – saves lives, funds schools, clinics and water supplies ;; **Against** – can create dependency, may be lost to corruption, tied aid benefits the donor
+What is intermediate technology? :: Simple, affordable technology suited to local needs that local people can maintain, e.g. hand pumps, small dams, solar cookers
+What is Fairtrade? :: A scheme guaranteeing producers in poorer countries a minimum price plus a premium for community projects, e.g. cocoa, coffee and bananas
+What is microfinance? :: Small loans to people (often women) in poorer countries who cannot get normal bank loans, to start small businesses, e.g. Grameen Bank in Bangladesh
+What is debt relief? :: Cancelling or reducing the debts of poorer countries so money can be spent on health and education, e.g. HIPC initiative
+How can tourism reduce the development gap? :: Brings foreign currency, jobs and investment in infrastructure ;; But leakage of profits to foreign firms, seasonal jobs and environmental damage are problems (e.g. Kenya, Jamaica)
+## Globalisation and TNCs
+What is globalisation? :: The increasing connection of the world's countries through trade, investment, communication, culture and migration
+Give factors that have speeded up globalisation. :: Containerisation and cheaper transport ;; The internet and mobile communications ;; Free trade agreements ;; Growth of TNCs
+What is a transnational corporation (TNC)? :: A large company that operates in more than one country, usually with headquarters in an HIC, e.g. Nike, Shell, Apple, Unilever, Tata
+Give advantages of TNCs to host countries. :: Jobs and training ;; Investment in infrastructure ;; Tax revenue ;; Multiplier effect boosts local firms ;; Transfer of skills and technology
+Give disadvantages of TNCs to host countries. :: Low wages and poor working conditions ;; Profits go back to the HIC (leakage) ;; Environmental damage ;; Can leave suddenly ;; Local firms outcompeted
+What is the multiplier effect? :: When investment or new jobs create more spending, which creates further jobs and income in other businesses – an upward spiral
+What is outsourcing? :: When a company moves part of its work (e.g. call centres, manufacturing) to another company, often in a country with lower costs
+What is a free trade zone (export processing zone)? :: An area where goods can be made and exported with low or no taxes to attract foreign investment
+## Case study: Nigeria (NEE)
+Where is Nigeria and why is it significant? :: West Africa, on the Gulf of Guinea ;; Africa's most populous country (over 200 million) and one of its largest economies
+Why is Nigeria classed as an NEE? :: Rapid economic growth since 2000 ;; Growing manufacturing and services (banking, telecoms, Nollywood film industry) ;; Still large inequality and poverty
+What is the importance of oil to Nigeria? :: Oil (mainly from the Niger Delta) provides the vast majority of export earnings and a large share of government revenue ;; Makes the economy vulnerable to falling oil prices
+Name a TNC operating in Nigeria and give an advantage and disadvantage. :: Shell ;; **+** jobs, tax revenue and investment ;; **–** oil spills polluting the Niger Delta's farmland, fishing waters and mangroves, gas flaring
+Name another TNC in Nigeria. :: Unilever – makes soaps, food and drinks, employs thousands and sources local raw materials
+Give environmental problems from Nigeria's economic development. :: Oil spills in the Niger Delta ;; Gas flaring ;; Deforestation ;; Urban air pollution and waste in Lagos
+How has Nigeria's economy changed? :: From mainly agriculture and oil exports towards manufacturing and services ;; Telecoms (mobile phones), banking, retail and film have grown rapidly
+What is Nollywood? :: Nigeria's film industry – one of the largest in the world by number of films, providing many jobs
+Give challenges that hold back Nigeria's development. :: Corruption ;; Conflict (e.g. Boko Haram in the north-east) ;; Unreliable electricity ;; Inequality between south and north ;; Dependence on oil
+## Changes in the UK economy
+What are the four sectors of the economy? :: **Primary** – extracting raw materials (farming, mining, fishing) ;; **Secondary** – manufacturing ;; **Tertiary** – services ;; **Quaternary** – research, IT and knowledge-based industries
+How has UK employment structure changed since 1900? :: Big decline in primary and secondary jobs ;; Large growth in tertiary and quaternary jobs
+Why did UK manufacturing decline? :: Competition from cheaper overseas producers ;; Mechanisation and automation ;; Exhaustion of coal mines ;; Globalisation – production moved abroad
+What is a post-industrial economy? :: An economy dominated by services, finance, research and IT rather than manufacturing
+What is a science park? :: A group of high-tech and research businesses on an attractive site, often linked to a university, e.g. Cambridge Science Park (1970)
+Why do science parks locate near universities? :: Access to research and graduates ;; Collaboration ;; Prestige ;; Good transport and attractive environments
+What is the north–south divide in the UK? :: Differences in wealth, house prices, life expectancy and jobs between the more prosperous south-east and the poorer north and Wales
+What strategies try to reduce the north–south divide? :: Enterprise Zones ;; Transport investment ;; Moving government departments and the BBC (MediaCityUK, Salford) out of London ;; 'Levelling up' funding
+How did the decline of coal mining affect South Wales? :: Pit closures (mostly 1980s) caused mass unemployment, depopulation and deprivation in valley communities; regeneration aimed to attract new industry and services
+
+# Theme 2 Changing Environments – UK Physical Landscapes
+## Geology and weathering
+What are the three main rock types? :: **Igneous** – formed from cooled magma (e.g. granite) ;; **Sedimentary** – layers of sediment compressed (e.g. chalk, limestone, sandstone, clay) ;; **Metamorphic** – changed by heat and pressure (e.g. slate, marble)
+Describe the general pattern of UK geology. :: Harder, older igneous and metamorphic rocks in the north and west (upland) ;; Softer, younger sedimentary rocks in the south and east (lowland)
+How did glaciation shape the UK's upland landscape? :: Ice sheets eroded corries, arêtes and U-shaped valleys in upland areas such as Snowdonia and the Lake District, and deposited till in lowlands
+What is weathering? :: The breakdown of rocks in situ (in place) by physical, chemical or biological processes
+What is freeze–thaw weathering? :: Water enters cracks, freezes and expands by about 9%, widening the crack; repeated cycles break the rock apart
+What is chemical weathering? :: Breakdown of rock by chemical change, e.g. carbonation – slightly acidic rainwater dissolves limestone and chalk
+What is biological weathering? :: Breakdown of rock by living things, e.g. plant roots growing in cracks, burrowing animals
+What is mass movement? :: The downhill movement of material under gravity, e.g. sliding, slumping, rockfall, soil creep
+What is slumping (rotational slip)? :: Saturated softer rock (e.g. clay) slides down along a curved slip plane, common on clay cliffs like Holderness
+## River processes
+What are the four types of river erosion? :: **Hydraulic action** – force of water ;; **Abrasion** – load scrapes the bed and banks ;; **Attrition** – rocks collide and become smaller and rounder ;; **Solution** – dissolving soluble rock
+What are the four ways a river transports its load? :: **Traction** – large boulders rolled ;; **Saltation** – pebbles bounce ;; **Suspension** – fine particles carried ;; **Solution** – dissolved minerals
+When does a river deposit its load? :: When it loses energy – e.g. velocity falls on the inside of a bend, when the river floods, or where it enters the sea or a lake
+What is vertical erosion and where is it dominant? :: Downward erosion deepening the channel; dominant in the upper course
+What is lateral erosion and where is it dominant? :: Sideways erosion widening the channel; dominant in the middle and lower course
+What is the long profile of a river? :: A side view from source to mouth – steep gradient in the upper course becoming gentler towards the mouth
+How does a river change from source to mouth (Bradshaw model)? :: Width, depth, discharge, velocity and cross-sectional area increase ;; Gradient, load particle size and channel roughness decrease
+What is discharge? :: The volume of water passing a point per second, measured in cumecs (m³/s); discharge = cross-sectional area × velocity
+What is a drainage basin? :: The area of land drained by a river and its tributaries
+What is a watershed? :: The boundary (high ground) separating one drainage basin from another
+Define source, mouth, confluence and tributary. :: **Source** – start of a river ;; **Mouth** – where it meets the sea ;; **Confluence** – where two rivers join ;; **Tributary** – a smaller river joining a larger one
+## River landforms
+What are interlocking spurs? :: Ridges of higher land that the river winds around in the upper course, because vertical erosion dominates and the river flows around hard rock
+How does a waterfall form? :: River flows over a band of hard rock on top of soft rock ;; Soft rock erodes faster, undercutting the hard rock to form an overhang ;; Overhang collapses; plunge pool deepened by hydraulic action and abrasion ;; Process repeats and the waterfall retreats upstream
+What is a gorge? :: A steep-sided, narrow valley formed as a waterfall retreats upstream
+Give a named UK example of a waterfall. :: High Force on the River Tees (about 21 m high), over hard dolerite (Whin Sill) on top of softer limestone; Henrhyd Falls in the Brecon Beacons
+How does a meander form? :: Fastest flow on the outside of a bend erodes the bank (lateral erosion) forming a **river cliff** ;; Slower flow on the inside deposits sediment forming a **slip-off slope** ;; Bends become more pronounced over time
+How does an ox-bow lake form? :: Erosion narrows the neck of a meander ;; During a flood the river cuts through the neck ;; Deposition seals off the old bend, leaving an ox-bow lake
+What is a floodplain? :: The wide, flat area of land either side of a river in the lower course that floods; built up of alluvium deposited during floods
+How do levees form? :: When a river floods, it loses energy and deposits its heaviest sediment closest to the channel ;; Repeated floods build these deposits into raised banks
+What is an estuary? :: The tidal mouth of a river where fresh and sea water mix; often has mudflats and salt marshes
+## River flooding and management
+What is a storm hydrograph? :: A graph showing how a river's discharge changes over time in response to a rainfall event
+C: The time between peak rainfall and peak discharge on a hydrograph is the {{c1::lag time}}.
+Define the key parts of a hydrograph. :: **Rising limb** – discharge increasing ;; **Peak discharge** – highest flow ;; **Falling (recessional) limb** – discharge decreasing ;; **Base flow** – normal level from groundwater
+What does a flashy hydrograph look like? :: Short lag time, steep rising limb and high peak discharge – high flood risk
+Give physical factors that increase flood risk. :: Heavy or prolonged rainfall ;; Saturated or frozen ground ;; Impermeable rock (e.g. clay, granite) ;; Steep slopes ;; Small, circular drainage basin
+Give human factors that increase flood risk. :: Urbanisation – impermeable tarmac and concrete, drains carry water quickly ;; Deforestation – less interception ;; Building on floodplains ;; Some farming practices
+What is surface runoff (overland flow)? :: Water flowing over the ground surface when it cannot infiltrate
+Define infiltration, percolation and throughflow. :: **Infiltration** – water soaking into the soil ;; **Percolation** – water moving down into rock ;; **Throughflow** – water moving sideways through soil towards the river
+What is hard engineering? :: Building artificial structures to control natural processes – usually expensive and can harm the environment
+What is soft engineering? :: Working with natural processes to manage rivers or coasts – usually cheaper and more sustainable
+Give examples of hard engineering for rivers. :: Dams and reservoirs, raised embankments/artificial levees, flood walls, channel straightening, flood relief channels
+Give examples of soft engineering for rivers. :: Floodplain zoning, afforestation, river restoration (re-meandering), wetlands and washlands, flood warnings
+What is floodplain zoning? :: Restricting land use on the floodplain so areas most at risk are used for parks or farming instead of housing
+What happened in the Boscastle flood (16 August 2004)? :: Around 200 mm of rain fell in a few hours on the steep, small catchment of the Rivers Valency and Jordan ;; Flash flood swept cars into the harbour, destroyed buildings ;; Around 150 people rescued by helicopter – no deaths
+Why did Boscastle flood so badly? :: Intense rainfall on saturated ground ;; Steep-sided valleys and impermeable slate ;; Small catchment gave a very short lag time ;; Narrow bridge trapped debris causing a dam effect
+How was Boscastle protected after 2004? :: A flood defence scheme (completed 2008) widened and deepened the river channel, raised the car park and replaced the low bridge with a wider one
+What caused the Somerset Levels floods of 2013–14? :: Very low, flat land at or near sea level ;; Exceptionally wet winter with repeated Atlantic storms ;; High tides prevented drainage ;; Rivers Parrett and Tone had not been dredged for many years
+Give impacts of the Somerset Levels floods. :: Around 600 homes flooded ;; Villages such as Muchelney cut off for weeks ;; Large areas of farmland flooded and livestock moved ;; Roads and railway closed
+How were the Somerset Levels managed after 2014? :: Dredging about 8 km of the Rivers Parrett and Tone ;; Raised roads ;; Permanent pumping stations ;; 20-year Flood Action Plan, including a tidal barrier at Bridgwater
+## Coastal processes
+What is fetch? :: The distance of open water over which the wind blows; longer fetch creates bigger, more powerful waves
+Compare constructive and destructive waves. :: **Constructive** – low, long wavelength, strong swash, weak backwash, build beaches ;; **Destructive** – high, steep, frequent, weak swash, strong backwash, erode beaches
+What are swash and backwash? :: **Swash** – water moving up the beach after a wave breaks ;; **Backwash** – water flowing back down the beach under gravity
+Name the four coastal erosion processes. :: Hydraulic action (including air compressed in cracks), abrasion (corrasion), attrition, solution (corrosion)
+What is longshore drift? :: Waves approach at an angle (prevailing wind) so swash carries sediment up the beach diagonally; backwash returns it straight down at right angles; sediment zig-zags along the coast
+What is a sediment cell? :: A stretch of coast within which sediment moves around and is largely contained; the UK has 11 major cells
+What are concordant and discordant coastlines? :: **Concordant** – rock bands run parallel to the coast (e.g. Lulworth Cove) ;; **Discordant** – bands of hard and soft rock run at right angles to the coast, forming headlands and bays (e.g. Swanage Bay)
+## Coastal landforms
+How do headlands and bays form? :: On a discordant coast, softer rock (e.g. clay) erodes quickly to form bays ;; Harder rock (e.g. chalk) is more resistant and is left jutting out as headlands
+Describe the formation of caves, arches, stacks and stumps. :: Waves erode a crack in a headland by hydraulic action and abrasion forming a **cave** ;; Erosion cuts through the headland to form an **arch** ;; The arch roof collapses leaving a **stack** ;; The stack erodes to a **stump**
+Give a named example of a headland with an arch and stacks. :: Old Harry Rocks (chalk stacks, Handfast Point, Dorset) ;; Durdle Door (arch, Dorset) ;; Green Bridge of Wales (arch, Pembrokeshire)
+How do wave-cut platforms form? :: Waves erode the base of a cliff forming a wave-cut notch ;; The cliff above collapses ;; The cliff retreats, leaving a flat rocky platform exposed at low tide
+How do beaches form? :: Constructive waves deposit sand and shingle in sheltered areas such as bays; sand beaches are flat, shingle beaches steeper
+How does a spit form? :: Longshore drift carries sediment along the coast ;; Where the coastline changes direction, sediment is deposited into the sea ;; Changes in wind direction can curve the end (recurved spit) ;; Salt marsh forms in the sheltered area behind
+Give named examples of spits. :: Spurn Head (Holderness, mouth of the Humber) ;; Hurst Castle Spit (Hampshire) ;; Dawlish Warren (Devon)
+What is a bar? :: A ridge of sediment that grows across a bay, joining two headlands and trapping a lagoon behind, e.g. Slapton Sands (Devon)
+What is a tombolo? :: A spit or bar connecting the mainland to an island, e.g. Chesil Beach linking to the Isle of Portland
+How do sand dunes form? :: Onshore winds blow dry sand to the back of the beach where it is trapped by obstacles ;; Marram grass stabilises the sand and dunes grow
+## Coastal management
+Give hard engineering methods for coasts with a pro and con of each. :: **Sea wall** – protects cliffs and towns but expensive and reflects wave energy ;; **Groynes** – trap sediment and build beaches but starve beaches downdrift ;; **Rock armour (rip-rap)** – absorbs wave energy, cheaper but can look ugly ;; **Gabions** – cheap but short-lived
+Give soft engineering methods for coasts. :: **Beach nourishment** – adding sand to beaches ;; **Dune regeneration** – planting marram grass, fencing ;; **Managed retreat** – letting low-value land flood to create salt marsh
+What are the four Shoreline Management Plan options? :: **Hold the line** ;; **Advance the line** ;; **Managed realignment (retreat)** ;; **No active intervention**
+Why does the Holderness coast erode so quickly? :: Soft boulder clay (till) cliffs ;; Powerful destructive waves with a long fetch across the North Sea ;; Narrow beaches give little protection ;; Slumping when saturated
+How fast is Holderness eroding? :: On average about 1.5–2 m per year – one of the fastest-eroding coastlines in Europe; around 30 villages have been lost since Roman times
+How was Mappleton protected and what was the effect? :: 1991 scheme costing about £2 million: two rock groynes and rock armour ;; Protected the village and the B1242 road ;; Starved beaches to the south, increasing erosion at Cowden farmland
+How is Hornsea or Withernsea protected? :: Sea walls, groynes and rock armour protect the towns, but these also trap sediment and increase erosion further south
+Give a named example of managed retreat. :: Medmerry, West Sussex (2013) – new sea wall built inland so land floods to create salt marsh habitat, protecting homes; Abbotts Hall, Essex
+Why is managed retreat controversial? :: Farmland and some properties are lost and landowners may get little compensation, although it is cheap and creates habitats
+
+# Theme 2 Changing Environments – Weather and Climate
+## Global atmospheric circulation
+What is global atmospheric circulation? :: The worldwide system of air movement transferring heat from the equator to the poles, made up of three cells in each hemisphere
+Name the three circulation cells in each hemisphere. :: Hadley cell (0–30°), Ferrel cell (30–60°), Polar cell (60–90°)
+What happens to air at the equator? :: Intense heating causes air to rise, creating low pressure, cloud and heavy rainfall – hence tropical rainforests
+What happens at around 30° north and south? :: Cool air sinks, creating high pressure, clear skies and little rain – hence hot deserts like the Sahara
+What is the ITCZ? :: Inter-Tropical Convergence Zone – a belt of low pressure near the equator where trade winds meet; it moves north and south with the seasons, bringing rainy seasons
+What are prevailing winds? :: The most common wind direction at a place; the UK's are south-westerlies
+What is the jet stream? :: A fast-moving band of air high in the atmosphere that steers depressions; its position affects UK weather
+## UK climate
+Describe the UK's climate. :: Temperate maritime – mild winters, cool summers, rain all year ;; Wetter in the west, drier in the east ;; Warmer in the south, cooler in the north
+Why is the UK's climate mild? :: Surrounded by sea which heats and cools slowly ;; North Atlantic Drift (Gulf Stream) brings warm water ;; Prevailing south-westerly winds from the Atlantic
+Why is western Britain wetter than eastern Britain? :: Prevailing winds bring moist Atlantic air; relief rainfall as air rises over western uplands; the east is in a rain shadow
+Name the main air masses affecting the UK. :: **Polar maritime** (NW, cold and wet) ;; **Tropical maritime** (SW, warm and wet) ;; **Arctic maritime** (N, very cold, snow) ;; **Polar continental** (E, cold winters/hot summers, dry) ;; **Tropical continental** (S, hot and dry)
+What is a depression? :: A low-pressure weather system with rising air, bringing cloud, wind and rain; forms where warm and cold air meet over the Atlantic
+What is an anticyclone? :: A high-pressure system with sinking air, bringing settled weather: hot sunny summers, cold clear winters with frost and fog
+What are the three types of rainfall? :: **Relief** – air forced over mountains ;; **Frontal** – warm air rises over cold air at fronts ;; **Convectional** – heated ground causes air to rise rapidly (thunderstorms)
+## Extreme weather in the UK
+Give types of extreme weather in the UK. :: Heavy rain and flooding, storms and gales, heatwaves, drought, heavy snow and cold spells
+What happened during Storm Desmond (December 2015)? :: Record rainfall in Cumbria (341 mm in 24 hours at Honister Pass) ;; Severe flooding in Carlisle, Cockermouth and Keswick ;; Thousands of homes flooded, bridges destroyed, power cuts
+What was notable about the July 2022 UK heatwave? :: The UK recorded over 40°C for the first time (40.3°C at Coningsby, Lincolnshire, 19 July 2022); rail disruption, wildfires, health warnings
+What was the 'Beast from the East' (2018)? :: A cold spell caused by polar continental air from Siberia bringing heavy snow and freezing temperatures, combined with Storm Emma; schools and roads closed
+Is UK weather becoming more extreme? :: Evidence suggests yes – more record high temperatures and more intense rainfall events, linked to climate change, though natural variation makes trends hard to prove
+## Tropical storms
+What is a tropical storm and what are its regional names? :: An intense low-pressure system with winds over 119 km/h (hurricane strength) ;; **Hurricane** (Atlantic), **typhoon** (Pacific), **cyclone** (Indian Ocean)
+What conditions are needed for tropical storms to form? :: Ocean temperature above 26–27°C ;; Between about 5° and 30° from the equator (enough Coriolis effect) ;; Low wind shear ;; Late summer and autumn
+Describe the structure of a tropical storm. :: Calm central **eye** of sinking air ;; Surrounded by the **eye wall** with the strongest winds and heaviest rain ;; Spiralling rain bands outwards ;; Rotates anticlockwise in the northern hemisphere
+Why do tropical storms weaken over land? :: They lose their energy source – warm, moist air from the ocean – and friction slows them down
+What is a storm surge? :: A rise in sea level caused by low pressure and strong winds pushing water onto the coast, often causing the most deaths
+What is the Saffir–Simpson scale? :: A 1–5 scale classifying hurricanes by wind speed; Category 5 has winds over 252 km/h
+Case study: give facts about Typhoon Haiyan (November 2013). :: Struck the Philippines ;; Winds up to about 315 km/h; storm surge over 5 m ;; Around 6,300 deaths and millions made homeless ;; Tacloban city devastated
+Give the responses to Typhoon Haiyan. :: **Immediate** – international aid, field hospitals, food and water, evacuation of over 800,000 beforehand ;; **Long-term** – rebuilding with stronger structures, new storm surge warnings, mangrove replanting, 'no build zones' along coasts
+Case study: give facts about Hurricane Katrina (2005). :: Struck New Orleans, USA ;; Levees failed and about 80% of the city flooded ;; Around 1,800 deaths ;; Criticised for slow government response, especially for poorer residents
+How can the effects of tropical storms be reduced? :: Monitoring and satellite tracking ;; Warnings and evacuation plans ;; Storm shelters ;; Building design (strong roofs, stilts) ;; Sea walls and mangroves
+How might climate change affect tropical storms? :: Warmer oceans may make storms more intense (higher wind speeds and rainfall) and affect areas further from the equator; their frequency may not increase
+## Climate change
+What is the greenhouse effect? :: Greenhouse gases (CO₂, methane, water vapour, nitrous oxide) trap heat radiated from the Earth, keeping it warm enough for life
+What is the enhanced greenhouse effect? :: Human activities add extra greenhouse gases, trapping more heat and causing global warming
+Give natural causes of climate change. :: **Milankovitch cycles** – changes in Earth's orbit and tilt ;; **Solar output** – sunspot activity ;; **Volcanic eruptions** – ash and sulphur dioxide reflect sunlight, cooling the Earth temporarily
+Give human causes of climate change. :: Burning fossil fuels (CO₂) ;; Deforestation (less CO₂ absorbed) ;; Farming – cattle and rice paddies release methane ;; Landfill releases methane
+Give evidence for climate change. :: Ice cores (trapped air shows past CO₂ and temperature) ;; Tree rings ;; Temperature records since about 1850 ;; Retreating glaciers and shrinking Arctic sea ice ;; Sea level rise ;; Historical records
+How much have CO₂ levels and global temperature risen? :: CO₂ from about 280 ppm before the Industrial Revolution to over 420 ppm today ;; Global average temperature up by over 1°C since pre-industrial times
+Give environmental effects of climate change. :: Sea level rise from melting ice and thermal expansion ;; Melting glaciers and sea ice ;; Coral bleaching ;; Changing habitats and species extinction ;; More extreme weather
+Give social and economic effects of climate change. :: Flooding of low-lying coasts (e.g. Bangladesh, Maldives) ;; Crop failure and food insecurity ;; Water shortages ;; Spread of diseases like malaria ;; Climate refugees
+What is mitigation? :: Reducing the causes of climate change, e.g. renewable energy, carbon capture, planting trees, international agreements
+What is adaptation? :: Adjusting to the effects of climate change, e.g. flood defences, drought-resistant crops, water conservation
+What is carbon capture and storage (CCS)? :: Capturing CO₂ from power stations and industry and storing it underground, e.g. in old oil and gas fields
+Name two international agreements on climate change. :: **Kyoto Protocol** (1997) – binding emission cuts for HICs ;; **Paris Agreement** (2015) – limit warming to well below 2°C, aiming for 1.5°C
+What is the UK's net zero target? :: The UK has a legal target to reach net zero greenhouse gas emissions by 2050
+
+# Theme 3 Environmental Challenges – Ecosystems
+## Ecosystems and biomes
+What is an ecosystem? :: A community of plants and animals interacting with each other and their physical environment (soil, water, climate)
+What are biotic and abiotic components? :: **Biotic** – living parts (plants, animals, fungi) ;; **Abiotic** – non-living parts (climate, soil, water, rock)
+What is a biome? :: A large-scale global ecosystem, e.g. tropical rainforest, hot desert, tundra, temperate deciduous forest
+What controls the distribution of biomes? :: Mainly climate (temperature and rainfall), linked to latitude and global atmospheric circulation; also altitude and soils
+Where are tropical rainforests found? :: Near the equator between the Tropics, e.g. Amazon basin, Congo basin, South-East Asia
+Where are hot deserts found? :: Around 15–30° north and south of the equator, e.g. Sahara, Kalahari, Thar, Atacama
+Define producer, consumer and decomposer. :: **Producer** – makes its own food by photosynthesis (plants) ;; **Consumer** – eats other organisms ;; **Decomposer** – breaks down dead matter, returning nutrients to the soil (fungi, bacteria)
+What is a food chain and a food web? :: **Food chain** – a single line of feeding relationships ;; **Food web** – many interlinked food chains in an ecosystem
+What happens if one part of a food web changes? :: Knock-on effects – e.g. removing a predator lets prey numbers increase, which may then overgraze plants
+What is nutrient cycling? :: The movement of nutrients between the biomass, litter and soil stores in an ecosystem
+Describe nutrient cycling in the tropical rainforest. :: Most nutrients stored in the **biomass** ;; Rapid decomposition in hot, wet conditions so litter store is small ;; Soil is thin and infertile because heavy rain leaches nutrients
+What is biodiversity? :: The variety of living things (plants, animals, species) in an area
+Name a small-scale UK ecosystem and its features. :: A freshwater pond or deciduous woodland – e.g. pond: producers (algae, reeds), consumers (insects, frogs, fish, herons), decomposers in the mud
+## Tropical rainforests
+Describe the climate of a tropical rainforest. :: Hot all year (about 27°C) with small temperature range ;; Very wet – over 2,000 mm rain a year ;; Convectional rain most afternoons; no seasons
+Name the layers of the tropical rainforest. :: **Emergent** (up to about 50 m) ;; **Canopy** ;; **Understorey** ;; **Shrub layer/forest floor**
+How are rainforest plants adapted? :: **Buttress roots** support tall trees ;; **Drip tips** shed water ;; **Lianas** climb to the light ;; **Epiphytes** grow on branches to reach light ;; Thin, smooth bark
+How are rainforest animals adapted? :: Spider monkeys have prehensile tails for climbing ;; Sloths move slowly and are camouflaged ;; Flying frogs glide ;; Many are nocturnal or brightly coloured warnings
+Why are rainforests important? :: Very high biodiversity ;; Medicines ;; Carbon store regulating climate ;; Home to indigenous people ;; Regulate the water cycle ;; Timber and food products
+What are the main causes of deforestation in the Amazon? :: Cattle ranching (the biggest cause) ;; Commercial farming (soya) ;; Logging ;; Mining ;; Road building (e.g. Trans-Amazonian Highway) ;; Hydro-electric power dams ;; Settlement
+Give environmental impacts of deforestation. :: Loss of biodiversity and habitats ;; Soil erosion and loss of fertility ;; More CO₂ released, contributing to climate change ;; Less evapotranspiration so reduced rainfall ;; Increased flooding and river siltation
+Give economic and social impacts of deforestation. :: **+** jobs, income from timber, beef and soya exports, roads ;; **–** indigenous people lose land and culture, conflict over land, long-term loss of resources
+How can tropical rainforests be managed sustainably? :: Selective logging ;; Replanting (afforestation) ;; Ecotourism ;; National parks and reserves ;; International agreements (e.g. CITES) ;; Debt-for-nature swaps ;; Certification (FSC timber)
+What is a debt-for-nature swap? :: An arrangement where part of a country's foreign debt is cancelled in return for investment in conservation
+What is ecotourism? :: Small-scale, sustainable tourism that protects the environment and benefits local people
+## Hot deserts
+Describe the climate of hot deserts. :: Less than 250 mm rain a year ;; Very hot days (over 40°C) but cold nights because clear skies let heat escape ;; Large daily temperature range
+How are desert plants adapted? :: **Cacti** store water in stems and have spines instead of leaves ;; Long tap roots or wide shallow roots ;; Waxy skin ;; Seeds lie dormant until rain
+How are desert animals adapted? :: **Camels** – fat stored in hump, wide feet, long eyelashes, can go long periods without water ;; Fennec foxes have large ears to lose heat ;; Many are nocturnal
+Give opportunities for development in hot deserts. :: Mineral extraction (oil, phosphates) ;; Solar energy ;; Tourism ;; Irrigated farming
+Give challenges of developing hot deserts. :: Extreme temperatures ;; Water shortages ;; Poor accessibility and inaccessible terrain
+## Desertification and the Sahel
+What is desertification? :: The process by which land in semi-arid areas becomes increasingly dry and degraded, losing its productivity, until it becomes desert-like
+Where is the Sahel? :: A semi-arid belt across Africa south of the Sahara, stretching from Senegal and Mauritania to Sudan and Eritrea
+Give natural causes of desertification. :: Less rainfall and longer droughts (climate change) ;; Higher temperatures increase evaporation
+Give human causes of desertification. :: **Overgrazing** – too many animals strip vegetation ;; **Overcultivation** – exhausts soil nutrients ;; **Removal of fuel wood** ;; **Population growth** increases pressure on land ;; Over-abstraction of water
+Give impacts of desertification in the Sahel. :: Soil erosion by wind and water ;; Crop failure, famine and malnutrition ;; Migration to cities ;; Conflict over land and water
+How can desertification be reduced? :: **Planting trees** (e.g. Great Green Wall) ;; **Water management** – small dams, drip irrigation ;; **Stone lines (magic stones/bunds)** to trap water and soil ;; Appropriate technology such as solar cookers ;; Improved farming methods
+What is the Great Green Wall? :: An African-led project to restore degraded land across the Sahel with a belt of trees and sustainable farming stretching about 8,000 km
+How do stone lines (bunds) help in Burkina Faso? :: Lines of stones placed along contours slow surface runoff, so water infiltrates and soil is trapped – improving crop yields
+## Coral reefs and other threatened ecosystems
+What conditions do coral reefs need? :: Warm (about 18–29°C), shallow, clear, salty water with plenty of sunlight
+Why are coral reefs under threat? :: Coral bleaching from warmer seas ;; Ocean acidification ;; Pollution and sediment runoff ;; Overfishing and destructive fishing ;; Tourism damage
+How can coral reefs be protected? :: Marine protected areas, fishing limits, controlling pollution, regulating tourism, reducing CO₂ emissions
+
+# Theme 3 Environmental Challenges – Resources and Sustainability
+## Water resources
+What is water stress? :: When demand for water exceeds the available supply in a period, or poor quality restricts its use
+What is water security? :: Having reliable access to enough clean water for drinking, sanitation, farming and industry
+What is water surplus and water deficit? :: **Surplus** – more water available than needed (e.g. north and west UK) ;; **Deficit** – demand exceeds supply (e.g. south-east England)
+Why is there a water imbalance in the UK? :: Most rain falls in the north and west, but most people live in the south and east, where demand is highest
+Why is global water demand increasing? :: Population growth ;; Rising living standards (showers, appliances, meat-rich diets) ;; Industrial development ;; Irrigation for farming
+What is a water transfer scheme? :: Moving water from an area of surplus to an area of deficit using pipes, canals or rivers
+Case study: describe the Elan Valley reservoirs. :: Reservoirs in mid-Wales built from the 1890s to supply Birmingham ;; Water flows about 118 km (73 miles) to Birmingham by gravity through an aqueduct
+Case study: describe Kielder Water. :: England's largest artificial reservoir, in Northumberland (opened 1982) ;; Can transfer water to the Rivers Wear and Tees to supply the North East ;; Also used for tourism and HEP
+Give advantages and disadvantages of water transfer schemes. :: **+** reliable supply to deficit areas, can generate HEP and provide recreation ;; **–** expensive, flooding of valleys and villages, damage to ecosystems, political disputes between regions or countries
+Give a named example of a large international water transfer scheme. :: Lesotho Highlands Water Project – transfers water from Lesotho to South Africa (Gauteng) and generates HEP for Lesotho ;; Or China's South–North Water Transfer Project
+What is sustainable water management? :: Using water in ways that meet present needs without harming future supply – e.g. water meters, recycling grey water, rainwater harvesting, fixing leaks, drip irrigation
+What is grey water? :: Used water from sinks, showers and washing machines that can be recycled for flushing toilets or watering gardens
+What is groundwater and why must it be managed? :: Water stored underground in permeable rock (aquifers) ;; Over-abstraction lowers water tables and can cause pollution or saltwater intrusion
+What is a desalination plant? :: A plant that removes salt from seawater to make fresh water – expensive and energy-intensive, e.g. Beckton plant in London
+## Food resources
+What is food security? :: When all people at all times have access to enough safe, nutritious food for an active and healthy life
+What is food insecurity? :: When people do not have reliable access to enough affordable, nutritious food
+Give causes of food insecurity. :: Drought and climate change ;; Pests and disease ;; Conflict ;; Poverty ;; Poor infrastructure ;; Rising population
+What is the Green Revolution? :: The use of high-yield seeds, fertilisers, pesticides and irrigation from the 1960s (e.g. India) to boost crop yields; criticised for high costs and environmental damage
+What is food miles? :: The distance food travels from producer to consumer; long distances increase carbon emissions
+How can food supply be made more sustainable? :: Organic farming, permaculture, urban farming, buying local and seasonal food, reducing food waste, sustainable fishing
+## Energy and sustainability
+What is the difference between renewable and non-renewable energy? :: **Renewable** – will not run out (wind, solar, HEP, tidal, wave, geothermal, biomass) ;; **Non-renewable** – finite (coal, oil, gas, nuclear fuel)
+How has the UK's energy mix changed? :: Coal declined sharply (last coal power station closed 2024) ;; Gas remains important ;; Rapid growth of wind and solar ;; Nuclear declining as old stations close
+Give advantages and disadvantages of wind energy. :: **+** renewable, no emissions when running, UK is windy ;; **–** intermittent, visual and noise impacts, risk to birds
+What is energy security? :: Having reliable, affordable access to enough energy, ideally without depending heavily on imports
+What is sustainability? :: Meeting the needs of the present without compromising the ability of future generations to meet their own needs
+What is a carbon footprint? :: The total greenhouse gas emissions caused by a person, organisation or product
+How can individuals reduce their environmental impact? :: Use public transport, cycle or walk ;; Insulate homes ;; Recycle ;; Save water and energy ;; Eat less meat ;; Buy local food
+
+# Exam skills
+## Command words
+What does 'describe' require? :: Say what something is like or what a pattern shows – use data and examples but no reasons needed
+What does 'explain' require? :: Give reasons why something happens – use connectives like 'because', 'this leads to', 'therefore'
+What does 'assess' require? :: Weigh up the importance or success of factors and reach a judgement about which matters most
+What does 'evaluate' require? :: Judge the strengths and weaknesses or advantages and disadvantages, and reach a supported conclusion
+What does 'to what extent' or 'discuss' require? :: Present different viewpoints or arguments and give a balanced conclusion about how far you agree
+What is the structure of Eduqas Geography B exams? :: **Component 1** Investigating Geographical Issues (1 h 45, 40%) ;; **Component 2** Problem Solving Geography (1 h 30, 30%) ;; **Component 3** Applied Fieldwork Enquiry (1 h 30, 30%)
+How should you approach a Component 2 decision-making question? :: Use the resource booklet ;; Choose one option ;; Justify it using evidence from the resources ;; Explain why it is better than the alternatives and consider its drawbacks
+## Map and graph skills
+How do you give a four-figure grid reference? :: Eastings first (along the corridor), then northings (up the stairs) – using the bottom-left corner of the square
+How do you give a six-figure grid reference? :: As a four-figure reference but estimate tenths across and up the square, e.g. 245 678
+How is scale shown on OS maps? :: **1:50,000** – 2 cm on the map = 1 km ;; **1:25,000** – 4 cm on the map = 1 km
+What do contour lines show? :: Lines joining points of equal height above sea level ;; Close together = steep slope ;; Far apart = gentle slope
+What is a spot height? :: A point on a map with its exact height in metres written beside it
+What is a choropleth map? :: A map shading areas with different colours or tones to show values (darker = higher), e.g. population density
+Give a limitation of a choropleth map. :: Assumes values are the same across each area and shows sudden changes at boundaries
+What is an isoline map? :: A map with lines joining points of equal value, e.g. contours, isobars (pressure), isotherms (temperature)
+What is a flow line map? :: A map using arrows whose width is proportional to the amount of movement, e.g. migration or traffic
+How do you describe a pattern on a map or graph? :: General trend first ;; Use specific data (figures and units) ;; Note anomalies (exceptions) ;; Use compass directions and place names
+What are mean, median, mode and range? :: **Mean** – total ÷ number of values ;; **Median** – middle value ;; **Mode** – most common ;; **Range** – highest minus lowest
+What is the interquartile range? :: The difference between the upper quartile and lower quartile – shows the spread of the middle 50% of data
+What does a scatter graph show? :: Whether there is a correlation (positive, negative or none) between two variables; a best-fit line can be drawn
+## Fieldwork enquiry
+What are the stages of a geographical enquiry? :: 1. Question/hypothesis ;; 2. Data collection (methods and sampling) ;; 3. Data presentation ;; 4. Analysis ;; 5. Conclusion ;; 6. Evaluation
+What is primary data and secondary data? :: **Primary** – collected yourself (e.g. river measurements, questionnaires) ;; **Secondary** – collected by someone else (e.g. census data, maps, websites)
+What is quantitative and qualitative data? :: **Quantitative** – numerical data (e.g. pedestrian counts) ;; **Qualitative** – descriptive, non-numerical (e.g. photos, interviews, opinions)
+Name three sampling methods. :: **Random** – every point has an equal chance ;; **Systematic** – at regular intervals ;; **Stratified** – proportional to groups in the population
+What is a risk assessment and why is it needed? :: Identifying hazards (e.g. fast water, traffic) and how to reduce them, to keep people safe during fieldwork
+Give examples of river fieldwork measurements. :: Width (tape measure), depth (metre ruler), velocity (float or flow meter), pebble size and roundness (callipers, Powers' scale), gradient (clinometer)
+Give examples of urban fieldwork methods. :: Environmental quality surveys, pedestrian counts, land-use mapping, questionnaires, traffic counts, photographs
+How do you evaluate a fieldwork enquiry? :: Comment on accuracy and reliability of data, limitations of methods and sample size, how valid the conclusions are, and how it could be improved

@@ -63,7 +63,7 @@ export async function loadStarterDecks(): Promise<StarterDeck[]> {
     const key = path.split('/').pop()!.replace('.txt', '');
     out.push(parseStarter(key, await load()));
   }
-  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german'];
+  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german', 'geography'];
   return out.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 

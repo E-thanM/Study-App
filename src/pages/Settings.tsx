@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Icon, Seg, TopBar, toast } from '../components/ui';
 import { AI_MODELS, getAiSettings, saveAiSettings } from '../lib/ai';
 import { getSettings } from '../lib/seed';
-import { clearAll, exportAll, put, useRec } from '../lib/store';
-import { configSource, friendlyAuthError, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
+import { exportAll, put, useRec } from '../lib/store';
+import { configSource, eraseAccountData, friendlyAuthError, signOutAndClear, unsyncedCount, getConfig, keyProblem, normaliseUrl, saveConfig, supabase, supabaseClientError, syncNow, testConnection, useSyncStatus, type CheckResult } from '../lib/sync';
 import type { AnyRec } from '../lib/types';
 import { download, setDayStartHour } from '../lib/util';
 
@@ -167,6 +167,31 @@ function SyncSection() {
     void runTest({ url: u, anonKey: key });
   };
 
+  const signOut = async () => {
+    setMsg(null);
+    setBusy('out');
+    try {
+      await syncNow();
+      const left = unsyncedCount();
+      if (left && !confirm(`${left} change${left === 1 ? '' : 's'} on this device haven't synced yet${navigator.onLine ? '' : ' (you are offline)'}. Signing out removes them. Sign out anyway?`)) return;
+      await signOutAndClear();
+    } finally {
+      setBusy(null);
+    }
+  };
+
+  const erase = async () => {
+    if (!confirm(`Erase ALL data in ${st.user?.email ?? 'this account'} on every device? This cannot be undone.`)) return;
+    if (prompt('Type ERASE to confirm') !== 'ERASE') return;
+    setBusy('erase');
+    try {
+      await eraseAccountData();
+    } catch (e) {
+      setMsg({ kind: 'error', text: e instanceof Error ? e.message : String(e) });
+      setBusy(null);
+    }
+  };
+
   const stateLabel = st.user
     ? st.state === 'syncing' ? 'Syncing…' : st.state === 'error' ? 'Sync problem' : st.state === 'offline' ? 'Offline' : 'Synced'
     : cfg ? 'Not signed in' : 'This device only';
@@ -186,8 +211,16 @@ function SyncSection() {
           {st.state === 'error' && st.error ? <Notice msg={{ kind: 'error', text: st.error }} /> : <Notice msg={msg} />}
           <div className="row wrap">
             <button className="btn" onClick={() => void syncNow()} disabled={st.state === 'syncing'}><Icon name="sync" /> Sync now</button>
-            <button className="btn" onClick={() => { setMsg(null); void supabase()?.auth.signOut(); }}>Sign out</button>
+            <button className="btn" disabled={!!busy} onClick={() => void signOut()}>Sign out</button>
           </div>
+          <p className="muted tiny">Signing out removes this account's data from this device, so the next person or account starts with a clean slate. It all comes back when you sign in again.</p>
+          <details className="small">
+            <summary className="muted" style={{ cursor: 'pointer' }}>Start this account again from scratch</summary>
+            <div className="col" style={{ gap: 8, marginTop: 8 }}>
+              <p className="muted small">Deletes every deck, card, review, set, timetable and target saved in this account – on every device. Use this if another account's progress ended up in here. Export a backup first if you might want it back.</p>
+              <button className="btn danger" style={{ alignSelf: 'flex-start' }} disabled={!!busy} onClick={() => void erase()}>Erase all data in this account</button>
+            </div>
+          </details>
         </div>
       ) : cfg ? (
         <form className="col" onSubmit={(e) => { e.preventDefault(); void auth('in'); }}>
@@ -318,9 +351,7 @@ function BackupSection() {
           style={{ marginLeft: 'auto' }}
           onClick={async () => {
             if (!confirm('Remove all data from THIS device? Synced data stays in Supabase and comes back when you sign in again.')) return;
-            await supabase()?.auth.signOut();
-            await clearAll();
-            location.reload();
+            await signOutAndClear();
           }}
         >
           Clear this device
