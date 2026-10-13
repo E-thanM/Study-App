@@ -21,6 +21,20 @@ export function speak(text: string, lang = 'en-GB') {
   speechSynthesis.speak(u);
 }
 
+const ANSWER_HR = /<hr id=["']?answer["']?\s*\/?>/i;
+
+/** Long answers (quotes + analysis, mark schemes) are wrapped so they can be laid out as left-aligned paragraphs. */
+function formatLong(html: string): string {
+  if (html.includes('typeans-slot')) return html;
+  const m = ANSWER_HR.exec(html);
+  const ans = m ? html.slice(m.index + m[0].length) : html;
+  const len = ans.replace(/<[^>]+>/g, '').replace(/&[a-z#0-9]+;/gi, ' ').trim().length;
+  if (len < 160) return html;
+  // each line ("Quote:", "Analysis:", mark-scheme points) becomes its own spaced paragraph
+  const body = ans.replace(/^(\s*<br\s*\/?>)+/i, '').replace(/(<br\s*\/?>\s*)+/gi, '<br><span class="para-gap"></span>');
+  return m ? `${html.slice(0, m.index)}${m[0]}<div class="long-ans">${body}</div>` : `<div class="long-ans">${body}</div>`;
+}
+
 /** Renders a card side with the note type's CSS, media, maths, audio buttons and type-in box. */
 export function CardView({
   note, noteType, ord, side, deckName, typed, onTyped, onEnter, flag = 0, autoplay,
@@ -39,7 +53,8 @@ export function CardView({
   const ref = useRef<HTMLDivElement>(null);
   const r = useMemo(() => renderCard({ note, noteType, ord, deckName, typed }), [note, noteType, ord, deckName, typed]);
   const shown = side === 'front' ? r.front : r.back;
-  const html = useMemo(() => toDisplayHtml(shown.html), [shown.html]);
+  const html = useMemo(() => formatLong(toDisplayHtml(shown.html)), [shown.html]);
+  const long = html.includes('class="long-ans"');
   const scope = `nt-${noteType.id.replace(/[^\w-]/g, '')}`;
   const css = useMemo(() => scopeCss(noteType.css || '', `.${scope}`), [noteType.css, scope]);
 
@@ -57,7 +72,7 @@ export function CardView({
 
   return (
     <div
-      className={`card-face ${scope}`}
+      className={`card-face ${scope}${long ? ' long' : ''}`}
       ref={ref}
       onClick={(e) => {
         const t = e.target as HTMLElement;
