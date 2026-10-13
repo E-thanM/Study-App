@@ -5,6 +5,7 @@ import './styles.css';
 import { App } from './App';
 import { initStore, flushNow } from './lib/store';
 import { ensureSeed } from './lib/seed';
+import { mergeDuplicates } from './lib/collection';
 import { startSync, supabase } from './lib/sync';
 import { applyTheme } from './pages/Settings';
 
@@ -41,6 +42,7 @@ async function handleAuthRedirect() {
 
 initStore().then(async () => {
   ensureSeed();
+  mergeDuplicates();
   await handleAuthRedirect();
   void startSync();
   createRoot(document.getElementById('root')!).render(

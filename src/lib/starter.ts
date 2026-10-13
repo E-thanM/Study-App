@@ -108,7 +108,7 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
     if (have.has(guid)) { skipped++; continue; }
     let deckId = deckIds.get(n.deckPath);
     if (!deckId) {
-      deckId = ensureDeckPath(n.deckPath, STARTER_PRESET_ID);
+      deckId = ensureDeckPath(n.deckPath, STARTER_PRESET_ID, (path) => `d-starter:${hash(path)}`);
       deckIds.set(n.deckPath, deckId);
     }
     const tags = [slug(deck.name), `${slug(deck.name)}::${slug(n.topic)}`];
@@ -117,6 +117,10 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
         ? buildNote({ noteTypeId: 'nt-cloze', deckId, fields: { Text: n.front, 'Back Extra': '' }, tags, guid })
         : buildNote({ noteTypeId: n.type === 'reversed' ? 'nt-basic-reversed' : 'nt-basic', deckId, fields: { Front: n.front, Back: n.back }, tags, guid });
     if (!r) continue;
+    // fixed ids: adding the same deck on two devices gives identical records, not duplicates
+    const noteId = `n-${guid}`;
+    r.note.id = noteId;
+    for (const c of r.cards) { c.noteId = noteId; c.id = `${noteId}:${c.ord}`; }
     recs.push(r.note, ...r.cards);
     notes++;
     cards += r.cards.length;

@@ -36,20 +36,26 @@ export function deckByPath(path: string): Deck | undefined {
   return all('deck').find((d) => deckPath(d).toLowerCase() === path.toLowerCase());
 }
 
-/** Find or create "Subject::Topic::Subtopic". Returns the leaf deck id. */
-export function ensureDeckPath(path: string, presetId = 'preset-default'): string {
+/**
+ * Find or create "Subject::Topic::Subtopic". Returns the leaf deck id.
+ * idFor gives a created deck a fixed id (e.g. derived from its path) so two devices that
+ * both create it end up with the same deck instead of two copies.
+ */
+export function ensureDeckPath(path: string, presetId = 'preset-default', idFor?: (path: string) => string): string {
   const parts = path.split('::').map((p) => p.trim()).filter(Boolean);
   if (!parts.length) parts.push('Default');
   let parentId: string | null = null;
   const created: Deck[] = [];
+  const soFar: string[] = [];
   for (const name of parts) {
+    soFar.push(name);
     const pid: string | null = parentId;
     let d: Deck | undefined =
       created.find((x) => x.parentId === pid && x.name.toLowerCase() === name.toLowerCase()) ||
       all('deck').find((x) => (x.parentId || null) === pid && x.name.toLowerCase() === name.toLowerCase());
     if (!d) {
       const parent: Deck | undefined = pid ? get('deck', pid) || created.find((x) => x.id === pid) : undefined;
-      d = { id: uid(), kind: 'deck', updatedAt: 0, name, parentId: pid, presetId: parent?.presetId || presetId, createdAt: Date.now() };
+      d = { id: idFor ? idFor(soFar.join('::').toLowerCase()) : uid(), kind: 'deck', updatedAt: 0, name, parentId: pid, presetId: parent?.presetId || presetId, createdAt: Date.now() };
       created.push(d);
     }
     parentId = d.id;
@@ -575,4 +581,70 @@ export function deckTotals(deckId: string): { ms: number; reviews: number } {
     if (t) { ms += t.ms; reviews += t.reviews; }
   }
   return { ms, reviews };
+}
+
+/* ───────────── duplicate clean-up ───────────── */
+
+const studied = (c: Card) => c.reps + c.lapses + (c.state === CardState.New ? 0 : 1);
+
+/**
+ * Merge decks that share a parent and a name (e.g. two "Biology" decks made when the same starter
+ * decks were added on two devices before they had synced), then drop starter notes that exist twice.
+ * Cards, notes and subdecks move to the deck with the most cards; for a duplicated note the copy with
+ * the most review progress is kept. Safe to run repeatedly. Returns how many decks/notes were merged.
+ */
+export function mergeDuplicates(): { decks: number; notes: number } {
+  let decks = 0, notes = 0;
+  for (let pass = 0; pass < 12; pass++) {
+    const live = all('deck').filter((d) => !d.deleted);
+    const groups = new Map<string, Deck[]>();
+    for (const d of live) {
+      if (d.filtered) continue;
+      const k = `${d.parentId || ''}\u0001${d.name.trim().toLowerCase()}`;
+      groups.set(k, [...(groups.get(k) || []), d]);
+    }
+    const dupes = [...groups.values()].filter((g) => g.length > 1);
+    if (!dupes.length) break;
+    const cards = all('card');
+    const size = new Map<string, number>();
+    for (const c of cards) size.set(c.deckId, (size.get(c.deckId) || 0) + 1);
+    const writes: (Deck | Card | Note)[] = [];
+    const dead: string[] = [];
+    for (const g of dupes) {
+      const keep = [...g].sort((a, b) => (size.get(b.id) || 0) - (size.get(a.id) || 0) || a.createdAt - b.createdAt || a.id.localeCompare(b.id))[0];
+      for (const d of g) {
+        if (d.id === keep.id) continue;
+        for (const c of cards) {
+          if (c.deckId === d.id) writes.push({ ...c, deckId: keep.id });
+          else if (c.odid === d.id) writes.push({ ...c, odid: keep.id });
+        }
+        for (const n of all('note')) if (n.deckId === d.id) writes.push({ ...n, deckId: keep.id });
+        for (const ch of live) if (ch.parentId === d.id) writes.push({ ...ch, parentId: keep.id });
+        if (d.collapsed === false && keep.collapsed) writes.push({ ...keep, collapsed: false });
+        dead.push(d.id);
+      }
+      decks += g.length - 1;
+    }
+    // a card or note rewritten twice keeps its last write
+    const byId = new Map(writes.map((w) => [w.id, w]));
+    put([...byId.values()]);
+    remove('deck', dead);
+  }
+
+  // notes installed twice carry the same starter id
+  const byGuid = new Map<string, Note[]>();
+  for (const n of all('note')) if (n.guid && !n.deleted) byGuid.set(n.guid, [...(byGuid.get(n.guid) || []), n]);
+  const extra = [...byGuid.values()].filter((g) => g.length > 1);
+  if (extra.length) {
+    const progress = new Map<string, number>();
+    for (const c of all('card')) progress.set(c.noteId, (progress.get(c.noteId) || 0) + studied(c));
+    const drop: string[] = [];
+    for (const g of extra) {
+      const keep = [...g].sort((a, b) => (progress.get(b.id) || 0) - (progress.get(a.id) || 0) || a.createdAt - b.createdAt || a.id.localeCompare(b.id))[0];
+      for (const n of g) if (n.id !== keep.id) drop.push(n.id);
+    }
+    deleteNotes(drop);
+    notes = drop.length;
+  }
+  return { decks, notes };
 }

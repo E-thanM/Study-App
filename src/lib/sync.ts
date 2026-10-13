@@ -1,6 +1,7 @@
 import { createClient, type SupabaseClient, type User } from '@supabase/supabase-js';
 import { useSyncExternalStore } from 'react';
 import type { AnyRec, Kind } from './types';
+import { mergeDuplicates } from './collection';
 import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS, EXAM_PRESET, migrateUnlimitedNew } from './seed';
 import {
   GUEST_DB,
@@ -331,6 +332,8 @@ export async function syncNow(): Promise<void> {
     } while (again);
     setStatus({ state: 'idle', lastSync: Date.now() });
     migrateUnlimitedNew();
+    // decks added on two devices before they synced show up as duplicates once both have arrived
+    if (mergeDuplicates().decks) setTimeout(() => void syncNow(), 0);
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : (e as { message?: string; code?: string })?.message || String(e);
     const code = (e as { code?: string })?.code || '';
