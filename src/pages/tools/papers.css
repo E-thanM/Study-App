@@ -1,0 +1,115 @@
+/* ───────── past papers (Papers.tsx / PaperView.tsx) ───────── */
+
+.mt-6 { margin-top: 6px; }
+
+/* horizontal scrolling stays inside its own box so the page never scrolls sideways */
+.pp-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+
+/* subject panel: figures + trend chart side by side, stacked on phones */
+.pp-subject-body { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 18px; padding: 16px 18px; border-bottom: 1px solid var(--line); align-items: start; }
+.pp-figures { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pp-figures .stat { min-width: 0; box-shadow: none; }
+.pp-figures .stat .value { font-variant-numeric: normal; }
+.pp-trend { min-width: 0; }
+.pp-chart { position: relative; width: 100%; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.pp-chart svg { display: block; overflow: visible; }
+.pp-axis { font-size: 11px; fill: var(--faint); font-variant-numeric: tabular-nums; }
+.pp-endlabel { font-size: 12px; font-weight: 600; fill: var(--ink); }
+.pp-tip {
+  position: absolute; transform: translateX(-50%); pointer-events: none; z-index: 2;
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: var(--shadow-lg);
+  padding: 5px 9px; display: flex; flex-direction: column; font-size: 11px; color: var(--muted); white-space: nowrap; line-height: 1.35;
+}
+.pp-tip b { font-size: 14px; color: var(--ink); }
+.pp-chart-empty { height: 100%; min-height: 90px; display: grid; place-items: center; border: 1px dashed var(--line-strong); border-radius: 12px; }
+
+.pp-row-score { display: flex; flex-direction: column; align-items: flex-end; font-variant-numeric: tabular-nums; flex: none; line-height: 1.25; }
+.pp-grade { min-width: 74px; justify-content: center; flex: none; }
+.pp-explain { margin: 4px 2px 0; max-width: 80ch; line-height: 1.5; }
+
+/* marks lost by topic: horizontal bars, value at the tip in text colour */
+.pp-topics { display: flex; flex-direction: column; gap: 8px; }
+.pp-topic { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr) 64px; gap: 12px; align-items: center; font-size: 14px; }
+.pp-topic-name { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.pp-topic-bar { height: 12px; }
+.pp-topic-bar i { display: block; height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; }
+.pp-topic-val { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* mistakes log table */
+.pp-log { min-width: 760px; }
+.pp-log th.num, .pp-log td.num { text-align: right; }
+.pp-log td.pp-wide { min-width: 180px; max-width: 320px; overflow-wrap: anywhere; }
+.pp-nowrap { white-space: nowrap; }
+.pp-click { cursor: pointer !important; }
+
+/* paper detail */
+.pp-detail { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; align-items: start; margin-bottom: 18px; }
+.pp-result { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pp-big { font-size: 40px; font-weight: 650; letter-spacing: -0.03em; line-height: 1.1; }
+
+.pp-bounds { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px; }
+.pp-bounds label { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 12px; font-weight: 650; color: var(--muted); }
+.pp-bounds input { text-align: center; padding: 8px 2px !important; font-variant-numeric: tabular-nums; }
+.pp-bounds label.bad span { color: var(--bad); }
+.pp-bounds label.bad input { border-color: var(--bad); }
+
+/* the mistakes spreadsheet */
+.pp-grid-head { flex-wrap: wrap; }
+.pp-grid-tools { gap: 6px; }
+table.pp-grid { width: 100%; min-width: 900px; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+.pp-grid th { text-align: left; font-size: 12px; font-weight: 600; color: var(--muted); padding: 8px 10px; background: var(--surface-2); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.pp-grid td { border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding: 0; vertical-align: top; background: var(--surface); }
+.pp-grid td.c-act, .pp-grid th.c-act { border-right: 0; }
+.pp-grid .c-q { width: 72px; }
+.pp-grid .c-topic { width: 19%; }
+.pp-grid .c-lost { width: 84px; }
+.pp-grid .c-act { width: 128px; }
+.pp-grid td.c-act { padding: 6px 8px; vertical-align: middle; }
+.pp-grid input, .pp-grid textarea {
+  display: block; width: 100%; border: 0; border-radius: 0; background: transparent; box-shadow: none;
+  padding: 9px 10px; font: inherit; font-size: 14px; line-height: 1.45; color: var(--ink); min-height: 40px; margin: 0;
+}
+.pp-grid textarea { resize: none; overflow: hidden; min-height: 40px; }
+.pp-grid input:focus, .pp-grid textarea:focus { box-shadow: inset 0 0 0 2px var(--accent); background: var(--accent-soft); border: 0; }
+.pp-grid input::placeholder, .pp-grid textarea::placeholder { color: var(--faint); }
+.pp-grid td.c-lost input { text-align: right; font-variant-numeric: tabular-nums; }
+.pp-grid tfoot td { border-right: 0; border-bottom: 0; padding: 6px 10px; vertical-align: middle; }
+.pp-grid tfoot td.c-lost { text-align: right; padding-right: 10px; font-variant-numeric: tabular-nums; }
+/* question number column stays visible while scrolling sideways */
+.pp-grid th.c-q, .pp-grid td.c-q { position: sticky; left: 0; z-index: 1; }
+.pp-grid th.c-q { background: var(--surface-2); }
+.pp-grid-hint { padding: 10px 18px 14px; }
+.pp-touch-hint { display: none; }
+@media (hover: none), (max-width: 640px) { .pp-touch-hint { display: block; } }
+
+.pp-log-head input[type='search'] { max-width: 240px; }
+.pp-mcard { align-items: flex-start; }
+
+@media (max-width: 980px) {
+  .pp-detail { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .pp-subject-body { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .pp-subject-body { padding: 14px; }
+  .pp-row { gap: 10px; }
+  .pp-grade { min-width: 0; }
+  .pp-topic { grid-template-columns: minmax(0, 120px) minmax(0, 1fr) 54px; gap: 8px; }
+  .pp-big { font-size: 34px; }
+  .pp-bounds { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .pp-bounds input { font-size: 16px !important; }
+  /* iOS zooms into inputs smaller than 16px */
+  .pp-grid input, .pp-grid textarea { font-size: 16px; }
+  table.pp-grid { min-width: 820px; }
+  .pp-grid-head .pp-grid-tools { width: 100%; }
+  .pp-grid-head .pp-grid-tools .btn { flex: 1 1 auto; }
+  .pp-grid-hint { padding: 10px 14px 12px; }
+  /* short fields stay in pairs: series + date, score + out of */
+  .pp-form { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .pp-form > :nth-child(-n + 2) { grid-column: 1 / -1; }
+  .pp-form input[type='date'] { padding-left: 8px; padding-right: 8px; min-width: 0; }
+  .pp-log-head { flex-wrap: wrap; }
+  .pp-log-head input[type='search'] { max-width: none; flex: 1 1 100%; }
+  .pp-log-head select { flex: 1 1 100%; }
+}
