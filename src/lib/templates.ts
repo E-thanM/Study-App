@@ -3,6 +3,7 @@ import katex from 'katex';
 import { all } from './store';
 import type { Note, NoteType } from './types';
 import { escapeHtml, stripHtml } from './util';
+import { occlusionImage, occlusionOrds, renderOcclusion } from './occlusion';
 
 /* Anki-compatible card template rendering. Supports:
  *   {{Field}} {{text:Field}} {{hint:Field}} {{cloze:Field}} {{type:Field}} {{type:cloze:Field}}
@@ -75,7 +76,7 @@ function renderTemplate(tpl: string, ctx: RenderCtx, side: 'front' | 'back', fro
     if (tag === 'Deck') return escapeHtml(ctx.deckName || '');
     if (tag === 'Subdeck') return escapeHtml((ctx.deckName || '').split('::').pop() || '');
     if (tag === 'Type') return escapeHtml(noteType.name);
-    if (tag === 'Card') return escapeHtml(noteType.type === 'cloze' ? `Cloze ${ord}` : noteType.templates[ord]?.name || '');
+    if (tag === 'Card') return escapeHtml(noteType.type === 'cloze' ? `Cloze ${ord}` : noteType.type === 'occlusion' ? `Box ${ord}` : noteType.templates[ord]?.name || '');
 
     // {{tts en_GB:Field}}
     const tts = /^tts\s+([\w-]+)[^:]*:(.+)$/.exec(tag);
@@ -140,6 +141,7 @@ export function typeCompare(given: string, expected: string): string {
 }
 
 export function renderCard(ctx: RenderCtx): { front: Rendered; back: Rendered } {
+  if (ctx.noteType.type === 'occlusion') return { front: { html: renderOcclusion(ctx.note, ctx.ord, 'front') }, back: { html: renderOcclusion(ctx.note, ctx.ord, 'back') } };
   const tpl = ctx.noteType.type === 'cloze' ? ctx.noteType.templates[0] : ctx.noteType.templates[ctx.ord];
   if (!tpl) return { front: { html: '<i>Missing template</i>' }, back: { html: '' } };
   const front = renderTemplate(tpl.front, ctx, 'front');
@@ -149,6 +151,7 @@ export function renderCard(ctx: RenderCtx): { front: Rendered; back: Rendered } 
 
 /** Which card ordinals a note should have. */
 export function cardOrdsFor(note: Pick<Note, 'fields'>, nt: NoteType): number[] {
+  if (nt.type === 'occlusion') return occlusionImage(note.fields) ? occlusionOrds(note.fields) : [];
   if (nt.type === 'cloze') {
     const clozeFields = new Set<string>();
     for (const t of nt.templates) for (const m of (t.front + t.back).matchAll(/\{\{(?:[^}]*:)?cloze:([^}]+)\}\}/g)) clozeFields.add(m[1].trim());

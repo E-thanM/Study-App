@@ -1,11 +1,13 @@
 import { clozeOrds } from '../lib/templates';
 import type { NoteType } from '../lib/types';
+import { OcclusionEditor } from './OcclusionEditor';
 import { RichEditor, wrapSelectionInCloze } from './RichEditor';
 
 /** Editors for every field of a note, with cloze support. */
 export function NoteFields({
   noteType, fields, onChange, autoFocus,
 }: { noteType: NoteType; fields: Record<string, string>; onChange: (f: Record<string, string>) => void; autoFocus?: boolean }) {
+  if (noteType.type === 'occlusion') return <OcclusionEditor fields={fields} onChange={onChange} />;
   const onCloze = (same: boolean) => {
     const all = Object.values(fields).join(' ');
     const ords = clozeOrds(all);

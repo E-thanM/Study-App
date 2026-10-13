@@ -90,7 +90,7 @@ export interface Template {
 export interface NoteType extends BaseRec {
   kind: 'notetype';
   name: string;
-  type: 'standard' | 'cloze';
+  type: 'standard' | 'cloze' | 'occlusion';
   fields: string[];
   templates: Template[];
   css: string;

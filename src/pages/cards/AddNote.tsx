@@ -41,7 +41,7 @@ export function AddNotePage() {
     if (!deckId) return toast('Choose a deck');
     const r = addNote({ noteTypeId: ntId, deckId, fields, tags });
     if (!r) {
-      toast(nt.type === 'cloze' ? 'Add a cloze deletion like {{c1::answer}}' : 'The first field is empty');
+      toast(nt.type === 'cloze' ? 'Add a cloze deletion like {{c1::answer}}' : nt.type === 'occlusion' ? 'Choose an image and draw at least one box' : 'The first field is empty');
       return;
     }
     toast(`Added ${r.cards.length} card${r.cards.length === 1 ? '' : 's'}`);
@@ -98,6 +98,7 @@ export function AddNotePage() {
               <li>Use <b>Cloze</b> for definitions, equations and processes.</li>
               <li>Use <b>Basic (and reversed)</b> for key terms and vocabulary.</li>
               <li>Add an image or example – it makes recall far easier.</li>
+              <li>Use <b>Image occlusion</b> to cover up the labels on a diagram (take a photo of your textbook) – each label becomes a card.</li>
             </ul>
           </div>
         </aside>

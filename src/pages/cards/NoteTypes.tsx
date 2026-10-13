@@ -96,7 +96,7 @@ function NoteTypeEditor({ nt, onClose }: { nt: NoteType; onClose: () => void }) 
         <div className="tabs" style={{ marginBottom: 0 }}>
           <button className={tab === 'fields' ? 'on' : ''} onClick={() => setTab('fields')}>Fields</button>
           {t.templates.map((tp, i) => <button key={i} className={tab === i ? 'on' : ''} onClick={() => setTab(i)}>{tp.name}</button>)}
-          {t.type !== 'cloze' && <button onClick={() => { setT({ ...t, templates: [...t.templates, { name: `Card ${t.templates.length + 1}`, front: `{{${t.fields[1] || t.fields[0]}}}`, back: `{{FrontSide}}\n\n<hr id=answer>\n\n{{${t.fields[0]}}}` }] }); setTab(t.templates.length); }}>+ Card type</button>}
+          {t.type === 'standard' && <button onClick={() => { setT({ ...t, templates: [...t.templates, { name: `Card ${t.templates.length + 1}`, front: `{{${t.fields[1] || t.fields[0]}}}`, back: `{{FrontSide}}\n\n<hr id=answer>\n\n{{${t.fields[0]}}}` }] }); setTab(t.templates.length); }}>+ Card type</button>}
           <button className={tab === 'css' ? 'on' : ''} onClick={() => setTab('css')}>Styling</button>
         </div>
 

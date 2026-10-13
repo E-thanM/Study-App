@@ -9,6 +9,7 @@ import { getPreset } from '../../lib/seed';
 import { get, useVersion } from '../../lib/store';
 import { CardState, type Card } from '../../lib/types';
 import { fmtInterval } from '../../lib/util';
+import { Whiteboard } from '../../components/Whiteboard';
 
 const LABELS: Record<Rating, string> = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
 const CLS: Record<Rating, string> = { 1: 'again', 2: 'hard', 3: 'good', 4: 'easy' };
@@ -21,6 +22,7 @@ export function Review() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [typed, setTyped] = useState('');
   const [modal, setModal] = useState<'edit' | 'info' | null>(null);
+  const [board, setBoard] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const shownAt = useRef(Date.now());
   const [waitUntil, setWaitUntil] = useState<number | null>(null);
@@ -108,6 +110,7 @@ export function Review() {
       case 'e': e.preventDefault(); setModal('edit'); break;
       case 'i': e.preventDefault(); setModal('info'); break;
       case 'z': doUndo(); break;
+      case 'w': setBoard((b) => !b); break;
       case '-': bury([live.id]); toast('Card buried'); advance(live.id); break;
       case '=': bury(cardsOfNote(live.noteId).map((c) => c.id)); toast('Note buried'); advance(live.id); break;
       case '@': suspend([live.id]); toast('Card suspended', { label: 'Undo', fn: () => suspend([live.id], false) }); advance(live.id); break;
@@ -173,6 +176,7 @@ export function Review() {
             <span className={`n-review ${!isNew && !isLearn ? 'cur' : ''}`}>{counts.review}</span>
           </div>
           <div className="row small muted" style={{ gap: 12 }}>
+            <button className={`btn sm ${board ? 'primary' : 'ghost'}`} onClick={() => setBoard(!board)} title="Whiteboard – sketch your answer (W)"><Icon name="write" /> <span className="hide-sm">Draw</span></button>
             {live.flag > 0 && <span className="dot" style={{ background: FLAG_COLORS[live.flag] }} />}
             <span title="Times this card has been reviewed">Cycle {live.reps + 1}</span>
             {preset.showTimer && <span style={{ fontVariantNumeric: 'tabular-nums' }}>{Math.floor(elapsed / 60000)}:{String(Math.floor(elapsed / 1000) % 60).padStart(2, '0')}</span>}
@@ -181,7 +185,7 @@ export function Review() {
         </div>
 
         <div
-          style={{ display: 'flex', flexDirection: 'column', flex: 1 }}
+          style={{ display: 'flex', flexDirection: 'column', flex: 1, position: 'relative' }}
           onClick={(e) => {
             // tapping the card reveals the answer – but not when tapping the answer box, audio or a hint
             if ((e.target as HTMLElement).closest('input, button, a, details, summary')) return;
@@ -200,6 +204,7 @@ export function Review() {
             flag={live.flag}
             autoplay={preset.autoplayAudio}
           />
+          {board && <Whiteboard key={live.id} onClose={() => setBoard(false)} />}
         </div>
 
         {showAnswer && intervals ? (

@@ -144,7 +144,8 @@ export function updateNote(note: Note) {
   const have = new Set(existing.map((c) => c.ord));
   const added = [...ords].filter((o) => !have.has(o)).map((o) => makeCard(note, o, existing[0]?.odid || existing[0]?.deckId || note.deckId));
   // new (never studied) cards whose template is now empty are removed; studied ones are kept
-  const empty = existing.filter((c) => !ords.has(c.ord) && c.state === CardState.New);
+  // (an occlusion card whose box was deleted has nothing left to test, so it goes even if studied)
+  const empty = existing.filter((c) => !ords.has(c.ord) && (c.state === CardState.New || nt.type === 'occlusion'));
   put([{ ...note, tags: normaliseTags(note.tags) }, ...added]);
   if (empty.length && ords.size) remove('card', empty.map((c) => c.id));
 }

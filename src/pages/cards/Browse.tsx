@@ -223,11 +223,11 @@ export function Browse() {
                       <td className="browse-first">
                         <div className="row" style={{ gap: 6 }}>
                           {c.flag > 0 && <span className="dot" style={{ background: FLAG_COLORS[c.flag] }} />}
-                          <span className="ellipsis">{stripHtml(Object.values(n?.fields || {})[0] || '').slice(0, 140) || <i className="faint">empty</i>}</span>
-                          {!notesMode && nt?.type !== 'cloze' && c.ord > 0 && <span className="pill show-sm" style={{ fontSize: 10 }}>reverse</span>}
+                          <span className="ellipsis">{(nt?.type === 'occlusion' ? `🖼 ${stripHtml(n?.fields.Header || '') || 'Diagram'}` : stripHtml(Object.values(n?.fields || {})[0] || '').slice(0, 140)) || <i className="faint">empty</i>}</span>
+                          {!notesMode && nt?.type === 'standard' && c.ord > 0 && <span className="pill show-sm" style={{ fontSize: 10 }}>reverse</span>}
                         </div>
                       </td>
-                      {!notesMode && <td className="hide-sm nowrap small muted">{nt?.type === 'cloze' ? `Cloze ${c.ord}` : nt?.templates[c.ord]?.name}</td>}
+                      {!notesMode && <td className="hide-sm nowrap small muted">{nt?.type === 'cloze' ? `Cloze ${c.ord}` : nt?.type === 'occlusion' ? `Box ${c.ord}` : nt?.templates[c.ord]?.name}</td>}
                       <td className="hide-sm small ellipsis" style={{ maxWidth: 180 }}>{deckPath(get('deck', c.deckId))}</td>
                       <td className="nowrap small">{dueText(c)}</td>
                       <td className="hide-sm small">{c.state === CardState.Review ? `${c.scheduledDays}d` : '–'}</td>

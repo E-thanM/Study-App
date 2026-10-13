@@ -58,7 +58,7 @@ export function CardInfoModal({ card, onClose }: { card: Card; onClose: () => vo
           {card.ease > 0 && <><span>Ease (SM-2)</span><span>{Math.round(card.ease * 100)}%</span></>}
           <span>Average time</span><span>{logs.length ? `${(total / logs.length / 1000).toFixed(1)}s` : '–'}</span>
           <span>Total time</span><span>{fmtHours(total)}</span>
-          <span>Card type</span><span>{nt?.type === 'cloze' ? `Cloze ${card.ord}` : nt?.templates[card.ord]?.name}</span>
+          <span>Card type</span><span>{nt?.type === 'cloze' ? `Cloze ${card.ord}` : nt?.type === 'occlusion' ? `Box ${card.ord}` : nt?.templates[card.ord]?.name}</span>
           <span>Note type</span><span>{nt?.name}</span>
           <span>Deck</span><span>{deckPath(get('deck', card.deckId))}</span>
         </div>

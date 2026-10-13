@@ -72,6 +72,20 @@ export const BUILTIN_NOTETYPES: NoteType[] = [
   },
 ];
 
+export const OCCLUSION_NOTETYPE: NoteType = {
+  id: 'nt-image-occlusion',
+  kind: 'notetype',
+  updatedAt: 1,
+  builtin: true,
+  name: 'Image occlusion (cover-up diagram)',
+  type: 'occlusion',
+  fields: ['Image', 'Header', 'Back Extra', 'Masks'],
+  // cards are drawn by lib/occlusion.ts; templates are only shown for reference
+  templates: [{ name: 'Box', front: '{{Image}}', back: '{{Image}}' }],
+  css: DEFAULT_CSS,
+};
+BUILTIN_NOTETYPES.push(OCCLUSION_NOTETYPE);
+
 export const DEFAULT_PRESET: Preset = {
   id: 'preset-default',
   kind: 'preset',
