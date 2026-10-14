@@ -77,8 +77,30 @@ What is Sir Alec Issigonis known for? :: Designer of the **Mini** (1959) – tra
 What is James Dyson known for? :: The **dual cyclone bagless vacuum cleaner** (over 5,000 prototypes – iterative design); also Airblade hand dryer and bladeless fan
 What is Harry Beck known for? :: The **London Underground map** (1931/33) – a diagram not to scale, using only horizontal, vertical and 45° lines, inspired by electrical circuit diagrams
 What is William Morris known for? :: Leader of the **Arts and Crafts movement** – hand-crafted furniture, wallpaper and textile designs based on nature (e.g. 'Strawberry Thief')
+What is Charles Rennie Mackintosh known for? :: Glasgow architect/designer (Art Nouveau/Glasgow Style) – tall **high-backed ladder chairs**, the Hill House, Glasgow School of Art, stylised rose motif
+What is Gerrit Rietveld known for? :: De Stijl designer – **Red Blue Chair** (1918) using straight lines and primary colours; Zig-Zag chair
+What is Ettore Sottsass known for? :: Founder of the **Memphis Group** (1981) – bold colours, clashing patterns, plastic laminates (Carlton bookcase); also the Olivetti Valentine typewriter
+What is Aldo Rossi known for? :: Italian post-modern architect – designed for **Alessi**, e.g. La Conica coffee maker and Il Conico kettle with simple geometric architectural forms
+What is Norman Foster known for? :: British high-tech architect – 30 St Mary Axe ('the **Gherkin**'), Millennium Bridge, Reichstag dome; steel and glass, energy-efficient buildings
+What is Coco Chanel known for? :: French fashion designer – used **jersey** fabric for women's clothing, the little black dress and Chanel suit; comfortable, practical, elegant clothing for women
+What is Mary Quant known for? :: 1960s London fashion designer – popularised the **mini skirt** and hot pants; used new materials such as PVC; youth fashion
+What is Vivienne Westwood known for? :: British designer of **punk** fashion in the 1970s (tartan, safety pins); later a campaigner for sustainability and buying less
+What is Alexander McQueen known for? :: British fashion designer – dramatic tailoring, 'bumster' trousers, armadillo shoes, use of digital printing and technology in catwalk shows
+What is Louis Comfort Tiffany known for? :: American Art Nouveau designer – **stained-glass lamps** made using the copper-foil technique, with nature-inspired designs
+What is Raymond Templier known for? :: French **Art Deco** jewellery designer – bold geometric shapes using platinum, silver, diamonds and lacquer
+What are Margaret Calvert and Jock Kinneir known for? :: Designing the **UK road sign system** (1960s) and the Transport and Rail Alphabet typefaces – clear, legible graphic communication
+What is Jonathan (Jony) Ive known for? :: Apple's chief designer – iMac G3 (translucent coloured polycarbonate), iPod, iPhone, iPad; minimalist, user-friendly design
+What is Kenneth Grange known for? :: British industrial designer – Kenwood Chef food mixer, InterCity 125 train nose, Anglepoise lamp redesign, Parker pens
+What is Robin Day known for? :: The **Polyprop chair** (1963) – one of the first injection-moulded polypropylene chairs; cheap, stackable, mass-produced in millions
+What is Trevor Baylis known for? :: The **wind-up (clockwork) radio** – no batteries needed; designed for areas without electricity
 What is Apple known for as a design company? :: Minimalist, user-friendly products (iPod, iPhone, MacBook), integration of hardware and software, strong brand, premium materials (aluminium unibody)
+What is Dyson known for as a company? :: Engineering-led innovation – cyclone vacuum cleaners, bladeless fans, hand dryers; heavy investment in research and prototyping
+What is Braun known for as a company? :: German manufacturer of electrical products (shavers, radios, clocks) – clean functional design under Dieter Rams
+What is Alessi known for as a company? :: Italian homeware company that works with famous designers (Starck, Rossi, Sapper) to make playful, sculptural, iconic kitchen products
+What is Under Armour known for? :: Performance sportswear using **technical fabrics** – moisture-wicking, compression clothing (HeatGear/ColdGear)
+What is Gap known for? :: US clothing retailer – mass-produced casual basics (jeans, T-shirts) sold worldwide; global supply chains
 What is Primark known for? :: Low-cost **fast fashion** retailer – very cheap clothing using bulk buying and global suppliers; criticised over working conditions (e.g. Rana Plaza collapse, 2013)
+What is Zara known for? :: **Fast fashion** – design to shop in about 2–3 weeks using a fast, responsive supply chain, small batches and just-in-time
 What is IKEA known for? :: **Flat-pack** self-assembly furniture – reduces transport and storage costs, uses manufactured boards and knock-down fittings, low prices
 
 ## Design movements
@@ -117,6 +139,8 @@ What are moral issues in design? :: Whether a product or the way it is made is r
 What is a 'throwaway society'? :: A culture where products are cheap and quickly discarded rather than repaired or reused, creating large amounts of waste
 How do fashion and trends affect product design? :: Products are restyled frequently to follow trends, which drives sales but shortens product life (style obsolescence) and increases waste
 What is a sweatshop? :: A factory where workers are paid very little, work long hours in unsafe conditions, sometimes including child labour
+What was the Rana Plaza disaster? :: The 2013 collapse of a garment factory building in Bangladesh that killed over 1,100 workers – highlighted unsafe conditions in fast-fashion supply chains
+What is the Ethical Trading Initiative (ETI)? :: An alliance of companies, trade unions and charities that promotes workers' rights in global supply chains
 What does the FSC logo mean? :: Forest Stewardship Council – the timber or paper comes from responsibly managed forests where trees are replanted and workers/communities are respected
 What are conflict minerals? :: Minerals (tin, tantalum/coltan, tungsten, gold) used in electronics that may be mined in war zones, funding armed groups and using forced labour
 Explain the social benefits and drawbacks of automation in manufacturing. :: **Benefits** – safer (robots do dangerous jobs), consistent quality, cheaper products, new skilled jobs (programming, maintenance) ;; **Drawbacks** – fewer unskilled jobs, deskilling, unemployment in some communities
@@ -326,6 +350,8 @@ What is glass reinforced plastic (GRP)? :: Glass fibre matting set in polyester 
 What is Flexiply? :: Plywood made from thin veneers that can be bent into curves without steaming
 What is a liquid crystal display (LCD)? :: A thin, low-power screen where liquid crystals twist to block or let light through when a voltage is applied – calculators, watches, phones
 What is PLA and why is it considered more sustainable? :: Polylactic acid – a polymer made from plant starch (e.g. corn); renewable source and biodegradable/compostable under industrial conditions; used for 3D printing and packaging
+What is Potatopak? :: A biodegradable material made from potato starch, moulded into disposable plates and food trays as an alternative to polystyrene
+Why are graphene's properties important? :: Extremely strong, light, flexible, transparent and an excellent conductor – potential for flexible screens, faster electronics, better batteries
 
 # 6 Technical understanding – energy and systems
 How is electricity generated from fossil fuels? :: Burning coal/oil/gas heats water into steam → turns turbines → generators
@@ -472,6 +498,7 @@ What is a datum edge/surface? :: A straight, true reference edge or face from wh
 What is vernier calipers used for? :: Accurately measuring internal and external dimensions and depths, to about 0.02 mm
 What is a micrometer used for? :: Measuring external dimensions very precisely, to about 0.01 mm
 What is a pillar drill used for and what safety precautions apply? :: Drilling accurate vertical holes ;; Clamp work in a vice/clamp, guard down, goggles, hair tied back, remove chuck key, never hold small work by hand
+Name types of drill bit. :: Twist drill (general holes), countersink (recess for screw heads), flat/spade bit and Forstner bit (large holes in wood), hole saw, centre drill
 Name saws and what they cut. :: Tenon saw – straight cuts in wood ;; Coping saw – curves in wood/polymers ;; Hacksaw/junior hacksaw – metal and polymers ;; Scroll saw – intricate shapes ;; Bandsaw – fast straight and curved cuts
 
 ## Digital design and manufacture
@@ -484,11 +511,13 @@ Describe fused deposition modelling (FDM) 3D printing. :: Thermoplastic filament
 Give advantages and disadvantages of 3D printing. :: **Advantages** – complex shapes, no tooling, ideal for prototypes and one-offs, little waste ;; **Disadvantages** – slow, limited size and materials, visible layer lines/weaker between layers, high cost per part for large quantities
 What is rapid prototyping? :: Quickly making physical models directly from CAD data (e.g. 3D printing, laser cutting) to test designs early
 What is finite element analysis (FEA)? :: A CAD simulation that tests how a product will react to forces and stresses before it is made
+Give examples of CAD software uses. :: 2D design for laser cutting, 3D solid modelling (e.g. Fusion 360, SolidWorks), circuit design and simulation, pattern/lay planning for textiles, packaging nets
 
 ## Quality control
 Give examples of quality control checks. :: Measuring dimensions against tolerances, go/no-go gauges, visual inspection, testing samples, registration marks and colour bars in printing, checking seams/stitch length in textiles
 What is a go/no-go gauge? :: A gauge with two ends – the 'go' end must fit and the 'no-go' end must not, showing quickly if a part is within tolerance
 C: {{c1::Quality control}} involves inspecting and testing products during and after manufacture; {{c2::quality assurance}} is the overall system that makes sure quality standards are met at every stage.
+What is ISO 9001? :: An international standard for quality management systems – shows a company has quality assurance procedures in place
 Why are tolerances needed in manufacture? :: No process is perfectly accurate; tolerances define the acceptable range so parts still fit and work together while keeping costs reasonable
 What is a critical control point in quality checking? :: A stage in manufacture where a check must be made to prevent faults, e.g. after cutting or before assembly
 
@@ -533,6 +562,7 @@ What does the Health and Safety at Work Act (1974) require? :: Employers must pr
 Why is ventilation/extraction needed in a workshop? :: To remove harmful dust (e.g. MDF), fumes from soldering, laser cutting, adhesives and finishes
 Give ways electrical safety is ensured in school workshops. :: Low-voltage tools, RCD circuit breakers, PAT testing of equipment, emergency stop buttons, checking cables for damage
 What safety features are required in toys? :: No small parts for under-3s (choking), non-toxic paints/finishes, no sharp edges or points, strong secure parts, CE/UKCA mark (Toy Safety Regulations)
+What are the Furniture and Furnishings (Fire) (Safety) Regulations? :: UK regulations requiring upholstered furniture and furnishings to pass fire-resistance tests and carry labels
 Why do products carry safety warnings and instructions? :: To inform users how to use the product safely, warn about hazards and age limits, and protect the manufacturer legally
 What does COSHH require you to do with hazardous substances? :: Identify them, store them safely, label them, use PPE and ventilation, and know what to do in an emergency (check the safety data sheet)
 
@@ -546,6 +576,8 @@ Why might a technically good product fail commercially? :: Too expensive, no rea
 What raw material is most paper made from? :: **Cellulose fibres** from wood pulp (mainly softwoods such as spruce and pine); also recycled paper, cotton rag or bamboo
 Describe how paper is made from trees. :: Logs debarked and chipped → pulped (mechanically or chemically) → bleached and mixed with water, fillers and size → spread on a moving mesh where water drains → pressed between rollers → dried over heated rollers → calendered (smoothed) → wound on reels
 C: Passing paper between heavy rollers to give a smooth, even surface is called {{c1::calendering}}.
+Why are fillers such as china clay added to paper pulp? :: To make the paper smoother, whiter and more opaque so it prints better
+What is sizing in paper making? :: Adding starch or resin to reduce absorbency so ink doesn't spread (bleed) into the paper
 How is paper recycled? :: Collected and sorted → pulped with water → de-inked and cleaned → made into new paper (often mixed with new fibres)
 Why can paper only be recycled a limited number of times? :: The cellulose fibres get shorter and weaker each time (about 5–7 times), so new fibres must be added
 C: Paper becomes {{c1::board}} when its weight is above about {{c2::170–200 gsm}}.
@@ -565,7 +597,9 @@ Give properties and uses of duplex board. :: Two layers – a smooth white side 
 Give properties and uses of solid white board. :: High-quality bleached board, white throughout, excellent print surface, expensive ;; Luxury packaging, cosmetics boxes, book covers
 Give properties and uses of foil-lined board. :: Board with a thin aluminium foil layer – reflects heat, keeps food hot, moisture barrier ;; Takeaway container lids, drinks cartons
 Give properties and uses of foam board (foamcore). :: Polystyrene foam sandwiched between two thin card sheets – very light, rigid, easy to cut ;; Architectural models, mounting displays, point-of-sale stands
+What is mounting board? :: Thick, rigid coloured board used for mounting and framing artwork and photographs
 Why are liquid food cartons (e.g. Tetra Pak) difficult to recycle? :: They are laminated layers of board, polyethylene and aluminium foil that must be separated by a special process
+What is Corriflute? :: Corrugated polypropylene sheet – lightweight, waterproof and rigid – used for outdoor signs, estate agent boards and models
 
 ## Stock forms and sizes
 C: An {{c1::A0}} sheet has an area of 1 m²; each smaller A size is {{c2::half}} the area of the size above.
@@ -584,6 +618,7 @@ Give advantages and disadvantages of offset lithography. :: **Advantages** – h
 Describe flexography. :: Flexible rubber or polymer relief plates on rotating cylinders apply fast-drying ink – prints on corrugated card, plastic films and labels for packaging
 Describe screen printing. :: Ink is pushed through a fine mesh with a squeegee; a stencil blocks areas where ink isn't wanted; one screen per colour ;; Posters, T-shirts, signs – good for short runs
 Describe digital printing. :: Inkjet or laser printers print directly from a computer file with no plates ;; Ideal for short runs and personalised printing, but cost per copy is higher for large runs
+What is gravure printing? :: The image is engraved into a metal cylinder; ink fills the recesses and is transferred to the paper – very high quality and very long runs (magazines, stamps)
 Which printing process is best for 100,000 full-colour magazines and why? :: Offset lithography (or gravure) – high quality and very low cost per copy once set up
 Which printing process is best for 20 personalised invitations and why? :: Digital printing – no plates or set-up costs, each copy can be different
 
@@ -631,27 +666,34 @@ What is seasoning of timber? :: Drying timber to reduce its moisture content, so
 Why must timber be seasoned? :: Reduces shrinking, warping and splitting; increases strength; reduces risk of rot and fungal attack; makes it easier to glue and finish
 Describe air seasoning. :: Planks stacked with spacers (stickers) under a roof so air circulates – cheap, little energy, but slow (years) and only reaches about 15–20% moisture
 Describe kiln seasoning. :: Timber dried in a heated chamber with controlled temperature and humidity – fast (days/weeks), can reach 6–12% moisture for indoor use, but uses more energy and costs more
+What tool checks the moisture content of timber? :: A moisture meter (two probes measure electrical resistance)
 Name common defects in timber. :: Knots, splits/shakes, cupping, bowing, twisting (winding), springing, insect and fungal damage (rot)
+C: {{c1::Cupping}} is when a board curls across its width; {{c2::bowing}} is when it curves along its length.
 
 ## Properties and uses of specific woods
 Give properties and uses of ash. :: Tough, flexible, shock-absorbing, straight grain, pale ;; Tool handles, sports equipment (hockey sticks, bats), ladders, bent furniture
 Give properties and uses of beech. :: Hard, tough, close fine grain, pale, food-safe, can be steam bent ;; Toys, kitchen utensils, chopping boards, workbenches, chair frames
 Give properties and uses of mahogany. :: Reddish-brown, fairly easy to work, durable, attractive grain ;; High-quality furniture, panelling, veneers
 Give properties and uses of balsa. :: Extremely light and soft, easy to cut with a knife, low strength ;; Modelling, model aircraft, rafts
+Give properties and uses of teak. :: Very durable, naturally oily so resists water and rot, heavy ;; Outdoor furniture, boat decks, kitchen worktops
 Give properties and uses of larch. :: Durable, tough, resinous, resists rot better than most softwoods ;; Cladding, fencing, boat building, outdoor structures
 Give properties and uses of spruce. :: Light, pale, fairly strong for its weight, straight grain ;; Construction timber, musical instruments, paper pulp
+Give properties and uses of cedar (western red cedar). :: Lightweight, naturally resistant to rot and insects, aromatic ;; Sheds, cladding, outdoor furniture, roof shingles
 Why is softwood generally cheaper than hardwood? :: Softwood trees grow faster and straighter (ready in about 30 years), so timber is plentiful and quick to replace
 
 ## Manufactured boards in detail
 Give properties and uses of plywood. :: Odd number of veneers glued with grain at 90° to each other – strong in all directions, stable, doesn't split ;; Furniture, flooring, boat building (marine ply), shelving
 Give properties and uses of chipboard. :: Wood chips bonded with resin – cheap, stable, but weak, crumbles at edges and swells when wet; often veneered or melamine faced ;; Kitchen units, worktops, flat-pack furniture
 Give properties and uses of hardboard. :: Compressed wood fibres, one smooth face and one textured – thin, cheap, not very strong ;; Drawer bottoms, cupboard backs, clipboards
+What is OSB (oriented strand board)? :: Large wood strands layered in different directions and bonded with resin – strong, cheap ;; Building sheathing, flooring, hoarding
 Why must MDF dust be controlled? :: The fine dust and resin (urea formaldehyde) are harmful if inhaled – use extraction and a dust mask
 Why are manufactured boards often veneered or laminated? :: To give an attractive real-wood or decorative, hard-wearing surface over a cheap, stable core
+What does 'marine plywood' mean? :: Plywood made with waterproof adhesive and durable veneers, so it doesn't delaminate in wet conditions
 
 ## Stock forms
 What does PAR mean? :: Planed All Round – timber planed smooth on all four sides (slightly smaller than its nominal sawn size)
 In what stock forms is timber supplied? :: Rough-sawn or PAR planks and boards, square and round (dowel) sections, strips, mouldings and standard sheets of manufactured board (2440 × 1220 mm)
+What is the difference between nominal and actual size of planed timber? :: Nominal size is the sawn size before planing; actual size is a few millimetres smaller after planing
 
 ## Ecological and social footprint
 Give environmental advantages of using timber. :: Renewable if replanted, low embodied energy, biodegradable, stores carbon, can be reused or recycled into manufactured boards or biomass fuel
@@ -677,10 +719,12 @@ Describe a comb (finger) joint and its use. :: Interlocking square fingers – l
 Describe a housing joint and its use. :: A groove cut across one board to take the end of another ;; Shelves in bookcases and cabinets
 Describe a mitre joint and its use. :: Ends cut at 45° to form a corner – hides end grain, neat but weak unless reinforced ;; Picture frames
 What is a lap joint? :: One piece overlaps a recess (rebate) cut in the other – simple, more gluing area than a butt joint ;; Drawer fronts, frames
+What is a biscuit joint? :: An oval compressed beech 'biscuit' glued into slots cut in both pieces – quick alignment and strengthening of edge and corner joints
 What are knock-down (KD) fittings? :: Fixings that allow furniture to be assembled and taken apart easily with simple tools – e.g. cam locks, cross dowels, corner blocks, screw blocks
 Why are knock-down fittings used in flat-pack furniture? :: Allow the customer to assemble it at home, so it can be packed flat, reducing storage and transport costs; can be taken apart for moving
 C: When screwing two pieces of wood together, the top piece needs a {{c1::clearance hole}} and the bottom piece needs a {{c2::pilot hole}}.
 Why are screw holes countersunk? :: So countersunk screw heads sit flush with (or below) the surface
+Give types of nail and uses. :: Round wire (general rough work), oval (joinery – less likely to split), panel pins (small, fine work, attaching thin panels)
 Give types of hinge used on wooden products. :: Butt hinge (doors), flush hinge (no recess needed), piano/continuous hinge (long lids), concealed kitchen hinge, tee hinge (gates, sheds)
 What is PVA glue used for? :: Interior woodwork – strong, safe, cheap, cleans up with water; parts must be clamped while it sets (not waterproof unless exterior grade)
 What is a contact adhesive used for? :: Bonding sheet laminates to boards – applied to both surfaces, left to go tacky, then pressed together (instant bond, needs ventilation)
@@ -704,12 +748,14 @@ Why are equal diagonals used to check a frame? :: If the two diagonal measuremen
 ## Sources and extraction
 How are metals obtained? :: Ores are mined or quarried from the Earth's crust, then the metal is extracted by heating (smelting) or electrolysis, then refined
 C: Iron is extracted from iron ore in a {{c1::blast furnace}} using coke and limestone; aluminium is extracted from {{c2::bauxite}} by electrolysis.
+How is steel made from iron? :: Excess carbon in pig iron is burned off by blowing oxygen through it (basic oxygen furnace); scrap steel is melted in an electric arc furnace
 Why is extracting aluminium very energy intensive? :: It needs electrolysis, which uses huge amounts of electricity
 Why is recycling aluminium so beneficial? :: It uses only about 5% of the energy needed to extract new aluminium, and it can be recycled again and again without losing quality
 How can steel be separated from other waste for recycling? :: It is magnetic (ferrous), so it can be removed with large magnets
 Give environmental impacts of metal production. :: Mining destroys landscapes and habitats, high energy use and CO2 emissions in extraction, toxic waste, finite ores – but metals are highly recyclable
 
 ## Ferrous metals
+How much carbon does mild steel contain? :: About 0.15–0.35% carbon
 Give properties and uses of high-carbon (tool) steel. :: About 0.7–1.4% carbon – very hard and can be hardened and tempered, but less ductile ;; Chisels, files, saw blades, screwdrivers, drill bits
 Give properties and uses of cast iron. :: 2–4% carbon – hard, brittle, strong in compression, casts well, rusts ;; Vices, engine blocks, manhole covers, cookware, machine beds
 Give properties and uses of stainless steel. :: Steel alloyed with chromium (at least about 10.5%) and nickel – hard, tough, does not rust, hygienic ;; Cutlery, sinks, surgical tools, kitchen equipment
@@ -739,13 +785,17 @@ Describe hardening of high-carbon steel. :: Heat to cherry red (about 800 °C) a
 Describe tempering of high-carbon steel. :: After hardening, clean to bright metal and reheat gently, watching the oxide colours (pale straw to blue); quench at the right colour – reduces brittleness and increases toughness while keeping some hardness
 Which tempering colours are used for cutting tools and for springs? :: Pale straw (about 230 °C) – hard cutting tools such as scribers and lathe tools ;; Blue (about 300 °C) – tougher items such as springs and screwdrivers
 What is case hardening? :: Adding carbon to the surface of mild steel by heating it in carbon-rich material, then quenching – gives a hard wear-resistant skin with a tough core
+What is normalising? :: Heating steel and letting it cool in air to relieve internal stresses and refine its grain structure
 
 ## Shaping metals – wasting
 Name tools for cutting metal by hand. :: Hacksaw, junior hacksaw, tin snips (sheet), bench shears/guillotine, cold chisel, files, hand drill
 Compare cross filing and draw filing. :: **Cross filing** – pushing the file across the work to remove material quickly ;; **Draw filing** – sliding the file sideways along the work to give a smooth finish
 What is a centre lathe used for? :: Turning round metal or plastic bar – facing off, parallel turning, taper turning, drilling, boring, knurling and cutting threads
+What is knurling? :: Pressing a diamond or straight pattern into the surface of round bar on a lathe to give grip (e.g. tool handles)
 What is milling? :: A rotating multi-toothed cutter removes metal to produce flat surfaces, slots and grooves (manual or CNC)
 C: An internal thread is cut with a {{c1::tap}}; an external thread is cut with a {{c2::die}}.
+What size hole must be drilled before tapping a thread? :: A tapping-size hole, smaller than the thread diameter (e.g. 6.8 mm for an M8 thread)
+What is plasma cutting? :: An electrically ionised gas jet melts and cuts through sheet metal quickly – often CNC controlled
 Why is a centre punch used before drilling metal? :: Makes a small dent so the drill bit starts in the right place and doesn't wander
 
 ## Shaping metals – deforming and reforming
@@ -754,6 +804,8 @@ What is investment (lost wax) casting? :: A wax pattern is coated in ceramic slu
 What is forging? :: Shaping hot metal by hammering or pressing (drop forging uses dies) – aligns the grain, making parts very strong ;; Spanners, crankshafts
 What is press forming (stamping)? :: Sheet metal is pressed between matched male and female dies to form a shape ;; Car body panels, kitchen sinks, trays
 What is deep drawing? :: Sheet metal is drawn into a deep shape by a punch pushing it into a die ;; Drinks cans, saucepans
+What is metal spinning? :: A disc of sheet metal is spun on a lathe and pressed over a former to make round hollow shapes ;; Lampshades, bowls, cymbals
+How is metal wire made? :: By drawing (pulling) rod through a series of progressively smaller dies
 What is extrusion used for in metals? :: Pushing hot aluminium through a shaped die to make long constant profiles ;; Window frames, rails, heat sinks
 How is bending of metal done in a workshop? :: Using a vice, folding bars, sheet metal folder/bender, bending jig or scrolling tool; thick steel may be heated first
 What is fettling? :: Removing unwanted metal (sprue, runners, flash) from a casting and cleaning it up with files and saws
@@ -767,6 +819,8 @@ Why is flux used when soldering and brazing? :: It cleans the joint and prevents
 What is spot welding used for? :: Joining overlapping sheet metal using electrodes that pass a high current through a small spot – fast and automated (car bodies)
 What is a pop rivet? :: A rivet set from one side only using a rivet gun – used when the back of the joint can't be reached (e.g. joining sheet metal)
 Give temporary (non-permanent) methods of joining metal. :: Nuts and bolts with washers, machine screws, self-tapping screws, set screws
+Why is a washer used under a nut? :: Spreads the load, protects the surface and (spring washer) helps stop the nut working loose
+What is the difference between a bolt and a machine screw? :: A bolt usually has a plain shank and is used with a nut; a machine screw is threaded along its length and often screws into a tapped hole
 
 ## Finishing metals
 Describe powder coating. :: Electrostatically charged polymer powder is sprayed onto the metal and then baked so it melts into a tough, even coating ;; Bikes, garden furniture, radiators
@@ -787,6 +841,7 @@ How are metal parts produced on a large scale? :: Press forming, die casting, ex
 ## Sources and structure
 Describe how polymers are made from crude oil. :: Crude oil is separated by **fractional distillation** → fractions (e.g. naphtha) are **cracked** into small molecules (monomers such as ethene) → monomers are joined by **polymerisation** into long chains
 C: {{c1::Polymerisation}} is the chemical process of joining many small {{c2::monomers}} into long chain molecules.
+C: {{c1::Cracking}} breaks long hydrocarbon molecules from crude oil into shorter, more useful molecules.
 Explain why thermoforming polymers can be reshaped but thermosetting polymers cannot. :: Thermoforming – long chains are held by weak forces that break when heated, so chains can slide and re-form ;; Thermosetting – chains are joined by strong permanent **cross-links** formed when cured, so heating cannot soften them
 What is a biopolymer? :: A polymer made from renewable plant sources (e.g. PLA from corn starch, bio-PE from sugar cane) – some are biodegradable
 What are polymer fillers and pigments? :: **Fillers** – cheap powders added to bulk out a polymer and reduce cost ;; **Pigments** – colourants added so the polymer is coloured throughout (no need to paint)
@@ -808,6 +863,7 @@ Give properties and uses of epoxy resin. :: Very strong adhesive and casting res
 Give properties and uses of melamine formaldehyde. :: Hard, scratch and heat resistant, food safe, rigid ;; Laminate surfaces on kitchen worktops, tableware, picnic plates
 Give properties and uses of polyester resin. :: Rigid, hard, brittle alone, sets with a catalyst (hardener) ;; With glass fibre to make GRP (boats, car bodies), casting/embedding
 Give properties and uses of urea formaldehyde. :: Hard, rigid, heat resistant, good electrical insulator ;; Electrical plugs, sockets and switches; adhesive in MDF
+Give properties and uses of phenol formaldehyde. :: Dark (brown/black), hard, heat resistant, electrical insulator ;; Pan handles, saucepan knobs, electrical fittings (Bakelite)
 Why are thermosetting polymers used for electrical fittings and pan handles? :: They don't soften when hot and are good electrical and thermal insulators
 
 ## Ecological and social footprint
@@ -822,15 +878,20 @@ Give advantages and disadvantages of injection moulding. :: **Advantages** – c
 How can you tell a product was injection moulded? :: Ejector pin marks, a sprue/gate mark, split (parting) lines, uniform wall thickness, ribs and bosses inside
 What is a draft angle and why is it needed in moulds? :: A slight taper on the sides of a mould or former so the product can be removed (ejected) easily
 What is flash on a moulded product? :: Thin excess polymer that has squeezed out at the joint (split line) of the mould – must be trimmed off
+What is injection stretch blow moulding? :: An injection-moulded preform (test tube shape with screw neck) is reheated, stretched and blown into a mould – used for PET drinks bottles
 Describe rotational moulding. :: Polymer powder is put into a hollow mould which is heated while rotating in two axes, coating the inside; it is cooled and opened ;; Large hollow seamless products – kayaks, traffic cones, water tanks, play equipment
 Describe compression moulding. :: A measured charge of thermosetting polymer is placed in a heated mould and pressed into shape, where it cures ;; Melamine plates, electrical fittings
+What is calendering of polymers? :: Passing molten polymer between heated rollers to make sheet and film of an even thickness
 Which industrial process would you use to make a drinks bottle, a pipe, a kayak and a bottle cap? :: Bottle – blow moulding ;; Pipe – extrusion ;; Kayak – rotational moulding ;; Bottle cap – injection moulding
 
 ## Shaping and forming in the workshop
 Give design rules for a vacuum-forming mould. :: Draft angle (about 5°) on sides, rounded corners and edges, no undercuts, vent holes in deep recesses, smooth surface, not too deep
 What is webbing in vacuum forming and how is it prevented? :: Folds of plastic that form between tall or close parts of a mould ;; Space parts further apart, reduce height, use a draft angle and correct heating
 What is drape forming? :: Heated thermoforming sheet is draped over a former and allowed to cool in that shape (e.g. curved acrylic display)
+What is press moulding (plug and yoke)? :: A softened polymer sheet is pressed between a male plug and female yoke to form a simple 3D shape such as a dish
 How are acrylic edges finished? :: Draw file, then wet-and-dry paper (silicon carbide) from coarse to fine used wet, then polish with a buffing wheel or acrylic polish
+Why is acrylic supplied with protective film? :: Prevents scratching during storage, marking out and cutting – remove only when finished
+How should acrylic be drilled to avoid cracking or chipping? :: Use a slow speed, a sharp bit (or one ground for plastics), backing board and no excessive pressure
 
 ## Joining polymers
 What is Tensol cement? :: A solvent cement for acrylic that softens the surfaces so they fuse together – needs ventilation
@@ -845,6 +906,7 @@ Give ways of adding decoration or information to polymer products. :: Printing (
 
 ## Quality control and standard components
 Give quality control checks for moulded products. :: Monitor mould temperature and pressure, check dimensions and wall thickness, inspect for flash, sink marks, short shots (incomplete filling) and warping
+What is a short shot? :: An incomplete moulding caused when not enough polymer fills the mould
 What is a sink mark? :: A small dent on the surface of a moulding where a thick section shrank as it cooled – avoided by even wall thickness and ribs
 Give standard components used with polymer products. :: Self-tapping screws, snap fits, threaded inserts, clips, hinges, nuts and bolts, battery clips
 
@@ -859,6 +921,7 @@ Where do synthetic fibres such as polyester and nylon come from? :: Crude oil �
 What are regenerated fibres? Give examples. :: Fibres made by chemically processing natural cellulose (usually wood pulp) ;; Viscose (rayon), lyocell (Tencel), acetate
 C: {{c1::Staple}} fibres are short (e.g. cotton, wool); {{c2::filament}} fibres are very long and continuous (e.g. silk, synthetics).
 Describe how fibres become fabric. :: Fibres are cleaned and combed → twisted (spun) into **yarn** → yarn is woven or knitted into fabric (or fibres are bonded directly into non-wovens)
+Why is yarn twisted? :: Twisting holds the fibres together, giving the yarn strength
 
 ## Properties and uses of fibres
 Give properties and uses of cotton. :: Absorbent, strong, cool and breathable, soft, washes well, but creases, shrinks and dries slowly ;; Jeans, T-shirts, towels, bedding
@@ -892,6 +955,7 @@ What is organic cotton? :: Cotton grown without synthetic pesticides and fertili
 Give environmental problems of synthetic fibres. :: Made from finite crude oil, energy-intensive, not biodegradable, shed microfibres into water when washed
 Give environmental problems caused by fast fashion. :: Huge use of resources, cheap low-quality clothing worn briefly then thrown away, landfill and incineration, water pollution from dyes, exploited workers
 How can textiles be recycled or reused? :: Charity shops and resale, upcycling, shredding fibres to make new yarn or insulation/stuffing, PET bottles recycled into polyester fleece
+Why is lyocell (Tencel) considered a sustainable fibre? :: Made from wood pulp from managed forests in a closed-loop process that recycles almost all its solvent; biodegradable
 
 ## Patterns, lay plans and cutting
 What is a pattern in textiles? :: A paper or card template of each garment piece, including seam allowances and markings
@@ -909,6 +973,7 @@ What does an overlocker do? :: Trims, stitches and neatens the edge of fabric in
 Give methods of neatening raw edges. :: Overlocking, zigzag stitch, pinking shears, bias binding, French seam, turning and stitching (hem)
 What is a dart? :: A tapered, stitched fold that takes in fabric to shape it around body curves (bust, waist)
 What are pleats and gathers? :: **Pleats** – folds of fabric pressed and stitched to control fullness ;; **Gathers** – fabric drawn up evenly on a thread to give soft fullness
+What is shirring? :: Several rows of stitching using elastic thread to gather fabric so it stretches (e.g. cuffs, summer tops)
 What is interfacing and why is it used? :: An extra layer (often fusible – ironed on) used to stiffen, strengthen and shape areas such as collars, cuffs, waistbands and buttonholes
 What is quilting? :: Stitching a layer of wadding between two layers of fabric to add warmth, padding and decoration
 
@@ -921,6 +986,7 @@ Why might hook-and-loop tape be chosen for children's or elderly users? :: Easy 
 Name methods of dyeing fabric. :: Immersion dyeing (yarn or fabric dipped in dye), tie-dye, batik (hot wax resist), dip dyeing, cold-water and fibre-reactive dyes
 What is batik? :: A resist method: hot wax is applied to fabric in a pattern; dye doesn't penetrate the waxed areas; wax is then removed
 What is tie-dye? :: Fabric is tied, folded or bound tightly so dye can't reach some areas, creating patterns
+What is a mordant? :: A chemical used to fix natural dyes to fibres so the colour doesn't wash out
 What is rotary screen printing? :: Fabric passes under cylindrical mesh screens (one per colour) with ink inside – continuous, fast printing for mass production
 What is flat-bed screen printing? :: A flat mesh screen with a stencil; ink is pushed through with a squeegee – one colour at a time; used for T-shirts and smaller runs
 What is dye sublimation printing? :: Dye is printed onto paper, then heat turns it to gas which bonds into polyester fabric – vivid, permanent, full-colour designs (sportswear)
@@ -929,14 +995,18 @@ What does colourfast mean? :: The dye does not fade or run when washed, exposed 
 
 ## Finishes for textiles
 What is brushing (raising)? :: A mechanical finish where wire brushes lift fibre ends to give a soft, warm, fluffy surface (e.g. brushed cotton, flannelette)
+What is calendering of fabric? :: Passing fabric between heated rollers under pressure to give a smooth, flat, glossy surface
+What is mercerising? :: Treating cotton with sodium hydroxide (caustic soda) – makes it stronger, more lustrous and better at taking dye
 Give chemical finishes for fabrics and their effects. :: Stain resistant (e.g. Teflon coating), water repellent, flame retardant (e.g. Proban), crease resistant/easy-care, anti-static, antibacterial, shrink resistant, moth-proofing
 Why must children's nightwear and furniture fabrics meet flammability standards? :: They are a fire risk; flame-retardant fabrics or finishes slow burning, giving time to escape
 What does a care label show? :: Fibre content, washing temperature, and symbols for washing (tub), bleaching (triangle), tumble drying (square with circle), ironing (iron) and dry cleaning (circle)
 
 ## Technical and smart textiles
 How does Gore-Tex keep the wearer dry but comfortable? :: A microporous PTFE membrane – its pores are too small for liquid water droplets to pass through but large enough for water vapour (sweat) to escape
+What is Nomex? :: A flame-resistant aramid fibre – used in firefighters' and racing drivers' protective clothing
 What are conductive fabrics used for? :: Fabrics containing metal fibres or coatings that conduct electricity – touchscreen gloves, heated clothing, wearable electronics
 What are microfibres? :: Extremely fine synthetic fibres (finer than silk) – soft, light, absorb oil/dirt well; used in cleaning cloths and sportswear
+What are geotextiles? :: Strong permeable fabrics used in civil engineering for drainage, soil stabilisation and erosion control
 Give examples of medical textiles. :: Antibacterial wound dressings, bandages, surgical gowns, absorbable stitches, compression stockings
 
 ## Production and quality control
@@ -983,8 +1053,10 @@ Give advantages of LEDs over filament bulbs. :: Use much less energy, last much 
 What does a diode do? :: Allows current to flow in one direction only – protects circuits from reverse polarity and from back-EMF across motors and relays
 What does a transistor do in a control circuit? :: Acts as an electronic switch (and amplifier) – a small base current switches on a larger collector–emitter current to drive an output
 At about what base voltage does a typical transistor switch on? :: About 0.7 V
+What is a Darlington pair? :: Two transistors connected together to give a very high gain, so a tiny input current can switch a large output current
 What does a relay do? :: An electromagnetically operated switch that lets a low-power circuit switch a separate high-power or mains circuit safely
 What does a capacitor do? :: Stores electrical charge; used in timing circuits (with a resistor) and to smooth power supplies – measured in farads (µF)
+Why must electrolytic capacitors be connected the right way round? :: They are polarised – reverse connection can damage them or make them burst
 What is a 555 timer IC used for? :: Producing timed pulses: **monostable** (one pulse of set length when triggered) or **astable** (continuous on/off pulses, e.g. flashing LED)
 C: The time period of a 555 monostable is T = {{c1::1.1 × R × C}}.
 Calculate the time period of a 555 monostable with R = 100 kΩ and C = 100 µF. :: T = 1.1 × 100 000 × 0.0001 = **11 seconds**
@@ -996,10 +1068,12 @@ How can a microcontroller control a motor or other high-current output? :: Throu
 C: A {{c1::digital}} signal has only two states (on/off, 1/0); an {{c2::analogue}} signal varies continuously.
 Give an example of an analogue and a digital input sensor. :: **Analogue** – LDR, thermistor, potentiometer (varying values) ;; **Digital** – push switch, reed switch, tilt switch (on/off)
 State the output of AND, OR and NOT logic gates. :: **AND** – output 1 only when both inputs are 1 ;; **OR** – output 1 when either or both inputs are 1 ;; **NOT** – output is the opposite of the input
+What are NAND and NOR gates? :: NAND = AND followed by NOT (output 0 only when both inputs are 1) ;; NOR = OR followed by NOT (output 1 only when both inputs are 0)
 Which logic gate is used for a machine that runs only when the guard is closed AND the start button is pressed? :: AND gate
 What is a truth table? :: A table showing the output of a logic system for every possible combination of inputs
 Give the main features of a microcontroller program flowchart. :: Start, input checks (decision diamonds, e.g. 'Is switch pressed?'), outputs on/off, wait/delay boxes, loops back to repeat
 Give advantages of using a microcontroller instead of discrete components. :: Fewer components, smaller cheaper PCB, easily reprogrammed to change function, can handle complex tasks and timing
+What is an ADC on a microcontroller? :: Analogue-to-digital converter – turns an analogue sensor voltage into a number the program can use
 
 ## Making circuits
 What is a breadboard used for? :: Building and testing prototype circuits without soldering – components push into connected holes and can be reused
@@ -1008,9 +1082,11 @@ Describe how a PCB is made by photo-etching. :: Design the PCB layout in CAD →
 How are PCBs made by CNC milling? :: A CNC machine routes away the copper around the tracks and drills the holes directly from the CAD file – no chemicals
 What is surface mount technology (SMT)? :: Tiny components placed directly onto pads on the PCB surface by pick-and-place robots, then soldered in a reflow oven – used in mass production
 What is through-hole technology? :: Component legs pass through drilled holes and are soldered on the underside – stronger, easier by hand; used for larger components and prototypes
+What is wave soldering? :: A PCB with through-hole components passes over a wave of molten solder that solders all joints at once – industrial process
 Describe how to make a good soldered joint. :: Clean, tinned iron tip; heat both the pad and the component leg together for a second or two; feed solder onto the joint (not the iron); remove solder then iron; joint should be shiny and cone (volcano) shaped
 What is a dry joint? :: A dull, cracked or lumpy solder joint that doesn't connect properly – caused by not heating the joint enough or moving it while cooling
 Give safety precautions when soldering. :: Use fume extraction, keep the iron in its stand, wear eye protection, wash hands (solder/flux), never touch the tip, work on a heat-proof mat
+What is a heat sink used for? :: Absorbs and dissipates heat – clipped onto a component leg while soldering, or attached to power components to stop them overheating
 How is a circuit tested and faults found? :: Visual inspection of joints and component orientation; multimeter to measure voltage, current, resistance and continuity; test each subsystem in turn
 Why are electronic products usually housed in an injection-moulded casing? :: Protects the circuit from damage, moisture and dust; insulates users from electricity; allows ergonomic, attractive shapes with bosses, battery compartments and snap fits
 
@@ -1034,7 +1110,10 @@ What happens to torque when gearing reduces speed? :: Torque increases in the sa
 What are bearings and why are they used? :: Components (ball, roller bearings or plain bushes) that support rotating shafts and reduce friction and wear
 Why are mechanisms lubricated? :: Oil or grease reduces friction, wear, heat and noise and helps prevent corrosion
 Give an advantage and a disadvantage of friction in mechanical systems. :: **Advantage** – needed for grip in brakes, belt drives, tyres ;; **Disadvantage** – wastes energy as heat, causes wear and noise
+Why are nylon gears often used in small products? :: Lightweight, quiet, self-lubricating, cheap to injection mould and corrosion resistant (but weaker than steel)
 What is a spring used for in a mechanism? :: Storing energy (elastic potential), returning parts to position, absorbing shocks, maintaining pressure (e.g. pen, cam follower, suspension)
+What is a toggle clamp? :: A linkage that locks in position at its dead centre to hold work firmly – used on jigs and fixtures
+What is a cam follower spring used for? :: Keeps the follower in contact with the cam as it rotates
 
 # 16 Maths skills for D&T
 
