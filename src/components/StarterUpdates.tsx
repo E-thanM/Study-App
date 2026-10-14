@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { applyFixes, dismissFixes, installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingFixes, pendingSets, type StarterDeck } from '../lib/starter';
+import { applyFixes, applyRetired, dismissFixes, dismissRetired, pendingRetired, installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingFixes, pendingSets, type StarterDeck } from '../lib/starter';
 import { useVersion } from '../lib/store';
 import { toast } from './ui';
 
@@ -17,8 +17,9 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
   const pending = decks
     .map((d) => ({ d, n: kind === 'cards' ? pendingCards(d) : pendingSets(d) }))
     .filter((x) => x.n > 0);
+  const trims = kind === 'cards' ? decks.map((d) => ({ d, ...pendingRetired(d) })).filter((x) => x.total > 0) : [];
   const fixes = kind === 'cards' ? decks.map((d) => ({ d, n: pendingFixes(d) })).filter((x) => x.n > 0) : [];
-  if (!pending.length && !fixes.length) return null;
+  if (!pending.length && !fixes.length && !trims.length) return null;
   const fixTotal = fixes.reduce((s, x) => s + x.n, 0);
   const fixBanner = fixes.length > 0 && (
     <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -32,7 +33,24 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
       </div>
     </div>
   );
-  if (!pending.length) return fixBanner;
+  const trimTotal = trims.reduce((s, x) => s + x.total, 0);
+  const trimStudied = trims.reduce((s, x) => s + x.studied, 0);
+  const trimBanner = trims.length > 0 && (
+    <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+      <div className="grow" style={{ minWidth: 200 }}>
+        <b>Trim flashcards that are more detailed than the exam needs</b>
+        <div className="small muted">
+          {trims.map(({ d, total }) => `${d.name} (${total})`).join(' · ')} – trivia and extra detail beyond the specification. {trimStudied > 0 ? `${trimStudied} of them you've already studied; their review history will go too.` : "You haven't studied any of them."}
+        </div>
+      </div>
+      <div className="row">
+        <button className="btn primary sm" onClick={() => { let n = 0; for (const { d } of trims) n += applyRetired(d); toast(`Removed ${n} cards`); }}>Remove {trimTotal} cards</button>
+        <button className="btn ghost sm" onClick={() => trims.forEach(({ d }) => dismissRetired(d))}>Keep them</button>
+      </div>
+    </div>
+  );
+  const extras = <>{fixBanner}{trimBanner}</>;
+  if (!pending.length) return extras;
 
   const total = pending.reduce((s, x) => s + x.n, 0);
   const unit = kind === 'cards' ? 'cards' : 'terms';
@@ -44,7 +62,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
 
   return (
     <>
-    {fixBanner}
+    {extras}
     <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
       <div className="grow" style={{ minWidth: 200 }}>
         <b>New GCSE {kind === 'cards' ? 'flashcards' : 'topic sets'} available</b>

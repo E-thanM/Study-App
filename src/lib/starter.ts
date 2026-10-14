@@ -1,5 +1,5 @@
-import { buildNote, ensureDeckPath, updateNote } from './collection';
-import { all, get, patch, put } from './store';
+import { buildNote, deleteNotes, ensureDeckPath, updateNote } from './collection';
+import { all, get, patch, put, remove } from './store';
 import type { StudySet } from './types';
 import { DEFAULT_PRESET, getSettings } from './seed';
 import type { AnyRec, Note, Preset } from './types';
@@ -16,6 +16,9 @@ import { escapeHtml } from './util';
 
 const files = import.meta.glob('../content/*.txt', { query: '?raw', import: 'default' }) as Record<string, () => Promise<string>>;
 
+/** Cards removed from the starter decks for being more detailed than the exam needs (verbatim content lines). */
+const retiredFiles = import.meta.glob('../content/retired/*.txt', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+
 export interface StarterNote { deckPath: string; type: 'basic' | 'reversed' | 'cloze'; front: string; back: string; topic: string; sub: string }
 export interface StarterDeck {
   key: string;
@@ -25,6 +28,8 @@ export interface StarterDeck {
   topics: string[];
   /** `@renamed old front => new front`: an improved card replaces an installed one (progress kept) */
   renames?: { from: string; to: string }[];
+  /** cards retired from this deck (see content/retired/) */
+  retired?: StarterNote[];
 }
 
 export const STARTER_PRESET_ID = 'preset-gcse-starter';
@@ -75,7 +80,10 @@ export async function loadStarterDecks(): Promise<StarterDeck[]> {
   const out: StarterDeck[] = [];
   for (const [path, load] of Object.entries(files)) {
     const key = path.split('/').pop()!.replace('.txt', '');
-    out.push(parseStarter(key, await load()));
+    const deck = parseStarter(key, await load());
+    const r = Object.entries(retiredFiles).find(([f]) => f.endsWith(`/retired/${key}.txt`))?.[1];
+    if (r) deck.retired = parseStarter(key, r).notes;
+    out.push(deck);
   }
   const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german', 'geography'];
   return out.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
@@ -216,6 +224,59 @@ export function applyFixes(d: StarterDeck): number {
 export function dismissFixes(d: StarterDeck) {
   const cur = getSettings();
   put({ ...cur, starterSig: { ...(cur.starterSig || {}), [`fix:${d.key}`]: fixSig(changedCards(d)) } });
+}
+
+/* ───────────── retired cards: too detailed for the exam ───────────── */
+
+/** Installed notes (and the cards in them) that the deck no longer includes. */
+function retiredNotes(d: StarterDeck): Note[] {
+  if (!d.retired?.length) return [];
+  const guids = new Set(d.retired.map((n) => noteGuid(d, n.front)));
+  // a card that was later re-added (same front) isn't retired
+  for (const n of d.notes) guids.delete(noteGuid(d, n.front));
+  return all('note').filter((n) => n.guid && guids.has(n.guid));
+}
+
+export function pendingRetired(d: StarterDeck): { total: number; studied: number } {
+  const notes = retiredNotes(d);
+  if (!notes.length) return { total: 0, studied: 0 };
+  if (getSettings().starterSig?.[`retire:${d.key}`] === sig(notes.map((n) => n.guid!).sort())) return { total: 0, studied: 0 };
+  const ids = new Set(notes.map((n) => n.id));
+  const studiedNotes = new Set(all('card').filter((c) => ids.has(c.noteId) && c.reps > 0).map((c) => c.noteId));
+  return { total: notes.length, studied: studiedNotes.size };
+}
+
+export function dismissRetired(d: StarterDeck) {
+  const cur = getSettings();
+  put({ ...cur, starterSig: { ...(cur.starterSig || {}), [`retire:${d.key}`]: sig(retiredNotes(d).map((n) => n.guid!).sort()) } });
+}
+
+/** Delete the retired cards (and their terms in Quick Learn sets), then tidy topic folders left empty. */
+export function applyRetired(d: StarterDeck): number {
+  const notes = retiredNotes(d);
+  if (!notes.length) return 0;
+  deleteNotes(notes.map((n) => n.id));
+  const termIds = new Set((d.retired || []).map((n) => `t-${hash(n.front)}`));
+  for (const s of all('set')) {
+    if (!s.id.startsWith(`starter-set:${d.key}:`)) continue;
+    const terms = s.terms.filter((t) => !termIds.has(t.id));
+    if (terms.length === s.terms.length) continue;
+    if (terms.length) put({ ...s, terms });
+    else remove('set', s.id);
+  }
+  const root = all('deck').find((x) => !x.parentId && x.name === d.name);
+  if (root) {
+    const decks = all('deck');
+    const cards = all('card');
+    const children = (id: string) => decks.filter((x) => x.parentId === id);
+    const hasCards = (id: string): boolean => cards.some((c) => c.deckId === id || c.odid === id) || children(id).some((c) => hasCards(c.id));
+    const empty: string[] = [];
+    const sub = (id: string): string[] => [id, ...children(id).flatMap((c) => sub(c.id))];
+    const walk = (id: string) => children(id).forEach((c) => { if (!hasCards(c.id)) empty.push(...sub(c.id)); else walk(c.id); });
+    walk(root.id);
+    if (empty.length) remove('deck', empty);
+  }
+  return notes.length;
 }
 
 /** How many topic-set terms are missing for a subject whose sets the user already added. */

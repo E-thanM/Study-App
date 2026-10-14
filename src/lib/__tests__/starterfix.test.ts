@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { applyFixes, changedCards, installStarter, parseStarter, pendingCards, pendingFixes } from '../starter';
+import { applyFixes, applyRetired, changedCards, installStarter, parseStarter, pendingCards, pendingFixes, pendingRetired } from '../starter';
 import { all, put } from '../store';
 import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS } from '../seed';
 import { CardState } from '../types';
@@ -23,5 +23,19 @@ describe('improved starter cards', () => {
     expect(all('card').find((c) => c.id === card.id)?.reps).toBe(4);
     // installing again adds nothing
     expect(installStarter(v2).notes).toBe(0);
+  });
+
+  it('retires over-detailed cards, keeps the rest, and tidies empty folders', () => {
+    const full = parseStarter('micro', '@deck Micro\n# Bio\n## Yoghurt\nWhich bacterium makes yoghurt? :: Lactobacillus bulgaricus\n## Cells\nWhat is a cell? :: The basic unit of life\n');
+    installStarter(full);
+    expect(all('note').filter((n) => n.guid?.startsWith('starter:micro:'))).toHaveLength(2);
+    const trimmed = parseStarter('micro', '@deck Micro\n# Bio\n## Cells\nWhat is a cell? :: The basic unit of life\n');
+    trimmed.retired = parseStarter('micro', '@deck Micro\nWhich bacterium makes yoghurt? :: Lactobacillus bulgaricus\n').notes;
+    expect(pendingRetired(trimmed)).toEqual({ total: 1, studied: 0 });
+    expect(applyRetired(trimmed)).toBe(1);
+    expect(all('note').filter((n) => n.guid?.startsWith('starter:micro:')).map((n) => n.fields.Front)).toEqual(['What is a cell?']);
+    expect(all('deck').some((d) => d.name === 'Yoghurt')).toBe(false);
+    expect(all('deck').some((d) => d.name === 'Cells')).toBe(true);
+    expect(pendingRetired(trimmed).total).toBe(0);
   });
 });
