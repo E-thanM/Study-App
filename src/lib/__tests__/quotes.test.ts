@@ -9,21 +9,22 @@ const lit = parseStarter('englishlit', readFileSync(resolve(__dirname, '../../co
 describe('quote extraction', () => {
   const quotes = extractQuotes(lit.notes);
 
-  it('finds quotes for all three works', () => {
+  it('finds quotes for every work, all short (9 words or fewer)', () => {
+    expect(quotes.filter((q) => quoteWords(q.text).length > 9)).toEqual([]);
     const works = new Set(quotes.map((q) => q.work));
-    expect([...works]).toEqual(['Macbeth', 'An Inspector Calls', 'Of Mice and Men']);
+    expect([...works]).toEqual(['Macbeth', 'An Inspector Calls', 'Of Mice and Men', 'Poetry anthology']);
     expect(quotes.length).toBeGreaterThan(50);
   });
 
   it('reads the text and bracketed source', () => {
     const q = quotes.find((x) => x.text.startsWith('Fair is foul'))!;
     expect(q).toMatchObject({ work: 'Macbeth', text: 'Fair is foul, and foul is fair', source: 'Witches, Act 1 Scene 1' });
-    expect(quotes.find((x) => x.text.startsWith("'Cause I'm black"))?.source).toBe('Crooks, Chapter 4');
+    expect(quotes.find((x) => x.text.startsWith("I can't play because I'm black"))?.source).toBe('Crooks, Chapter 4');
   });
 
   it('deduplicates quotes that appear on several cards (even when cut differently)', () => {
     expect(quotes.filter((x) => x.text.startsWith('Fair is foul')).length).toBe(1);
-    expect(quotes.filter((x) => x.text.startsWith("Life's but a walking shadow")).length).toBe(1);
+    expect(quotes.filter((x) => x.text.startsWith('full of sound and fury')).length).toBe(1);
     expect(new Set(quotes.map((q) => q.id)).size).toBe(quotes.length);
   });
 
