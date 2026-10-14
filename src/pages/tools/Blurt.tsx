@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { AiAsk } from '../../components/AiAsk';
 import { Icon, Progress, Seg, TopBar, toast } from '../../components/ui';
 import { extractJson } from '../../lib/ai';
@@ -29,7 +29,20 @@ export function BlurtPage() {
   const [rawAi, setRawAi] = useState('');
   const box = useRef<HTMLTextAreaElement>(null);
 
-  useEffect(() => { void loadStarterDecks().then(setDecks); }, []);
+  const [params] = useSearchParams();
+  useEffect(() => {
+    void loadStarterDecks().then((ds) => {
+      setDecks(ds);
+      // opened from the study plan with a subject and topic picked
+      const want = params.get('subject');
+      const d = want ? ds.find((x) => x.name.toLowerCase() === want.toLowerCase() || x.key === want.toLowerCase()) : undefined;
+      if (!d) return;
+      setSubject(d.key);
+      const t = params.get('topic');
+      if (t && d.topics.includes(t)) setTopic(t);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const deck = decks?.find((d) => d.key === subject);
   const topics = deck?.topics || [];

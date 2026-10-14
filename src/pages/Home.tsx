@@ -9,13 +9,14 @@ import { useSyncStatus } from '../lib/sync';
 import { autoCompleteGoals, isMoved, isSkipped, studyToday, useGoalIndex } from '../lib/goals';
 import { isDone, sessionsOn, setDone } from '../lib/timetable';
 import { GoalLines } from './Timetable';
+import { daysBetween, getPlan, novemberDay, phaseOn } from '../lib/plan';
 import { HOUR, fmtHours, isoDate, parseIso, subjectColor } from '../lib/util';
 
 const DAY_LETTERS_MON = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 const DAY_LETTERS_SUN = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
 export function Home() {
-  const v = useVersion('revlog', 'studylog', 'session', 'card', 'deck', 'target', 'set', 'settings');
+  const v = useVersion('revlog', 'studylog', 'session', 'card', 'deck', 'target', 'set', 'settings', 'plan');
   const targets = useAll('target');
   const sets = useAll('set');
   const settings = getSettings();
@@ -60,6 +61,12 @@ export function Home() {
     const n = autoCompleteGoals(data.todaySessions.map((s) => ({ session: s, iso: data.today })), goalIdx);
     if (n) toast(n === 1 ? 'Goals met – session ticked off ✓' : `Goals met – ${n} sessions ticked off ✓`);
   }, [goalIdx, data]);
+  const plan = getPlan();
+  const phase = phaseOn(plan.dates, data.today);
+  const nov = novemberDay(plan.dates, data.today);
+  const planMeta = nov && data.today <= plan.dates.bio
+    ? `Biology test ${daysBetween(data.today, plan.dates.bio) === 0 ? 'today' : `in ${daysBetween(data.today, plan.dates.bio)}d`}`
+    : `Phase ${phase.n}: ${phase.name}`;
   const lastSet = [...sets].sort((a, b) => (b.lastStudied || b.createdAt) - (a.lastStudied || a.createdAt))[0];
 
   return (
@@ -118,6 +125,18 @@ export function Home() {
           </div>
           <div className="tile-meta">
             {data.todaySessions.length ? <span><b>{doneToday}/{data.todaySessions.length}</b> done today</span> : <span>Nothing planned today</span>}
+          </div>
+        </Link>
+        <Link to="/tools/plan" className="tile">
+          <Icon name="arrow" className="tile-arrow" />
+          <div className="tile-icon"><Icon name="target" /></div>
+          <div>
+            <h2>Study plan</h2>
+            <p>{nov?.label || 'What to revise today and which resources to use.'}</p>
+          </div>
+          <div className="tile-meta">
+            <span className="ellipsis"><b>{planMeta}</b></span>
+            {plan.daysDone.includes(data.today) && <span>✓ today done</span>}
           </div>
         </Link>
         <Link to="/cards" className="tile">

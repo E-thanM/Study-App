@@ -1,3 +1,5 @@
+import type { StudyPlan } from './plan';
+
 // Every synced object is a "record": a JSON document with an id, a kind and a
 // client-side updatedAt timestamp used for last-write-wins conflict resolution.
 
@@ -26,6 +28,7 @@ export type Kind =
   | 'blurt'
   | 'quote'
   | 'exemplar'
+  | 'plan'
   | 'settings';
 
 /* ───────────── Long-term flashcards (Anki-style) ───────────── */
@@ -370,6 +373,7 @@ export type AnyRec =
   | Blurt
   | Quote
   | Exemplar
+  | StudyPlan
   | Settings;
 
 export type RecOf<K extends Kind> = Extract<AnyRec, { kind: K }>;

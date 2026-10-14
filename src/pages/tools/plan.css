@@ -1,0 +1,36 @@
+/* study plan */
+.plan-phase h2 { font-size: 22px; }
+.plan-count { display: flex; flex-direction: column; align-items: center; min-width: 84px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); text-align: center; }
+.plan-count b { font-size: 24px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.plan-bar { position: relative; display: flex; gap: 3px; height: 18px; margin-top: 14px; }
+.plan-bar-seg { min-width: 14px; border-radius: 5px; background: var(--line); display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--muted); font-weight: 600; }
+.plan-bar-seg.on { background: var(--accent); color: #fff; }
+.plan-bar i { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--ink); border-radius: 2px; transform: translateX(-1px); }
+.plan-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
+.plan-tabs .btn-group { flex-wrap: nowrap; width: max-content; }
+.plan-tabs .btn-group button { white-space: nowrap; }
+.plan-task { gap: 10px; }
+.plan-topic { gap: 10px; flex-wrap: nowrap; }
+.plan-topic.hot { background: var(--warn-soft); }
+.plan-topic.off { opacity: 0.6; }
+.plan-num { width: 58px; padding: 4px 6px; font-size: 14px; }
+.plan-day.today { background: var(--accent-soft); }
+.plan-day.done b { text-decoration: line-through; opacity: 0.65; }
+.plan-ol { margin: 0; padding-left: 22px; }
+.plan-ol li { margin: 2px 0; }
+.plan-ol a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+.plan-mix { display: flex; height: 22px; border-radius: 7px; overflow: hidden; gap: 2px; }
+.plan-mix div { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 11px; font-weight: 650; min-width: 4px; }
+.plan-legend { gap: 12px; }
+.plan-legend span { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
+.plan-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+@media (max-width: 640px) {
+  .plan-count { min-width: 72px; padding: 6px 8px; }
+  .plan-count b { font-size: 20px; }
+}
+.upper { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.plan-counts { display: flex; gap: 8px; }
+@media (max-width: 640px) {
+  .plan-counts { width: 100%; }
+  .plan-counts .plan-count { flex: 1 1 0; min-width: 0; }
+}

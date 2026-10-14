@@ -9,7 +9,7 @@ import './tools.css';
 const LABEL = ['', 'Weak', 'Shaky', 'OK', 'Good', 'Strong'];
 const pct = (v: number | null) => (v === null ? '–' : `${Math.round(v * 100)}%`);
 
-function Dots({ n }: { n: number }) {
+export function Dots({ n }: { n: number }) {
   return (
     <span className={`conf conf-${n}`} title={`${n}/5 – ${LABEL[n]}`}>
       {[1, 2, 3, 4, 5].map((i) => <i key={i} className={i <= n ? 'on' : ''} />)}
