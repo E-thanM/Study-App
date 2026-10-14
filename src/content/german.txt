@@ -226,7 +226,6 @@ das Mädchen (-) <> girl
 der Mann (Männer) <> man, husband
 die Frau (-en) <> woman, wife, Mrs
 der Herr (-en) <> gentleman, Mr
-das Baby (-s) <> baby
 die Geschwister (pl) <> brothers and sisters, siblings
 der Zwilling (-e) <> twin
 der Enkel (-) / die Enkelin (-nen) <> grandson / granddaughter
@@ -236,14 +235,11 @@ der Ehemann (-männer) / die Ehefrau (-en) <> husband / wife
 der / die Verwandte (-n) <> relative
 der / die Erwachsene (-n) <> adult
 der / die Jugendliche (-n) <> young person, teenager
-der Teenager (-) <> teenager
 die Jugend <> youth
 die Kindheit <> childhood
 der Nachbar (-n) / die Nachbarin (-nen) <> neighbour
 der / die Bekannte (-n) <> acquaintance
 die Leute (pl) <> people
-die Person (-en) <> person
-die Generation (-en) <> generation
 die Gesellschaft (-en) <> society; company
 das Haustier (-e) <> pet
 der Hund (-e) <> dog
@@ -295,15 +291,12 @@ der Charakter (-e) <> character
 die Eigenschaft (-en) <> characteristic, quality
 witzig <> funny, witty
 klug <> clever
-intelligent <> intelligent
 dumm <> stupid
-blöd <> stupid, silly
 frech <> cheeky
 höflich / unhöflich <> polite / rude
 gemein <> mean
 egoistisch <> selfish
 großzügig <> generous
-kreativ <> creative
 sportlich <> sporty
 ernst <> serious
 offen <> open
@@ -320,11 +313,9 @@ froh <> glad
 zufrieden <> satisfied, content
 eifersüchtig <> jealous
 neugierig <> curious, nosy
-arrogant <> arrogant
 ungeduldig <> impatient
 selbstständig <> independent
 unabhängig <> independent
-aktiv <> active
 ordentlich / unordentlich <> tidy / untidy
 ## Relationships
 kennenlernen <> to get to know, meet (for the first time)
@@ -432,11 +423,8 @@ das Getränk (-e) <> drink
 der Kaffee <> coffee
 der Tee <> tea
 der Saft (Säfte) <> juice
-der Orangensaft <> orange juice
-die Cola (-s) <> cola
 das Bier (-e) <> beer
 der Wein (-e) <> wine
-das Mineralwasser <> mineral water
 das Brötchen (-) <> bread roll
 die Butter <> butter
 der Käse <> cheese
@@ -466,7 +454,6 @@ die Erdbeere (-n) <> strawberry
 die Traube (-n) <> grape
 die Zitrone (-n) <> lemon
 der Kuchen (-) <> cake
-die Torte (-n) <> gateau, layered cake
 die Süßigkeiten (pl) <> sweets
 die Schokolade <> chocolate
 das Eis <> ice cream; ice
@@ -476,13 +463,10 @@ die Sahne <> cream
 das Salz <> salt
 der Pfeffer <> pepper
 das Öl <> oil
-die Pizza (-s) <> pizza
-das Fastfood <> fast food
 das Gericht (-e) <> dish (food)
 der Nachtisch / die Nachspeise <> dessert
 die Vorspeise (-n) <> starter
 die Hauptspeise (-n) <> main course
-vegan <> vegan
 der Vegetarier (-) / die Vegetarierin (-nen) <> vegetarian (person)
 der Hunger <> hunger
 Ich habe Hunger / Durst. <> I am hungry / thirsty.
@@ -499,11 +483,9 @@ Es schmeckt gut. <> It tastes good.
 schmecken <> to taste
 ## Health, body and illness
 der Kopf (Köpfe) <> head
-der Arm (-e) <> arm
 das Bein (-e) <> leg
 die Hand (Hände) <> hand
 der Fuß (Füße) <> foot
-der Finger (-) <> finger
 der Bauch (Bäuche) <> stomach, belly
 der Magen <> stomach
 der Rücken (-) <> back
@@ -540,8 +522,6 @@ Es geht mir gut / schlecht. <> I am well / not well.
 gesund essen <> to eat healthily
 die Diät (-en) <> (weight-loss) diet
 das Gewicht <> weight
-die Fitness <> fitness
-fit <> fit
 Sport treiben <> to do sport
 joggen <> to jog
 das Fitnessstudio (-s) <> gym
@@ -551,9 +531,7 @@ sich ausruhen <> to rest
 müde <> tired
 schwach / stark <> weak / strong
 aufhören (mit) <> to stop, give up
-rauchfrei <> smoke-free
 betrunken <> drunk
-die Drogensucht <> drug addiction
 abhängig (von) <> dependent (on), addicted (to)
 gefährden <> to endanger
 schädlich <> harmful
@@ -660,7 +638,6 @@ die Realschule (-n) <> secondary school (to 16)
 die Privatschule (-n) <> private school
 das Internat (-e) <> boarding school
 der Kindergarten (Kindergärten) <> nursery school
-die Schulart (-en) <> type of school
 das Klassenzimmer (-) <> classroom
 die Aula (Aulen) <> school hall
 die Bibliothek (-en) <> library
@@ -738,13 +715,10 @@ arbeitslos <> unemployed
 die Karriere (-n) <> career
 der Traumberuf (-e) <> dream job
 das Ziel (-e) <> goal, aim
-der Plan (Pläne) <> plan
 planen <> to plan
 die Möglichkeit (-en) <> possibility, opportunity
-die Chance (-n) <> chance, opportunity
 die Verantwortung <> responsibility
 verantwortlich <> responsible
-das Team (-s) <> team
 im Team arbeiten <> to work in a team
 selbstständig arbeiten <> to work independently
 der Zahnarzt (Zahnärzte) / die Zahnärztin (-nen) <> dentist
@@ -756,13 +730,10 @@ der Mechaniker (-) / die Mechanikerin (-nen) <> mechanic
 der Elektriker (-) / die Elektrikerin (-nen) <> electrician
 der Bauer (-n) / die Bäuerin (-nen) <> farmer
 der Fahrer (-) / die Fahrerin (-nen) <> driver
-der Pilot (-en) / die Pilotin (-nen) <> pilot
 der Journalist (-en) / die Journalistin (-nen) <> journalist
 der Architekt (-en) / die Architektin (-nen) <> architect
 der Informatiker (-) / die Informatikerin (-nen) <> IT specialist, computer scientist
-der Programmierer (-) / die Programmiererin (-nen) <> programmer
 der Wissenschaftler (-) / die Wissenschaftlerin (-nen) <> scientist
-der Tischler (-) / die Tischlerin (-nen) <> carpenter
 der Klempner (-) / die Klempnerin (-nen) <> plumber
 der Soldat (-en) / die Soldatin (-nen) <> soldier
 der Beamte (-n) / die Beamtin (-nen) <> civil servant, official
@@ -771,7 +742,6 @@ der Musiker (-) / die Musikerin (-nen) <> musician
 der Künstler (-) / die Künstlerin (-nen) <> artist
 der Feuerwehrmann / die Feuerwehrfrau <> firefighter
 der Briefträger (-) / die Briefträgerin (-nen) <> postman / postwoman
-der Babysitter (-) <> babysitter
 babysitten <> to babysit
 Zeitungen austragen <> to deliver newspapers
 Rasen mähen <> to mow the lawn
@@ -792,7 +762,6 @@ schlecht bezahlt <> badly paid
 die Arbeitszeiten (pl) <> working hours
 ehrenamtlich <> voluntary
 freiwillig <> voluntary, voluntarily
-das freiwillige soziale Jahr (FSJ) <> voluntary social year (a volunteering gap year)
 
 # Theme 2 – Free-time activities
 die Freizeit <> free time
@@ -828,7 +797,6 @@ nie <> never
 immer <> always
 Ich spiele seit fünf Jahren Tennis. <> I have been playing tennis for five years.
 das Essen <> food, meal
-das Restaurant <> restaurant
 Ich hätte gern … <> I would like … (ordering)
 die Speisekarte <> menu
 die Rechnung <> bill
@@ -839,8 +807,6 @@ Basketball / Volleyball / Handball spielen <> to play basketball / volleyball / 
 Tischtennis / Federball spielen <> to play table tennis / badminton
 Hockey / Rugby / Kricket spielen <> to play hockey / rugby / cricket
 Ski fahren <> to ski
-Snowboard fahren <> to snowboard
-Skateboard fahren <> to skateboard
 segeln <> to sail
 klettern <> to climb
 angeln <> to fish
@@ -863,10 +829,8 @@ der Sieg (-e) <> victory
 die Niederlage (-n) <> defeat
 unentschieden <> draw (score)
 der Wettbewerb (-e) <> competition
-die Meisterschaft (-en) <> championship
 die Weltmeisterschaft <> World Cup, world championship
 die Olympischen Spiele (pl) <> Olympic Games
-das Training <> training
 der Trainer (-) / die Trainerin (-nen) <> coach
 Mitglied sein (in + dat) <> to be a member (of)
 das Mitglied (-er) <> member
@@ -895,45 +859,33 @@ Wann treffen wir uns? <> When shall we meet?
 Wo treffen wir uns? <> Where shall we meet?
 der Jugendklub / das Jugendzentrum <> youth club
 die Freizeitbeschäftigung (-en) <> leisure activity
-die Aktivität (-en) <> activity
 ## Music, cinema and reading
 die Musik <> music
 das Lied (-er) <> song
-der Song (-s) <> song
 die Band (-s) <> band
 die Gruppe (-n) <> group
-das Instrument (-e) <> instrument
 die Geige (-n) <> violin
 das Schlagzeug <> drums
-die Trompete (-n) <> trumpet
 die Flöte (-n) <> flute, recorder
 der Chor (Chöre) <> choir
-das Orchester (-) <> orchestra
 Popmusik / Rockmusik / klassische Musik <> pop / rock / classical music
-der Rap / der Hip-Hop <> rap / hip-hop
 der Text (-e) <> lyrics, text
-die Melodie (-n) <> melody, tune
 das Kino (-s) <> cinema
 der Actionfilm / der Horrorfilm <> action film / horror film
 die Komödie (-n) <> comedy
 der Liebesfilm (-e) <> romantic film
 der Zeichentrickfilm (-e) <> cartoon, animated film
 der Krimi (-s) <> crime story, thriller
-der Science-Fiction-Film (-e) <> science-fiction film
 die Vorstellung (-en) <> performance, showing
 die Karte (-n) <> ticket; card; map
 das Theater (-) <> theatre
 der Roman (-e) <> novel
 die Geschichte (-n) <> story; history
-der Comic (-s) <> comic
-das E-Book (-s) <> e-book
 der Autor (-en) / die Autorin (-nen) <> author
 die Hauptfigur (-en) <> main character
 spannend <> exciting, gripping
 unterhaltsam <> entertaining
 gruselig <> scary, creepy
-kitschig <> cheesy, kitsch
-romantisch <> romantic
 ## Shopping and clothes
 einkaufen <> to shop, go shopping
 kaufen / verkaufen <> to buy / to sell
@@ -968,12 +920,10 @@ modisch <> fashionable
 die Marke (-n) <> brand, make
 die Markenkleidung <> designer / brand-name clothes
 die Hose (-n) <> trousers
-die Jeans (-) <> jeans
 das Kleid (-er) <> dress
 der Rock (Röcke) <> skirt
 das Hemd (-en) <> shirt
 die Bluse (-n) <> blouse
-das T-Shirt (-s) <> T-shirt
 der Pullover (-) / der Pulli (-s) <> jumper
 die Jacke (-n) <> jacket
 der Mantel (Mäntel) <> coat
@@ -990,7 +940,6 @@ umtauschen <> to exchange (goods)
 ## Eating out
 das Café (-s) <> café
 die Kneipe (-n) <> pub
-die Imbissbude (-n) <> snack stand
 der Tisch (-e) <> table
 Ein Tisch für zwei Personen, bitte. <> A table for two, please.
 bestellen <> to order
@@ -1034,7 +983,6 @@ die Kerze (-n) <> candle
 das Feuerwerk <> fireworks
 die Tradition (-en) <> tradition
 traditionell <> traditional
-die Religion <> religion
 der Nikolaustag (6. Dezember) <> St Nicholas' Day
 einladen <> to invite
 die Einladung <> invitation
@@ -1043,15 +991,12 @@ schmücken <> to decorate
 der Feiertag (-e) <> public holiday
 der Brauch (Bräuche) <> custom
 die Sitte (-n) <> custom, tradition
-das Weihnachtsfest <> Christmas (celebration)
 Frohe Weihnachten! <> Happy Christmas!
 der erste Weihnachtstag <> Christmas Day
 der zweite Weihnachtstag <> Boxing Day
 der Weihnachtsmann <> Father Christmas
 das Christkind <> Christ Child (brings presents in parts of Germany)
-der Advent <> Advent
 der Adventskranz (Adventskränze) <> Advent wreath
-der Nikolaus <> St Nicholas
 das Plätzchen (-) <> Christmas biscuit
 der Lebkuchen (-) <> gingerbread
 der Glühwein <> mulled wine
@@ -1069,20 +1014,14 @@ der Karnevalszug / der Umzug (Umzüge) <> carnival procession / parade
 das Kostüm (-e) <> costume
 sich verkleiden <> to dress up
 die Maske (-n) <> mask
-Halloween <> Halloween
-das Jubiläum (Jubiläen) <> anniversary, jubilee
 das Volksfest (-e) <> funfair, festival
-das Musikfestival (-s) <> music festival
 der Sankt-Martins-Tag / der Laternenumzug <> St Martin's Day / lantern procession
 das Erntedankfest <> harvest festival
 Ramadan / das Zuckerfest <> Ramadan / Eid al-Fitr
 das Opferfest <> Eid al-Adha
-Chanukka <> Hanukkah
-Diwali <> Diwali
 die Kirche (-n) <> church
 die Moschee (-n) <> mosque
 die Synagoge (-n) <> synagogue
-der Tempel (-) <> temple
 christlich / muslimisch / jüdisch <> Christian / Muslim / Jewish
 der Gottesdienst (-e) <> church service
 beten <> to pray
@@ -1100,17 +1039,14 @@ bekommen <> to get, receive
 sich bedanken (für) <> to say thank you (for)
 die Glückwunschkarte (-n) <> greetings card
 die Stimmung <> atmosphere, mood
-die Atmosphäre <> atmosphere
 der Spaß <> fun
 gemütlich <> cosy, relaxed
 besonders <> special(ly), particularly
 typisch <> typical
 der Höhepunkt (-e) <> highlight
-das Familienfest (-e) <> family celebration
 zusammenkommen <> to get together
 die Kultur (-en) <> culture
 kulturell <> cultural
-international <> international
 
 # Theme 2 – Celebrity culture
 der Star (-s) / der Promi (-s) <> celebrity
@@ -1119,7 +1055,6 @@ der Sänger / die Sängerin <> singer
 der Schauspieler / die Schauspielerin <> actor / actress
 der Sportler / die Sportlerin <> sportsperson
 der Influencer <> influencer
-der Fan (-s) <> fan
 das Konzert (-e) <> concert
 der Ruhm <> fame
 reich <> rich
@@ -1131,29 +1066,17 @@ bewundern <> to admire
 ein gutes Vorbild sein <> to be a good role model
 Promis verdienen zu viel Geld. <> Celebrities earn too much money.
 Sie setzt sich für … ein. <> She campaigns for / supports …
-das Talent <> talent
 die Castingshow <> talent show
 ## Celebrities and role models
 der Prominente (-n) / die Prominente (-n) <> celebrity, VIP
-der Superstar (-s) <> superstar
-der Rapper (-) / die Rapperin (-nen) <> rapper
 der Regisseur (-e) / die Regisseurin (-nen) <> film director
 der Fußballer (-) / die Fußballerin (-nen) <> footballer
 der Held (-en) / die Heldin (-nen) <> hero / heroine
-die Influencerin (-nen) <> (female) influencer
-der Follower (-) <> follower
-der Fanclub (-s) <> fan club
-das Idol (-e) <> idol
 das Autogramm (-e) <> autograph
 der Auftritt (-e) <> appearance, performance
 auftreten <> to perform, appear
-die Tour (-en) <> tour
-das Album (Alben) <> album
 die Medien (pl) <> the media
 die Presse <> the press
-der Paparazzo (Paparazzi) <> paparazzo
-das Interview (-s) <> interview
-der Skandal (-e) <> scandal
 das Gerücht (-e) <> rumour
 der Klatsch <> gossip
 die Kritik <> criticism; review
@@ -1163,25 +1086,17 @@ die Wohltätigkeitsorganisation (-en) <> charity (organisation)
 Geld spenden <> to donate money
 die Spende (-n) <> donation
 sich engagieren (für) <> to be committed (to), get involved
-das Engagement <> commitment
-das Image <> image
 der Lebensstil <> lifestyle
 der Luxus <> luxury
-luxuriös <> luxurious
-die Villa (Villen) <> villa, mansion
 die Aufmerksamkeit <> attention
-im Rampenlicht stehen <> to be in the spotlight
 talentiert / begabt <> talented / gifted
 bekannt <> well known
 unbekannt <> unknown
 beliebt / unbeliebt <> popular / unpopular
 inspirieren <> to inspire
-inspirierend <> inspiring
-die Inspiration <> inspiration
 nachahmen <> to imitate, copy
 oberflächlich <> superficial
 das Schönheitsideal (-e) <> ideal of beauty
-die Realityshow (-s) <> reality show
 der Gewinner (-) / die Gewinnerin (-nen) <> winner
 der Verlierer (-) <> loser
 Sie ist ein gutes Vorbild für junge Leute, weil … <> She is a good role model for young people because …
@@ -1202,7 +1117,6 @@ die Stadt (Städte) <> town, city
 am Meer <> at the seaside
 in den Bergen <> in the mountains
 der Strand <> beach
-das Hotel <> hotel
 die Jugendherberge <> youth hostel
 der Campingplatz <> campsite
 das Zimmer (-) <> room
@@ -1220,7 +1134,6 @@ hin und zurück <> return (ticket)
 die Sehenswürdigkeit (-en) <> sight, tourist attraction
 besichtigen <> to visit (a sight)
 das Schloss <> castle, palace
-das Museum <> museum
 der Dom <> cathedral
 die Unterkunft <> accommodation
 das Wetter <> weather
@@ -1240,7 +1153,6 @@ Deutschland <> Germany
 die Schweiz <> Switzerland
 England <> England
 Schottland <> Scotland
-Wales <> Wales
 Irland / Nordirland <> Ireland / Northern Ireland
 Großbritannien <> Great Britain
 das Vereinigte Königreich <> the United Kingdom
@@ -1248,14 +1160,12 @@ Frankreich <> France
 Spanien <> Spain
 Italien <> Italy
 Griechenland <> Greece
-Portugal <> Portugal
 die Niederlande (pl) / Holland <> the Netherlands / Holland
 Belgien <> Belgium
 Polen <> Poland
 die Türkei <> Turkey
 Russland <> Russia
 die USA (pl) / Amerika <> the USA / America
-China <> China
 Indien <> India
 Afrika <> Africa
 Europa <> Europe
@@ -1270,7 +1180,6 @@ englisch / deutsch / französisch <> English / German / French (adjectives)
 europäisch <> European
 die Hauptstadt (Hauptstädte) <> capital city
 die Grenze (-n) <> border
-der Kontinent (-e) <> continent
 die Welt <> world
 ## Transport and directions
 das Verkehrsmittel (-) <> means of transport
@@ -1284,7 +1193,6 @@ das Motorrad (Motorräder) <> motorbike
 das Schiff (-e) <> ship
 die Fähre (-n) <> ferry
 das Boot (-e) <> boat
-das Taxi (-s) <> taxi
 der Lastwagen (-) / der LKW (-s) <> lorry
 mit dem Bus / Zug / Rad fahren <> to go by bus / train / bike
 zu Fuß <> on foot
@@ -1342,19 +1250,15 @@ die Fußgängerzone (-n) <> pedestrian zone
 das Rathaus (Rathäuser) <> town hall
 die Post <> post office
 die Bank (-en) <> bank
-der Park (-s) <> park
 der Spielplatz (Spielplätze) <> playground
-der Zoo (-s) <> zoo
 der Freizeitpark (-s) <> theme park
 die Burg (-en) <> castle (fortified)
 das Denkmal (Denkmäler) <> monument
 der Turm (Türme) <> tower
-die Galerie (-n) <> gallery
 die Ausstellung (-en) <> exhibition
 der Hafen (Häfen) <> port, harbour
 die Polizeiwache (-n) <> police station
 das Verkehrsamt / die Touristeninformation <> tourist information office
-die Broschüre (-n) <> brochure
 die Stadtführung (-en) / die Stadtrundfahrt (-en) <> guided tour of the town / sightseeing tour
 der Eintritt <> entry, admission
 die Eintrittskarte (-n) <> admission ticket
@@ -1362,17 +1266,13 @@ geöffnet / geschlossen <> open / closed
 die Öffnungszeiten (pl) <> opening times
 Um wie viel Uhr macht das Museum auf? <> What time does the museum open?
 aufmachen / zumachen <> to open / to close
-historisch <> historic(al)
-modern <> modern
 sehenswert <> worth seeing
-malerisch <> picturesque
 beeindruckend <> impressive
 ## Holidays and accommodation
 der Tourist (-en) / die Touristin (-nen) <> tourist
 der Tourismus <> tourism
 die Pauschalreise (-n) <> package holiday
 das Reisebüro (-s) <> travel agency
-die Gruppenreise (-n) <> group trip
 der Aufenthalt (-e) <> stay
 verbringen <> to spend (time)
 Ich habe zwei Wochen in Spanien verbracht. <> I spent two weeks in Spain.
@@ -1420,8 +1320,6 @@ der Rucksack (Rucksäcke) <> rucksack
 packen <> to pack
 das Gepäck <> luggage
 der Ausweis (-e) <> ID card
-der Reisepass (Reisepässe) <> passport
-das Visum (Visa) <> visa
 der Urlaubsort (-e) <> holiday resort
 erholsam <> relaxing
 sich erholen <> to recover, have a rest
@@ -1451,11 +1349,9 @@ die Sonne <> sun
 der Wind <> wind
 die Wolke (-n) <> cloud
 der Nebel <> fog
-die Temperatur (-en) <> temperature
 Grad <> degrees
 Es sind 25 Grad. <> It is 25 degrees.
 warm / kühl <> warm / cool
-heiter <> bright, fair (weather); cheerful
 nass / trocken <> wet / dry
 das Klima <> climate
 ## Problems on holiday
@@ -1475,28 +1371,20 @@ die Panne (-n) <> breakdown
 
 # Theme 3 – Media and technology
 das Handy (-s) <> mobile phone
-der Computer <> computer
-das Internet <> internet
 im Internet surfen <> to surf the internet
 die sozialen Medien (pl) <> social media
-die App (-s) <> app
 herunterladen <> to download
 hochladen <> to upload
-posten <> to post
-das Foto (-s) <> photo
 die Nachricht (-en) <> message, news item
 eine Nachricht schicken <> to send a message
-chatten <> to chat (online)
 das Videospiel / Computerspiel <> video game
 die Webseite <> website
 der Bildschirm <> screen
 die Bildschirmzeit <> screen time
-online / offline <> online / offline
 die Gefahr (-en) <> danger
 gefährlich <> dangerous
 das Cybermobbing <> cyberbullying
 die Privatsphäre <> privacy
-das Passwort <> password
 persönliche Daten (pl) <> personal data
 der Vorteil / der Nachteil <> advantage / disadvantage
 praktisch <> practical, handy
@@ -1504,72 +1392,48 @@ die Zeitung (-en) <> newspaper
 die Zeitschrift (-en) <> magazine
 die Sendung (-en) <> TV programme
 die Serie (-n) <> series
-streamen <> to stream
 Ich verbringe zu viel Zeit am Handy. <> I spend too much time on my phone.
 in Kontakt bleiben <> to stay in contact
 die künstliche Intelligenz (KI) <> artificial intelligence (AI)
 ## Technology and the internet
-das Smartphone (-s) <> smartphone
-das Tablet (-s) <> tablet
-der Laptop (-s) <> laptop
 der Drucker (-) <> printer
 die Tastatur (-en) <> keyboard
 der Kopfhörer (-) <> headphones
 das Ladegerät (-e) <> charger
 aufladen <> to charge (a battery)
 der Akku (-s) <> (rechargeable) battery
-die Technologie (-n) <> technology
 die Technik <> technology; technique
-technisch <> technical
-digital <> digital
 das Gerät (-e) <> device, appliance
-die Software / die Hardware <> software / hardware
 das Programm (-e) <> program; programme
-der Link (-s) <> link
-klicken <> to click
 tippen <> to type; to tap
 speichern <> to save (a file)
 löschen <> to delete
 drucken <> to print
 suchen <> to search, look for
 die Suchmaschine (-n) <> search engine
-googeln <> to google
 der Benutzer (-) / die Benutzerin (-nen) <> user
 benutzen / nutzen <> to use
 das Benutzerkonto / das Konto (Konten) <> user account / account
 sich einloggen / sich ausloggen <> to log in / to log out
-das Profil (-e) <> profile
-die E-Mail (-s) <> email
 die SMS (-) <> text message
 simsen <> to text
 anrufen <> to phone, call
 der Anruf (-e) <> phone call
 telefonieren <> to phone, talk on the phone
-der Videoanruf (-e) <> video call
 das soziale Netzwerk (-e) <> social network
 teilen <> to share
-liken <> to like (online)
-kommentieren <> to comment
 der Kommentar (-e) <> comment
-das Video (-s) <> video
-der Blog (-s) <> blog
-bloggen <> to blog
-der Podcast (-s) <> podcast
 online einkaufen <> to shop online
 süchtig nach … <> addicted to …
 die Handysucht <> phone addiction
 die Sicherheit <> security, safety
 sicher / unsicher <> safe, sure / unsafe, unsure
 das Risiko (Risiken) <> risk
-der Hacker (-) <> hacker
-der Virus (Viren) <> virus
 der Betrug <> fraud
 fremde Leute / Fremde (pl) <> strangers
 die Falschmeldung (-en) / Fake News (pl) <> false report / fake news
 belästigen <> to harass
 sich informieren <> to inform oneself, find out
-die Information (-en) <> information
-die Kommunikation <> communication
 kommunizieren <> to communicate
 in Verbindung bleiben <> to keep in touch
 weltweit <> worldwide
@@ -1579,7 +1443,6 @@ die Erfindung (-en) <> invention
 erfinden <> to invent
 die Entwicklung (-en) <> development
 entwickeln <> to develop
-der Roboter (-) <> robot
 ## TV, film and the press
 das Fernsehen <> television (medium)
 der Fernseher (-) <> TV set
@@ -1589,18 +1452,13 @@ die Nachrichten (pl) <> the news
 die Dokumentation (-en) / die Doku (-s) <> documentary
 die Seifenoper (-n) <> soap opera
 die Quizsendung (-en) <> quiz show
-die Sportsendung (-en) <> sports programme
 der Werbespot (-s) <> advert (TV)
-das Radio (-s) <> radio
-der Streamingdienst (-e) <> streaming service
 die Folge (-n) <> episode; consequence
 die Staffel (-n) <> season (of a series)
 der Bericht (-e) <> report
 berichten <> to report
 der Artikel (-) <> article
 die Schlagzeile (-n) <> headline
-das Magazin (-e) <> magazine
-gedruckt <> printed
 die Meinung (-en) <> opinion
 die Freiheit der Presse / die Pressefreiheit <> freedom of the press
 
@@ -1626,7 +1484,6 @@ der Wald (Wälder) <> forest
 das Tier (-e) <> animal
 die Überschwemmung <> flood
 die Dürre <> drought
-das Problem (-e) <> problem
 die Lösung (-en) <> solution
 Man sollte weniger Auto fahren. <> People should drive less.
 Wir müssen etwas dagegen tun. <> We must do something about it.
@@ -1662,7 +1519,6 @@ das Treibhausgas (-e) <> greenhouse gas
 das Kohlendioxid / CO2 <> carbon dioxide
 die Abgase (pl) <> exhaust fumes
 die Luftverschmutzung <> air pollution
-die Wasserverschmutzung <> water pollution
 die Abholzung <> deforestation
 der Regenwald (Regenwälder) <> rainforest
 die Tierart (-en) <> animal species
@@ -1671,7 +1527,6 @@ vom Aussterben bedroht <> endangered (species)
 bedrohen <> to threaten
 zerstören <> to destroy
 die Zerstörung <> destruction
-die Katastrophe (-n) <> disaster
 die Naturkatastrophe (-n) <> natural disaster
 das Erdbeben (-) <> earthquake
 der Waldbrand (Waldbrände) <> forest fire
@@ -1681,15 +1536,12 @@ steigen <> to rise, climb
 schmelzen <> to melt
 das Eis an den Polen <> polar ice
 die Erde <> earth
-der Planet (-en) <> planet
-das Plastik <> plastic
 die Plastiktüte (-n) <> plastic bag
 die Verpackung (-en) <> packaging
 die Dose (-n) <> can, tin
 die Mülltonne (-n) <> bin
 den Müll trennen <> to separate rubbish
 die Mülltrennung <> separating rubbish (for recycling)
-das Recycling <> recycling
 wiederverwerten <> to recycle
 wiederverwenden <> to reuse
 die Pfandflasche (-n) <> returnable bottle (with deposit)
@@ -1700,31 +1552,24 @@ die Verschwendung <> waste (wasting)
 Wasser sparen <> to save water
 das Licht ausmachen <> to switch off the light
 ausschalten / einschalten <> to switch off / to switch on
-der Stand-by-Modus <> standby mode
 die Solarenergie / die Sonnenenergie <> solar energy
 die Windenergie <> wind energy
 die Atomkraft / die Kernkraft <> nuclear power
 das Kraftwerk (-e) <> power station
 die Kohle <> coal
 das Erdöl <> crude oil
-das Elektroauto (-s) <> electric car
 umweltschädlich <> harmful to the environment
 umweltbewusst <> environmentally aware
-grün <> green
 nachhaltig <> sustainable
 die Nachhaltigkeit <> sustainability
 biologisch / Bio- <> organic
-regional / lokal <> regional / local
-das Produkt (-e) <> product
 der Verbraucher (-) <> consumer
 verbrauchen <> to consume, use
 der Verbrauch <> consumption
 vermeiden <> to avoid
 verringern / reduzieren <> to reduce
 retten <> to save, rescue
-die Organisation (-en) <> organisation
 die Demonstration (-en) / die Demo (-s) <> demonstration, protest
-protestieren <> to protest
 Jeder kann etwas tun. <> Everyone can do something.
 Ich fahre mit dem Rad zur Schule, um die Umwelt zu schützen. <> I cycle to school to protect the environment.
 ## Global and social issues
@@ -1771,9 +1616,6 @@ das Esszimmer (-) <> dining room
 die Toilette (-n) / das WC (-s) <> toilet
 der Flur (-e) <> hall, corridor
 das Arbeitszimmer (-) <> study
-die Garage (-n) <> garage
-der Balkon (-e / -s) <> balcony
-die Terrasse (-n) <> terrace, patio
 die Tür (-en) <> door
 das Fenster (-) <> window
 die Wand (Wände) <> wall (inside)
@@ -1782,19 +1624,15 @@ das Dach (Dächer) <> roof
 der Boden (Böden) <> floor, ground
 die Möbel (pl) <> furniture
 der Schrank (Schränke) <> cupboard, wardrobe
-der Kleiderschrank (-schränke) <> wardrobe
 das Regal (-e) <> shelf
 der Stuhl (Stühle) <> chair
-das Sofa (-s) <> sofa
 der Sessel (-) <> armchair
 der Teppich (-e) <> carpet, rug
-die Lampe (-n) <> lamp
 der Spiegel (-) <> mirror
 der Schreibtisch (-e) <> desk
 der Kühlschrank (-schränke) <> fridge
 der Herd (-e) <> cooker
 der Backofen (-öfen) <> oven
-die Mikrowelle (-n) <> microwave
 die Spülmaschine (-n) <> dishwasher
 die Waschmaschine (-n) <> washing machine
 die Heizung <> heating
@@ -1802,7 +1640,6 @@ das Licht (-er) <> light
 der Vorhang (Vorhänge) <> curtain
 die Blume (-n) <> flower
 der Baum (Bäume) <> tree
-das Gras <> grass
 mein eigenes Zimmer <> my own room
 Ich teile mein Zimmer mit meinem Bruder. <> I share my room with my brother.
 hell <> bright, light
@@ -1819,16 +1656,12 @@ der Bauernhof (Bauernhöfe) <> farm
 das Feld (-er) <> field
 die Wiese (-n) <> meadow
 der Hügel (-) <> hill
-das Sportzentrum (-zentren) <> sports centre
 die Freizeitmöglichkeiten (pl) <> leisure facilities
 es gibt viel zu tun <> there's lots to do
 Es gibt nichts für junge Leute. <> There is nothing for young people.
 die Lebensqualität <> quality of life
 lebendig <> lively
-lebhaft <> lively
 belebt <> busy (place)
-die Luftqualität <> air quality
-die Vorteile und Nachteile vom Stadtleben <> the pros and cons of city life
 das Stadtleben / das Landleben <> city life / country life
 Ich wohne lieber auf dem Land, weil … <> I prefer living in the country because …
 In meiner Stadt gibt es … <> In my town there is / are …
@@ -2093,7 +1926,6 @@ erreichen <> to reach, achieve
 verbessern <> to improve
 lösen <> to solve
 teilnehmen (an + dat) <> to take part (in)
-organisieren <> to organise
 vorbereiten / sich vorbereiten (auf + acc) <> to prepare / to prepare oneself (for)
 bauen <> to build
 reparieren <> to repair
@@ -2131,14 +1963,11 @@ bereit <> ready, prepared
 frei / besetzt <> free / occupied, taken
 toll / super / klasse <> great
 fantastisch / wunderbar <> fantastic / wonderful
-prima <> great, excellent
-cool <> cool
 schrecklich / furchtbar <> terrible / awful
 ausgezeichnet <> excellent
 herrlich <> marvellous, glorious
 komisch <> funny, strange
 seltsam <> strange
-merkwürdig <> strange, odd
 doof <> stupid, rubbish
 ärgerlich <> annoying
 enttäuschend <> disappointing
@@ -2151,7 +1980,6 @@ genau <> exact(ly)
 echt <> real, genuine; really
 wirklich <> real(ly)
 ganz <> whole; quite, completely
-total <> totally
 völlig <> completely
 eigentlich <> actually
 fast <> almost
@@ -2227,7 +2055,6 @@ die Auswirkung (-en) <> effect, impact
 die Ursache (-n) <> cause
 die Wirkung (-en) <> effect
 die Lage <> situation, position
-die Situation (-en) <> situation
 die Entscheidung (-en) <> decision
 die Herausforderung (-en) <> challenge
 die Gelegenheit (-en) <> opportunity
@@ -2238,7 +2065,6 @@ die Hoffnung (-en) <> hope
 der Wunsch (Wünsche) <> wish
 der Traum (Träume) <> dream
 träumen (von) <> to dream (of)
-die Zufriedenheit <> contentment
 die Einstellung (-en) <> attitude
 die Gewohnheit (-en) <> habit
 der Vorschlag (Vorschläge) <> suggestion
@@ -2256,7 +2082,6 @@ vergleichen <> to compare
 der Vergleich (-e) <> comparison
 erwähnen <> to mention
 diskutieren <> to discuss
-die Diskussion (-en) <> discussion
 überzeugen <> to convince
 überzeugt <> convinced
 beweisen <> to prove
@@ -2268,7 +2093,6 @@ anbieten <> to offer
 das Angebot (-e) <> offer
 ablehnen <> to reject, turn down
 annehmen <> to accept; to assume
-akzeptieren <> to accept
 sich gewöhnen (an + acc) <> to get used (to)
 sich verlassen (auf + acc) <> to rely (on)
 sich befinden <> to be located
@@ -2308,14 +2132,12 @@ ohne Zweifel <> without doubt
 auf jeden Fall <> definitely, in any case
 auf keinen Fall <> on no account, definitely not
 zum Glück / glücklicherweise <> luckily, fortunately
-unglücklicherweise <> unfortunately
 offensichtlich <> obviously
 eindeutig <> clearly, unambiguously
 ausreichend <> sufficient
 dringend <> urgent(ly)
 ehemalig <> former
 gesamt <> entire, total
-heftig <> violent, intense
 selbstverständlich <> of course, obviously
 überhaupt nicht <> not at all
 vor allem <> above all

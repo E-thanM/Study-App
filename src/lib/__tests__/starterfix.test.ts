@@ -38,4 +38,13 @@ describe('improved starter cards', () => {
     expect(all('deck').some((d) => d.name === 'Cells')).toBe(true);
     expect(pendingRetired(trimmed).total).toBe(0);
   });
+
+  it('retires the installed older version of a renamed card', () => {
+    installStarter(parseStarter('lq', '@deck LQ\n# Q\n"A very long quotation that goes on and on" – analyse. :: x\nKeep me? :: yes'));
+    const v2 = parseStarter('lq', '@deck LQ\n@renamed "A very long quotation that goes on and on" – analyse. => "A very long quotation" – analyse.\n# Q\nKeep me? :: yes');
+    v2.retired = parseStarter('lq', '"A very long quotation" – analyse. :: x').notes;
+    expect(pendingRetired(v2).total).toBe(1);
+    applyRetired(v2);
+    expect(all('note').filter((n) => n.guid?.startsWith('starter:lq:')).map((n) => n.fields.Front)).toEqual(['Keep me?']);
+  });
 });

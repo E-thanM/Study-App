@@ -232,6 +232,8 @@ export function dismissFixes(d: StarterDeck) {
 function retiredNotes(d: StarterDeck): Note[] {
   if (!d.retired?.length) return [];
   const guids = new Set(d.retired.map((n) => noteGuid(d, n.front)));
+  // an installed older version of a retired card (see @renamed) is retired too
+  for (const [to, from] of renamedFrom(d)) if (guids.has(to)) guids.add(from);
   // a card that was later re-added (same front) isn't retired
   for (const n of d.notes) guids.delete(noteGuid(d, n.front));
   return all('note').filter((n) => n.guid && guids.has(n.guid));
