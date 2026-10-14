@@ -15,6 +15,7 @@ Who were the main medical practitioners in medieval England? :: Physicians (univ
 What was the role of hospitals in medieval England? :: Run by the Church; mainly care (rest, food, prayer) for the poor/elderly rather than treatment; often refused infectious patients
 When did the Black Death arrive in England and what did people think caused it? :: 1348 ;; God's punishment, miasma, alignment of planets, imbalance of humours
 How did people try to treat and prevent the Black Death? :: Prayer, flagellants, bloodletting, carrying posies, cleaning streets (Edward III ordered London cleaned), avoiding the sick
+What role did the Church play in medieval medicine? :: Controlled universities and training; promoted Galen; ran hospitals; encouraged prayer and religious explanations; restricted dissection
 ## c1500–c1700 Renaissance
 How did ideas about the cause of disease change in the Renaissance? :: Less belief in religious causes; Four Humours declined among scientists; Sydenham's careful observation; miasma still believed; new ideas spread through printing
 What did Vesalius do? :: Published 'The Fabric of the Human Body' (1543) based on dissection; corrected Galen's mistakes (e.g. jawbone, no holes in septum); encouraged dissection
@@ -35,6 +36,7 @@ How did James Simpson help surgery? :: Discovered chloroform as an anaesthetic (
 What were problems with chloroform? :: Difficult to get the dose right – could kill (Hannah Greener 1848); patients unconscious so surgeons attempted longer operations, raising infection
 How did Joseph Lister help surgery? :: Used carbolic acid spray on wounds, instruments and dressings (antiseptic surgery, 1867) – reduced death rates
 Why was there opposition to Lister? :: Carbolic acid irritated skin; slowed operations; some didn't accept germ theory; early results inconsistent
+What did Florence Nightingale do for hospitals? :: Improved hygiene and nursing (Crimea, Scutari); 'Notes on Nursing' (1859); pavilion-style hospitals; trained nurses at St Thomas' (1860)
 What did John Snow discover in 1854? :: Mapped cholera deaths in Broad Street, London; removed the pump handle – showed cholera spread through contaminated water
 What was the 1875 Public Health Act? :: Made councils provide clean water, sewers, drainage, street lighting, and appoint a Medical Officer of Health – compulsory
 What was the Great Stink? :: Summer 1858 – smell of sewage in the Thames was so bad Parliament acted; Joseph Bazalgette built London's sewer system
@@ -53,6 +55,7 @@ Name key factors in the development of medicine. :: Individuals, science and tec
 ## c1250–1500 Medieval
 Who was Hippocrates and what did he contribute? :: Ancient Greek doctor (c460–370 BC) ;; Developed the **Four Humours** theory and stressed **clinical observation** – observing and recording symptoms
 Who was Galen? :: Greek doctor working in Rome (2nd century AD) ;; Built on Hippocrates; dissected animals (pigs, apes); wrote many books that dominated medicine for over 1,000 years
+Name the four humours and the organ/element/season each was linked to. :: Blood (heart, air, spring); phlegm (brain, water, winter); yellow bile (liver, fire, summer); black bile (spleen, earth, autumn)
 Why was the Four Humours theory described as a rational explanation? :: It looked for a **natural** cause in the body rather than a supernatural one, based on observation (e.g. phlegm with a cold)
 How did astrology affect medieval diagnosis? :: Physicians used **almanacs** and the **zodiac man** to link parts of the body and illnesses to star signs and planetary positions
 How did a medieval physician diagnose illness? :: Studied the patient's **urine** (colour, smell, taste) using a urine chart; checked the pulse; consulted astrological charts (vademecum)
@@ -64,8 +67,12 @@ What was purging? :: Getting rid of excess humours by making the patient vomit (
 How was bloodletting carried out in medieval England? :: By barber surgeons or physicians – cutting a vein, using leeches or cupping – timing guided by astrology
 How were physicians trained in medieval England? :: At university (e.g. Oxford, Cambridge) for about 7 years, reading the books of Hippocrates and Galen; little practical experience
 How were barber surgeons trained and what did they do? :: Apprenticeship, not university ;; Bloodletting, pulling teeth, lancing boils, setting bones, simple amputations – cheaper than physicians
+Who provided most medical care in medieval England? :: Women in the home (mothers, wise women) using herbal remedies – care was cheapest and most common at home
 Which types of hospital existed in 13th-century England? :: Hospitals run by monks/nuns for the poor and elderly (care, food, rest, prayer); **lazar houses** (leper hospitals) outside towns; almshouses
+Why did most medieval hospitals not admit people with infectious diseases? :: Feared spreading infection (miasma) and they focused on care and the soul, not cure
+What new approach to hospital care developed in the 13th century? :: More hospitals founded by the Church and wealthy donors, some specialising (e.g. leper hospitals); emphasis on cleanliness, rest and prayer for the soul
 C: The Black Death reached England in {{c1::1348}} and killed about {{c2::a third}} of the population by 1349.
+What actually caused the Black Death? :: Bacteria (Yersinia pestis) spread by fleas on rats (bubonic) and by coughing (pneumonic) – unknown at the time
 What were the two forms of the Black Death? :: **Bubonic** – buboes (swellings) in armpits and groin, spread by flea bites ;; **Pneumonic** – attacked the lungs, spread through the air by coughing
 How did local and national government respond to the Black Death? :: Edward III ordered the Lord Mayor of London to clean the streets (1349); Gloucester tried to shut its gates against Bristol; quarantine was very limited
 Who were the flagellants? :: People who whipped themselves in public to show God they were sorry for their sins and so stop the plague
@@ -75,20 +82,27 @@ Explain why the Church was a barrier to medical progress in medieval England. ::
 Explain why the Church helped medicine in medieval England. :: Ran hospitals that cared for the sick and poor ;; Monks copied and preserved ancient medical texts ;; Encouraged cleanliness in monasteries (fresh water, drains)
 ## c1500–c1700 Renaissance
 What was the Renaissance? :: A 'rebirth' of interest in learning from ancient Greece and Rome (c1500s) – encouraged questioning, observation and experiment
+C: Andreas Vesalius published 'The Fabric of the Human Body' in {{c1::1543}}.
 Why was Vesalius' book so influential? :: Detailed, accurate drawings (by skilled artists) from human dissection; printed so copies spread widely; showed Galen could be wrong
 Why did Vesalius' work not improve treatment straight away? :: Knowing anatomy did not explain what caused disease or how to cure it; many doctors still trusted Galen
+C: William Harvey published his discovery of the circulation of the blood in {{c1::1628}}.
 How did Harvey prove the circulation of the blood? :: Dissected live cold-blooded animals (heart beats slowly), showed valves in veins only let blood flow one way, calculated the heart pumped far more blood than the body could make
 What did Harvey's discovery disprove? :: Galen's idea that blood was made in the liver and used up by the body, and that it passed through holes in the septum
 What was the long-term significance of Harvey's work? :: Made later blood transfusions and heart surgery possible; encouraged experiment rather than trusting books
 How did Sydenham challenge medical authority? :: Said doctors should learn from observing patients, not old books; argued diseases were separate entities with their own symptoms; distinguished scarlet fever from measles
 Why did Sydenham's ideas have limited impact on understanding cause? :: He still did not know what caused disease and he still believed in miasma and the humours
+C: The Royal Society was founded in {{c1::1660}} and received a royal charter from {{c2::Charles II}} in 1662.
+How did the Royal Society help the spread of ideas? :: Members discussed experiments and published 'Philosophical Transactions' (from 1665), so findings spread across Britain and Europe
+When was printing introduced to England and by whom? :: 1476 by William Caxton (Gutenberg developed the printing press c1440s)
 Which ideas about the cause of disease continued in the Renaissance? :: Miasma, the Four Humours (among ordinary doctors) and religious explanations all continued
 What new treatments arrived in the Renaissance? :: New ingredients from the Americas (e.g. quinine/cinchona bark for fevers, tobacco); chemical remedies
 What was 'touching for the King's Evil'? :: People with scrofula believed the monarch's touch would cure them – Charles II touched thousands
 What was transference? :: Belief a disease could be passed to an object or animal (e.g. rubbing a wart with a cut onion)
 How did medical training improve in the Renaissance? :: More dissection (barber surgeons allowed bodies of executed criminals), Vesalius' book studied, more emphasis on anatomy
 What were pest houses? :: Houses (often outside towns) where plague victims were isolated
+Name a hospital refounded after the Dissolution of the Monasteries. :: St Bartholomew's (1546) and St Thomas' (1551) in London – funded by charity/the city
 C: The Great Plague hit London in {{c1::1665}}, killing about {{c2::100 000}} people.
+What did the Lord Mayor's plague orders (1665) require? :: Infected houses shut up (with a red cross and 'Lord have mercy upon us'), watchmen guarded them, searchers recorded deaths, bodies buried at night, public gatherings banned, dogs and cats killed
 What were Bills of Mortality? :: Weekly lists of deaths and causes in London parishes – used to track the plague
 How were the responses to the Black Death (1348) and the Great Plague (1665) similar? :: Both blamed God and miasma; both used prayer, posies and avoiding the sick; neither understood the real cause (fleas)
 How were the responses to the Black Death and the Great Plague different? :: In 1665 there was much more organised local government action – quarantine of houses, searchers, Bills of Mortality, banning gatherings, plague pits
@@ -106,6 +120,8 @@ Why was germ theory slow to change medicine in Britain? :: Many doctors still be
 Explain the impact of germ theory on medicine in Britain. :: Showed specific microbes cause disease so led to vaccines and later magic bullets ;; Encouraged antiseptic and aseptic surgery (Lister) ;; Gave the government reasons to clean up water and sewers (1875 Act)
 What was inoculation (variolation)? :: Deliberately giving a mild dose of smallpox to give immunity – introduced to Britain by Lady Mary Wortley Montagu (1721); risky
 What was smallpox? :: A deadly infectious disease causing fever and pustules; killed or scarred many people in the 18th century
+C: Edward Jenner tested vaccination on James Phipps in {{c1::1796}} and published his findings in {{c2::1798}}.
+How did the government support Jenner's vaccination? :: Gave Jenner £10 000 (1802) and £20 000 (1807); vaccination free 1840 (inoculation banned); compulsory 1853; enforced from 1871
 Why was Jenner's vaccination significant? :: First vaccine; led to compulsory vaccination; smallpox eventually eradicated worldwide (1980) ;; But Jenner could not explain how it worked
 What was laissez-faire? :: The belief that the government should not interfere in people's lives – a reason public health was neglected before 1875
 What was the 1848 Public Health Act? :: Set up a Board of Health; councils could improve water and sewers but it was voluntary – few did
@@ -114,17 +130,25 @@ How did Nightingale change nursing? :: Set up a nurses' training school at St Th
 How did Nightingale change hospital design? :: Promoted the pavilion plan – separate wards, good ventilation, more windows, easy to clean ('Notes on Hospitals', 1859)
 Why did Nightingale's ideas about cause limit her? :: She believed in miasma, not germ theory – but her focus on cleanliness and fresh air still reduced infection
 How did hospitals improve in the 19th century? :: Cleaner, trained nurses, pavilion wards, more specialist and cottage hospitals, antiseptic then aseptic surgery
+Who first used nitrous oxide and ether as anaesthetics? :: Humphry Davy found nitrous oxide (laughing gas) eased pain (1799); ether first used in Britain by Robert Liston (1846)
+What were the problems with ether? :: Irritated the lungs causing coughing; highly flammable; heavy to carry
+C: James Simpson discovered chloroform in {{c1::1847}}; Queen Victoria used it in childbirth in {{c2::1853}}.
 Why was Queen Victoria's use of chloroform important? :: Made anaesthetics respectable and widely accepted
 What was the 'black period' of surgery? :: c1850–70 – anaesthetics allowed longer, deeper operations but without antiseptics infection deaths rose
 How did Lister get the idea for carbolic acid? :: Read about Pasteur's germ theory; knew carbolic acid was used to treat sewage in Carlisle
 What was the impact of Lister's antiseptics? :: At Glasgow Royal Infirmary, amputation death rate fell from about 46% to 15% (1864–70)
 What was aseptic surgery? :: Preventing germs getting into the wound at all – sterilised instruments (steam), surgical gowns, masks, rubber gloves (from 1890s), clean theatres
 Explain why surgery improved in the 19th century. :: Anaesthetics (chloroform 1847) solved pain ;; Germ theory and Lister's carbolic spray (1867) reduced infection ;; Aseptic methods in the 1890s made surgery safer still
+C: Cholera epidemics hit Britain in 1831–32, 1848–49, {{c1::1853–54}} and 1866.
 How was cholera spread and what were its symptoms? :: Spread by water contaminated with sewage ;; Severe diarrhoea and vomiting, dehydration, death often within days
 What did people believe caused cholera before Snow? :: Miasma – bad air from rotting rubbish and sewage
+C: John Snow's book 'On the Mode of Communication of Cholera' was first published in {{c1::1849}}.
 What evidence did Snow use in the Broad Street outbreak of 1854? :: Mapped about 500 deaths in 10 days around the pump; brewery workers (drank beer) and workhouse residents (own well) were not affected; a woman in Hampstead who had Broad Street water sent died
+What was later found at the Broad Street pump? :: A cesspit near the well was leaking – a baby's nappy had been washed into it (found by Rev. Henry Whitehead)
 Why was Snow's discovery not accepted immediately? :: Most people and the Board of Health still believed miasma; he could not identify the germ (germ theory came 1861)
 What was the significance of Snow's work? :: Proved cholera spread through water; encouraged clean water and sewer improvements; an example of using statistics and mapping
+How many miles of sewers did Bazalgette build? :: About 1 300 miles (main sewers completed in the 1860s–70s) – cholera never returned to London after 1866
+What other public health laws were passed in 1875? :: Artisans' Dwellings Act (slum clearance) and Sale of Food and Drugs Act (stopped harmful additives)
 Explain why the government took more action on public health by 1875. :: Working men got the vote (1867) so politicians had to respond ;; Scientific evidence (Snow, germ theory) showed dirt caused disease ;; Events like the Great Stink (1858) and cholera epidemics forced action
 ## c1900–present Modern
 What lifestyle factors cause disease? :: Smoking, poor diet and obesity, alcohol, lack of exercise, sunbathing (skin cancer), drug use
@@ -135,12 +159,18 @@ Name modern scanning technologies used in diagnosis. :: X-rays, CT scans (1970s)
 How have monitors improved treatment? :: Continually measure heart rate, blood pressure, blood sugar and oxygen levels, alerting staff to problems
 What was Paul Ehrlich's idea of a 'magic bullet'? :: A chemical that would kill a specific germ without harming the body
 What was the second magic bullet? :: Prontosil – a sulphonamide discovered by Gerhard Domagk (1932), cured blood poisoning (he used it on his daughter)
+What was M&B 693? :: A sulphonamide drug (1938) that treated pneumonia – used to treat Churchill in 1943
+C: Alexander Fleming discovered penicillin in {{c1::1928}} at St Mary's Hospital, London.
 Why could Fleming not develop penicillin himself? :: He could not purify or mass-produce it and lacked funding; he did not test it on infected animals
+Who helped Florey and Chain produce enough penicillin to test? :: Norman Heatley – devised ways to grow and extract it (using bedpans, milk churns)
+What happened to Albert Alexander (1941)? :: Policeman with a severe infection; improved on penicillin but died when supplies ran out
 Why was the Second World War important for penicillin? :: US government and drug companies funded mass production – enough for Allied troops by D-Day (1944)
+C: Fleming, Florey and Chain shared the Nobel Prize in {{c1::1945}}.
 What is the problem of antibiotic resistance? :: Overuse of antibiotics lets resistant bacteria such as MRSA develop
 Explain the roles of chance, individuals and war in the development of penicillin. :: Chance – mould landed on Fleming's dish (1928) ;; Individuals – Florey and Chain purified and tested it ;; War – US government funding enabled mass production for the troops
 Name high-tech surgical developments since 1945. :: Transplants (first UK kidney transplant 1960), hip replacements, keyhole surgery, robotic surgery, pacemakers, microsurgery
 What were the 'five giants' in the Beveridge Report (1942)? :: Want, Disease, Ignorance, Squalor, Idleness
+C: The NHS was launched on {{c1::5 July 1948}} by Health Minister {{c2::Aneurin Bevan}}.
 Why did many doctors oppose the NHS? :: Feared losing income and independence – Bevan won the BMA over by letting consultants keep private patients
 What was the impact of the NHS? :: Free GPs, hospitals and treatment for all; millions treated who couldn't afford it; improved health and life expectancy ;; Costs grew – prescription charges (1952)
 Give examples of government mass vaccination campaigns. :: Diphtheria (1942), polio (1950s), MMR (1988), HPV (2008), flu jabs for the elderly, COVID-19 (2020–21)
@@ -149,6 +179,8 @@ How has science and technology improved treatment since 1900? :: Mass-produced d
 C: Richard Doll and Austin Bradford Hill showed the link between smoking and lung cancer in {{c1::1950}}.
 How is lung cancer diagnosed in the 21st century? :: CT and PET-CT scans, chest X-rays, bronchoscopy (camera into lungs), biopsy, genetic testing of tumours
 How is lung cancer treated in the 21st century? :: Surgery (removing part or all of a lung), radiotherapy, chemotherapy, targeted drugs matched to tumour genes, immunotherapy, lung transplants
+C: Smoking in enclosed public places was banned in England in {{c1::2007}}; plain cigarette packaging followed in {{c2::2016}}.
+What other government actions have reduced smoking? :: Warnings on packets (1971), age of purchase raised to 18 (2007), display ban in shops, ban on smoking in cars with children (2015), NHS stop-smoking services
 Why is lung cancer still hard to treat? :: Symptoms often appear late so it is diagnosed late; it can spread quickly
 How did modern government action on public health differ from 19th-century action? :: Much more involved – NHS, vaccination, lifestyle campaigns, laws on smoking and food – instead of laissez-faire
 Explain why medical treatment improved so much after 1900. :: Science and technology – magic bullets, antibiotics, scanners ;; Government – NHS (1948) made treatment free and funded research ;; War – drove development (penicillin, plastic surgery, blood transfusion)
@@ -188,26 +220,33 @@ How was the problem of infection tackled? :: Carrel–Dakin method (sterile salt
 What was plastic surgery's development in WW1? :: Harold Gillies treated facial injuries with skin grafts at Queen's Hospital, Sidcup
 What sources would you use to investigate injuries on the Western Front? :: Army records, hospital records, diaries/letters, photographs, RAMC records, official histories
 ## Context: battles, trenches and terrain
+C: The First Battle of Ypres was in {{c1::1914}}; the Second, in {{c2::1915}}, saw the first use of chlorine gas.
 C: The Battle of the Somme began on {{c1::1 July 1916}}; the British suffered about {{c2::57 000}} casualties on the first day.
 Why was the Battle of the Somme significant for medical services? :: Huge numbers of casualties overwhelmed the RAMC; the evacuation system and CCSs had to expand; showed the need for better organisation
+C: The Third Battle of Ypres, also known as {{c1::Passchendaele}}, was fought July–November {{c2::1917}} in deep mud.
+C: The Battle of Arras began in {{c1::April 1917}}; the Battle of Cambrai was in {{c2::November 1917}}.
 What happened at Hill 60 near Ypres? :: British tunnellers dug under German lines and exploded mines in April 1915; Hill 60 was mined again in the Battle of Messines (June 1917)
 Why were mines and tunnels used on the Western Front? :: To destroy enemy trenches from below and to move troops safely underground (e.g. Arras)
 What were the problems of the terrain in Flanders (Ypres)? :: Flat, low-lying land with a high water table and clay soil – trenches flooded, mud everywhere, hard to drain
 How was the terrain at the Somme and Arras different from Ypres? :: Chalk – easier to dig deep trenches and tunnels and better drained (though still muddy in rain)
 Why did the British often have worse trenches than the Germans? :: The Germans had retreated to higher, drier ground and built deeper, concrete-lined defences; the British were often in low, wet ground
 What is a fire step? :: A ledge in the front-line trench that soldiers stood on to fire over the parapet
+What are the parapet and parados? :: Parapet – sandbagged front wall of the trench ;; Parados – raised back wall protecting from shells bursting behind
 Why were trenches dug in a zig-zag pattern (traverses)? :: To stop shell blasts and shrapnel travelling along the trench and stop an enemy who got in firing down the whole line
+What were dugouts and saps? :: Dugouts – shelters cut into the trench wall ;; Saps – short trenches dug forward into no man's land for listening posts
 What were communication trenches used for? :: Linking front, support and reserve lines – moving men, supplies and the wounded
 ## Conditions, illnesses and injuries
 What were the main causes of wounds on the Western Front? :: Artillery shells and shrapnel caused most wounds; also rifle and machine-gun bullets, gas, and grenades
 Why did shrapnel wounds become easily infected? :: Shrapnel carried bits of muddy clothing and soil (fertilised with manure) deep into the wound
 What was gas gangrene? :: Infection from bacteria in the soil that produced gas in the wound; flesh died and amputation was often needed
 Why were wounds from bullets often less deadly than shell wounds? :: Bullets made smaller clean wounds; shells caused multiple, ragged wounds packed with dirt
+How did gas masks develop during the war? :: Cloth pads soaked in water or urine (1915) → PH helmets (hood with chemicals) → small box respirator (1916)
 Why was mustard gas especially feared? :: Odourless, worked within hours, caused internal and external blisters, blindness and could stay on the ground for days
 How deadly was gas compared to other weapons? :: Relatively few gas casualties died (a small percentage), but it caused panic, long-term lung damage and blindness
 What was the treatment for gas victims? :: Removed from the area, eyes and skin washed, rest; little could be done for lung damage
 How was shell shock treated? :: Rest away from the front, sometimes counselling (Craiglockhart for officers) or harsher methods like electric shocks; some soldiers were executed for cowardice
 ## RAMC, FANY and the chain of evacuation
+How much did the RAMC grow during the war? :: From about 9 000 men in 1914 to over 110 000 by 1918
 What did stretcher bearers do and what made their job hard? :: Carried wounded from no man's land to the Aid Post – often under fire, in mud (up to 4–6 men per stretcher), only at night in some battles
 What was the Regimental Aid Post (RAP)? :: Close to the front line (about 200 m); run by the regimental medical officer; first aid – no surgery
 What was a Field Ambulance? :: A mobile RAMC unit (not a vehicle) that ran the Advanced and Main Dressing Stations
@@ -217,15 +256,22 @@ What were the triage categories used at CCSs? :: Walking wounded; those needing 
 What were Base Hospitals? :: Large hospitals near the French coast (e.g. Étaples, Boulogne, Rouen) for longer-term treatment and surgery before men were sent to Britain
 How were the wounded transported along the chain of evacuation? :: Stretchers, wheeled stretchers, horse-drawn and motor ambulances, ambulance trains, canal barges, hospital ships to Britain
 What were the problems of transport and communication on the Western Front? :: Mud and shell-holes, roads destroyed by shelling, shortage of motor ambulances early on, telephone lines cut so messages relied on runners
+Who were the VADs and QAIMNS? :: VAD – Voluntary Aid Detachment (volunteer nurses) ;; QAIMNS – Queen Alexandra's Imperial Military Nursing Service (trained army nurses)
+When was FANY founded and what was significant about its role? :: Founded 1907 ;; Initially worked for the French and Belgians; from 1916 the first women officially to drive ambulances for the British Army
 ## Medical developments and context
 How was the understanding of infection in the early 1900s? :: Germ theory accepted; aseptic surgery normal in British hospitals – but impossible to keep conditions sterile at the front
+C: X-rays were discovered by {{c1::Wilhelm Röntgen}} in {{c2::1895}}.
 What were the limitations of X-ray machines on the Western Front? :: Tubes overheated after about an hour so had to be rested; couldn't show cloth or some fragments; mobile units were few
+C: Blood groups were discovered by {{c1::Karl Landsteiner}} in {{c2::1901}}, making transfusions safer.
 Why was blood transfusion difficult before the war? :: Blood clotted quickly so it had to go directly from donor to patient
 Who developed a portable blood transfusion kit? :: Geoffrey Keynes – could be used near the front line
 How did scientists extend blood storage? :: Sodium citrate stopped clotting; adding glucose (Rous and Turner, 1916) let blood be stored for about four weeks
+Who set up the first blood bank at Cambrai (1917)? :: Captain Oswald Robertson (US Army) – stored blood in ice boxes before the battle
 What was debridement (wound excision)? :: Cutting away damaged and infected tissue around a wound to prevent gas gangrene
 What was the Carrel–Dakin method? :: Sterile salt solution (Dakin's solution) passed through tubes into the wound to kill bacteria – used widely by 1917
 Why was the Thomas splint introduced? :: Broken thigh bones (femur) caused heavy bleeding and death when moved ;; The splint kept the leg still during transport
+What was the tube pedicle? :: Gillies' technique (1917) – a tube of skin kept attached to the body to keep a blood supply while a graft grew over a facial wound
+When did Queen's Hospital, Sidcup open and what was it known for? :: 1917 ;; Facial reconstruction and plastic surgery under Harold Gillies – over 11 000 operations
 What was the significance of the Western Front for medicine? :: Huge numbers of casualties led to new techniques – blood storage, Thomas splint, X-rays, plastic surgery – many later used in civilian hospitals
 Explain why the treatment of wounds improved on the Western Front. :: Huge numbers of casualties meant surgeons gained experience fast ;; New methods – debridement, Carrel–Dakin, Thomas splint, X-rays ;; Better organisation – chain of evacuation and CCSs doing surgery quickly
 ## Sources and following up a source
@@ -269,6 +315,7 @@ Describe Drake's circumnavigation (1577–80). :: First English circumnavigation
 Why did Raleigh's attempt to colonise Virginia (1585) fail? :: Poor relations with Native Americans, lack of supplies, bad weather, poor planning; Roanoke 'lost colony' 1587
 Historic environment (2026 onward): how should you study it? :: In Edexcel 1HI0 the historic environment is on Paper 1, studied with the medicine thematic study: the British sector of the Western Front, 1914–18 (sources and following up a source). Early Elizabethan England (Paper 2) has no site study – check with your teacher if your exam year's specification differs
 ## Key topic 1: Queen, government and religion 1558–69
+C: Elizabeth became queen on {{c1::17 November 1558}} aged {{c2::25}} and was crowned in January 1559.
 Describe the structure of Elizabethan society. :: Countryside: nobility → gentry → yeomen → tenant farmers → labourers → vagrants ;; Towns: merchants → professionals → craftsmen → unskilled labourers
 What was the Court? :: The nobles, advisers and servants who surrounded the monarch – a place to gain influence and patronage
 What were Lord Lieutenants? :: Nobles appointed to govern each county for the Queen and raise the local militia
@@ -289,6 +336,7 @@ Where were Catholics and Protestants strongest in 1558? :: Catholics – north a
 Why was the Religious Settlement hard to pass? :: Catholic bishops in the House of Lords opposed it – the Act of Uniformity passed by only three votes
 What were the Royal Injunctions (1559)? :: Instructions to clergy: teach royal supremacy, preach regularly, an English Bible in every church, no pilgrimages, a licence needed to preach, all clergy take the Oath of Supremacy
 How was the Religious Settlement enforced? :: Church visitations (1559) checked clergy; the Oath of Supremacy; fines for recusants; bishops who refused were replaced
+How many clergy refused to accept the Settlement? :: Few – about 400 of around 8 000 parish clergy lost their posts, though nearly all Marian bishops refused
 What is a recusant? :: A Catholic who refused to attend Church of England services
 What was the role of the Church in Elizabethan society? :: Centre of village life; taught obedience to the Queen through sermons; ran baptisms, marriages and burials; parish helped the poor
 What did Puritans want? :: A 'purer' church with no Catholic features – no crucifixes or vestments, more preaching, some wanted no bishops (Presbyterians)
@@ -299,6 +347,7 @@ How serious was the Puritan challenge? :: Limited – most Puritans were loyal t
 What was the Catholic challenge in the 1560s? :: Mostly passive – many Catholics conformed outwardly; nobles in the north resented losing influence; the Pope told Catholics not to attend church (1566)
 What was the Counter-Reformation? :: The Catholic Church's campaign to reform itself and win back Protestant areas (Council of Trent) – made the Papacy more hostile to Elizabeth
 Why were foreign powers part of the Catholic threat? :: Catholic Spain and France could invade or support plots; the Pope could encourage rebellion
+C: Mary Queen of Scots was born in {{c1::1542}} and fled to England in {{c2::May 1568}}.
 Why did Mary Queen of Scots flee to England? :: Scottish lords rebelled after her husband Darnley was murdered (1567) and she married Bothwell (suspected killer); forced to abdicate for her son James; defeated at Langside (1568)
 What options did Elizabeth have with Mary in 1568? :: Help her regain the Scottish throne; hand her to the Scottish lords; let her go to France; keep her prisoner in England – she chose prison
 What were the Casket Letters? :: Letters said to show Mary helped murder Darnley; the inquiry (York/Westminster 1568–69) reached no verdict, giving Elizabeth an excuse to keep her
@@ -307,6 +356,7 @@ Explain why Mary Queen of Scots was a threat to Elizabeth 1568–69. :: Strong c
 Explain why religion was a problem for Elizabeth in 1558. :: The country was divided between Catholics and Protestants after Mary I ;; Catholic powers (France, Spain, the Pope) could intervene ;; Puritans wanted more change than she was willing to give
 ## Key topic 2: Challenges at home and abroad 1569–88
 Who led the Revolt of the Northern Earls? :: Thomas Percy, Earl of Northumberland, and Charles Neville, Earl of Westmorland
+C: The Northern Earls heard Catholic mass in Durham Cathedral in {{c1::November 1569}}.
 What were the causes of the Revolt of the Northern Earls? :: Religion (restore Catholicism); loss of power and land to 'new men' like Cecil; plan for Mary to marry the Duke of Norfolk and be named heir
 Why did the Revolt of the Northern Earls fail? :: Norfolk lost his nerve and was arrested; expected Spanish help never came; Earl of Sussex's royal army advanced; rebels fled to Scotland
 What was the significance of the Revolt of the Northern Earls? :: First serious rebellion of the reign; showed Mary was a danger; Elizabeth took firmer control of the north (Council of the North); led to the 1570 papal bull
@@ -315,11 +365,18 @@ How did the papal bull change the Catholic threat? :: Catholics were told to dis
 What were seminary priests? :: English Catholic priests trained abroad (Douai, founded by William Allen in 1568) and sent into England from 1574 to keep Catholicism alive
 Who was Edmund Campion? :: A Jesuit priest who came to England in 1580; captured, tortured and executed in 1581
 What did the 1581 and 1585 Acts do to Catholics? :: 1581 – converting to Catholicism became treason; recusancy fine raised to £20 a month ;; 1585 – being a Jesuit or seminary priest in England became treason
+Who planned the Ridolfi Plot invasion force? :: The Duke of Alba was to invade from the Netherlands with about 10 000 Spanish troops, backed by Philip II and the Pope
+How was the Ridolfi Plot uncovered? :: Cecil's agents intercepted letters (via a messenger, Charles Baillie) and questioned him
 What was the significance of the Ridolfi Plot? :: Showed Spain and the Pope were willing to back plots; Norfolk executed (1572); Elizabeth still refused to execute Mary despite Parliament's pressure
 What was the significance of the Throckmorton Plot? :: Showed French and Spanish involvement; led to the Bond of Association (1584) and stricter watching of Catholics
 What was the Bond of Association (1584)? :: An oath by nobles and gentry to kill anyone who plotted against Elizabeth – including the person who would benefit (Mary)
+Who was the double agent in the Babington Plot? :: Gilbert Gifford – carried Mary's letters in beer barrels and passed them to Walsingham
+Who decoded the letters in the Babington Plot? :: Thomas Phelippes, Walsingham's codebreaker
 What was the significance of the Babington Plot? :: Gave clear proof Mary approved Elizabeth's murder – led to her trial (October 1586) and execution
+C: Mary Queen of Scots was executed at {{c1::Fotheringhay Castle}} on {{c2::8 February 1587}}.
+Who did Elizabeth blame for Mary's execution? :: William Davison, her secretary, who sent the signed warrant – he was imprisoned
 What were the consequences of Mary's execution? :: Removed the main Catholic claimant; Philip II now had a reason (and Mary's claim) to invade – the Armada; James VI of Scotland protested but accepted (hoped to inherit)
+When did Walsingham become Principal Secretary? :: 1573
 What methods did Walsingham use? :: Spies at home and abroad (ports, embassies, universities), agents provocateurs, intercepting letters, codebreakers, torture (e.g. the rack for Throckmorton)
 What was the political rivalry between England and Spain? :: Spain was the strongest Catholic power; Philip II wanted to restore Catholicism; England supported Dutch Protestant rebels
 Why was the Netherlands important to England? :: Main market for English cloth (Antwerp); Spanish troops there could invade England
@@ -329,11 +386,14 @@ What was a privateer? :: A private ship captain given permission (secretly) by t
 Who was John Hawkins? :: An English merchant who traded enslaved Africans to Spanish colonies (1560s); attacked by the Spanish at San Juan de Ulúa (1568)
 Why was San Juan de Ulúa (1568) important? :: The Spanish attacked Hawkins' and Drake's ships – Drake developed a lasting hatred of Spain
 What happened in 1568 with the Genoese loan? :: Spanish ships carrying money to pay Alba's army sheltered in English ports; Elizabeth seized the money – relations worsened
+What was the Nombre de Dios raid (1572–73)? :: Drake attacked Spanish silver shipments in Panama and returned with a large treasure
 What was the significance of Drake's activities for relations with Spain? :: Made Elizabeth richer but infuriated Philip; Drake being knighted (1581) seemed an insult; pushed the countries towards war
 What was the Treaty of Joinville (1584)? :: Philip II and the French Catholic League agreed to cooperate against Protestants – England feared a Catholic alliance
 Why did Elizabeth intervene in the Netherlands in 1585? :: William of Orange was assassinated (1584); Antwerp fell to Parma (1585); fear Spain would win and then invade England
+How many troops did the Treaty of Nonsuch send? :: About 7 400 under Robert Dudley, Earl of Leicester
 What was Robert Dudley's role in the Netherlands? :: Led the English army 1585–87; angered Elizabeth by accepting the title Governor-General (1586); poor results; returned 1587
 What did Drake destroy at Cadiz apart from ships? :: Barrel staves (seasoned wood) – the Armada later had to use unseasoned barrels, so food and water rotted
+C: Drake's raid on Cadiz in {{c1::1587}} became known as {{c2::'singeing the King of Spain's beard'}}.
 What was Philip II's Armada plan? :: The Armada (about 130 ships) under the Duke of Medina Sidonia would sail up the Channel, meet the Duke of Parma's army in the Netherlands and escort it to invade Kent
 Why did Philip launch the Armada in 1588? :: Religion (Pope's blessing); execution of Mary; English help to the Dutch; Drake's raids; to stop English attacks on trade
 Who commanded the English fleet against the Armada? :: Lord Howard of Effingham, with Drake as vice-admiral
@@ -355,6 +415,7 @@ Why did most poor children receive little education? :: They had to work from a 
 Which sports were popular with the rich? :: Hunting, hawking, real tennis, fencing, archery
 Which sports were popular with ordinary people? :: Football (violent, few rules), wrestling, archery practice, blood sports like cockfighting and bear-baiting
 What pastimes were popular in Elizabethan England? :: Music, dancing, card and dice games, reading (rich), plays, festivals and holidays (e.g. May Day, Christmas)
+C: The first purpose-built playhouse in London, {{c1::The Theatre}}, was built by James Burbage in {{c2::1576}}.
 Why were theatres built outside the City of London? :: City authorities (influenced by Puritans) disapproved – feared crime, disorder and plague spreading in crowds
 Why did acting companies need noble patrons? :: Under the 1572 Vagabonds Act, actors without a patron could be treated as vagabonds (e.g. Leicester's Men had Dudley as patron)
 Why did Puritans oppose the theatre? :: Thought plays immoral, drew people from church, encouraged idleness and crime
@@ -376,9 +437,14 @@ Explain why poverty increased in Elizabethan England. :: Population growth and i
 What new technology helped exploration? :: Better ships (galleons), the astrolabe and quadrant for latitude, the magnetic compass, more accurate maps (Mercator projection 1569)
 Why did the English want to expand trade? :: The cloth trade with Antwerp declined; new markets and goods (spices, silk) were needed; investors formed companies like the Muscovy Company (1555)
 Why was privateering a factor in exploration? :: The chance of capturing Spanish treasure attracted investors (including Elizabeth) and sailors
+C: Drake left Plymouth in {{c1::December 1577}} with five ships and returned in {{c2::September 1580}}.
 What did Drake do during the circumnavigation? :: Sailed through the Strait of Magellan; raided Spanish ports on the Pacific coast; captured the treasure ship Cacafuego; claimed 'Nova Albion' (California); traded for spices in the Moluccas
 What was the significance of Drake's circumnavigation? :: Huge treasure for investors and the Queen; showed Spain was vulnerable; boosted English pride and exploration; worsened relations with Spain
+Where was Drake knighted? :: On the Golden Hind at Deptford in April 1581, by a French diplomat on Elizabeth's orders
+C: Raleigh received a patent to colonise in {{c1::1584}}; the first colony landed on Roanoke Island in {{c2::1585}}.
+Why was the colony named Virginia? :: After Elizabeth, the 'Virgin Queen'
 What was the significance of Raleigh? :: Organised and paid for the Virginia expeditions; encouraged colonisation and investment ;; Elizabeth would not let him sail himself
+Who led the 1585 Roanoke colony? :: Ralph Lane (governor) with Sir Richard Grenville commanding the fleet – about 100 men
 What happened to the 1585 colony? :: Relations with Native Americans broke down (Lane killed chief Wingina); supplies ran low; colonists went home with Drake in 1586
 What happened to the 1587 colony? :: Led by John White, included families; White returned for supplies but the Armada delayed him until 1590 – the colony had vanished ('CROATOAN' carved on a post)
 What were the reasons for the failure of the Virginia colony? :: Lack of supplies (Grenville's ship the Tiger ran aground); conflict with Native Americans; colonists lacked farming skills and hunted for gold; the Armada stopped resupply; poor location without a deep harbour
@@ -414,11 +480,15 @@ When did the Berlin Wall fall and when did the USSR collapse? :: Wall fell Novem
 ## Key topic 1: Origins of the Cold War 1941–58
 What was the Grand Alliance? :: The wartime alliance of Britain (Churchill), the USA (Roosevelt) and the USSR (Stalin) against Nazi Germany
 What was agreed at Tehran (1943)? :: Britain and the USA would open a second front in France (D-Day); USSR would join the war against Japan after Germany's defeat; the USSR could keep part of eastern Poland
+C: The Yalta Conference took place in {{c1::February 1945}}; the Potsdam Conference in {{c2::July–August 1945}}.
 What was agreed at Potsdam? :: Germany demilitarised and denazified; war criminals tried (Nuremberg); Poland's western border on the Oder–Neisse line; each power took reparations from its own zone (USSR also got some industrial equipment from western zones)
 Why did tension grow at Potsdam? :: New leaders (Truman more anti-communist); Soviet troops occupied Eastern Europe; arguments over reparations and Poland; Truman told Stalin about the atomic bomb
 What did the atomic bomb do to relations? :: Dropped on Hiroshima (6 Aug 1945) and Nagasaki (9 Aug) – Stalin felt threatened and determined to get his own bomb
 What were the ideological differences between the USA and USSR? :: USA – capitalism, democracy, free elections, private ownership, individual freedom ;; USSR – communism, one-party state, state ownership, equality, censorship
+Who wrote the Long Telegram and when? :: George Kennan, US diplomat in Moscow, February 1946
+Who wrote the Novikov Telegram and when? :: Nikolai Novikov, Soviet ambassador to the USA, September 1946
 What was the significance of the Long and Novikov Telegrams? :: Each side became convinced the other was aggressive – the US adopted containment; the USSR strengthened its hold on Eastern Europe
+C: Churchill made his 'Iron Curtain' speech at Fulton, Missouri, in {{c1::March 1946}}.
 Why did Stalin want satellite states in Eastern Europe? :: A buffer zone for security after invasions through Eastern Europe (about 20 million Soviet dead in WW2); to spread communism
 How did Stalin create satellite states? :: Communists took over through rigged elections, arresting opponents, 'salami tactics', backed by the Red Army – e.g. Poland (1947), Hungary, Romania, Bulgaria, Czechoslovakia (1948)
 Which communist country broke away from Stalin's control? :: Yugoslavia under Tito (1948)
@@ -430,13 +500,19 @@ What was Comecon? :: Council for Mutual Economic Assistance (1949) – Soviet al
 Why was Germany a source of tension after 1945? :: USA wanted a strong German economy for trade and against communism; USSR wanted Germany weak and reparations
 What were Bizonia and Trizonia? :: Bizonia – British and US zones merged (1947) ;; Trizonia – French zone added (1948)
 What triggered the Berlin Blockade? :: Western powers introduced the new Deutschmark in their zones (June 1948) – Stalin feared a strong West Germany
+C: The Berlin Blockade lasted from {{c1::June 1948}} to {{c2::May 1949}}.
+How large was the Berlin Airlift? :: About 2.3 million tonnes of supplies flown in on over 270 000 flights
 Why was the Berlin Airlift a success for the West? :: Kept West Berlin supplied without war; Stalin backed down; propaganda victory showing US commitment
+C: The FRG (West Germany) was created in {{c1::May 1949}} and the GDR (East Germany) in {{c2::October 1949}}.
+C: NATO was formed in {{c1::April 1949}} and the Warsaw Pact in {{c2::May 1955}}.
 What was NATO? :: North Atlantic Treaty Organisation – a military alliance of the USA, Canada and Western European countries; an attack on one was an attack on all
 Why was the Warsaw Pact formed? :: Soviet response to West Germany joining NATO (1955) – a military alliance of the USSR and its satellites under Soviet command
+C: The USSR tested its first atomic bomb in {{c1::1949}} and launched {{c2::Sputnik}} in 1957.
 What is MAD? :: Mutually Assured Destruction – both sides had enough nuclear weapons to destroy each other, so neither would start a nuclear war
 What was the significance of the arms race? :: Increased fear and tension; huge cost; but MAD acted as a deterrent and prevented direct war
 Why did Sputnik and the ICBM alarm the USA? :: Showed the USSR could launch missiles that could hit the USA – fears of a 'missile gap'
 Who was Rákosi? :: Hungary's hard-line Stalinist leader – secret police (AVH), terror, poverty; removed in 1956
+C: The Hungarian Uprising began on {{c1::23 October 1956}}; Soviet tanks crushed it from {{c2::4 November 1956}}.
 What did Nagy announce that led to the Soviet invasion? :: Hungary would leave the Warsaw Pact (1 November 1956) and hold free elections
 How did the West react to the Hungarian Uprising? :: Condemned it at the UN, accepted refugees (about 200 000 fled) ;; No military help – Hungary was in the Soviet sphere, risk of nuclear war, Suez Crisis distracted Britain and France
 What were the consequences of the Hungarian Uprising? :: Soviet control reinforced; showed the US would not intervene in the Soviet sphere; Khrushchev showed he was tough; Nagy executed (1958)
@@ -449,50 +525,68 @@ What happened at the Geneva Summit (1959)? :: Foreign ministers met to discuss B
 What happened at Camp David (1959)? :: Eisenhower and Khrushchev met in the USA; Khrushchev dropped the ultimatum; agreed to meet in Paris
 What happened at the Paris Summit (1960)? :: Collapsed because the USSR had shot down a US U-2 spy plane (pilot Gary Powers) on 1 May 1960 and Eisenhower refused to apologise
 What happened at the Vienna Summit (1961)? :: Khrushchev bullied the young Kennedy and renewed the Berlin ultimatum; Kennedy increased US defence spending
+C: Construction of the Berlin Wall began on {{c1::13 August 1961}}.
 What happened at Checkpoint Charlie in October 1961? :: US and Soviet tanks faced each other for 16 hours before both withdrew
+C: Kennedy made his 'Ich bin ein Berliner' speech in West Berlin in {{c1::June 1963}}.
 Why did Kennedy accept the Berlin Wall? :: It avoided war – 'a wall is a hell of a lot better than a war'; West Berlin stayed free
 What were the international consequences of the Berlin Wall? :: Ended the refugee crisis and the Berlin problem; became a propaganda symbol of communist oppression; Berlin was no longer a flashpoint
+C: Fidel Castro took power in Cuba in {{c1::January 1959}}.
 Why did Cuba become a problem for the USA? :: Castro nationalised US businesses; the US imposed a trade embargo; Cuba turned to the USSR (sold sugar, received aid); only 90 miles from Florida
+C: The Bay of Pigs invasion took place in {{c1::April 1961}}.
 What were the consequences of the Bay of Pigs? :: Humiliated Kennedy; Castro turned fully to the USSR and declared Cuba communist; encouraged Khrushchev to put missiles in Cuba
 Why did Khrushchev put missiles in Cuba? :: Protect Cuba from US invasion; close the missile gap (US Jupiter missiles in Turkey); test Kennedy; bargaining chip (e.g. over Berlin)
+C: A U-2 photographed missile sites in Cuba on {{c1::14 October 1962}}; Kennedy announced a blockade on {{c2::22 October 1962}}.
 What was ExComm? :: Kennedy's executive committee of advisers during the Cuban Missile Crisis – debated options (air strike, invasion, blockade)
 Why did Kennedy choose a blockade (quarantine)? :: Gave Khrushchev time to back down without humiliation; less risky than an air strike or invasion which could start nuclear war
 What was 'Black Saturday' (27 October 1962)? :: A U-2 was shot down over Cuba and Khrushchev sent a second letter demanding US missiles leave Turkey – the most dangerous day
 How did the Cuban Missile Crisis end? :: Robert Kennedy met Soviet ambassador Dobrynin; on 28 October Khrushchev agreed to remove the missiles in return for a US pledge not to invade Cuba (Turkey missiles removed secretly later)
+C: The Washington–Moscow hotline was set up in {{c1::1963}}.
 What did the Limited Test Ban Treaty (1963) do? :: Banned nuclear tests in the atmosphere, in space and underwater
 What were the consequences of the Cuban Missile Crisis for the leaders? :: Kennedy's reputation rose ;; Khrushchev seemed weak (deal on Turkey was secret) and was removed in 1964 ;; Castro kept power
 Explain the importance of the Cuban Missile Crisis for relations between the superpowers. :: Brought the world closest to nuclear war, so both sides wanted to reduce risk ;; Led to the hotline and arms control treaties (LTBT 1963, OST 1967, NPT 1968) ;; Began a move towards détente
+Who did Dubček replace in Czechoslovakia in January 1968? :: Antonín Novotný, an unpopular hard-line communist
 What was in Dubček's Action Programme (April 1968)? :: More freedom of speech and press, less secret police power, freedom to travel, some private business, more trade with the West – but stay in the Warsaw Pact
 Why did Brezhnev invade Czechoslovakia? :: Feared reforms would spread to other satellites; worried Czechoslovakia would drift to the West and weaken the Warsaw Pact
+C: Warsaw Pact troops invaded Czechoslovakia on {{c1::20–21 August 1968}}.
 What happened after the invasion of Czechoslovakia? :: Dubček taken to Moscow and replaced by Gustáv Husák (1969); reforms reversed; student Jan Palach burned himself in protest (1969)
 How did the West react to the Prague Spring invasion? :: Condemned it but did nothing – the US was busy in Vietnam and accepted Czechoslovakia was in the Soviet sphere; Yugoslavia, Romania and Western communist parties criticised it
 Explain why the Berlin Wall was built in 1961. :: The refugee 'brain drain' was damaging East Germany ;; Khrushchev failed to force the West out of Berlin through ultimatums and summits ;; A wall solved the problem without war
 Write a narrative account of the Cuban Missile Crisis – key stages. :: Cuban Revolution (1959) and US hostility → Bay of Pigs (1961) → Soviet missiles found (Oct 1962) → blockade → letters and Black Saturday → deal on 28 Oct → hotline and treaties
 ## Key topic 3: The end of the Cold War 1970–91
 Why did both superpowers want détente in the 1970s? :: Arms race too expensive; fear of nuclear war after Cuba; US weakened by Vietnam; USSR wanted Western trade and technology
+C: SALT 1 was signed by Nixon and Brezhnev in {{c1::1972}}.
 What did SALT 1 agree? :: Interim Treaty froze numbers of ICBMs and submarine missile launchers for 5 years; ABM Treaty limited anti-ballistic missile sites; Basic Principles Agreement
+C: The Helsinki Agreement was signed by 35 countries in {{c1::1975}}.
 What were the three 'baskets' of the Helsinki Agreement? :: 1 – Security: recognised Europe's borders (including East Germany) ;; 2 – Cooperation in trade, science and technology ;; 3 – Human rights (freedom of speech, movement)
 Why was the human rights basket a problem for the USSR? :: The USSR did not keep it, so the West could criticise Soviet abuses, which damaged trust
+C: SALT 2 was signed by Carter and Brezhnev in {{c1::1979}} but never ratified by the US Senate.
 What did SALT 2 propose? :: Limits on strategic nuclear launchers (about 2 250 each) and restrictions on new missiles
+C: The USSR invaded Afghanistan in {{c1::December 1979}}.
 Why did the USSR invade Afghanistan? :: To support a friendly communist government; fear of Islamic fundamentalism (after the 1979 Iranian Revolution) spreading to Soviet Muslim republics; fear of US influence
 What was the Carter Doctrine (1980)? :: The US would use military force to defend its interests in the Persian Gulf; also armed the Mujahideen, stopped grain sales, withdrew SALT 2 from the Senate
 What were the Olympic boycotts? :: USA and around 60 countries boycotted the Moscow Olympics (1980); the USSR and most of the Eastern bloc boycotted Los Angeles (1984)
 What were the consequences of the invasion of Afghanistan? :: Ended détente; long, costly war for the USSR (withdrew 1989); 'Second Cold War'; US backed the Mujahideen
 Why did Reagan take a hard line against the USSR? :: Strongly anti-communist; believed détente had helped the USSR; wanted to win the Cold War by outspending the USSR
+C: Reagan called the USSR an {{c1::'evil empire'}} and announced SDI in {{c2::1983}}.
 What was SDI ('Star Wars')? :: Strategic Defense Initiative – a planned system of satellites with lasers to destroy Soviet missiles in space, making the USA safe from attack
 Why was SDI important? :: Threatened to end MAD and break the spirit of the Outer Space Treaty; the USSR could not afford to compete – pressure for change
 What was the Reagan Doctrine? :: US support for anti-communist groups around the world (e.g. Contras in Nicaragua, Mujahideen in Afghanistan)
+Who led the USSR between Brezhnev and Gorbachev? :: Andropov (1982–84) and Chernenko (1984–85) – both old and ill; Gorbachev took over in March 1985
 Why did Gorbachev introduce 'new thinking'? :: Soviet economy was failing; spending on the arms race and Afghanistan was unaffordable; people had low living standards; he wanted to reform communism
 What happened at the Geneva Summit (1985)? :: Reagan and Gorbachev's first meeting – no agreements but they built a good relationship
 What happened at the Reykjavik Summit (1986)? :: Nearly agreed to scrap nuclear weapons but failed because Reagan would not give up SDI
+C: The INF Treaty was signed in Washington in {{c1::December 1987}}.
 What did the INF Treaty do? :: Eliminated all intermediate-range nuclear missiles (500–5 500 km) in Europe – the first treaty to reduce nuclear weapons
 What did Gorbachev announce at the UN in December 1988? :: Cuts of 500 000 Soviet troops and that Eastern European countries could choose their own path (the end of the Brezhnev Doctrine)
+C: The Malta Summit between Bush and Gorbachev in {{c1::December 1989}} is often seen as the end of the Cold War.
 How did Gorbachev's new thinking affect Eastern Europe? :: He would not use force to keep communist governments in power, so people protested and communist regimes collapsed in 1989
 What happened in Poland in 1989? :: Solidarity (led by Lech Wałęsa) won free elections – first non-communist government in the Eastern bloc
 How did Hungary contribute to the fall of the Berlin Wall? :: Opened its border with Austria (1989), letting thousands of East Germans escape to the West
+C: The Berlin Wall was opened on {{c1::9 November 1989}}; Germany reunified on {{c2::3 October 1990}}.
 What other revolutions happened in Eastern Europe in 1989? :: Czechoslovakia's Velvet Revolution (Václav Havel), Romania (Ceaușescu executed), Bulgaria
 Why was the fall of the Berlin Wall significant? :: Symbol of the end of communist control of Eastern Europe; led to German reunification
 What happened in the August 1991 coup? :: Communist hard-liners tried to overthrow Gorbachev; it failed when Boris Yeltsin led resistance – weakened Gorbachev further
+C: The Warsaw Pact was dissolved in {{c1::July 1991}}; Gorbachev resigned on {{c2::25 December 1991}} and the USSR ceased to exist.
 Explain why the Soviet Union collapsed in 1991. :: Economic weakness worsened by the arms race and Afghanistan ;; Glasnost allowed criticism and nationalism in the republics (e.g. Baltic states) ;; Loss of Eastern Europe in 1989 and the failed 1991 coup destroyed communist authority
 Explain the importance of the Soviet invasion of Afghanistan for relations between the superpowers. :: Ended détente – SALT 2 not ratified ;; Carter Doctrine and Olympic boycotts increased hostility ;; Drained the USSR, contributing to Gorbachev's reforms
 
@@ -540,28 +634,35 @@ What were the strengths of the Weimar constitution? :: Democratic – votes for 
 Why was Article 48 a weakness? :: The President could bypass the Reichstag and rule by decree in an emergency – later used to undermine democracy (1930–33)
 Why was proportional representation a weakness? :: Many small parties won seats so no party had a majority; coalitions often collapsed – unstable government
 Why were the army, judges and civil servants a problem for Weimar? :: Many were the Kaiser's men, conservative and disloyal to the republic – judges were lenient to right-wing extremists
+C: The Treaty of Versailles was signed on {{c1::28 June 1919}}.
 Why did Germans call the Treaty of Versailles a 'Diktat'? :: Germany was not allowed to negotiate – it was forced to sign
 Which territories did Germany lose at Versailles? :: Alsace-Lorraine to France; West Prussia and Posen (Polish Corridor) to Poland; all colonies; Saar run by the League for 15 years; Danzig a free city; union with Austria (Anschluss) banned
 What military terms did Versailles impose? :: Army limited to 100 000; no conscription; no tanks, air force or submarines; navy limited to 6 battleships; Rhineland demilitarised
 Who were the 'November Criminals'? :: The politicians who signed the armistice (and later the treaty) – blamed for betraying Germany
 Who was the Spartacist League? :: A communist group led by Rosa Luxemburg and Karl Liebknecht that wanted a revolution like Russia's (1917)
+C: The Spartacist Revolt took place in Berlin in {{c1::January 1919}}.
 Who were the Freikorps? :: Right-wing ex-soldiers who kept their weapons – used by Ebert to crush the Spartacists, but hostile to the republic
+C: The Kapp Putsch took place in {{c1::March 1920}}.
 Why did the Kapp Putsch happen? :: Freikorps were angry at the Treaty of Versailles and at being disbanded – wanted to restore the Kaiser's style of rule
 What role did the army play in the Kapp Putsch? :: Refused to fire on the Freikorps – the government had to flee Berlin
 What political murders took place in the early 1920s? :: Matthias Erzberger (1921, signed the armistice) and Walther Rathenau (1922, Foreign Minister) killed by right-wing groups
 Why did France occupy the Ruhr in January 1923? :: Germany failed to pay reparations (missed deliveries of coal and timber)
 What was passive resistance in the Ruhr? :: Workers went on strike and refused to cooperate with the French – the government paid their wages by printing money
+How much did German money collapse by November 1923? :: One US dollar was worth over 4 trillion marks
 Who benefited from hyperinflation? :: People with debts or mortgages (paid off cheaply), businessmen who borrowed, some foreigners
 Who suffered most from hyperinflation? :: People with savings and fixed incomes (pensioners, middle classes); workers whose wages couldn't keep up; food shortages
 Why did hyperinflation damage the Weimar Republic? :: The middle classes lost faith in the republic; extremist parties gained support; contributed to the Munich Putsch
 Explain why the Weimar Republic was unpopular 1919–23. :: Signed the hated Treaty of Versailles – stab in the back myth ;; Weak, unstable coalition government and attacks from left and right ;; Hyperinflation (1923) ruined savings
+When was Stresemann Chancellor and Foreign Minister? :: Chancellor August–November 1923; Foreign Minister 1923 until his death in October 1929
 What were Stresemann's first steps in 1923? :: Called off passive resistance (September 1923); began paying reparations again; introduced the Rentenmark (November 1923)
 How did the Rentenmark work? :: A new temporary currency backed by German land and property – replaced by the Reichsmark (1924); ended hyperinflation
 What did the Dawes Plan (1924) do? :: Reparations reduced to more affordable annual payments for a time; US loans of 800 million marks; French troops left the Ruhr (1925)
 What did the Young Plan (1929) do? :: Reduced total reparations from £6.6 billion to about £2 billion with 59 years to pay
 Why was the Young Plan opposed? :: Nationalists (Hugenberg, Hitler) said Germany should pay nothing – the campaign against it gave the Nazis national publicity
 What did the Locarno Pact (1925) agree? :: Germany accepted its western borders with France and Belgium; Rhineland stayed demilitarised – Germany treated as an equal
+C: Germany joined the League of Nations in {{c1::1926}} as a permanent member of the Council.
 What was the Kellogg–Briand Pact (1928)? :: Germany and over 60 other countries agreed not to use war to settle disputes
+Why did Stresemann win the Nobel Peace Prize (1926)? :: For improving relations with France and the Locarno Pact (shared with Briand)
 What evidence shows recovery 1924–29? :: Industrial output passed pre-war levels by 1928; extremist parties lost votes (Nazis 2.6% in 1928); international acceptance
 Why was the recovery 1924–29 fragile? :: Depended on short-term US loans that could be recalled; farmers faced falling prices; unemployment never disappeared; extremists still opposed the republic
 How did wages change 1924–29? :: Real wages rose (by 1928 among the highest in Europe) – working class better off
@@ -583,6 +684,7 @@ C: The DAP was renamed the National Socialist German Workers' Party (NSDAP) in {
 What were the early features of the Nazi Party? :: Swastika symbol, salute, newspaper (Völkischer Beobachter, bought 1920), mass meetings with Hitler's speeches, the SA
 What was the SA? :: Sturmabteilung (stormtroopers, 'Brownshirts') set up in 1921, led by Ernst Röhm – protected Nazi meetings and attacked opponents
 Why did the Nazi Party grow in its early years (1920–23)? :: Hitler's powerful speeches; simple message blaming Versailles, Jews and communists; anger at Weimar; mainly in Bavaria
+C: The Munich Putsch took place on {{c1::8–9 November 1923}}.
 Why did Hitler attempt the Munich Putsch? :: Hyperinflation and the Ruhr crisis made Weimar unpopular; Stresemann called off passive resistance; inspired by Mussolini's March on Rome (1922); hoped the Bavarian leaders would join
 What happened in the Munich Putsch? :: Hitler took over a Bavarian government meeting in the Bürgerbräukeller beer hall; next day marched with Ludendorff into Munich; police opened fire and 16 Nazis died; Hitler arrested
 Why did the Munich Putsch fail? :: Bavarian leaders (Kahr, Lossow, Seisser) withdrew support; the army and police stayed loyal; poor planning
@@ -591,6 +693,7 @@ What ideas did Hitler set out in Mein Kampf? :: Aryan racial superiority, anti-S
 Why did the Nazis have limited support 1924–28? :: Stresemann's recovery made people more content; Hitler in prison and banned from public speaking; party divided; Nazis won only 2.6% in 1928
 What was decided at the Bamberg Conference (1926)? :: Hitler overcame Gregor Strasser's socialist wing and established the Führerprinzip (leader principle) – his total control of the party
 How was the Nazi Party reorganised after 1925? :: Divided into regions (Gaue) each led by a Gauleiter; Hitler Youth (1926); SS (1925) as Hitler's bodyguard; Goebbels in charge of propaganda in Berlin
+C: The Wall Street Crash happened in {{c1::October 1929}}.
 Why did the Wall Street Crash hit Germany so hard? :: American banks recalled loans; German businesses collapsed; exports fell; unemployment soared
 How did unemployment affect German society 1929–32? :: Poverty, homelessness, hunger; young people and the middle classes lost hope; people turned to extremist parties
 Why did the Weimar governments fail to deal with unemployment 1929–32? :: Coalition collapsed (1930) over unemployment benefit; Brüning cut benefits, wages and spending and raised taxes ('hunger chancellor'); relied on Article 48 rather than the Reichstag
@@ -606,19 +709,24 @@ Why did Brüning fall in May 1932? :: Hindenburg lost confidence in him (he had 
 Who was von Papen? :: Chancellor June–November 1932 with little Reichstag support; lifted the SA ban; called July 1932 election; later persuaded Hindenburg to appoint Hitler
 What happened in August 1932? :: Hitler demanded to be Chancellor; Hindenburg refused and offered him Vice-Chancellor, which he rejected
 Who was von Schleicher? :: General and Chancellor December 1932–January 1933; tried to split the Nazis by offering Gregor Strasser a post; failed and lost Hindenburg's support
+C: Hitler was appointed Chancellor on {{c1::30 January 1933}} with {{c2::von Papen}} as Vice-Chancellor.
 How many Nazis were in Hitler's first cabinet? :: Three – Hitler, Frick and Göring – so Papen believed they could control him
 Explain the role of Hindenburg and von Papen in Hitler becoming Chancellor. :: Papen wanted revenge on Schleicher and power, so did a deal with Hitler ;; Hindenburg disliked Hitler but was persuaded he could be controlled with few Nazis in cabinet ;; Both feared communism and wanted a majority government
 Explain why the Nazis gained support 1929–32. :: Depression and 6 million unemployed made Weimar seem weak ;; Hitler's leadership and Goebbels' propaganda promised something for everyone ;; Fear of communism – SA seen as protection
 ## Key topic 3: Nazi control and dictatorship 1933–39
+C: The Reichstag Fire happened on {{c1::27 February 1933}}.
 What did the Decree for the Protection of the People and the State do? :: Suspended civil rights (free speech, press, assembly); allowed arrest without trial – about 4 000 communists arrested
 What did the Nazis win in the March 1933 election? :: About 44% of the vote (288 seats) – not a majority on their own
+C: The Enabling Act was passed on {{c1::23 March 1933}} by {{c2::444 votes to 94}}.
 How did Hitler get the Enabling Act passed? :: Communist deputies arrested or barred; SA surrounded the Kroll Opera House; the Centre Party was promised the Church would be protected; only the SPD voted against
 C: Trade unions were banned on {{c1::2 May 1933}} and replaced by the German Labour Front.
 C: The Law against the Formation of New Parties of {{c1::July 1933}} made Germany a one-party state.
 How did Hitler take control of local government? :: State parliaments abolished (January 1934); Nazi Reich governors ran the states
 Why was Röhm and the SA a threat to Hitler by 1934? :: SA had about 3 million members; Röhm wanted the SA to absorb the army and a 'second revolution'; army generals and businessmen were alarmed – Hitler needed the army
+C: The Night of the Long Knives took place on {{c1::30 June 1934}}.
 Who was killed in the Night of the Long Knives besides Röhm? :: SA leaders and other opponents including von Schleicher, Gregor Strasser and von Kahr
 What were the consequences of the Night of the Long Knives? :: Removed the SA threat; won army support; SS became more powerful; showed Hitler would kill opponents – terror
+C: Hindenburg died on {{c1::2 August 1934}}; the army then swore an oath of loyalty to {{c2::Hitler personally}}.
 Explain why Hitler was able to create a dictatorship 1933–34. :: Reichstag Fire decree let him arrest opponents ;; Enabling Act gave him power to make laws ;; Night of the Long Knives and the army oath removed rivals and secured the army
 Who led the SS and what did it do? :: Heinrich Himmler (from 1929) ;; Elite black-uniformed force; arrested, imprisoned and killed opponents; ran concentration camps (Death's Head units)
 What was the SD? :: Sicherheitsdienst – the SS intelligence service led by Reinhard Heydrich; spied on opponents and party members
@@ -628,6 +736,7 @@ C: The first concentration camp was set up at {{c1::Dachau}} in {{c2::March 1933
 Who was sent to concentration camps in the 1930s? :: Political opponents (communists, socialists), trade unionists, church leaders, Jews, homosexuals, 'asocials' – often held in 'protective custody' without trial
 How did the Nazis control judges and the courts? :: Judges had to join the National Socialist League for the Maintenance of Law; disloyal judges sacked; the People's Court (1934) tried treason cases; the death penalty applied to more crimes
 What was the People's Court? :: Set up in 1934 to try treason; judges were loyal Nazis and there was no jury – most defendants were found guilty
+C: The Nazis signed a Concordat with the Pope in {{c1::July 1933}}.
 What did the Concordat agree? :: Nazis would not interfere with the Catholic Church; the Church would stay out of politics
 How did the Nazis break the Concordat? :: Priests harassed and arrested; Catholic schools closed; Catholic Youth banned
 What was 'Mit brennender Sorge' (1937)? :: The Pope's letter ('With burning anxiety') criticising Nazi treatment of the Church – read in Catholic churches
@@ -635,6 +744,7 @@ Who were the 'German Christians'? :: Protestants who supported the Nazis, led by
 What was the Confessing Church? :: Protestant church set up (1934) by Pastor Niemöller and Dietrich Bonhoeffer against Nazi control of religion – in 1937 over 800 pastors were arrested
 Who was Joseph Goebbels? :: Head of the Ministry of Public Enlightenment and Propaganda (set up March 1933); controlled media and culture
 What was the Reich Chamber of Culture? :: Set up in 1933 – artists, writers, musicians, journalists and film-makers had to be members, so the Nazis controlled culture
+C: The Nazis burned books by Jewish and communist authors in Berlin in {{c1::May 1933}}.
 How did the Nazis control newspapers? :: Banned opposition papers; editors had to follow Nazi instructions (Editors' Law 1933); news came from the state press agency
 How did the Nazis use radio? :: Cheap 'People's Receivers' (by 1939 about 70% of households had a radio); loudspeakers in streets and workplaces; Hitler's speeches broadcast
 Name a famous Nazi propaganda film and its director. :: 'Triumph of the Will' (1935) about the 1934 Nuremberg Rally, directed by Leni Riefenstahl
@@ -658,10 +768,12 @@ What was Lebensborn? :: SS programme (1935) where unmarried 'racially pure' wome
 How did the Nazis change women's employment? :: Women doctors, teachers and civil servants dismissed (from 1933); women banned from being judges or lawyers (1936)
 Why did Nazi policy on women's work change after 1937? :: Rearmament caused labour shortages, so women were encouraged back into work; marriage loan rules relaxed
 How did the Nazis want women to look? :: Natural – no make-up or trousers, hair in a bun or plaits, flat shoes; not slim (to be healthy mothers); not to smoke
+What did the 1938 divorce law allow? :: A man could divorce his wife if she could not have children
 Did Nazi women's policies succeed? :: Partly – marriages and births rose, but the number of working women rose after 1937 because the economy needed them
 What were the Nazi aims for young people? :: Loyal to Hitler; boys fit and ready to be soldiers; girls ready to be mothers; believe in Nazi racial ideas
 C: The Hitler Youth Law of {{c1::1936}} banned other youth groups; membership became compulsory in {{c2::1939}}.
 What were the youth organisations for boys and girls? :: Boys – German Young People (10–14), Hitler Youth (14–18) ;; Girls – Young Girls (10–14), League of German Maidens (14–18)
+Who led the Hitler Youth? :: Baldur von Schirach
 What did boys do in the Hitler Youth? :: Sport, hiking and camping, military training (marching, map reading, shooting), Nazi ideas
 What did girls do in the League of German Maidens? :: Sport, cooking, sewing and childcare to prepare for motherhood; learning Nazi ideas
 How large was the Hitler Youth by 1939? :: About 7–8 million members (from about 2 million in 1933)
@@ -687,10 +799,13 @@ Why did the Nazis persecute Slavs? :: Seen as subhuman; their land in the east w
 How were Roma and Sinti ('gypsies') persecuted? :: Nuremberg Laws applied to them; registration (1938 decree); sent to camps; banned from marrying Germans
 How were homosexuals persecuted? :: Seen as a threat to the birth rate; laws strengthened (1935); thousands sent to concentration camps (pink triangle)
 How were disabled people persecuted? :: Sterilisation Law (July 1933) – hundreds of thousands forcibly sterilised; from 1939 a 'euthanasia' programme murdered disabled children and adults
+C: The Nazi boycott of Jewish shops and businesses took place on {{c1::1 April 1933}}.
 How did the boycott of Jewish shops work? :: SA men stood outside Jewish shops and businesses, painted Stars of David and told people not to enter – limited support from the public
 What other anti-Jewish measures came in 1933? :: Jews dismissed from the civil service and teaching; banned from some professions
+C: The Nuremberg Laws were passed in {{c1::September 1935}}.
 What were the two Nuremberg Laws? :: Reich Citizenship Law – Jews became subjects not citizens (lost rights) ;; Law for the Protection of German Blood and Honour – banned marriage and sexual relations between Jews and Germans
 What triggered Kristallnacht? :: A young Polish Jew, Herschel Grynszpan, shot a German diplomat (Ernst vom Rath) in Paris – Goebbels used it as an excuse
+C: Kristallnacht happened on {{c1::9–10 November 1938}}.
 What were the consequences of Kristallnacht? :: About 100 Jews killed, thousands of shops and synagogues destroyed; 20 000+ sent to camps; Jews fined 1 billion marks; Jewish children banned from schools; Jewish businesses closed
 How did persecution of Jews increase 1933–39? :: Boycott (1933) → removal from jobs → Nuremberg Laws (1935) → Kristallnacht (1938) → forced emigration and exclusion from economic life (1939)
 Explain why the Nazis persecuted minorities. :: Racial beliefs – Aryan superiority and anti-Semitism ;; Scapegoats for Germany's problems (Versailles, Depression) ;; Wanted a pure Volksgemeinschaft and to strengthen the race (eugenics)
