@@ -34,3 +34,22 @@
   .plan-counts { width: 100%; }
   .plan-counts .plan-count { flex: 1 1 0; min-width: 0; }
 }
+.plan-check-head { width: 100%; gap: 10px; background: none; border: 0; border-bottom: 1px solid var(--line); font: inherit; color: inherit; cursor: pointer; }
+.plan-check-bar { display: flex; width: 90px; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); flex-shrink: 0; }
+.plan-check-bar i { display: block; min-width: 0; }
+.plan-check-bar i.good { background: var(--good); }
+.plan-check-bar i.warn { background: var(--warn); }
+.plan-check-bar i.bad { background: var(--bad); }
+.plan-check-row { gap: 10px; align-items: flex-start; background: var(--surface-2); }
+.plan-face { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); font-size: 17px; line-height: 1; cursor: pointer; filter: grayscale(1); opacity: 0.55; padding: 0; }
+.plan-face.on { filter: none; opacity: 1; border-width: 2px; }
+.plan-face.on.good { border-color: var(--good); background: var(--good-soft); }
+.plan-face.on.warn { border-color: var(--warn); background: var(--warn-soft); }
+.plan-face.on.bad { border-color: var(--bad); background: var(--bad-soft); }
+.rot90 { transform: rotate(90deg); transition: transform 0.15s; }
+@media (max-width: 640px) {
+  .plan-check-bar { width: 56px; }
+  .plan-check-row { flex-wrap: wrap; }
+  .plan-check-row > .grow { flex: 1 1 calc(100% - 60px); }
+  .plan-check-row > .row { margin-left: 50px; }
+}

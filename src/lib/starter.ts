@@ -168,6 +168,13 @@ const noteGuid = (d: StarterDeck, front: string) => `starter:${d.key}:${hash(fro
 /** new guid → guid of the card it replaces */
 const renamedFrom = (d: StarterDeck) => new Map((d.renames || []).map((r) => [noteGuid(d, r.to), noteGuid(d, r.from)]));
 
+/** Guids of a starter deck's notes that pass a test, including the guids of their older (renamed) versions. */
+export function starterGuids(d: StarterDeck, keep: (n: StarterNote) => boolean): Set<string> {
+  const out = new Set(d.notes.filter(keep).map((n) => noteGuid(d, n.front)));
+  for (const [to, from] of renamedFrom(d)) if (out.has(to)) out.add(from);
+  return out;
+}
+
 /** Remember that the user has seen (added or dismissed) the current content of a starter deck. */
 export function markSeen(kind: 'cards' | 'sets', d: StarterDeck) {
   const cur = getSettings();

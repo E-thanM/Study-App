@@ -51,10 +51,10 @@ describe('study plan', () => {
     expect(novemberDay(late, '2026-11-05')!.label).toBe('Biology test');
   });
 
-  it('guesses Year 9–10 Biology topics for the test', () => {
-    expect(BIO_TOPICS.filter(defaultOnTest)).toHaveLength(9);
-    expect(defaultOnTest('2h Transport')).toBe(true);
-    expect(defaultOnTest('2i Excretion')).toBe(false);
+  it('puts every checklist topic on the test, but not inheritance', () => {
+    expect(BIO_TOPICS.filter(defaultOnTest)).toHaveLength(14);
+    expect(defaultOnTest('2i Excretion')).toBe(true);
+    expect(defaultOnTest('3b Inheritance')).toBe(false);
   });
 
   it('splits hours and sessions without losing time', () => {

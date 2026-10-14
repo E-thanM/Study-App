@@ -541,6 +541,29 @@ export function rebuildFiltered(deckId: string, matcher: (c: Card) => boolean): 
   return cards.length;
 }
 
+/**
+ * Like rebuildFiltered, but only moves cards whose membership changed, so keeping a filtered deck
+ * up to date doesn't rewrite (and re-sync) every card in it.
+ */
+export function syncFiltered(deckId: string, matcher: (c: Card) => boolean): number {
+  const deck = get('deck', deckId);
+  if (!deck?.filtered) return 0;
+  const today = dayNumber();
+  const moved: Card[] = [];
+  let count = 0;
+  for (const c of all('card')) {
+    if (c.deckId === deckId && c.odid) {
+      if (matcher(c) && c.queue !== 'suspended') count++;
+      else moved.push({ ...c, deckId: c.odid, odid: undefined });
+    } else if (!c.odid && c.deckId !== deckId && !get('deck', c.deckId)?.filtered && isActive(c, today) && matcher(c)) {
+      moved.push({ ...c, odid: c.deckId, deckId });
+      count++;
+    }
+  }
+  if (moved.length) put(moved);
+  return count;
+}
+
 export function extendLimits(deckId: string, newExtra: number, revExtra: number) {
   const d = get('deck', deckId);
   if (!d) return;

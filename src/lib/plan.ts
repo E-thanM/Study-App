@@ -1,5 +1,6 @@
 import { all, get, put } from './store';
 import type { BaseRec, Target } from './types';
+import { CHECKLIST, testTopics } from './novtest';
 import { addDays, isoDate, parseIso, weekdayMon } from './util';
 
 /*
@@ -31,6 +32,8 @@ export interface StudyPlan extends BaseRec {
   skills: Record<string, SkillLog>;
   daysDone: string[];
   weeksDone: string[];
+  /** Biology checklist self-rating per spec point: 1 could answer it now, 2 some gaps, 3 need to learn it */
+  checklist: Record<string, 1 | 2 | 3>;
   hours: number;
   /** subject → priority weight (unset = default) */
   weights: Record<string, number>;
@@ -49,7 +52,7 @@ export const DATE_LABELS: [keyof PlanDates, string][] = [
 export const PLAN_ID = 'plan';
 
 export function defaultPlan(): StudyPlan {
-  return { id: PLAN_ID, kind: 'plan', updatedAt: 0, dates: { ...DEFAULT_DATES }, onTest: {}, skills: {}, daysDone: [], weeksDone: [], hours: 16, weights: {} };
+  return { id: PLAN_ID, kind: 'plan', updatedAt: 0, dates: { ...DEFAULT_DATES }, onTest: {}, skills: {}, daysDone: [], weeksDone: [], checklist: {}, hours: 16, weights: {} };
 }
 
 export function getPlan(): StudyPlan {
@@ -95,7 +98,7 @@ export const sprintEnd = (d: PlanDates) => (d.bio > d.lang ? d.bio : d.lang);
 export function phases(d: PlanDates): Phase[] {
   const last = sprintEnd(d);
   return [
-    { id: 'november', n: 0, name: 'November tests', start: d.start, end: last, goal: 'Biology (Year 9–10 topics) and English Language tests – everything else ticks over on flashcards.', flashcards: 'All due cards daily (all subjects); Biology first', split: [30, 35, 25, 10], finish: 'Walk into both tests having blurted every tested Biology topic and done timed English Language practice.' },
+    { id: 'november', n: 0, name: 'November tests', start: d.start, end: last, goal: 'Biology (everything on your Year 9–10 checklist) and English Language tests – everything else ticks over on flashcards.', flashcards: 'All due cards daily (all subjects); Biology first', split: [30, 35, 25, 10], finish: 'Walk into both tests with every checklist statement rated green and timed English Language practice done.' },
     { id: 'secure', n: 1, name: 'Secure the content', start: iso(last, 1), end: iso(d.mocksPrep, -1), goal: 'Finish learning every topic once and turn it into flashcards you can recall.', flashcards: 'All due cards daily + new cards topic by topic', split: [50, 30, 10, 10], finish: 'Blurt each topic at 70%+ and answer topic questions without notes.' },
     { id: 'mocks', n: 2, name: 'Mocks: prep and sit them', start: d.mocksPrep, end: iso(d.practice, -1), goal: 'Timed papers for every subject, then sit the January mocks.', flashcards: 'All due cards daily', split: [30, 20, 40, 10], finish: 'Sit every mock paper in time with a plan for each question type.' },
     { id: 'practice', n: 3, name: 'Exam practice', start: d.practice, end: iso(d.easter, -1), goal: 'Past papers by subject; fix the weak topics the mocks found.', flashcards: 'All due cards daily', split: [25, 25, 35, 15], finish: 'Score grade 8+ on recent past papers in every subject.' },
@@ -173,10 +176,28 @@ export function sessionSplit(row: MixRow, period: 'now' | 'later', minutes: numb
 
 /* ───────────── November tests ───────────── */
 
-/** Year 9–10 Biology topics guessed to be on the test: 1 and 2a–2h. */
-export const defaultOnTest = (topic: string) => /^(1 |2[a-h])/.test(topic);
+/** Biology topics on the test, from the school's checklist (everything but inheritance). */
+export const defaultOnTest = (topic: string) => testTopics().includes(topic);
 export const isOnTest = (plan: StudyPlan, topic: string) => plan.onTest[topic] ?? defaultOnTest(topic);
-export const priority = (onTest: boolean, confidence: number) => (onTest ? 6 - confidence : 0);
+
+/** Checklist statements for a topic and how the student rated them. */
+export function topicChecklist(plan: StudyPlan, topic: string) {
+  const items = CHECKLIST.filter((c) => c[1] === topic);
+  const r = items.map((c) => plan.checklist[c[0]]);
+  return { total: items.length, green: r.filter((x) => x === 1).length, amber: r.filter((x) => x === 2).length, red: r.filter((x) => x === 3).length, ratings: r };
+}
+
+/**
+ * How urgently to revise a topic, 0–5: low flashcard confidence and checklist statements rated
+ * "need to learn" both push it up. Unrated statements count as "some gaps".
+ */
+export function priority(onTest: boolean, confidence: number, ratings: (1 | 2 | 3 | undefined)[] = []): number {
+  if (!onTest) return 0;
+  const cards = 6 - confidence;
+  if (!ratings.some(Boolean)) return cards;
+  const gap = ratings.reduce((a: number, x) => a + (x === 1 ? 0 : x === 3 ? 1 : 0.5), 0) / ratings.length;
+  return Math.round(((cards + 1 + 4 * gap) / 2) * 10) / 10;
+}
 
 export const BIO_TOPICS = [
   '1 Variety of living organisms', '2a–b Cells and organisation', '2c Biological molecules', '2d Movement of substances', '2e Plant nutrition', '2e Human nutrition',
@@ -203,7 +224,7 @@ export interface Task { text: string; to?: string; min?: number }
 const FC: Task = { text: 'Flashcards: all due cards (Biology first)', to: '/cards' };
 const BIO_LEARN: Task = { text: 'Biology: blurt the top-priority topic → learn the gaps → 5 topic questions', to: '/tools/blurt', min: 40 };
 const BIO_Q: Task = { text: 'Biology: timed topic question set (SME / PMT) on the next-priority topic; mark it; mistakes → cards', to: '/tools/papers', min: 40 };
-const BIO_MIX: Task = { text: 'Biology: mixed questions across all tested topics (timed); mark strictly', to: '/tools/papers', min: 40 };
+const BIO_MIX: Task = { text: 'Biology: mixed questions across all checklist topics (timed); mark strictly', to: '/tools/papers', min: 40 };
 const EL_READ: Task = { text: 'English Language: one extract – language analysis answer (timed); mark it with Mark my answer', to: '/tools/mark', min: 40 };
 const EL_STRUCT: Task = { text: 'English Language: structure + comparison practice on two short extracts', to: '/tools/mark', min: 40 };
 const EL_WRITE: Task = { text: 'English Language: one writing piece (plan 5 + write 35); mark it; note SPaG fixes', to: '/tools/mark', min: 40 };
@@ -235,6 +256,37 @@ export function novemberDay(d: PlanDates, day: string): { main: Task[]; extra: T
   }
   const el = [EL_READ, EL_WRITE, EL_STRUCT, EL_READ][wd];
   return { main: [FC, left > 6 ? BIO_LEARN : BIO_MIX, wd % 2 === 0 ? BIO_Q : el, wd % 2 === 0 ? el : BIO_Q], extra: [] };
+}
+
+const learnTask = (topic: string): Task => ({ text: `Biology – ${topic}: blurt it → learn the gaps → 5 topic questions`, to: `/tools/blurt?subject=Biology&topic=${encodeURIComponent(topic)}`, min: 40 });
+const questionTask = (topic: string): Task => ({ text: `Biology – ${topic}: timed topic questions (SME / PMT); mark them; mistakes → cards`, to: '/tools/papers', min: 40 });
+
+export type SprintDay = NonNullable<ReturnType<typeof novemberDay>>;
+
+/**
+ * The sprint with real topics. From `from` on, each blurting session takes the next topic in
+ * priority order and each question session revisits the topic blurted the day before (spacing),
+ * so every topic gets learnt once and tested again before the test. Earlier days stay generic.
+ */
+export function novemberSchedule(d: PlanDates, topics: string[], from: string): Map<string, SprintDay> {
+  const out = new Map<string, SprintDay>();
+  let k = 0;
+  let last: string | null = null;
+  for (const day of novemberDays(d)) {
+    const p = novemberDay(d, day);
+    if (!p) continue;
+    if (day < from || !topics.length) { out.set(day, p); continue; }
+    const learnt: string[] = [];
+    const qTopic = last;
+    const fill = (t: Task): Task => {
+      if (t === BIO_LEARN) { const topic = topics[k++ % topics.length]; learnt.push(topic); return learnTask(topic); }
+      if (t === BIO_Q) return questionTask(qTopic ?? learnt[0] ?? topics[0]);
+      return t;
+    };
+    out.set(day, { ...p, main: p.main.map(fill), extra: p.extra.map(fill) });
+    last = learnt[learnt.length - 1] ?? last;
+  }
+  return out;
 }
 
 /** Every day of the sprint. */
@@ -295,7 +347,7 @@ export function weeks(d: PlanDates): Week[] {
   for (let n = 1; w <= d.end && n < 80; n++, w = iso(w, 7)) {
     const phase = phaseOn(d, w < d.start ? d.start : w);
     const f: Record<string, [string, string, number, number, number]> = {
-      november: ['November tests: Biology (tested topics, weakest first) + English Language practice; other subjects: due flashcards only', 'All due', 5, 4, 2],
+      november: ['November tests: Biology checklist topics (highest priority first) + English Language practice; other subjects: due flashcards only', 'All due', 5, 4, 2],
       secure: ['Finish learning 1–2 topics per subject; make / learn their cards; blurt each topic; topic questions', 'All due', 4, 6, 1],
       mocks: ['Mocks: a timed paper per subject, then sit the mocks; log every lost mark', 'All due', 3, 3, 5],
       practice: ['Past papers by subject (oldest first); fix weak topics from the mocks; essays for English and History', 'All due', 2, 4, 6],

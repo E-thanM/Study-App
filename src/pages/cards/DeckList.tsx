@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Icon, MenuButton, Modal, TopBar, toast } from '../../components/ui';
 import { childDecks, deckCounts, deckPath, deleteDeck, emptyFiltered, ensureDeckPath, moveDeck, rebuildFiltered, subtreeIds } from '../../lib/collection';
@@ -10,6 +10,9 @@ import { deckTotals, todayDone } from '../../lib/collection';
 import { DeckOptions } from './DeckOptions';
 import { StarterDecksModal } from './StarterDecks';
 import { StarterUpdates } from '../../components/StarterUpdates';
+import { studyToday } from '../../lib/goals';
+import { syncNovemberSection } from '../../lib/novtest';
+import { getPlan, sprintEnd } from '../../lib/plan';
 
 export function DeckList() {
   const v = useVersion('deck', 'card', 'revlog', 'preset');
@@ -20,6 +23,8 @@ export function DeckList() {
 
   const top = useMemo(() => childDecks(null), [v]); // eslint-disable-line react-hooks/exhaustive-deps
   const done = useMemo(() => todayDone(), [v]); // eslint-disable-line react-hooks/exhaustive-deps
+  // keep the November test section in step with the checklist (and pull in newly due cards)
+  useEffect(() => { void syncNovemberSection(studyToday(), sprintEnd(getPlan().dates)); }, [top.length]);
   const totalCards = useMemo(() => all('card').length, [v]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const newDeck = (parent?: Deck) => {

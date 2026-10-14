@@ -1,14 +1,16 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Icon, Seg, TopBar, toast } from '../../components/ui';
 import { sameSubject, studyToday } from '../../lib/goals';
 import {
   BIO_TOPICS, DATE_LABELS, DEFAULT_DATES, LANG_SKILLS, MIX_LATER, MIX_NOW, NOVEMBER_HOURS, RESOURCE_MIX, SESSION_TYPES, SUBJECT_PLANS,
-  addExamsToCalendar, daysBetween, examsInCalendar, getPlan, isOnTest, mixPeriod, novemberDay, novemberDays, phaseOn, phaseTasks, phases,
-  priority, savePlan, sessionSplit, subjectHours, weeks, type PlanDates, type Task,
+  addExamsToCalendar, daysBetween, examsInCalendar, getPlan, isOnTest, mixPeriod, novemberDays, phaseOn, phaseTasks, phases,
+  novemberSchedule, priority, savePlan, sessionSplit, sprintEnd, subjectHours, topicChecklist, weeks, type PlanDates, type Task,
 } from '../../lib/plan';
+import { deckCounts } from '../../lib/collection';
+import { CHECKLIST, NOT_ON_TEST, NOV_DECK_ID, syncNovemberSection } from '../../lib/novtest';
 import { subjectStrengths } from '../../lib/strength';
-import { useAll, useRec } from '../../lib/store';
+import { get, useAll, useRec } from '../../lib/store';
 import { durationMin, sessionsOn } from '../../lib/timetable';
 import { addDays, isoDate, parseIso, subjectColor, weekdayMon } from '../../lib/util';
 import { Dots } from './Strengths';
@@ -38,6 +40,7 @@ export function PlanPage() {
   const today = studyToday();
   const phase = phaseOn(d, today);
   const [tab, setTab] = useState<Tab>('today');
+  useEffect(() => { void syncNovemberSection(today, sprintEnd(d)); }, [today, d.bio, d.lang]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const countdowns = [
     { label: 'Biology test', date: d.bio },
@@ -112,13 +115,44 @@ function PhaseBar({ today, dates }: { today: string; dates: PlanDates }) {
   );
 }
 
+/* ───────────── Biology topics in priority order ───────────── */
+
+function useBioTopics() {
+  const plan = getPlan();
+  const decks = useAll('deck');
+  const cards = useAll('card');
+  const logs = useAll('revlog');
+  const blurts = useAll('blurt');
+  const bio = useMemo(() => subjectStrengths(decks, cards, logs).find((s) => sameSubject(s.name, 'Biology')), [decks, cards, logs]);
+  const lastBlurt = (topic: string) => {
+    const b = blurts.filter((x) => sameSubject(x.subject, 'Biology') && (x.topic === topic || x.topic.startsWith(`${topic} – `))).sort((a, c) => c.date - a.date)[0];
+    return b ? Math.round(((b.covered || 0) / Math.max(1, b.total || 1)) * 100) : null;
+  };
+  const rows = (bio ? bio.topics.map((t) => ({ name: t.name, deckId: t.deckId, confidence: t.confidence, score: t.score })) : BIO_TOPICS.map((name) => ({ name, deckId: '', confidence: 1 as const, score: 0 })))
+    .map((t) => ({ ...t, on: isOnTest(plan, t.name), blurt: lastBlurt(t.name), check: topicChecklist(plan, t.name) }))
+    .map((t) => ({ ...t, priority: priority(t.on, t.confidence, t.check.ratings) }))
+    .sort((a, b) => b.priority - a.priority || a.score - b.score);
+  return { rows, hasDeck: !!bio };
+}
+
+/** The sprint schedule with topics assigned in priority order from today. */
+function useSchedule(today: string) {
+  const { rows } = useBioTopics();
+  const d = getPlan().dates;
+  const order = rows.filter((r) => r.on).map((r) => r.name).join('\u0001');
+  return useMemo(() => novemberSchedule(d, order ? order.split('\u0001') : [], today),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [order, today, JSON.stringify(d)]);
+}
+
 /* ───────────── Today ───────────── */
 
 function TodayTab({ today }: { today: string }) {
   const plan = getPlan();
   const d = plan.dates;
   const phase = phaseOn(d, today);
-  const nov = novemberDay(d, today);
+  const schedule = useSchedule(today);
+  const nov = schedule.get(today) || null;
   const tasks = nov ? nov.main : phaseTasks(phase, d, today);
   const done = plan.daysDone.includes(today);
   useAll('session');
@@ -217,23 +251,21 @@ function TodayTab({ today }: { today: string }) {
 function NovemberTab({ today }: { today: string }) {
   const plan = getPlan();
   const d = plan.dates;
-  const decks = useAll('deck');
-  const cards = useAll('card');
-  const logs = useAll('revlog');
-  const blurts = useAll('blurt');
+  const nav = useNavigate();
   const [showAll, setShowAll] = useState(false);
-
-  const bio = useMemo(() => subjectStrengths(decks, cards, logs).find((s) => sameSubject(s.name, 'Biology')), [decks, cards, logs]);
-  const lastBlurt = (topic: string) => {
-    const b = blurts.filter((x) => sameSubject(x.subject, 'Biology') && (x.topic === topic || x.topic.startsWith(`${topic} – `))).sort((a, c) => c.date - a.date)[0];
-    return b ? Math.round(((b.covered || 0) / Math.max(1, b.total || 1)) * 100) : null;
-  };
-  const rows = (bio ? bio.topics.map((t) => ({ name: t.name, deckId: t.deckId, confidence: t.confidence, studied: t.studied, total: t.total, score: t.score })) : BIO_TOPICS.map((name) => ({ name, deckId: '', confidence: 1 as const, studied: 0, total: 0, score: 0 })))
-    .map((t) => ({ ...t, on: isOnTest(plan, t.name), blurt: lastBlurt(t.name) }))
-    .map((t) => ({ ...t, priority: priority(t.on, t.confidence) }))
-    .sort((a, b) => b.priority - a.priority || a.score - b.score);
+  const { rows, hasDeck } = useBioTopics();
+  const schedule = useSchedule(today);
   const onCount = rows.filter((r) => r.on).length;
   const toggle = (name: string, on: boolean) => savePlan({ onTest: { ...plan.onTest, [name]: on } });
+  const novDeck = useRec('deck', NOV_DECK_ID);
+  useAll('card');
+  const counts = novDeck && !novDeck.deleted ? deckCounts(NOV_DECK_ID) : null;
+  const studyCards = async () => {
+    await syncNovemberSection(today, sprintEnd(d));
+    const deck = get('deck', NOV_DECK_ID);
+    if (!deck || deck.deleted) { toast(deck ? 'You removed the November test deck' : 'Add the Biology deck in Flashcards first'); return; }
+    nav(`/cards/deck/${NOV_DECK_ID}`);
+  };
 
   const skill = (id: string) => plan.skills[id] || { done: 0 };
   const setSkill = (id: string, ch: Partial<{ done: number; last: number | null; outOf: number }>) => savePlan({ skills: { ...plan.skills, [id]: { ...skill(id), ...ch } } });
@@ -247,12 +279,20 @@ function NovemberTab({ today }: { today: string }) {
         <div className="row between wrap" style={{ gap: 12 }}>
           <div className="small">
             <b>Biology</b> {fmtDay(d.bio)} ({inDays(daysBetween(today, d.bio))}) · <b>English Language</b> {fmtDay(d.lang)} ({inDays(daysBetween(today, d.lang))})
-            <div className="muted tiny">Year 9–10 content. Everything else is on flashcards only until the tests, then January mocks take over.</div>
+            <div className="muted tiny">Biology: every statement on your Year 9–10 checklist – all of the course except stem cells, the nervous system / eye / plant responses, inheritance, and selective breeding / GM / cloning. Everything else is on flashcards only until the tests.</div>
           </div>
           <div className="row wrap" style={{ gap: 6 }}>
             {NOVEMBER_HOURS.map((h) => <span key={h.subject} className="pill">{h.subject}: {h.hours} h/week</span>)}
           </div>
         </div>
+      </section>
+
+      <section className="panel pad row between wrap" style={{ gap: 12 }}>
+        <div className="small">
+          <b>Flashcards → {NOV_DECK_ID && 'November test – Biology'}</b>
+          <div className="muted tiny">{counts ? <>{counts.review + counts.learn} due · {counts.new} new – only the cards on your checklist. They go back to the Biology deck after the test.</> : 'Gathers just the Biology cards on your checklist into their own deck.'}</div>
+        </div>
+        <button className="btn primary" onClick={() => void studyCards()}><Icon name="cards" /> Study November test cards</button>
       </section>
 
       <section className="panel">
@@ -265,22 +305,24 @@ function NovemberTab({ today }: { today: string }) {
             <div key={t.name} className={`list-row plan-topic ${t.priority >= 4 ? 'hot' : ''} ${t.on ? '' : 'off'}`}>
               <label className="row" style={{ gap: 8, cursor: 'pointer', minWidth: 0, flex: 1 }} title="On the test?">
                 <input type="checkbox" checked={t.on} onChange={(e) => toggle(t.name, e.target.checked)} />
-                <span className="ellipsis small">{t.name}</span>
+                <span className="col" style={{ minWidth: 0, gap: 1 }}>
+                  <span className="ellipsis small">{t.name}</span>
+                  {(NOT_ON_TEST[t.name] || t.check.total > 0) && <span className="tiny faint ellipsis">{t.check.total > 0 && `${t.check.green}/${t.check.total} statements green`}{t.check.total > 0 && NOT_ON_TEST[t.name] ? ' · ' : ''}{NOT_ON_TEST[t.name]}</span>}
+                </span>
               </label>
               <Dots n={t.confidence} />
               <span className="tiny muted nowrap hide-sm" style={{ width: 62, textAlign: 'right' }}>{t.blurt === null ? 'no blurt' : `blurt ${t.blurt}%`}</span>
-              {t.on && <>
-                <Link to={`/tools/blurt?subject=Biology&topic=${encodeURIComponent(t.name)}`} className="btn sm ghost">Blurt</Link>
-                {t.deckId && <Link to={`/cards/deck/${t.deckId}`} className="btn sm ghost hide-sm">Study</Link>}
-              </>}
+              {t.on && <Link to={`/tools/blurt?subject=Biology&topic=${encodeURIComponent(t.name)}`} className="btn sm ghost">Blurt</Link>}
             </div>
           ))}
         </div>
         <div className="tiny faint" style={{ padding: '8px 18px 12px' }}>
-          Tick the topics your teacher said are on the test (topics 1–2h are a guess). Confidence comes live from your Biology flashcards; orange = revise first. Blurt each topic, learn the gaps, then do its SME / PMT questions.
-          {!bio && ' Add the Biology starter deck in Flashcards to get confidence ratings.'}
+          From your checklist. Priority combines your flashcard confidence with how you rated the checklist statements below; orange = revise first. Blurt each topic, learn the gaps, then do its SME / PMT questions.
+          {!hasDeck && ' Add the Biology starter deck in Flashcards to get confidence ratings.'}
         </div>
       </section>
+
+      <ChecklistPanel />
 
       <section className="panel">
         <div className="panel-head"><h3>English Language skills</h3><Link to="/tools/mark" className="small" style={{ color: 'var(--accent)' }}>Mark my answer</Link></div>
@@ -320,7 +362,7 @@ function NovemberTab({ today }: { today: string }) {
         </div>
         <div className="list">
           {shown.map((day) => {
-            const p = novemberDay(d, day)!;
+            const p = schedule.get(day)!;
             const done = plan.daysDone.includes(day);
             return (
               <div key={day} className={`list-row col plan-day ${day === today ? 'today' : ''} ${done ? 'done' : ''}`} style={{ alignItems: 'stretch', gap: 4 }}>
@@ -340,6 +382,68 @@ function NovemberTab({ today }: { today: string }) {
         </div>
       </section>
     </div>
+  );
+}
+
+const FACES: { v: 1 | 2 | 3; label: string; title: string; cls: string }[] = [
+  { v: 1, label: '☺', title: 'I could answer an exam question on this now', cls: 'good' },
+  { v: 2, label: '😐', title: 'I know some of this but have gaps', cls: 'warn' },
+  { v: 3, label: '☹', title: 'I need to learn this', cls: 'bad' },
+];
+
+/** The school's Year 9–10 checklist: rate every statement, like the content audit sheet. */
+function ChecklistPanel() {
+  const plan = getPlan();
+  const [open, setOpen] = useState<string | null>(null);
+  const topics = [...new Set(CHECKLIST.map((c) => c[1]))];
+  const r = Object.values(plan.checklist);
+  const n = { green: r.filter((x) => x === 1).length, amber: r.filter((x) => x === 2).length, red: r.filter((x) => x === 3).length };
+  const rate = (spec: string, v: 1 | 2 | 3) => {
+    const next = { ...plan.checklist };
+    if (next[spec] === v) delete next[spec];
+    else next[spec] = v;
+    savePlan({ checklist: next });
+  };
+  return (
+    <section className="panel">
+      <div className="panel-head">
+        <h3>Biology checklist</h3>
+        <span className="row tiny" style={{ gap: 6 }}>
+          <span className="pill good">{n.green}</span><span className="pill warn">{n.amber}</span><span className="pill bad">{n.red}</span>
+          <span className="muted">of {CHECKLIST.length}</span>
+        </span>
+      </div>
+      <div className="list">
+        {topics.map((t) => {
+          const c = topicChecklist(plan, t);
+          const isOpen = open === t;
+          return (
+            <div key={t} className="col" style={{ alignItems: 'stretch' }}>
+              <button className="list-row link plan-check-head" onClick={() => setOpen(isOpen ? null : t)} aria-expanded={isOpen}>
+                <span className="grow small" style={{ textAlign: 'left' }}><b>{t}</b></span>
+                <span className="plan-check-bar" aria-label={`${c.green} green, ${c.amber} amber, ${c.red} red of ${c.total}`}>
+                  <i className="good" style={{ flexGrow: c.green }} /><i className="warn" style={{ flexGrow: c.amber }} /><i className="bad" style={{ flexGrow: c.red }} /><i style={{ flexGrow: c.total - c.green - c.amber - c.red }} />
+                </span>
+                <span className="tiny muted nowrap" style={{ width: 40, textAlign: 'right' }}>{c.green}/{c.total}</span>
+                <Icon name="chevron" size={14} className={isOpen ? 'rot90' : ''} />
+              </button>
+              {isOpen && CHECKLIST.filter((x) => x[1] === t).map(([spec, , text]) => (
+                <div key={spec} className="list-row plan-check-row">
+                  <span className="tiny muted nowrap" style={{ width: 40 }}>{spec}</span>
+                  <span className="grow small">{text}</span>
+                  <span className="row" style={{ gap: 4 }}>
+                    {FACES.map((f) => (
+                      <button key={f.v} className={`plan-face ${plan.checklist[spec] === f.v ? `on ${f.cls}` : ''}`} title={f.title} aria-label={f.title} aria-pressed={plan.checklist[spec] === f.v} onClick={() => rate(spec, f.v)}>{f.label}</button>
+                    ))}
+                  </span>
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+      <div className="tiny faint" style={{ padding: '8px 18px 12px' }}>☺ could answer an exam question now · 😐 know some, with gaps · ☹ need to learn it. Rate honestly after blurting a topic – the topic order and the day-by-day plan update from your ratings.</div>
+    </section>
   );
 }
 
