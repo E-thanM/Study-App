@@ -168,7 +168,7 @@ describe('bundled content', async () => {
 
   it('every starter deck line parses and fronts are unique', () => {
     const dir = path.join(root, 'src/content');
-    for (const f of fs.readdirSync(dir)) {
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.txt'))) {
       const text = fs.readFileSync(path.join(dir, f), 'utf8');
       const deck = parseStarter(f, text);
       const contentLines = text.split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith('@') && !l.startsWith('#'));
@@ -215,7 +215,7 @@ describe('Quick Learn topic sets', async () => {
   const { buildSets, clozeToTerm, htmlToText, installSets } = await import('../starter');
   const store = await import('../store');
   const dir = path.resolve(__dirname, '../../content');
-  const decks = fs.readdirSync(dir).map((f) => parseStarter(f.replace('.txt', ''), fs.readFileSync(path.join(dir, f), 'utf8')));
+  const decks = fs.readdirSync(dir).filter((f) => f.endsWith('.txt')).map((f) => parseStarter(f.replace('.txt', ''), fs.readFileSync(path.join(dir, f), 'utf8')));
 
   it('converts html and cloze text', () => {
     expect(htmlToText('A &amp; B<br><b>C</b> &quot;x&quot;')).toBe('A & B\nC "x"');
