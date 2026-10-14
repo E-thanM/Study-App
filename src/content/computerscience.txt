@@ -299,7 +299,7 @@ How do subprograms help with testing? :: Each subprogram can be tested on its ow
 
 # 3 Data – binary and hexadecimal
 Why do computers use binary? :: Circuits have two states (on/off) – transistors act as switches
-Define bit, nibble, byte, kilobyte. :: Bit – 0 or 1 ;; Nibble – 4 bits ;; Byte – 8 bits ;; Kibibyte (KiB) – 1024 bytes (IGCSE uses binary prefixes: KiB, MiB, GiB, TiB)
+Define bit, nibble, byte, kilobyte. :: Bit – 0 or 1 ;; Nibble – 4 bits ;; Byte – 8 bits ;; Kibibyte (KiB) – 1024 bytes; a kilobyte (kB) is 1000 bytes (the IGCSE uses binary prefixes: KiB, MiB, GiB, TiB)
 Convert 10110101 to denary. :: 128 + 32 + 16 + 4 + 1 = 181
 Convert 200 to 8-bit binary. :: 11001000
 What is the largest denary number that can be stored in 8 bits (unsigned)? :: 255
@@ -309,7 +309,7 @@ What is two's complement? :: A way of representing negative numbers: the most si
 How do you convert a negative denary number to two's complement? :: Write the positive binary, flip all the bits, add 1
 What is the range of 8-bit two's complement? :: −128 to +127
 What does a logical shift left by 1 do? :: Moves bits one place left (fills with 0) – multiplies an unsigned number by 2
-What does a logical shift right by 1 do? :: Moves bits one place right – divides by 2 (losing the remainder)
+What does a logical shift right by 1 do? :: Moves bits one place right, filling with 0 – divides an unsigned number by 2 (losing the remainder); for negative two's complement numbers use an arithmetic shift
 What is an arithmetic shift right? :: Shifts right but keeps the sign bit (copies the MSB) – preserves the sign of a two's complement number
 Why is hexadecimal used? :: Easier for humans to read/write than binary; each hex digit = 4 bits; fewer errors
 Convert hex 3F to denary. :: 3 × 16 + 15 = 63
@@ -733,7 +733,7 @@ Give environmental impacts of technology. :: Energy use (data centres), e-waste 
 Give ethical issues with technology. :: Privacy and surveillance, digital divide, job losses from automation, AI bias, misuse of personal data
 What is the digital divide? :: The gap between people who have access to technology and the Internet and those who don't
 What is intellectual property and how is it protected? :: Creations of the mind; protected by copyright, patents, trademarks and licences
-What is the difference between open-source and proprietary software? :: Open-source – source code freely available to view and modify ;; Proprietary – code is hidden, paid licence, can't be modified
+What is the difference between open-source and proprietary software? :: Open-source – source code freely available to view, modify and share ;; Proprietary – source code is closed and can't be modified; usually paid for, though some (freeware) is free
 What is artificial intelligence? :: Computer systems performing tasks that normally require human intelligence (learning, decision-making)
 What is machine learning? :: A type of AI where computers improve their performance by learning from data rather than being explicitly programmed
 Give issues with AI. :: Bias in training data, lack of transparency, accountability for decisions, job losses, privacy

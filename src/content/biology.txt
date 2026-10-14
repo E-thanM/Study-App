@@ -26,6 +26,27 @@ How do viruses reproduce? :: Only inside living cells – they are parasites tha
 Give two examples of viruses. :: Tobacco mosaic virus (discolours leaves) and influenza virus; also HIV (causes AIDS)
 What is a pathogen? :: A microorganism that causes disease
 Name the four types of pathogen. :: Fungi, bacteria, protoctists and viruses
+## Extra detail
+C: Living organisms show {{c1::nutrition}}, {{c2::respiration}}, {{c3::excretion}}, response to surroundings, {{c4::movement}}, control of internal conditions, {{c5::reproduction}}, and growth and development.
+Which kingdom stores carbohydrate as starch or sucrose? :: Plants
+Which two kingdoms store carbohydrate as glycogen? :: Animals and fungi
+Do fungi photosynthesise? :: No – they have no chloroplasts
+What are hyphae? :: Thread-like structures that make up the body (mycelium) of a fungus; contain many nuclei
+What is a mycelium? :: The network of hyphae forming the body of a fungus
+What is saprotrophic nutrition? :: Feeding by secreting extracellular digestive enzymes onto dead/decaying matter and absorbing the soluble products
+Name the bacterium used to make yoghurt and its shape. :: Lactobacillus bulgaricus – rod-shaped
+Name the bacterium that causes pneumonia and its shape. :: Pneumococcus – spherical
+Which kingdom has members with no nucleus? :: Bacteria (prokaryotes) – DNA is a circular chromosome plus plasmids
+What is a plasmid? :: A small circular ring of DNA found in bacteria (separate from the main chromosome)
+What does Chlorella have that Amoeba does not? :: Chloroplasts – Chlorella photosynthesises (plant-like); Amoeba feeds on other organisms (animal-like)
+What does tobacco mosaic virus do to plants? :: Causes discolouration (mosaic pattern) of leaves by preventing chloroplast formation, reducing photosynthesis
+What disease does HIV cause? :: AIDS
+Why are viruses not considered living? :: They are not cells and can only reproduce inside living host cells (no metabolism of their own)
+Give an example of a bacterial pathogen. :: Pneumococcus (causes pneumonia)
+Give an example of a viral pathogen. :: Influenza virus (flu) or HIV (AIDS) or tobacco mosaic virus
+Give an example of a protoctist pathogen. :: Plasmodium (causes malaria)
+What genetic material can a virus contain? :: Either DNA or RNA
+Compare the size of viruses and bacteria. :: Viruses are much smaller than bacteria
 
 # 2a–b Cells and organisation
 List the levels of organisation in an organism, smallest first. :: Organelles → cells → tissues → organs → organ systems
@@ -45,6 +66,27 @@ What are stem cells? :: Undifferentiated cells that can divide and differentiate
 Where are stem cells found in animals and plants? :: Animals: embryos (embryonic stem cells) and some adult tissues e.g. bone marrow ;; Plants: meristems (tips of roots and shoots)
 Give two potential uses of stem cells in medicine. :: Replacing damaged cells/tissues (e.g. treating diabetes, paralysis, Parkinson's) and growing organs for transplant
 Give two issues with using embryonic stem cells. :: Ethical objections (embryos destroyed); risk of rejection; risk of cells becoming cancerous; risk of viral infection
+## Extra detail
+What is an organ system? :: A group of organs working together to perform a particular function
+Give an example of an organ system and its organs. :: Digestive system – e.g. stomach, small intestine, liver, pancreas
+Give an example of an organ in a plant. :: Leaf (also root, stem, flower)
+Give an example of a tissue in a plant and in an animal. :: Plant: xylem, phloem or palisade mesophyll ;; Animal: muscle or epithelium
+What is an organelle? :: A specialised structure inside a cell with a particular function (e.g. nucleus, mitochondrion)
+Which structures are found in both plant and animal cells? :: Nucleus, cytoplasm, cell membrane, mitochondria and ribosomes
+What is the cell membrane described as? :: Partially (selectively) permeable – lets some substances through but not others
+Which pigment do chloroplasts contain? :: Chlorophyll (green) – absorbs light
+Why do root hair cells have no chloroplasts? :: They are underground and receive no light, so cannot photosynthesise
+Why do muscle cells contain many mitochondria? :: To carry out lots of aerobic respiration, releasing energy for contraction
+Why does a large permanent vacuole help support a plant? :: Cell sap pushes the cytoplasm against the cell wall, making the cell turgid and supporting the plant
+How do you calculate magnification? :: Magnification = image size ÷ actual size (use the same units)
+How do you calculate the actual size of a cell from a micrograph? :: Actual size = image size ÷ magnification
+How many micrometres (µm) are in 1 mm? :: 1000
+Why do multicellular organisms need differentiated cells? :: Different cells are specialised to carry out different functions efficiently (division of labour)
+Where are stem cells found in plants? :: Meristems – at the tips of roots and shoots
+What are embryonic stem cells able to do? :: Differentiate into any type of cell in the body
+How do adult stem cells differ from embryonic stem cells? :: Adult stem cells (e.g. bone marrow) can only differentiate into a limited range of cell types
+Give one reason why stem cells taken from a patient's own body reduce problems. :: They are genetically identical to the patient, so they are not rejected by the immune system
+Give one risk of using stem cells in medicine. :: The cells may divide uncontrollably and form tumours (cancer); risk of rejection; infection from contaminated cells
 
 # 2c Biological molecules
 Which elements are in carbohydrates? :: Carbon, hydrogen and oxygen
@@ -62,6 +104,51 @@ Explain why enzymes are specific. :: The active site has a specific shape that o
 Explain the effect of increasing temperature on enzyme activity. :: Rate rises as molecules gain kinetic energy and collide more; above the optimum the active site changes shape (denatures) so the substrate no longer fits and rate falls
 Explain how pH affects enzymes. :: Each enzyme has an optimum pH; pH far from the optimum changes the shape of the active site (denaturing it), so the substrate can't bind
 Describe an investigation into the effect of temperature on enzyme activity. :: E.g. amylase + starch in water baths at different temperatures; take samples every 30 s onto spotting tile with iodine; time until no blue-black; keep pH, concentrations and volumes constant
+## Molecules – extra detail
+Which kingdom's storage carbohydrate is glycogen and which is starch? :: Glycogen – animals and fungi ;; Starch – plants
+C: Starch and glycogen are large molecules made from many {{c1::glucose}} (simple sugar) units joined together.
+C: Proteins are made from long chains of {{c1::amino acids}}.
+C: A lipid (fat or oil) molecule is made of {{c1::glycerol}} joined to three {{c2::fatty acids}}.
+Which element is found in proteins but not in carbohydrates or lipids? :: Nitrogen
+## Food tests practical
+What is the colour of Benedict's solution before testing? :: Blue
+What is the positive result for the Benedict's test? :: Blue → green → yellow → orange → brick-red precipitate (more sugar = further along)
+Why must the Benedict's test be heated? :: The reaction only happens when heated – use a water bath at about 80 °C (or boiling) for a few minutes
+How do you prepare a solid food sample for food tests? :: Grind it with a pestle and mortar, add distilled water, mix and filter (or let it settle)
+What is the negative result for the iodine test? :: Stays orange-brown
+What is the negative result for the biuret test? :: Stays blue
+What is the negative result for the ethanol emulsion test? :: Stays clear (no cloudy white layer)
+What safety precautions apply to food tests? :: Wear eye protection; ethanol is flammable – keep away from flames; use a water bath not a direct flame; biuret contains sodium hydroxide (irritant/corrosive)
+Why is a water bath used rather than a Bunsen burner to heat Benedict's? :: It is safer (heats evenly, no boiling over) and ethanol may be nearby; keeps a constant temperature
+Name a control for the food tests. :: Test distilled water with each reagent – result should be negative
+Is the Benedict's test quantitative or qualitative? :: Semi-quantitative – the colour gives a rough idea of how much reducing sugar is present
+## Enzymes – extra detail
+What is a catalyst? :: A substance that speeds up a chemical reaction without being changed or used up
+Why are enzymes needed in cells? :: To speed up metabolic reactions so they happen fast enough at body temperature
+What is the active site? :: The region of an enzyme where the substrate binds
+What is the substrate? :: The molecule that an enzyme acts on
+What is an enzyme–substrate complex? :: Formed when the substrate binds to the complementary active site of the enzyme
+What does denatured mean? :: The shape of the enzyme's active site has permanently changed so the substrate no longer fits – the enzyme stops working
+What is the optimum temperature of most human enzymes? :: About 37 °C
+What is the optimum pH of pepsin? :: About pH 2 (acidic, in the stomach)
+What is the optimum pH of most enzymes in the small intestine? :: Slightly alkaline – about pH 7–8 (e.g. pancreatic amylase, trypsin, lipase)
+Why does enzyme activity increase from 0 °C up to the optimum? :: Molecules gain more kinetic energy, move faster and collide more often, so more enzyme–substrate complexes form per second
+Does a low temperature denature enzymes? :: No – low temperatures slow enzymes down (fewer collisions) but the active site is not damaged; activity returns when warmed
+Sketch the graph of enzyme activity against temperature. :: Rises gradually to a peak (optimum) then falls steeply to zero as the enzyme denatures
+## Enzyme practicals
+In the amylase–starch temperature practical, what is the independent variable? :: Temperature
+In the amylase–starch practical, what is the dependent variable? :: Time taken for the starch to disappear (iodine no longer turns blue-black)
+In the amylase–starch practical, name the control variables. :: Volume and concentration of amylase and starch; pH (use a buffer); time interval between samples
+How do you calculate the rate of an enzyme reaction from time taken? :: Rate = 1 ÷ time (e.g. s⁻¹)
+Why are the amylase and starch put in the water bath separately before mixing? :: So both reach the required temperature before the reaction starts
+Why is a buffer solution used in enzyme investigations? :: To keep the pH constant (or set a particular pH)
+How is the end point detected in the amylase practical? :: Drops of mixture are added to iodine on a spotting tile every 30 s; the end point is when the iodine stays orange-brown (no starch left)
+Describe how to investigate the effect of pH on enzyme activity. :: Mix amylase with buffers of different pH; add starch; keep at constant temperature in a water bath; sample every 30 s into iodine on a spotting tile; time until starch gone; repeat; calculate rate = 1/time
+In the pH enzyme practical, what is the independent variable? :: pH (using different buffer solutions)
+In the pH enzyme practical, what must be kept constant? :: Temperature (water bath), volume and concentration of enzyme and starch
+How can you improve the reliability of an enzyme investigation? :: Repeat each test at least three times, discard anomalies and calculate a mean
+What is a safety precaution in the enzyme practicals? :: Wear eye protection – iodine is an irritant/stains; take care with hot water baths
+Describe the expected results of the pH enzyme practical. :: Shortest time (fastest rate) at the optimum pH; slower either side; no reaction at extreme pH (denatured)
 
 # 2d Movement of substances
 Define diffusion. :: The net movement of particles from a region of higher concentration to a region of lower concentration, down a concentration gradient (passive)
@@ -74,6 +161,34 @@ Describe the osmosis practical with potato. :: Cut equal potato cylinders, measu
 What happens to an animal cell in pure water? :: Water enters by osmosis; it swells and may burst (lysis)
 What happens to a plant cell in pure water? :: Water enters; the cell becomes turgid but the cell wall stops it bursting
 What happens to a plant cell in a concentrated solution? :: Water leaves; it becomes flaccid and then plasmolysed (membrane pulls away from wall)
+## Extra detail
+Is diffusion active or passive? :: Passive – it does not need energy from respiration
+Is osmosis active or passive? :: Passive – no energy from respiration needed
+Why does active transport need energy? :: It moves substances against their concentration gradient (from low to high concentration); energy from respiration is used by carrier proteins
+Why do root hair cells contain many mitochondria? :: To release energy by respiration for active transport of mineral ions from the soil
+What is a partially permeable membrane? :: A membrane that allows small molecules (e.g. water) through but not larger ones (e.g. sucrose)
+How does increasing temperature affect the rate of diffusion? :: Increases it – particles have more kinetic energy and move faster
+How does a steeper concentration gradient affect diffusion? :: Increases the rate of diffusion
+How does a greater distance affect diffusion? :: Slower diffusion – particles take longer to travel further, so a short diffusion distance is better
+How does surface area to volume ratio affect diffusion? :: A larger SA:V ratio means faster diffusion into/out of the whole cell or organism
+How do you calculate the surface area to volume ratio of a cube? :: Surface area = 6 × side² ;; Volume = side³ ;; Ratio = SA ÷ volume (written as x : 1)
+Calculate the SA:V ratio of a 2 cm cube. :: SA = 6 × 4 = 24 cm² ;; Volume = 8 cm³ ;; Ratio = 24 : 8 = 3 : 1
+Why do single-celled organisms not need transport systems? :: They have a large surface area to volume ratio and short diffusion distances, so diffusion is fast enough
+## Diffusion and osmosis practicals
+Describe a practical to investigate diffusion using agar cubes. :: Cut cubes of different sizes from agar containing an indicator (e.g. phenolphthalein, pink); place in acid; time how long until each turns colourless – smaller cubes (larger SA:V) change fastest
+Describe a simple practical to show diffusion in a liquid. :: Drop a crystal of potassium manganate(VII) into still water and watch the purple colour spread out (faster in warm water)
+Describe how Visking tubing can model osmosis. :: Fill Visking tubing with sucrose solution, attach a capillary tube, place in water; water enters by osmosis and the liquid rises up the capillary tube
+What does Visking tubing model? :: A partially permeable membrane (e.g. a cell membrane or gut wall)
+How do you calculate percentage change in mass? :: (final mass − initial mass) ÷ initial mass × 100
+Why is percentage change in mass used rather than change in mass in the potato osmosis practical? :: The cylinders may have different starting masses, so percentage change allows a fair comparison
+Why are potato cylinders blotted dry before reweighing? :: To remove surface water, which would add to the mass and give inaccurate results
+In the potato osmosis practical, what is the independent variable? :: Concentration of the sucrose (or salt) solution
+In the potato osmosis practical, what is the dependent variable? :: Percentage change in mass (or length)
+In the potato osmosis practical, name the control variables. :: Size/surface area of potato pieces, same potato, volume of solution, time, temperature
+Explain why potato cylinders gain mass in distilled water. :: Distilled water is more dilute than the cell sap, so water moves into the cells by osmosis across the partially permeable membrane
+Explain why potato cylinders lose mass in concentrated sucrose solution. :: The solution is more concentrated than the cell sap, so water moves out of the cells by osmosis
+What does it mean if a potato cylinder shows no change in mass? :: The solution has the same concentration as the cell contents – no net movement of water
+What safety precaution is needed when cutting potato cylinders? :: Use a cork borer/scalpel carefully, cutting away from the body on a tile
 
 # 2e Plant nutrition
 Write the word equation for photosynthesis. :: carbon dioxide + water → glucose + oxygen (in the presence of light and chlorophyll)
@@ -90,6 +205,54 @@ How can you show that light is needed for photosynthesis? :: Destarch a plant, c
 How can you show that CO₂ is needed for photosynthesis? :: Destarch plant, enclose a leaf in a bag with soda lime (absorbs CO₂), leave in light, test for starch – no starch
 Describe an investigation into the effect of light intensity on photosynthesis. :: Pondweed in water with sodium hydrogencarbonate; lamp at different distances; count bubbles or measure gas volume per minute; keep temperature constant (heat shield/water bath)
 What is the inverse square law for light intensity? :: Light intensity ∝ 1/distance²
+## Leaf structure
+List the layers of a leaf from top to bottom. :: Waxy cuticle → upper epidermis → palisade mesophyll → spongy mesophyll (with air spaces, veins) → lower epidermis with stomata and guard cells
+What is the function of the waxy cuticle? :: Reduces water loss by evaporation; it is transparent so light passes through
+Why is the upper epidermis transparent? :: Lets light pass through to the palisade cells
+Why is the palisade mesophyll near the top of the leaf? :: To absorb the most light; its cells are packed with chloroplasts
+What is the function of the spongy mesophyll? :: Has air spaces that allow gases (CO₂, O₂, water vapour) to diffuse through the leaf
+What is the function of stomata? :: Pores (mainly on the lower surface) that let CO₂ diffuse in and O₂ and water vapour diffuse out
+What controls the opening and closing of stomata? :: Guard cells
+Why are leaves broad and flat? :: Large surface area to absorb more light and CO₂
+Why are leaves thin? :: Short diffusion distance for gases
+What is the role of veins (vascular bundles) in a leaf? :: Xylem brings water and minerals; phloem carries away sugars (sucrose)
+## Photosynthesis – extra detail
+What are the reactants of photosynthesis? :: Carbon dioxide and water
+What are the products of photosynthesis? :: Glucose and oxygen
+Where in the cell does photosynthesis happen? :: In the chloroplasts
+Where does a plant get the carbon dioxide and water for photosynthesis? :: CO₂ diffuses in from the air through stomata; water is absorbed from soil by root hairs and carried in xylem
+Give five uses of the glucose made in photosynthesis. :: Respiration; converted to starch for storage; cellulose for cell walls; sucrose for transport; combined with nitrates to make amino acids/proteins; lipids for storage in seeds
+Why is glucose stored as starch? :: Starch is insoluble so it doesn't affect osmosis (water movement) in cells, and it is compact
+Explain the effect of increasing light intensity on the rate of photosynthesis. :: Rate increases as light intensity increases (light is limiting) until it levels off, when another factor (CO₂ or temperature) becomes limiting
+Explain the effect of increasing CO₂ concentration on rate of photosynthesis. :: Rate increases until it plateaus, when light intensity or temperature becomes the limiting factor
+Explain the effect of temperature on the rate of photosynthesis. :: Rate increases up to an optimum as enzymes work faster; above the optimum the enzymes denature and the rate falls
+On a graph of rate against light intensity, what is limiting on the rising part? :: Light intensity
+On a graph of rate against light intensity, what is limiting on the flat (plateau) part? :: Not light – another factor such as CO₂ concentration or temperature
+How would you show on a graph that CO₂ is limiting? :: A higher CO₂ concentration gives a higher plateau than a lower CO₂ concentration at the same light intensity
+Which ion is needed to make chlorophyll? :: Magnesium (Mg²⁺)
+Which ion is needed to make amino acids and proteins? :: Nitrate (NO₃⁻)
+What are the symptoms of magnesium deficiency? :: Yellowing of leaves (chlorosis), especially older leaves
+What are the symptoms of nitrate deficiency? :: Stunted growth and yellow older leaves
+## Photosynthesis practicals
+Why must a plant be destarched before a starch test experiment? :: To remove any starch already present, so any starch found must have been made during the experiment
+How is a plant destarched? :: Keep it in the dark for 24–48 hours so it uses up its starch stores
+Why is a leaf boiled in water at the start of the starch test? :: To kill the cells and break down the membranes so iodine can get in (stops reactions)
+Why is the leaf boiled in ethanol during the starch test? :: To remove the chlorophyll (decolourise the leaf) so the colour change is visible
+Why is ethanol heated in a water bath rather than over a flame? :: Ethanol is flammable – turn off the Bunsen burner before heating it
+Why is the leaf rinsed in water after boiling in ethanol? :: Ethanol makes the leaf brittle; water softens it so it can be spread flat
+What does soda lime (or sodium hydroxide) do in the CO₂ experiment? :: Absorbs carbon dioxide from the air around the leaf
+What is the control in the CO₂-needed experiment? :: A leaf in a bag with sodium hydrogencarbonate (or nothing) instead of soda lime – it should contain starch
+What is the variegated leaf experiment's control? :: The green parts of the same leaf, which do contain starch
+Why is sodium hydrogencarbonate added to the water in the pondweed experiment? :: To supply carbon dioxide, so CO₂ is not limiting
+In the pondweed light-intensity practical, what is the independent variable? :: Light intensity (distance of the lamp from the pondweed)
+In the pondweed light-intensity practical, what is the dependent variable? :: Rate of photosynthesis – number of bubbles or volume of oxygen collected per minute
+In the pondweed light-intensity practical, what are the control variables? :: Temperature, CO₂ concentration (NaHCO₃), same piece/species of pondweed, time, room light (dark room)
+Why is a beaker of water placed between the lamp and pondweed? :: Acts as a heat shield so temperature stays constant (lamp gives off heat)
+Why is counting bubbles less accurate than using a gas syringe? :: Bubbles can be different sizes and are hard to count; a gas syringe/measuring cylinder measures the actual volume
+Why should the pondweed be left to acclimatise before recording? :: So the rate of photosynthesis stabilises at the new light intensity
+What gas is given off by the pondweed and how could you test it? :: Oxygen – relights a glowing splint
+How do you calculate relative light intensity from distance? :: Light intensity = 1 ÷ distance² (e.g. at 10 cm = 1/100 = 0.01)
+If the lamp distance is halved, what happens to light intensity? :: It increases four times (inverse square law)
 
 # 2e Human nutrition
 What makes up a balanced diet? :: Carbohydrates, proteins, lipids, vitamins, minerals, water and dietary fibre in the right proportions
@@ -118,6 +281,53 @@ How is the small intestine (ileum) adapted for absorption? :: Very long; villi a
 What is absorbed in the large intestine (colon)? :: Water
 Describe how to measure the energy in a food sample. :: Burn a known mass of food under a boiling tube containing a known volume of water; measure temperature rise ;; energy (J) = mass of water (g) × 4.2 × temperature change
 How do you calculate energy per gram of food? :: Energy (J) = mass of water × 4.2 × ΔT, then divide by mass of food burned
+## Diet – extra detail
+What is a deficiency disease caused by lack of vitamin C? :: Scurvy
+What is a deficiency disease caused by lack of vitamin D? :: Rickets (soft, weak bones)
+What is a deficiency disease caused by lack of iron? :: Anaemia (tiredness – less haemoglobin to carry oxygen)
+What is the deficiency effect of lack of vitamin A? :: Poor night vision (night blindness) and dry skin
+Why is water needed in the diet? :: For chemical reactions in cells, as a solvent, for transport in blood and to replace water lost in sweat, urine and breath
+Why does a pregnant woman need more energy and nutrients? :: To support the growth of the fetus (and extra iron and calcium for its blood and bones)
+Why does an active person need more energy than an inactive person? :: Muscles respire more to release energy for contraction
+Why do teenagers need more energy than young children or the elderly? :: They are growing rapidly and are usually more active
+Why do males generally need more energy than females? :: They are usually larger with more muscle mass
+## Digestion – extra detail
+Why does food need to be digested? :: Large insoluble molecules must be broken into small soluble molecules that can be absorbed into the blood
+What happens to food in the mouth? :: Teeth chew it (mechanical digestion) increasing surface area; saliva contains amylase to start digesting starch; food is formed into a bolus
+What is the role of the oesophagus? :: Carries food from the mouth to the stomach by peristalsis
+What happens in the stomach? :: Muscular walls churn food; pepsin (protease) digests protein; hydrochloric acid kills bacteria and gives optimum pH
+What is the role of the pancreas in digestion? :: Secretes pancreatic juice containing amylase, protease (trypsin) and lipase into the duodenum
+What is the role of the duodenum? :: First part of the small intestine – receives bile and pancreatic juice; digestion continues
+What is the role of the ileum? :: Last part of small intestine – digestion completed and digested food absorbed into the blood via villi
+What is the role of the rectum? :: Stores faeces before egestion
+What is the role of the liver in digestion? :: Makes bile
+What are the products of protein digestion? :: Amino acids
+What are the products of starch digestion? :: Maltose (by amylase), then glucose (by maltase)
+What are the products of lipid digestion? :: Fatty acids and glycerol
+Where is pepsin made and what is its optimum pH? :: In the stomach wall; acidic, about pH 2
+Where is trypsin made? :: In the pancreas (acts in the small intestine)
+What is emulsification? :: Breaking large fat droplets into many small droplets (by bile), giving a larger surface area for lipase to act on
+Does bile contain enzymes? :: No – it emulsifies fats and neutralises acid but does not digest chemically
+What is a villus? :: A finger-like projection of the small intestine wall that increases surface area for absorption
+What is a lacteal? :: A lymph vessel in the centre of a villus that absorbs fatty acids and glycerol
+Why does a villus have a good blood supply? :: Capillaries carry absorbed food away, keeping a steep concentration gradient for diffusion
+Why is the wall of a villus only one cell thick? :: Short diffusion distance so absorption is fast
+Why do villus cells have microvilli and many mitochondria? :: Microvilli increase surface area further; mitochondria release energy for active transport of glucose and amino acids
+Where do absorbed glucose and amino acids go after absorption? :: Into the capillaries, then the hepatic portal vein to the liver
+What is assimilation? :: When absorbed food molecules are used by body cells to build new molecules (e.g. amino acids → proteins)
+What is egestion? :: Removal of undigested food (faeces) from the anus
+How are circular and longitudinal muscles involved in peristalsis? :: Circular muscle contracts behind the food (squeezing it), longitudinal muscle contracts in front (widening the gut), pushing food along
+## Energy in food practical
+In the food-burning practical, what is the independent variable? :: Type of food
+In the food-burning practical, what is the dependent variable? :: Temperature rise of the water (used to calculate energy per gram)
+In the food-burning practical, name the control variables. :: Volume of water, mass of food, distance of food from the tube, starting temperature of water
+Worked example: 1 g of food raises 20 g of water by 15 °C. Energy per gram? :: Energy = 20 × 4.2 × 15 = 1260 J ;; ÷ 1 g = 1260 J/g (1.26 kJ/g)
+What does 4.2 represent in the food energy equation? :: The specific heat capacity of water – 4.2 J are needed to raise 1 g of water by 1 °C
+Why is 1 cm³ of water treated as 1 g? :: The density of water is 1 g/cm³
+Why is the energy measured lower than the true value? :: Heat lost to the air and the boiling tube; incomplete burning of the food; heat lost when moving food from the flame to the tube
+How could you reduce heat loss in the food practical? :: Use a calorimeter or insulate the tube; keep the burning food close to the tube; shield from draughts
+Why must the food be relit if it goes out? :: To make sure all the food burns completely so all its energy is released
+Give safety precautions for the food-burning practical. :: Wear eye protection; tie hair back; check for nut allergies; clamp the boiling tube; use a heatproof mat
 
 # 2f Respiration
 What is respiration? :: A chemical process in all living cells that releases energy from glucose (to make ATP)
@@ -130,6 +340,31 @@ What is ATP? :: The molecule that stores and provides energy for cells
 Why do muscles respire anaerobically during vigorous exercise? :: Not enough oxygen can be supplied, so extra energy is released without oxygen – lactic acid builds up (oxygen debt)
 Describe an investigation into heat production by germinating seeds. :: Two vacuum flasks: germinating seeds and boiled (dead) seeds, both rinsed in disinfectant; thermometers sealed with cotton wool; record temperature over days – germinating seeds get warmer
 How can hydrogencarbonate indicator show respiration? :: It turns from red to yellow as CO₂ concentration increases
+## Extra detail
+Where in the cell does aerobic respiration take place? :: Mitochondria
+Where in the cell does anaerobic respiration take place? :: Cytoplasm
+Is respiration the same as breathing? :: No – respiration is a chemical reaction in cells releasing energy; breathing (ventilation) moves air in and out of the lungs
+Give uses of the energy released by respiration. :: Muscle contraction (movement), active transport, making large molecules (e.g. proteins), cell division, keeping warm (mammals and birds), nerve impulses
+C: Respiration releases energy in the form of {{c1::ATP}}, which provides energy for cells.
+Is respiration exothermic or endothermic? :: Exothermic – it releases energy, some as heat
+Why does anaerobic respiration release less energy than aerobic? :: Glucose is only partly broken down – energy remains in the lactic acid (or ethanol)
+What is oxygen debt? :: The extra oxygen needed after exercise to break down the lactic acid produced by anaerobic respiration
+Why do you keep breathing heavily after exercise stops? :: To repay the oxygen debt – extra oxygen is used to break down lactic acid in the liver
+What effect does lactic acid have on muscles? :: Causes muscle fatigue and cramp
+Do plants respire? :: Yes – all the time, in all living cells, day and night
+## Respiration practicals
+What does limewater show in a respiration experiment? :: Turns milky/cloudy when carbon dioxide is present
+What colour is hydrogencarbonate indicator at atmospheric CO₂ levels? :: Red (orange-red)
+What colour is hydrogencarbonate indicator when CO₂ is high? :: Yellow
+What colour is hydrogencarbonate indicator when CO₂ is low? :: Purple
+Describe an experiment to show CO₂ is produced by respiring organisms. :: Place living organisms (e.g. germinating seeds or maggots) on a gauze platform in a sealed tube above hydrogencarbonate indicator; indicator turns from red to yellow; a control with no/dead organisms stays red
+What is the control in the respiring seeds CO₂ experiment? :: A tube with boiled (dead) seeds or glass beads of the same volume – shows the colour change is due to living organisms
+Why are seeds rinsed in disinfectant in the heat-from-respiration experiment? :: To kill microorganisms on the seeds, which would respire and produce heat themselves
+Why are vacuum flasks used in the germinating seeds experiment? :: To insulate and reduce heat loss so any temperature rise can be measured
+Why are the flasks in the respiration experiment placed upside down and plugged with cotton wool? :: Heat rises so less is lost through the opening; cotton wool lets gases (O₂ in, CO₂ out) pass while insulating
+Why are boiled seeds used as a control in the heat experiment? :: Boiling kills the seeds (denatures enzymes) so they cannot respire – any difference is due to respiration
+What is the expected result of the heat-from-respiration experiment? :: Flask with germinating seeds gets warmer; flask with boiled seeds stays at the same temperature
+Give a safety/ethical point when using small animals such as maggots or woodlice in respiration experiments. :: Handle carefully, keep them away from the indicator (gauze) and return them to their habitat; wash hands afterwards
 
 # 2g Gas exchange
 How are leaves adapted for gas exchange? :: Stomata; air spaces in spongy mesophyll; thin leaf; large surface area
@@ -143,6 +378,45 @@ How are alveoli adapted for gas exchange? :: Huge surface area; walls one cell t
 Give the effects of smoking on the lungs. :: Tar damages cilia and coats alveoli; carbon monoxide reduces oxygen carried by haemoglobin; causes COPD (emphysema, bronchitis), lung cancer and coronary heart disease
 What does carbon monoxide in cigarette smoke do? :: Binds irreversibly to haemoglobin, reducing the oxygen-carrying capacity of the blood
 How does exercise affect breathing? :: Breathing rate and depth increase to supply more oxygen for respiration and remove CO₂
+## Plants – extra detail
+By what process do gases enter and leave a leaf? :: Diffusion (down concentration gradients through stomata and air spaces)
+Explain why there is no net gas exchange at dawn and dusk. :: Rate of photosynthesis equals rate of respiration (compensation point) – CO₂ produced is used up and O₂ produced is used
+Why do guard cells close stomata at night? :: No light for photosynthesis so CO₂ is not needed; closing reduces water loss
+Why do stomata closing in hot, dry conditions reduce photosynthesis? :: Less CO₂ can diffuse into the leaf
+Describe how to investigate the effect of light on net gas exchange in a leaf. :: Place leaves in tubes of hydrogencarbonate indicator (red); cover tubes with different layers (none, gauze, foil); include a tube with no leaf as a control; leave in light for a set time and record colours
+In the hydrogencarbonate leaf experiment, why is a tube with no leaf included? :: As a control – shows the colour change is caused by the leaf, not by light or the indicator
+In the hydrogencarbonate leaf experiment, why is the tube wrapped in foil yellow? :: In the dark the leaf only respires, so CO₂ concentration rises
+In the hydrogencarbonate leaf experiment, why is the uncovered tube purple? :: In bright light photosynthesis is faster than respiration, so CO₂ is taken up and concentration falls
+## Human thorax – extra detail
+What is the function of the trachea? :: Carries air to the bronchi; held open by C-shaped rings of cartilage
+Why does the trachea have rings of cartilage? :: To stop it collapsing when pressure falls during inhalation
+What is the role of cilia and mucus in the airways? :: Mucus (from goblet cells) traps dust and pathogens; cilia beat to sweep the mucus up to the throat to be swallowed
+What are the bronchi? :: Two tubes branching from the trachea, one to each lung
+What are bronchioles? :: Small branching tubes in the lungs that end in alveoli
+What is the role of the pleural membranes? :: Line the thorax and cover the lungs; pleural fluid between them reduces friction during breathing
+What is the role of the intercostal muscles? :: Move the ribcage up and out (inhalation) or down and in (exhalation)
+What is the role of the diaphragm? :: A sheet of muscle below the lungs; contracts and flattens to increase thorax volume during inhalation
+Explain why air enters the lungs during inhalation. :: Thorax volume increases, so pressure inside the lungs falls below atmospheric pressure; air moves in down the pressure gradient
+Why is a moist alveolar lining important? :: Gases dissolve in the moisture before diffusing across
+Why does ventilation help gas exchange in the alveoli? :: It replaces air, keeping O₂ high and CO₂ low in the alveoli – maintains a steep concentration gradient
+Which gas diffuses from the alveoli into the blood? :: Oxygen
+Which gas diffuses from the blood into the alveoli? :: Carbon dioxide
+How does inhaled air differ from exhaled air? :: Exhaled air has less oxygen (~16% vs 21%), more CO₂ (~4% vs 0.04%), more water vapour and is warmer
+## Smoking
+What does tar in cigarette smoke do? :: Damages/paralyses cilia; is carcinogenic (causes cancer); coats alveoli
+What is emphysema? :: Breakdown of alveolar walls – smaller surface area for gas exchange, causing breathlessness
+Why do smokers develop a 'smoker's cough'? :: Cilia are damaged so mucus builds up in the airways; coughing is the only way to remove it (bronchitis)
+What does nicotine do? :: Addictive drug; increases heart rate and narrows blood vessels (raises blood pressure)
+How does smoking increase the risk of coronary heart disease? :: Nicotine raises heart rate and blood pressure; carbon monoxide reduces oxygen supply; chemicals damage artery walls leading to fatty deposits and clots
+What is a carcinogen? :: A substance that causes cancer (e.g. tar)
+## Exercise and breathing practical
+Describe how to investigate the effect of exercise on breathing rate. :: Count breaths per minute at rest; exercise (e.g. step-ups) for a set time; count breaths per minute immediately after and each minute until back to resting rate; repeat and calculate means
+In the exercise and breathing practical, what is the independent variable? :: Intensity or duration of exercise
+In the exercise and breathing practical, what is the dependent variable? :: Breathing rate (breaths per minute) – or depth
+Give control variables in the exercise and breathing practical. :: Same person (or similar age, fitness, sex), same type and duration of exercise, same time intervals
+Explain why breathing rate and depth increase during exercise. :: Muscles respire faster, needing more oxygen and producing more CO₂; faster deeper breathing increases gas exchange to supply O₂ and remove CO₂
+What is recovery time? :: The time taken for breathing rate (or heart rate) to return to the resting rate after exercise – shorter in fitter people
+Give a safety precaution in the exercise practical. :: Check the person is healthy (e.g. no asthma); stop if they feel unwell; exercise on a non-slip surface
 
 # 2h Transport
 Why do multicellular organisms need transport systems? :: Small surface area to volume ratio – diffusion alone is too slow to supply all cells
@@ -167,6 +441,67 @@ Compare arteries, veins and capillaries. :: Arteries – thick muscular elastic 
 Name the blood vessels to and from the liver. :: Hepatic artery (to), hepatic vein (from), hepatic portal vein (from gut to liver)
 Name the blood vessels to and from the kidneys. :: Renal artery (to), renal vein (from)
 What is the double circulatory system? :: Blood passes through the heart twice per circuit: heart→lungs→heart (pulmonary) and heart→body→heart (systemic)
+## Plant transport – extra detail
+Describe the structure of xylem vessels. :: Long hollow tubes of dead cells with no end walls; walls thickened with lignin (strong, waterproof)
+Describe the structure of phloem. :: Living cells (sieve tubes) with perforated end walls (sieve plates) that transport dissolved sugars
+What is translocation? :: The movement of sucrose and amino acids through the phloem from where they are made (leaves) to where they are needed or stored
+Where are xylem and phloem found together? :: In vascular bundles (veins) in roots, stems and leaves
+How does water enter root hair cells? :: By osmosis – soil water is more dilute than the cell sap
+How do mineral ions enter root hair cells? :: By active transport (against the concentration gradient), using energy from respiration
+What is the transpiration stream? :: The continuous movement of water from the roots, up the xylem, to the leaves, where it evaporates and diffuses out through the stomata
+Explain how water moves up a plant. :: Water evaporates from mesophyll cells and diffuses out of stomata; this pulls water up the xylem in a continuous column (transpiration pull) from the roots
+Give three reasons why transpiration is useful to a plant. :: Transports water and mineral ions to the leaves; cools the leaf by evaporation; supplies water for photosynthesis and keeps cells turgid
+Explain why temperature increases the rate of transpiration. :: Water molecules have more kinetic energy, so evaporation and diffusion out of stomata are faster
+Explain why humidity decreases the rate of transpiration. :: More water vapour in the air reduces the concentration gradient between the leaf air spaces and the air outside
+Explain why wind increases the rate of transpiration. :: Moving air removes water vapour from around the leaf, keeping a steep concentration gradient
+Explain why light intensity increases the rate of transpiration. :: Stomata open wider in light (for photosynthesis), letting more water vapour diffuse out
+What does a potometer actually measure? :: The rate of water uptake (which is approximately equal to the rate of transpiration)
+Why is a potometer's shoot cut under water? :: To stop air bubbles entering the xylem, which would block water movement
+Why must a potometer be airtight? :: Leaks would let air in or water out, giving inaccurate readings – seal joints with petroleum jelly
+How do you reset the air bubble in a potometer? :: Open the tap of the reservoir to let water push the bubble back to the start
+How do you calculate rate of water uptake from a potometer? :: Distance moved by bubble ÷ time ;; or volume = πr² × distance, then ÷ time
+How can you change each condition when investigating transpiration with a potometer? :: Temperature – room/heater ;; Humidity – plastic bag over shoot ;; Wind – fan at different distances/speeds ;; Light – lamp at different distances
+In the potometer practical, name control variables. :: Same shoot (or same number/size of leaves), all other conditions (temperature, light, humidity, air flow), same time
+Why is water uptake not exactly equal to transpiration? :: Some water is used in photosynthesis and to keep cells turgid
+## Blood and immunity – extra detail
+What does plasma transport? :: Carbon dioxide, digested food (glucose, amino acids), urea, hormones, and heat
+What is haemoglobin? :: A red protein in red blood cells that combines with oxygen to form oxyhaemoglobin in the lungs and releases it in tissues
+Why do red blood cells have no nucleus? :: More space for haemoglobin, so more oxygen can be carried
+Why are red blood cells biconcave? :: Large surface area to volume ratio for faster diffusion of oxygen; flexible to fit through capillaries
+What is an antigen? :: A molecule (usually protein) on the surface of a cell or pathogen that triggers an immune response
+What is an antibody? :: A protein made by lymphocytes that binds to a specific antigen, helping to destroy the pathogen
+Why is an antibody specific? :: Its shape is complementary to only one particular antigen
+What are memory cells? :: Lymphocytes that remain in the blood after an infection or vaccination and can rapidly produce antibodies if the same antigen is met again
+Describe the secondary immune response. :: Faster, produces many more antibodies, lasts longer than the primary response – pathogen destroyed before symptoms appear
+Explain why a person rarely catches the same disease twice. :: Memory cells recognise the antigen and quickly make large numbers of antibodies before the pathogen can cause illness
+What is in a vaccine? :: Dead or weakened (attenuated) pathogens, or their antigens
+How does gaining immunity by vaccination differ from catching the disease? :: Vaccination gives immunity without having the disease; the body still makes its own antibodies and memory cells
+Name the protein that forms a mesh in a blood clot. :: Fibrin (made from soluble fibrinogen)
+Why is blood clotting important? :: Stops blood loss and prevents pathogens entering through a wound; forms a scab
+## Heart and circulation – extra detail
+What is the function of the atria? :: Receive blood from veins and pump it into the ventricles
+What is the function of the ventricles? :: Pump blood out of the heart into arteries (right to lungs, left to body)
+What is the septum? :: The wall separating the left and right sides of the heart – stops oxygenated and deoxygenated blood mixing
+Which side of the heart carries deoxygenated blood? :: The right side
+Which blood vessel carries oxygenated blood from the lungs to the heart? :: Pulmonary vein
+Which blood vessel carries deoxygenated blood from the heart to the lungs? :: Pulmonary artery
+What is the aorta? :: The main artery carrying oxygenated blood from the left ventricle to the body
+What is the vena cava? :: The main vein bringing deoxygenated blood from the body to the right atrium
+What do the coronary arteries do? :: Supply the heart muscle itself with oxygenated blood (glucose and oxygen)
+Why are the atrial walls thinner than the ventricle walls? :: Atria only pump blood a short distance into the ventricles
+Name the valves between the atria and ventricles. :: Atrioventricular valves – tricuspid (right) and bicuspid/mitral (left)
+Name the valves at the base of the aorta and pulmonary artery. :: Semilunar valves – prevent backflow into the ventricles
+What is coronary heart disease? :: Fatty deposits (cholesterol) build up in the coronary arteries, narrowing them and reducing blood flow (and oxygen) to the heart muscle – can cause a heart attack
+Explain how CHD can cause a heart attack. :: Narrowed coronary arteries or a blood clot block blood flow; heart muscle gets no oxygen, cannot respire and dies
+How does adrenaline affect heart rate? :: Increases heart rate (and stroke volume) to supply more oxygen and glucose to muscles
+Explain why heart rate increases during exercise. :: Muscles respire faster and need more oxygen and glucose and must remove more CO₂; a faster heart rate increases blood flow to the muscles
+Why do arteries have thick muscular and elastic walls? :: To withstand and maintain high blood pressure; elastic fibres stretch and recoil to even out the pressure
+Why do veins have valves? :: To prevent backflow of blood, because blood pressure in veins is low
+Why do veins have a large lumen? :: Reduces resistance to the flow of low-pressure blood
+How are capillaries adapted for exchange? :: Walls one cell thick (short diffusion distance); narrow, so close to cells; large network gives a big surface area
+Why is a double circulation an advantage? :: Blood returns to the heart after the lungs so it can be pumped at high pressure to the body – faster delivery of oxygen
+Describe the path of blood from the gut to the liver. :: Gut capillaries → hepatic portal vein → liver
+Name the blood vessels carrying blood to and from the lungs. :: Pulmonary artery (to), pulmonary vein (from)
 
 # 2i Excretion
 What are the excretory organs in humans? :: Lungs (CO₂), kidneys (urea, water, salts) and skin (sweat)
@@ -179,6 +514,32 @@ Where is water reabsorbed in the nephron? :: In the collecting duct (and loop of
 What is ADH and where is it released from? :: Antidiuretic hormone, released by the pituitary gland
 How does ADH control the water content of the blood? :: If blood is too concentrated, more ADH is released; it makes the collecting duct more permeable so more water is reabsorbed – small volume of concentrated urine
 What does urine contain? :: Water, urea and salts
+## Extra detail
+What is excretion? :: Removal of waste products of metabolism (e.g. CO₂, urea) from the body
+Where does the CO₂ excreted by plants come from? :: Respiration
+Where does the O₂ excreted by plants come from? :: Photosynthesis
+Where is urea made? :: In the liver, from the breakdown of excess amino acids
+What does the skin excrete? :: Sweat – water, salts and a little urea
+What is the function of the ureters? :: Carry urine from the kidneys to the bladder
+What is the function of the bladder? :: Stores urine
+What is the function of the urethra? :: Carries urine from the bladder out of the body
+Name the three main regions of a kidney. :: Cortex (outer), medulla (inner), pelvis (where urine collects before the ureter)
+What is a nephron? :: A kidney tubule – the functional unit of the kidney that filters blood and produces urine
+List the parts of a nephron in order. :: Bowman's capsule (around glomerulus) → proximal convoluted tubule → loop of Henle → distal convoluted tubule → collecting duct
+What is the glomerulus? :: A knot of capillaries inside the Bowman's capsule where ultrafiltration happens
+Why is blood in the glomerulus at high pressure? :: The afferent arteriole bringing blood in is wider than the efferent arteriole taking it away
+Which substances are not filtered into the Bowman's capsule? :: Blood cells and large proteins – too big to pass through
+What is the glomerular filtrate made of? :: Water, glucose, salts (ions) and urea
+Why is there no glucose in the urine of a healthy person? :: All glucose is selectively reabsorbed into the blood in the proximal convoluted tubule
+How is glucose reabsorbed in the proximal convoluted tubule? :: By active transport (cells have many mitochondria and microvilli)
+What is the role of the loop of Henle? :: Creates a high salt concentration in the medulla, so water can be reabsorbed from the collecting duct by osmosis
+What happens to ADH if the blood is too dilute (too much water)? :: Less ADH released; collecting duct less permeable; less water reabsorbed – large volume of dilute urine
+What detects the water content of the blood? :: The hypothalamus in the brain (signals the pituitary gland)
+C: ADH makes the walls of the {{c1::collecting duct}} more {{c2::permeable}} to water, so more water is reabsorbed into the blood.
+Why might urine be more concentrated on a hot day? :: More water lost in sweat, so blood becomes more concentrated; more ADH released and more water reabsorbed
+What is osmoregulation? :: Controlling the water content (and salt concentration) of the blood
+Why does the renal vein contain less urea than the renal artery? :: Urea is filtered out of the blood by the kidney and excreted in urine
+Why might protein be found in urine? :: The glomerulus is damaged, letting proteins through (kidney disease)
 
 # 2j Coordination and response
 What is homeostasis? :: Maintaining a constant internal environment (e.g. body temperature, blood glucose, water content)
@@ -207,6 +568,64 @@ Source and effect of FSH? :: Pituitary gland; causes an egg to mature in the ova
 Source and effect of LH? :: Pituitary gland; stimulates ovulation (release of an egg)
 Source and effect of glucagon? :: Pancreas; raises blood glucose by converting glycogen to glucose in the liver
 What is Type 1 diabetes and how is it treated? :: The pancreas does not produce enough insulin; treated with insulin injections and controlled diet
+## Homeostasis and responses – extra detail
+Why is homeostasis important? :: Keeps conditions (temperature, water, glucose) at optimum levels so enzymes and cells work properly
+What is negative feedback? :: When a change from the normal level is detected and a response is triggered that brings the level back to normal
+What is a receptor? :: A cell or organ that detects a stimulus (e.g. light receptors in the retina)
+What is an effector? :: A muscle or gland that brings about a response
+Why do organisms respond to changes in their environment? :: To increase their chances of survival (e.g. find food, avoid danger, keep internal conditions constant)
+## Plant responses
+Why is positive phototropism useful to a shoot? :: Leaves receive more light for photosynthesis
+Why is positive geotropism useful to a root? :: Roots grow down into the soil to anchor the plant and absorb water and minerals
+What is auxin? :: A plant hormone made in shoot and root tips that controls growth by cell elongation
+Explain how auxin causes a horizontal shoot to grow upwards. :: Auxin collects on the lower side due to gravity; in shoots auxin stimulates cell elongation, so the lower side grows faster and the shoot bends up
+Explain how auxin causes a horizontal root to grow downwards. :: Auxin collects on the lower side; in roots auxin inhibits cell elongation, so the upper side grows faster and the root bends down
+What happens to a shoot if its tip is removed? :: It no longer responds to light (no phototropism) because the tip makes the auxin
+What happens to a shoot if light comes from all sides (or a clinostat is used)? :: Auxin is evenly distributed, so the shoot grows straight
+## Nervous system – extra detail
+What are the three types of neurone? :: Sensory, relay and motor
+What does a sensory neurone do? :: Carries impulses from receptors to the CNS
+What does a relay neurone do? :: Carries impulses within the CNS – from sensory to motor neurones
+What does a motor neurone do? :: Carries impulses from the CNS to effectors (muscles or glands)
+How do nerve impulses travel? :: As electrical impulses along neurones
+Why are reflexes useful? :: They are rapid and automatic (don't involve the conscious brain), protecting the body from harm
+Give an example of a reflex action. :: Withdrawing the hand from a hot object; blinking; the pupil reflex
+Describe what happens at a synapse. :: Impulse arrives at the end of the neurone → neurotransmitter is released → diffuses across the gap → binds to receptors on the next neurone → new impulse triggered
+Why do synapses ensure impulses travel in one direction? :: Neurotransmitter is only released from one side and receptors are only on the other side
+## Eye – extra detail
+What is the function of the sclera? :: Tough white outer layer that protects the eye
+What is the function of the pupil? :: The hole in the iris through which light enters the eye
+What is the fovea? :: The part of the retina with the most cones – gives the sharpest, most detailed (colour) vision
+What is the blind spot? :: Where the optic nerve leaves the retina – no light receptors, so no image detected
+What is the difference between rods and cones? :: Rods – sensitive to dim light, black and white ;; Cones – work in bright light, detect colour
+How does the eye respond to dim light? :: Radial muscles of the iris contract, circular muscles relax – pupil dilates to let more light in
+Why is the pupil reflex important? :: Bright light could damage the retina; dim light – letting in more light improves vision
+What is accommodation? :: Changing the shape of the lens to focus on near or distant objects
+C: To focus on a near object, the ciliary muscles {{c1::contract}}, the suspensory ligaments {{c2::slacken}} and the lens becomes {{c3::fatter}}.
+C: To focus on a distant object, the ciliary muscles {{c1::relax}}, the suspensory ligaments {{c2::tighten}} and the lens becomes {{c3::thinner}}.
+## Thermoregulation – extra detail
+What is normal human core body temperature? :: About 37 °C
+Which part of the brain monitors body temperature? :: The hypothalamus (thermoregulatory centre)
+Where are temperature receptors found? :: In the skin and in the hypothalamus (monitoring blood temperature)
+How does sweating cool the body? :: Water in sweat evaporates from the skin surface, using heat energy from the body
+Explain how vasodilation helps cool the body. :: Arterioles supplying skin capillaries widen, so more blood flows near the surface and more heat is lost by radiation
+Explain how vasoconstriction helps keep the body warm. :: Arterioles supplying skin capillaries narrow, so less blood flows near the surface and less heat is lost
+How does shivering warm the body? :: Rapid muscle contractions increase respiration, which releases heat
+Why does hair standing up help keep humans/animals warm? :: Erector muscles contract, raising hairs that trap a layer of insulating air
+Do blood vessels move up and down in the skin during thermoregulation? :: No – the arterioles widen or narrow (vasodilation/vasoconstriction); vessels don't move
+## Hormones – extra detail
+What is a hormone? :: A chemical messenger secreted by an endocrine gland into the blood, which carries it to target organs
+What is a target organ? :: An organ affected by a particular hormone
+How are hormones transported? :: In the blood plasma
+Explain how blood glucose concentration is lowered after a meal. :: Pancreas detects high glucose and secretes insulin; insulin makes liver and muscle cells take up glucose and convert it to glycogen; blood glucose falls
+Explain how blood glucose concentration is raised when it is too low. :: Pancreas secretes glucagon; glucagon makes the liver convert glycogen into glucose, released into the blood
+Where is glycogen stored? :: In the liver and muscles
+What causes Type 1 diabetes? :: The pancreas cells that make insulin are destroyed (by the immune system) so little or no insulin is produced
+What happens to blood glucose in an untreated person with Type 1 diabetes? :: It rises too high after meals because glucose is not taken up and stored – glucose may appear in urine
+Why must people with Type 1 diabetes monitor their diet and blood glucose? :: To match insulin doses to carbohydrate intake and activity, avoiding blood glucose going too high or too low
+Why is insulin injected rather than taken by mouth? :: It is a protein and would be digested in the gut
+What are the effects of adrenaline on the body? :: Increases heart rate and breathing rate, increases blood glucose (glycogen → glucose), dilates pupils, diverts blood to muscles
+What are the adrenal glands? :: Glands on top of the kidneys that secrete adrenaline
 
 # 3a Reproduction
 Compare sexual and asexual reproduction. :: Sexual – two parents, gametes fuse, offspring genetically varied ;; Asexual – one parent, no gametes, offspring genetically identical (clones)
@@ -224,8 +643,67 @@ What are the roles of oestrogen and progesterone in the menstrual cycle? :: Oest
 What happens on approximately day 14 of the menstrual cycle? :: Ovulation – an egg is released from the ovary (triggered by LH)
 What is the role of the placenta? :: Exchange of materials between mother and fetus: oxygen and nutrients into fetal blood, CO₂ and urea out; acts as a barrier to some toxins and pathogens
 What is the role of amniotic fluid? :: Protects the developing embryo from bumps
-What are the secondary sexual characteristics in males? :: Voice deepens, growth of facial/body hair, testes produce sperm, muscles develop (testosterone)
+What are the secondary sexual characteristics in males? :: Voice deepens, growth of facial and body hair, muscles develop, penis and testes grow (caused by testosterone); sperm production starts at puberty but is not itself a secondary sexual characteristic
 What are the secondary sexual characteristics in females? :: Breasts develop, hips widen, menstruation begins, pubic and underarm hair (oestrogen)
+## Plant reproduction – extra detail
+What is a gamete? :: A sex cell (e.g. sperm, egg, pollen nucleus, ovule) – haploid
+What is a zygote? :: The fertilised egg cell formed when two gamete nuclei fuse – diploid
+Give one advantage of sexual reproduction. :: Produces genetic variation, so a population is more likely to survive changes in the environment or disease
+Give one advantage of asexual reproduction. :: Only one parent needed; fast; offspring identical to a successful parent
+Give one disadvantage of asexual reproduction. :: No genetic variation, so all offspring may be killed by a disease or environmental change
+What is the function of the sepals? :: Protect the flower when it is a bud
+What is the function of petals? :: Attract insects (in insect-pollinated flowers)
+What is the stamen and what does it do? :: The male part: anther (makes pollen) on a filament (holds the anther up)
+What is the carpel? :: The female part: stigma, style and ovary (containing ovules)
+What is the function of the stigma? :: Receives pollen during pollination
+What is the function of the ovary in a flower? :: Contains the ovules; becomes the fruit after fertilisation
+What is the function of nectar? :: A sugary liquid that attracts insects
+Why do wind-pollinated flowers produce huge amounts of pollen? :: Most pollen is lost because wind transfer is random – increases chance of reaching a stigma
+Why is wind-pollinated pollen light and smooth? :: So it can be carried easily by the wind
+Why do wind-pollinated flowers have feathery stigmas? :: Large surface area to catch pollen from the air
+What is the difference between self- and cross-pollination? :: Self – pollen to stigma of the same plant ;; Cross – pollen to stigma of a different plant of the same species (more variation)
+After fertilisation, what does the zygote become? :: The embryo of the seed
+Why do seeds need water to germinate? :: To activate enzymes and allow the seed to swell and the testa to split; for transport of food stores
+Why do seeds need oxygen to germinate? :: For aerobic respiration to release energy for growth
+Why do seeds need a suitable temperature to germinate? :: For enzymes to work (too cold – slow; too hot – denatured)
+Describe how food stores are used during germination. :: Enzymes digest starch to sugars and proteins to amino acids; these are used for respiration and growth until leaves can photosynthesise
+## Germination practical
+Describe an experiment to investigate the conditions needed for germination. :: Set up tubes of seeds on cotton wool: one with water, oxygen and warmth (control); one dry (no water); one in the fridge (cold); one with boiled cooled water and oil layer (no oxygen); leave several days and count seeds germinated
+Why is boiled water covered with oil used in the germination practical? :: Boiling removes dissolved oxygen; the oil layer stops oxygen dissolving back in
+In the germination practical, what is the dependent variable? :: Number (or percentage) of seeds that germinate
+In the germination practical, name control variables. :: Same type, number and age of seeds; same time; all conditions the same except the one being tested
+How do you calculate percentage germination? :: Number of seeds germinated ÷ total number of seeds × 100
+Why use many seeds in each tube in the germination practical? :: Some seeds may not be viable; a larger sample makes results more reliable
+## Asexual reproduction in plants
+What is a runner? :: A sideways stem growing along the ground that forms new plants (e.g. strawberry)
+Why do gardeners take cuttings? :: Quick and cheap way to produce many genetically identical plants with desirable characteristics
+Why is rooting powder used on cuttings? :: Contains auxin (plant hormone) that stimulates root growth
+Why are cuttings covered with a plastic bag? :: Keeps humidity high to reduce water loss by transpiration (they have no roots yet)
+## Human reproduction – extra detail
+What are the functions of the testes? :: Produce sperm and the hormone testosterone
+What is the function of the sperm duct? :: Carries sperm from the testes to the urethra
+What do the prostate gland and seminal vesicles do? :: Add fluid containing nutrients to sperm to make semen
+What is the function of the scrotum? :: Holds testes outside the body to keep them slightly cooler for sperm production
+What is the function of the penis? :: Transfers semen into the vagina; contains the urethra
+What are the functions of the ovaries? :: Produce eggs and the hormones oestrogen and progesterone
+What is the function of the oviduct (fallopian tube)? :: Carries the egg from the ovary to the uterus; site of fertilisation
+What is the function of the uterus? :: Where the embryo implants and the fetus develops
+What is the function of the cervix? :: Ring of muscle at the entrance to the uterus; holds the baby in during pregnancy
+What is the function of the vagina? :: Receives sperm during intercourse; birth canal
+How long is a typical menstrual cycle? :: About 28 days
+What happens in days 1–5 of the menstrual cycle? :: Menstruation – the uterus lining breaks down and is lost
+What is the role of FSH in the menstrual cycle? :: Made by pituitary; causes an egg (follicle) to mature in the ovary and stimulates the ovary to produce oestrogen
+What is the role of LH in the menstrual cycle? :: Made by pituitary; triggers ovulation (release of the egg) around day 14
+What happens if the egg is not fertilised? :: Progesterone levels fall, so the uterus lining breaks down (menstruation)
+What happens to progesterone if pregnancy occurs? :: Stays high, maintaining the uterus lining so menstruation does not happen
+What is implantation? :: When the embryo (ball of cells) embeds in the uterus lining
+Name the hormones made by the pituitary gland in the menstrual cycle. :: FSH and LH
+Which hormone stimulates the release of LH? :: Oestrogen
+How is the placenta adapted for exchange? :: Large surface area (villi); thin walls (short diffusion distance); good blood supply from mother and fetus maintains concentration gradients
+Why does the mother's blood not mix with the fetus's blood? :: Prevents blood pressure damage, mixing of different blood groups and transfer of some pathogens
+What is the umbilical cord? :: Connects the fetus to the placenta; contains blood vessels (artery and vein)
+Name harmful substances that can cross the placenta. :: Nicotine, alcohol, some drugs, carbon monoxide and some viruses (e.g. rubella, HIV)
+Which hormones cause secondary sexual characteristics at puberty? :: Testosterone (males) and oestrogen (females)
 
 # 3b Inheritance
 What is a gene? :: A section of DNA that codes for a specific protein
@@ -247,10 +725,69 @@ What is meiosis and where does it happen? :: Cell division producing four geneti
 Why does meiosis produce variation? :: Chromosomes are shuffled (independent assortment) so each gamete gets a different combination; plus random fertilisation
 What are the two causes of variation? :: Genetic (alleles inherited) and environmental (e.g. diet, climate) – often both
 What is a mutation? :: A rare, random change in the base sequence of DNA; most have no effect, some are harmful, a few are beneficial
-What increases the rate of mutation? :: Ionising radiation (gamma, X-rays, UV) and some chemicals (mutagens, e.g. in tobacco smoke)
+What increases the rate of mutation? :: Ionising radiation (gamma rays, X-rays), UV light and some chemicals (mutagens, e.g. in tobacco smoke)
 Describe evolution by natural selection. :: Variation exists in a population; some individuals have alleles that make them better adapted; they survive and reproduce more; pass on the advantageous alleles; over many generations the allele frequency increases
 Explain how antibiotic resistance develops in bacteria. :: A random mutation makes a bacterium resistant; antibiotics kill non-resistant bacteria; resistant ones survive and reproduce rapidly, passing on the resistance allele
 What does a pedigree diagram show? :: How a characteristic (often a genetic disorder) is inherited through generations of a family
+## DNA and protein synthesis
+What is the genome? :: The entire DNA of an organism
+Where are chromosomes found in a cell? :: In the nucleus
+Name the four bases in DNA. :: Adenine (A), thymine (T), cytosine (C) and guanine (G)
+Which bases pair together in DNA? :: A with T; C with G (complementary base pairing)
+How does a gene code for a protein? :: The sequence of bases in the gene determines the order of amino acids in the protein
+How many bases code for one amino acid? :: Three – a triplet (codon)
+What is RNA? :: A single-stranded molecule similar to DNA; contains uracil (U) instead of thymine
+What happens during transcription? :: In the nucleus, the DNA of a gene unzips and a complementary mRNA copy is made of one strand
+What happens during translation? :: At a ribosome in the cytoplasm, the mRNA codons are read; tRNA brings specific amino acids, which join in the correct order to make a protein
+What is the role of tRNA? :: Carries a specific amino acid to the ribosome; its anticodon pairs with the complementary mRNA codon
+Why does mRNA leave the nucleus but DNA does not? :: DNA is too large and must be protected; mRNA is a small copy that can pass through nuclear pores to the ribosomes
+Which base in RNA pairs with adenine? :: Uracil (U)
+How can a mutation in a gene change a protein? :: Changes the base sequence, which can change the amino acid sequence, so the protein folds into a different shape and may not work (e.g. enzyme active site changes)
+Why do most mutations have no effect? :: They may occur in non-coding DNA, or the changed triplet may still code for the same amino acid
+## Genetics – extra detail
+What is monohybrid inheritance? :: Inheritance of a single characteristic controlled by one gene
+How do you draw a genetic diagram? :: Parent phenotypes → parent genotypes → gametes (circled) → Punnett square of offspring genotypes → offspring phenotypes and ratio
+What is the expected ratio of offspring from Aa × aa? :: 1 : 1 (heterozygous dominant : homozygous recessive)
+What offspring result from AA × aa? :: All Aa – all show the dominant phenotype
+Two heterozygous parents: what is the probability a child is homozygous recessive? :: 1 in 4 (25%, 0.25)
+Two heterozygous parents: what proportion of offspring with the dominant phenotype are heterozygous? :: 2 out of 3
+Why might an actual ratio differ from the expected ratio? :: Fertilisation is random, so small numbers of offspring may not match the predicted ratio
+What is the probability of having a boy (or girl) at each birth? :: 50% (1 in 2) – independent of previous births
+How can you tell from a pedigree that a trait is recessive? :: Two unaffected parents have an affected child – both parents must be heterozygous carriers
+What is a carrier? :: A heterozygous person who has one recessive allele for a disorder but does not show it
+What are the possible genotypes for blood group A? :: IᴬIᴬ or IᴬIᴼ
+What are the possible genotypes for blood group B? :: IᴮIᴮ or IᴮIᴼ
+What is the genotype for blood group O? :: IᴼIᴼ
+What is the genotype for blood group AB? :: IᴬIᴮ – both alleles expressed (codominance)
+Can parents with blood groups A and B have a child with blood group O? :: Yes – if they are IᴬIᴼ and IᴮIᴼ (1 in 4 chance)
+Which sex chromosomes do the gametes of a man contain? :: Half of sperm carry X, half carry Y
+Which sex chromosome do all eggs contain? :: X
+What is a diploid cell? :: A cell with two sets of chromosomes (46 in humans) – body cells
+What is a haploid cell? :: A cell with one set of chromosomes (23 in humans) – gametes
+Why must gametes be haploid? :: So when they fuse at fertilisation the zygote has the normal diploid number
+## Cell division – extra detail
+How many cells does mitosis produce and are they identical? :: Two genetically identical diploid daughter cells
+What happens to chromosomes before mitosis? :: Each chromosome is copied (DNA replicates) to form two identical chromatids
+Describe what happens during mitosis. :: Chromosomes are copied, line up in the middle of the cell, the copies are pulled to opposite ends, and the cell divides into two identical cells
+Give four uses of mitosis. :: Growth, repair of damaged tissue, asexual reproduction and cloning
+How many divisions happen in meiosis? :: Two – producing four haploid cells
+Give the differences between mitosis and meiosis. :: Mitosis – 1 division, 2 cells, diploid, identical, growth/repair ;; Meiosis – 2 divisions, 4 cells, haploid, genetically different, gametes
+Why does random fertilisation increase variation? :: Any male gamete can fuse with any female gamete, giving huge numbers of possible combinations of alleles
+## Variation and evolution – extra detail
+Give an example of variation caused only by genes. :: Blood group (or eye colour, inherited disorders)
+Give an example of variation caused by the environment. :: Scars, language spoken, tattoos
+Give an example of variation caused by genes and environment together. :: Height or body mass (also skin colour)
+What is continuous variation? :: A characteristic with a range of values (e.g. height) – often affected by genes and environment; shown by a histogram/line graph
+What is discontinuous variation? :: A characteristic with distinct categories (e.g. blood group) – usually genetic; shown by a bar chart
+What is the source of new alleles? :: Mutation
+Can a mutation be beneficial? :: Rarely – it may give an advantage (e.g. antibiotic resistance in bacteria), increasing survival
+What is an adaptation? :: A feature that helps an organism survive and reproduce in its environment
+Who proposed the theory of evolution by natural selection? :: Charles Darwin (and Alfred Russel Wallace)
+What does 'survival of the fittest' mean? :: Individuals best adapted to the environment are more likely to survive and reproduce
+Why does natural selection cause allele frequencies to change? :: Better-adapted individuals reproduce more, so their advantageous alleles are passed on to more offspring
+Why does antibiotic resistance spread quickly? :: Bacteria reproduce very rapidly (and can transfer plasmids), so resistant bacteria soon form large populations
+How can the development of antibiotic resistance be reduced? :: Only prescribe antibiotics when needed (not for viruses); complete the full course; avoid overuse in farming
+Why don't antibiotics cure viral infections? :: Viruses live inside cells and have no cell structures for antibiotics to act on
 
 # 4 Ecology and environment
 Define population, community, habitat and ecosystem. :: Population – all organisms of one species in an area ;; Community – all populations in an area ;; Habitat – where an organism lives ;; Ecosystem – a community and its physical environment interacting
@@ -269,6 +806,65 @@ What are the effects of sulfur dioxide and how is it produced? :: Produced by bu
 How does carbon monoxide pollution form and what does it do? :: Incomplete combustion of fuels; binds to haemoglobin reducing oxygen transport
 Describe eutrophication. :: Fertiliser/sewage runs into water → algae grow rapidly (algal bloom) → block light, plants die → decomposers break down dead matter and use up oxygen → fish and other organisms die
 What are the effects of deforestation? :: Loss of habitat and biodiversity; soil erosion; less CO₂ absorbed and more released (burning) – increases greenhouse effect; disturbs water cycle; leaching of nutrients
+## Sampling practicals – extra detail
+Why must quadrats be placed randomly? :: To avoid bias, so the sample is representative of the whole area
+How can quadrats be placed randomly? :: Lay two tape measures at right angles and use a random number generator to pick coordinates
+Worked example: mean 6 daisies per 0.25 m² quadrat, field 400 m². Population? :: 6 ÷ 0.25 = 24 per m² ;; 24 × 400 = 9600 daisies
+How can you improve the accuracy of a quadrat population estimate? :: Use more quadrats (larger sample) and calculate a mean
+What is percentage cover? :: The percentage of a quadrat's area covered by a species – used when individual plants are hard to count (e.g. grass)
+What is a belt transect? :: Placing quadrats continuously or at regular intervals along a line to study how distribution changes across a habitat
+Give abiotic factors that might be measured along a transect. :: Light intensity (light meter), soil moisture, soil pH, temperature
+Why is a transect used instead of random sampling? :: There is a gradient (change in conditions) across the area, e.g. from shade to open ground or from sea to land
+Give safety precautions in fieldwork. :: Wear gloves/wash hands (soil, plants, animal waste); be aware of water/tides; avoid hazardous plants and animals; work in groups
+What is a limitation of using quadrats for animals? :: Most animals move away, so quadrats are best for plants and slow-moving animals
+## Feeding relationships – extra detail
+What does an arrow in a food chain show? :: The direction of energy transfer (from the organism eaten to the eater)
+What is a trophic level? :: A feeding level (position) in a food chain
+What is a tertiary consumer? :: An animal that eats secondary consumers
+What is a food web? :: A network of interconnected food chains in an ecosystem
+Why can a change in one population affect others in a food web? :: Organisms are interdependent – e.g. losing prey reduces food for predators, and the predator's other prey may then be eaten more
+What does a pyramid of numbers show? :: The number of organisms at each trophic level
+Why can a pyramid of numbers be an odd shape? :: Organisms vary in size – e.g. one large tree supports many caterpillars (inverted base)
+What does a pyramid of energy show? :: The energy transferred at each trophic level (per unit area per year) – always pyramid-shaped
+Why is a pyramid of energy always pyramid-shaped? :: Energy is lost at every trophic level, so each level has less than the one below
+What is the original source of energy for almost all food chains? :: The Sun (light energy captured by producers in photosynthesis)
+How do you calculate efficiency of energy transfer? :: Energy transferred to next level ÷ energy at previous level × 100
+Worked example: grass 10 000 kJ, rabbit 1000 kJ. Efficiency? :: 1000 ÷ 10 000 × 100 = 10%
+What is the role of decomposers in ecosystems? :: Break down dead organisms and waste, releasing CO₂ and recycling mineral ions (e.g. nitrates) back into the soil
+Name two types of decomposer. :: Bacteria and fungi
+## Carbon cycle – extra detail
+Which process removes CO₂ from the atmosphere? :: Photosynthesis
+Which processes return CO₂ to the atmosphere? :: Respiration (plants, animals, decomposers) and combustion (burning fossil fuels and wood)
+How are fossil fuels formed? :: Dead organisms that did not decay were compressed over millions of years, locking up carbon as coal, oil and gas
+How does carbon pass between organisms? :: As carbon compounds (e.g. carbohydrates, proteins) through feeding
+## Nitrogen cycle – extra detail
+Why do plants and animals need nitrogen? :: To make proteins (amino acids) and DNA
+Why can't plants use nitrogen gas from the air? :: It is very unreactive; plants can only absorb nitrogen as nitrate (or ammonium) ions
+What do nitrogen-fixing bacteria do? :: Convert nitrogen gas (N₂) into ammonium/nitrogen compounds – free-living in soil or in root nodules of legumes (peas, beans, clover)
+What do nitrifying bacteria do? :: Convert ammonium ions into nitrites and then nitrates (need oxygen)
+What do denitrifying bacteria do? :: Convert nitrates back into nitrogen gas – in waterlogged (anaerobic) soils
+What do decomposers do in the nitrogen cycle? :: Break down proteins and urea in dead matter and waste into ammonium ions (ammonification/putrefaction)
+How does lightning contribute to the nitrogen cycle? :: Its energy makes nitrogen react with oxygen, forming nitrogen oxides that dissolve in rain to make nitrates
+Why do farmers plough or drain soil? :: Adds oxygen – helps nitrifying bacteria and reduces denitrifying bacteria (which are favoured by waterlogged soil)
+Why do farmers grow legumes in crop rotation? :: Nitrogen-fixing bacteria in root nodules increase the nitrate content of the soil
+## Human impact – extra detail
+Explain the greenhouse effect. :: Short-wave radiation from the Sun passes through the atmosphere; Earth emits longer-wave infrared radiation; greenhouse gases absorb and re-radiate it, warming the Earth
+What is the enhanced greenhouse effect? :: Human activities increase greenhouse gas levels, trapping more heat and causing global warming
+Give human sources of carbon dioxide. :: Burning fossil fuels, deforestation (burning trees)
+Give human sources of methane. :: Cattle (digestion), rice paddy fields, landfill (decomposition)
+Give a human source of nitrous oxide. :: Fertilisers (bacteria in soil) and vehicle engines
+Give a source of CFCs. :: Old aerosols, refrigerators and air conditioning
+How does acid rain affect lakes? :: Lowers pH of water, killing fish and other aquatic organisms (also releases toxic aluminium)
+How can sulfur dioxide pollution be reduced? :: Remove sulfur from fuels; use scrubbers in power-station chimneys; use renewable energy
+Explain why fish die during eutrophication. :: Dead plants and algae are broken down by aerobic bacteria (decomposers), which use up dissolved oxygen; fish cannot respire
+Why do plants under an algal bloom die? :: Algae block the light, so plants cannot photosynthesise
+How does untreated sewage cause water pollution? :: Adds nutrients (eutrophication) and organic matter for bacteria to decompose (uses up oxygen); also contains pathogens
+How can eutrophication be reduced? :: Use less fertiliser; don't apply before rain; leave buffer strips by rivers; treat sewage
+How does deforestation increase atmospheric CO₂? :: Fewer trees to remove CO₂ by photosynthesis; burning or decay of trees releases CO₂
+How does deforestation cause soil erosion? :: Without tree roots to hold soil and leaves to shelter it, rain washes the soil away
+How does deforestation lead to leaching? :: Without tree roots taking up minerals, rain washes nutrients out of the soil, making it infertile
+How does deforestation affect the water cycle? :: Less transpiration, so less water vapour and rainfall; more surface run-off and flooding
+How does deforestation reduce biodiversity? :: Habitats are destroyed, so many species lose food and shelter and may become extinct
 
 # 5 Use of biological resources
 How do glasshouses increase crop yield? :: Control temperature, light and CO₂ (e.g. paraffin heaters raise CO₂ and temperature) – removes limiting factors
@@ -291,3 +887,70 @@ Give an example of a GM crop and its advantage. :: Insect-resistant crops (Bt ge
 How are plants cloned by micropropagation? :: Small pieces (explants) of a plant are grown on agar with nutrients and hormones in sterile conditions – many identical plants quickly
 Describe how Dolly the sheep was cloned. :: Nucleus removed from an egg cell; nucleus from a body (udder) cell of the donor inserted; electric shock to make it divide; embryo implanted into a surrogate mother
 Give uses of cloned transgenic animals. :: Producing human proteins/antibodies in their milk; organs for transplantation
+## Food production – extra detail
+What are polythene tunnels used for? :: Like glasshouses – cheaply raise temperature and protect crops, allowing longer growing seasons and higher yields
+Explain why burning paraffin in a glasshouse increases yield. :: Releases CO₂ and heat – both increase the rate of photosynthesis if they are limiting
+Why is there no point increasing CO₂ in a glasshouse if light is limiting? :: The rate of photosynthesis is limited by light, so extra CO₂ will not increase it further (wasted money)
+Why do growers use artificial lighting in glasshouses? :: To increase light intensity and length of 'day', so photosynthesis continues for longer
+Compare manure and artificial fertilisers. :: Manure – cheap, adds organic matter and improves soil structure, releases nutrients slowly, exact composition unknown ;; Artificial – exact amounts of minerals (NPK), quick acting, more likely to leach and cause eutrophication
+Which three main elements are in NPK fertilisers? :: Nitrogen, phosphorus and potassium
+What is a pest? :: An organism that damages crops or livestock (e.g. insects, weeds, fungi)
+Give the advantages of chemical pesticides. :: Fast acting, easy to apply, kill most of the pests
+Give the disadvantages of chemical pesticides. :: May kill harmless/beneficial species; can bioaccumulate in food chains; pests can become resistant; must be reapplied
+Give the advantages of biological control. :: Specific to the pest; no chemicals; long-lasting (predator reproduces); pests don't become resistant
+Give the disadvantages of biological control. :: Slow; doesn't eradicate the pest completely; the introduced organism may become a pest or eat other species
+What is bioaccumulation? :: When a substance (e.g. pesticide) builds up in concentration along a food chain, reaching toxic levels in top predators
+## Microorganisms – extra detail
+Write the equation for the respiration of yeast in bread making. :: glucose → ethanol + carbon dioxide (anaerobic)
+What happens to the ethanol produced by yeast during baking? :: It evaporates during baking
+Why is bread dough left in a warm place to rise? :: Yeast enzymes work best at warm temperatures, so respiration and CO₂ production are faster
+Why does baking stop the bread rising? :: High temperature kills the yeast (denatures enzymes)
+Describe how to investigate the effect of temperature on anaerobic respiration in yeast. :: Mix yeast with glucose (sugar) solution; cover with a layer of oil (anaerobic); place in water baths at different temperatures; measure the volume of CO₂ (gas syringe/bubbles counted) in a set time
+In the yeast respiration practical, what is the independent variable? :: Temperature (or sugar concentration / type of sugar)
+In the yeast respiration practical, what is the dependent variable? :: Volume of CO₂ produced per minute (or number of bubbles, or height of dough rise)
+In the yeast respiration practical, what are the control variables? :: Mass/concentration of yeast, concentration and volume of sugar solution, time, pH
+Why is a layer of oil put on the yeast mixture? :: To stop oxygen entering, so respiration is anaerobic
+Why should the yeast mixture be left to acclimatise before measuring? :: So it reaches the water bath temperature and the rate becomes steady
+Describe the expected results of the yeast temperature practical. :: CO₂ production increases up to an optimum (about 35–40 °C) then falls as enzymes denature
+How can you test the gas produced by yeast? :: Bubble it through limewater – turns milky/cloudy (CO₂)
+What does pasteurising milk do in yoghurt making? :: Heats it (about 85–95 °C) to kill harmful bacteria that would compete or cause disease
+Why is milk cooled to about 40 °C before adding the bacteria? :: It's the optimum temperature for Lactobacillus enzymes; hotter would kill them
+Why does lactic acid help preserve yoghurt? :: The low pH stops the growth of most harmful microorganisms
+Why does milk clot (thicken) when making yoghurt? :: The lactic acid lowers the pH, causing milk proteins to coagulate
+## Fermenters
+What is the function of the water jacket in a fermenter? :: Removes heat produced by respiration of microorganisms, keeping the temperature at the optimum
+Why is air pumped into a fermenter? :: Supplies oxygen for aerobic respiration of the microorganisms
+What is the function of the stirrer (paddles) in a fermenter? :: Mixes nutrients, oxygen and microorganisms evenly and spreads heat
+Why are pH probes used in fermenters? :: To monitor pH and keep it at the optimum for the microorganism's enzymes (acid/alkali added)
+How are aseptic conditions kept in a fermenter? :: Sterilise the vessel with steam before use; filter incoming air; sterilise nutrients
+What nutrients are supplied in a fermenter? :: A carbon source such as glucose/sugar and a nitrogen source such as amino acids or ammonium salts
+Give examples of products made in fermenters. :: Penicillin (antibiotic), insulin (by GM bacteria), mycoprotein
+## Fish farming – extra detail
+Why are fish kept in cages or tanks in fish farming? :: Restricts movement so less energy is wasted (more goes into growth) and protects them from predators
+Why is water quality monitored in fish farms? :: Oxygen levels, temperature and waste must be controlled so fish stay healthy and grow
+Why is disease a problem in fish farms and how is it controlled? :: Fish are crowded, so disease spreads quickly; controlled by antibiotics, pesticides or biological control (e.g. wrasse eating sea lice)
+Why are fish of different sizes or ages kept separately? :: To stop larger fish eating smaller ones (intraspecific predation)
+Why are farmed fish fed a high-protein diet? :: For fast growth – protein is used to make new tissue
+Give a disadvantage of fish farming. :: Waste and uneaten food cause water pollution (eutrophication); disease and parasites spread to wild fish; antibiotic overuse
+## Selective breeding – extra detail
+Describe the steps in selective breeding. :: Choose parents with the desired characteristic; breed them; select the best offspring; breed these together; repeat over many generations
+Give a disadvantage of selective breeding. :: Reduces genetic variation (inbreeding), so organisms are more vulnerable to disease and inherited disorders
+## Genetic modification – extra detail
+What is genetic modification (genetic engineering)? :: Transferring a gene from one organism into another (often a different species)
+What are sticky ends? :: Short single-stranded overhanging sections of DNA left after cutting with restriction enzymes, which allow DNA pieces to join by complementary base pairing
+Why must the same restriction enzyme be used to cut the gene and the plasmid? :: So they have complementary sticky ends that can pair up
+What is recombinant DNA? :: DNA formed by joining DNA from two different sources (e.g. human gene + bacterial plasmid)
+Why are bacteria used to make human insulin? :: They reproduce rapidly, so large amounts of insulin are made quickly and cheaply; the insulin is identical to human insulin
+How are genes inserted into plants? :: Using a bacterium (Agrobacterium) or virus as a vector carrying the recombinant plasmid
+Give advantages of GM crops. :: Higher yields; resistance to pests, herbicides or drought; improved nutrition (e.g. Golden Rice with vitamin A)
+Give concerns about GM crops. :: Genes may spread to wild plants (e.g. herbicide-resistant weeds); effects on insects and food chains; possible long-term health effects; seed costs for farmers
+## Cloning – extra detail
+What is a clone? :: A genetically identical copy of an organism
+Describe the steps of micropropagation. :: Take small pieces (explants) from the tips of shoots; sterilise; place on sterile agar with nutrients and plant hormones (auxin); grow into plantlets; transfer to compost
+Why are aseptic conditions needed in micropropagation? :: Microorganisms would grow on the nutrient agar and kill or compete with the explants
+Give advantages of micropropagation. :: Many identical plants quickly, all year round, in a small space; keeps desirable characteristics; disease-free plants
+Give a disadvantage of micropropagation. :: No genetic variation – all could be wiped out by one disease; expensive; skilled work
+Why is Dolly genetically identical to the udder-cell donor and not the egg donor? :: The nucleus (containing the DNA) came from the udder cell; the egg's own nucleus was removed
+Why was an electric shock used in cloning Dolly? :: To stimulate the egg cell (with its new nucleus) to divide and form an embryo
+Give concerns about cloning animals. :: Low success rate; cloned animals may have health problems and shorter lives; ethical concerns; reduced genetic variation
+What are the advantages of cloned transgenic animals? :: Large numbers of identical animals that all make a useful human protein (e.g. in milk) can be produced quickly
