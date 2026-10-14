@@ -1,0 +1,37 @@
+C: The movement of people from cities to rural areas is {{c1::counter-urbanisation}}; moving back into regenerated city centres is {{c2::re-urbanisation}}.
+Case study: how were the London Docklands regenerated? :: London Docklands Development Corporation (1981–1998) ;; Canary Wharf financial district ;; Docklands Light Railway, Jubilee line extension, London City Airport ;; Criticised for rising house prices and few jobs for local dockers
+How did the 2012 Olympics regenerate Stratford, East London? :: Derelict industrial land cleaned up ;; Olympic Park, Westfield shopping centre, new homes (East Village) ;; Improved transport ;; Concerns about gentrification and affordability
+What is 'click and collect'? :: Ordering online and collecting from a store or locker – helps some high-street and out-of-town shops compete with home delivery
+Give examples of improvements to Mumbai's transport. :: Mumbai Metro (first line opened 2014) ;; Bandra–Worli Sea Link bridge (2009) ;; Mumbai Trans Harbour Link (2024)
+Give an alternative NEE city case study and one fact about it. :: Rio de Janeiro, Brazil ;; Favela-Bairro project upgraded favelas with paved roads, sanitation and community facilities; Rocinha is Rio's largest favela
+About how many megacities are there and where are most found? :: Over 30, and the number is rising – most are in Asia, with growing numbers in Africa and Latin America
+Give regional names for informal settlements. :: **Favelas** (Brazil) ;; **Bustees/chawls/slums** (India) ;; **Shanty towns/townships** (Africa) ;; **Barriadas** (Peru)
+Why is a combination of indicators better than one indicator? :: Development has economic, social and political dimensions; combining measures (e.g. HDI) reduces the effect of averages or unreliable single figures
+Name another TNC in Nigeria. :: Unilever – makes soaps, food and drinks, employs thousands and sources local raw materials
+What is Nollywood? :: Nigeria's film industry – one of the largest in the world by number of films, providing many jobs
+When did Nigeria gain independence and from whom? :: 1960, from the UK – it remains a member of the Commonwealth
+Give impacts of the Somerset Levels floods. :: Around 600 homes flooded ;; Villages such as Muchelney cut off for weeks ;; Large areas of farmland flooded and livestock moved ;; Roads and railway closed
+How were the Somerset Levels managed after 2014? :: Dredging about 8 km of the Rivers Parrett and Tone ;; Raised roads ;; Permanent pumping stations ;; 20-year Flood Action Plan, including a tidal barrier at Bridgwater
+What happened to Spurn Head in December 2013? :: A storm surge breached the narrow neck of the spit, washing away the road, so it can now be cut off at high tide
+What happens at around 30° north and south? :: Cool air sinks, creating high pressure, clear skies and little rain – hence hot deserts like the Sahara
+Why is western Britain wetter than eastern Britain? :: Prevailing winds bring moist Atlantic air; relief rainfall as air rises over western uplands; the east is in a rain shadow
+What was the 'Beast from the East' (2018)? :: A cold spell caused by polar continental air from Siberia bringing heavy snow and freezing temperatures, combined with Storm Emma; schools and roads closed
+Name two UK droughts. :: 1976 (long hot summer, standpipes in some areas) ;; 2022 (driest summer for decades in parts of England, hosepipe bans)
+What is renewable energy's role in mitigation? :: Replacing fossil fuels with wind, solar, HEP and tidal power reduces CO₂ emissions from electricity generation
+C: Plants that make their own food by photosynthesis are {{c1::producers}}; organisms that break down dead material are {{c2::decomposers}}.
+Give opportunities for development in hot deserts. :: Mineral extraction (oil, phosphates) ;; Solar energy ;; Tourism ;; Irrigated farming
+Give challenges of developing hot deserts. :: Extreme temperatures ;; Water shortages ;; Poor accessibility and inaccessible terrain
+Give the main goods and services of the tropical rainforest. :: **Goods** – timber, rubber, nuts, fruit, medicines ;; **Services** – carbon storage, oxygen production, water cycle regulation and rainfall, soil protection, habitats
+Case study: describe Kielder Water. :: England's largest artificial reservoir, in Northumberland (opened 1982) ;; Can transfer water to the Rivers Wear and Tees to supply the North East ;; Also used for tourism and HEP
+About how much water does a person in the UK use per day? :: Around 140 litres per person per day (at home)
+What is food security? :: When all people at all times have access to enough safe, nutritious food for an active and healthy life
+What is food insecurity? :: When people do not have reliable access to enough affordable, nutritious food
+Give causes of food insecurity. :: Drought and climate change ;; Pests and disease ;; Conflict ;; Poverty ;; Poor infrastructure ;; Rising population
+What is the Green Revolution? :: The use of high-yield seeds, fertilisers, pesticides and irrigation from the 1960s (e.g. India) to boost crop yields; criticised for high costs and environmental damage
+What is food miles? :: The distance food travels from producer to consumer; long distances increase carbon emissions
+How can food supply be made more sustainable? :: Organic farming, permaculture, urban farming, buying local and seasonal food, reducing food waste, sustainable fishing
+How has the UK's energy mix changed? :: Coal declined sharply (last coal power station closed 2024) ;; Gas remains important ;; Rapid growth of wind and solar ;; Nuclear declining as old stations close
+Give advantages and disadvantages of wind energy. :: **+** renewable, no emissions when running, UK is windy ;; **–** intermittent, visual and noise impacts, risk to birds
+What is energy security? :: Having reliable, affordable access to enough energy, ideally without depending heavily on imports
+Worked example: on a 1:50,000 map two places are 7 cm apart. What is the real distance? :: 7 × 50,000 = 350,000 cm = **3.5 km**
+Worked example: a river's velocity falls from 0.8 m/s to 0.6 m/s. What is the percentage change? :: (0.6 − 0.8) ÷ 0.8 × 100 = **−25%**

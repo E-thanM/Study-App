@@ -7,7 +7,6 @@ What is urbanisation? :: An increase in the proportion of a country's population
 What is suburbanisation? :: The outward growth of towns and cities as people and businesses move from the inner city to the edge (suburbs), helped by better transport
 What is counter-urbanisation? :: The movement of people from large urban areas to smaller towns, villages and the countryside
 What is re-urbanisation? :: The movement of people back into city centres and inner cities, often after regeneration (e.g. new flats, waterfront developments)
-C: The movement of people from cities to rural areas is {{c1::counter-urbanisation}}; moving back into regenerated city centres is {{c2::re-urbanisation}}.
 Give three reasons for counter-urbanisation in the UK. :: Better transport and car ownership allow commuting ;; Internet and home working ;; Desire for a quieter, safer, less polluted environment; retirement to the countryside
 What is a commuter village (dormitory settlement)? :: A rural village where many residents live but travel to work in a nearby town or city
 What is the rural–urban fringe? :: The zone at the edge of a city where urban and rural land uses meet (e.g. business parks, retail parks, golf courses, farmland)
@@ -34,8 +33,6 @@ What is the difference between top-down and bottom-up regeneration? :: **Top-dow
 Case study: what was Cardiff Bay like before regeneration? :: Former coal-exporting docks (Tiger Bay) that declined after coal exports collapsed; derelict land, mudflats at low tide, high unemployment
 Case study: how was Cardiff Bay regenerated? :: Cardiff Bay Development Corporation (1987–2000) ;; Cardiff Bay Barrage (completed 1999) created a freshwater lake ;; Senedd (Welsh Parliament), Wales Millennium Centre, offices, flats, bars and restaurants
 Give criticisms of the Cardiff Bay regeneration. :: Many new jobs and expensive flats did not benefit original Butetown residents ;; Loss of mudflat habitat for wading birds ;; Some areas felt cut off from the rest of the city
-Case study: how were the London Docklands regenerated? :: London Docklands Development Corporation (1981–1998) ;; Canary Wharf financial district ;; Docklands Light Railway, Jubilee line extension, London City Airport ;; Criticised for rising house prices and few jobs for local dockers
-How did the 2012 Olympics regenerate Stratford, East London? :: Derelict industrial land cleaned up ;; Olympic Park, Westfield shopping centre, new homes (East Village) ;; Improved transport ;; Concerns about gentrification and affordability
 What is a sustainable city? :: One that meets present needs without harming future generations – e.g. efficient public transport, renewable energy, recycling, green spaces, affordable housing and community involvement
 Give examples of sustainable urban transport. :: Trams and light rail, bus lanes, park and ride, cycle lanes and bike hire, congestion charging (London 2003), low-emission zones
 ## Retailing changes
@@ -47,7 +44,6 @@ What is a clone town? :: A town whose high street is dominated by the same natio
 How can high streets be revitalised? :: Pedestrianisation, cheaper parking, events and markets, converting empty shops to housing, leisure and cafés, supporting independent shops
 What is the impact of online shopping on the UK? :: Fewer high-street shops ;; Growth of large distribution warehouses near motorways ;; More delivery vans ;; New jobs in logistics
 C: Buying and selling goods and services over the internet is called {{c1::e-commerce}}.
-What is 'click and collect'? :: Ordering online and collecting from a store or locker – helps some high-street and out-of-town shops compete with home delivery
 Give an advantage and a disadvantage of out-of-town shopping centres. :: **+** free parking, large range of shops under one roof, jobs ;; **–** draw trade away from town centres, encourage car use and congestion, built on greenfield land
 ## UK city structure, inequality and ethnicity
 What is the CBD? :: Central Business District – the commercial heart of a city with shops, offices and leisure, the highest land values, tallest buildings and best transport access
@@ -99,8 +95,6 @@ Give social challenges in Mumbai. :: Around 40% of people live in slums ;; Share
 Give environmental challenges in Mumbai. :: Air pollution from traffic and industry ;; Untreated sewage and waste in rivers and Mahim Creek ;; Monsoon flooding (e.g. 2005 floods killed hundreds)
 Give transport challenges in Mumbai. :: Severely congested roads ;; Suburban trains extremely overcrowded (millions of journeys daily) ;; Long commutes from outer suburbs
 What is the Dharavi Redevelopment Project? :: A plan to replace slum housing with high-rise flats and free apartments for eligible residents, with land sold for commercial development ;; Criticised for breaking up communities and businesses and excluding residents who cannot prove tenure
-Give examples of improvements to Mumbai's transport. :: Mumbai Metro (first line opened 2014) ;; Bandra–Worli Sea Link bridge (2009) ;; Mumbai Trans Harbour Link (2024)
-Give an alternative NEE city case study and one fact about it. :: Rio de Janeiro, Brazil ;; Favela-Bairro project upgraded favelas with paved roads, sanitation and community facilities; Rocinha is Rio's largest favela
 ## Urban issues and challenges
 Give urban challenges in HIC cities. :: Inequality and deprivation in inner cities ;; Traffic congestion and air pollution ;; Housing shortages and high prices ;; Waste disposal ;; Urban sprawl onto greenfield land
 What is urban sprawl? :: The uncontrolled outward spread of a city onto surrounding countryside
@@ -111,12 +105,10 @@ How can urban waste be managed sustainably? :: Reduce, reuse, recycle ;; Compost
 ## Global urban patterns and world cities
 What is the difference between urbanisation and urban growth? :: **Urbanisation** – increase in the *proportion* of people living in urban areas ;; **Urban growth** – increase in the total number of people or area of a city
 Why is urbanisation slower in HICs than in LICs and NEEs? :: HICs urbanised during the Industrial Revolution and are already over 75–80% urban; many now see counter-urbanisation
-About how many megacities are there and where are most found? :: Over 30, and the number is rising – most are in Asia, with growing numbers in Africa and Latin America
 Why is the number of megacities increasing? :: Rapid rural–urban migration plus high natural increase in LIC and NEE cities
 Why does London have global influence as a world city? :: Headquarters of TNCs and banks ;; Major financial centre and stock exchange ;; International airport hub (Heathrow) ;; Global culture, media, universities and tourism ;; Seat of government
 Describe the global flows that connect a world city. :: Flows of **people** (migrants, tourists, business travel), **money** (investment, trade, finance), **goods** and **information/ideas** (internet, media)
 Where are informal settlements usually located? :: On land nobody else wants – city edges, steep slopes, floodplains, beside railways, rubbish dumps or polluted industry
-Give regional names for informal settlements. :: **Favelas** (Brazil) ;; **Bustees/chawls/slums** (India) ;; **Shanty towns/townships** (Africa) ;; **Barriadas** (Peru)
 What is the formal economy? :: Official jobs that are registered and taxed, with contracts, regular wages and legal protection
 Give advantages and disadvantages of the informal economy. :: **+** provides income for the poor, needs few skills, recycles waste, cheap goods ;; **–** no tax for government, no job security or sick pay, unsafe conditions, child labour
 Explain how rapid urbanisation creates challenges in LIC/NEE cities. :: Migrants arrive faster than housing and jobs can be provided ;; So informal settlements and the informal economy grow ;; Services (water, sewerage, rubbish collection) are overwhelmed, causing disease and pollution ;; Roads become congested
@@ -144,7 +136,6 @@ What is life expectancy? :: The average number of years a person born in a count
 What is literacy rate? :: The percentage of adults who can read and write
 Describe the population pyramid of an LIC compared with an HIC. :: **LIC** – wide base (high birth rate), narrow top, concave sides (high death rate, low life expectancy) ;; **HIC** – narrower base, straighter sides, wide top (low birth and death rates, ageing population)
 What is the dependency ratio? :: (Number of young under 15 + elderly 65+) ÷ working-age population (15–64) × 100 – shows how many dependents each 100 workers support
-Why is a combination of indicators better than one indicator? :: Development has economic, social and political dimensions; combining measures (e.g. HDI) reduces the effect of averages or unreliable single figures
 Describe the global pattern of development. :: HICs mainly in North America, Europe, Japan, Australia and New Zealand ;; NEEs in parts of Asia, South America and some of Africa (e.g. China, India, Brazil, Nigeria) ;; Most LICs in sub-Saharan Africa and parts of Asia
 ## The development gap
 What is the development gap? :: The difference in standards of living between the world's richest and poorest countries
@@ -189,12 +180,9 @@ Where is Nigeria and why is it significant? :: West Africa, on the Gulf of Guine
 Why is Nigeria classed as an NEE? :: Rapid economic growth since 2000 ;; Growing manufacturing and services (banking, telecoms, Nollywood film industry) ;; Still large inequality and poverty
 What is the importance of oil to Nigeria? :: Oil (mainly from the Niger Delta) provides the vast majority of export earnings and a large share of government revenue ;; Makes the economy vulnerable to falling oil prices
 Name a TNC operating in Nigeria and give an advantage and disadvantage. :: Shell ;; **+** jobs, tax revenue and investment ;; **–** oil spills polluting the Niger Delta's farmland, fishing waters and mangroves, gas flaring
-Name another TNC in Nigeria. :: Unilever – makes soaps, food and drinks, employs thousands and sources local raw materials
 Give environmental problems from Nigeria's economic development. :: Oil spills in the Niger Delta ;; Gas flaring ;; Deforestation ;; Urban air pollution and waste in Lagos
 How has Nigeria's economy changed? :: From mainly agriculture and oil exports towards manufacturing and services ;; Telecoms (mobile phones), banking, retail and film have grown rapidly
-What is Nollywood? :: Nigeria's film industry – one of the largest in the world by number of films, providing many jobs
 Give challenges that hold back Nigeria's development. :: Corruption ;; Conflict (e.g. Boko Haram in the north-east) ;; Unreliable electricity ;; Inequality between south and north ;; Dependence on oil
-When did Nigeria gain independence and from whom? :: 1960, from the UK – it remains a member of the Commonwealth
 Describe Nigeria's political and trading links with the world. :: Member of the African Union, ECOWAS, OPEC and the Commonwealth ;; Exports mainly crude oil (to India, Europe, USA) ;; Imports manufactured goods, increasingly from China, which also invests in Nigerian infrastructure
 How has economic development affected quality of life in Nigeria? :: Rising incomes and a growing middle class, more mobile phones and better access to education ;; But many people still live in extreme poverty, especially in the north, and life expectancy remains low
 What types of aid has Nigeria received? :: International and NGO aid for health (e.g. polio vaccination, malaria nets) and education; aid can be lost to corruption
@@ -267,8 +255,6 @@ What happened in the Boscastle flood (16 August 2004)? :: Around 200 mm of rain 
 Why did Boscastle flood so badly? :: Intense rainfall on saturated ground ;; Steep-sided valleys and impermeable slate ;; Small catchment gave a very short lag time ;; Narrow bridge trapped debris causing a dam effect
 How was Boscastle protected after 2004? :: A flood defence scheme (completed 2008) widened and deepened the river channel, raised the car park and replaced the low bridge with a wider one
 What caused the Somerset Levels floods of 2013–14? :: Very low, flat land at or near sea level ;; Exceptionally wet winter with repeated Atlantic storms ;; High tides prevented drainage ;; Rivers Parrett and Tone had not been dredged for many years
-Give impacts of the Somerset Levels floods. :: Around 600 homes flooded ;; Villages such as Muchelney cut off for weeks ;; Large areas of farmland flooded and livestock moved ;; Roads and railway closed
-How were the Somerset Levels managed after 2014? :: Dredging about 8 km of the Rivers Parrett and Tone ;; Raised roads ;; Permanent pumping stations ;; 20-year Flood Action Plan, including a tidal barrier at Bridgwater
 Worked example: peak rainfall was at 09:00 and peak discharge at 21:00. What is the lag time? :: **12 hours** (21:00 − 09:00)
 Explain why an urban river has a flashier hydrograph than a rural one. :: Tarmac and concrete are impermeable, so less infiltration and more surface runoff ;; Drains and gutters carry water to the river quickly ;; Less vegetation so less interception ;; So shorter lag time and higher peak discharge
 Describe a gentle (subdued) hydrograph. :: Long lag time, gently sloping rising limb and low peak discharge – lower flood risk, e.g. in a forested basin on permeable rock
@@ -316,7 +302,6 @@ What is Integrated Coastal Zone Management (ICZM)? :: Managing a whole stretch o
 What are the threats to UK coasts from climate change? :: Sea level rise ;; More frequent and powerful storms and storm surges ;; Faster erosion and more coastal flooding of low-lying land (e.g. East Anglia, Thames estuary)
 What happened in the North Sea storm surge of 1953? :: A storm surge flooded the east coast of England and the Netherlands, killing over 300 people in England and around 1,800 in the Netherlands; it led to the building of the Thames Barrier
 What is the Thames Barrier? :: A movable flood barrier across the River Thames, operational since 1982, that closes to protect London from tidal surges
-What happened to Spurn Head in December 2013? :: A storm surge breached the narrow neck of the spit, washing away the road, so it can now be cut off at high tide
 Give impacts of coastal erosion on people. :: Homes and farmland lost ;; Roads and caravan parks threatened ;; Falling property values and no compensation ;; Loss of tourism income ;; Stress for residents
 Why are some places defended and others not? :: Decisions use cost–benefit analysis – towns, important roads and infrastructure are protected (hold the line) while low-value farmland may be left (no active intervention)
 Evaluate the success of coastal management on the Holderness coast. :: **Success** – Mappleton, Hornsea and Withernsea protected, saving homes, roads and tourism ;; **Problems** – groynes trap sediment so erosion increases downdrift (e.g. Cowden), costly to maintain ;; **Judgement** – successful locally but moves the problem along the coast
@@ -326,7 +311,6 @@ Evaluate the success of coastal management on the Holderness coast. :: **Success
 What is global atmospheric circulation? :: The worldwide system of air movement transferring heat from the equator to the poles, made up of three cells in each hemisphere
 Name the three circulation cells in each hemisphere. :: Hadley cell (0–30°), Ferrel cell (30–60°), Polar cell (60–90°)
 What happens to air at the equator? :: Intense heating causes air to rise, creating low pressure, cloud and heavy rainfall – hence tropical rainforests
-What happens at around 30° north and south? :: Cool air sinks, creating high pressure, clear skies and little rain – hence hot deserts like the Sahara
 What is the ITCZ? :: Inter-Tropical Convergence Zone – a belt of low pressure near the equator where trade winds meet; it moves north and south with the seasons, bringing rainy seasons
 What are prevailing winds? :: The most common wind direction at a place; the UK's are south-westerlies
 What is the jet stream? :: A fast-moving band of air high in the atmosphere that steers depressions; its position affects UK weather
@@ -338,7 +322,6 @@ Explain how global atmospheric circulation leads to deserts at 30° N and S. :: 
 ## UK climate
 Describe the UK's climate. :: Temperate maritime – mild winters, cool summers, rain all year ;; Wetter in the west, drier in the east ;; Warmer in the south, cooler in the north
 Why is the UK's climate mild? :: Surrounded by sea which heats and cools slowly ;; North Atlantic Drift (Gulf Stream) brings warm water ;; Prevailing south-westerly winds from the Atlantic
-Why is western Britain wetter than eastern Britain? :: Prevailing winds bring moist Atlantic air; relief rainfall as air rises over western uplands; the east is in a rain shadow
 Name the main air masses affecting the UK. :: **Polar maritime** (NW, cold and wet) ;; **Tropical maritime** (SW, warm and wet) ;; **Arctic maritime** (N, very cold, snow) ;; **Polar continental** (E, cold winters/hot summers, dry) ;; **Tropical continental** (S, hot and dry)
 What is a depression? :: A low-pressure weather system with rising air, bringing cloud, wind and rain; forms where warm and cold air meet over the Atlantic
 What is an anticyclone? :: A high-pressure system with sinking air, bringing settled weather: hot sunny summers, cold clear winters with frost and fog
@@ -353,10 +336,8 @@ Explain why the north-west of the UK is wetter than the south-east. :: Prevailin
 Give types of extreme weather in the UK. :: Heavy rain and flooding, storms and gales, heatwaves, drought, heavy snow and cold spells
 What happened during Storm Desmond (December 2015)? :: Record rainfall in Cumbria (341 mm in 24 hours at Honister Pass) ;; Severe flooding in Carlisle, Cockermouth and Keswick ;; Thousands of homes flooded, bridges destroyed, power cuts
 What was notable about the July 2022 UK heatwave? :: The UK recorded over 40°C for the first time (40.3°C at Coningsby, Lincolnshire, 19 July 2022); rail disruption, wildfires, health warnings
-What was the 'Beast from the East' (2018)? :: A cold spell caused by polar continental air from Siberia bringing heavy snow and freezing temperatures, combined with Storm Emma; schools and roads closed
 What is a drought? :: A long period of unusually low rainfall leading to water shortages
 Give impacts of drought in the UK. :: Hosepipe bans and low reservoirs ;; Crops fail and farmers struggle ;; Wildfires ;; Rivers fall, harming wildlife ;; Subsidence of buildings on clay
-Name two UK droughts. :: 1976 (long hot summer, standpipes in some areas) ;; 2022 (driest summer for decades in parts of England, hosepipe bans)
 Give impacts of heatwaves on people in the UK. :: Heat-related deaths, especially among the elderly ;; Rails buckle and transport disrupted ;; Wildfires ;; Greater demand for water and energy
 Is UK weather becoming more extreme? :: Evidence suggests yes – more record high temperatures and more intense rainfall events, linked to climate change, though natural variation makes trends hard to prove
 ## Tropical storms
@@ -389,7 +370,6 @@ What is the Quaternary period? :: The most recent 2.6 million years of geologica
 Give possible effects of climate change on the UK. :: Hotter, drier summers and milder, wetter winters ;; More heatwaves, droughts and intense rainfall ;; Sea level rise and coastal flooding/erosion ;; New crops can be grown, but some species lose habitats
 Why do climate change impacts hit LICs hardest? :: Many depend on farming, so droughts and floods cause food shortages ;; Less money for defences, healthcare and recovery ;; Many people live on low-lying coasts or in hazard-prone areas
 Assess whether recent climate change is mainly caused by humans. :: **Human** – CO₂ has risen from about 280 to over 420 ppm since industrialisation, closely matching warming; the IPCC states human influence has warmed the climate ;; **Natural** – orbital, solar and volcanic changes do alter climate but cannot explain the rapid recent rise ;; **Judgement** – recent warming is mainly human-caused
-What is renewable energy's role in mitigation? :: Replacing fossil fuels with wind, solar, HEP and tidal power reduces CO₂ emissions from electricity generation
 
 # Theme 3 Environmental Challenges – Ecosystems
 ## Ecosystems and biomes
@@ -410,7 +390,6 @@ Where are temperate deciduous forests found? :: Mid-latitudes (about 40–60°) 
 Where are tundra ecosystems found? :: High latitudes near the Arctic (northern Canada, Alaska, Russia, Scandinavia) – very cold, little precipitation, permafrost
 What is eutrophication? :: Fertiliser or sewage runoff adds nutrients to water ;; Algae grow rapidly (algal bloom) ;; When they die, decomposing bacteria use up oxygen ;; Fish and other life die
 Give ways humans affect small-scale ecosystems. :: Draining ponds and wetlands ;; Pollution and eutrophication from farm runoff ;; Hedgerow removal ;; Introducing invasive species ;; Conservation (nature reserves, replanting)
-C: Plants that make their own food by photosynthesis are {{c1::producers}}; organisms that break down dead material are {{c2::decomposers}}.
 Name a small-scale UK ecosystem and its features. :: A freshwater pond or deciduous woodland – e.g. pond: producers (algae, reeds), consumers (insects, frogs, fish, herons), decomposers in the mud
 ## Tropical rainforests
 Describe the climate of a tropical rainforest. :: Hot all year (about 27°C) with small temperature range ;; Very wet – over 2,000 mm rain a year ;; Convectional rain most afternoons; no seasons
@@ -428,8 +407,6 @@ What is ecotourism? :: Small-scale, sustainable tourism that protects the enviro
 Describe the climate of hot deserts. :: Less than 250 mm rain a year ;; Very hot days (over 40°C) but cold nights because clear skies let heat escape ;; Large daily temperature range
 How are desert plants adapted? :: **Cacti** store water in stems and have spines instead of leaves ;; Long tap roots or wide shallow roots ;; Waxy skin ;; Seeds lie dormant until rain
 How are desert animals adapted? :: **Camels** – fat stored in hump, wide feet, long eyelashes, can go long periods without water ;; Fennec foxes have large ears to lose heat ;; Many are nocturnal
-Give opportunities for development in hot deserts. :: Mineral extraction (oil, phosphates) ;; Solar energy ;; Tourism ;; Irrigated farming
-Give challenges of developing hot deserts. :: Extreme temperatures ;; Water shortages ;; Poor accessibility and inaccessible terrain
 ## Desertification and the Sahel
 What is desertification? :: The process by which land in semi-arid areas becomes increasingly dry and degraded, losing its productivity, until it becomes desert-like
 Where is the Sahel? :: A semi-arid belt across Africa south of the Sahara, stretching from Senegal and Mauritania to Sudan and Eritrea
@@ -451,7 +428,6 @@ Where are coral reefs found? :: In tropical seas roughly between 30° N and 30°
 What is coral bleaching? :: When water becomes too warm, corals expel the algae living in them, turn white and may die if high temperatures continue
 Why are coral reefs important? :: Very high biodiversity ('rainforests of the sea') ;; Fish breeding grounds supporting fishing ;; Tourism income ;; Protect coasts from waves and storms ;; Source of medicines
 Give facts about the Great Barrier Reef. :: World's largest coral reef system, off Queensland, Australia (about 2,300 km long) ;; World Heritage Site managed as a marine park with zoning ;; Several mass bleaching events since 2016
-Give the main goods and services of the tropical rainforest. :: **Goods** – timber, rubber, nuts, fruit, medicines ;; **Services** – carbon storage, oxygen production, water cycle regulation and rainfall, soil protection, habitats
 Give facts about the Amazon rainforest. :: World's largest tropical rainforest (over 5 million km²) ;; Spread across nine countries, with about 60% in Brazil ;; Home to around 10% of known species and many indigenous groups
 Assess whether rainforests can be managed sustainably. :: **Yes** – selective logging, ecotourism, reserves, FSC certification and debt-for-nature swaps protect forest while providing income ;; **But** – demand for beef, soya and minerals is high, enforcement in remote areas is difficult and poor governments need income ;; **Judgement** – possible but needs international cooperation and local benefits
 
@@ -464,7 +440,6 @@ Why is there a water imbalance in the UK? :: Most rain falls in the north and we
 Why is global water demand increasing? :: Population growth ;; Rising living standards (showers, appliances, meat-rich diets) ;; Industrial development ;; Irrigation for farming
 What is a water transfer scheme? :: Moving water from an area of surplus to an area of deficit using pipes, canals or rivers
 Case study: describe the Elan Valley reservoirs. :: Reservoirs in mid-Wales built from the 1890s to supply Birmingham ;; Water flows about 118 km (73 miles) to Birmingham by gravity through an aqueduct
-Case study: describe Kielder Water. :: England's largest artificial reservoir, in Northumberland (opened 1982) ;; Can transfer water to the Rivers Wear and Tees to supply the North East ;; Also used for tourism and HEP
 Give advantages and disadvantages of water transfer schemes. :: **+** reliable supply to deficit areas, can generate HEP and provide recreation ;; **–** expensive, flooding of valleys and villages, damage to ecosystems, political disputes between regions or countries
 Give a named example of a large international water transfer scheme. :: Lesotho Highlands Water Project – transfers water from Lesotho to South Africa (Gauteng) and generates HEP for Lesotho ;; Or China's South–North Water Transfer Project
 What is sustainable water management? :: Using water in ways that meet present needs without harming future supply – e.g. water meters, recycling grey water, rainwater harvesting, fixing leaks, drip irrigation
@@ -473,7 +448,6 @@ What is groundwater and why must it be managed? :: Water stored underground in p
 What is a desalination plant? :: A plant that removes salt from seawater to make fresh water – expensive and energy-intensive, e.g. Beckton plant in London
 What proportion of the world's water is fresh water? :: About 3% – and most of that is frozen in ice sheets and glaciers or stored as groundwater; only a tiny fraction is easily accessible
 Compare physical and economic water scarcity. :: **Physical** – not enough water naturally available (e.g. arid North Africa, Middle East) ;; **Economic** – water exists but people cannot afford the infrastructure to access it (e.g. much of sub-Saharan Africa)
-About how much water does a person in the UK use per day? :: Around 140 litres per person per day (at home)
 What is water abstraction? :: Taking water from rivers, lakes or groundwater for public supply, farming or industry
 C: An underground layer of permeable rock that stores water is called an {{c1::aquifer}}.
 Give causes of water pollution. :: Farm runoff (fertilisers, pesticides, slurry) ;; Untreated sewage and storm overflows ;; Industrial waste and chemicals ;; Oil spills ;; Plastics
@@ -483,18 +457,8 @@ Give a named example of a conflict over water. :: The River Nile – Ethiopia's 
 Give impacts of large dams on river basins. :: **+** reliable water, irrigation, HEP, flood control ;; **–** people displaced, farmland and villages flooded, sediment trapped so downstream land is less fertile, fish migration blocked
 How can water supply be improved in rural areas of LICs? :: Small-scale, bottom-up schemes such as wells, hand pumps and rainwater tanks run by NGOs (e.g. WaterAid) using intermediate technology local people can maintain
 Assess whether large-scale or small-scale schemes are better for water supply. :: **Large** – supply huge populations and generate HEP but expensive, displace people and harm ecosystems ;; **Small** – cheap, sustainable, community-run but supply only local needs ;; **Judgement** – depends on the scale of demand; small schemes are often more sustainable for rural LICs
-## Food resources
-What is food security? :: When all people at all times have access to enough safe, nutritious food for an active and healthy life
-What is food insecurity? :: When people do not have reliable access to enough affordable, nutritious food
-Give causes of food insecurity. :: Drought and climate change ;; Pests and disease ;; Conflict ;; Poverty ;; Poor infrastructure ;; Rising population
-What is the Green Revolution? :: The use of high-yield seeds, fertilisers, pesticides and irrigation from the 1960s (e.g. India) to boost crop yields; criticised for high costs and environmental damage
-What is food miles? :: The distance food travels from producer to consumer; long distances increase carbon emissions
-How can food supply be made more sustainable? :: Organic farming, permaculture, urban farming, buying local and seasonal food, reducing food waste, sustainable fishing
 ## Energy and sustainability
 What is the difference between renewable and non-renewable energy? :: **Renewable** – will not run out (wind, solar, HEP, tidal, wave, geothermal, biomass) ;; **Non-renewable** – finite (coal, oil, gas, nuclear fuel)
-How has the UK's energy mix changed? :: Coal declined sharply (last coal power station closed 2024) ;; Gas remains important ;; Rapid growth of wind and solar ;; Nuclear declining as old stations close
-Give advantages and disadvantages of wind energy. :: **+** renewable, no emissions when running, UK is windy ;; **–** intermittent, visual and noise impacts, risk to birds
-What is energy security? :: Having reliable, affordable access to enough energy, ideally without depending heavily on imports
 What is sustainability? :: Meeting the needs of the present without compromising the ability of future generations to meet their own needs
 What is a carbon footprint? :: The total greenhouse gas emissions caused by a person, organisation or product
 How can individuals reduce their environmental impact? :: Use public transport, cycle or walk ;; Insulate homes ;; Recycle ;; Save water and energy ;; Eat less meat ;; Buy local food
@@ -541,7 +505,6 @@ What does a scatter graph show? :: Whether there is a correlation (positive, neg
 Name the eight points of the compass clockwise from north. :: N, NE, E, SE, S, SW, W, NW
 What area does one grid square represent on 1:25,000 and 1:50,000 OS maps? :: 1 km² (each grid line is 1 km apart)
 Worked example: on a 1:25,000 map two places are 6 cm apart. What is the real distance? :: 6 × 25,000 = 150,000 cm = **1.5 km**
-Worked example: on a 1:50,000 map two places are 7 cm apart. What is the real distance? :: 7 × 50,000 = 350,000 cm = **3.5 km**
 How do you measure a curved distance (e.g. a road) on a map? :: Lay a piece of string or the edge of paper along the route, marking each bend, then straighten it against the scale line
 How do you calculate gradient? :: Vertical rise ÷ horizontal distance (same units) – e.g. a rise of 100 m over 2 km (2,000 m) = 1 in 20 (1:20 or 5%)
 How do you draw a cross-section from a map? :: Place paper along the line, mark where each contour crosses with its height ;; Transfer marks to a graph with height on the vertical axis ;; Join with a smooth line and label features
@@ -554,7 +517,6 @@ Worked example: find the interquartile range of 2, 4, 5, 7, 9, 11, 13. :: n = 7 
 Why is the median or interquartile range sometimes better than the mean or range? :: They are not distorted by extreme values (outliers/anomalies)
 How do you calculate percentage change? :: (New value − original value) ÷ original value × 100
 Worked example: a town's population grows from 250,000 to 300,000. What is the percentage change? :: (300,000 − 250,000) ÷ 250,000 × 100 = **+20%**
-Worked example: a river's velocity falls from 0.8 m/s to 0.6 m/s. What is the percentage change? :: (0.6 − 0.8) ÷ 0.8 × 100 = **−25%**
 How do you calculate one value as a percentage of a total? :: Value ÷ total × 100 – e.g. 45 of 180 shoppers = 25%
 How do you calculate the angle for a pie chart segment? :: Value ÷ total × 360° – e.g. 25% = 90°
 How do you calculate population density? :: Total population ÷ area (people per km²)
