@@ -20,6 +20,7 @@ What is a syntax error? :: Code breaks the rules of the language and won't run/c
 What is a runtime error? :: An error that occurs while the program is running, e.g. division by zero, index out of range
 
 ## 1.1 Algorithms – representing and following
+C: An {{c1::algorithm}} is a precise sequence of steps that solves a problem; a {{c2::program}} is an algorithm written in a programming language so a computer can run it.
 Name three ways an algorithm can be expressed. :: **Written description** (structured English) ;; **Flowchart** ;; **Pseudocode** (and also as program code)
 What is pseudocode? :: A structured, language-independent way of writing an algorithm using English-like statements and programming constructs; it is not run by a computer
 Give an advantage of a flowchart over pseudocode. :: Shows the flow of control visually, so it is easy to follow, especially for non-programmers
@@ -36,6 +37,7 @@ What is a running total? :: A variable (initialised to 0) to which each new valu
 What is initialisation? :: Giving a variable a starting value before it is used, e.g. total = 0 before a loop
 How do you complete a trace table? :: One column per variable (plus output/condition) ;; work through the algorithm line by line ;; write a new row each time a value changes ;; record outputs in the output column
 Trace: total = 0 ;; for i in range(1, 4): ;; ·· total = total + i ;; print(total). What is output? :: 6 (i = 1, 2, 3 gives total 1, 3, 6)
+In code cards in this deck, what does ·· mean at the start of a line? :: One level of indentation (4 spaces in Python) – the line is inside the block above it
 How do you work out the purpose of an unfamiliar algorithm? :: Trace it with sample data and look at what the output is in relation to the input (e.g. it finds the largest value, counts items, sorts…)
 How do you identify and correct errors in a given algorithm? :: Trace it with test data, compare actual output with expected output, find the line where they differ, then change the faulty operator/condition/value
 Give common causes of logic errors in algorithms. :: Wrong relational operator (< instead of <=) ;; wrong loop range (off-by-one) ;; variable not initialised or reset in the wrong place ;; wrong order of statements ;; using AND instead of OR
@@ -78,6 +80,7 @@ Why is abstraction useful? :: Reduces complexity so the problem is easier to und
 Give an example of abstraction. :: A map of a train network shows only stations and connections, not exact distances or buildings ;; a game models a car's speed and position but not its engine parts
 When analysing a problem, what four things should you identify? :: **Inputs** – data needed ;; **Outputs** – results required ;; **Processing** – calculations/decisions ;; **Initialisation** – starting values of variables
 What are the requirements of a problem? :: The things the solution must do – what the user/client needs it to achieve
+How can decomposition be used to design a program? :: Break the problem into sub-problems and write a separate subprogram (function/procedure) for each one
 C: Using abstraction to represent a real-world situation in a program is called {{c1::modelling}} (e.g. a simulation).
 
 # 2 Programming
@@ -102,6 +105,10 @@ What is the difference between validation and verification? :: Validation – da
 What is normal, boundary and erroneous test data? :: Normal – typical valid data ;; Boundary – at the edges of the valid range ;; Erroneous – invalid data that should be rejected
 Why is it important to test programs? :: To find and fix errors and ensure the program meets requirements and handles unexpected input
 How do you open and write to a text file in Python? :: file = open("data.txt", "w") ;; file.write("text\n") ;; file.close()
+How do you read lines from a text file in Python? :: with open("data.txt", "r") as f: ;; for line in f: ;; print(line.strip())
+What does string slicing s[1:4] return in Python? :: Characters at index 1, 2 and 3
+Name string functions you should know. :: len(), upper(), lower(), slicing, concatenation (+), find/index, isdigit()
+What is the purpose of comments and meaningful identifiers? :: Make code easier to read, maintain and debug
 
 ## 2.1 Developing code – readability and errors
 What four techniques make code easier to read? :: **Comments** ;; **Descriptive names** for variables, constants and subprograms ;; **Indentation** ;; **White space** (blank lines between sections)
@@ -127,6 +134,7 @@ What does this output? x = 7 ;; if x > 10: print("A") ;; elif x > 5: print("B") 
 What numbers does for i in range(5) produce? :: 0, 1, 2, 3, 4 (starts at 0, stops before 5)
 What numbers does for i in range(2, 6) produce? :: 2, 3, 4, 5
 What does for i in range(1, 10, 3): print(i) output? :: 1, 4, 7
+What does for i in range(10, 0, -2): print(i) output? :: 10, 8, 6, 4, 2
 What does range(start, stop, step) do if you want to include the stop number? :: It doesn't – stop is excluded, so use stop + 1, e.g. range(1, 11) for 1–10
 Write a Python WHILE loop that keeps asking for a password until it is "abc123". :: password = input("Password: ") ;; while password != "abc123": ;; ·· password = input("Try again: ")
 How do you write a REPEAT…UNTIL style loop in Python? :: Python has no REPEAT…UNTIL; use while True: … if condition: break (the body always runs at least once)
@@ -177,11 +185,14 @@ How are constants usually named in Python? :: In capital letters, e.g. MAX_SCORE
 ## 2.3 Data structures – lists, arrays and records
 How do you create a list (array) in Python? :: names = ["Ali", "Ben", "Cara"]
 What does names[1] return if names = ["Ali", "Ben", "Cara"]? :: "Ben" (indexing starts at 0)
+What does names[-1] return if names = ["Ali", "Ben", "Cara"]? :: "Cara" (negative index counts from the end)
 How do you change an element of a list in Python? :: names[0] = "Zara"
+What does len(names) return if names = ["Ali", "Ben", "Cara"]? :: 3
 What does append() do? :: Adds an item to the end of a list, e.g. nums.append(5)
 What do insert(), remove() and pop() do on a list? :: insert(i, x) – puts x at index i ;; remove(x) – deletes the first item equal to x ;; pop(i) – removes and returns the item at index i (last item if no index)
 How do you test whether a value is in a list in Python? :: if "Ben" in names: (the in operator returns True/False)
 How do you create an empty list and a list of ten zeros in Python? :: items = [] ;; zeros = [0] * 10
+What happens if you access names[5] when names has 3 items? :: IndexError – index out of range (runtime error)
 How do you create a 2D list (array) in Python? :: grid = [[1, 2, 3], [4, 5, 6]] – a list of lists (each inner list is a row)
 What does grid[1][0] return if grid = [[1, 2, 3], [4, 5, 6]]? :: 4 (row 1, column 0)
 Write Python to print every value in a 2D list called grid. :: for row in grid: ;; ·· for value in row: ;; ···· print(value)
@@ -197,18 +208,24 @@ What does len("Computer") return? :: 8
 If s = "Computer", what are s[0] and s[-1]? :: "C" and "r"
 What does "Computer"[0:3] return? :: "Com" (indexes 0, 1, 2)
 What does "Computer"[3:] return? :: "puter" (from index 3 to the end)
+What does "Computer"[:4] return? :: "Comp" (from the start up to, not including, index 4)
 What do upper() and lower() do? :: Return a copy of the string in capitals / lower case, e.g. "Hi".upper() → "HI"
 How do you join two strings in Python? :: Concatenation with +, e.g. first + " " + last
+What does "ab" * 3 return in Python? :: "ababab"
 What does "a,b,c".split(",") return? :: ["a", "b", "c"] – a list of the parts between the commas
 What does strip() do? :: Removes spaces and newline characters from the start and end of a string – used when reading lines from a file
 What does "banana".find("n") return? :: 2 – the index of the first match (−1 if not found)
+What does "banana".count("a") return? :: 3
 What do isdigit() and isalpha() return? :: isdigit() – True if all characters are digits ;; isalpha() – True if all characters are letters
 What does ord("A") return, and chr(97)? :: ord("A") → 65 (ASCII code) ;; chr(97) → "a"
 Write Python to count the vowels in a string word. :: count = 0 ;; for letter in word.lower(): ;; ·· if letter in "aeiou": ;; ···· count = count + 1
 Write Python to print a string s backwards using a loop. :: for i in range(len(s) - 1, -1, -1): ;; ·· print(s[i], end="")
+What does "Hello World".replace("o", "0") return? :: "Hell0 W0rld"
+How do you check if a string contains another in Python? :: Use in, e.g. if "@" in email:
 
 ## 2.4 Input, output and validation
 How do you get a whole number from the keyboard in Python? :: age = int(input("Enter age: "))
+What does print("A", "B", sep="-") output? :: A-B
 How do you stop print() moving to a new line? :: Use end="", e.g. print("Hi", end="")
 Describe a range check. :: Checks the data lies between a lower and upper limit, e.g. 1 <= month <= 12
 Describe a length check. :: Checks the data has a certain number of characters (or within a min/max length), e.g. password at least 8 characters
@@ -217,7 +234,10 @@ Describe a type check. :: Checks the data is of the correct data type, e.g. an i
 Describe a format check. :: Checks the data matches a pattern, e.g. a postcode or date DD/MM/YYYY
 Describe a lookup check. :: Checks the data matches one of a list of allowed values, e.g. "S", "M" or "L"
 Write Python that keeps asking for a number until it is between 1 and 10. :: num = int(input("1-10: ")) ;; while num < 1 or num > 10: ;; ·· num = int(input("Invalid, 1-10: "))
+Write a Python presence check on name. :: while name == "": ;; ·· name = input("Name must not be blank: ")
+Write a Python length check that password is at least 8 characters. :: while len(password) < 8: ;; ·· password = input("At least 8 characters: ")
 Write a Python type check that text is a whole number. :: while not text.isdigit(): ;; ·· text = input("Enter a whole number: ") ;; num = int(text)
+Write a Python lookup check on size. :: while size not in ["S", "M", "L"]: ;; ·· size = input("S, M or L: ")
 Why can't validation guarantee data is correct? :: It only checks data is sensible/allowed – a valid but wrong value (e.g. age 14 instead of 15) will still be accepted
 What is authentication in a program? :: Checking a user is who they claim to be, e.g. comparing an entered username and password against stored values
 Write Python to give a user three attempts to enter the password "secret". :: attempts = 0 ;; correct = False ;; while attempts < 3 and not correct: ;; ·· if input("Password: ") == "secret": correct = True ;; ·· attempts = attempts + 1
@@ -239,11 +259,13 @@ What do / and // do in Python? :: / – real division, e.g. 7 / 2 = 3.5 ;; // �
 What does % do in Python? :: Modulus (MOD) – gives the remainder, e.g. 17 % 5 = 2
 What does ** do in Python? :: Exponentiation (power), e.g. 2 to the power 3 gives 8
 How can MOD be used to test whether a number is even? :: if num % 2 == 0: – the remainder when dividing by 2 is 0
+What is 25 MOD 7 and 25 DIV 7? :: MOD – 4 ;; DIV – 3
 What is the order of precedence for arithmetic operators? :: Brackets, then exponent (powers), then × ÷ DIV MOD, then + − (left to right for equal precedence)
 What does print(2 + 3 * 4) output? :: 14 (multiplication first)
 What is the difference between = and == in Python? :: = assigns a value to a variable ;; == compares two values for equality (gives True/False)
 C: The AND operator gives True only if {{c1::both}} conditions are true; OR gives True if {{c2::at least one}} condition is true; NOT {{c3::reverses}} a Boolean value.
 What does print(not (3 > 2) or 5 == 5) output? :: True (not True is False; False or True is True)
+What does print(4 > 2 and 3 > 5) output? :: False
 Write a Python condition that is True when age is between 13 and 19 inclusive. :: age >= 13 and age <= 19
 What is the order of precedence for Boolean operators? :: NOT first, then AND, then OR (use brackets to make it clear)
 
@@ -262,7 +284,9 @@ What is a built-in (pre-existing) function? Give Python examples. :: A subprogra
 What is a library (module)? :: A collection of pre-written, tested subprograms that can be imported into a program, e.g. random, math, time
 Give an advantage of using library subprograms. :: Already written and tested so save time and are reliable ;; programmer doesn't need to know how they work
 How do you generate a random whole number from 1 to 6 in Python? :: import random ;; dice = random.randint(1, 6) (both ends included)
+What does random.choice(items) do? :: Returns a random item from the list items
 How do you find a square root in Python? :: import math ;; math.sqrt(16) → 4.0
+What does time.sleep(2) do? :: Pauses the program for 2 seconds (after import time)
 How do subprograms help with testing? :: Each subprogram can be tested on its own (in isolation) before being combined
 
 # 3 Data – binary and hexadecimal
@@ -289,6 +313,7 @@ How many bits are needed to represent 50 different values? :: 6 bits (2⁵ = 32 
 What are the place values of an 8-bit binary number? :: 128, 64, 32, 16, 8, 4, 2, 1
 How do you convert binary to denary? :: Write the place values (128 … 1) above the bits and add the place values where there is a 1
 How do you convert denary to binary? :: Work from 128 down: if the place value fits into what's left, write 1 and subtract it; otherwise write 0
+Convert 156 to 8-bit binary. :: 10011100 (128 + 16 + 8 + 4)
 What is the most significant bit (MSB) and least significant bit (LSB)? :: MSB – the leftmost bit (largest place value) ;; LSB – the rightmost bit (value 1)
 What is the largest unsigned number that n bits can hold? :: 2ⁿ − 1 (e.g. 4 bits → 15, 8 bits → 255)
 
@@ -299,6 +324,8 @@ Convert −45 to 8-bit two's complement. :: 45 = 00101101 ;; flip bits → 11010
 Convert 11010011 (two's complement) to denary. :: −128 + 64 + 16 + 2 + 1 = −45
 What are −1 and −128 in 8-bit two's complement? :: −1 = 11111111 ;; −128 = 10000000
 What is the shortcut for finding the two's complement of a binary number? :: Starting from the right, copy bits up to and including the first 1, then flip all the remaining bits
+Why is two's complement used instead of sign and magnitude? :: Only one representation of zero ;; binary addition works normally for positive and negative numbers (subtraction = adding a negative)
+What is sign and magnitude? :: The MSB is a sign bit (0 = positive, 1 = negative) and the other bits give the size, e.g. 10000101 = −5; it has two zeros (+0 and −0)
 
 ## 3.1 Binary – addition, overflow and shifts
 Add 01101101 + 01001011. :: 10111000 (109 + 75 = 184)
@@ -318,6 +345,7 @@ What problem can a left shift cause? :: Overflow – 1s shifted out of the MSB a
 What denary values do hex digits A–F represent? :: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
 How do you convert hex to binary? :: Convert each hex digit to its 4-bit binary nibble, e.g. A7 → 1010 0111
 How do you convert denary to hex? :: Divide by 16: the quotient is the first digit and the remainder the second, e.g. 179 = 11 × 16 + 3 → B3
+Convert hex FF to denary and binary. :: 255 ;; 11111111
 Give uses of hexadecimal. :: MAC addresses ;; colour codes in HTML (e.g. #FF0000) ;; memory addresses ;; error codes ;; machine code listings
 Why can't a computer process hex directly? :: Computers only work in binary – hex is just a shorthand for humans
 
@@ -349,6 +377,7 @@ Why is the ASCII code for "7" not the same as the number 7? :: The character "7"
 
 ## 3.2 Bitmap images
 C: A {{c1::pixel}} (picture element) is the smallest single point of colour in a bitmap image.
+How many colours can an image with a colour depth of 8 bits show? :: 2⁸ = 256
 What is the effect of increasing colour depth? :: More colours can be shown so the image is more realistic, but the file size increases
 What is the effect of increasing resolution? :: More pixels so more detail and a sharper image (less pixelated), but the file size increases
 How many bits per pixel are needed for a black-and-white image? :: 1 bit (0 = white, 1 = black, or vice versa)
@@ -386,6 +415,7 @@ How is a compression ratio worked out? :: Original size ÷ compressed size (e.g.
 Why is data encrypted? :: So that if it is intercepted or stolen it can't be understood without the key – keeps personal/financial data confidential
 C: Unencrypted text is called {{c1::plaintext}}; encrypted text is called {{c2::ciphertext}}.
 Encrypt "CAT" with a Caesar cipher, shift 3. :: FDW
+Decrypt "KHOOR" (Caesar cipher, shift 3). :: HELLO (shift each letter back 3)
 How do you decrypt a Caesar cipher? :: Shift each letter the same number of places in the opposite direction (wrap around from A back to Z)
 What happens to "Y" with a Caesar shift of 3? :: B – the alphabet wraps round (Y → Z → A → B)
 What is frequency analysis? :: Counting how often each letter appears in the ciphertext and matching the most common to common letters in the language (e.g. E) to break a substitution cipher
@@ -443,6 +473,8 @@ Why does a higher clock speed improve performance? :: More fetch–decode–exec
 Why does having more cores improve performance? :: Each core can process instructions independently, so several tasks/instructions can be processed at the same time (in parallel)
 Why might doubling the cores not double the performance? :: Some programs can't be split into parallel tasks ;; cores must communicate/coordinate, which takes time
 Why does more cache improve performance? :: More frequently used data/instructions can be held close to the CPU, so fewer slower fetches from RAM are needed
+What is carried on the address bus? :: The memory address the CPU wants to read from or write to – one-way, from CPU to memory
+What is carried on the data bus? :: The data or instruction being transferred – two-way between CPU and memory
 What is carried on the control bus? :: Control signals, e.g. memory read, memory write, clock signals, interrupts – two-way
 Give the fetch stage in full. :: Address in PC copied to MAR ;; sent along address bus; read signal on control bus ;; instruction at that address sent along data bus into MDR ;; copied to CIR ;; PC incremented by 1
 Why does the program counter get incremented during the fetch stage? :: So it holds the address of the next instruction to be fetched
@@ -523,6 +555,7 @@ Write out the full truth table for AND (A, B → Q). :: 0 0 → 0 ;; 0 1 → 0 ;
 Write out the full truth table for OR (A, B → Q). :: 0 0 → 0 ;; 0 1 → 1 ;; 1 0 → 1 ;; 1 1 → 1
 Write out the truth table for NOT (A → Q). :: 0 → 1 ;; 1 → 0
 Describe the symbols of the AND, OR and NOT gates. :: **AND** – D shape (flat back, round front) ;; **OR** – curved back with a pointed front (shield/arrow shape) ;; **NOT** – triangle with a small circle at the output
+How many rows does a truth table with 2 inputs need? :: 2² = 4
 In what order should input combinations be listed in a truth table? :: Count up in binary: 00, 01, 10, 11 (for 3 inputs 000 to 111)
 Give the output column for Q = NOT (A OR B), inputs 00, 01, 10, 11. :: 1, 0, 0, 0
 Give the output column for Q = NOT (A AND B), inputs 00, 01, 10, 11. :: 1, 1, 1, 0
@@ -592,6 +625,7 @@ What does the internet (network) layer of TCP/IP do? :: Adds source and destinat
 What does the link layer of TCP/IP do? :: Transmits data over the physical network hardware using MAC addresses (e.g. Ethernet, Wi-Fi)
 Why is a layered model used for protocols? :: Each layer does one job and can be developed or changed independently without affecting others ;; makes problems easier to identify ;; allows different manufacturers' hardware/software to work together
 Which protocol would be used to download a web page securely? :: HTTPS
+Which protocol is used to upload files to a web server? :: FTP
 What happens to email sent from one person to another (protocols)? :: The sender's client uses SMTP to send it to their mail server, which forwards it using SMTP to the recipient's mail server; the recipient retrieves it using POP3 or IMAP
 What is contained in a packet header? :: Source address, destination address, packet sequence number (and the total number of packets / error-checking data)
 What is the payload of a packet? :: The actual data being carried
@@ -616,6 +650,7 @@ What is the difference between an IP address and a MAC address? :: IP – logica
 Why was IPv6 introduced? :: IPv4's 32-bit addresses (about 4.3 billion) were running out; IPv6's 128-bit addresses give a vastly larger number
 What does an IPv4 address look like? :: Four numbers 0–255 separated by dots, e.g. 192.168.1.10
 What is the Internet of Things (IoT)? :: Everyday devices (e.g. smart thermostats, fridges, doorbells) connected to the Internet so they can send and receive data
+What is a VPN? :: Virtual private network – creates an encrypted connection over the Internet so data can be sent securely, as if on a private network
 
 # 5 Network security
 What is malware? Give examples. :: Malicious software ;; Viruses, worms, Trojans, ransomware, spyware, adware
@@ -642,6 +677,7 @@ What is a man-in-the-middle attack? :: An attacker secretly intercepts (and may 
 Why is unpatched software a security risk? :: Known vulnerabilities in old versions can be exploited by hackers or malware until the update is installed
 Why are removable media (USB sticks) a security risk? :: They can bring malware onto a network, or be used to copy and steal data
 How can you recognise a phishing email? :: Generic greeting ;; urgent or threatening tone ;; spelling/grammar mistakes ;; suspicious links or sender address ;; asks for personal details
+What is a botnet? :: A network of malware-infected computers controlled by a criminal, e.g. used for DDoS attacks or spam
 
 ## 5.2 Identifying vulnerabilities and protecting networks
 What is penetration testing? :: Authorised, simulated attacks on a network to find vulnerabilities before real attackers do

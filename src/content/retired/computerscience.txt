@@ -1,70 +1,34 @@
-C: An {{c1::algorithm}} is a precise sequence of steps that solves a problem; a {{c2::program}} is an algorithm written in a programming language so a computer can run it.
-In code cards in this deck, what does ·· mean at the start of a line? :: One level of indentation (4 spaces in Python) – the line is inside the block above it
 When does a linear search stop? :: When the target is found or every item has been checked (end of list reached)
 How can you compare the efficiency of two algorithms? :: Count the number of comparisons/steps or passes through a loop for the same data ;; compare the amount of memory used
-How can decomposition be used to design a program? :: Break the problem into sub-problems and write a separate subprogram (function/procedure) for each one
 What does print(17 // 5, 17 % 5) output? :: 3 2
-What is 25 MOD 7 and 25 DIV 7? :: MOD – 4 ;; DIV – 3
-How do you read lines from a text file in Python? :: with open("data.txt", "r") as f: ;; for line in f: ;; print(line.strip())
-What does string slicing s[1:4] return in Python? :: Characters at index 1, 2 and 3
-What does "Computer"[:4] return? :: "Comp" (from the start up to, not including, index 4)
-Name string functions you should know. :: len(), upper(), lower(), slicing, concatenation (+), find/index, isdigit()
-What is the purpose of comments and meaningful identifiers? :: Make code easier to read, maintain and debug
 C: {{c1::Normal}} test data is typical valid data, {{c2::boundary}} data is at the very edge of the valid range, and {{c3::erroneous}} data is invalid and should be rejected.
-What does for i in range(10, 0, -2): print(i) output? :: 10, 8, 6, 4, 2
-What does names[-1] return if names = ["Ali", "Ben", "Cara"]? :: "Cara" (negative index counts from the end)
-What does len(names) return if names = ["Ali", "Ben", "Cara"]? :: 3
 What does this output? nums = [4, 2, 7] ;; nums.append(5) ;; print(nums) :: [4, 2, 7, 5]
-What happens if you access names[5] when names has 3 items? :: IndexError – index out of range (runtime error)
-What does "ab" * 3 return in Python? :: "ababab"
 Why use strip() when reading a line from a file? :: To remove the newline character at the end of the line before using or comparing the data
-What does "banana".count("a") return? :: 3
-What does "Hello World".replace("o", "0") return? :: "Hell0 W0rld"
-How do you check if a string contains another in Python? :: Use in, e.g. if "@" in email:
-What does print("A", "B", sep="-") output? :: A-B
-Write a Python presence check on name. :: while name == "": ;; ·· name = input("Name must not be blank: ")
-Write a Python length check that password is at least 8 characters. :: while len(password) < 8: ;; ·· password = input("At least 8 characters: ")
-Write a Python lookup check on size. :: while size not in ["S", "M", "L"]: ;; ·· size = input("S, M or L: ")
 What happens if you open an existing file in "w" mode? :: Its contents are deleted (overwritten)
 What does != mean in Python? :: Not equal to
-What does print(4 > 2 and 3 > 5) output? :: False
-What does random.choice(items) do? :: Returns a random item from the list items
-What does time.sleep(2) do? :: Pauses the program for 2 seconds (after import time)
-Convert 156 to 8-bit binary. :: 10011100 (128 + 16 + 8 + 4)
 Convert 99 to 8-bit binary. :: 01100011 (64 + 32 + 2 + 1)
 Convert 00101101 to denary. :: 45 (32 + 8 + 4 + 1)
 What is the largest denary number that can be stored in 8 bits (unsigned)? :: 255
 Convert 10011100 (two's complement) to denary. :: −128 + 16 + 8 + 4 = −100
-Why is two's complement used instead of sign and magnitude? :: Only one representation of zero ;; binary addition works normally for positive and negative numbers (subtraction = adding a negative)
-What is sign and magnitude? :: The MSB is a sign bit (0 = positive, 1 = negative) and the other bits give the size, e.g. 10000101 = −5; it has two zeros (+0 and −0)
 What fills the empty positions in a logical shift? :: 0s (on the right for a left shift, on the left for a right shift)
 Convert hex 2C to denary. :: 2 × 16 + 12 = 44
-Convert hex FF to denary and binary. :: 255 ;; 11111111
 Convert binary 00111110 to hex. :: 0011 = 3, 1110 = E → 3E
 Convert 179 to hex. :: B3
 How many characters can 7-bit ASCII represent? :: 2⁷ = 128
-How many colours can an image with a colour depth of 8 bits show? :: 2⁸ = 256
 Calculate the file size in bytes of a 100 × 100 image with 8-bit colour depth. :: 100 × 100 × 8 = 80 000 bits ÷ 8 = 10 000 bytes
 Calculate the size in bytes of 5 s of mono sound sampled at 8000 Hz with 8-bit depth. :: 8000 × 8 × 5 = 320 000 bits ÷ 8 = 40 000 bytes
 How is analogue sound converted to digital? :: The amplitude of the sound wave is measured (sampled) at regular intervals and each measurement stored as a binary number
 Convert 3 GiB into MiB. :: 3 × 1024 = 3072 MiB
 C: {{c1::Lossless}} compression lets the original file be reconstructed exactly; {{c2::lossy}} compression permanently removes data.
-Decrypt "KHOOR" (Caesar cipher, shift 3). :: HELLO (shift each letter back 3)
 What is the key in a Caesar cipher? :: The number of places each letter is shifted
-What is carried on the address bus? :: The memory address the CPU wants to read from or write to – one-way, from CPU to memory
-What is carried on the data bus? :: The data or instruction being transferred – two-way between CPU and memory
 Why is an interpreter useful during development? :: Errors are reported immediately as each line runs, so the program can be tested and fixed bit by bit
 Give the truth table for AND. :: Output 1 only when both inputs are 1
 Give the truth table for OR. :: Output 1 when either or both inputs are 1
 Give the truth table for NOT. :: Output is the opposite of the input
-How many rows does a truth table with 2 inputs need? :: 2² = 4
 What is the output of NOT(A AND B) when A = 1, B = 1? :: 0
 Give the output column for Q = A AND (B OR C) for inputs 000 to 111. :: 0, 0, 0, 0, 0, 1, 1, 1
 Compare POP3 and IMAP. :: POP3 – downloads emails to one device and usually deletes them from the server ;; IMAP – emails stay on the server so they are synchronised and accessible from several devices
-Which protocol is used to upload files to a web server? :: FTP
 What is bandwidth? :: The amount of data that can be transferred across a network in a given time (bits per second)
 C: Transmission speeds are measured in {{c1::bits}} per second, so 1 Mbps means 1 000 000 {{c1::bits}} each second.
-What is a VPN? :: Virtual private network – creates an encrypted connection over the Internet so data can be sent securely, as if on a private network
 How does a firewall protect a network? :: Checks incoming and outgoing packets against a set of rules (e.g. allowed ports, IP addresses) and blocks those that break them
-What is a botnet? :: A network of malware-infected computers controlled by a criminal, e.g. used for DDoS attacks or spam
 What is the difference between artificial intelligence and machine learning? :: AI – any system that performs tasks needing human-like intelligence ;; Machine learning – a type of AI that learns patterns from data and improves with experience
