@@ -19,6 +19,72 @@ What is a logic error? :: The program runs but gives incorrect output (e.g. wron
 What is a syntax error? :: Code breaks the rules of the language and won't run/compile (e.g. missing colon)
 What is a runtime error? :: An error that occurs while the program is running, e.g. division by zero, index out of range
 
+## 1.1 Algorithms – representing and following
+C: An {{c1::algorithm}} is a precise sequence of steps that solves a problem; a {{c2::program}} is an algorithm written in a programming language so a computer can run it.
+Name three ways an algorithm can be expressed. :: **Written description** (structured English) ;; **Flowchart** ;; **Pseudocode** (and also as program code)
+What is pseudocode? :: A structured, language-independent way of writing an algorithm using English-like statements and programming constructs; it is not run by a computer
+Give an advantage of a flowchart over pseudocode. :: Shows the flow of control visually, so it is easy to follow, especially for non-programmers
+Give an advantage of pseudocode over a flowchart. :: Quicker to write and edit, and closer to real code so easier to convert into a program
+What does an arrow (flow line) show in a flowchart? :: The direction of flow – the order in which the steps are carried out
+How many exits does a decision (diamond) symbol have in a flowchart? :: Two – one labelled Yes/True and one labelled No/False
+How is a loop shown in a flowchart? :: A flow line leading from a decision back to an earlier step in the flowchart
+What is sequence? :: Instructions carried out one after another in the order they are written
+What is selection? :: A decision: a condition is tested and a different path/block of code is followed depending on whether it is true or false (IF / ELSE / ELIF)
+What is iteration? :: Repeating a block of code – either a fixed number of times (count-controlled) or until/while a condition is met (condition-controlled)
+What is nesting? :: Placing one construct inside another, e.g. an IF inside a loop, or a loop inside a loop
+What is the purpose of a variable called a counter? :: Keeps count of how many times something has happened; usually starts at 0 and has 1 added each time
+What is a running total? :: A variable (initialised to 0) to which each new value is added in a loop, e.g. total = total + mark
+What is initialisation? :: Giving a variable a starting value before it is used, e.g. total = 0 before a loop
+How do you complete a trace table? :: One column per variable (plus output/condition) ;; work through the algorithm line by line ;; write a new row each time a value changes ;; record outputs in the output column
+Trace: total = 0 ;; for i in range(1, 4): ;; ·· total = total + i ;; print(total). What is output? :: 6 (i = 1, 2, 3 gives total 1, 3, 6)
+In code cards in this deck, what does ·· mean at the start of a line? :: One level of indentation (4 spaces in Python) – the line is inside the block above it
+How do you work out the purpose of an unfamiliar algorithm? :: Trace it with sample data and look at what the output is in relation to the input (e.g. it finds the largest value, counts items, sorts…)
+How do you identify and correct errors in a given algorithm? :: Trace it with test data, compare actual output with expected output, find the line where they differ, then change the faulty operator/condition/value
+Give common causes of logic errors in algorithms. :: Wrong relational operator (< instead of <=) ;; wrong loop range (off-by-one) ;; variable not initialised or reset in the wrong place ;; wrong order of statements ;; using AND instead of OR
+What is an off-by-one error? :: A logic error where a loop runs one time too many or too few, e.g. range(1, 10) when 1–10 was intended
+
+## 1.1 Algorithms – searching
+What data does a binary search need? :: The list must be sorted (in order)
+How do you find the middle item in a binary search? :: mid = (low + high) DIV 2 – in Python mid = (low + high) // 2
+Binary search for 23 in [3, 8, 12, 17, 23, 31, 40]. Which items are compared? :: 17 (23 > 17, discard left half) ;; 31 (23 < 31, discard right half) ;; 23 – found after 3 comparisons
+What is the maximum number of comparisons for a linear search of n items? :: n (target is the last item or not in the list)
+Roughly how many comparisons does a binary search need for 1000 items in the worst case? :: About 10 (2¹⁰ = 1024; each comparison halves the list)
+When would a linear search be the better choice than a binary search? :: When the list is unsorted (sorting first takes time), or the list is very small
+When does a linear search stop? :: When the target is found or every item has been checked (end of list reached)
+When does a binary search stop? :: When the middle item equals the target, or when low becomes greater than high (no items left – not found)
+Write Python for a linear search that prints the index of target in list items or "Not found". :: found = False ;; for i in range(len(items)): ;; ·· if items[i] == target: ;; ···· print(i) ;; ···· found = True ;; if not found: ;; ·· print("Not found")
+Write a Python binary search loop for target in sorted list items. :: low = 0 ;; high = len(items) - 1 ;; found = False ;; while low <= high and not found: ;; ·· mid = (low + high) // 2 ;; ·· if items[mid] == target: found = True ;; ·· elif items[mid] < target: low = mid + 1 ;; ·· else: high = mid - 1
+
+## 1.1 Algorithms – sorting
+What is the result of the first pass of a bubble sort (ascending) on [5, 1, 4, 2]? :: [1, 4, 2, 5] – swaps 5/1, 5/4, 5/2; the largest value has "bubbled" to the end
+After one pass of a bubble sort (ascending), what do you know for certain? :: The largest value is in its correct final position at the end of the list
+How does a bubble sort know the list is sorted? :: A complete pass is made with no swaps (a flag variable such as swapped stays False)
+What is the maximum number of passes a bubble sort needs for n items? :: n − 1 passes (plus one with no swaps if using a flag)
+How many comparisons are in one full pass of a bubble sort of n items? :: n − 1
+How can a bubble sort be made more efficient? :: Stop when a pass has no swaps ;; reduce the number of comparisons by one each pass (the end items are already sorted)
+How do you swap two items in a list in Python? :: temp = items[j] ;; items[j] = items[j + 1] ;; items[j + 1] = temp ;; (or items[j], items[j + 1] = items[j + 1], items[j])
+Write Python for a bubble sort of list items (ascending). :: swapped = True ;; while swapped: ;; ·· swapped = False ;; ·· for j in range(len(items) - 1): ;; ···· if items[j] > items[j + 1]: ;; ······ items[j], items[j + 1] = items[j + 1], items[j] ;; ······ swapped = True
+Show a merge sort of [6, 3, 8, 1]. :: Split: [6, 3] [8, 1] → [6] [3] [8] [1] ;; Merge: [3, 6] [1, 8] → [1, 3, 6, 8]
+How are two sorted lists merged in a merge sort? :: Compare the first items of each list, move the smaller into the new list, repeat until one list is empty, then copy the rest of the other list across
+C: Merge sort is a {{c1::divide and conquer}} algorithm: the problem is split into smaller sub-problems that are solved and then combined.
+Which sort is better for a very large list, and why? :: Merge sort – it needs far fewer comparisons than bubble sort on large lists (bubble sort's comparisons grow with n², merge sort's with n log n)
+Give an advantage of bubble sort over merge sort. :: Simpler to understand and code ;; sorts in place so needs no extra memory ;; quick on a list that is already almost sorted
+Give a disadvantage of merge sort. :: Uses extra memory for the sublists ;; more complex to code (often recursive) ;; still splits and merges even if the list is already sorted
+
+## 1.1 Algorithms – efficiency and fitness for purpose
+How can you compare the efficiency of two algorithms? :: Count the number of comparisons/steps or passes through a loop for the same data ;; compare the amount of memory used
+What does "fitness for purpose" of an algorithm mean? :: It solves the stated problem correctly for all inputs (meets all requirements) and does so efficiently
+How do you evaluate whether an algorithm is fit for purpose? :: Use test data (normal, boundary, erroneous) and logical reasoning to check every requirement is met and the output is correct; consider efficiency
+
+## 1.2 Decomposition and abstraction
+Why is decomposition useful? :: Each sub-problem is simpler to solve, test and debug ;; different people can work on different parts at the same time ;; parts can be reused ;; each sub-problem can become a subprogram
+Why is abstraction useful? :: Reduces complexity so the problem is easier to understand and solve ;; the program only models what is needed, using less memory and time
+Give an example of abstraction. :: A map of a train network shows only stations and connections, not exact distances or buildings ;; a game models a car's speed and position but not its engine parts
+When analysing a problem, what four things should you identify? :: **Inputs** – data needed ;; **Outputs** – results required ;; **Processing** – calculations/decisions ;; **Initialisation** – starting values of variables
+What are the requirements of a problem? :: The things the solution must do – what the user/client needs it to achieve
+How can decomposition be used to design a program? :: Break the problem into sub-problems and write a separate subprogram (function/procedure) for each one
+C: Using abstraction to represent a real-world situation in a program is called {{c1::modelling}} (e.g. a simulation).
+
 # 2 Programming
 Name the main data types. :: Integer, real (float), Boolean, character, string
 What is a variable? :: A named memory location whose value can change during the program
@@ -46,6 +112,191 @@ What does string slicing s[1:4] return in Python? :: Characters at index 1, 2 an
 Name string functions you should know. :: len(), upper(), lower(), slicing, concatenation (+), find/index, isdigit()
 What is the purpose of comments and meaningful identifiers? :: Make code easier to read, maintain and debug
 
+## 2.1 Developing code – readability and errors
+What four techniques make code easier to read? :: **Comments** ;; **Descriptive names** for variables, constants and subprograms ;; **Indentation** ;; **White space** (blank lines between sections)
+How do you write a comment in Python? :: Start the line (or the rest of a line) with # – the interpreter ignores it
+Why is indentation essential in Python? :: Indentation defines which statements belong inside a block (IF, loop, function); wrong indentation gives an error or changes the logic
+Give an example of a syntax error in Python. :: Missing colon after if/for/while/def ;; missing bracket or quote ;; misspelt keyword (pritn) ;; incorrect indentation
+Give two examples of runtime errors in Python. :: Dividing by zero (ZeroDivisionError) ;; index out of range (IndexError) ;; converting non-numeric text with int() (ValueError) ;; opening a file that doesn't exist
+Is this a syntax, logic or runtime error: if age > 18 used when 18-year-olds should be accepted? :: Logic error – the program runs but 18 is rejected; should be age >= 18
+Why are logic errors the hardest to find? :: The program runs without crashing and gives no error message – the output is just wrong, so you must test and trace to find it
+Name ways to locate errors in a program. :: Read error messages (line numbers) ;; trace tables/dry run ;; print variable values at key points ;; test with known data ;; use a debugger (breakpoints, stepping)
+
+## 2.1 Developing code – testing and evaluation
+C: {{c1::Normal}} test data is typical valid data, {{c2::boundary}} data is at the very edge of the valid range, and {{c3::erroneous}} data is invalid and should be rejected.
+Valid ages are 11–16 inclusive. Give normal, boundary and erroneous test data. :: Normal – 13 ;; Boundary – 11 and 16 (also 10 and 17 just outside) ;; Erroneous – "abc", −5 or 25
+What columns does a test plan have? :: Test number, purpose/description, test data, type of test (normal/boundary/erroneous), expected result, actual result (pass/fail)
+What is the difference between the expected result and the actual result in a test plan? :: Expected – what the program should do, written before testing ;; Actual – what it did when run; if they differ the test has failed
+How can you judge the efficiency of a program? :: Number of comparisons/steps ;; number of passes through loops ;; amount of memory used (e.g. variables, data structures) ;; avoiding repeated or unnecessary code
+What is evaluation of a program? :: Judging how well it meets the requirements (fitness for purpose) and how efficient it is, using the test results
+
+## 2.2 Constructs and Python syntax
+Write a Python IF statement that prints "Pass" if mark is at least 50, otherwise "Fail". :: if mark >= 50: ;; ·· print("Pass") ;; else: ;; ·· print("Fail")
+What is elif used for in Python? :: Testing another condition when the previous IF condition was false – allows more than two options
+What does this output? x = 7 ;; if x > 10: print("A") ;; elif x > 5: print("B") ;; else: print("C") :: B
+What numbers does for i in range(5) produce? :: 0, 1, 2, 3, 4 (starts at 0, stops before 5)
+What numbers does for i in range(2, 6) produce? :: 2, 3, 4, 5
+What does for i in range(1, 10, 3): print(i) output? :: 1, 4, 7
+What does for i in range(10, 0, -2): print(i) output? :: 10, 8, 6, 4, 2
+What does range(start, stop, step) do if you want to include the stop number? :: It doesn't – stop is excluded, so use stop + 1, e.g. range(1, 11) for 1–10
+Write a Python WHILE loop that keeps asking for a password until it is "abc123". :: password = input("Password: ") ;; while password != "abc123": ;; ·· password = input("Try again: ")
+How do you write a REPEAT…UNTIL style loop in Python? :: Python has no REPEAT…UNTIL; use while True: … if condition: break (the body always runs at least once)
+What is the difference between a WHILE loop and a REPEAT…UNTIL loop? :: WHILE – condition checked at the start, so the body may run zero times ;; REPEAT…UNTIL – condition checked at the end, so the body always runs at least once
+What does this output? x = 5 ;; while x > 0: ;; ·· x = x - 2 ;; print(x) :: −1 (x goes 5 → 3 → 1 → −1)
+What is an infinite loop? :: A loop whose condition never becomes false, so it never stops – often because the loop variable is never changed
+What does break do in a Python loop? :: Exits the loop immediately
+How do you loop through every item in a list in Python? :: for item in items: ;; ·· print(item)
+What does a nested loop do? :: The inner loop runs completely for every single iteration of the outer loop
+How many times is "*" printed? for i in range(3): ;; ·· for j in range(4): ;; ···· print("*") :: 12 (3 × 4)
+When should you use a FOR loop rather than a WHILE loop? :: FOR – when the number of repetitions is known in advance (or to visit every item) ;; WHILE – when it depends on a condition, e.g. until valid input is entered
+
+## 2.2 Pseudocode (Edexcel conventions)
+How is a value assigned in Edexcel pseudocode? :: SET Total TO 0
+How is output written in Edexcel pseudocode? :: SEND "Hello" TO DISPLAY
+How is input written in Edexcel pseudocode? :: RECEIVE Name FROM (STRING) KEYBOARD
+How is selection written in Edexcel pseudocode? :: IF Mark >= 50 THEN ;; SEND "Pass" TO DISPLAY ;; ELSE ;; SEND "Fail" TO DISPLAY ;; END IF
+How is a condition-controlled pre-check loop written in Edexcel pseudocode? :: WHILE Count < 10 DO ;; … ;; END WHILE
+How is a post-check loop written in Edexcel pseudocode? :: REPEAT ;; … ;; UNTIL Answer = "Y"
+How is a fixed-repetition loop written in Edexcel pseudocode? :: REPEAT 5 TIMES ;; … ;; END REPEAT
+How is a count-controlled FOR loop written in Edexcel pseudocode? :: FOR Index FROM 1 TO 10 DO ;; … ;; END FOR (optional STEP, e.g. FOR Index FROM 10 TO 0 STEP -2 DO)
+How do you loop through every item of an array in Edexcel pseudocode? :: FOR EACH Item FROM Scores DO ;; … ;; END FOREACH
+How is a procedure written in Edexcel pseudocode? :: PROCEDURE ShowName (Name) ;; BEGIN PROCEDURE ;; SEND Name TO DISPLAY ;; END PROCEDURE
+How is a function written in Edexcel pseudocode? :: FUNCTION Square (Num) ;; BEGIN FUNCTION ;; RETURN Num * Num ;; END FUNCTION
+What is the "not equal to" operator in Edexcel pseudocode? :: <> (in Python it is !=)
+What symbol joins (concatenates) strings in Edexcel pseudocode? :: & – e.g. SEND "Hi " & Name TO DISPLAY (Python uses +)
+What is the exponent (power) operator in Edexcel pseudocode? :: ^ – e.g. 2 ^ 3 = 8
+How is the length of a string or array found in Edexcel pseudocode? :: LENGTH(Name)
+What index does the first element of an array have in Edexcel pseudocode and Python? :: 0
+How do you read from and write to a file in Edexcel pseudocode? :: READ MyFile Record ;; WRITE MyFile Record
+
+## 2.3 Data types and conversion
+C: In Python, an integer is type {{c1::int}}, a real number is {{c2::float}}, text is {{c3::str}} and True/False is {{c4::bool}}.
+What is a character data type? :: A single letter, digit, symbol or space, e.g. "A" (Python stores it as a string of length 1)
+What data type would you use for a phone number, and why? :: String – it may start with 0, contain spaces or +, and no arithmetic is done on it
+Choose data types: age, price, surname, is_member. :: age – integer ;; price – real (float) ;; surname – string ;; is_member – Boolean
+What data type does input() always return in Python? :: A string (str) – it must be converted with int() or float() to do arithmetic
+What is casting (type conversion)? :: Changing a value from one data type to another, e.g. int("5") → 5, str(5) → "5", float("2.5") → 2.5
+What does print("12" + "3") output? :: 123 (strings are concatenated)
+What does print(int("12") + 3) output? :: 15
+What happens with print("Age: " + 15)? :: A TypeError (runtime error) – a string can't be joined to an integer; use str(15)
+What does int(7.9) return in Python? :: 7 (truncates – removes the decimal part, doesn't round)
+What does round(3.14159, 2) return? :: 3.14
+How do you write a Boolean value in Python? :: True or False (capital first letter, no quotes)
+Why use a constant instead of typing a value (e.g. VAT = 0.2) throughout the code? :: Only needs changing in one place ;; prevents accidental change while running ;; descriptive name makes code easier to read
+How are constants usually named in Python? :: In capital letters, e.g. MAX_SCORE = 100 (Python doesn't enforce it – it is a convention)
+
+## 2.3 Data structures – lists, arrays and records
+How do you create a list (array) in Python? :: names = ["Ali", "Ben", "Cara"]
+What does names[1] return if names = ["Ali", "Ben", "Cara"]? :: "Ben" (indexing starts at 0)
+What does names[-1] return if names = ["Ali", "Ben", "Cara"]? :: "Cara" (negative index counts from the end)
+How do you change an element of a list in Python? :: names[0] = "Zara"
+What does len(names) return if names = ["Ali", "Ben", "Cara"]? :: 3
+What does append() do? :: Adds an item to the end of a list, e.g. nums.append(5)
+What does this output? nums = [4, 2, 7] ;; nums.append(5) ;; print(nums) :: [4, 2, 7, 5]
+What do insert(), remove() and pop() do on a list? :: insert(i, x) – puts x at index i ;; remove(x) – deletes the first item equal to x ;; pop(i) – removes and returns the item at index i (last item if no index)
+How do you test whether a value is in a list in Python? :: if "Ben" in names: (the in operator returns True/False)
+How do you create an empty list and a list of ten zeros in Python? :: items = [] ;; zeros = [0] * 10
+What happens if you access names[5] when names has 3 items? :: IndexError – index out of range (runtime error)
+How do you create a 2D list (array) in Python? :: grid = [[1, 2, 3], [4, 5, 6]] – a list of lists (each inner list is a row)
+What does grid[1][0] return if grid = [[1, 2, 3], [4, 5, 6]]? :: 4 (row 1, column 0)
+Write Python to print every value in a 2D list called grid. :: for row in grid: ;; ·· for value in row: ;; ···· print(value)
+How many elements are in a 2D array with 5 rows and 4 columns? :: 20
+Write Python to total all the numbers in a list called scores. :: total = 0 ;; for s in scores: ;; ·· total = total + s ;; print(total) ;; (or total = sum(scores))
+Write Python to find the largest value in a list called scores without using max(). :: largest = scores[0] ;; for s in scores: ;; ·· if s > largest: ;; ···· largest = s
+How can a record be represented in Python? :: As a list (e.g. ["Ali", 15, True]) or a dictionary (e.g. {"name": "Ali", "age": 15}) – each element is a field
+What is the difference between an array and a record? :: Array – items usually of the same data type, accessed by index ;; Record – a group of related fields that can be different data types
+Why use an array instead of lots of separate variables? :: One name for many values ;; can be processed with a loop ;; less code, easier to maintain ;; size can grow
+
+## 2.3 String handling
+What does len("Computer") return? :: 8
+If s = "Computer", what are s[0] and s[-1]? :: "C" and "r"
+What does "Computer"[0:3] return? :: "Com" (indexes 0, 1, 2)
+What does "Computer"[3:] return? :: "puter" (from index 3 to the end)
+What does "Computer"[:4] return? :: "Comp" (from the start up to, not including, index 4)
+What do upper() and lower() do? :: Return a copy of the string in capitals / lower case, e.g. "Hi".upper() → "HI"
+How do you join two strings in Python? :: Concatenation with +, e.g. first + " " + last
+What does "ab" * 3 return in Python? :: "ababab"
+What does "a,b,c".split(",") return? :: ["a", "b", "c"] – a list of the parts between the commas
+What does strip() do? :: Removes spaces and newline characters from the start and end of a string – used when reading lines from a file
+What does "banana".find("n") return? :: 2 – the index of the first match (−1 if not found)
+What does "banana".count("a") return? :: 3
+What do isdigit() and isalpha() return? :: isdigit() – True if all characters are digits ;; isalpha() – True if all characters are letters
+What does ord("A") return, and chr(97)? :: ord("A") → 65 (ASCII code) ;; chr(97) → "a"
+Write Python to count the vowels in a string word. :: count = 0 ;; for letter in word.lower(): ;; ·· if letter in "aeiou": ;; ···· count = count + 1
+Write Python to print a string s backwards using a loop. :: for i in range(len(s) - 1, -1, -1): ;; ·· print(s[i], end="")
+What does "Hello World".replace("o", "0") return? :: "Hell0 W0rld"
+How do you check if a string contains another in Python? :: Use in, e.g. if "@" in email:
+
+## 2.4 Input, output and validation
+How do you get a whole number from the keyboard in Python? :: age = int(input("Enter age: "))
+What does print("A", "B", sep="-") output? :: A-B
+How do you stop print() moving to a new line? :: Use end="", e.g. print("Hi", end="")
+Describe a range check. :: Checks the data lies between a lower and upper limit, e.g. 1 <= month <= 12
+Describe a length check. :: Checks the data has a certain number of characters (or within a min/max length), e.g. password at least 8 characters
+Describe a presence check. :: Checks that data has been entered – the field is not left blank
+Describe a type check. :: Checks the data is of the correct data type, e.g. an integer not text
+Describe a format check. :: Checks the data matches a pattern, e.g. a postcode or date DD/MM/YYYY
+Describe a lookup check. :: Checks the data matches one of a list of allowed values, e.g. "S", "M" or "L"
+Write Python that keeps asking for a number until it is between 1 and 10. :: num = int(input("1-10: ")) ;; while num < 1 or num > 10: ;; ·· num = int(input("Invalid, 1-10: "))
+Write a Python presence check on name. :: while name == "": ;; ·· name = input("Name must not be blank: ")
+Write a Python length check that password is at least 8 characters. :: while len(password) < 8: ;; ·· password = input("At least 8 characters: ")
+Write a Python type check that text is a whole number. :: while not text.isdigit(): ;; ·· text = input("Enter a whole number: ") ;; num = int(text)
+Write a Python lookup check on size. :: while size not in ["S", "M", "L"]: ;; ·· size = input("S, M or L: ")
+Why can't validation guarantee data is correct? :: It only checks data is sensible/allowed – a valid but wrong value (e.g. age 14 instead of 15) will still be accepted
+What is authentication in a program? :: Checking a user is who they claim to be, e.g. comparing an entered username and password against stored values
+Write Python to give a user three attempts to enter the password "secret". :: attempts = 0 ;; correct = False ;; while attempts < 3 and not correct: ;; ·· if input("Password: ") == "secret": correct = True ;; ·· attempts = attempts + 1
+
+## 2.4 File handling
+What are the file modes "r", "w" and "a" in Python? :: "r" – read ;; "w" – write (creates the file or overwrites existing contents) ;; "a" – append (adds to the end)
+Why must a file be closed after use? :: Saves (flushes) the data to storage and frees the file so other programs can use it; data may be lost otherwise
+What is the advantage of using with open(…) as f: ? :: The file is closed automatically at the end of the block, even if an error occurs
+What is a CSV file? :: A comma-separated values text file – each line is a record and the fields are separated by commas
+Write Python to read a CSV file of name,score lines and print each name. :: with open("scores.txt", "r") as f: ;; ·· for line in f: ;; ···· fields = line.strip().split(",") ;; ···· print(fields[0])
+Write Python to append a name and score to a CSV file. :: f = open("scores.txt", "a") ;; f.write(name + "," + str(score) + "\n") ;; f.close()
+Why is str() needed when writing a number to a text file? :: write() only accepts strings
+What does "\n" mean in a string? :: A newline character – moves to the next line (each record in a text file ends with one)
+What do read(), readline() and readlines() return? :: read() – the whole file as one string ;; readline() – the next line ;; readlines() – a list of all lines
+Why use strip() when reading a line from a file? :: To remove the newline character at the end of the line before using or comparing the data
+Why might a program store data in a file rather than in variables? :: Variables are lost when the program ends; a file keeps the data permanently (persistent) for next time
+What happens if you open an existing file in "w" mode? :: Its contents are deleted (overwritten)
+
+## 2.5 Operators
+What do / and // do in Python? :: / – real division, e.g. 7 / 2 = 3.5 ;; // – integer division (DIV), e.g. 7 // 2 = 3
+What does % do in Python? :: Modulus (MOD) – gives the remainder, e.g. 17 % 5 = 2
+What does print(17 // 5, 17 % 5) output? :: 3 2
+What does ** do in Python? :: Exponentiation (power), e.g. 2 to the power 3 gives 8
+How can MOD be used to test whether a number is even? :: if num % 2 == 0: – the remainder when dividing by 2 is 0
+What is 25 MOD 7 and 25 DIV 7? :: MOD – 4 ;; DIV – 3
+What is the order of precedence for arithmetic operators? :: Brackets, then exponent (powers), then × ÷ DIV MOD, then + − (left to right for equal precedence)
+What does print(2 + 3 * 4) output? :: 14 (multiplication first)
+What is the difference between = and == in Python? :: = assigns a value to a variable ;; == compares two values for equality (gives True/False)
+What does != mean in Python? :: Not equal to
+C: The AND operator gives True only if {{c1::both}} conditions are true; OR gives True if {{c2::at least one}} condition is true; NOT {{c3::reverses}} a Boolean value.
+What does print(not (3 > 2) or 5 == 5) output? :: True (not True is False; False or True is True)
+What does print(4 > 2 and 3 > 5) output? :: False
+Write a Python condition that is True when age is between 13 and 19 inclusive. :: age >= 13 and age <= 19
+What is the order of precedence for Boolean operators? :: NOT first, then AND, then OR (use brackets to make it clear)
+
+## 2.6 Subprograms
+C: A {{c1::subprogram}} is a named, self-contained block of code that performs a specific task and can be called from elsewhere in the program.
+Write a Python function that returns the area of a rectangle. :: def area(width, height): ;; ·· return width * height
+Write a Python procedure that prints a greeting for a name. :: def greet(name): ;; ·· print("Hello", name)
+How do you call a function and store its result? :: result = area(4, 5)
+What is the difference between a parameter and an argument? :: Parameter – the variable named in the subprogram definition ;; Argument – the actual value passed in when it is called
+What is a return value? :: The value a function sends back to the part of the program that called it
+What does this output? def double(n): ;; ·· return n * 2 ;; print(double(3) + 1) :: 7
+What is the scope of a variable? :: The part of the program in which the variable can be accessed (local or global)
+Why are local variables preferred to global variables? :: They use memory only while the subprogram runs ;; the same name can be used in different subprograms ;; can't be changed accidentally by other parts of the program ;; subprograms are easier to test and reuse
+How do you change a global variable inside a Python function? :: Declare it with the global keyword inside the function, e.g. global score
+What is a built-in (pre-existing) function? Give Python examples. :: A subprogram provided by the language ;; print(), input(), len(), int(), str(), float(), range(), round(), max(), min()
+What is a library (module)? :: A collection of pre-written, tested subprograms that can be imported into a program, e.g. random, math, time
+Give an advantage of using library subprograms. :: Already written and tested so save time and are reliable ;; programmer doesn't need to know how they work
+How do you generate a random whole number from 1 to 6 in Python? :: import random ;; dice = random.randint(1, 6) (both ends included)
+What does random.choice(items) do? :: Returns a random item from the list items
+How do you find a square root in Python? :: import math ;; math.sqrt(16) → 4.0
+What does time.sleep(2) do? :: Pauses the program for 2 seconds (after import time)
+How do subprograms help with testing? :: Each subprogram can be tested on its own (in isolation) before being combined
+
 # 3 Data – binary and hexadecimal
 Why do computers use binary? :: Circuits have two states (on/off) – transistors act as switches
 Define bit, nibble, byte, kilobyte. :: Bit – 0 or 1 ;; Nibble – 4 bits ;; Byte – 8 bits ;; Kibibyte (KiB) – 1024 bytes (IGCSE uses binary prefixes: KiB, MiB, GiB, TiB)
@@ -63,6 +314,56 @@ What is an arithmetic shift right? :: Shifts right but keeps the sign bit (copie
 Why is hexadecimal used? :: Easier for humans to read/write than binary; each hex digit = 4 bits; fewer errors
 Convert hex 3F to denary. :: 3 × 16 + 15 = 63
 Convert binary 11011010 to hex. :: 1101 = D, 1010 = A → DA
+
+## 3.1 Binary – unsigned integers
+C: Computers use binary to represent both {{c1::data}} and {{c2::program instructions}}.
+How many different values can n bits represent? :: 2ⁿ – e.g. 4 bits → 16, 8 bits → 256
+How many bits are needed to represent 50 different values? :: 6 bits (2⁵ = 32 is too few; 2⁶ = 64)
+What are the place values of an 8-bit binary number? :: 128, 64, 32, 16, 8, 4, 2, 1
+How do you convert binary to denary? :: Write the place values (128 … 1) above the bits and add the place values where there is a 1
+How do you convert denary to binary? :: Work from 128 down: if the place value fits into what's left, write 1 and subtract it; otherwise write 0
+Convert 156 to 8-bit binary. :: 10011100 (128 + 16 + 8 + 4)
+Convert 00101101 to denary. :: 45 (32 + 8 + 4 + 1)
+Convert 99 to 8-bit binary. :: 01100011 (64 + 32 + 2 + 1)
+What is the most significant bit (MSB) and least significant bit (LSB)? :: MSB – the leftmost bit (largest place value) ;; LSB – the rightmost bit (value 1)
+What is the largest unsigned number that n bits can hold? :: 2ⁿ − 1 (e.g. 4 bits → 15, 8 bits → 255)
+
+## 3.1 Binary – signed integers (two's complement)
+In 8-bit two's complement, what are the place values? :: −128, 64, 32, 16, 8, 4, 2, 1
+How can you tell if an 8-bit two's complement number is negative? :: Its most significant bit is 1
+Convert −45 to 8-bit two's complement. :: 45 = 00101101 ;; flip bits → 11010010 ;; add 1 → 11010011
+Convert 11010011 (two's complement) to denary. :: −128 + 64 + 16 + 2 + 1 = −45
+Convert 10011100 (two's complement) to denary. :: −128 + 16 + 8 + 4 = −100
+What are −1 and −128 in 8-bit two's complement? :: −1 = 11111111 ;; −128 = 10000000
+What is the shortcut for finding the two's complement of a binary number? :: Starting from the right, copy bits up to and including the first 1, then flip all the remaining bits
+Why is two's complement used instead of sign and magnitude? :: Only one representation of zero ;; binary addition works normally for positive and negative numbers (subtraction = adding a negative)
+What is sign and magnitude? :: The MSB is a sign bit (0 = positive, 1 = negative) and the other bits give the size, e.g. 10000101 = −5; it has two zeros (+0 and −0)
+
+## 3.1 Binary – addition, overflow and shifts
+Add 01101101 + 01001011. :: 10111000 (109 + 75 = 184)
+Add 11001000 + 01100100 in 8 bits. What happens? :: Result needs 9 bits (100101100 = 300); the 9th bit is lost so 8 bits store 00101100 (44) – overflow
+How can you spot overflow when adding two 8-bit two's complement numbers? :: Two positives give a negative result (or two negatives give a positive), e.g. 01111111 + 00000001 = 10000000 (−128)
+What problems can overflow cause? :: Incorrect results because the extra carry bit is lost ;; may cause the program to crash or behave unexpectedly
+What is 00010110 shifted logically left by 2? :: 01011000 (22 × 4 = 88)
+What is 00010110 shifted logically right by 1? :: 00001011 (22 ÷ 2 = 11)
+What is the effect of a left shift by n places on an unsigned number? :: Multiplies it by 2ⁿ (if no 1s are lost off the left)
+What is the effect of a right shift by n places? :: Divides by 2ⁿ (integer division – bits shifted off the right are lost, so it can be inaccurate)
+Arithmetic shift right 11101000 (−24) by 1. :: 11110100 (−12) – the sign bit 1 is copied into the MSB
+Why use an arithmetic shift rather than a logical shift right on a negative two's complement number? :: A logical shift puts 0 in the MSB, making the number positive; arithmetic keeps the sign bit, so it correctly halves the number
+What fills the empty positions in a logical shift? :: 0s (on the right for a left shift, on the left for a right shift)
+How does an arithmetic shift left behave? :: Bits move left and 0s fill from the right; the sign bit should be preserved (if the sign changes the result has overflowed)
+What problem can a left shift cause? :: Overflow – 1s shifted out of the MSB are lost, giving a wrong (or wrongly signed) result
+
+## 3.1 Hexadecimal
+What denary values do hex digits A–F represent? :: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+How do you convert hex to binary? :: Convert each hex digit to its 4-bit binary nibble, e.g. A7 → 1010 0111
+How do you convert denary to hex? :: Divide by 16: the quotient is the first digit and the remainder the second, e.g. 179 = 11 × 16 + 3 → B3
+Convert hex 2C to denary. :: 2 × 16 + 12 = 44
+Convert 179 to hex. :: B3
+Convert hex FF to denary and binary. :: 255 ;; 11111111
+Convert binary 00111110 to hex. :: 0011 = 3, 1110 = E → 3E
+Give uses of hexadecimal. :: MAC addresses ;; colour codes in HTML (e.g. #FF0000) ;; memory addresses ;; error codes ;; machine code listings
+Why can't a computer process hex directly? :: Computers only work in binary – hex is just a shorthand for humans
 
 # 3 Data – representation
 What is ASCII? :: A 7-bit character set representing 128 characters (English letters, digits, symbols)
@@ -83,12 +384,83 @@ How does a Caesar cipher work? :: Each letter is shifted a fixed number of place
 Why is a Caesar cipher weak? :: Only 25 possible keys – easily cracked by brute force or frequency analysis
 What is the difference between symmetric and asymmetric encryption? :: Symmetric – same key to encrypt and decrypt ;; Asymmetric – public key encrypts, private key decrypts
 
+## 3.2 Characters
+How many characters can 7-bit ASCII represent? :: 2⁷ = 128
+What are the ASCII codes for "A", "a" and "0"? :: "A" = 65 ;; "a" = 97 ;; "0" = 48
+If "C" is 67 in ASCII, what is "F"? :: 70 – letters are in alphabetical order with consecutive codes
+C: A {{c1::character set}} is a defined list of characters a computer recognises, each with a unique binary code.
+Why is ASCII not suitable for all languages? :: Only 128 characters – not enough for languages such as Chinese, Arabic or Hindi, or for emoji
+Why is the ASCII code for "7" not the same as the number 7? :: The character "7" is stored as code 55 – it is text, so it can't be used directly in arithmetic
+
+## 3.2 Bitmap images
+C: A {{c1::pixel}} (picture element) is the smallest single point of colour in a bitmap image.
+How many colours can an image with a colour depth of 8 bits show? :: 2⁸ = 256
+What is the effect of increasing colour depth? :: More colours can be shown so the image is more realistic, but the file size increases
+What is the effect of increasing resolution? :: More pixels so more detail and a sharper image (less pixelated), but the file size increases
+How many bits per pixel are needed for a black-and-white image? :: 1 bit (0 = white, 1 = black, or vice versa)
+Calculate the file size of an 800 × 600 image with 24-bit colour depth. :: 800 × 600 × 24 = 11 520 000 bits ;; ÷ 8 = 1 440 000 bytes ;; ÷ 1024 = 1406.25 KiB (≈ 1.37 MiB)
+Calculate the file size in bytes of a 100 × 100 image with 8-bit colour depth. :: 100 × 100 × 8 = 80 000 bits ÷ 8 = 10 000 bytes
+Why is the actual file size of an image bigger than width × height × colour depth? :: Metadata is stored too (e.g. width, height, colour depth, date)
+What is metadata? :: Data about data, e.g. an image's dimensions, colour depth and date taken
+
+## 3.2 Sound
+How is analogue sound converted to digital? :: The amplitude of the sound wave is measured (sampled) at regular intervals and each measurement stored as a binary number
+What is the effect of increasing sample rate? :: Digital sound is closer to the original analogue wave (better quality), but the file is larger
+What is the effect of increasing bit depth? :: Each sample's amplitude is stored more precisely (more possible values) so better quality, but the file is larger
+Calculate the size of a 10 s stereo recording at 44 100 Hz with 16-bit depth. :: 44 100 × 16 × 10 × 2 = 14 112 000 bits ;; ÷ 8 = 1 764 000 bytes ;; ≈ 1722.7 KiB ≈ 1.68 MiB
+What is meant by a sample rate of 44.1 kHz? :: 44 100 samples are taken every second
+Calculate the size in bytes of 5 s of mono sound sampled at 8000 Hz with 8-bit depth. :: 8000 × 8 × 5 = 320 000 bits ÷ 8 = 40 000 bytes
+What are the limitations of representing data in binary? :: Digital data is only an approximation of analogue data (e.g. sound between samples is lost) ;; more accuracy/quality needs more bits so bigger files ;; limited range of numbers in a fixed number of bits (overflow)
+
+## 3.3 Units and file sizes
+Put these units in order and give their sizes: KiB, TiB, MiB, GiB. :: 1 KiB = 1024 bytes ;; 1 MiB = 1024 KiB ;; 1 GiB = 1024 MiB ;; 1 TiB = 1024 GiB
+How many bytes are in 1 MiB? :: 1024 × 1024 = 1 048 576 bytes
+How do you convert a number of bits into KiB? :: Divide by 8 to get bytes, then divide by 1024
+Convert 3 GiB into MiB. :: 3 × 1024 = 3072 MiB
+How many 4 MiB photos can fit on a 2 GiB memory card? :: 2 × 1024 = 2048 MiB ÷ 4 = 512 photos
+C: The prefix {{c1::kibi}} means 2¹⁰ (1024) whereas kilo means 10³ (1000).
+How do you calculate the size of a text file? :: Number of characters × bits per character (e.g. 7 or 8 for ASCII) ÷ 8 for bytes
+
+## 3.3 Compression
+C: {{c1::Lossless}} compression lets the original file be reconstructed exactly; {{c2::lossy}} compression permanently removes data.
+When must lossless compression be used? :: When no data can be lost, e.g. text documents, program code, spreadsheets – otherwise the file would be corrupted or meaning lost
+When is lossy compression suitable? :: For images, music and video where some loss of quality isn't noticeable and much smaller files are wanted (e.g. streaming, web pages)
+How does lossy compression reduce sound file size? :: Removes sounds humans can't hear well (very high/low frequencies, quiet sounds masked by louder ones)
+How does lossy compression reduce image file size? :: Reduces the number of colours or groups similar colours together, removing detail the eye doesn't notice
+Compress WWWWWBBBWW using RLE. :: 5W3B2W
+Decompress 3A1B4C (RLE). :: AAABCCCC
+When is RLE not effective? :: When data has few runs of repeated values – the encoded version can be bigger than the original
+Give a benefit of compression for data transmission. :: Smaller files transfer faster and use less bandwidth, e.g. quicker downloads and streaming with less buffering
+How is a compression ratio worked out? :: Original size ÷ compressed size (e.g. 10 MiB to 2 MiB is 5 : 1)
+
+## 3.4 Encryption
+Why is data encrypted? :: So that if it is intercepted or stolen it can't be understood without the key – keeps personal/financial data confidential
+C: Unencrypted text is called {{c1::plaintext}}; encrypted text is called {{c2::ciphertext}}.
+Encrypt "CAT" with a Caesar cipher, shift 3. :: FDW
+Decrypt "KHOOR" (Caesar cipher, shift 3). :: HELLO (shift each letter back 3)
+How do you decrypt a Caesar cipher? :: Shift each letter the same number of places in the opposite direction (wrap around from A back to Z)
+What happens to "Y" with a Caesar shift of 3? :: B – the alphabet wraps round (Y → Z → A → B)
+What is frequency analysis? :: Counting how often each letter appears in the ciphertext and matching the most common to common letters in the language (e.g. E) to break a substitution cipher
+What is the key in a Caesar cipher? :: The number of places each letter is shifted
+Write Python to Caesar-shift an upper-case letter ch by key places. :: new = chr((ord(ch) - 65 + key) % 26 + 65)
+What is the benefit of asymmetric encryption over symmetric? :: The decryption (private) key never has to be shared, so there is no risk of it being intercepted when exchanging keys
+
 # 3 Data – databases
 What is a database? :: An organised, persistent store of data, usually in tables of records and fields
 What is a primary key? :: A field that uniquely identifies each record in a table
 What is a foreign key? :: A field in one table that is a primary key in another, linking the tables
 What is a relational database? :: Data stored in multiple linked tables to reduce data redundancy
 What does SQL SELECT … FROM … WHERE … do? :: Retrieves specified fields from a table where records match a condition, e.g. SELECT name FROM Students WHERE age > 15
+
+## 3.5 Databases – key terms
+C: In a database table, a {{c1::record}} is one row (all the data about one item) and a {{c2::field}} is one column (one piece of data about every item).
+What is a flat-file database? :: A database with all the data in a single table
+What is data redundancy? :: The same data stored more than once unnecessarily
+Why are relational databases better than flat-file databases? :: Less data redundancy (data stored once) ;; less storage ;; fewer inconsistencies – an update only needs making in one place ;; better data integrity
+What is data inconsistency? :: When copies of the same data in different places don't match (e.g. an address updated in one record but not another)
+Why can't a surname be used as a primary key? :: It may not be unique – two people can share a surname
+Write SQL to show the name and score of all students with a score over 80, highest first. :: SELECT name, score FROM Students WHERE score > 80 ORDER BY score DESC
+What does SELECT * FROM Students do? :: Returns every field of every record in the Students table
 
 # 4 Computers – hardware
 Describe the Von Neumann architecture. :: Program instructions and data are stored together in the same memory; the CPU fetches and executes instructions one at a time
@@ -111,6 +483,48 @@ What is an embedded system? :: A computer system built into a larger device to p
 What is the difference between input and output devices? :: Input – sends data into the computer (keyboard, sensor) ;; Output – presents data from the computer (monitor, printer, actuator)
 What is a sensor? :: An input device that measures a physical quantity (temperature, light, pressure) for a control system
 
+## 4.1 Input–process–output and the stored program concept
+What is the input–process–output model? :: Data is input, processed by the CPU (using memory), and the results are output; storage keeps data for later
+C: The {{c1::stored program}} concept means program instructions are held in main memory alongside data, and fetched and executed one at a time by the CPU.
+What is main memory (RAM) used for? :: Holding the program instructions and data currently in use, so the CPU can access them quickly
+What is a register? :: A very small, very fast storage location inside the CPU that holds a single item (instruction, data or address) currently being used
+What is the accumulator? :: A register that holds the result of calculations carried out by the ALU
+What is the current instruction register (CIR / IR)? :: Holds the instruction currently being decoded and executed
+What does the clock do in a CPU? :: Sends regular electrical pulses that synchronise the CPU's operations; each pulse allows a step of the fetch–decode–execute cycle
+What is clock speed? :: The number of clock cycles per second, measured in hertz (e.g. 3 GHz = 3 billion cycles per second)
+Why does a higher clock speed improve performance? :: More fetch–decode–execute cycles can be carried out per second, so more instructions processed
+Why does having more cores improve performance? :: Each core can process instructions independently, so several tasks/instructions can be processed at the same time (in parallel)
+Why might doubling the cores not double the performance? :: Some programs can't be split into parallel tasks ;; cores must communicate/coordinate, which takes time
+Why does more cache improve performance? :: More frequently used data/instructions can be held close to the CPU, so fewer slower fetches from RAM are needed
+What is carried on the address bus? :: The memory address the CPU wants to read from or write to – one-way, from CPU to memory
+What is carried on the data bus? :: The data or instruction being transferred – two-way between CPU and memory
+What is carried on the control bus? :: Control signals, e.g. memory read, memory write, clock signals, interrupts – two-way
+Give the fetch stage in full. :: Address in PC copied to MAR ;; sent along address bus; read signal on control bus ;; instruction at that address sent along data bus into MDR ;; copied to CIR ;; PC incremented by 1
+Why does the program counter get incremented during the fetch stage? :: So it holds the address of the next instruction to be fetched
+What are sequential, parallel and multi-agent computational models? :: **Sequential** – instructions executed one after another ;; **Parallel** – a task split into parts processed at the same time on multiple processors/cores ;; **Multi-agent** – separate independent agents/systems work together, each solving part of a problem
+
+## 4.1 Memory and storage
+Why is RAM described as volatile? :: Its contents are lost when the power is turned off
+What happens when RAM is full and virtual memory is used? :: Data not currently needed is moved to secondary storage; it must be swapped back into RAM when needed, which slows the computer down
+How can virtual memory problems be reduced? :: Install more RAM
+Give the order from fastest to slowest: RAM, registers, secondary storage, cache. :: Registers → cache → RAM → secondary storage
+What is the boot program in ROM used for? :: Starts up the computer: checks hardware and loads the operating system from secondary storage into RAM
+Give the characteristics used to compare storage devices. :: Capacity, speed (access/transfer), portability, durability (robustness), reliability, cost per GB
+Which type of secondary storage is best for a laptop, and why? :: Solid state – no moving parts so robust if dropped ;; fast boot/load ;; low power so longer battery life ;; light and small
+Which type of storage is best for backing up large amounts of data cheaply? :: Magnetic (hard disk or magnetic tape) – low cost per GB and high capacity
+Why are optical discs used to distribute films or software? :: Very cheap to produce in bulk, portable, light; read-only discs can't be accidentally changed
+How does solid-state storage store data? :: Electrical charge is trapped in transistors (floating gates/NAND flash memory cells) – no moving parts
+Why do SSDs access data faster than HDDs? :: There are no moving parts – no waiting for platters to spin or the read/write head to move
+Give a disadvantage of solid-state storage. :: Higher cost per GB ;; limited number of write cycles before cells wear out
+What is cloud storage? :: Storing files on remote servers accessed via the Internet ;; + access anywhere, backed up, scalable ;; − needs Internet connection, security/privacy concerns, ongoing cost
+
+## 4.1 Embedded systems
+Give three characteristics of embedded systems. :: Perform one dedicated task ;; small, low power and low cost ;; programs held in ROM and rarely changed ;; often control things in real time using sensors and actuators
+Give examples of embedded systems. :: Washing machine, microwave, digital camera, car engine management/ABS, traffic lights, central heating thermostat, smart TV
+What is an actuator? :: An output device that produces movement or action in a control system, e.g. motor, valve, heater
+Describe how an embedded system controls a central heating system. :: Temperature sensor sends readings ;; processor compares with the set temperature ;; if lower, turns heater/boiler on (actuator); if higher, turns it off ;; repeats continuously
+Why are embedded systems more reliable than general-purpose computers? :: They do a single task with a small, well-tested program and few parts that can go wrong
+
 # 4 Computers – software and languages
 What is an operating system? :: System software that manages hardware and provides a platform for applications
 Name functions of an operating system. :: Process management (multitasking), memory management, file management, peripheral management (drivers), user interface, security (user accounts)
@@ -121,12 +535,65 @@ What is an interpreter? :: Translates and runs a high-level program line by line
 What is an assembler? :: Translates assembly language into machine code
 Give an advantage of a compiler and of an interpreter. :: Compiler – executable runs fast and code is hidden ;; Interpreter – easier to debug, errors shown immediately
 
+## 4.2 Operating systems and utilities
+How does an operating system manage memory? :: Allocates RAM to programs and data, keeps them separate so they don't overwrite each other, frees memory when finished, and manages virtual memory
+How does an operating system manage processes (multitasking)? :: Schedules the CPU's time between programs so they appear to run at the same time, and handles interrupts
+How does an operating system manage files? :: Organises files into folders/directories, names them, controls access permissions, and allows files to be created, moved, copied, deleted and saved
+How does an operating system manage peripherals? :: Uses device drivers to communicate with hardware such as printers and keyboards; manages input and output
+What is a device driver? :: Software that lets the operating system communicate with a specific hardware device
+How does an operating system manage users and security? :: User accounts with usernames and passwords, access rights/permissions to files, and logs of activity
+What is a user interface? Give types. :: The way the user interacts with the computer ;; graphical (GUI – windows, icons, menus, pointer), command-line, menu-driven, voice
+What does disk defragmentation do? :: Rearranges the parts of files on a magnetic hard disk so each file is stored in consecutive blocks and free space is together – files load faster
+Why shouldn't an SSD be defragmented? :: Access time is the same wherever data is stored, so there is no speed benefit, and extra writes reduce the SSD's lifespan
+What does backup software do? :: Makes copies of files so they can be restored if the originals are lost, corrupted or deleted
+What is the difference between a full and an incremental backup? :: Full – copies every file ;; Incremental – copies only files changed since the last backup (faster, less storage, but slower to restore)
+What does anti-malware software do? :: Scans files and compares them with a database of known malware signatures (and looks for suspicious behaviour); quarantines or deletes threats
+What does file repair software do? :: Attempts to fix corrupted files so their data can be recovered
+What does compression software do? :: Reduces the size of files so they take up less storage and transfer faster
+
+## 4.2 Robust software
+What is robust software? :: Software that keeps working correctly and does not crash even when given unexpected or invalid input, or attacked
+Why is it important to develop robust software? :: Bugs and vulnerabilities can be exploited by hackers ;; failures can lose data, money or even endanger lives
+What is a code review? :: Other programmers examine the code to find errors, poor practice or security vulnerabilities before it is released
+What is an audit trail? :: A record of who accessed or changed a system/data and when – helps detect and trace unauthorised activity and errors
+Name methods of making software robust. :: Validate all input ;; thorough testing with normal, boundary and erroneous data ;; code reviews ;; audit trails ;; keep software patched/updated ;; use secure coding practices
+Why do software developers release patches? :: To fix bugs and close security vulnerabilities that have been discovered after release
+
+## 4.3 Programming languages and translators
+What is machine code? :: Binary instructions that the CPU can execute directly
+What is assembly language? :: A low-level language using short mnemonics (e.g. LDA, ADD, STO) – each instruction usually translates to one machine code instruction
+When would a programmer choose a low-level language? :: When they need direct control of hardware, very fast or memory-efficient code, e.g. device drivers or embedded systems
+Give two advantages of high-level languages. :: Easier to read, write and debug (English-like) ;; portable – can run on different CPUs after translating ;; one statement does many machine operations
+Why must high-level code be translated? :: The CPU can only execute machine code (binary)
+Why is an interpreter useful during development? :: Errors are reported immediately as each line runs, so the program can be tested and fixed bit by bit
+Why might a company distribute compiled code rather than source code? :: The executable runs without the translator and quickly, and the source code is hidden so it can't easily be copied or changed
+Give a disadvantage of an interpreter. :: Runs more slowly because each line is translated every time it runs ;; the user needs the interpreter and the source code
+Give a disadvantage of a compiler. :: Compiling can take a long time ;; all errors reported at the end, making debugging harder ;; the executable only runs on one type of CPU/OS
+Is Python usually compiled or interpreted? :: Interpreted
+
 # 4 Computers – logic
 Give the truth table for AND. :: Output 1 only when both inputs are 1
 Give the truth table for OR. :: Output 1 when either or both inputs are 1
 Give the truth table for NOT. :: Output is the opposite of the input
 How many rows are needed in a truth table with 3 inputs? :: 2³ = 8
 What is the output of NOT(A AND B) when A = 1, B = 1? :: 0
+
+## 4.4 Logic gates and truth tables
+Write out the full truth table for AND (A, B → Q). :: 0 0 → 0 ;; 0 1 → 0 ;; 1 0 → 0 ;; 1 1 → 1
+Write out the full truth table for OR (A, B → Q). :: 0 0 → 0 ;; 0 1 → 1 ;; 1 0 → 1 ;; 1 1 → 1
+Write out the truth table for NOT (A → Q). :: 0 → 1 ;; 1 → 0
+Describe the symbols of the AND, OR and NOT gates. :: **AND** – D shape (flat back, round front) ;; **OR** – curved back with a pointed front (shield/arrow shape) ;; **NOT** – triangle with a small circle at the output
+How many rows does a truth table with 2 inputs need? :: 2² = 4
+In what order should input combinations be listed in a truth table? :: Count up in binary: 00, 01, 10, 11 (for 3 inputs 000 to 111)
+Give the output column for Q = NOT (A OR B), inputs 00, 01, 10, 11. :: 1, 0, 0, 0
+Give the output column for Q = NOT (A AND B), inputs 00, 01, 10, 11. :: 1, 1, 1, 0
+Give the output column for Q = (A AND B) OR NOT C for inputs 000 to 111. :: 1, 0, 1, 0, 1, 0, 1, 1
+Give the output column for Q = A AND (B OR C) for inputs 000 to 111. :: 0, 0, 0, 0, 0, 1, 1, 1
+What is the output of (A OR B) AND NOT C when A = 0, B = 1, C = 0? :: 1 (A OR B = 1; NOT C = 1; 1 AND 1 = 1)
+How do you complete a truth table for a logic circuit or expression? :: List all input combinations ;; add a column for each intermediate gate/bracket ;; work out each column in order ;; final column is the output
+Write a logic statement: an alarm (Q) sounds if the system is armed (A) and either a door (D) or window (W) is opened. :: Q = A AND (D OR W)
+Write a logic statement: a light (L) is on if it is dark (D) and the switch (S) is on, or if the override (O) is on. :: L = (D AND S) OR O
+How are logic gates used in a CPU? :: Billions of gates (made of transistors) are combined into circuits that perform arithmetic and logic in the ALU and store data
 
 # 5 Communication and the Internet
 What is a network? :: Two or more computers connected to share data and resources
@@ -155,6 +622,68 @@ What is DNS? :: Domain Name System – translates domain names (URLs) into IP ad
 How is bandwidth measured? :: Bits per second (bps, Mbps) – the amount of data that can be transmitted per second
 How do you calculate transmission time? :: time = file size (bits) ÷ bandwidth (bits per second)
 
+## 5.1 Networks – purpose, types and hardware
+Give reasons for connecting computers in a network. :: Share files and data ;; share hardware such as printers ;; share an Internet connection ;; communicate (email, messaging) ;; central backup and security ;; users can log on from any computer
+Give disadvantages of networks. :: Cost of hardware and installation ;; malware and hackers can spread/attack across the network ;; a failure of a server/switch can affect many users ;; may need a network manager
+What is a client–server network? :: Clients request services (files, web pages, email) from a central server that stores data and manages security and backups
+What is a peer-to-peer network? :: All computers have equal status and share resources directly with each other – there is no central server
+Compare client–server and peer-to-peer networks. :: Client–server – central backup, security and updates, but servers are expensive and are a single point of failure ;; Peer-to-peer – cheap and easy to set up, but harder to manage, backup and secure
+What does a network interface card (NIC) do? :: Allows a device to connect to a network; it has a unique MAC address
+What does a wireless access point (WAP) do? :: Allows wireless devices to connect to a wired network
+What is a modem used for? :: Converts digital signals from a computer to analogue signals for transmission (e.g. along telephone lines) and back again
+What is an ISP? :: Internet service provider – a company that provides access to the Internet
+What transmission media can be used in wired networks? :: Copper cable (twisted pair, e.g. Ethernet; coaxial) ;; fibre-optic cable (light pulses – very fast, long distance, no interference)
+What is a disadvantage of wireless networks related to range? :: Signal strength falls with distance and is blocked by walls, so connection may be lost or slow
+Why can wireless networks be less secure than wired ones? :: Signals travel through the air and can be intercepted by anyone in range – so they must be encrypted (e.g. WPA2/WPA3)
+What is bandwidth? :: The amount of data that can be transferred across a network in a given time (bits per second)
+What factors affect network performance? :: Bandwidth ;; number of users/devices (traffic) ;; transmission media (wired vs wireless) ;; distance and interference ;; topology ;; latency/errors
+
+## 5.1 Network topologies (compare)
+Give two advantages of a star topology. :: If one cable fails only that device is affected ;; easy to add devices ;; fast with few collisions because the switch sends data only to the intended device
+Give two disadvantages of a star topology. :: If the central switch fails the whole network fails ;; lots of cable needed so more expensive to install
+Give an advantage and disadvantage of a bus topology. :: + cheap, little cable, easy to install ;; − if the main cable fails the whole network fails; performance drops with lots of traffic due to collisions; less secure (all devices receive data)
+What is a full mesh topology? :: Every device is connected directly to every other device
+Why is mesh topology often used for wireless networks or the Internet? :: Data can take many routes, so if one link or node fails data is rerouted – very reliable and no single point of failure
+Give an advantage of a ring topology. :: Data flows in one direction so no collisions; performs well under heavy load
+Which topology would you recommend for a school network and why? :: Star – a cable fault only affects one computer, easy to add computers, good performance with a switch
+
+## 5.1 Protocols and the TCP/IP model
+Why are protocols needed? :: So that devices from different manufacturers can communicate – they agree on format, addressing, error checking and speed of data transmission
+What does the application layer of TCP/IP do? :: Provides network services to applications – protocols such as HTTP, HTTPS, FTP, SMTP, POP3, IMAP
+What does the transport layer of TCP/IP do? :: Splits data into packets, numbers them, checks they all arrive and are error-free and requests resending if needed (TCP), and reassembles them
+What does the internet (network) layer of TCP/IP do? :: Adds source and destination IP addresses and routes packets across networks (IP)
+What does the link layer of TCP/IP do? :: Transmits data over the physical network hardware using MAC addresses (e.g. Ethernet, Wi-Fi)
+Why is a layered model used for protocols? :: Each layer does one job and can be developed or changed independently without affecting others ;; makes problems easier to identify ;; allows different manufacturers' hardware/software to work together
+Which protocol would be used to download a web page securely? :: HTTPS
+Which protocol is used to upload files to a web server? :: FTP
+What happens to email sent from one person to another (protocols)? :: The sender's client uses SMTP to send it to their mail server, which forwards it using SMTP to the recipient's mail server; the recipient retrieves it using POP3 or IMAP
+Compare POP3 and IMAP. :: POP3 – downloads emails to one device and usually deletes them from the server ;; IMAP – emails stay on the server so they are synchronised and accessible from several devices
+What is contained in a packet header? :: Source address, destination address, packet sequence number (and the total number of packets / error-checking data)
+What is the payload of a packet? :: The actual data being carried
+Why is data split into packets? :: Packets can travel by different routes to avoid busy/broken links ;; only damaged/lost packets need resending ;; the network can be shared by many users at once
+What is a checksum? :: A value calculated from the packet's data and sent with it; the receiver recalculates it and if it doesn't match the packet is corrupted and requested again
+
+## 5.1 Data transmission calculations
+Calculate the time to send a 2 000 000-byte file at 1 000 000 bits per second. :: 2 000 000 × 8 = 16 000 000 bits ;; 16 000 000 ÷ 1 000 000 = 16 seconds
+How do you calculate the data transmission rate? :: rate (bits per second) = amount of data (bits) ÷ time (seconds)
+How do you calculate the amount of data sent? :: data (bits) = rate (bps) × time (s)
+A 30 MB file takes 24 seconds to send. What is the rate in megabits per second? :: 30 × 8 = 240 megabits ÷ 24 = 10 Mbps
+What is the most common mistake in transmission calculations? :: Mixing bits and bytes – rates are in bits per second, file sizes usually in bytes, so multiply bytes by 8
+C: Transmission speeds are measured in {{c1::bits}} per second, so 1 Mbps means 1 000 000 {{c1::bits}} each second.
+
+## 5.3 The Internet and the World Wide Web
+How does a router decide where to send a packet? :: Reads the destination IP address and uses a routing table to forward it on the best available route towards its destination
+How is a web page requested and delivered? :: User enters URL ;; browser asks a DNS server for the web server's IP address ;; browser sends an HTTP(S) request to the web server ;; server sends back the page (HTML, images) in packets ;; browser renders it
+What is a URL? :: Uniform resource locator – the address of a web page or resource, e.g. https://www.example.com/page.html
+What is a web server? :: A computer that stores websites and sends web pages to clients (browsers) when requested
+What is a web browser? :: Client software that requests, receives and displays web pages
+What is HTML? :: Hypertext markup language – the code used to structure the content of web pages, using tags
+What is the difference between an IP address and a MAC address? :: IP – logical address, can change, used to route data between networks ;; MAC – physical address, fixed to the network card, used to deliver data within a local network
+Why was IPv6 introduced? :: IPv4's 32-bit addresses (about 4.3 billion) were running out; IPv6's 128-bit addresses give a vastly larger number
+What does an IPv4 address look like? :: Four numbers 0–255 separated by dots, e.g. 192.168.1.10
+What is the Internet of Things (IoT)? :: Everyday devices (e.g. smart thermostats, fridges, doorbells) connected to the Internet so they can send and receive data
+What is a VPN? :: Virtual private network – creates an encrypted connection over the Internet so data can be sent securely, as if on a private network
+
 # 5 Network security
 What is malware? Give examples. :: Malicious software ;; Viruses, worms, Trojans, ransomware, spyware, adware
 What is phishing? :: Fake emails or websites trying to trick users into revealing personal information
@@ -165,6 +694,40 @@ What is a firewall? :: Hardware or software that monitors and filters incoming a
 How can networks be protected? :: Firewalls, anti-malware, strong passwords, two-factor authentication, encryption, user access levels, physical security, regular updates/patches, backups, staff training
 What is SQL injection? :: Entering malicious SQL code into an input box to access or damage a database
 
+## 5.2 Why network security matters
+Why is network security important? :: To protect data from theft, damage or unauthorised access ;; maintain privacy and confidentiality ;; keep systems available ;; avoid financial loss, legal action and loss of reputation
+What is hacking? :: Gaining unauthorised access to a computer system or network
+What is a virus? :: Malware that attaches itself to a file or program and spreads when that file is run or copied; can delete or corrupt data
+What is a worm? :: Malware that replicates itself and spreads across networks automatically without needing a host file or user action
+What is a Trojan? :: Malware disguised as legitimate software; when installed it gives attackers access or damages the system (it doesn't self-replicate)
+What is ransomware? :: Malware that encrypts the victim's files and demands payment for the decryption key
+What is spyware? :: Malware that secretly records user activity, e.g. keystrokes (keylogger), to steal passwords and personal data
+What is pharming? :: Malicious code redirects users from a genuine website to a fake one (even when the correct address is typed) to steal personal details
+What is shoulder surfing? :: Watching someone enter a PIN or password to steal it
+What is eavesdropping (interception) on a network? :: Capturing data packets as they travel over a network (especially wireless) to read the contents
+What is a man-in-the-middle attack? :: An attacker secretly intercepts (and may alter) communication between two parties
+Why is unpatched software a security risk? :: Known vulnerabilities in old versions can be exploited by hackers or malware until the update is installed
+Why are removable media (USB sticks) a security risk? :: They can bring malware onto a network, or be used to copy and steal data
+How can you recognise a phishing email? :: Generic greeting ;; urgent or threatening tone ;; spelling/grammar mistakes ;; suspicious links or sender address ;; asks for personal details
+What is a botnet? :: A network of malware-infected computers controlled by a criminal, e.g. used for DDoS attacks or spam
+
+## 5.2 Identifying vulnerabilities and protecting networks
+What is penetration testing? :: Authorised, simulated attacks on a network to find vulnerabilities before real attackers do
+What is ethical hacking? :: Hacking carried out with the owner's permission to find and report security weaknesses so they can be fixed
+What are commercial analysis tools? :: Software that scans a network or system for vulnerabilities, such as open ports, out-of-date software or weak passwords
+Why should network and user policies be reviewed regularly? :: To check they still address current threats and that users are following them, e.g. password rules, access rights
+What is an acceptable use policy (AUP)? :: Rules that users must agree to about what they may and may not do on the network
+Give physical methods of protecting a network. :: Locks on server rooms, keycards, biometric access, CCTV, security guards, keeping equipment away from public areas
+What is two-factor authentication? :: Logging in using two different types of evidence, e.g. a password plus a code sent to a phone
+What makes a strong password? :: At least 8–12 characters, mix of upper/lower case, digits and symbols, not a dictionary word or personal information, changed if compromised
+How do user access levels protect data? :: Each user can only access the files and functions they need for their job, limiting damage from mistakes or misuse
+What is biometric authentication? :: Identifying a person by a physical characteristic such as a fingerprint, face or iris
+How does encryption protect data on a network? :: Intercepted data can't be understood without the key
+Why are regular backups part of network security? :: If data is lost, deleted or encrypted by ransomware it can be restored from the backup
+What is MAC address filtering? :: Only devices whose MAC addresses are on an approved list are allowed to connect to the network
+How can SQL injection be prevented? :: Validate/sanitise all input ;; use parameterised queries ;; limit database user permissions
+How does a firewall protect a network? :: Checks incoming and outgoing packets against a set of rules (e.g. allowed ports, IP addresses) and blocks those that break them
+
 # 6 The bigger picture
 Give environmental impacts of technology. :: Energy use (data centres), e-waste with toxic materials, mining rare metals, carbon emissions ;; positives: smart devices save energy, remote working reduces travel
 Give ethical issues with technology. :: Privacy and surveillance, digital divide, job losses from automation, AI bias, misuse of personal data
@@ -174,3 +737,33 @@ What is the difference between open-source and proprietary software? :: Open-sou
 What is artificial intelligence? :: Computer systems performing tasks that normally require human intelligence (learning, decision-making)
 What is machine learning? :: A type of AI where computers improve their performance by learning from data rather than being explicitly programmed
 Give issues with AI. :: Bias in training data, lack of transparency, accountability for decisions, job losses, privacy
+
+## 6.1 Environmental issues
+What environmental issues are caused by the manufacture of digital devices? :: Mining rare/precious metals damages habitats and uses lots of energy and water ;; manufacturing uses energy (carbon emissions) and creates pollution
+What environmental issues are caused by using digital devices? :: Electricity consumption (often from fossil fuels) ;; data centres need huge amounts of energy for power and cooling
+What environmental issues are caused by disposing of digital devices? :: E-waste in landfill leaks toxic substances (lead, mercury) into soil and water ;; often shipped to developing countries and burned unsafely
+How can the environmental impact of technology be reduced? :: Recycle and reuse devices ;; repair rather than replace ;; buy energy-efficient devices ;; switch off/standby settings ;; data centres using renewable energy ;; buy fewer new devices
+How can technology help the environment? :: Smart meters and thermostats reduce energy use ;; climate monitoring with sensors and modelling ;; video conferencing reduces travel ;; route planning reduces fuel use ;; less paper used
+Why do people replace devices frequently, and what is the effect? :: New features, marketing, devices made hard to repair or no longer updated (planned obsolescence) ;; creates more e-waste and resource use
+
+## 6.2 Ethical and legal issues
+What is personal data? :: Data that relates to an identifiable living person, e.g. name, address, date of birth, medical records
+Give the main principles of data protection legislation. :: Data must be: processed fairly, lawfully and transparently ;; used only for the stated purpose ;; adequate, relevant and not excessive ;; accurate and up to date ;; not kept longer than necessary ;; kept secure ;; (people have rights to see and correct their data)
+What rights do data subjects have under data protection laws? :: To know what data is held about them ;; to access it ;; to have it corrected or deleted ;; to object to its use (e.g. marketing)
+How do organisations collect personal data? :: Online forms, loyalty cards, cookies, website tracking, social media, CCTV, location data from phones
+Give arguments for and against collecting personal data. :: For – personalised services, targeted offers, crime prevention, better public services ;; Against – loss of privacy, data can be stolen or sold, used to manipulate people, surveillance
+What is copyright? :: A law protecting original creative work (software, music, books, images) from being copied, distributed or modified without permission
+What is a patent? :: Legal protection for a new invention, giving the owner the right to stop others making, using or selling it for a set time
+What is a software licence? :: A legal agreement setting out how software may be used, e.g. number of users/devices and whether it can be copied or modified
+Give an advantage and a disadvantage of open-source software for a user. :: + usually free, can be modified to suit needs, community support ;; − may have less formal support, may be less polished, varying quality
+Give an advantage and a disadvantage of proprietary software for a user. :: + professional support, well tested, regular updates ;; − costs money (licence), can't be modified or customised, locked into the supplier
+What is the difference between artificial intelligence and machine learning? :: AI – any system that performs tasks needing human-like intelligence ;; Machine learning – a type of AI that learns patterns from data and improves with experience
+What is robotics? :: The design and use of robots – machines that carry out physical tasks, often automatically, using sensors and actuators
+Give benefits of robots and automation. :: Work 24/7 without tiring ;; accurate and consistent ;; can do dangerous, dull or dirty jobs ;; reduce costs
+Give negative impacts of robots and automation. :: Job losses ;; high initial cost ;; need maintenance ;; can't easily handle unexpected situations ;; who is responsible when they go wrong
+What is algorithmic bias? :: When an AI system makes unfair decisions because the data it was trained on was biased or unrepresentative
+Give ethical issues raised by self-driving cars. :: Who is legally responsible in a crash ;; how the car decides who to protect ;; job losses for drivers ;; hacking risk ;; privacy of location data
+What is the difference between legal and ethical issues? :: Legal – what the law allows or forbids ;; Ethical – what is morally right or wrong (something legal may still be unethical)
+Give ways technology affects privacy. :: Location tracking ;; CCTV and facial recognition ;; social media sharing ;; cookies and online tracking ;; data breaches
+Give health issues linked to computer use. :: Eye strain ;; repetitive strain injury ;; back problems from poor posture ;; lack of exercise ;; stress/addiction
+How do cookies affect users? :: Small files stored by websites on a user's device ;; + remember logins and preferences ;; − track browsing for targeted advertising, raising privacy concerns

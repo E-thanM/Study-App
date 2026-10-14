@@ -46,6 +46,33 @@ Why have many high streets declined? :: Competition from out-of-town centres and
 What is a clone town? :: A town whose high street is dominated by the same national chain stores found everywhere, losing local character
 How can high streets be revitalised? :: Pedestrianisation, cheaper parking, events and markets, converting empty shops to housing, leisure and cafés, supporting independent shops
 What is the impact of online shopping on the UK? :: Fewer high-street shops ;; Growth of large distribution warehouses near motorways ;; More delivery vans ;; New jobs in logistics
+C: Buying and selling goods and services over the internet is called {{c1::e-commerce}}.
+What is 'click and collect'? :: Ordering online and collecting from a store or locker – helps some high-street and out-of-town shops compete with home delivery
+Give an advantage and a disadvantage of out-of-town shopping centres. :: **+** free parking, large range of shops under one roof, jobs ;; **–** draw trade away from town centres, encourage car use and congestion, built on greenfield land
+## UK city structure, inequality and ethnicity
+What is the CBD? :: Central Business District – the commercial heart of a city with shops, offices and leisure, the highest land values, tallest buildings and best transport access
+C: {{c1::Bid-rent}} theory says land values are highest in the CBD and fall with distance from the city centre.
+Describe the Burgess (concentric zone) model of a city. :: Rings outward from the centre: **CBD** ;; **Inner city/zone of transition** (old terraced housing, former industry) ;; **Inner suburbs** ;; **Outer suburbs** ;; **Rural–urban fringe/commuter zone**
+Give a limitation of urban land-use models such as Burgess. :: Based on 1920s Chicago; real cities are shaped by relief, rivers, transport routes and planning, so zones are rarely neat rings
+How has the CBD changed in many UK cities? :: Some shops lost to out-of-town centres and online ;; Growth of leisure, cafés, restaurants and the night-time economy ;; More city-centre flats (re-urbanisation) ;; Pedestrianisation and covered shopping centres
+What is urban deprivation? :: A lower quality of life in an urban area caused by low income, unemployment, poor housing, poor health and education, and high crime
+What is the Index of Multiple Deprivation? :: An official measure ranking small areas by combining domains such as income, employment, health, education, housing/access to services, crime and living environment (Wales uses the WIMD)
+Why do ethnic groups often cluster in particular parts of UK cities? :: Early migrants settled in cheap inner-city housing near jobs ;; Later migrants joined family and friends (chain migration) ;; Access to places of worship, shops and services for their culture ;; Support and security of a community
+What is chain migration? :: When migrants follow earlier migrants (often family or people from the same area) to the same destination
+Give positive effects of migration into UK cities. :: Fills labour shortages (e.g. NHS, construction) ;; Cultural diversity – food, festivals, music ;; Young workers pay taxes ;; New businesses revitalise areas
+Give challenges that can result from migration into UK cities. :: Pressure on housing, school places and health services in some areas ;; Possible tension or segregation between communities ;; Language barriers
+What is a multicultural city? :: A city where people from many different ethnic, cultural and religious backgrounds live
+Explain why there is inequality within UK cities. :: Deindustrialisation left high unemployment in some inner-city and estate areas ;; Wealthier people moved to suburbs, so house prices and services differ ;; Low incomes lead to poorer housing, health and education – a cycle of deprivation ;; Gentrification can push poorer residents out
+## Rural–urban fringe and planning issues
+What pressures does the rural–urban fringe face? :: Demand for housing estates, retail and business parks, roads and airports ;; Loss of farmland and habitats ;; Fly-tipping and vandalism ;; Pressure to build on the green belt
+Why is there pressure for new housing in the UK? :: Population growth and immigration ;; More single-person households (people living longer, living alone, divorce) ;; Shortage of homes pushes up prices
+Assess whether new housing should be built on greenfield or brownfield sites. :: **Greenfield** – cheaper and easier to build, larger plots, popular with buyers, but loses countryside and habitats and increases car use ;; **Brownfield** – regenerates derelict areas, uses existing services, protects countryside, but decontamination is costly ;; **Judgement** – brownfield is usually more sustainable, but there is not enough of it in high-demand areas
+What is a planning application? :: A request to the local council (local planning authority) for permission to build or change land use; the council considers objections and its local development plan before deciding
+What is NIMBYism? :: 'Not In My Back Yard' – supporting a development in principle but opposing it near your own home
+What is a new town? :: A planned settlement built to relieve pressure on crowded cities, e.g. Milton Keynes, Cwmbran
+What is a settlement hierarchy? :: Ranking settlements by size and number of services: isolated dwelling, hamlet, village, small town, large town, city – larger settlements have more and higher-order services
+What is a sphere of influence? :: The area served by a settlement or service – people travel further for high-order goods (e.g. furniture, jewellery) than low-order goods (e.g. bread, newspapers)
+Give ways to support rural communities. :: Affordable housing for local people ;; Better broadband ;; Community shops, mobile services and community buses ;; Grants for rural businesses and tourism
 
 # Theme 1 Changing Places – Global Cities
 ## Global urbanisation
@@ -81,6 +108,19 @@ How can traffic congestion be reduced in cities? :: Integrated public transport,
 What are the main sources of urban air pollution? :: Vehicle exhausts (especially diesel), industry, burning fuel for heating and cooking, construction dust
 What is a low-emission zone? :: An area where the most polluting vehicles are charged or banned, e.g. London ULEZ
 How can urban waste be managed sustainably? :: Reduce, reuse, recycle ;; Composting food waste ;; Energy-from-waste incinerators instead of landfill
+## Global urban patterns and world cities
+What is the difference between urbanisation and urban growth? :: **Urbanisation** – increase in the *proportion* of people living in urban areas ;; **Urban growth** – increase in the total number of people or area of a city
+Why is urbanisation slower in HICs than in LICs and NEEs? :: HICs urbanised during the Industrial Revolution and are already over 75–80% urban; many now see counter-urbanisation
+About how many megacities are there and where are most found? :: Over 30, and the number is rising – most are in Asia, with growing numbers in Africa and Latin America
+Why is the number of megacities increasing? :: Rapid rural–urban migration plus high natural increase in LIC and NEE cities
+Why does London have global influence as a world city? :: Headquarters of TNCs and banks ;; Major financial centre and stock exchange ;; International airport hub (Heathrow) ;; Global culture, media, universities and tourism ;; Seat of government
+Describe the global flows that connect a world city. :: Flows of **people** (migrants, tourists, business travel), **money** (investment, trade, finance), **goods** and **information/ideas** (internet, media)
+Where are informal settlements usually located? :: On land nobody else wants – city edges, steep slopes, floodplains, beside railways, rubbish dumps or polluted industry
+Give regional names for informal settlements. :: **Favelas** (Brazil) ;; **Bustees/chawls/slums** (India) ;; **Shanty towns/townships** (Africa) ;; **Barriadas** (Peru)
+What is the formal economy? :: Official jobs that are registered and taxed, with contracts, regular wages and legal protection
+Give advantages and disadvantages of the informal economy. :: **+** provides income for the poor, needs few skills, recycles waste, cheap goods ;; **–** no tax for government, no job security or sick pay, unsafe conditions, child labour
+Explain how rapid urbanisation creates challenges in LIC/NEE cities. :: Migrants arrive faster than housing and jobs can be provided ;; So informal settlements and the informal economy grow ;; Services (water, sewerage, rubbish collection) are overwhelmed, causing disease and pollution ;; Roads become congested
+Give opportunities that urban growth creates in LIC/NEE cities. :: Access to jobs (formal and informal), schools and healthcare ;; Better access to clean water and electricity than rural areas ;; Economic growth attracts investment
 
 # Theme 1 Changing Economies – Global Development
 ## Measuring development
@@ -97,6 +137,15 @@ What are HICs, NEEs and LICs? :: **HIC** – high-income country (e.g. UK, USA) 
 What was the Brandt Line? :: A line drawn in 1980 dividing the richer 'North' from the poorer 'South'; now outdated as many 'South' countries have developed
 What is the Demographic Transition Model? :: A model showing how birth rates, death rates and total population change as a country develops, through five stages
 C: In stage 2 of the DTM the {{c1::death rate}} falls rapidly while the {{c2::birth rate}} stays high, so population grows rapidly.
+C: In stage 3 of the DTM the {{c1::birth rate}} falls rapidly (contraception, women working, fewer children needed for farm work), so population growth slows.
+C: In stage 4 of the DTM birth and death rates are both {{c1::low}}, so the population is stable; in stage 5 the birth rate falls {{c2::below the death rate}} and population declines.
+What are birth rate and death rate? :: The number of live births / deaths per 1,000 people per year
+What is life expectancy? :: The average number of years a person born in a country can expect to live
+What is literacy rate? :: The percentage of adults who can read and write
+Describe the population pyramid of an LIC compared with an HIC. :: **LIC** – wide base (high birth rate), narrow top, concave sides (high death rate, low life expectancy) ;; **HIC** – narrower base, straighter sides, wide top (low birth and death rates, ageing population)
+What is the dependency ratio? :: (Number of young under 15 + elderly 65+) ÷ working-age population (15–64) × 100 – shows how many dependents each 100 workers support
+Why is a combination of indicators better than one indicator? :: Development has economic, social and political dimensions; combining measures (e.g. HDI) reduces the effect of averages or unreliable single figures
+Describe the global pattern of development. :: HICs mainly in North America, Europe, Japan, Australia and New Zealand ;; NEEs in parts of Asia, South America and some of Africa (e.g. China, India, Brazil, Nigeria) ;; Most LICs in sub-Saharan Africa and parts of Asia
 ## The development gap
 What is the development gap? :: The difference in standards of living between the world's richest and poorest countries
 Give physical causes of uneven development. :: Landlocked location limits trade ;; Natural hazards (floods, drought, tropical storms) ;; Few natural resources ;; Climate and poor soils limit farming ;; Tropical diseases (e.g. malaria)
@@ -111,6 +160,21 @@ What is Fairtrade? :: A scheme guaranteeing producers in poorer countries a mini
 What is microfinance? :: Small loans to people (often women) in poorer countries who cannot get normal bank loans, to start small businesses, e.g. Grameen Bank in Bangladesh
 What is debt relief? :: Cancelling or reducing the debts of poorer countries so money can be spent on health and education, e.g. HIPC initiative
 How can tourism reduce the development gap? :: Brings foreign currency, jobs and investment in infrastructure ;; But leakage of profits to foreign firms, seasonal jobs and environmental damage are problems (e.g. Kenya, Jamaica)
+What is the cycle of poverty? :: Low income means poor diet, health and education, so people stay in low-paid work and cannot save or invest, so their children also remain poor
+Give consequences of uneven development. :: Disparities in wealth and health (life expectancy, infant mortality) ;; International migration from poorer to richer countries ;; Dependency on aid and debt ;; Political instability
+What are remittances? :: Money sent home by migrants working abroad to their families – a major source of income for many LICs and NEEs
+What is brain drain? :: The loss of skilled and educated workers (e.g. doctors, engineers) who emigrate to richer countries
+What are the Sustainable Development Goals? :: 17 UN goals agreed in 2015 to end poverty, reduce inequality and protect the planet by 2030 (replaced the Millennium Development Goals)
+Compare top-down and bottom-up development projects. :: **Top-down** – large-scale, government or international funding, e.g. big dams or motorways; may not benefit the poorest ;; **Bottom-up** – small-scale, run with local communities by NGOs, e.g. wells and hand pumps (WaterAid); meets local needs, uses intermediate technology
+## Trade and interdependence
+What is interdependence? :: When countries depend on each other through trade, investment, aid, migration, resources and political links
+Describe the pattern of world trade. :: Most trade is between HICs and large NEEs (especially China) ;; LICs have a small share, mostly exporting low-value primary products and importing higher-value manufactured goods
+Why does relying on primary products keep countries poor? :: Raw materials have low value and prices fluctuate on world markets, while value added from processing goes to richer countries
+What are tariffs and quotas? :: **Tariff** – a tax on imported goods ;; **Quota** – a limit on the quantity of a good that can be imported ;; Both protect domestic producers but make it harder for poorer countries to export
+What is a trade surplus and a trade deficit? :: **Surplus** – a country exports more value than it imports ;; **Deficit** – imports are worth more than exports
+What is a trading bloc? :: A group of countries that agree to reduce trade barriers between themselves, e.g. the EU, ECOWAS (West Africa)
+What is free trade? :: Trade between countries without tariffs, quotas or other barriers
+Assess whether trade or aid is better at reducing the development gap. :: **Trade** – earns money long term, creates jobs and avoids dependency, but rules favour rich countries and primary prices fluctuate ;; **Aid** – vital in emergencies and can fund health and education, but may create dependency or be lost to corruption ;; **Judgement** – fair trade plus targeted bottom-up aid is often seen as most sustainable
 ## Globalisation and TNCs
 What is globalisation? :: The increasing connection of the world's countries through trade, investment, communication, culture and migration
 Give factors that have speeded up globalisation. :: Containerisation and cheaper transport ;; The internet and mobile communications ;; Free trade agreements ;; Growth of TNCs
@@ -130,6 +194,10 @@ Give environmental problems from Nigeria's economic development. :: Oil spills i
 How has Nigeria's economy changed? :: From mainly agriculture and oil exports towards manufacturing and services ;; Telecoms (mobile phones), banking, retail and film have grown rapidly
 What is Nollywood? :: Nigeria's film industry – one of the largest in the world by number of films, providing many jobs
 Give challenges that hold back Nigeria's development. :: Corruption ;; Conflict (e.g. Boko Haram in the north-east) ;; Unreliable electricity ;; Inequality between south and north ;; Dependence on oil
+When did Nigeria gain independence and from whom? :: 1960, from the UK – it remains a member of the Commonwealth
+Describe Nigeria's political and trading links with the world. :: Member of the African Union, ECOWAS, OPEC and the Commonwealth ;; Exports mainly crude oil (to India, Europe, USA) ;; Imports manufactured goods, increasingly from China, which also invests in Nigerian infrastructure
+How has economic development affected quality of life in Nigeria? :: Rising incomes and a growing middle class, more mobile phones and better access to education ;; But many people still live in extreme poverty, especially in the north, and life expectancy remains low
+What types of aid has Nigeria received? :: International and NGO aid for health (e.g. polio vaccination, malaria nets) and education; aid can be lost to corruption
 ## Changes in the UK economy
 What are the four sectors of the economy? :: **Primary** – extracting raw materials (farming, mining, fishing) ;; **Secondary** – manufacturing ;; **Tertiary** – services ;; **Quaternary** – research, IT and knowledge-based industries
 How has UK employment structure changed since 1900? :: Big decline in primary and secondary jobs ;; Large growth in tertiary and quaternary jobs
@@ -164,6 +232,13 @@ What is discharge? :: The volume of water passing a point per second, measured i
 What is a drainage basin? :: The area of land drained by a river and its tributaries
 What is a watershed? :: The boundary (high ground) separating one drainage basin from another
 Define source, mouth, confluence and tributary. :: **Source** – start of a river ;; **Mouth** – where it meets the sea ;; **Confluence** – where two rivers join ;; **Tributary** – a smaller river joining a larger one
+Worked example: a river has a cross-sectional area of 2.5 m² and a velocity of 0.4 m/s. What is its discharge? :: 2.5 × 0.4 = **1 cumec** (1 m³/s)
+How do you calculate a river's cross-sectional area in fieldwork? :: Width × mean depth (measure depth at regular intervals across the channel and average them)
+Describe the cross-profile of a river in its upper and lower course. :: **Upper** – narrow, steep-sided V-shaped valley ;; **Lower** – wide, flat valley floor with a broad floodplain
+Name the stores in the drainage basin system. :: Interception (vegetation), surface storage (lakes, puddles), soil moisture, groundwater, channel storage
+Name the flows (transfers) in the drainage basin system. :: Surface runoff, infiltration, throughflow, percolation, groundwater flow, stemflow, channel flow
+What are evaporation, transpiration and evapotranspiration? :: **Evaporation** – water turns to vapour from surfaces ;; **Transpiration** – water vapour lost from plant leaves ;; **Evapotranspiration** – the two combined
+C: Rain caught by leaves and branches before reaching the ground is called {{c1::interception}}.
 ## River landforms
 What are interlocking spurs? :: Ridges of higher land that the river winds around in the upper course, because vertical erosion dominates and the river flows around hard rock
 How does a waterfall form? :: River flows over a band of hard rock on top of soft rock ;; Soft rock erodes faster, undercutting the hard rock to form an overhang ;; Overhang collapses; plunge pool deepened by hydraulic action and abrasion ;; Process repeats and the waterfall retreats upstream
@@ -194,6 +269,16 @@ How was Boscastle protected after 2004? :: A flood defence scheme (completed 200
 What caused the Somerset Levels floods of 2013–14? :: Very low, flat land at or near sea level ;; Exceptionally wet winter with repeated Atlantic storms ;; High tides prevented drainage ;; Rivers Parrett and Tone had not been dredged for many years
 Give impacts of the Somerset Levels floods. :: Around 600 homes flooded ;; Villages such as Muchelney cut off for weeks ;; Large areas of farmland flooded and livestock moved ;; Roads and railway closed
 How were the Somerset Levels managed after 2014? :: Dredging about 8 km of the Rivers Parrett and Tone ;; Raised roads ;; Permanent pumping stations ;; 20-year Flood Action Plan, including a tidal barrier at Bridgwater
+Worked example: peak rainfall was at 09:00 and peak discharge at 21:00. What is the lag time? :: **12 hours** (21:00 − 09:00)
+Explain why an urban river has a flashier hydrograph than a rural one. :: Tarmac and concrete are impermeable, so less infiltration and more surface runoff ;; Drains and gutters carry water to the river quickly ;; Less vegetation so less interception ;; So shorter lag time and higher peak discharge
+Describe a gentle (subdued) hydrograph. :: Long lag time, gently sloping rising limb and low peak discharge – lower flood risk, e.g. in a forested basin on permeable rock
+Give social, economic and environmental impacts of river flooding. :: **Social** – deaths, homes damaged, people displaced, stress ;; **Economic** – repair costs, insurance, businesses closed, transport disrupted ;; **Environmental** – pollution from sewage, debris, erosion, but floodplains gain fertile silt and wetlands are recharged
+What is a cost–benefit analysis? :: Comparing the cost of a scheme with the value of what it protects (property, land, infrastructure) to decide whether it is worth funding
+Give advantages and disadvantages of dams and reservoirs. :: **+** control flooding, store water, generate HEP, recreation ;; **–** very expensive, flood valleys and homes, trap sediment so erosion increases downstream, harm fish migration
+What are flood warnings and who issues them in the UK? :: Alerts that flooding is possible or expected – issued by the Environment Agency (England) and Natural Resources Wales so people can protect property and evacuate
+What is river restoration? :: Returning a straightened river to a more natural state (e.g. re-meandering, reconnecting the floodplain) to slow the flow and create wetland habitats
+What is natural flood management? :: Working with nature in the upper catchment to slow water down – e.g. tree planting, leaky woody dams, restoring peat bogs and wetlands
+Assess hard and soft engineering for managing river floods. :: **Hard** – gives high, immediate protection to valuable urban land, but is expensive, can fail and moves the problem downstream ;; **Soft** – cheaper and more sustainable, creates habitats, but cannot protect large towns alone and takes time to work ;; **Judgement** – an integrated mix is usually best
 ## Coastal processes
 What is fetch? :: The distance of open water over which the wind blows; longer fetch creates bigger, more powerful waves
 Compare constructive and destructive waves. :: **Constructive** – low, long wavelength, strong swash, weak backwash, build beaches ;; **Destructive** – high, steep, frequent, weak swash, strong backwash, erode beaches
@@ -201,6 +286,9 @@ What are swash and backwash? :: **Swash** – water moving up the beach after a 
 Name the four coastal erosion processes. :: Hydraulic action (including air compressed in cracks), abrasion (corrasion), attrition, solution (corrosion)
 What is longshore drift? :: Waves approach at an angle (prevailing wind) so swash carries sediment up the beach diagonally; backwash returns it straight down at right angles; sediment zig-zags along the coast
 What is a sediment cell? :: A stretch of coast within which sediment moves around and is largely contained; the UK has 11 major cells
+What are sub-aerial processes? :: Weathering and mass movement that act on the cliff face above the sea, e.g. freeze–thaw, rain washing material down, slumping and rockfall
+How does rock type affect coastal erosion? :: Hard, resistant rocks (granite, chalk, limestone) erode slowly forming steep cliffs and headlands ;; Soft rocks (clay, boulder clay, sands) erode quickly forming bays and gentle, slumping cliffs
+What are the tides? :: The regular rise and fall of sea level caused by the gravitational pull of the Moon (and Sun), roughly twice a day
 What are concordant and discordant coastlines? :: **Concordant** – rock bands run parallel to the coast (e.g. Lulworth Cove) ;; **Discordant** – bands of hard and soft rock run at right angles to the coast, forming headlands and bays (e.g. Swanage Bay)
 ## Coastal landforms
 How do headlands and bays form? :: On a discordant coast, softer rock (e.g. clay) erodes quickly to form bays ;; Harder rock (e.g. chalk) is more resistant and is left jutting out as headlands
@@ -223,6 +311,15 @@ How was Mappleton protected and what was the effect? :: 1991 scheme costing abou
 How is Hornsea or Withernsea protected? :: Sea walls, groynes and rock armour protect the towns, but these also trap sediment and increase erosion further south
 Give a named example of managed retreat. :: Medmerry, West Sussex (2013) – new sea wall built inland so land floods to create salt marsh habitat, protecting homes; Abbotts Hall, Essex
 Why is managed retreat controversial? :: Farmland and some properties are lost and landowners may get little compensation, although it is cheap and creates habitats
+How does a salt marsh form? :: In sheltered areas (behind spits or in estuaries) fine mud is deposited when water is calm ;; Salt-tolerant plants colonise and trap more sediment ;; The marsh builds up above normal high tide
+What is Integrated Coastal Zone Management (ICZM)? :: Managing a whole stretch of coast (often a sediment cell) together, considering all users and the environment, so defending one place does not harm another
+What are the threats to UK coasts from climate change? :: Sea level rise ;; More frequent and powerful storms and storm surges ;; Faster erosion and more coastal flooding of low-lying land (e.g. East Anglia, Thames estuary)
+What happened in the North Sea storm surge of 1953? :: A storm surge flooded the east coast of England and the Netherlands, killing over 300 people in England and around 1,800 in the Netherlands; it led to the building of the Thames Barrier
+What is the Thames Barrier? :: A movable flood barrier across the River Thames, operational since 1982, that closes to protect London from tidal surges
+What happened to Spurn Head in December 2013? :: A storm surge breached the narrow neck of the spit, washing away the road, so it can now be cut off at high tide
+Give impacts of coastal erosion on people. :: Homes and farmland lost ;; Roads and caravan parks threatened ;; Falling property values and no compensation ;; Loss of tourism income ;; Stress for residents
+Why are some places defended and others not? :: Decisions use cost–benefit analysis – towns, important roads and infrastructure are protected (hold the line) while low-value farmland may be left (no active intervention)
+Evaluate the success of coastal management on the Holderness coast. :: **Success** – Mappleton, Hornsea and Withernsea protected, saving homes, roads and tourism ;; **Problems** – groynes trap sediment so erosion increases downdrift (e.g. Cowden), costly to maintain ;; **Judgement** – successful locally but moves the problem along the coast
 
 # Theme 2 Changing Environments – Weather and Climate
 ## Global atmospheric circulation
@@ -233,6 +330,11 @@ What happens at around 30° north and south? :: Cool air sinks, creating high pr
 What is the ITCZ? :: Inter-Tropical Convergence Zone – a belt of low pressure near the equator where trade winds meet; it moves north and south with the seasons, bringing rainy seasons
 What are prevailing winds? :: The most common wind direction at a place; the UK's are south-westerlies
 What is the jet stream? :: A fast-moving band of air high in the atmosphere that steers depressions; its position affects UK weather
+What is the difference between weather and climate? :: **Weather** – day-to-day state of the atmosphere (temperature, rain, wind) ;; **Climate** – average weather conditions over a long period, usually 30 years
+Why does wind blow? :: Air moves from areas of high pressure to areas of low pressure; the bigger the pressure difference, the stronger the wind
+What is the Coriolis effect? :: The deflection of winds and ocean currents caused by the Earth's rotation – to the right in the northern hemisphere and left in the southern
+Why is it hotter at the equator than at the poles? :: The Sun's rays hit the equator more directly, concentrating energy on a smaller area; at the poles rays are spread over a larger area and pass through more atmosphere
+Explain how global atmospheric circulation leads to deserts at 30° N and S. :: Air rises at the equator, cools and moves towards the poles ;; At about 30° it sinks, creating high pressure ;; Sinking air warms and cannot form clouds, so there is little rain
 ## UK climate
 Describe the UK's climate. :: Temperate maritime – mild winters, cool summers, rain all year ;; Wetter in the west, drier in the east ;; Warmer in the south, cooler in the north
 Why is the UK's climate mild? :: Surrounded by sea which heats and cools slowly ;; North Atlantic Drift (Gulf Stream) brings warm water ;; Prevailing south-westerly winds from the Atlantic
@@ -241,11 +343,21 @@ Name the main air masses affecting the UK. :: **Polar maritime** (NW, cold and w
 What is a depression? :: A low-pressure weather system with rising air, bringing cloud, wind and rain; forms where warm and cold air meet over the Atlantic
 What is an anticyclone? :: A high-pressure system with sinking air, bringing settled weather: hot sunny summers, cold clear winters with frost and fog
 What are the three types of rainfall? :: **Relief** – air forced over mountains ;; **Frontal** – warm air rises over cold air at fronts ;; **Convectional** – heated ground causes air to rise rapidly (thunderstorms)
+What is an air mass? :: A large body of air with similar temperature and moisture, taking its characteristics from the area where it formed
+What is a weather front? :: The boundary between a warm and a cold air mass; a **warm front** brings steady rain, a **cold front** brings heavy showers, then clearer, colder weather
+Describe the weather as a depression passes over the UK. :: Warm front – thickening cloud and steady rain ;; Warm sector – milder, drizzle ;; Cold front – heavy rain, gusty winds, temperature falls ;; Then clearer skies and showers
+How are depressions and anticyclones shown on weather maps? :: By isobars (lines of equal pressure) – **depression**: low pressure in the centre, isobars close together (windy) ;; **anticyclone**: high pressure, isobars far apart (calm)
+How do you read a climate graph? :: Bars show monthly rainfall (mm, right or left axis) ;; Line shows mean monthly temperature (°C) ;; Work out the temperature range (warmest minus coldest month) and total rainfall
+Explain why the north-west of the UK is wetter than the south-east. :: Prevailing south-westerly winds bring moist air from the Atlantic ;; Air is forced to rise over western mountains, cools and condenses (relief rain) ;; Descending air in the east warms and dries (rain shadow)
 ## Extreme weather in the UK
 Give types of extreme weather in the UK. :: Heavy rain and flooding, storms and gales, heatwaves, drought, heavy snow and cold spells
 What happened during Storm Desmond (December 2015)? :: Record rainfall in Cumbria (341 mm in 24 hours at Honister Pass) ;; Severe flooding in Carlisle, Cockermouth and Keswick ;; Thousands of homes flooded, bridges destroyed, power cuts
 What was notable about the July 2022 UK heatwave? :: The UK recorded over 40°C for the first time (40.3°C at Coningsby, Lincolnshire, 19 July 2022); rail disruption, wildfires, health warnings
 What was the 'Beast from the East' (2018)? :: A cold spell caused by polar continental air from Siberia bringing heavy snow and freezing temperatures, combined with Storm Emma; schools and roads closed
+What is a drought? :: A long period of unusually low rainfall leading to water shortages
+Give impacts of drought in the UK. :: Hosepipe bans and low reservoirs ;; Crops fail and farmers struggle ;; Wildfires ;; Rivers fall, harming wildlife ;; Subsidence of buildings on clay
+Name two UK droughts. :: 1976 (long hot summer, standpipes in some areas) ;; 2022 (driest summer for decades in parts of England, hosepipe bans)
+Give impacts of heatwaves on people in the UK. :: Heat-related deaths, especially among the elderly ;; Rails buckle and transport disrupted ;; Wildfires ;; Greater demand for water and energy
 Is UK weather becoming more extreme? :: Evidence suggests yes – more record high temperatures and more intense rainfall events, linked to climate change, though natural variation makes trends hard to prove
 ## Tropical storms
 What is a tropical storm and what are its regional names? :: An intense low-pressure system with winds over 119 km/h (hurricane strength) ;; **Hurricane** (Atlantic), **typhoon** (Pacific), **cyclone** (Indian Ocean)
@@ -273,6 +385,11 @@ What is adaptation? :: Adjusting to the effects of climate change, e.g. flood de
 What is carbon capture and storage (CCS)? :: Capturing CO₂ from power stations and industry and storing it underground, e.g. in old oil and gas fields
 Name two international agreements on climate change. :: **Kyoto Protocol** (1997) – binding emission cuts for HICs ;; **Paris Agreement** (2015) – limit warming to well below 2°C, aiming for 1.5°C
 What is the UK's net zero target? :: The UK has a legal target to reach net zero greenhouse gas emissions by 2050
+What is the Quaternary period? :: The most recent 2.6 million years of geological time, with cold glacial periods and warmer interglacials; we live in an interglacial
+Give possible effects of climate change on the UK. :: Hotter, drier summers and milder, wetter winters ;; More heatwaves, droughts and intense rainfall ;; Sea level rise and coastal flooding/erosion ;; New crops can be grown, but some species lose habitats
+Why do climate change impacts hit LICs hardest? :: Many depend on farming, so droughts and floods cause food shortages ;; Less money for defences, healthcare and recovery ;; Many people live on low-lying coasts or in hazard-prone areas
+Assess whether recent climate change is mainly caused by humans. :: **Human** – CO₂ has risen from about 280 to over 420 ppm since industrialisation, closely matching warming; the IPCC states human influence has warmed the climate ;; **Natural** – orbital, solar and volcanic changes do alter climate but cannot explain the rapid recent rise ;; **Judgement** – recent warming is mainly human-caused
+What is renewable energy's role in mitigation? :: Replacing fossil fuels with wind, solar, HEP and tidal power reduces CO₂ emissions from electricity generation
 
 # Theme 3 Environmental Challenges – Ecosystems
 ## Ecosystems and biomes
@@ -288,6 +405,12 @@ What happens if one part of a food web changes? :: Knock-on effects – e.g. rem
 What is nutrient cycling? :: The movement of nutrients between the biomass, litter and soil stores in an ecosystem
 Describe nutrient cycling in the tropical rainforest. :: Most nutrients stored in the **biomass** ;; Rapid decomposition in hot, wet conditions so litter store is small ;; Soil is thin and infertile because heavy rain leaches nutrients
 What is biodiversity? :: The variety of living things (plants, animals, species) in an area
+What are ecosystem goods and services? :: **Goods** – products people take, e.g. timber, food, medicines, water ;; **Services** – benefits ecosystems provide, e.g. storing carbon, producing oxygen, flood control, pollination, coastal protection, recreation
+Where are temperate deciduous forests found? :: Mid-latitudes (about 40–60°) with mild climates and rain all year, e.g. the UK, western Europe, eastern USA
+Where are tundra ecosystems found? :: High latitudes near the Arctic (northern Canada, Alaska, Russia, Scandinavia) – very cold, little precipitation, permafrost
+What is eutrophication? :: Fertiliser or sewage runoff adds nutrients to water ;; Algae grow rapidly (algal bloom) ;; When they die, decomposing bacteria use up oxygen ;; Fish and other life die
+Give ways humans affect small-scale ecosystems. :: Draining ponds and wetlands ;; Pollution and eutrophication from farm runoff ;; Hedgerow removal ;; Introducing invasive species ;; Conservation (nature reserves, replanting)
+C: Plants that make their own food by photosynthesis are {{c1::producers}}; organisms that break down dead material are {{c2::decomposers}}.
 Name a small-scale UK ecosystem and its features. :: A freshwater pond or deciduous woodland – e.g. pond: producers (algae, reeds), consumers (insects, frogs, fish, herons), decomposers in the mud
 ## Tropical rainforests
 Describe the climate of a tropical rainforest. :: Hot all year (about 27°C) with small temperature range ;; Very wet – over 2,000 mm rain a year ;; Convectional rain most afternoons; no seasons
@@ -316,10 +439,21 @@ Give impacts of desertification in the Sahel. :: Soil erosion by wind and water 
 How can desertification be reduced? :: **Planting trees** (e.g. Great Green Wall) ;; **Water management** – small dams, drip irrigation ;; **Stone lines (magic stones/bunds)** to trap water and soil ;; Appropriate technology such as solar cookers ;; Improved farming methods
 What is the Great Green Wall? :: An African-led project to restore degraded land across the Sahel with a belt of trees and sustainable farming stretching about 8,000 km
 How do stone lines (bunds) help in Burkina Faso? :: Lines of stones placed along contours slow surface runoff, so water infiltrates and soil is trapped – improving crop yields
+What is a semi-arid area? :: An area receiving about 250–500 mm of rain a year, often unreliable, with a long dry season – e.g. the Sahel
+Why does rainfall in the Sahel vary so much? :: It depends on how far north the ITCZ moves in summer; when it does not move far north, the rainy season fails and drought follows
+What is agroforestry? :: Growing trees alongside crops – roots bind the soil, leaves add nutrients and shade reduces evaporation, helping prevent desertification
+Assess whether desertification in the Sahel is mainly caused by humans. :: **Human** – overgrazing, overcultivation and fuelwood removal strip vegetation, and population growth increases pressure ;; **Physical** – long droughts (e.g. 1970s–80s) and rising temperatures ;; **Judgement** – usually a combination: drought triggers it, human pressure makes it worse
 ## Coral reefs and other threatened ecosystems
 What conditions do coral reefs need? :: Warm (about 18–29°C), shallow, clear, salty water with plenty of sunlight
 Why are coral reefs under threat? :: Coral bleaching from warmer seas ;; Ocean acidification ;; Pollution and sediment runoff ;; Overfishing and destructive fishing ;; Tourism damage
 How can coral reefs be protected? :: Marine protected areas, fishing limits, controlling pollution, regulating tourism, reducing CO₂ emissions
+Where are coral reefs found? :: In tropical seas roughly between 30° N and 30° S, e.g. Great Barrier Reef (Australia), Caribbean, Red Sea, Indian Ocean
+What is coral bleaching? :: When water becomes too warm, corals expel the algae living in them, turn white and may die if high temperatures continue
+Why are coral reefs important? :: Very high biodiversity ('rainforests of the sea') ;; Fish breeding grounds supporting fishing ;; Tourism income ;; Protect coasts from waves and storms ;; Source of medicines
+Give facts about the Great Barrier Reef. :: World's largest coral reef system, off Queensland, Australia (about 2,300 km long) ;; World Heritage Site managed as a marine park with zoning ;; Several mass bleaching events since 2016
+Give the main goods and services of the tropical rainforest. :: **Goods** – timber, rubber, nuts, fruit, medicines ;; **Services** – carbon storage, oxygen production, water cycle regulation and rainfall, soil protection, habitats
+Give facts about the Amazon rainforest. :: World's largest tropical rainforest (over 5 million km²) ;; Spread across nine countries, with about 60% in Brazil ;; Home to around 10% of known species and many indigenous groups
+Assess whether rainforests can be managed sustainably. :: **Yes** – selective logging, ecotourism, reserves, FSC certification and debt-for-nature swaps protect forest while providing income ;; **But** – demand for beef, soya and minerals is high, enforcement in remote areas is difficult and poor governments need income ;; **Judgement** – possible but needs international cooperation and local benefits
 
 # Theme 3 Environmental Challenges – Resources and Sustainability
 ## Water resources
@@ -337,6 +471,18 @@ What is sustainable water management? :: Using water in ways that meet present n
 What is grey water? :: Used water from sinks, showers and washing machines that can be recycled for flushing toilets or watering gardens
 What is groundwater and why must it be managed? :: Water stored underground in permeable rock (aquifers) ;; Over-abstraction lowers water tables and can cause pollution or saltwater intrusion
 What is a desalination plant? :: A plant that removes salt from seawater to make fresh water – expensive and energy-intensive, e.g. Beckton plant in London
+What proportion of the world's water is fresh water? :: About 3% – and most of that is frozen in ice sheets and glaciers or stored as groundwater; only a tiny fraction is easily accessible
+Compare physical and economic water scarcity. :: **Physical** – not enough water naturally available (e.g. arid North Africa, Middle East) ;; **Economic** – water exists but people cannot afford the infrastructure to access it (e.g. much of sub-Saharan Africa)
+About how much water does a person in the UK use per day? :: Around 140 litres per person per day (at home)
+What is water abstraction? :: Taking water from rivers, lakes or groundwater for public supply, farming or industry
+C: An underground layer of permeable rock that stores water is called an {{c1::aquifer}}.
+Give causes of water pollution. :: Farm runoff (fertilisers, pesticides, slurry) ;; Untreated sewage and storm overflows ;; Industrial waste and chemicals ;; Oil spills ;; Plastics
+Give impacts of poor water quality. :: Water-borne diseases such as cholera and typhoid in LICs ;; Eutrophication and loss of wildlife ;; Higher treatment costs ;; Loss of tourism and fishing
+How can water quality be improved? :: Sewage treatment works ;; Limits on fertiliser use near rivers (buffer strips) ;; Fines for polluters ;; Monitoring by the Environment Agency and Natural Resources Wales
+Give a named example of a conflict over water. :: The River Nile – Ethiopia's Grand Ethiopian Renaissance Dam has caused disputes with Egypt and Sudan downstream, who fear reduced water supply
+Give impacts of large dams on river basins. :: **+** reliable water, irrigation, HEP, flood control ;; **–** people displaced, farmland and villages flooded, sediment trapped so downstream land is less fertile, fish migration blocked
+How can water supply be improved in rural areas of LICs? :: Small-scale, bottom-up schemes such as wells, hand pumps and rainwater tanks run by NGOs (e.g. WaterAid) using intermediate technology local people can maintain
+Assess whether large-scale or small-scale schemes are better for water supply. :: **Large** – supply huge populations and generate HEP but expensive, displace people and harm ecosystems ;; **Small** – cheap, sustainable, community-run but supply only local needs ;; **Judgement** – depends on the scale of demand; small schemes are often more sustainable for rural LICs
 ## Food resources
 What is food security? :: When all people at all times have access to enough safe, nutritious food for an active and healthy life
 What is food insecurity? :: When people do not have reliable access to enough affordable, nutritious food
@@ -362,6 +508,22 @@ What does 'evaluate' require? :: Judge the strengths and weaknesses or advantage
 What does 'to what extent' or 'discuss' require? :: Present different viewpoints or arguments and give a balanced conclusion about how far you agree
 What is the structure of Eduqas Geography B exams? :: **Component 1** Investigating Geographical Issues (1 h 45, 40%) ;; **Component 2** Problem Solving Geography (1 h 30, 30%) ;; **Component 3** Applied Fieldwork Enquiry (1 h 30, 30%)
 How should you approach a Component 2 decision-making question? :: Use the resource booklet ;; Choose one option ;; Justify it using evidence from the resources ;; Explain why it is better than the alternatives and consider its drawbacks
+What do 'identify' and 'state' require? :: A brief answer – name or give a fact or feature from a resource or your knowledge; no explanation needed
+What does 'outline' require? :: Set out the main points or characteristics briefly
+What does 'suggest' require? :: Give a possible reason or explanation, often for an unfamiliar situation, using your geographical knowledge
+What does 'compare' require? :: Identify similarities and differences between two things, using comparative words (e.g. 'whereas', 'higher than') and data from both
+What does 'justify' require? :: Give evidence and reasons to support a choice or decision, and explain why it is better than the alternatives
+What does 'examine' require? :: Consider carefully the different elements of an issue and how they interrelate
+What does 'calculate' require? :: Work out a numerical answer – show your working and include the units
+How are longer answers (e.g. 6–8 marks or more) marked? :: By levels of response – the examiner places the answer in a level (e.g. Level 1 basic, Level 2 clear, Level 3 detailed) and then gives a mark within it
+How do you reach the top level in an extended answer? :: Answer the exact question ;; Develop each point (point – explain – consequence) ;; Use specific, place-based detail and data from case studies or resources ;; Use key terms ;; Give balance and a supported conclusion or judgement where asked
+How do SPaG marks work in GCSE Geography? :: Extra marks for spelling, punctuation, grammar and use of specialist terms are awarded on specified extended-writing questions (shown on the paper); across the qualification they make up 5% of the marks
+What are the three parts of Component 2 (Problem Solving Geography)? :: **Part A** – understand and assess the issue using the resources ;; **Part B** – consider and evaluate alternative options/solutions ;; **Part C** – make a decision and justify it, including its sustainability
+What are the three dimensions of sustainability used to judge options? :: **Social** (people, communities, health) ;; **Economic** (jobs, cost, income) ;; **Environmental** (habitats, pollution, resources) – plus thinking about short-term and long-term effects
+What is a stakeholder? :: A person or group with an interest in an issue or decision, e.g. residents, businesses, councils, conservation groups – they often hold conflicting views
+How should you use a resource booklet? :: Quote specific figures, place names and views from the figures (e.g. 'Figure 3 shows…') ;; Combine resource evidence with your own knowledge ;; Note who produced a source and possible bias
+What is the structure of Component 3 (Applied Fieldwork Enquiry)? :: **Part A** – fieldwork methods, data presentation and analysis in an unfamiliar context ;; **Part B** – questions on your own fieldwork enquiries ;; **Part C** – applying geographical understanding and evidence to a wider issue and making/justifying a decision
+How many fieldwork enquiries must you complete for GCSE Geography? :: At least two, in contrasting environments, covering both physical and human geography (and the interaction between them)
 ## Map and graph skills
 How do you give a four-figure grid reference? :: Eastings first (along the corridor), then northings (up the stairs) – using the bottom-left corner of the square
 How do you give a six-figure grid reference? :: As a four-figure reference but estimate tenths across and up the square, e.g. 245 678
@@ -376,6 +538,42 @@ How do you describe a pattern on a map or graph? :: General trend first ;; Use s
 What are mean, median, mode and range? :: **Mean** – total ÷ number of values ;; **Median** – middle value ;; **Mode** – most common ;; **Range** – highest minus lowest
 What is the interquartile range? :: The difference between the upper quartile and lower quartile – shows the spread of the middle 50% of data
 What does a scatter graph show? :: Whether there is a correlation (positive, negative or none) between two variables; a best-fit line can be drawn
+Name the eight points of the compass clockwise from north. :: N, NE, E, SE, S, SW, W, NW
+What area does one grid square represent on 1:25,000 and 1:50,000 OS maps? :: 1 km² (each grid line is 1 km apart)
+Worked example: on a 1:25,000 map two places are 6 cm apart. What is the real distance? :: 6 × 25,000 = 150,000 cm = **1.5 km**
+Worked example: on a 1:50,000 map two places are 7 cm apart. What is the real distance? :: 7 × 50,000 = 350,000 cm = **3.5 km**
+How do you measure a curved distance (e.g. a road) on a map? :: Lay a piece of string or the edge of paper along the route, marking each bend, then straighten it against the scale line
+How do you calculate gradient? :: Vertical rise ÷ horizontal distance (same units) – e.g. a rise of 100 m over 2 km (2,000 m) = 1 in 20 (1:20 or 5%)
+How do you draw a cross-section from a map? :: Place paper along the line, mark where each contour crosses with its height ;; Transfer marks to a graph with height on the vertical axis ;; Join with a smooth line and label features
+What is relief? :: The height and shape of the land
+Give common OS map symbols. :: **PH** – pub ;; **Blue triangle** – triangulation pillar ;; **Church with tower/spire** ;; **P** – parking ;; **Sch** – school ;; **Blue i** – tourist information ;; **Tent symbol** – campsite
+How should you annotate a photograph or sketch? :: Annotations are detailed explanatory labels – identify a feature and explain or describe it (more than a one-word label)
+Worked example: find the mean, median, mode and range of 4, 7, 7, 10, 12. :: **Mean** = 40 ÷ 5 = 8 ;; **Median** = 7 (3rd value) ;; **Mode** = 7 ;; **Range** = 12 − 4 = 8
+Worked example: find the median of 3, 5, 8, 10. :: Even number of values, so average the middle two: (5 + 8) ÷ 2 = **6.5**
+Worked example: find the interquartile range of 2, 4, 5, 7, 9, 11, 13. :: n = 7 ;; Lower quartile = (n+1)/4 = 2nd value = 4 ;; Upper quartile = 3(n+1)/4 = 6th value = 11 ;; IQR = 11 − 4 = **7**
+Why is the median or interquartile range sometimes better than the mean or range? :: They are not distorted by extreme values (outliers/anomalies)
+How do you calculate percentage change? :: (New value − original value) ÷ original value × 100
+Worked example: a town's population grows from 250,000 to 300,000. What is the percentage change? :: (300,000 − 250,000) ÷ 250,000 × 100 = **+20%**
+Worked example: a river's velocity falls from 0.8 m/s to 0.6 m/s. What is the percentage change? :: (0.6 − 0.8) ÷ 0.8 × 100 = **−25%**
+How do you calculate one value as a percentage of a total? :: Value ÷ total × 100 – e.g. 45 of 180 shoppers = 25%
+How do you calculate the angle for a pie chart segment? :: Value ÷ total × 360° – e.g. 25% = 90°
+How do you calculate population density? :: Total population ÷ area (people per km²)
+What is a ratio and how is it simplified? :: A comparison of two quantities, e.g. 40 cars to 10 bikes = 40:10 = 4:1 (divide both by the highest common factor)
+What are interpolation and extrapolation? :: **Interpolation** – estimating a value between known data points ;; **Extrapolation** – extending a trend beyond the data to predict values
+What is an anomaly (outlier)? :: A value that does not fit the general pattern or trend
+What is a dispersion graph? :: A graph plotting each value as a dot on a vertical scale, showing spread, clustering, median and quartiles of a data set
+What is a triangular graph used for? :: Showing data split into three components that add up to 100%, e.g. employment in primary, secondary and tertiary sectors
+What is a rose diagram (radial graph)? :: A circular graph with bars radiating from the centre to show data with direction, e.g. wind direction or pebble orientation
+What is a proportional symbol map? :: A map using symbols (e.g. circles) whose size is proportional to the value at each location
+What is a dot map? :: A map where each dot represents a fixed number (e.g. 1 dot = 1,000 people), showing distribution and density
+What is a desire line map? :: A map with straight lines showing journeys from origin to destination (e.g. where shoppers travel from), revealing a sphere of influence
+What is the difference between a bar chart and a histogram? :: A **bar chart** shows separate categories with gaps between bars ;; A **histogram** shows continuous data grouped into classes with no gaps
+What is a divided (compound) bar chart? :: A bar split into sections showing the parts that make up a total, used to compare proportions
+Why might a graph use a logarithmic scale? :: To show data with a very large range of values (e.g. city populations from thousands to millions) – each division increases by a factor of 10
+What is the difference between correlation and causation? :: Correlation shows two variables change together; it does not prove one causes the other – another factor may be responsible
+What is Spearman's rank correlation coefficient? :: A statistical test measuring the strength of a relationship between two variables: rs = 1 − (6Σd²) ÷ (n³ − n); result from +1 (perfect positive) to −1 (perfect negative), 0 = no correlation
+How do you describe trends on a line graph? :: State the overall trend (rise, fall, fluctuation) ;; Quote start and end values with units and dates ;; Note the rate of change and any peaks, troughs or anomalies
+What are GIS and satellite images used for? :: Geographical Information Systems layer digital data on maps (e.g. flood risk, deprivation); satellite images show land use and change over time (e.g. deforestation)
 ## Fieldwork enquiry
 What are the stages of a geographical enquiry? :: 1. Question/hypothesis ;; 2. Data collection (methods and sampling) ;; 3. Data presentation ;; 4. Analysis ;; 5. Conclusion ;; 6. Evaluation
 What is primary data and secondary data? :: **Primary** – collected yourself (e.g. river measurements, questionnaires) ;; **Secondary** – collected by someone else (e.g. census data, maps, websites)
@@ -385,3 +583,25 @@ What is a risk assessment and why is it needed? :: Identifying hazards (e.g. fas
 Give examples of river fieldwork measurements. :: Width (tape measure), depth (metre ruler), velocity (float or flow meter), pebble size and roundness (callipers, Powers' scale), gradient (clinometer)
 Give examples of urban fieldwork methods. :: Environmental quality surveys, pedestrian counts, land-use mapping, questionnaires, traffic counts, photographs
 How do you evaluate a fieldwork enquiry? :: Comment on accuracy and reliability of data, limitations of methods and sample size, how valid the conclusions are, and how it could be improved
+What is a hypothesis? :: A statement that can be tested by collecting data, e.g. 'River velocity increases with distance downstream'
+What is a null hypothesis? :: A statement that there is no relationship between the variables, e.g. 'There is no relationship between distance downstream and velocity'
+C: Data that measures what it is meant to measure, so conclusions are justified, is {{c1::valid}}; results that would be similar if repeated are {{c2::reliable}}.
+What is accuracy in fieldwork? :: How close a measurement is to the true value – improved by using precise equipment and taking repeat readings
+Why should you take repeat readings and average them? :: To reduce the effect of errors and anomalies, making results more reliable
+What is sampling bias and how can it be reduced? :: When a sample does not represent the whole population (e.g. only asking shoppers at one time of day) ;; Reduce it with larger samples, random or stratified sampling and different times/places
+What are point, line and area sampling? :: **Point** – data at specific points ;; **Line (transect)** – along a line across an area ;; **Area** – within a quadrat or zone
+Give an advantage and disadvantage of systematic sampling. :: **+** easy and gives even coverage ;; **–** may miss or over-represent features that occur in a regular pattern
+What is a pilot study? :: A small trial of the methods before the main fieldwork to check they work and to improve them
+What is an environmental quality survey (bipolar survey)? :: Scoring an area on a scale between opposite descriptions (e.g. −3 'lots of litter' to +3 'no litter') – quick but subjective
+Compare open and closed questions in a questionnaire. :: **Open** – people answer in their own words (rich qualitative detail, hard to analyse) ;; **Closed** – fixed choices (quick, easy to graph, less detail)
+Give examples of coastal fieldwork measurements. :: Beach profiles (ranging poles, clinometer, tape), sediment size and shape, longshore drift (float or marked pebble), questionnaires on coastal management, groyne height differences
+Give sources of secondary data for fieldwork. :: Census data, Index of Multiple Deprivation, Met Office climate data, Environment Agency/NRW flood maps and river gauges, historic maps, Google Street View
+What ethical issues must be considered in fieldwork? :: Get permission, respect privacy and anonymity of people surveyed, avoid damaging the environment, be polite and honest about the purpose
+What is distance decay? :: The idea that interaction (e.g. number of visitors) or a characteristic declines as distance from a point (e.g. the CBD) increases
+What does 'cycles and flows' mean as a fieldwork concept? :: Studying movements of people, water, energy or material through a system, e.g. pedestrian flows in a town or water through a drainage basin
+What does 'place' mean as a geographical concept? :: The particular physical and human characteristics that make a location distinctive, and how people perceive and identify with it
+What does 'inequality' mean as a fieldwork concept? :: Differences in quality of life, environmental quality or access to services between people or areas
+What does 'mitigating risk' mean as a geographical concept? :: Reducing the likelihood or impact of a hazard, e.g. flood defences or coastal management – and reducing fieldwork hazards through a risk assessment
+How do you choose a suitable way to present fieldwork data? :: Match the data type: line graph for change over distance/time, scatter graph for relationships, bar chart for categories, pie/divided bar for proportions, maps for spatial patterns
+How should you write a fieldwork conclusion? :: Answer the original question or hypothesis ;; Summarise key findings with data ;; Explain them using geographical theory ;; Mention anomalies
+Explain how you would improve a fieldwork enquiry. :: Larger sample and more sites ;; Repeat at different times/seasons ;; Use more accurate equipment (e.g. flow meter instead of float) ;; Add secondary data to compare
