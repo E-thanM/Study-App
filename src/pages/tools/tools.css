@@ -9,3 +9,17 @@
 .mark-score { font-size: 42px; font-weight: 750; line-height: 1; }
 .mark-score small { font-size: 18px; color: var(--muted); font-weight: 500; }
 .mark-list li { margin: 4px 0; }
+
+/* strengths & weaknesses */
+.strength-scroll { overflow-x: auto; }
+.strength-tbl td, .strength-tbl th { white-space: nowrap; }
+.strength-tbl td:first-child { white-space: normal; min-width: 160px; }
+.strength-tbl .num { text-align: right; font-variant-numeric: tabular-nums; }
+.conf { display: inline-flex; align-items: center; gap: 3px; }
+.conf i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); display: inline-block; }
+.conf b { font-size: 12px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.conf-1 i.on { background: var(--bad); }
+.conf-2 i.on { background: var(--warn); }
+.conf-3 i.on { background: #d1b23a; }
+.conf-4 i.on { background: #6cbf6c; }
+.conf-5 i.on { background: var(--good); }

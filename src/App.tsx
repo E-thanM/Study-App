@@ -27,6 +27,7 @@ import { MarkPage } from './pages/tools/Mark';
 import { QuotesPage } from './pages/tools/Quotes';
 import { PapersPage } from './pages/tools/Papers';
 import { PaperViewPage } from './pages/tools/PaperView';
+import { StrengthsPage } from './pages/tools/Strengths';
 
 export function App() {
   return (
@@ -71,6 +72,7 @@ function Shell() {
 
           <Route path="/tools" element={<ToolsPage />} />
           <Route path="/tools/blurt" element={<BlurtPage />} />
+          <Route path="/tools/strengths" element={<StrengthsPage />} />
           <Route path="/tools/mark" element={<MarkPage />} />
           <Route path="/tools/quotes" element={<QuotesPage />} />
           <Route path="/tools/papers" element={<PapersPage />} />

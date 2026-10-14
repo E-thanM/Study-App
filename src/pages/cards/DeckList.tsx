@@ -42,6 +42,7 @@ export function DeckList() {
           <Link to="/cards/add" className="btn primary"><Icon name="plus" /> Add</Link>
           <Link to="/cards/browse" className="btn"><Icon name="browse" /> <span className="hide-sm">Browse</span></Link>
           <Link to="/cards/stats" className="btn"><Icon name="stats" /> <span className="hide-sm">Stats</span></Link>
+          <Link to="/tools/strengths" className="btn"><Icon name="target" /> <span className="hide-sm">Strengths</span></Link>
           <MenuButton
             className="btn icon"
             items={[

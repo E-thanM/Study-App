@@ -10,6 +10,7 @@ export function ToolsPage() {
   const mistakes = papers.reduce((n, p) => n + p.mistakes.length, 0);
   const mastered = quotes.filter((q) => q.stage >= 4).length;
   const tools = [
+    { to: '/tools/strengths', icon: 'stats', title: 'Strengths & weaknesses', text: 'Every topic in every subject rated 1–5 from your flashcard results – see exactly what to revise next.', meta: 'Live from your reviews' },
     { to: '/tools/blurt', icon: 'write', title: 'Blurting', text: 'Write everything you remember about a topic, then see exactly what you missed from the spec.', meta: blurts.length ? `${blurts.length} blurt${blurts.length === 1 ? '' : 's'}` : 'Best way to find gaps' },
     { to: '/tools/quotes', icon: 'note', title: 'Quote learner', text: 'Learn English Lit quotes word-perfect: full quote → first letters → from memory.', meta: quotes.length ? `${mastered} mastered` : 'Macbeth · Inspector Calls · Of Mice and Men' },
     { to: '/tools/papers', icon: 'stats', title: 'Past papers', text: 'Log scores, track your predicted grade and keep a mistakes spreadsheet that turns into flashcards.', meta: papers.length ? `${papers.length} paper${papers.length === 1 ? '' : 's'} · ${mistakes} mistakes logged` : 'Track grades over time' },
