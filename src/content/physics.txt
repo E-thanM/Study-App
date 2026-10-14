@@ -59,6 +59,8 @@ Calculate: a car accelerates from 5 m/s to 25 m/s in 4 s. What is its accelerati
 Calculate: a train travels 1.2 km in 1 minute. What is its average speed? :: Convert first: 1200 m ÷ 60 s = **20 m/s**
 Calculate: a runner moves at 8 m/s for 25 s. How far does she run? :: distance = speed × time = 8 × 25 = **200 m**
 Calculate: a ball is dropped from rest and falls 20 m. What speed does it reach (g = 10 m/s², ignore air resistance)? :: v² = u² + 2as = 0 + 2 × 10 × 20 = 400 ;; v = √400 = **20 m/s**
+Calculate: a car braking from 20 m/s to rest decelerates at 5 m/s². How far does it travel while braking? :: s = (v² − u²) ÷ 2a = (0 − 400) ÷ (2 × −5) = **40 m**
+Calculate: a car brakes from 30 m/s to 10 m/s in 5 s. What is its acceleration? :: a = (10 − 30) ÷ 5 = **−4 m/s²** (a deceleration of 4 m/s²)
 Calculate: a velocity–time graph rises in a straight line from 0 to 12 m/s in 6 s. How far does the object travel? :: Area of triangle = ½ × 6 × 12 = **36 m**
 ## 1b Practical: motion of everyday objects
 Describe how to investigate the motion of a toy car rolling down a ramp. :: Mark a start line and measure the distance to a finish line ;; Release the car from rest at the start line (don't push it) ;; Time it with a stopwatch or light gates ;; speed = distance ÷ time ;; Repeat and take a mean, then change the ramp height
@@ -127,6 +129,7 @@ Give other safety features that work by increasing the time for a change in mome
 What are the features of a Newton's third law force pair? :: Equal in size ;; Opposite in direction ;; Same type of force ;; Act on **different** objects
 A book rests on a table. What is the Newton's third law partner of the book's weight? :: The gravitational pull of the book on the Earth (acting upwards on the Earth)
 Why are a book's weight and the table's upward push on it NOT a Newton's third law pair? :: They act on the same object (the book) and are different types of force
+How does Newton's third law explain how a swimmer moves forward? :: The swimmer pushes the water backwards; the water pushes the swimmer forwards with an equal and opposite force
 How does Newton's third law explain the recoil of a gun? :: The gun pushes the bullet forwards; the bullet pushes the gun backwards with an equal force
 ## 1c Moments and centre of gravity
 What is the unit of a moment? :: newton metre (N m)
@@ -148,9 +151,15 @@ How do you calculate thinking distance? :: thinking distance = speed × reaction
 Calculate: a car at 20 m/s has a thinking distance of 14 m and a braking distance of 40 m. What is the stopping distance? :: stopping distance = thinking + braking = 14 + 40 = **54 m**
 ## 1c More momentum and Newton's third law
 What is a closed system in momentum questions? :: A system on which no external forces act, so total momentum is conserved
+Calculate: a 1 kg trolley at 4 m/s hits a stationary 3 kg trolley and rebounds at 2 m/s. What is the velocity of the 3 kg trolley? :: Momentum before = 1 × 4 = 4 kg m/s ;; After: 1 × (−2) + 3v = 4 ;; 3v = 6, v = **2 m/s** forwards
+Calculate: what is the change in momentum when a 0.2 kg ball travelling at 10 m/s is stopped? :: Δp = m × (v − u) = 0.2 × (0 − 10) = **−2 kg m/s** (magnitude 2 kg m/s)
+Explain (3 marks) why an egg dropped onto a cushion does not break but one dropped onto a hard floor does. :: The cushion increases the time taken for the egg to stop ;; The change in momentum is the same ;; So the rate of change of momentum, and the force on the egg, is smaller
 How does Newton's third law explain how a rocket accelerates? :: The rocket pushes exhaust gases backwards; the gases push the rocket forwards with an equal and opposite force
 ## 1c More moments
 Why does a crane have a counterweight? :: It provides a moment on the other side of the pivot to balance the moment of the load, so the crane does not topple
+Why does an object topple? :: Its centre of gravity moves outside its base, so its weight gives a moment that turns it over
+How can you make an object more stable? :: Give it a wider base and a lower centre of gravity
+Calculate: a uniform 1 m ruler is pivoted at its 50 cm mark. A 2 N weight hangs at the 10 cm mark. Where must a 4 N weight hang to balance it? :: Anticlockwise moment = 2 × 0.40 = 0.8 N m ;; 4 × d = 0.8, d = 0.20 m ;; so at the **70 cm mark**
 
 # 2 Electricity
 What is the difference between AC and DC? :: AC – direction of current continually reverses (mains); DC – flows in one direction only (cells/batteries)
@@ -226,6 +235,7 @@ Give a safety precaution for the filament lamp I–V practical. :: Don't touch t
 ## 2c Charge, current and energy
 Calculate: a current of 2 A flows for 1 minute. How much charge flows? :: Q = I × t = 2 × 60 = **120 C**
 Calculate: 5 C of charge passes through a 12 V battery. How much energy is transferred? :: E = Q × V = 5 × 12 = **60 J**
+Why is an electric current in a metal a flow of electrons, not protons? :: Protons are fixed in the nuclei of the metal ions; only the free (delocalised) electrons can move
 ## 2d Electric charge (Paper 2)
 Name common electrical conductors. :: Metals (e.g. copper, aluminium) and graphite (carbon)
 Name common electrical insulators. :: Plastics (e.g. polythene, PVC), rubber, glass, dry wood
@@ -257,6 +267,7 @@ Why are LEDs used rather than filament lamps as indicators? :: They use much les
 A thermistor is in series with a fixed resistor. What happens to the current when the temperature rises? :: The thermistor's resistance falls, so the total resistance falls and the current increases
 An LDR is in series with a lamp. What happens to the lamp when the room gets darker? :: The LDR's resistance increases, so the current falls and the lamp gets dimmer
 Describe the I–V graph for a filament lamp. :: An S-shaped curve through the origin that gets less steep at higher voltages (current increases less) – resistance increases as the filament heats up ;; Same shape for negative voltages
+Calculate: two resistors are in series with a 12 V supply. The voltage across one is 8 V. What is the voltage across the other? :: The voltages add up to the supply: 12 − 8 = **4 V**
 
 # 3 Waves
 What is the difference between transverse and longitudinal waves? :: Transverse – vibrations perpendicular to direction of energy transfer (light, water) ;; Longitudinal – vibrations parallel (sound), with compressions and rarefactions
@@ -300,6 +311,7 @@ Explain (3 marks) why the pitch of an ambulance siren changes as it passes you. 
 Does the Doppler effect change the speed of the wave? :: No – only the observed frequency and wavelength change
 ## 3c Electromagnetic spectrum
 List the colours of the visible spectrum in order of increasing frequency. :: Red, orange, yellow, green, blue, indigo, violet
+Which colour of visible light has the longest wavelength? :: Red
 C: Going from radio waves to gamma rays, wavelength {{c1::decreases}} and frequency {{c2::increases}}.
 C: Light is part of a {{c1::continuous}} electromagnetic spectrum; all EM waves travel at the {{c2::same speed}} in free space (a vacuum).
 Which EM waves are the most dangerous, and why? :: The highest-frequency ones (UV, X-rays, gamma rays) – they carry the most energy and are ionising
@@ -316,6 +328,7 @@ C: Excessive exposure to ultraviolet damages {{c1::surface cells and eyes}}, lea
 C: Excessive exposure to X-rays and gamma rays causes {{c1::mutation or damage to cells}} in the body.
 How do microwaves heat food? :: They are absorbed by water molecules in the food, which vibrate more, increasing the thermal energy
 How does an X-ray image of a broken bone form? :: X-rays pass through soft tissue but are absorbed by bone, so bones show up as pale shadows on the detector
+How do night-vision cameras work? :: They detect the infrared radiation emitted by warm objects such as people and animals
 ## 3d Light: reflection and ray diagrams
 C: The normal is a line drawn at {{c1::90°}} to a surface where a ray meets it.
 From where are angles of incidence, reflection and refraction measured? :: From the normal (not from the surface)
@@ -343,6 +356,7 @@ What happens to light that hits a glass–air boundary at exactly the critical a
 Explain how an optical fibre transmits information. :: Light enters one end of the glass fibre ;; It hits the inside surface at an angle greater than the critical angle ;; It is totally internally reflected again and again ;; So it travels along the fibre, even round bends, carrying the signal
 How does a 45° prism turn a ray through 90° in a periscope? :: The ray enters a short face at 90° (no refraction) ;; It hits the long face at 45°, which is more than the critical angle (about 42°) ;; It is totally internally reflected through 90°
 How can a prism turn light through 180° (e.g. binoculars, bicycle reflectors)? :: The light is totally internally reflected twice, at two faces, each turning it through 90°
+Why are prisms better than mirrors in periscopes? :: Total internal reflection reflects all the light, giving a brighter image with no double images, and prisms don't tarnish
 ## 3d Sound
 C: Sound waves are {{c1::longitudinal}} waves that can be reflected and refracted.
 Why can't sound travel through a vacuum? :: Sound needs particles (a medium) to vibrate and pass on the wave
@@ -361,9 +375,12 @@ How does the oscilloscope trace change for a louder sound? :: The waves are tall
 ## 3b More wave properties
 How can you show that water waves transfer energy but not matter? :: A floating cork bobs up and down as waves pass but does not move along with the waves
 Can electromagnetic waves travel through a vacuum? :: Yes – they need no medium (that is how light reaches us from the Sun)
+Calculate: light travels at 3 × 10⁸ m/s. How long does it take to travel 1.5 × 10¹¹ m from the Sun to the Earth? :: t = distance ÷ speed = 1.5 × 10¹¹ ÷ 3 × 10⁸ = **500 s**
+Calculate: a water wave has a speed of 0.6 m/s and a wavelength of 0.15 m. What is its time period? :: f = v ÷ λ = 0.6 ÷ 0.15 = 4 Hz ;; T = 1 ÷ f = **0.25 s**
 ## 3d More light
 How do you draw a ray diagram for refraction at an air–glass boundary? :: Draw the normal at 90° where the ray meets the boundary ;; Draw the incident ray with an arrow ;; Draw the refracted ray bending towards the normal in the glass (angle r smaller than i) ;; Label i and r from the normal
 Describe the path of a ray of light through a triangular prism. :: It bends towards the normal on entering and away from the normal on leaving, so overall it is deviated towards the base (thicker part) of the prism
+Calculate: the critical angle of a material is 30°. What is its refractive index (sin 30° = 0.5)? :: n = 1 ÷ sin c = 1 ÷ 0.5 = **2.0**
 How does an endoscope use optical fibres? :: One bundle of fibres carries light into the body; another bundle carries the reflected light (the image) back out by total internal reflection
 C: The larger the refractive index, the {{c1::smaller}} the critical angle.
 
@@ -401,6 +418,7 @@ Calculate: a motor uses 200 J of electrical energy and gives 50 J of useful kine
 Calculate: a lamp is 20% efficient and gives out 30 J of light. What is the total energy input? :: total input = useful output ÷ efficiency = 30 ÷ 0.20 = **150 J**
 Can efficiency be calculated using power instead of energy? :: Yes – efficiency = (useful power output ÷ total power input) × 100%
 How do you draw a Sankey diagram? :: Draw the input as a wide arrow ;; Split it into a useful arrow (straight on) and wasted arrows (bending away) ;; Make each arrow's width proportional to the energy it represents
+Calculate: a Sankey diagram shows 100 J input, 70 J of light and the rest wasted as heat. How much is wasted and what is the efficiency? :: Wasted = 100 − 70 = **30 J** ;; efficiency = 70 ÷ 100 × 100% = **70%**
 C: In a Sankey diagram, total energy in = {{c1::useful energy out + wasted energy out}}.
 ## 4b Thermal energy transfer
 Why are metals the best thermal conductors? :: They have free (delocalised) electrons that move through the metal and carry energy quickly, as well as vibrating ions
@@ -408,6 +426,7 @@ Why are gases poor thermal conductors? :: The particles are far apart, so energy
 Why can't convection happen in a solid? :: The particles can only vibrate about fixed positions – they can't move from place to place
 Give everyday examples of convection. :: Room heated by a radiator ;; Water heated in a kettle (element at the bottom) ;; Sea breezes ;; Hot air balloons ;; Cooling in a fridge
 Why is the heating element of a kettle at the bottom? :: Water heated at the bottom becomes less dense and rises, cooler denser water sinks to be heated – a convection current heats all the water
+Why is the freezer compartment at the top of a fridge? :: Air cooled at the top becomes denser and sinks, setting up a convection current that cools the whole fridge
 Explain (3 marks) how a sea breeze forms on a sunny day. :: The land heats up faster than the sea ;; Air above the land gets warmer, less dense and rises ;; Cooler, denser air from over the sea moves in to replace it
 How does the temperature of an object affect the infrared it emits? :: The hotter the object, the more infrared radiation it emits each second
 C: All objects {{c1::emit and absorb}} infrared radiation.
@@ -429,6 +448,7 @@ How is GPE linked to KE for a falling object (no air resistance)? :: GPE lost = 
 Calculate: a ball is dropped from 5 m. How fast is it going when it hits the ground (g = 10 m/s², ignore air resistance)? :: mgh = ½mv², so v² = 2gh = 2 × 10 × 5 = 100 ;; v = **10 m/s**
 Why does a falling ball hit the ground more slowly than the GPE = KE calculation predicts? :: Work is done against air resistance, so some energy is transferred to thermal energy instead of kinetic energy
 How is the work done by a car's brakes linked to its kinetic energy? :: Work done by brakes (braking force × braking distance) = kinetic energy lost
+Calculate: a 1000 kg car at 20 m/s is stopped by a braking force of 5000 N. What is the braking distance? :: KE = ½ × 1000 × 20² = 200 000 J ;; d = W ÷ F = 200 000 ÷ 5000 = **40 m**
 Describe the energy changes of a swinging pendulum. :: GPE → KE as it falls to the lowest point (fastest) → GPE as it rises; gradually some energy is transferred to thermal by air resistance, so the swings get smaller
 C: Power is the rate of {{c1::energy transfer}} or the rate of {{c2::doing work}}.
 Calculate: a 600 N student climbs 5 m of stairs in 6 s. What is their useful power? :: Work = 600 × 5 = 3000 J ;; P = 3000 ÷ 6 = **500 W**
@@ -452,6 +472,7 @@ What do fossil fuel, nuclear and most renewable power stations have in common? :
 ## 4a Units and more transfers
 C: Energy and work done are measured in {{c1::joules (J)}}; power is measured in {{c2::watts (W)}}.
 How do you convert kilojoules (kJ) to joules? :: Multiply by 1000 ;; e.g. 2.5 kJ = **2500 J**
+Calculate: a motor has an input power of 400 W and a useful output power of 300 W. What is its efficiency? :: efficiency = 300 ÷ 400 × 100% = **75%**
 Can efficiency be given as a decimal? :: Yes – e.g. 0.75 is the same as 75%; it has no units (it is a ratio)
 Why can radiation travel through a vacuum but conduction and convection cannot? :: Radiation is infrared electromagnetic waves, which need no medium ;; Conduction and convection need particles to pass on or carry the energy
 Explain (4 marks) how a vacuum flask keeps a hot drink hot. :: The vacuum has no particles, so no conduction or convection across it ;; The silvered surfaces reflect infrared back, reducing radiation ;; The stopper stops convection and evaporation from the top ;; So the rate of energy transfer to the surroundings is very small
@@ -495,6 +516,7 @@ Calculate: a 600 N person stands on an area of 0.03 m². What pressure do they e
 Why do tractors and snowshoes have a large area in contact with the ground? :: A larger area gives a smaller pressure for the same force, so they don't sink in
 Why are knives and drawing pins sharp? :: The small area gives a large pressure for a given force
 Why does pressure in a liquid increase with depth? :: There is a greater weight of liquid above pushing down
+Why is a dam thicker at the bottom than at the top? :: Water pressure is greatest at the bottom because it increases with depth
 Calculate: what is the pressure difference between the surface and 10 m deep in water (ρ = 1000 kg/m³, g = 10 N/kg)? :: p = h × ρ × g = 10 × 1000 × 10 = **100 000 Pa**
 What two things does the pressure in a liquid depend on? :: The depth and the density of the liquid (not the shape of the container)
 ## 5c Change of state (Paper 2)
@@ -520,6 +542,7 @@ In the specific heat capacity practical, how do you work out the energy supplied
 ## 5d Ideal gas molecules
 Explain why there is an absolute zero of temperature. :: As a gas cools its particles slow down and have less kinetic energy ;; At −273 °C they have the least possible kinetic energy, so the temperature cannot go any lower
 Calculate: convert 27 °C to kelvin. :: 27 + 273 = **300 K**
+Calculate: convert 100 K to °C. :: 100 − 273 = **−173 °C**
 Why does increasing the temperature of a gas increase the average speed of its molecules? :: Heating transfers energy to the molecules' kinetic energy stores, so they move faster
 C: Gas molecules move with {{c1::random}} motion and exert a force, and hence a pressure, on the walls of their container.
 Explain (3 marks) why decreasing the volume of a gas at constant temperature increases its pressure. :: The molecules are closer together ;; They hit the walls more often (the speed of the molecules is unchanged) ;; A greater force on each unit area of wall, so higher pressure
@@ -530,16 +553,22 @@ Why must temperatures be in kelvin when using p₁/T₁ = p₂/T₂? :: Pressure
 Calculate: a gas at 100 kPa is compressed from 2.0 m³ to 0.5 m³ at constant temperature. What is the new pressure? :: p₂ = p₁V₁ ÷ V₂ = 100 × 2.0 ÷ 0.5 = **400 kPa**
 Calculate: a gas at 27 °C and 100 kPa is heated to 127 °C at constant volume. What is the new pressure? :: Convert: T₁ = 300 K, T₂ = 400 K ;; p₂ = p₁ × T₂ ÷ T₁ = 100 × 400 ÷ 300 = **133 kPa**
 What condition must hold for both gas laws (p₁V₁ = p₂V₂ and p₁/T₁ = p₂/T₂) to apply? :: A fixed mass (amount) of gas; plus constant temperature for Boyle's law, or constant volume for the pressure law
+Why might a car tyre's pressure be higher after a long journey? :: The air inside gets hotter, so the molecules move faster and hit the walls harder and more often (volume roughly constant)
 ## 5b More density and pressure
 Calculate: a stone has a mass of 54 g and displaces 20 cm³ of water. What is its density in g/cm³ and kg/m³? :: ρ = 54 ÷ 20 = **2.7 g/cm³** ;; × 1000 = **2700 kg/m³**
 Calculate: the atmospheric pressure is 100 kPa. What is the total pressure on a diver 5 m below the surface of water (ρ = 1000 kg/m³, g = 10 N/kg)? :: Pressure difference = 5 × 1000 × 10 = 50 000 Pa = 50 kPa ;; Total = 100 + 50 = **150 kPa**
+Calculate: what force does a pressure of 200 000 Pa exert on an area of 0.02 m²? :: F = p × A = 200 000 × 0.02 = **4000 N**
 Why does an object denser than water sink? :: Its density is greater than the density of water (its weight is greater than the upthrust when fully submerged)
 ## 5c More changes of state
 C: Solid → liquid is {{c1::melting}}; liquid → gas is {{c2::boiling or evaporating}}; gas → liquid is {{c3::condensing}}; liquid → solid is {{c4::freezing (solidifying)}}.
+Why is a burn from steam at 100 °C worse than one from water at 100 °C? :: Steam releases extra energy when it condenses on the skin, as well as the energy released as it cools
+What factors increase the rate of evaporation? :: Higher temperature, larger surface area, air moving over the surface (wind/draught), lower humidity
 Why do two objects of the same mass but different materials heat up by different amounts when given the same energy? :: They have different specific heat capacities – the one with the lower specific heat capacity has the larger temperature rise
 ## 5d More gas calculations
+Calculate: a sealed can of gas at 300 K has a pressure of 150 kPa. At what temperature would the pressure be 200 kPa? :: T₂ = T₁ × p₂ ÷ p₁ = 300 × 200 ÷ 150 = **400 K** (127 °C)
 Why must a gas be compressed slowly in Boyle's law questions? :: So the temperature stays constant (rapid compression would heat the gas)
 Explain (3 marks) why heating a sealed can of gas can make it explode. :: The gas molecules gain kinetic energy and move faster ;; They hit the walls more often and with more force ;; The pressure rises until the can bursts
+What is the Kelvin temperature of the freezing point and boiling point of water? :: Freezing point 0 °C = **273 K** ;; Boiling point 100 °C = **373 K**
 
 # 6 Magnetism and electromagnetism
 Which materials are magnetic? :: Iron, steel, nickel and cobalt
@@ -765,6 +794,7 @@ Give uses of radioactivity. :: Medical tracers, radiotherapy, sterilising equipm
 What is the difference between irradiation and contamination? :: Irradiation – exposed to radiation from an outside source ;; Contamination – radioactive material gets on or inside the body (more dangerous for alpha)
 What is nuclear fission? :: A large nucleus (uranium-235) absorbs a neutron, becomes unstable and splits into two smaller daughter nuclei, releasing 2–3 neutrons and energy
 What is nuclear fusion? :: Two light nuclei join to form a heavier nucleus, releasing energy – happens in stars
+Why is fusion hard to achieve on Earth? :: Needs extremely high temperature and pressure to overcome the electrostatic repulsion between positive nuclei
 ## 7a Units
 In what units can half-life be given? :: Any unit of time – seconds, minutes, hours, days or years (use whatever fits the isotope)
 ## 7b Atoms and nuclei
@@ -789,6 +819,8 @@ Complete the beta decay: ¹⁴₆C → ? + ⁰₋₁e :: ¹⁴₇N (nitrogen) ;;
 Why does a nucleus often emit gamma rays after alpha or beta decay? :: The new nucleus is left with excess energy, which it gives out as a gamma ray
 Why does alpha or beta decay change the element? :: The number of protons (atomic number) changes, and the element is defined by its proton number
 ## 7b Detecting radiation and background
+Which is usually the largest source of background radiation in the UK? :: Radon gas from rocks such as granite
+C: Background radiation comes from natural sources on {{c1::Earth}} (rocks, radon, food) and from {{c2::space}} (cosmic rays), plus man-made sources such as medical X-rays.
 What is meant by a corrected count rate? :: The measured count rate minus the background count rate
 How does a Geiger–Müller tube detect radiation? :: Radiation entering the tube ionises the gas inside, producing a pulse of current that is counted by a counter or ratemeter
 How does photographic film detect radiation? :: Radiation darkens the film – the more radiation, the darker it gets (used in film badges worn by workers)
@@ -798,6 +830,7 @@ In the penetration practical, how do you know a source emits alpha? :: The count
 In the penetration practical, how do you know a source emits beta? :: Paper has little effect, but a few mm of aluminium reduce the count rate to (almost) background
 In the penetration practical, how do you know a source emits gamma? :: The count rate is only reduced by thick lead (or concrete); paper and aluminium have little effect
 Give safety precautions when using radioactive sources in the lab. :: Handle with tongs, never with fingers ;; Keep the source pointing away from people ;; Keep it as far away as possible and use it for as short a time as possible ;; Return it to its lead-lined box straight after use
+Why might students use a simulation for the penetration practical? :: Real sources are a health hazard and are strictly controlled in schools; a simulation gives the same pattern safely
 ## 7b Activity and half-life
 What happens to the activity of a radioactive source over time? :: It decreases, because there are fewer undecayed nuclei left
 C: Half-life is different for different radioactive {{c1::isotopes}} – from fractions of a second to billions of years.
@@ -841,6 +874,7 @@ C: Nuclear fusion is the creation of larger nuclei from smaller nuclei, resultin
 What is the energy source of stars? :: Nuclear fusion – mainly hydrogen nuclei fusing to form helium
 What is the difference between nuclear fission and nuclear fusion? :: **Fission** – a large nucleus splits into two smaller nuclei ;; **Fusion** – two small (light) nuclei join to form a larger nucleus ;; Both release energy
 Explain (3 marks) why fusion only happens at very high temperatures and pressures. :: Nuclei are positively charged, so they repel each other (electrostatic repulsion) ;; Very high temperatures give them enough kinetic energy to get close enough to fuse ;; High pressure (density) makes collisions frequent enough
+Why is fusion not yet used to generate electricity on a large scale? :: It is very hard to reach and contain the extremely high temperatures needed ;; So far, experimental reactors use about as much energy as (or more than) they produce
 
 # 8 Astrophysics
 What is the universe made of? :: A large collection of billions of galaxies
@@ -853,19 +887,24 @@ Describe the life cycle of a massive star. :: Nebula → protostar → main sequ
 How does the colour of a star relate to its temperature? :: Red (coolest) → orange → yellow → white → blue (hottest)
 What is absolute magnitude? :: The brightness a star would have at a standard distance (10 parsecs) – lower number = brighter
 What is redshift? :: Light from distant galaxies is shifted to longer wavelengths because they are moving away from us
+Write the redshift equation. :: Δλ/λ₀ = v/c
 What evidence supports the Big Bang theory? :: Redshift of galaxies (further galaxies receding faster) and cosmic microwave background radiation (CMBR)
 What is CMBR? :: Cosmic microwave background radiation – microwave radiation from all directions, the remains of energy from the Big Bang
 ## 8a Units and conversions
 What units must you use in orbital speed calculations? :: Radius in metres (m), time period in seconds (s), giving speed in m/s ;; Convert km → m (× 1000) and days → s (× 24 × 3600)
+Calculate: how many seconds are there in one year (365 days)? :: 365 × 24 × 3600 = **31 536 000 s** (about 3.2 × 10⁷ s)
 ## 8b Motion in the universe
 C: Gravitational force causes {{c1::moons}} to orbit planets, {{c2::planets}} to orbit the Sun, {{c3::artificial satellites}} to orbit the Earth and {{c4::comets}} to orbit the Sun.
 Why does gravitational field strength (g) differ on different planets and moons? :: g depends on the mass (and size) of the planet or moon – a body with greater mass has a stronger gravitational field at its surface
 Why does an astronaut weigh less on the Moon than on Earth, though her mass is unchanged? :: The Moon has much less mass than the Earth, so its gravitational field strength is smaller (about 1.6 N/kg); weight = m × g, so her weight is less ;; Mass is the amount of matter, which does not change
+Calculate: what is the weight of a 60 kg astronaut on the Moon (g = 1.6 N/kg)? :: W = m × g = 60 × 1.6 = **96 N**
 Describe the orbits of moons, planets and comets. :: Moons – nearly circular orbits around planets ;; Planets – nearly circular orbits around the Sun ;; Comets – highly elliptical (elongated) orbits around the Sun, with the Sun near one end, not at the centre
 How does the speed of a comet change during its orbit? :: It is fastest when closest to the Sun and slowest when furthest away ;; As it falls towards the Sun, gravity speeds it up (GPE → KE)
+Why does a comet only grow a tail when it is near the Sun? :: The Sun heats the comet's ice so it vaporises, and the gas and dust are blown away from the Sun into a tail
 Is an object moving in a circular orbit at constant speed accelerating? Why? :: Yes – its direction, and so its velocity, is constantly changing ;; The resultant force (gravity) acts towards the centre of the orbit
 How does the orbital speed and period of a satellite change if it orbits closer to the Earth? :: Higher orbital speed and shorter time period
 Calculate: a satellite orbits at a radius of 6.8 × 10⁶ m with a period of 5400 s. What is its orbital speed? :: v = 2πr ÷ T = 2 × π × 6.8 × 10⁶ ÷ 5400 = **7900 m/s** (7.9 km/s)
+Calculate: the Earth orbits the Sun at a radius of 1.5 × 10¹¹ m in 365 days. What is its orbital speed? :: T = 365 × 24 × 3600 = 3.15 × 10⁷ s ;; v = 2π × 1.5 × 10¹¹ ÷ 3.15 × 10⁷ = **about 30 000 m/s** (30 km/s)
 How do you rearrange v = 2πr/T to find the time period? :: T = 2πr ÷ v
 How do you rearrange v = 2πr/T to find the orbital radius? :: r = vT ÷ 2π
 ## 8c Stellar evolution
@@ -878,6 +917,7 @@ What is a supernova? :: The huge explosion of a red supergiant at the end of its
 What is a black hole? :: The remains of a very massive star, so dense that its gravity is strong enough to stop even light escaping
 What is a neutron star? :: The extremely dense core left behind after a supernova, made almost entirely of neutrons
 C: Stars can be classified by their {{c1::colour}}, which depends on their {{c2::surface temperature}}.
+What colour is the Sun and what type of star is it? :: Yellow – a main sequence star (medium surface temperature, about 5500 °C)
 Why can't you compare the true brightness of stars just by how bright they look from Earth? :: Stars are at different distances – a nearby dim star can look brighter than a distant bright one, so we compare absolute magnitude (brightness at a standard distance)
 ## 8c The Hertzsprung–Russell diagram
 What are the axes of a Hertzsprung–Russell (HR) diagram? :: Vertical – absolute magnitude (brightest at the top, so the numbers become more negative going up) ;; Horizontal – surface temperature, decreasing from left (hot, blue) to right (cool, red)
@@ -921,6 +961,7 @@ Rearrange V = I × R to find I and R. :: I = V ÷ R ;; R = V ÷ I
 Rearrange P = I × V to find the current. :: I = P ÷ V
 Rearrange KE = ½mv² to find v. :: v = √(2 × KE ÷ m)
 Rearrange GPE = m × g × h to find h. :: h = GPE ÷ (m × g)
+Rearrange n = sin i ÷ sin r to find sin r. :: sin r = sin i ÷ n
 Rearrange ρ = m ÷ V to find mass and volume. :: m = ρ × V ;; V = m ÷ ρ
 Rearrange ΔQ = m × c × ΔT to find ΔT. :: ΔT = ΔQ ÷ (m × c)
 Calculate: a 1000 kg car has 200 000 J of kinetic energy. How fast is it going? :: v² = 2 × KE ÷ m = 2 × 200 000 ÷ 1000 = 400 ;; v = **20 m/s**

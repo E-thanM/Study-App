@@ -11,6 +11,7 @@ What is diffusion? :: The random movement of particles from high to low concentr
 Describe an experiment showing diffusion of gases. :: Cotton wool soaked in ammonia at one end of a tube and conc. hydrochloric acid at the other; white ring of ammonium chloride forms nearer the HCl end because ammonia particles are lighter and move faster
 What is the difference between dilute and concentrated solution? :: Dilute – small amount of solute per volume of solvent; concentrated – large amount
 What does a solubility curve show? :: How the mass of solute that dissolves in 100 g of water varies with temperature
+How do you investigate the solubility of a solid at different temperatures? :: Dissolve solute in a known mass of water at a set temperature until saturated, evaporate a sample to dryness, weigh the solid; repeat at different temperatures
 C: Particles in a solid have the {{c1::least}} energy and particles in a gas have the {{c2::most}} energy.
 What happens to particles when a liquid boils? :: They gain enough energy to overcome the forces of attraction between them and move far apart as a gas
 What happens to particles when a gas condenses? :: They lose energy and slow down; forces of attraction pull them close together into a liquid
@@ -33,6 +34,8 @@ C: A {{c1::saturated solution}} is a solution in which no more solute can dissol
 What is meant by solubility? :: The mass of solute that dissolves in 100 g of solvent to form a saturated solution at a particular temperature
 What are the units of solubility? :: g per 100 g of solvent (e.g. g/100 g water)
 How does the solubility of most solids in water change as temperature increases? :: It increases
+How does the solubility of a gas in water change as temperature increases? :: It decreases
+Name a salt whose solubility changes very little with temperature. :: Sodium chloride
 How do you calculate solubility from experimental masses? :: Solubility = (mass of dissolved solid ÷ mass of water) × 100 ;; units g per 100 g water
 Worked: 12.0 g of a salt dissolves in 40.0 g of water to make a saturated solution. What is its solubility? :: 12.0 ÷ 40.0 × 100 = 30 g per 100 g water
 How do you use a solubility curve to find the mass of crystals formed when a saturated solution is cooled? :: Read the solubility at the starting temperature and at the final temperature; mass of crystals = difference (for 100 g of water – scale up or down for other masses)
@@ -84,6 +87,7 @@ Why is a lid put on the beaker in chromatography? :: To stop the solvent evapora
 Describe the paper chromatography practical for inks or food colourings. :: Draw a pencil baseline about 1 cm from the bottom; put small spots of each ink on it; stand the paper in a beaker with solvent below the baseline; cover; remove when the solvent is near the top; mark the solvent front; dry; measure distances and calculate Rf values
 Why should the spots of ink be small? :: So they don't spread into each other and the dyes separate clearly
 How would you get salt from a mixture of salt and sand? :: Add water and stir to dissolve the salt; filter to remove the sand; evaporate/crystallise the filtrate to get salt
+Why can sand be separated from salt by dissolving and filtering? :: Salt is soluble in water but sand is insoluble
 
 # 1c Atomic structure
 Give the relative mass and charge of a proton, neutron and electron. :: Proton: mass 1, charge +1 ;; Neutron: mass 1, charge 0 ;; Electron: mass 1/1836 (negligible), charge −1
@@ -206,6 +210,7 @@ Worked: 2H₂ + O₂ → 2H₂O. What volume of oxygen reacts with 40 cm³ of hy
 Worked: how many molecules are in 0.50 mol of water? :: 0.50 × 6.02 × 10²³ = 3.01 × 10²³ molecules
 How do you identify the limiting reactant from masses? :: Work out the moles of each reactant ;; divide each by its coefficient in the balanced equation ;; the smaller answer is the limiting reactant
 Worked: 2.4 g of Mg (Ar 24) is added to 0.10 mol of HCl (Mg + 2HCl → MgCl₂ + H₂). Which reactant is limiting? :: Mg = 2.4 ÷ 24 = 0.10 mol, which would need 0.20 mol HCl ;; only 0.10 mol HCl is present, so **HCl is limiting** (Mg in excess)
+Worked: how many moles are in 60 cm³ of a gas at rtp? :: 60 ÷ 24 000 = 0.0025 mol
 Worked: what volume of hydrogen at rtp forms when 0.65 g of zinc (Ar 65) reacts with excess acid? (Zn + 2HCl → ZnCl₂ + H₂) :: 0.65 ÷ 65 = 0.010 mol Zn → 0.010 mol H₂ ;; 0.010 × 24 000 = 240 cm³
 Worked: what mass of NaOH (Mr 40) is needed to make 250 cm³ of 0.200 mol/dm³ solution? :: moles = 0.200 × 0.250 = 0.0500 mol ;; mass = 0.0500 × 40 = 2.0 g
 Worked: calculate the atom economy for making CaO by heating CaCO₃ (CaCO₃ → CaO + CO₂; Mr CaCO₃ 100, CaO 56). :: 56 ÷ 100 × 100 = 56%
@@ -269,6 +274,7 @@ Describe the bonding in methane, CH₄. :: Four single C–H covalent bonds; no 
 Describe the bonding in carbon dioxide, CO₂. :: Two C=O double bonds (O=C=O); each oxygen has two lone pairs
 Describe the bonding in ethane, C₂H₆. :: One C–C single bond and six C–H single bonds
 Describe the bonding in ethene, C₂H₄. :: One C=C double bond (two shared pairs) and four C–H single bonds
+Describe the bonding in chloromethane, CH₃Cl. :: Three C–H and one C–Cl single bonds; chlorine has three lone pairs
 In a covalent dot-and-cross diagram, where are the shared electrons drawn? :: In the overlapping area of the two atoms' outer shells
 C: When a simple molecular substance melts or boils, the weak {{c1::intermolecular forces}} are overcome but the {{c2::covalent bonds}} are not broken.
 Why are simple molecular substances usually gases or liquids at room temperature? :: Intermolecular forces are weak, so little energy is needed to separate the molecules
@@ -293,6 +299,7 @@ Why do metals conduct electricity? :: Delocalised electrons are free to move thr
 Why are metals malleable? :: The layers of positive ions can slide over each other without breaking the metallic bonds
 How do you draw metallic bonding? :: Rows of positive ions (circles with +) in a regular lattice, with electrons (e⁻) drawn between them
 Why do metals usually have high melting points? :: The strong electrostatic attraction between positive ions and delocalised electrons needs a lot of energy to overcome
+Why are metals ductile (can be drawn into wires)? :: The layers of positive ions can slide over each other while the delocalised electrons keep holding them together
 
 # 1i Electrolysis
 What is electrolysis? :: Breaking down an ionic compound (molten or in solution) using electricity
@@ -305,6 +312,8 @@ Write the half-equation at the cathode for copper ions. :: Cu²⁺ + 2e⁻ → C
 Write the half-equation for chloride ions at the anode. :: 2Cl⁻ → Cl₂ + 2e⁻
 Write the half-equation for hydroxide ions at the anode. :: 4OH⁻ → O₂ + 2H₂O + 4e⁻
 What is OIL RIG? :: Oxidation Is Loss of electrons, Reduction Is Gain of electrons
+What is a Faraday? :: The charge on one mole of electrons (96 500 C)
+How do you calculate charge? :: Q = I × t (coulombs = amps × seconds)
 C: Positive ions are called {{c1::cations}} and negative ions are called {{c2::anions}}.
 Which electrode do negative ions move to? :: The anode (positive electrode)
 C: The {{c1::anode}} is the positive electrode and the {{c2::cathode}} is the negative electrode.
@@ -325,6 +334,7 @@ Why does the solution become alkaline when sodium chloride solution is electroly
 What is observed during electrolysis of copper(II) sulfate solution with inert electrodes? :: Pink-brown copper coats the cathode; bubbles of oxygen at the anode; the blue colour fades
 Why does the blue colour fade when copper(II) sulfate solution is electrolysed with inert electrodes? :: Blue Cu²⁺ ions are removed from the solution as copper at the cathode
 What is left in solution after copper(II) sulfate solution is electrolysed with inert electrodes? :: Sulfuric acid (H⁺ and SO₄²⁻ ions)
+What happens when copper(II) sulfate solution is electrolysed with copper electrodes? :: The copper anode dissolves (Cu → Cu²⁺ + 2e⁻) and copper is deposited on the cathode; the blue colour stays the same
 Why is the reaction at the cathode a reduction? :: Positive ions gain electrons
 Why is the reaction at the anode an oxidation? :: Negative ions lose electrons
 How do you predict the product at the cathode in aqueous electrolysis? :: If the metal is more reactive than hydrogen → hydrogen forms ;; if less reactive (e.g. copper, silver) → the metal forms
@@ -332,6 +342,7 @@ How do you predict the product at the anode in aqueous electrolysis? :: If halid
 Describe the practical for electrolysing an aqueous solution. :: Pour the solution into a beaker or electrolysis cell; insert two inert graphite electrodes connected to a low-voltage d.c. supply; collect any gases in inverted test tubes over the electrodes; observe each electrode and test any gases
 Name the products of electrolysis of copper(II) chloride solution with inert electrodes. :: Copper at the cathode; chlorine at the anode
 Name the products of electrolysis of potassium bromide solution with inert electrodes. :: Hydrogen at the cathode; bromine at the anode
+Name the products of electrolysis of molten zinc chloride. :: Zinc at the cathode; chlorine at the anode
 Write the cathode half-equation for silver ions. :: Ag⁺ + e⁻ → Ag
 Write the cathode half-equation for sodium ions in molten sodium chloride. :: Na⁺ + e⁻ → Na
 What are the products of electrolysis of molten sodium chloride? :: Sodium at the cathode; chlorine at the anode
@@ -358,12 +369,14 @@ How does the melting point of group 1 metals change down the group? :: It decrea
 Explain why potassium is more reactive than sodium. (4 marks) :: Potassium atoms have more electron shells ;; outer electron is further from the nucleus and more shielded ;; weaker attraction to the nucleus ;; so the outer electron is lost more easily
 What charge do group 1 ions have and why? :: 1+ – the atom loses its single outer electron to get a full outer shell
 Why are group 1 metals called alkali metals? :: They react with water to form alkaline hydroxide solutions
+Predict how caesium reacts with water. :: Even more violently than rubidium/potassium (explosively), forming caesium hydroxide and hydrogen
 
 # 2b Group 7 – halogens
 Give the colour and state of chlorine, bromine and iodine at room temperature. :: Chlorine – pale yellow-green gas ;; Bromine – red-brown liquid (orange vapour) ;; Iodine – grey-black solid (purple vapour)
 How do melting and boiling points change down group 7? :: They increase
 What is a displacement reaction of halogens? :: A more reactive halogen displaces a less reactive one from its salt solution, e.g. Cl₂ + 2KBr → 2KCl + Br₂
 In Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂, which species is oxidised? :: Bromide ions are oxidised (lose electrons); chlorine is reduced
+What does hydrogen chloride form when dissolved in water vs methylbenzene? :: In water: hydrochloric acid (ionises – acidic, turns litmus red) ;; In methylbenzene: no ions form, so not acidic
 C: Halogens exist as {{c1::diatomic}} molecules, e.g. Cl₂, Br₂ and I₂.
 What is the colour of iodine dissolved in water (or potassium iodide solution)? :: Brown
 What is the colour of bromine water? :: Orange (yellow-orange)
@@ -387,9 +400,11 @@ Why should chlorine be used in a fume cupboard? :: It is toxic
 
 # 2c Gases in the atmosphere
 Give the approximate composition of dry air. :: 78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide
+How do metals burn in oxygen? :: Magnesium – bright white flame, white powder MgO ;; Sodium – yellow/orange flame, white solid ;; Iron – sparks, black solid ;; Copper – no flame, black CuO coating ;; (non-metal: hydrogen burns with a pale blue flame to form water)
 How do non-metals react with oxygen? :: Carbon burns to CO₂; sulfur burns with a blue flame to SO₂ (acidic oxides)
 How is carbon dioxide made in the lab? :: React calcium carbonate (marble chips) with dilute hydrochloric acid
 What is thermal decomposition of metal carbonates? :: Heating breaks them down into a metal oxide and carbon dioxide, e.g. CuCO₃ → CuO + CO₂
+Give properties and uses of carbon dioxide. :: Denser than air, doesn't support combustion – fire extinguishers; dissolves in water under pressure – fizzy drinks
 Why is carbon dioxide a greenhouse gas? :: It absorbs infrared radiation emitted by the Earth, keeping the Earth warm; increasing levels cause global warming/climate change
 Describe how to find the percentage of oxygen in air using heated copper. :: Connect two gas syringes through a tube of copper; start with 100 cm³ of air; heat the copper and push the air back and forth over it until the volume stops changing; cool and measure the final volume
 In the heated copper experiment, what colour change is seen? :: Pink-brown copper turns black (copper(II) oxide)
@@ -427,6 +442,8 @@ Which metals react with cold water? :: Potassium, sodium, lithium and calcium (m
 Write the equation for calcium reacting with water. :: Ca + 2H₂O → Ca(OH)₂ + H₂
 What do you see when calcium reacts with water? :: Fizzing; calcium sinks; solution turns cloudy (slightly soluble calcium hydroxide); warms up
 Write the equation for magnesium reacting with steam. :: Mg + H₂O → MgO + H₂
+Write the equation for zinc reacting with steam. :: Zn + H₂O → ZnO + H₂
+What is the general equation for a metal reacting with steam? :: Metal + steam → metal oxide + hydrogen
 Describe the reactions of magnesium, zinc, iron and copper with dilute hydrochloric acid. :: Magnesium – vigorous fizzing ;; Zinc – steady fizzing ;; Iron – slow bubbling ;; Copper – no reaction
 Write the equation for magnesium reacting with dilute hydrochloric acid. :: Mg + 2HCl → MgCl₂ + H₂
 Write the equation for zinc reacting with dilute sulfuric acid. :: Zn + H₂SO₄ → ZnSO₄ + H₂
@@ -462,9 +479,11 @@ What is an ore? :: A rock containing enough of a metal compound to make extracti
 C: Most metals are extracted from {{c1::ores}} found in the Earth's crust; unreactive metals such as gold are found as {{c2::uncombined elements}}.
 Why can iron be extracted by heating its oxide with carbon? :: Carbon is more reactive than iron, so it removes the oxygen (reduces the iron oxide)
 Why can aluminium not be extracted by heating its oxide with carbon? :: Aluminium is more reactive than carbon
+In iron extraction (blast furnace), what substance reduces iron(III) oxide? :: Carbon monoxide (formed from coke)
 How is aluminium extracted? :: Electrolysis of molten aluminium oxide (dissolved in molten cryolite)
 Why is extracting aluminium by electrolysis expensive? :: It needs large amounts of electricity (and high temperatures to melt the electrolyte)
 Write the cathode half-equation in the extraction of aluminium. :: Al³⁺ + 3e⁻ → Al
+Why do the carbon anodes need replacing in aluminium extraction? :: Oxygen formed at the anode reacts with the hot carbon, forming carbon dioxide, so they burn away
 Give factors to comment on when evaluating a metal extraction process. :: Energy/cost (heat or electricity), cost of raw materials, reactivity of metal, environmental impact (CO₂, mining), purity of product
 What is an alloy? :: A mixture of a metal with one or more other elements (usually metals or carbon)
 Give the properties and uses of low-carbon (mild) steel. :: Softer, malleable, easily shaped ;; car bodies, wire, nails, machinery
@@ -612,6 +631,7 @@ Worked: H₂ + Cl₂ → 2HCl. Bond energies (kJ/mol): H–H 436, Cl–Cl 242, H
 Explain, in terms of bonds, why a reaction is exothermic. :: More energy is released when new bonds are made in the products than is taken in to break bonds in the reactants
 Explain, in terms of bonds, why a reaction is endothermic. :: More energy is taken in to break bonds in the reactants than is released when bonds are made in the products
 Why might ΔH calculated from bond energies differ from an experimental value? :: Bond energies are average values – the actual energy of a bond varies between different molecules
+Is dissolving ammonium nitrate in water exothermic or endothermic? :: Endothermic – the temperature falls
 
 # 3b Rates of reaction
 What must happen for particles to react (collision theory)? :: Particles must collide with energy greater than or equal to the activation energy
@@ -643,6 +663,7 @@ Explain why powdered calcium carbonate reacts faster than lumps with the same ma
 Explain why increasing the concentration of acid increases the rate. :: More acid particles in the same volume ;; collisions are more frequent ;; more successful collisions per second
 How does increasing the pressure of a gas reaction affect rate? :: Same number of particles in a smaller volume, so more frequent collisions – faster rate
 In the disappearing cross experiment, how is rate related to the time measured? :: Rate is proportional to 1 ÷ time – a shorter time means a faster rate
+Write the equation for sodium thiosulfate reacting with hydrochloric acid. :: Na₂S₂O₃ + 2HCl → 2NaCl + S + SO₂ + H₂O
 
 # 3c Reversible reactions and equilibria
 What symbol shows a reversible reaction? :: ⇌
@@ -651,6 +672,10 @@ What is dynamic equilibrium? :: In a closed system, the forward and backward rea
 What happens to the equilibrium if temperature is increased? :: It shifts in the endothermic direction
 What happens to the equilibrium if pressure is increased? :: It shifts towards the side with fewer gas molecules
 What happens to the equilibrium if a catalyst is added? :: No change in position – equilibrium is reached faster
+Write the equation and conditions for the Haber process. :: N₂ + 3H₂ ⇌ 2NH₃ ;; 450 °C, 200 atm, iron catalyst
+Why is a compromise temperature used in the Haber process? :: Lower temperature gives a higher yield (forward reaction is exothermic) but the rate would be too slow
+Write the equation and conditions for the Contact process. :: 2SO₂ + O₂ ⇌ 2SO₃ ;; 450 °C, 1–2 atm, vanadium(V) oxide catalyst
+What are the uses of ammonia and sulfuric acid? :: Ammonia – making fertilisers (ammonium nitrate) and nitric acid ;; Sulfuric acid – fertilisers, detergents, paints
 C: A reversible reaction is one where the {{c1::products can react to re-form the reactants}}.
 Describe what happens when ammonium chloride is heated in a test tube. :: The white solid decomposes into ammonia and hydrogen chloride gases at the hot end; these recombine to form white solid ammonium chloride at the cooler top of the tube
 Write the equation for the effect of heat on ammonium chloride. :: NH₄Cl(s) ⇌ NH₃(g) + HCl(g)
@@ -667,6 +692,7 @@ N₂ + 3H₂ ⇌ 2NH₃ (forward exothermic). Explain the effect of increasing t
 H₂ + I₂ ⇌ 2HI (all gases). What is the effect of increasing pressure on the position of equilibrium? :: No effect – there are equal numbers of gas molecules on each side
 If the forward reaction is endothermic, what happens to the yield when temperature is increased? :: The yield increases – equilibrium shifts to the right (endothermic direction)
 How do you decide which way pressure shifts an equilibrium? :: Count the moles of gas on each side of the equation; higher pressure favours the side with fewer gas molecules
+Why is a very high pressure not used in the Haber process even though it increases yield? :: It is expensive to build and run equipment that withstands it, and it is dangerous
 Do the reactions stop at dynamic equilibrium? :: No – both forward and reverse reactions continue, at equal rates
 
 # 4a Introduction to organic chemistry
@@ -685,6 +711,7 @@ What is the empirical formula of ethene, C₂H₄? :: CH₂
 What is the empirical formula of butane, C₄H₁₀? :: C₂H₅
 Name the suffixes for alkanes, alkenes, alcohols and carboxylic acids. :: -ane, -ene, -ol, -oic acid
 What do the numbers in names like but-2-ene and propan-1-ol show? :: The carbon atom where the functional group (C=C or –OH) is, counting from the end that gives the lowest number
+What is the prefix for a chain of 6 carbon atoms? :: Hex-
 Name the two structural isomers of C₄H₁₀. :: Butane and methylpropane
 Name the three structural isomers of C₅H₁₂. :: Pentane, methylbutane and dimethylpropane
 Name the two unbranched alkene isomers of C₄H₈. :: But-1-ene and but-2-ene
@@ -713,12 +740,14 @@ Write an equation for the incomplete combustion of methane forming carbon monoxi
 When does incomplete combustion happen? :: When there is not enough oxygen (limited air supply)
 Why is carbon monoxide especially dangerous? :: It is colourless and odourless, so it cannot be detected without an alarm
 Give problems caused by soot (carbon) from incomplete combustion. :: Blackens buildings; causes breathing problems; less energy released from the fuel
+Write the equation for nitrogen and oxygen reacting in a car engine. :: N₂ + O₂ → 2NO (then 2NO + O₂ → 2NO₂)
 How do sulfur dioxide and oxides of nitrogen cause acid rain? :: They dissolve in water in clouds/rain to form acidic solutions (sulfuric and nitric acids)
 Give three effects of acid rain. :: Kills fish and aquatic life (acidifies lakes) ;; damages trees ;; erodes limestone buildings and corrodes metal structures
 How can sulfur dioxide emissions be reduced? :: Remove sulfur from fuels before burning them (or remove SO₂ from waste gases)
 Write an equation for cracking decane, C₁₀H₂₂, to octane and ethene. :: C₁₀H₂₂ → C₈H₁₈ + C₂H₄
 Worked: complete the cracking equation C₁₂H₂₆ → C₈H₁₈ + ? :: C₄H₈ (balance the C and H atoms)
 Describe how to crack liquid paraffin in the lab. :: Heat paraffin soaked into mineral wool so vapour passes over hot broken porcelain (or aluminium oxide); collect the gas over water; test it with bromine water (decolourised – alkene)
+In lab cracking, why is the delivery tube removed from the water before heating stops? :: To prevent suck-back of cold water into the hot tube, which could crack it
 Explain why cracking is necessary. :: Crude oil contains more long-chain fractions than are needed and too little of the short-chain fractions (e.g. petrol) in high demand ;; cracking converts surplus long chains into useful short chains and alkenes
 
 # 4c Alkanes
@@ -772,6 +801,7 @@ Write the equation for the microbial oxidation of ethanol. :: C₂H₅OH + O₂ 
 What reagent and conditions oxidise ethanol to ethanoic acid in the lab? :: Potassium dichromate(VI) in dilute sulfuric acid, heated ;; colour change orange → green
 Why is fermentation carried out in the absence of air? :: To stop the ethanol being oxidised to ethanoic acid (and so yeast respires anaerobically)
 Why is fermentation carried out at about 30 °C? :: It is the optimum temperature for the yeast enzymes – lower is too slow; higher denatures the enzymes
+Why does fermentation stop at about 15% ethanol? :: The ethanol concentration becomes high enough to kill the yeast
 How is ethanol separated from the fermentation mixture? :: Fractional distillation
 What type of reaction is the hydration of ethene? :: Addition
 Why might a country with lots of sugar cane but no oil choose fermentation? :: Sugar is a cheap, renewable raw material available locally; crude oil would have to be imported
@@ -813,6 +843,7 @@ What is addition polymerisation? :: Many small unsaturated monomers (alkenes) jo
 Name the polymers made from ethene, propene and chloroethene. :: Poly(ethene), poly(propene), poly(chloroethene) (PVC)
 What is condensation polymerisation? :: Monomers with two functional groups join, releasing a small molecule (often water) for each bond made
 How are polyesters formed? :: A dicarboxylic acid and a diol undergo condensation polymerisation, eliminating water
+Why are some polyesters biodegradable? :: The ester links can be broken down (hydrolysed) by microorganisms
 C: Small molecules that join together to make a polymer are called {{c1::monomers}}.
 How do you draw the repeat unit of an addition polymer? :: Draw the two carbons from the C=C joined by a single bond, with their side groups; add bonds extending out through brackets on each side; write n after the bracket
 Give the repeat unit of poly(ethene). :: –[CH₂–CH₂]–ₙ

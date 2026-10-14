@@ -1,12 +1,8 @@
 Define solvent, solute, solution and saturated solution. :: Solvent – liquid that dissolves; solute – substance dissolved; solution – mixture of the two; saturated – no more solute can dissolve at that temperature
-How do you investigate the solubility of a solid at different temperatures? :: Dissolve solute in a known mass of water at a set temperature until saturated, evaporate a sample to dryness, weigh the solid; repeat at different temperatures
 How is a solid turned into a liquid? :: Heat it to its melting point – particles gain energy and vibrate enough to break out of their fixed positions
-How does the solubility of a gas in water change as temperature increases? :: It decreases
-Name a salt whose solubility changes very little with temperature. :: Sodium chloride
 C: Converting a liquid to a gas below its boiling point, only at the surface, is called {{c1::evaporation}}.
 Define element, compound and mixture. :: Element – one type of atom ;; Compound – two or more elements chemically combined ;; Mixture – substances not chemically joined, can be separated physically
 C: A pure substance has a {{c1::fixed (sharp)}} melting and boiling point, but a mixture melts or boils {{c2::over a range of temperatures}}.
-Why can sand be separated from salt by dissolving and filtering? :: Salt is soluble in water but sand is insoluble
 C: Relative atomic mass is measured on a scale where an atom of {{c1::carbon-12}} has a mass of exactly 12.
 Worked: copper is 69% copper-63 and 31% copper-65. Calculate its Ar to 1 decimal place. :: (63 × 69 + 65 × 31) ÷ 100 = 63.6
 Why are noble gases unreactive? :: They have full outer shells of electrons (stable)
@@ -15,35 +11,20 @@ C: One mole of particles contains {{c1::6.02 × 10²³}} particles (the Avogadro
 Worked: calculate the Mr of Ca(OH)₂ (Ca 40, O 16, H 1). :: 40 + 2 × (16 + 1) = 74
 Worked: what mass of MgO forms when 6.0 g of Mg burns? (2Mg + O₂ → 2MgO; Mg 24, O 16) :: 6.0 ÷ 24 = 0.25 mol Mg → 0.25 mol MgO ;; 0.25 × 40 = 10 g
 How do you calculate the percentage by mass of water in a hydrated salt from experiment? :: % water = (mass lost on heating ÷ mass of hydrated salt) × 100
-Worked: how many moles are in 60 cm³ of a gas at rtp? :: 60 ÷ 24 000 = 0.0025 mol
 C: A covalent bond is the strong electrostatic attraction between a {{c1::shared pair of electrons}} and the {{c2::nuclei}} of the two atoms.
-Describe the bonding in chloromethane, CH₃Cl. :: Three C–H and one C–Cl single bonds; chlorine has three lone pairs
 C: Covalent compounds do not usually conduct electricity because they have no {{c1::ions or delocalised electrons}} that are free to move.
 Why do simple molecular substances have low melting points even though covalent bonds are strong? :: Melting only overcomes the weak forces between molecules; the strong covalent bonds within molecules do not break
 C: Metallic bonding is the electrostatic attraction between {{c1::positive metal ions}} and a sea of {{c2::delocalised electrons}}.
-Why are metals ductile (can be drawn into wires)? :: The layers of positive ions can slide over each other while the delocalised electrons keep holding them together
 What forms at the cathode when an aqueous solution is electrolysed? :: Hydrogen, unless the metal is less reactive than hydrogen (e.g. copper, silver), then the metal forms
 What forms at the anode when an aqueous solution is electrolysed? :: Oxygen, unless the solution contains halide ions – then the halogen forms
-What is a Faraday? :: The charge on one mole of electrons (96 500 C)
-How do you calculate charge? :: Q = I × t (coulombs = amps × seconds)
-What happens when copper(II) sulfate solution is electrolysed with copper electrodes? :: The copper anode dissolves (Cu → Cu²⁺ + 2e⁻) and copper is deposited on the cathode; the blue colour stays the same
-Name the products of electrolysis of molten zinc chloride. :: Zinc at the cathode; chlorine at the anode
 How do group 1 metals react with water? :: Float, fizz (hydrogen), move around; lithium fizzes steadily, sodium melts into a ball, potassium ignites with a lilac flame ;; metal + water → metal hydroxide + hydrogen
 Why does reactivity increase down group 1? :: Atoms get larger, outer electron is further from the nucleus and more shielded, so it is lost more easily
-Predict how caesium reacts with water. :: Even more violently than rubidium/potassium (explosively), forming caesium hydroxide and hydrogen
 Why does reactivity decrease down group 7? :: Atoms get larger; the outer shell is further from the nucleus, so it is harder to gain an electron
-What does hydrogen chloride form when dissolved in water vs methylbenzene? :: In water: hydrochloric acid (ionises – acidic, turns litmus red) ;; In methylbenzene: no ions form, so not acidic
 How can you find the percentage of oxygen in air? :: Pass air over heated copper (or use iron rusting / phosphorus) and measure the decrease in volume
-How do metals burn in oxygen? :: Magnesium – bright white flame, white powder MgO ;; Sodium – yellow/orange flame, white solid ;; Iron – sparks, black solid ;; Copper – no flame, black CuO coating ;; (non-metal: hydrogen burns with a pale blue flame to form water)
-Give properties and uses of carbon dioxide. :: Denser than air, doesn't support combustion – fire extinguishers; dissolves in water under pressure – fizzy drinks
 Worked: 50.0 cm³ of air is reduced to 40.0 cm³ by reaction with iron. Percentage of oxygen? :: (50.0 − 40.0) ÷ 50.0 × 100 = 20%
-Write the equation for zinc reacting with steam. :: Zn + H₂O → ZnO + H₂
-What is the general equation for a metal reacting with steam? :: Metal + steam → metal oxide + hydrogen
 Why is aluminium used for aircraft and overhead cables? :: Low density, resists corrosion (oxide layer); good conductor
 Why is copper used for wiring? :: Good electrical conductor and ductile
 Why is stainless steel used for cutlery? :: Resists corrosion (contains chromium)
-In iron extraction (blast furnace), what substance reduces iron(III) oxide? :: Carbon monoxide (formed from coke)
-Why do the carbon anodes need replacing in aluminium extraction? :: Oxygen formed at the anode reacts with the hot carbon, forming carbon dioxide, so they burn away
 What is the pH of a neutral solution at 25 °C? :: 7
 Which salts are soluble? :: All sodium, potassium and ammonium salts; all nitrates; most chlorides (not silver or lead); most sulfates (not barium, calcium or lead)
 Which carbonates and hydroxides are soluble? :: Carbonates: only sodium, potassium and ammonium ;; Hydroxides: only sodium and potassium (calcium hydroxide is slightly soluble)
@@ -52,24 +33,12 @@ How do you test if water is pure? :: Boils at exactly 100 °C (freezes at 0 °C)
 Worked: 50 cm³ of 0.50 mol/dm³ CuSO₄ reacts with excess zinc; temperature rises 25 °C. Calculate ΔH. :: Q = 50 × 4.2 × 25 = 5250 J ;; moles CuSO₄ = 0.50 × 0.050 = 0.025 mol ;; ΔH = −5.25 ÷ 0.025 = **−210 kJ/mol**
 How do you calculate ΔH from bond energies? :: ΔH = total energy of bonds broken (reactants) − total energy of bonds made (products)
 Worked: CH₄ + 2O₂ → CO₂ + 2H₂O. Bond energies (kJ/mol): C–H 413, O=O 498, C=O 805, O–H 464. Calculate ΔH. :: Broken: 4 × 413 + 2 × 498 = 2648 ;; Made: 2 × 805 + 4 × 464 = 3466 ;; ΔH = 2648 − 3466 = **−818 kJ/mol**
-Is dissolving ammonium nitrate in water exothermic or endothermic? :: Endothermic – the temperature falls
 How does increasing temperature affect rate? :: Particles move faster: more frequent collisions and more collisions have energy ≥ activation energy
 Describe an experiment to measure the rate of reaction between marble chips and acid. :: Measure the mass lost (CO₂ escaping) on a balance every 30 s, or collect gas in a gas syringe; compare chip sizes/concentrations
 How can you show manganese(IV) oxide catalyses the decomposition of hydrogen peroxide? :: Measure the volume of oxygen produced over time with and without MnO₂; mass of MnO₂ is unchanged at the end
 Describe how to draw a reaction profile for an exothermic reaction. :: Reactants level, a curve rising to a peak, then a lower products level ;; label activation energy (reactants to peak) and ΔH (reactants to products, downward)
-Write the equation for sodium thiosulfate reacting with hydrochloric acid. :: Na₂S₂O₃ + 2HCl → 2NaCl + S + SO₂ + H₂O
-Write the equation and conditions for the Haber process. :: N₂ + 3H₂ ⇌ 2NH₃ ;; 450 °C, 200 atm, iron catalyst
-Why is a compromise temperature used in the Haber process? :: Lower temperature gives a higher yield (forward reaction is exothermic) but the rate would be too slow
-Write the equation and conditions for the Contact process. :: 2SO₂ + O₂ ⇌ 2SO₃ ;; 450 °C, 1–2 atm, vanadium(V) oxide catalyst
-What are the uses of ammonia and sulfuric acid? :: Ammonia – making fertilisers (ammonium nitrate) and nitric acid ;; Sulfuric acid – fertilisers, detergents, paints
-Why is a very high pressure not used in the Haber process even though it increases yield? :: It is expensive to build and run equipment that withstands it, and it is dangerous
 What is a molecular formula (organic)? :: Shows the actual number of atoms of each element in a molecule, e.g. C₂H₆
-What is the prefix for a chain of 6 carbon atoms? :: Hex-
 How is crude oil separated? :: Fractional distillation – heated and vapour enters a fractionating column, hot at the bottom and cool at the top; fractions condense at different heights by boiling point
 Why is cracking needed? :: There is more demand for short-chain fractions (petrol) than supply; alkenes are needed to make polymers
-Write the equation for nitrogen and oxygen reacting in a car engine. :: N₂ + O₂ → 2NO (then 2NO + O₂ → 2NO₂)
 C: Catalytic cracking uses a {{c1::silica or alumina}} catalyst at {{c2::600–700 °C}}.
-In lab cracking, why is the delivery tube removed from the water before heating stops? :: To prevent suck-back of cold water into the hot tube, which could crack it
-Why does fermentation stop at about 15% ethanol? :: The ethanol concentration becomes high enough to kill the yeast
 What are problems with disposing of addition polymers? :: Non-biodegradable – landfill problems; burning releases toxic gases (e.g. HCl from PVC)
-Why are some polyesters biodegradable? :: The ester links can be broken down (hydrolysed) by microorganisms
