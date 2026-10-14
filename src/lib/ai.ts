@@ -42,6 +42,7 @@ export interface AiSettings {
 /** OpenAI-compatible services that can run Qwen 3 and other open models for free. */
 export const OA_PRESETS = [
   { id: 'openrouter', label: 'OpenRouter – free Qwen 3 and other models (free account)', base: 'https://openrouter.ai/api/v1', needsKey: true },
+  { id: 'xai', label: 'Grok (xAI API key from console.x.ai)', base: 'https://api.x.ai/v1', needsKey: true },
   { id: 'ollama', label: 'Ollama on this computer – Qwen 3 offline, no account', base: 'http://localhost:11434/v1', needsKey: false },
   { id: 'custom', label: 'Other OpenAI-compatible service', base: '', needsKey: true },
 ];

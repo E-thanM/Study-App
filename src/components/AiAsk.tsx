@@ -7,7 +7,15 @@ import { Icon, Seg, toast } from './ui';
  * Runs a prompt either one-click (the AI service set up in Settings) or by copy & paste
  * into claude.ai / Qwen Chat, which is free. Hands the reply text back.
  */
-export function AiAsk({ prompt, onReply, label = 'Get feedback', disabled }: { prompt: string; onReply: (text: string) => void; label?: string; disabled?: boolean }) {
+export function AiAsk({ prompt, onReply, onReplies, runs = 1, label = 'Get feedback', disabled }: {
+  prompt: string;
+  onReply?: (text: string) => void;
+  /** with runs > 1, one-click AI answers several times (e.g. independent markings) and all replies are handed back */
+  onReplies?: (texts: string[]) => void;
+  runs?: number;
+  label?: string;
+  disabled?: boolean;
+}) {
   const ai = getAiSettings();
   const direct = hasDirectAi(ai);
   const [route, setRoute] = useState<'direct' | 'paste'>(direct ? 'direct' : 'paste');
@@ -15,17 +23,28 @@ export function AiAsk({ prompt, onReply, label = 'Get feedback', disabled }: { p
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
+  const [done, setDone] = useState(0);
+  const give = (texts: string[]) => (onReplies ? onReplies(texts) : onReply?.(texts[0]));
   const run = async () => {
     setError('');
-    if (route === 'paste') return onReply(reply);
+    if (route === 'paste') return give([reply]);
     setBusy(true);
-    try {
-      onReply(await askAi(prompt, ai));
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
-    } finally {
-      setBusy(false);
+    setDone(0);
+    const out: string[] = [];
+    let lastError = '';
+    // one after another: free models often limit how many requests run at once
+    for (let i = 0; i < Math.max(1, runs); i++) {
+      try {
+        out.push(await askAi(prompt, ai));
+        setDone(out.length);
+      } catch (e) {
+        lastError = e instanceof Error ? e.message : String(e);
+        if (!out.length && i === 0) break;
+      }
     }
+    setBusy(false);
+    if (out.length) give(out);
+    else setError(lastError);
   };
   const copy = async () => {
     try {
@@ -57,7 +76,7 @@ export function AiAsk({ prompt, onReply, label = 'Get feedback', disabled }: { p
       )}
       {error && <div className="callout warn small">{error}</div>}
       <button className="btn primary" onClick={() => void run()} disabled={disabled || busy || (route === 'direct' ? !direct : !reply.trim())}>
-        {busy ? <><span className="spinner" /> Thinking…</> : <><Icon name="sparkle" /> {route === 'paste' ? 'Read reply' : label}</>}
+        {busy ? <><span className="spinner" /> {runs > 1 ? `Marking ${Math.min(done + 1, runs)} of ${runs}…` : 'Thinking…'}</> : <><Icon name="sparkle" /> {route === 'paste' ? 'Read reply' : label}</>}
       </button>
     </div>
   );

@@ -25,6 +25,7 @@ export type Kind =
   | 'paper'
   | 'blurt'
   | 'quote'
+  | 'exemplar'
   | 'settings';
 
 /* ───────────── Long-term flashcards (Anki-style) ───────────── */
@@ -320,6 +321,23 @@ export interface Quote extends BaseRec {
   custom?: boolean;
 }
 
+/** An answer marked by an examiner/teacher, used to anchor and check the AI's marking. */
+export interface Exemplar extends BaseRec {
+  kind: 'exemplar';
+  /** question type id from lib/marking.ts (e.g. "4ET1-drama"), or "custom" */
+  qtype: string;
+  subject: string;
+  question: string;
+  answer: string;
+  mark: number;
+  outOf: number;
+  /** examiner's comment / level, optional */
+  comment: string;
+  createdAt: number;
+  /** last AI mark when accuracy was checked */
+  aiMark?: number;
+}
+
 /* ───────────── Settings ───────────── */
 
 export interface Settings extends BaseRec {
@@ -351,6 +369,7 @@ export type AnyRec =
   | PastPaper
   | Blurt
   | Quote
+  | Exemplar
   | Settings;
 
 export type RecOf<K extends Kind> = Extract<AnyRec, { kind: K }>;
