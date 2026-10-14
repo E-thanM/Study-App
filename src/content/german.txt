@@ -61,6 +61,109 @@ What is man and how is it used? :: "One / people / you" + er form of the verb: M
 How do you say "since/for" with time (present tense)? :: seit + dative + present tense: Ich lerne seit drei Jahren Deutsch
 How do you form the passive (recognition)? :: werden + past participle: Das Haus wird gebaut (is being built); wurde for past
 What are reflexive verbs? Give examples. :: Verbs with a reflexive pronoun: sich waschen, sich freuen, sich interessieren für ;; Ich interessiere mich für Musik
+## Nouns, articles and cases in detail
+Give kein in all four cases. :: Masculine: kein, keinen, keinem, keines ;; Feminine: keine, keine, keiner, keiner ;; Neuter: kein, kein, keinem, keines ;; Plural: keine, keine, keinen, keiner
+Give the plural forms of der/ein-words in all four cases. :: die, die, den, der ;; meine, meine, meinen, meiner ;; keine, keine, keinen, keiner
+What is the dative plural rule for nouns? :: Add -n to the noun in the dative plural unless it already ends in -n or -s ;; mit den Kindern, in den Häusern, mit meinen Freunden (but: mit den Autos)
+How do you show possession with the genitive? :: des/eines (m/n) + noun + -(e)s; der/einer (f/pl) ;; das Auto meines Vaters, das Ende des Films, das Haus der Familie ;; With names add -s (no apostrophe): Annas Bruder
+What are weak (n-) nouns? :: Masculine nouns that add -(e)n in every case except nominative singular ;; der Junge → den Jungen; der Mensch → mit dem Menschen; der Herr → Herrn; also der Student, der Polizist, der Kunde, der Name (des Namens)
+Which noun endings tell you the gender? :: Feminine: -ung, -heit, -keit, -schaft, -ion, -tät, -ie, -ei, -ik, most nouns in -e ;; Masculine: -ismus, -ling, -or, days, months, seasons ;; Neuter: -chen, -lein, -um, -ment, infinitives as nouns (das Schwimmen)
+How is the gender of a compound noun decided? :: The last part decides: das Haus + die Aufgabe → die Hausaufgabe; der Kopf + die Schmerzen → die Kopfschmerzen; das Rad + der Weg → der Radweg
+What are the main noun plural patterns? :: -e (Hunde) ;; ¨e (Städte) ;; -er / ¨er (Kinder, Bücher) ;; -n / -en (Blumen, Frauen) ;; -s (Autos, Handys) ;; no change (Lehrer, Zimmer) ;; umlaut only (Mütter, Väter)
+Which words take the same endings as der/die/das? :: dieser (this), jeder (every), welcher (which), jener (that), mancher (some), solcher (such) ;; dieser Mann, diese Frau, dieses Kind, mit diesem Buch, jeden Tag
+How do you say what job or nationality someone has? :: No article: Ich bin Schüler. Sie ist Ärztin. Er ist Deutscher. ;; But with an adjective: Sie ist eine gute Ärztin.
+What case follows es gibt? :: Accusative: Es gibt einen Park, eine Kirche und ein Kino. ;; Es gibt keinen Bahnhof.
+Which common verbs take a dative object? :: helfen, danken, gefallen, gehören, folgen, glauben, gratulieren, passen, schmecken, vertrauen, antworten, wehtun ;; Ich helfe meinem Bruder. Das Buch gehört mir.
+How do you use gefallen? :: The thing liked is the subject, the person is dative: Die Stadt gefällt mir (I like the town) ;; Die Schuhe gefallen mir ;; Hat es dir gefallen? (Did you like it?)
+Which prepositions can take the genitive besides wegen and trotz? :: während (during), statt / anstatt (instead of), innerhalb (inside, within), außerhalb (outside) ;; In speech wegen/trotz are often followed by the dative
+C: Ich fahre mit {{c1::der}} U-Bahn zu {{c2::meiner}} Tante.
+C: Ich gehe in {{c1::den}} Park (movement – accusative).
+C: Ich bin in {{c1::dem}} Park → {{c2::im}} Park (position – dative).
+C: Ich lege das Buch auf {{c1::den}} Tisch; das Buch liegt auf {{c2::dem}} Tisch.
+C: Das Bild hängt an {{c1::der}} Wand; ich hänge das Bild an {{c2::die}} Wand.
+C: Ich habe ein Geschenk für {{c1::meinen}} Vater (für + accusative).
+C: Ich wohne seit drei {{c1::Jahren}} hier (seit + dative plural).
+C: Wegen {{c1::des}} Wetters bleiben wir zu Hause (wegen + genitive).
+C: Während {{c1::der}} Ferien arbeite ich in einem Café.
+C: bei dem → {{c1::beim}}; an das → {{c2::ans}}; auf das → {{c3::aufs}}
+What are the verbs of placing and position with two-way prepositions? :: Movement (+acc): legen, stellen, setzen, hängen (put, lay, stand, sit, hang) ;; Position (+dat): liegen, stehen, sitzen, hängen (lie, stand, sit, hang)
+Give the meanings of the dative prepositions. :: aus (out of, from), außer (except), bei (at the house of, near, with), mit (with, by transport), nach (after, to a town/country), seit (since, for), von (from, of, by), zu (to), gegenüber (opposite)
+Give the meanings of the accusative prepositions. :: durch (through), für (for), gegen (against, around a time), ohne (without), um (around, at a time), bis (until), entlang (along – after the noun: die Straße entlang)
+Give the meanings of the two-way prepositions. :: an (at, on a vertical surface), auf (on top of), hinter (behind), in (in, into), neben (next to), über (over, above, about), unter (under, among), vor (in front of, before, ago), zwischen (between)
+How do you say "to" a place in German? :: nach + towns/most countries (nach Berlin, nach Spanien) ;; in + countries with an article, cinema etc. (in die Schweiz, in die USA, ins Kino) ;; zu + people, buildings, shops (zum Arzt, zur Schule) ;; an + water (ans Meer, an den Strand) ;; nach Hause = home(wards)
+How do you say "at" a place in German? :: in + dat (in der Schule, im Kino) ;; bei + people/shops (bei meiner Oma, beim Arzt) ;; an + water/edges (am Meer, an der Küste) ;; zu Hause = at home ;; um + clock times (um 8 Uhr)
+## Adjectives, comparatives and adverbs
+Give the full adjective endings after ein/mein/kein (mixed). :: Nom: ein kleiner Hund, eine kleine Katze, ein kleines Haus, meine kleinen Kinder ;; Acc: einen kleinen Hund, eine kleine Katze, ein kleines Haus ;; Dat: einem kleinen Hund, einer kleinen Katze, einem kleinen Haus, meinen kleinen Kindern ;; Gen: -en throughout
+Give the adjective endings with no article (strong). :: The adjective shows the case like der/die/das would ;; Nom: guter Kaffee, gute Milch, gutes Wetter, gute Freunde ;; Acc: guten Kaffee ;; Dat: mit gutem Wetter, mit guter Laune, mit guten Freunden
+When does an adjective have no ending? :: When it is not before a noun, e.g. after sein, werden, bleiben: Der Hund ist klein. Der Film war spannend.
+How do adjectives work as nouns? :: Capital letter + adjective ending ;; der/die Deutsche, ein Deutscher; der/die Jugendliche; der/die Erwachsene; der/die Bekannte ;; etwas Neues (something new), nichts Besonderes (nothing special), das Gute (the good thing)
+Which short adjectives add an umlaut in the comparative? :: alt → älter, jung → jünger, groß → größer, lang → länger, kurz → kürzer, warm → wärmer, kalt → kälter, arm → ärmer, stark → stärker, gesund → gesünder, oft → öfter
+Give the irregular comparatives of hoch and nah. :: hoch → höher → am höchsten (der hohe Berg) ;; nah → näher → am nächsten
+How do you say "as … as" and "not as … as"? :: so … wie / nicht so … wie ;; Er ist so groß wie ich. Berlin ist nicht so teuer wie London.
+How is the superlative used before a noun? :: der/die/das + adjective + -(e)st + normal ending ;; der schnellste Zug, die beste Schule, das größte Haus, mit meinem besten Freund
+What do immer + comparative and je … desto mean? :: immer besser = better and better; immer mehr = more and more ;; Je mehr ich lerne, desto besser werde ich = The more I learn, the better I get (Higher)
+How do you form adverbs in German? :: Most adjectives are used unchanged as adverbs: Er spielt gut. Sie fährt schnell. ;; Intensifiers: sehr, ganz, ziemlich, total, wirklich, besonders, echt, zu
+Which adjectives with -el and -er drop an -e- when they take an ending? :: dunkel → eine dunkle Nacht; teuer → ein teures Hotel; sauer → saure Milch
+## Pronouns and question words
+Give the reflexive pronouns (accusative and dative). :: Accusative: mich, dich, sich, uns, euch, sich ;; Dative: mir, dir, sich, uns, euch, sich ;; Ich wasche mich, but Ich wasche mir die Hände
+Give the relative pronouns in all cases. :: Nominative: der, die, das, die (pl) ;; Accusative: den, die, das, die ;; Dative: dem, der, dem, denen ;; Genitive: dessen, deren, dessen, deren
+C: Der Film, {{c1::den}} ich gestern gesehen habe, war spannend (masculine accusative).
+C: Die Frau, mit {{c1::der}} ich spreche, ist meine Lehrerin (feminine dative).
+C: Die Freunde, mit {{c1::denen}} ich in Urlaub fahre, sind lustig (dative plural).
+C: Das Mädchen, {{c1::das}} neben mir sitzt, heißt Lena (neuter nominative).
+C: Der Junge, {{c1::dessen}} Vater Arzt ist, wohnt in meiner Straße (genitive – whose).
+When do you use was and wo as relative pronouns? :: was after alles, etwas, nichts, das Beste: Das ist alles, was ich weiß ;; wo for places: die Stadt, wo ich wohne (= in der ich wohne)
+Give the forms of wer in all cases. :: wer (who – nominative), wen (whom – accusative), wem (to whom – dative), wessen (whose) ;; Mit wem gehst du ins Kino?
+In what order do direct and indirect objects go? :: Two nouns: dative before accusative (Ich gebe meinem Bruder das Buch) ;; A pronoun comes before a noun (Ich gebe es meinem Bruder) ;; Two pronouns: accusative before dative (Ich gebe es ihm)
+What are da- compounds? :: da(r) + preposition replaces "it/that" after a preposition: darauf, dafür, damit, davon, darüber, dagegen ;; Ich freue mich darauf. Was hältst du davon?
+What are wo- compounds? :: Question words: wo(r) + preposition ;; Worauf freust du dich? Wofür interessierst du dich? Womit fährst du? Worüber sprecht ihr?
+When do you use du, ihr and Sie? :: du – one friend/family member/young person ;; ihr – two or more friends ;; Sie – formal, one or more adults you don't know (use Sie in the role-play when told to)
+Give common impersonal phrases with es. :: es gibt (there is/are), es regnet (it is raining), es geht mir gut (I am well), es tut mir leid (I'm sorry), es gefällt mir (I like it), es schmeckt (it tastes good), es lohnt sich (it's worth it)
+Give the indefinite pronouns. :: man (one), jemand (someone), niemand (no one), etwas (something), nichts (nothing), alles (everything), jeder (everyone), einer / keiner (one / none) ;; Keiner von uns war da.
+How do you form questions in German? :: Yes/no questions: verb first – Spielst du Tennis? ;; With a question word: question word + verb + subject – Wann beginnt der Film? ;; Indirect: Weißt du, wann der Film beginnt? (verb to end)
+## Verbs in detail
+Which strong verbs change e → i in the du/er forms? :: sprechen (du sprichst, er spricht), geben (gibst, gibt), helfen (hilfst, hilft), treffen (triffst, trifft), vergessen (vergisst), werfen (wirfst), sterben (stirbt), essen (isst), nehmen (nimmst, nimmt)
+Which strong verbs change e → ie in the du/er forms? :: lesen (du liest, er liest), sehen (siehst, sieht), empfehlen (empfiehlst, empfiehlt), fernsehen (siehst fern)
+Which strong verbs change a → ä or au → äu in the du/er forms? :: fahren (fährst, fährt), schlafen (schläfst), tragen (trägst), waschen (wäschst), fallen (fällst), halten (hältst, hält), gefallen (gefällt), laufen (läufst, läuft), anfangen (fängst an)
+Conjugate wissen in the present tense. :: ich weiß, du weißt, er weiß, wir wissen, ihr wisst, sie wissen ;; wissen = to know a fact; kennen = to know a person/place
+Conjugate müssen and dürfen in the present tense. :: müssen: ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen ;; dürfen: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie dürfen
+Conjugate wollen, sollen and mögen in the present tense. :: wollen: will, willst, will, wollen, wollt, wollen ;; sollen: soll, sollst, soll, sollen, sollt, sollen ;; mögen: mag, magst, mag, mögen, mögt, mögen
+Conjugate möchte. :: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten
+What is the difference between nicht müssen and nicht dürfen? :: Du musst das nicht machen = you don't have to do that ;; Du darfst das nicht machen = you mustn't / aren't allowed to do that
+Which verb prefixes are separable and which are inseparable? :: Separable (stressed): ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-, zurück-, fern-, los-, weg-, statt-, teil- ;; Inseparable (never split, no ge-): be-, emp-, ent-, er-, ge-, miss-, ver-, zer-
+How do separable verbs behave in other structures? :: Subordinate clause – rejoined at the end: …, weil ich um 7 Uhr aufstehe ;; With a modal: Ich muss früh aufstehen ;; With zu: Ich habe vor, früh aufzustehen ;; Perfect: Ich bin früh aufgestanden
+When do you use zu + infinitive? :: After many verbs and phrases (not modals or werden): versuchen, vorhaben, hoffen, beginnen, vergessen, Lust haben, Zeit haben, es ist wichtig/schwer ;; Ich versuche, gesund zu essen. Es ist wichtig, viel Wasser zu trinken.
+What do ohne … zu and statt … zu mean? :: without …ing / instead of …ing (Higher) ;; Er ging, ohne etwas zu sagen. Statt zu lernen, habe ich gespielt.
+Give the imperfect of key strong verbs (1). :: gehen – ging, kommen – kam, fahren – fuhr, sehen – sah, essen – aß, trinken – trank, finden – fand, geben – gab, nehmen – nahm, bleiben – blieb
+Give the imperfect of key strong verbs (2). :: schreiben – schrieb, lesen – las, sprechen – sprach, fliegen – flog, laufen – lief, schlafen – schlief, sitzen – saß, stehen – stand, tun – tat, werden – wurde, rufen – rief, helfen – half
+Give the imperfect of the mixed verbs. :: denken – dachte, bringen – brachte, wissen – wusste, kennen – kannte, rennen – rannte, verbringen – verbrachte
+Give the imperfect endings of a strong verb. :: ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen (no ending for ich/er)
+Give more irregular past participles (1). :: nehmen – genommen, sprechen – gesprochen, helfen – geholfen, treffen – getroffen, geben – gegeben, schlafen – geschlafen, tragen – getragen, waschen – gewaschen, vergessen – vergessen, verlieren – verloren
+Give more irregular past participles (2). :: sitzen – gesessen, stehen – gestanden, liegen – gelegen, bringen – gebracht, denken – gedacht, wissen – gewusst, kennen – gekannt, tun – getan, singen – gesungen, beginnen – begonnen
+Which other common verbs take sein in the perfect? :: werden (geworden), laufen (gelaufen), schwimmen (geschwommen), steigen (gestiegen), sterben (gestorben), aufstehen (aufgestanden), einschlafen (eingeschlafen), passieren (passiert), reisen (gereist), wandern (gewandert), umziehen (umgezogen)
+How are modal verbs usually used in the past? :: In the imperfect, not the perfect: Ich musste arbeiten. Ich konnte nicht kommen. Wir durften nicht ausgehen.
+Where does the auxiliary go in a subordinate clause in the perfect? :: Right at the end, after the participle: …, weil ich nach Berlin gefahren bin ;; …, dass ich ein Buch gelesen habe
+Where does werden go in a subordinate clause in the future? :: At the end, after the infinitive: …, weil ich nächstes Jahr studieren werde
+How can the present tense express the future? :: With a future time phrase: Morgen fahre ich nach Berlin. Nächste Woche haben wir Prüfungen.
+Give the key Konjunktiv II (subjunctive) forms. :: ich hätte (would have), ich wäre (would be), ich könnte (could), ich müsste (would have to), ich sollte (should), ich dürfte (would be allowed), ich möchte (would like), ich würde (would)
+How is the conditional perfect formed (Higher)? :: hätte / wäre + past participle = would have done ;; Ich hätte mehr gelernt. Ich wäre mitgekommen. ;; Wenn ich Zeit gehabt hätte, wäre ich gekommen.
+Give the passive in different tenses (recognition). :: Present: Das Auto wird repariert ;; Imperfect: Das Auto wurde repariert ;; Perfect: Das Auto ist repariert worden ;; With a modal: Das Auto muss repariert werden ;; By someone: von + dative
+How can man replace the passive? :: Man spricht hier Deutsch = German is spoken here ;; Man hat das Haus 1900 gebaut = The house was built in 1900
+Give the imperative of separable verbs and sein. :: Steh auf! Komm mit! Ruf mich an! ;; sein: Sei ruhig! (du), Seid ruhig! (ihr), Seien Sie ruhig! (Sie) ;; Let's go: Gehen wir!
+Conjugate a reflexive verb in present and perfect. :: ich wasche mich, du wäschst dich, er wäscht sich, wir waschen uns, ihr wascht euch, sie waschen sich ;; Perfect with haben: Ich habe mich gewaschen
+Give common verbs with fixed prepositions. :: sich freuen auf + acc (look forward to), sich freuen über + acc (be pleased about), warten auf (wait for), denken an (think of), Angst haben vor + dat (be afraid of), sich kümmern um (look after), teilnehmen an + dat (take part in), sich erinnern an (remember), träumen von (dream of), sich beschweren über (complain about)
+What are the three uses of werden? :: 1 to become (Ich will Arzt werden) ;; 2 future tense (Ich werde arbeiten) ;; 3 passive (Das Haus wird gebaut)
+How do you say "I have been doing" and "I had been doing"? :: seit + present: Ich wohne seit 2020 hier (I have been living) ;; seit + imperfect: Ich wartete seit einer Stunde (I had been waiting – Higher)
+What does lassen mean? :: to leave / to let / to have something done ;; Ich lasse mein Handy zu Hause. Lass mich in Ruhe! Ich lasse mir die Haare schneiden.
+## Word order in detail
+Give more subordinating conjunctions (verb to the end). :: bevor (before), nachdem (after), während (while), bis (until), seit / seitdem (since), sobald (as soon as), falls (in case), damit (so that), sodass (so that, with the result), ob (whether), wie, wo, was, wer (in indirect questions)
+Which adverbs cause inversion (verb comes next)? :: deshalb / deswegen (therefore), trotzdem (nevertheless), außerdem (moreover), dann, danach, leider (unfortunately), zum Glück (luckily), also (so), sonst (otherwise), dennoch (nonetheless) ;; Trotzdem gehe ich hin.
+Where does nicht go? :: At the end of a simple main clause (Ich mag ihn nicht) but before adjectives, adverbs of manner, prepositional phrases, infinitives and participles ;; Ich gehe nicht ins Kino. Ich habe es nicht gesehen. Das ist nicht gut.
+Which time phrases use the accusative? :: Phrases with no preposition: jeden Tag, letzten Sommer, nächste Woche, diesen Abend, den ganzen Tag
+Which time phrases use the dative? :: am Montag, am Wochenende, im Juli, im Winter, in der Nacht, vor einer Woche (a week ago), seit einem Jahr, nach der Schule
+How do two verbs work in a subordinate clause? :: The conjugated verb goes last: …, dass ich ins Kino gehen will ;; …, weil ich nicht schwimmen kann
+How do you combine time, manner and place with an object? :: Subject + verb + time + manner + place, then infinitive/participle at the end ;; Ich bin letzten Sommer mit meiner Familie nach Spanien gefahren.
+How do you avoid repeating "and" in German writing? :: Vary openings with time phrases and inversion: Zuerst … Dann … Danach … Am Ende … ;; Use subordinate clauses: weil, obwohl, wenn, als, nachdem
 
 # Theme 1 – Identity and relationships
 der Bruder (Brüder) <> brother
@@ -114,6 +217,165 @@ sich treffen <> to meet up
 vertrauen + dat <> to trust
 die Ehe <> marriage
 die Gleichberechtigung <> equality
+## Family, people and personal details
+der Großvater (Großväter) / der Opa (-s) <> grandfather / grandad
+die Großmutter (Großmütter) / die Oma (-s) <> grandmother / grandma
+das Kind (-er) <> child
+der Junge (-n) <> boy
+das Mädchen (-) <> girl
+der Mann (Männer) <> man, husband
+die Frau (-en) <> woman, wife, Mrs
+der Herr (-en) <> gentleman, Mr
+das Baby (-s) <> baby
+die Geschwister (pl) <> brothers and sisters, siblings
+der Zwilling (-e) <> twin
+der Enkel (-) / die Enkelin (-nen) <> grandson / granddaughter
+der Neffe (-n) / die Nichte (-n) <> nephew / niece
+der Partner (-) / die Partnerin (-nen) <> partner
+der Ehemann (-männer) / die Ehefrau (-en) <> husband / wife
+der / die Verwandte (-n) <> relative
+der / die Erwachsene (-n) <> adult
+der / die Jugendliche (-n) <> young person, teenager
+der Teenager (-) <> teenager
+die Jugend <> youth
+die Kindheit <> childhood
+der Nachbar (-n) / die Nachbarin (-nen) <> neighbour
+der / die Bekannte (-n) <> acquaintance
+die Leute (pl) <> people
+die Person (-en) <> person
+die Generation (-en) <> generation
+die Gesellschaft (-en) <> society; company
+das Haustier (-e) <> pet
+der Hund (-e) <> dog
+die Katze (-n) <> cat
+das Pferd (-e) <> horse
+das Kaninchen (-) <> rabbit
+das Meerschweinchen (-) <> guinea pig
+der Vogel (Vögel) <> bird
+die Maus (Mäuse) <> mouse
+der Name (-n) <> name
+der Vorname (-n) / der Nachname (-n) <> first name / surname
+heißen <> to be called
+Wie heißt du? <> What is your name?
+Ich heiße … <> My name is …
+Wie alt bist du? <> How old are you?
+Ich bin sechzehn Jahre alt. <> I am sixteen years old.
+das Alter <> age
+alt / jung <> old / young
+älter / jünger <> older / younger
+geboren <> born
+Ich bin am dritten Mai geboren. <> I was born on the third of May.
+Wann hast du Geburtstag? <> When is your birthday?
+Ich habe im Juni Geburtstag. <> My birthday is in June.
+Woher kommst du? <> Where do you come from?
+Wo wohnst du? <> Where do you live?
+die Adresse (-n) <> address
+die Telefonnummer (-n) <> phone number
+die Staatsangehörigkeit / die Nationalität <> nationality
+der Deutsche (-n) / die Deutsche (-n) <> German (man / woman)
+## Appearance and character
+das Aussehen <> appearance
+aussehen <> to look (appearance)
+Er sieht sportlich aus. <> He looks sporty.
+die Haare (pl) <> hair
+lange / kurze Haare <> long / short hair
+das Auge (-n) <> eye
+das Gesicht (-er) <> face
+der Bart (Bärte) <> beard
+die Brille (-n) <> glasses
+die Sommersprossen (pl) <> freckles
+hübsch <> pretty
+hässlich <> ugly
+schön <> beautiful, lovely, nice
+gut aussehend <> good-looking
+dick / dünn <> fat / thin
+mittelgroß <> medium height
+die Größe (-n) <> size, height
+der Charakter (-e) <> character
+die Eigenschaft (-en) <> characteristic, quality
+witzig <> funny, witty
+klug <> clever
+intelligent <> intelligent
+dumm <> stupid
+blöd <> stupid, silly
+frech <> cheeky
+höflich / unhöflich <> polite / rude
+gemein <> mean
+egoistisch <> selfish
+großzügig <> generous
+kreativ <> creative
+sportlich <> sporty
+ernst <> serious
+offen <> open
+treu <> loyal
+zuverlässig <> reliable
+verständnisvoll <> understanding
+liebevoll <> loving, affectionate
+lieb <> kind, sweet, dear
+böse <> angry; evil, naughty
+traurig <> sad
+glücklich <> happy; lucky
+unglücklich <> unhappy
+froh <> glad
+zufrieden <> satisfied, content
+eifersüchtig <> jealous
+neugierig <> curious, nosy
+arrogant <> arrogant
+ungeduldig <> impatient
+selbstständig <> independent
+unabhängig <> independent
+aktiv <> active
+ordentlich / unordentlich <> tidy / untidy
+## Relationships
+kennenlernen <> to get to know, meet (for the first time)
+auskommen mit <> to get on with
+Wir kommen gut miteinander aus. <> We get on well with each other.
+sich verlieben (in + acc) <> to fall in love (with)
+verliebt <> in love
+die Liebe <> love
+lieben <> to love
+mögen <> to like
+hassen <> to hate
+sich trennen <> to separate, split up
+getrennt <> separated
+sich scheiden lassen <> to get divorced
+die Scheidung (-en) <> divorce
+die Freundschaft (-en) <> friendship
+der beste Freund / die beste Freundin <> best friend
+der Streit <> argument, quarrel
+zusammenleben <> to live together
+sich kümmern um <> to look after
+unterstützen <> to support
+die Unterstützung <> support
+zuhören <> to listen (to someone)
+respektieren <> to respect
+das Vertrauen <> trust
+sich Sorgen machen (um) <> to worry (about)
+die Sorge (-n) <> worry
+Angst haben (vor + dat) <> to be afraid (of)
+die Angst (Ängste) <> fear
+sich ärgern (über + acc) <> to be annoyed (about)
+sich fühlen <> to feel
+Ich fühle mich einsam. <> I feel lonely.
+einsam <> lonely
+Er geht mir auf die Nerven. <> He gets on my nerves.
+Wir haben viel gemeinsam. <> We have a lot in common.
+gemeinsam <> together, in common
+die Geduld <> patience
+erlauben <> to allow
+verbieten <> to forbid, ban
+die Freiheit <> freedom
+die Rolle (-n) <> role
+gleichgeschlechtlich <> same-sex
+sich benehmen <> to behave
+die Hilfe <> help
+helfen (+ dat) <> to help
+das Leben <> life
+leben <> to live, be alive
+die Geburt (-en) <> birth
+sterben <> to die
+tot <> dead
+der Tod <> death
 
 # Theme 1 – Healthy living and lifestyle
 gesund / ungesund <> healthy / unhealthy
@@ -155,6 +417,169 @@ der Körper <> body
 abnehmen / zunehmen <> to lose weight / to gain weight
 übergewichtig <> overweight
 Man sollte mehr Sport treiben. <> One should do more sport.
+## Food and drink
+das Lebensmittel (-) <> food (item), groceries
+die Mahlzeit (-en) <> meal
+das Frühstück <> breakfast
+frühstücken <> to have breakfast
+das Mittagessen <> lunch
+das Abendessen <> evening meal, dinner
+zu Mittag / zu Abend essen <> to have lunch / dinner
+der Imbiss (-e) <> snack; snack bar
+essen <> to eat
+trinken <> to drink
+das Getränk (-e) <> drink
+der Kaffee <> coffee
+der Tee <> tea
+der Saft (Säfte) <> juice
+der Orangensaft <> orange juice
+die Cola (-s) <> cola
+das Bier (-e) <> beer
+der Wein (-e) <> wine
+das Mineralwasser <> mineral water
+das Brötchen (-) <> bread roll
+die Butter <> butter
+der Käse <> cheese
+das Ei (-er) <> egg
+die Wurst (Würste) <> sausage
+der Schinken <> ham
+das Hähnchen (-) <> chicken
+das Rindfleisch <> beef
+das Schweinefleisch <> pork
+die Kartoffel (-n) <> potato
+die Pommes (pl) <> chips, fries
+der Reis <> rice
+die Nudeln (pl) <> pasta, noodles
+die Suppe (-n) <> soup
+der Salat (-e) <> salad; lettuce
+die Tomate (-n) <> tomato
+die Karotte (-n) <> carrot
+die Zwiebel (-n) <> onion
+die Erbse (-n) <> pea
+der Pilz (-e) <> mushroom
+die Bohne (-n) <> bean
+der Apfel (Äpfel) <> apple
+die Birne (-n) <> pear
+die Banane (-n) <> banana
+die Orange (-n) <> orange
+die Erdbeere (-n) <> strawberry
+die Traube (-n) <> grape
+die Zitrone (-n) <> lemon
+der Kuchen (-) <> cake
+die Torte (-n) <> gateau, layered cake
+die Süßigkeiten (pl) <> sweets
+die Schokolade <> chocolate
+das Eis <> ice cream; ice
+der Keks (-e) <> biscuit
+der Joghurt <> yoghurt
+die Sahne <> cream
+das Salz <> salt
+der Pfeffer <> pepper
+das Öl <> oil
+die Pizza (-s) <> pizza
+das Fastfood <> fast food
+das Gericht (-e) <> dish (food)
+der Nachtisch / die Nachspeise <> dessert
+die Vorspeise (-n) <> starter
+die Hauptspeise (-n) <> main course
+vegan <> vegan
+der Vegetarier (-) / die Vegetarierin (-nen) <> vegetarian (person)
+der Hunger <> hunger
+Ich habe Hunger / Durst. <> I am hungry / thirsty.
+der Durst <> thirst
+kochen <> to cook; to boil
+backen <> to bake
+das Rezept (-e) <> recipe; prescription
+süß / salzig <> sweet / salty
+scharf <> spicy, hot; sharp
+frisch <> fresh
+fettig <> greasy, fatty
+Guten Appetit! <> Enjoy your meal!
+Es schmeckt gut. <> It tastes good.
+schmecken <> to taste
+## Health, body and illness
+der Kopf (Köpfe) <> head
+der Arm (-e) <> arm
+das Bein (-e) <> leg
+die Hand (Hände) <> hand
+der Fuß (Füße) <> foot
+der Finger (-) <> finger
+der Bauch (Bäuche) <> stomach, belly
+der Magen <> stomach
+der Rücken (-) <> back
+der Hals (Hälse) <> neck, throat
+die Nase (-n) <> nose
+der Mund (Münder) <> mouth
+das Ohr (-en) <> ear
+der Zahn (Zähne) <> tooth
+das Herz (-en) <> heart
+die Haut <> skin
+das Blut <> blood
+die Schmerzen (pl) <> pain
+Ich habe Bauchschmerzen / Halsschmerzen. <> I have stomach ache / a sore throat.
+Mein Arm tut weh. <> My arm hurts.
+wehtun <> to hurt
+die Erkältung (-en) <> cold
+erkältet <> having a cold
+die Grippe <> flu
+das Fieber <> temperature, fever
+der Husten <> cough
+der Schnupfen <> runny nose, cold
+verletzt <> injured
+die Verletzung (-en) <> injury
+der Unfall (Unfälle) <> accident
+die Tablette (-n) <> tablet
+das Medikament (-e) <> medicine (drug)
+die Apotheke (-n) <> chemist's, pharmacy
+der Krankenwagen (-) <> ambulance
+der Notfall (Notfälle) <> emergency
+Hilfe! <> Help!
+Gute Besserung! <> Get well soon!
+Wie geht's? / Wie geht es dir? <> How are you?
+Es geht mir gut / schlecht. <> I am well / not well.
+gesund essen <> to eat healthily
+die Diät (-en) <> (weight-loss) diet
+das Gewicht <> weight
+die Fitness <> fitness
+fit <> fit
+Sport treiben <> to do sport
+joggen <> to jog
+das Fitnessstudio (-s) <> gym
+die Bewegung <> exercise, movement
+sich bewegen <> to move, take exercise
+sich ausruhen <> to rest
+müde <> tired
+schwach / stark <> weak / strong
+aufhören (mit) <> to stop, give up
+rauchfrei <> smoke-free
+betrunken <> drunk
+die Drogensucht <> drug addiction
+abhängig (von) <> dependent (on), addicted (to)
+gefährden <> to endanger
+schädlich <> harmful
+schaden (+ dat) <> to harm
+der Druck <> pressure
+der Gruppenzwang <> peer pressure
+die psychische Gesundheit <> mental health
+der Leistungsdruck <> pressure to achieve
+die Ruhe <> peace and quiet, calm
+## Daily routine
+der Alltag <> everyday life
+der Tagesablauf <> daily routine
+aufwachen <> to wake up
+aufstehen <> to get up
+sich waschen <> to wash (oneself)
+sich duschen <> to have a shower
+die Dusche (-n) <> shower
+sich anziehen <> to get dressed
+sich ausziehen <> to get undressed
+sich die Zähne putzen <> to brush one's teeth
+sich schminken <> to put on make-up
+ins Bett gehen <> to go to bed
+einschlafen <> to fall asleep
+Ich stehe um halb sieben auf. <> I get up at half past six.
+früh / spät <> early / late
+das Bett (-en) <> bed
 
 # Theme 1 – Education and work
 die Schule (-n) <> school
@@ -174,7 +599,7 @@ die Pause (-n) <> break
 die Hausaufgaben (pl) <> homework
 die Prüfung (-en) <> exam
 eine Prüfung bestehen <> to pass an exam
-durchfallen <> to fail
+durchfallen <> to fail (an exam)
 die Note (-n) <> mark, grade
 das Zeugnis <> school report
 der Lehrer / die Lehrerin <> teacher
@@ -214,6 +639,160 @@ langweilig <> boring
 interessant <> interesting
 nützlich <> useful
 schwierig / einfach <> difficult / easy
+## School subjects and school life
+Deutsch <> German (subject/language)
+Französisch <> French
+Spanisch <> Spanish
+Biologie <> biology
+Chemie <> chemistry
+Physik <> physics
+Musik <> music
+Religion / Ethik <> RE / ethics
+Theater / Drama <> drama
+Technik <> design technology
+Wirtschaft <> economics, business studies
+die Fremdsprache (-n) <> foreign language
+die Sprache (-n) <> language
+die Grundschule (-n) <> primary school
+die Gesamtschule (-n) <> comprehensive school
+das Gymnasium (Gymnasien) <> grammar school
+die Realschule (-n) <> secondary school (to 16)
+die Privatschule (-n) <> private school
+das Internat (-e) <> boarding school
+der Kindergarten (Kindergärten) <> nursery school
+die Schulart (-en) <> type of school
+das Klassenzimmer (-) <> classroom
+die Aula (Aulen) <> school hall
+die Bibliothek (-en) <> library
+die Kantine (-n) / die Mensa (Mensen) <> canteen
+die Turnhalle (-n) <> sports hall, gym
+der Sportplatz (Sportplätze) <> sports field
+das Labor (-s) <> laboratory
+der Schulhof (Schulhöfe) <> playground, schoolyard
+der Gang (Gänge) <> corridor
+der Direktor (-en) / die Direktorin (-nen) <> head teacher
+das Schuljahr (-e) <> school year
+das Halbjahr (-e) <> half-year, term
+der Schultag (-e) <> school day
+die Schule beginnt um … <> school starts at …
+die Mittagspause (-n) <> lunch break
+die Klassenfahrt (-en) <> school trip
+der Schüleraustausch <> school exchange
+die AG (-s) <> school club, extracurricular group
+der Klassenkamerad (-en) / die Klassenkameradin (-nen) <> classmate
+das Heft (-e) <> exercise book
+der Kuli (-s) <> biro
+der Bleistift (-e) <> pencil
+das Lineal (-e) <> ruler
+der Taschenrechner (-) <> calculator
+das Wörterbuch (Wörterbücher) <> dictionary
+die Tafel (-n) <> board
+die Schultasche (-n) <> school bag
+der Test (-s) / die Klassenarbeit (-en) <> test
+die Aufgabe (-n) <> task, exercise
+die Frage (-n) <> question
+die Antwort (-en) <> answer
+fragen / antworten <> to ask / to answer
+erklären <> to explain
+verstehen <> to understand
+wiederholen <> to repeat; to revise
+sitzen bleiben <> to repeat a year
+schwänzen <> to skip school, play truant
+mobben <> to bully
+das Mobbing <> bullying
+der Erfolg (-e) <> success
+erfolgreich <> successful
+die Leistung (-en) <> performance, achievement
+gute Noten bekommen <> to get good marks
+eine Eins / eine Sechs <> top mark / bottom mark (German grades 1–6)
+sich konzentrieren <> to concentrate
+aufpassen <> to pay attention
+sich melden <> to put your hand up
+Fortschritte machen <> to make progress
+die Bildung <> education
+die Ausbildung <> training, education (vocational)
+die Erfahrung (-en) <> experience
+der Kurs (-e) <> course
+das Studium <> studies (at university)
+der Student (-en) / die Studentin (-nen) <> (university) student
+Ich bin gut in Mathe. <> I am good at maths.
+Ich lerne gern Deutsch, weil … <> I like learning German because …
+## Jobs and careers
+der Arbeitgeber (-) <> employer
+der Arbeitnehmer (-) <> employee
+der Mitarbeiter (-) / die Mitarbeiterin (-nen) <> colleague, member of staff
+der Kollege (-n) / die Kollegin (-nen) <> colleague
+der Chef (-s) / die Chefin (-nen) <> boss
+die Firma (Firmen) <> company, firm
+das Büro (-s) <> office
+die Fabrik (-en) <> factory
+das Geschäft (-e) <> shop; business
+die Stelle (-n) <> job, position; place
+sich bewerben (um) <> to apply (for)
+die Bewerbung (-en) <> application
+der Lebenslauf <> CV
+das Vorstellungsgespräch (-e) <> job interview
+der Lohn (Löhne) / das Gehalt (Gehälter) <> wage / salary
+Vollzeit / Teilzeit <> full-time / part-time
+arbeitslos <> unemployed
+die Karriere (-n) <> career
+der Traumberuf (-e) <> dream job
+das Ziel (-e) <> goal, aim
+der Plan (Pläne) <> plan
+planen <> to plan
+die Möglichkeit (-en) <> possibility, opportunity
+die Chance (-n) <> chance, opportunity
+die Verantwortung <> responsibility
+verantwortlich <> responsible
+das Team (-s) <> team
+im Team arbeiten <> to work in a team
+selbstständig arbeiten <> to work independently
+der Zahnarzt (Zahnärzte) / die Zahnärztin (-nen) <> dentist
+der Tierarzt (Tierärzte) / die Tierärztin (-nen) <> vet
+der Koch (Köche) / die Köchin (-nen) <> cook, chef
+der Bäcker (-) / die Bäckerin (-nen) <> baker
+der Friseur (-e) / die Friseurin (-nen) <> hairdresser
+der Mechaniker (-) / die Mechanikerin (-nen) <> mechanic
+der Elektriker (-) / die Elektrikerin (-nen) <> electrician
+der Bauer (-n) / die Bäuerin (-nen) <> farmer
+der Fahrer (-) / die Fahrerin (-nen) <> driver
+der Pilot (-en) / die Pilotin (-nen) <> pilot
+der Journalist (-en) / die Journalistin (-nen) <> journalist
+der Architekt (-en) / die Architektin (-nen) <> architect
+der Informatiker (-) / die Informatikerin (-nen) <> IT specialist, computer scientist
+der Programmierer (-) / die Programmiererin (-nen) <> programmer
+der Wissenschaftler (-) / die Wissenschaftlerin (-nen) <> scientist
+der Tischler (-) / die Tischlerin (-nen) <> carpenter
+der Klempner (-) / die Klempnerin (-nen) <> plumber
+der Soldat (-en) / die Soldatin (-nen) <> soldier
+der Beamte (-n) / die Beamtin (-nen) <> civil servant, official
+der Geschäftsmann / die Geschäftsfrau <> businessman / businesswoman
+der Musiker (-) / die Musikerin (-nen) <> musician
+der Künstler (-) / die Künstlerin (-nen) <> artist
+der Feuerwehrmann / die Feuerwehrfrau <> firefighter
+der Briefträger (-) / die Briefträgerin (-nen) <> postman / postwoman
+der Babysitter (-) <> babysitter
+babysitten <> to babysit
+Zeitungen austragen <> to deliver newspapers
+Rasen mähen <> to mow the lawn
+im Haushalt helfen <> to help with the housework
+der Haushalt <> household; housework
+abwaschen / spülen <> to wash up
+staubsaugen <> to vacuum
+aufräumen <> to tidy up
+den Tisch decken <> to lay the table
+putzen <> to clean
+sparen (für) <> to save (for)
+ausgeben <> to spend (money)
+pro Stunde <> per hour
+Ich verdiene zehn Euro pro Stunde. <> I earn ten euros an hour.
+kreativ / abwechslungsreich <> creative / varied
+stressig <> stressful
+schlecht bezahlt <> badly paid
+die Arbeitszeiten (pl) <> working hours
+ehrenamtlich <> voluntary
+freiwillig <> voluntary, voluntarily
+das freiwillige soziale Jahr (FSJ) <> voluntary social year (a volunteering gap year)
 
 # Theme 2 – Free-time activities
 die Freizeit <> free time
@@ -254,6 +833,185 @@ Ich hätte gern … <> I would like … (ordering)
 die Speisekarte <> menu
 die Rechnung <> bill
 lecker <> tasty
+## Sport and hobbies
+der Sport <> sport
+Basketball / Volleyball / Handball spielen <> to play basketball / volleyball / handball
+Tischtennis / Federball spielen <> to play table tennis / badminton
+Hockey / Rugby / Kricket spielen <> to play hockey / rugby / cricket
+Ski fahren <> to ski
+Snowboard fahren <> to snowboard
+Skateboard fahren <> to skateboard
+segeln <> to sail
+klettern <> to climb
+angeln <> to fish
+laufen <> to run; to walk
+rennen <> to run, race
+spazieren gehen <> to go for a walk
+der Spaziergang (Spaziergänge) <> walk
+turnen <> to do gymnastics
+Kampfsport machen <> to do martial arts
+Leichtathletik <> athletics
+das Schwimmbad (Schwimmbäder) <> swimming pool
+das Hallenbad / das Freibad <> indoor pool / outdoor pool
+das Stadion (Stadien) <> stadium
+der Spieler (-) / die Spielerin (-nen) <> player
+das Spiel (-e) <> game, match
+das Tor (-e) <> goal; gate
+gewinnen <> to win
+verlieren <> to lose
+der Sieg (-e) <> victory
+die Niederlage (-n) <> defeat
+unentschieden <> draw (score)
+der Wettbewerb (-e) <> competition
+die Meisterschaft (-en) <> championship
+die Weltmeisterschaft <> World Cup, world championship
+die Olympischen Spiele (pl) <> Olympic Games
+das Training <> training
+der Trainer (-) / die Trainerin (-nen) <> coach
+Mitglied sein (in + dat) <> to be a member (of)
+das Mitglied (-er) <> member
+der Ball (Bälle) <> ball
+der Schläger (-) <> racket, bat
+der Ausflug (Ausflüge) <> trip, outing
+einen Ausflug machen <> to go on a trip
+zeichnen <> to draw
+malen <> to paint
+fotografieren <> to take photos
+basteln <> to do crafts, make things
+sammeln <> to collect
+spielen <> to play
+Karten spielen <> to play cards
+das Brettspiel (-e) <> board game
+Schach spielen <> to play chess
+faulenzen <> to laze around
+sich langweilen <> to be bored
+die Langeweile <> boredom
+Lust haben (zu) <> to feel like (doing)
+Hast du Lust, ins Kino zu gehen? <> Do you feel like going to the cinema?
+Ich habe keine Zeit. <> I don't have time.
+sich verabreden <> to arrange to meet
+der Treffpunkt (-e) <> meeting point
+Wann treffen wir uns? <> When shall we meet?
+Wo treffen wir uns? <> Where shall we meet?
+der Jugendklub / das Jugendzentrum <> youth club
+die Freizeitbeschäftigung (-en) <> leisure activity
+die Aktivität (-en) <> activity
+## Music, cinema and reading
+die Musik <> music
+das Lied (-er) <> song
+der Song (-s) <> song
+die Band (-s) <> band
+die Gruppe (-n) <> group
+das Instrument (-e) <> instrument
+die Geige (-n) <> violin
+das Schlagzeug <> drums
+die Trompete (-n) <> trumpet
+die Flöte (-n) <> flute, recorder
+der Chor (Chöre) <> choir
+das Orchester (-) <> orchestra
+Popmusik / Rockmusik / klassische Musik <> pop / rock / classical music
+der Rap / der Hip-Hop <> rap / hip-hop
+der Text (-e) <> lyrics, text
+die Melodie (-n) <> melody, tune
+das Kino (-s) <> cinema
+der Actionfilm / der Horrorfilm <> action film / horror film
+die Komödie (-n) <> comedy
+der Liebesfilm (-e) <> romantic film
+der Zeichentrickfilm (-e) <> cartoon, animated film
+der Krimi (-s) <> crime story, thriller
+der Science-Fiction-Film (-e) <> science-fiction film
+die Vorstellung (-en) <> performance, showing
+die Karte (-n) <> ticket; card; map
+das Theater (-) <> theatre
+der Roman (-e) <> novel
+die Geschichte (-n) <> story; history
+der Comic (-s) <> comic
+das E-Book (-s) <> e-book
+der Autor (-en) / die Autorin (-nen) <> author
+die Hauptfigur (-en) <> main character
+spannend <> exciting, gripping
+unterhaltsam <> entertaining
+gruselig <> scary, creepy
+kitschig <> cheesy, kitsch
+romantisch <> romantic
+## Shopping and clothes
+einkaufen <> to shop, go shopping
+kaufen / verkaufen <> to buy / to sell
+der Laden (Läden) <> shop
+das Kaufhaus (Kaufhäuser) <> department store
+der Supermarkt (Supermärkte) <> supermarket
+der Markt (Märkte) <> market
+die Bäckerei (-en) <> bakery
+die Metzgerei (-en) <> butcher's
+die Konditorei (-en) <> cake shop
+die Buchhandlung (-en) <> bookshop
+der Preis (-e) <> price; prize
+kosten <> to cost
+Was kostet das? / Wie viel kostet das? <> How much does that cost?
+teuer / billig <> expensive / cheap
+günstig <> good value, reasonable
+im Angebot <> on offer
+der Rabatt (-e) <> discount
+bezahlen <> to pay
+bar bezahlen <> to pay in cash
+mit Karte bezahlen <> to pay by card
+die Kasse (-n) <> till, checkout
+der Euro (-s) / der Cent (-s) <> euro / cent
+das Pfund (-e) <> pound
+die Tüte (-n) <> bag (carrier)
+anprobieren <> to try on
+passen <> to fit; to suit
+Das steht dir gut. <> That suits you.
+tragen <> to wear; to carry
+die Mode <> fashion
+modisch <> fashionable
+die Marke (-n) <> brand, make
+die Markenkleidung <> designer / brand-name clothes
+die Hose (-n) <> trousers
+die Jeans (-) <> jeans
+das Kleid (-er) <> dress
+der Rock (Röcke) <> skirt
+das Hemd (-en) <> shirt
+die Bluse (-n) <> blouse
+das T-Shirt (-s) <> T-shirt
+der Pullover (-) / der Pulli (-s) <> jumper
+die Jacke (-n) <> jacket
+der Mantel (Mäntel) <> coat
+der Schuh (-e) <> shoe
+der Stiefel (-) <> boot
+die Socke (-n) <> sock
+der Hut (Hüte) <> hat
+die Mütze (-n) <> cap, woolly hat
+die Krawatte (-n) <> tie
+der Schal (-s) <> scarf
+der Schmuck <> jewellery
+die Tasche (-n) <> bag; pocket
+umtauschen <> to exchange (goods)
+## Eating out
+das Café (-s) <> café
+die Kneipe (-n) <> pub
+die Imbissbude (-n) <> snack stand
+der Tisch (-e) <> table
+Ein Tisch für zwei Personen, bitte. <> A table for two, please.
+bestellen <> to order
+Was darf es sein? <> What would you like? (waiter / shop assistant)
+Ich nehme … <> I'll have …
+Zum Trinken nehme ich … <> To drink I'll have …
+Die Rechnung, bitte. / Zahlen, bitte. <> The bill, please.
+Stimmt so. <> Keep the change.
+das Trinkgeld <> tip
+der Teller (-) <> plate
+das Glas (Gläser) <> glass
+die Tasse (-n) <> cup
+die Flasche (-n) <> bottle
+das Messer (-) <> knife
+die Gabel (-n) <> fork
+der Löffel (-) <> spoon
+die Serviette (-n) <> napkin
+Ich bin allergisch gegen … <> I am allergic to …
+Das Essen ist kalt. <> The food is cold.
+sich beschweren <> to complain
+die Bedienung <> service; waiter / waitress
 
 # Theme 2 – Customs, festivals and celebrations
 das Fest (-e) <> festival, celebration
@@ -281,6 +1039,78 @@ der Nikolaustag (6. Dezember) <> St Nicholas' Day
 einladen <> to invite
 die Einladung <> invitation
 schmücken <> to decorate
+## More festivals and customs
+der Feiertag (-e) <> public holiday
+der Brauch (Bräuche) <> custom
+die Sitte (-n) <> custom, tradition
+das Weihnachtsfest <> Christmas (celebration)
+Frohe Weihnachten! <> Happy Christmas!
+der erste Weihnachtstag <> Christmas Day
+der zweite Weihnachtstag <> Boxing Day
+der Weihnachtsmann <> Father Christmas
+das Christkind <> Christ Child (brings presents in parts of Germany)
+der Advent <> Advent
+der Adventskranz (Adventskränze) <> Advent wreath
+der Nikolaus <> St Nicholas
+das Plätzchen (-) <> Christmas biscuit
+der Lebkuchen (-) <> gingerbread
+der Glühwein <> mulled wine
+die Bescherung <> giving out of Christmas presents
+Frohe Ostern! <> Happy Easter!
+das Osterei (-er) <> Easter egg
+der Osterhase (-n) <> Easter bunny
+Guten Rutsch (ins neue Jahr)! <> Happy New Year! (said before New Year)
+Ein gutes neues Jahr! <> Happy New Year!
+der Vorsatz (Vorsätze) <> resolution
+der Muttertag / der Vatertag <> Mother's Day / Father's Day
+der Valentinstag <> Valentine's Day
+der Tag der Deutschen Einheit (3. Oktober) <> German Unity Day
+der Karnevalszug / der Umzug (Umzüge) <> carnival procession / parade
+das Kostüm (-e) <> costume
+sich verkleiden <> to dress up
+die Maske (-n) <> mask
+Halloween <> Halloween
+das Jubiläum (Jubiläen) <> anniversary, jubilee
+das Volksfest (-e) <> funfair, festival
+das Musikfestival (-s) <> music festival
+der Sankt-Martins-Tag / der Laternenumzug <> St Martin's Day / lantern procession
+das Erntedankfest <> harvest festival
+Ramadan / das Zuckerfest <> Ramadan / Eid al-Fitr
+das Opferfest <> Eid al-Adha
+Chanukka <> Hanukkah
+Diwali <> Diwali
+die Kirche (-n) <> church
+die Moschee (-n) <> mosque
+die Synagoge (-n) <> synagogue
+der Tempel (-) <> temple
+christlich / muslimisch / jüdisch <> Christian / Muslim / Jewish
+der Gottesdienst (-e) <> church service
+beten <> to pray
+der Gott (Götter) <> God, god
+religiös <> religious
+glauben (an + acc) <> to believe (in)
+fasten <> to fast
+der Gast (Gäste) <> guest
+die Geburtstagsfeier (-n) / die Geburtstagsparty (-s) <> birthday party
+Alles Gute zum Geburtstag! <> Happy birthday!
+die Überraschung (-en) <> surprise
+überraschen <> to surprise
+schenken <> to give (as a present)
+bekommen <> to get, receive
+sich bedanken (für) <> to say thank you (for)
+die Glückwunschkarte (-n) <> greetings card
+die Stimmung <> atmosphere, mood
+die Atmosphäre <> atmosphere
+der Spaß <> fun
+gemütlich <> cosy, relaxed
+besonders <> special(ly), particularly
+typisch <> typical
+der Höhepunkt (-e) <> highlight
+das Familienfest (-e) <> family celebration
+zusammenkommen <> to get together
+die Kultur (-en) <> culture
+kulturell <> cultural
+international <> international
 
 # Theme 2 – Celebrity culture
 der Star (-s) / der Promi (-s) <> celebrity
@@ -303,6 +1133,62 @@ Promis verdienen zu viel Geld. <> Celebrities earn too much money.
 Sie setzt sich für … ein. <> She campaigns for / supports …
 das Talent <> talent
 die Castingshow <> talent show
+## Celebrities and role models
+der Prominente (-n) / die Prominente (-n) <> celebrity, VIP
+der Superstar (-s) <> superstar
+der Rapper (-) / die Rapperin (-nen) <> rapper
+der Regisseur (-e) / die Regisseurin (-nen) <> film director
+der Fußballer (-) / die Fußballerin (-nen) <> footballer
+der Held (-en) / die Heldin (-nen) <> hero / heroine
+die Influencerin (-nen) <> (female) influencer
+der Follower (-) <> follower
+der Fanclub (-s) <> fan club
+das Idol (-e) <> idol
+das Autogramm (-e) <> autograph
+der Auftritt (-e) <> appearance, performance
+auftreten <> to perform, appear
+die Tour (-en) <> tour
+das Album (Alben) <> album
+die Medien (pl) <> the media
+die Presse <> the press
+der Paparazzo (Paparazzi) <> paparazzo
+das Interview (-s) <> interview
+der Skandal (-e) <> scandal
+das Gerücht (-e) <> rumour
+der Klatsch <> gossip
+die Kritik <> criticism; review
+kritisieren <> to criticise
+die Wohltätigkeit <> charity (work)
+die Wohltätigkeitsorganisation (-en) <> charity (organisation)
+Geld spenden <> to donate money
+die Spende (-n) <> donation
+sich engagieren (für) <> to be committed (to), get involved
+das Engagement <> commitment
+das Image <> image
+der Lebensstil <> lifestyle
+der Luxus <> luxury
+luxuriös <> luxurious
+die Villa (Villen) <> villa, mansion
+die Aufmerksamkeit <> attention
+im Rampenlicht stehen <> to be in the spotlight
+talentiert / begabt <> talented / gifted
+bekannt <> well known
+unbekannt <> unknown
+beliebt / unbeliebt <> popular / unpopular
+inspirieren <> to inspire
+inspirierend <> inspiring
+die Inspiration <> inspiration
+nachahmen <> to imitate, copy
+oberflächlich <> superficial
+das Schönheitsideal (-e) <> ideal of beauty
+die Realityshow (-s) <> reality show
+der Gewinner (-) / die Gewinnerin (-nen) <> winner
+der Verlierer (-) <> loser
+Sie ist ein gutes Vorbild für junge Leute, weil … <> She is a good role model for young people because …
+Er hat viel für die Umwelt getan. <> He has done a lot for the environment.
+Promis haben kein Privatleben. <> Celebrities have no private life.
+Ich würde gern berühmt sein. <> I would like to be famous.
+Ich möchte nicht berühmt sein, weil … <> I wouldn't like to be famous because …
 
 # Theme 3 – Travel and tourism
 der Urlaub <> holiday
@@ -348,6 +1234,244 @@ der Koffer <> suitcase
 der Pass <> passport
 verloren <> lost
 die Verspätung <> delay
+## Countries and nationalities
+Deutschland <> Germany
+Österreich <> Austria
+die Schweiz <> Switzerland
+England <> England
+Schottland <> Scotland
+Wales <> Wales
+Irland / Nordirland <> Ireland / Northern Ireland
+Großbritannien <> Great Britain
+das Vereinigte Königreich <> the United Kingdom
+Frankreich <> France
+Spanien <> Spain
+Italien <> Italy
+Griechenland <> Greece
+Portugal <> Portugal
+die Niederlande (pl) / Holland <> the Netherlands / Holland
+Belgien <> Belgium
+Polen <> Poland
+die Türkei <> Turkey
+Russland <> Russia
+die USA (pl) / Amerika <> the USA / America
+China <> China
+Indien <> India
+Afrika <> Africa
+Europa <> Europe
+Asien <> Asia
+die Europäische Union (EU) <> the European Union (EU)
+der Engländer (-) / die Engländerin (-nen) <> Englishman / Englishwoman
+der Brite (-n) / die Britin (-nen) <> British man / woman
+der Österreicher (-) / die Österreicherin (-nen) <> Austrian (man / woman)
+der Schweizer (-) / die Schweizerin (-nen) <> Swiss (man / woman)
+der Franzose (-n) / die Französin (-nen) <> Frenchman / Frenchwoman
+englisch / deutsch / französisch <> English / German / French (adjectives)
+europäisch <> European
+die Hauptstadt (Hauptstädte) <> capital city
+die Grenze (-n) <> border
+der Kontinent (-e) <> continent
+die Welt <> world
+## Transport and directions
+das Verkehrsmittel (-) <> means of transport
+das Auto (-s) / der Wagen (-) <> car
+der Bus (-se) <> bus
+die Straßenbahn (-en) <> tram
+die U-Bahn <> underground
+die S-Bahn <> suburban railway
+das Fahrrad (Fahrräder) / das Rad (Räder) <> bicycle / bike; wheel
+das Motorrad (Motorräder) <> motorbike
+das Schiff (-e) <> ship
+die Fähre (-n) <> ferry
+das Boot (-e) <> boat
+das Taxi (-s) <> taxi
+der Lastwagen (-) / der LKW (-s) <> lorry
+mit dem Bus / Zug / Rad fahren <> to go by bus / train / bike
+zu Fuß <> on foot
+die Bahn <> railway, train
+der Hauptbahnhof (Hbf) <> main station
+die Bushaltestelle (-n) <> bus stop
+der Bahnsteig (-e) / das Gleis (-e) <> platform / track
+Von welchem Gleis fährt der Zug? <> Which platform does the train leave from?
+abfahren <> to depart
+die Abfahrt (-en) <> departure
+ankommen <> to arrive
+die Ankunft (Ankünfte) <> arrival
+einsteigen / aussteigen <> to get on / to get off
+umsteigen <> to change (trains etc.)
+der Fahrplan (Fahrpläne) <> timetable (transport)
+einfach <> single (ticket); simple, easy
+erster / zweiter Klasse <> first / second class
+die Reservierung (-en) <> reservation
+reservieren <> to reserve
+der Fahrkartenschalter (-) / der Fahrkartenautomat (-en) <> ticket office / ticket machine
+pünktlich <> on time, punctual
+Der Zug hat Verspätung. <> The train is late.
+der Flug (Flüge) <> flight
+landen <> to land
+abfliegen <> to take off
+der Stau (-s) <> traffic jam
+die Autobahn (-en) <> motorway
+die Tankstelle (-n) <> petrol station
+das Benzin <> petrol
+der Führerschein (-e) <> driving licence
+die Straße (-n) <> street, road
+die Ampel (-n) <> traffic lights
+die Kreuzung (-en) <> crossroads
+die Ecke (-n) <> corner
+die Brücke (-n) <> bridge
+Wie komme ich zum Bahnhof? <> How do I get to the station?
+Wo ist …? / Wo sind …? <> Where is …? / Where are …?
+Gibt es hier in der Nähe …? <> Is there a … near here?
+Gehen Sie geradeaus. <> Go straight on.
+Nehmen Sie die erste Straße links. <> Take the first road on the left.
+links / rechts <> left / right
+geradeaus <> straight on
+in der Nähe (von) <> near
+weit (von) <> far (from)
+die Nähe <> vicinity
+entfernt <> away, distant
+Es ist fünf Minuten zu Fuß. <> It is five minutes' walk.
+der Stadtplan (Stadtpläne) <> town map
+die Landkarte (-n) <> map
+## Town and places of interest
+das Stadtzentrum / die Innenstadt <> town centre
+die Altstadt <> old town
+der Marktplatz (Marktplätze) <> market square
+die Fußgängerzone (-n) <> pedestrian zone
+das Rathaus (Rathäuser) <> town hall
+die Post <> post office
+die Bank (-en) <> bank
+der Park (-s) <> park
+der Spielplatz (Spielplätze) <> playground
+der Zoo (-s) <> zoo
+der Freizeitpark (-s) <> theme park
+die Burg (-en) <> castle (fortified)
+das Denkmal (Denkmäler) <> monument
+der Turm (Türme) <> tower
+die Galerie (-n) <> gallery
+die Ausstellung (-en) <> exhibition
+der Hafen (Häfen) <> port, harbour
+die Polizeiwache (-n) <> police station
+das Verkehrsamt / die Touristeninformation <> tourist information office
+die Broschüre (-n) <> brochure
+die Stadtführung (-en) / die Stadtrundfahrt (-en) <> guided tour of the town / sightseeing tour
+der Eintritt <> entry, admission
+die Eintrittskarte (-n) <> admission ticket
+geöffnet / geschlossen <> open / closed
+die Öffnungszeiten (pl) <> opening times
+Um wie viel Uhr macht das Museum auf? <> What time does the museum open?
+aufmachen / zumachen <> to open / to close
+historisch <> historic(al)
+modern <> modern
+sehenswert <> worth seeing
+malerisch <> picturesque
+beeindruckend <> impressive
+## Holidays and accommodation
+der Tourist (-en) / die Touristin (-nen) <> tourist
+der Tourismus <> tourism
+die Pauschalreise (-n) <> package holiday
+das Reisebüro (-s) <> travel agency
+die Gruppenreise (-n) <> group trip
+der Aufenthalt (-e) <> stay
+verbringen <> to spend (time)
+Ich habe zwei Wochen in Spanien verbracht. <> I spent two weeks in Spain.
+die Ferienwohnung (-en) <> holiday flat
+das Gasthaus (Gasthäuser) <> inn
+die Pension (-en) <> guest house, B&B
+das Zelt (-e) <> tent
+zelten <> to camp
+der Wohnwagen (-) <> caravan
+der Empfang <> reception
+die Rezeption <> reception (desk)
+der Schlüssel (-) <> key
+der Aufzug (Aufzüge) / der Lift (-e) <> lift
+das Erdgeschoss <> ground floor
+der erste Stock <> first floor
+mit Dusche / mit Bad <> with shower / with bath
+mit Balkon / mit Meerblick <> with balcony / with sea view
+Vollpension / Halbpension <> full board / half board
+Frühstück inbegriffen <> breakfast included
+Haben Sie ein Zimmer frei? <> Do you have a room free?
+für drei Nächte <> for three nights
+Was kostet eine Nacht? <> How much is a night?
+die Nacht (Nächte) <> night
+die Klimaanlage <> air conditioning
+das WLAN <> Wi-Fi
+die Aussicht <> view
+die Küste (-n) <> coast
+die Insel (-n) <> island
+der See (-n) <> lake
+die See / das Meer (-e) <> sea
+der Fluss (Flüsse) <> river
+der Berg (-e) <> mountain
+die Landschaft (-en) <> landscape, countryside
+das Gebirge <> mountain range
+die Wüste (-n) <> desert
+die Sonnencreme <> sun cream
+die Sonnenbrille (-n) <> sunglasses
+braun werden <> to get a tan
+der Sonnenbrand <> sunburn
+die Erinnerung (-en) <> memory, souvenir
+das Andenken (-) / das Souvenir (-s) <> souvenir
+die Postkarte (-n) <> postcard
+die Briefmarke (-n) <> stamp
+der Rucksack (Rucksäcke) <> rucksack
+packen <> to pack
+das Gepäck <> luggage
+der Ausweis (-e) <> ID card
+der Reisepass (Reisepässe) <> passport
+das Visum (Visa) <> visa
+der Urlaubsort (-e) <> holiday resort
+erholsam <> relaxing
+sich erholen <> to recover, have a rest
+sich amüsieren <> to enjoy oneself
+Spaß haben <> to have fun
+Ich hatte viel Spaß. <> I had a lot of fun.
+Es hat mir gut gefallen. <> I liked it a lot.
+Es war eine tolle Erfahrung. <> It was a great experience.
+das Abenteuer (-) <> adventure
+entdecken <> to discover
+erleben <> to experience
+das Erlebnis (-se) <> experience (event)
+## Weather
+Wie ist das Wetter? <> What is the weather like?
+die Wettervorhersage (-n) <> weather forecast
+Es ist sonnig / heiß / kalt. <> It is sunny / hot / cold.
+Es regnet. <> It is raining.
+Es schneit. <> It is snowing.
+Es ist windig / wolkig / neblig. <> It is windy / cloudy / foggy.
+Es friert. <> It is freezing.
+Es donnert und blitzt. <> There is thunder and lightning.
+das Gewitter (-) <> thunderstorm
+der Sturm (Stürme) <> storm
+der Regen <> rain
+der Schnee <> snow
+die Sonne <> sun
+der Wind <> wind
+die Wolke (-n) <> cloud
+der Nebel <> fog
+die Temperatur (-en) <> temperature
+Grad <> degrees
+Es sind 25 Grad. <> It is 25 degrees.
+warm / kühl <> warm / cool
+heiter <> bright, fair (weather); cheerful
+nass / trocken <> wet / dry
+das Klima <> climate
+## Problems on holiday
+Ich habe meinen Pass verloren. <> I have lost my passport.
+stehlen <> to steal
+gestohlen <> stolen
+der Dieb (-e) <> thief
+das Fundbüro (-s) <> lost property office
+kaputt <> broken
+funktionieren <> to work (function)
+Die Dusche funktioniert nicht. <> The shower doesn't work.
+sich verlaufen <> to get lost (on foot)
+verpassen <> to miss (a train etc.)
+Ich habe den Zug verpasst. <> I missed the train.
+ausfallen <> to be cancelled
+die Panne (-n) <> breakdown
 
 # Theme 3 – Media and technology
 das Handy (-s) <> mobile phone
@@ -384,6 +1508,101 @@ streamen <> to stream
 Ich verbringe zu viel Zeit am Handy. <> I spend too much time on my phone.
 in Kontakt bleiben <> to stay in contact
 die künstliche Intelligenz (KI) <> artificial intelligence (AI)
+## Technology and the internet
+das Smartphone (-s) <> smartphone
+das Tablet (-s) <> tablet
+der Laptop (-s) <> laptop
+der Drucker (-) <> printer
+die Tastatur (-en) <> keyboard
+der Kopfhörer (-) <> headphones
+das Ladegerät (-e) <> charger
+aufladen <> to charge (a battery)
+der Akku (-s) <> (rechargeable) battery
+die Technologie (-n) <> technology
+die Technik <> technology; technique
+technisch <> technical
+digital <> digital
+das Gerät (-e) <> device, appliance
+die Software / die Hardware <> software / hardware
+das Programm (-e) <> program; programme
+der Link (-s) <> link
+klicken <> to click
+tippen <> to type; to tap
+speichern <> to save (a file)
+löschen <> to delete
+drucken <> to print
+suchen <> to search, look for
+die Suchmaschine (-n) <> search engine
+googeln <> to google
+der Benutzer (-) / die Benutzerin (-nen) <> user
+benutzen / nutzen <> to use
+das Benutzerkonto / das Konto (Konten) <> user account / account
+sich einloggen / sich ausloggen <> to log in / to log out
+das Profil (-e) <> profile
+die E-Mail (-s) <> email
+die SMS (-) <> text message
+simsen <> to text
+anrufen <> to phone, call
+der Anruf (-e) <> phone call
+telefonieren <> to phone, talk on the phone
+der Videoanruf (-e) <> video call
+das soziale Netzwerk (-e) <> social network
+teilen <> to share
+liken <> to like (online)
+kommentieren <> to comment
+der Kommentar (-e) <> comment
+das Video (-s) <> video
+der Blog (-s) <> blog
+bloggen <> to blog
+der Podcast (-s) <> podcast
+online einkaufen <> to shop online
+süchtig nach … <> addicted to …
+die Handysucht <> phone addiction
+die Sicherheit <> security, safety
+sicher / unsicher <> safe, sure / unsafe, unsure
+das Risiko (Risiken) <> risk
+der Hacker (-) <> hacker
+der Virus (Viren) <> virus
+der Betrug <> fraud
+fremde Leute / Fremde (pl) <> strangers
+die Falschmeldung (-en) / Fake News (pl) <> false report / fake news
+belästigen <> to harass
+sich informieren <> to inform oneself, find out
+die Information (-en) <> information
+die Kommunikation <> communication
+kommunizieren <> to communicate
+in Verbindung bleiben <> to keep in touch
+weltweit <> worldwide
+schnell / langsam <> fast / slow
+kostenlos / gratis <> free (of charge)
+die Erfindung (-en) <> invention
+erfinden <> to invent
+die Entwicklung (-en) <> development
+entwickeln <> to develop
+der Roboter (-) <> robot
+## TV, film and the press
+das Fernsehen <> television (medium)
+der Fernseher (-) <> TV set
+im Fernsehen <> on TV
+der Sender (-) / der Kanal (Kanäle) <> TV channel
+die Nachrichten (pl) <> the news
+die Dokumentation (-en) / die Doku (-s) <> documentary
+die Seifenoper (-n) <> soap opera
+die Quizsendung (-en) <> quiz show
+die Sportsendung (-en) <> sports programme
+der Werbespot (-s) <> advert (TV)
+das Radio (-s) <> radio
+der Streamingdienst (-e) <> streaming service
+die Folge (-n) <> episode; consequence
+die Staffel (-n) <> season (of a series)
+der Bericht (-e) <> report
+berichten <> to report
+der Artikel (-) <> article
+die Schlagzeile (-n) <> headline
+das Magazin (-e) <> magazine
+gedruckt <> printed
+die Meinung (-en) <> opinion
+die Freiheit der Presse / die Pressefreiheit <> freedom of the press
 
 # Theme 3 – Environment and where people live
 die Umwelt <> environment
@@ -433,6 +1652,187 @@ ruhig / laut <> quiet / noisy
 sauber / schmutzig <> clean / dirty
 die Einkaufsmöglichkeiten (pl) <> shopping facilities
 der Verkehr <> traffic
+## Environmental issues
+die Umweltverschmutzung <> environmental pollution
+der Umweltschutz <> environmental protection
+die Umweltschützerin / der Umweltschützer (-) <> environmentalist
+die Klimakrise <> climate crisis
+der Treibhauseffekt <> greenhouse effect
+das Treibhausgas (-e) <> greenhouse gas
+das Kohlendioxid / CO2 <> carbon dioxide
+die Abgase (pl) <> exhaust fumes
+die Luftverschmutzung <> air pollution
+die Wasserverschmutzung <> water pollution
+die Abholzung <> deforestation
+der Regenwald (Regenwälder) <> rainforest
+die Tierart (-en) <> animal species
+aussterben <> to die out, become extinct
+vom Aussterben bedroht <> endangered (species)
+bedrohen <> to threaten
+zerstören <> to destroy
+die Zerstörung <> destruction
+die Katastrophe (-n) <> disaster
+die Naturkatastrophe (-n) <> natural disaster
+das Erdbeben (-) <> earthquake
+der Waldbrand (Waldbrände) <> forest fire
+die Hitzewelle (-n) <> heatwave
+der Meeresspiegel <> sea level
+steigen <> to rise, climb
+schmelzen <> to melt
+das Eis an den Polen <> polar ice
+die Erde <> earth
+der Planet (-en) <> planet
+das Plastik <> plastic
+die Plastiktüte (-n) <> plastic bag
+die Verpackung (-en) <> packaging
+die Dose (-n) <> can, tin
+die Mülltonne (-n) <> bin
+den Müll trennen <> to separate rubbish
+die Mülltrennung <> separating rubbish (for recycling)
+das Recycling <> recycling
+wiederverwerten <> to recycle
+wiederverwenden <> to reuse
+die Pfandflasche (-n) <> returnable bottle (with deposit)
+der Abfall (Abfälle) <> waste, rubbish
+wegwerfen <> to throw away
+verschwenden <> to waste
+die Verschwendung <> waste (wasting)
+Wasser sparen <> to save water
+das Licht ausmachen <> to switch off the light
+ausschalten / einschalten <> to switch off / to switch on
+der Stand-by-Modus <> standby mode
+die Solarenergie / die Sonnenenergie <> solar energy
+die Windenergie <> wind energy
+die Atomkraft / die Kernkraft <> nuclear power
+das Kraftwerk (-e) <> power station
+die Kohle <> coal
+das Erdöl <> crude oil
+das Elektroauto (-s) <> electric car
+umweltschädlich <> harmful to the environment
+umweltbewusst <> environmentally aware
+grün <> green
+nachhaltig <> sustainable
+die Nachhaltigkeit <> sustainability
+biologisch / Bio- <> organic
+regional / lokal <> regional / local
+das Produkt (-e) <> product
+der Verbraucher (-) <> consumer
+verbrauchen <> to consume, use
+der Verbrauch <> consumption
+vermeiden <> to avoid
+verringern / reduzieren <> to reduce
+retten <> to save, rescue
+die Organisation (-en) <> organisation
+die Demonstration (-en) / die Demo (-s) <> demonstration, protest
+protestieren <> to protest
+Jeder kann etwas tun. <> Everyone can do something.
+Ich fahre mit dem Rad zur Schule, um die Umwelt zu schützen. <> I cycle to school to protect the environment.
+## Global and social issues
+das Thema (Themen) <> topic, subject, issue
+die Hungersnot <> famine
+die Obdachlosigkeit <> homelessness
+der / die Obdachlose (-n) <> homeless person
+der Flüchtling (-e) <> refugee
+fliehen <> to flee
+der Krieg (-e) <> war
+der Frieden <> peace
+die Gewalt <> violence
+die Kriminalität <> crime
+das Verbrechen (-) <> crime (single act)
+der Rassismus <> racism
+die Diskriminierung <> discrimination
+die Ungerechtigkeit <> injustice
+gerecht / ungerecht <> fair / unfair
+die Menschenrechte (pl) <> human rights
+die Regierung (-en) <> government
+die Politik <> politics
+der Politiker (-) / die Politikerin (-nen) <> politician
+wählen <> to vote; to choose
+das Gesetz (-e) <> law
+die Entwicklungsländer (pl) <> developing countries
+die Hilfsorganisation (-en) <> aid organisation
+das Ehrenamt <> voluntary work
+die Bevölkerung <> population
+der Einwohner (-) / die Einwohnerin (-nen) <> inhabitant
+## Home and local area
+das Einfamilienhaus (-häuser) <> detached house
+das Doppelhaus (-häuser) <> semi-detached house
+das Reihenhaus (-häuser) <> terraced house
+das Hochhaus (-häuser) <> tower block
+der Wohnblock (-s) <> block of flats
+das Gebäude (-) <> building
+der Stock / das Stockwerk (-e) <> floor, storey
+im ersten Stock <> on the first floor
+die Treppe (-n) <> stairs
+der Keller (-) <> cellar
+der Dachboden <> loft, attic
+das Badezimmer (-) / das Bad (Bäder) <> bathroom
+das Esszimmer (-) <> dining room
+die Toilette (-n) / das WC (-s) <> toilet
+der Flur (-e) <> hall, corridor
+das Arbeitszimmer (-) <> study
+die Garage (-n) <> garage
+der Balkon (-e / -s) <> balcony
+die Terrasse (-n) <> terrace, patio
+die Tür (-en) <> door
+das Fenster (-) <> window
+die Wand (Wände) <> wall (inside)
+die Mauer (-n) <> wall (outside)
+das Dach (Dächer) <> roof
+der Boden (Böden) <> floor, ground
+die Möbel (pl) <> furniture
+der Schrank (Schränke) <> cupboard, wardrobe
+der Kleiderschrank (-schränke) <> wardrobe
+das Regal (-e) <> shelf
+der Stuhl (Stühle) <> chair
+das Sofa (-s) <> sofa
+der Sessel (-) <> armchair
+der Teppich (-e) <> carpet, rug
+die Lampe (-n) <> lamp
+der Spiegel (-) <> mirror
+der Schreibtisch (-e) <> desk
+der Kühlschrank (-schränke) <> fridge
+der Herd (-e) <> cooker
+der Backofen (-öfen) <> oven
+die Mikrowelle (-n) <> microwave
+die Spülmaschine (-n) <> dishwasher
+die Waschmaschine (-n) <> washing machine
+die Heizung <> heating
+das Licht (-er) <> light
+der Vorhang (Vorhänge) <> curtain
+die Blume (-n) <> flower
+der Baum (Bäume) <> tree
+das Gras <> grass
+mein eigenes Zimmer <> my own room
+Ich teile mein Zimmer mit meinem Bruder. <> I share my room with my brother.
+hell <> bright, light
+geräumig <> spacious
+eng <> narrow, cramped
+umziehen <> to move house
+die Miete (-n) <> rent
+mieten <> to rent
+der Stadtteil (-e) / das Viertel (-) <> district, part of town
+die Hauptstraße (-n) <> main street
+die Kleinstadt (Kleinstädte) <> small town
+das Industriegebiet (-e) <> industrial estate
+der Bauernhof (Bauernhöfe) <> farm
+das Feld (-er) <> field
+die Wiese (-n) <> meadow
+der Hügel (-) <> hill
+das Sportzentrum (-zentren) <> sports centre
+die Freizeitmöglichkeiten (pl) <> leisure facilities
+es gibt viel zu tun <> there's lots to do
+Es gibt nichts für junge Leute. <> There is nothing for young people.
+die Lebensqualität <> quality of life
+lebendig <> lively
+lebhaft <> lively
+belebt <> busy (place)
+die Luftqualität <> air quality
+die Vorteile und Nachteile vom Stadtleben <> the pros and cons of city life
+das Stadtleben / das Landleben <> city life / country life
+Ich wohne lieber auf dem Land, weil … <> I prefer living in the country because …
+In meiner Stadt gibt es … <> In my town there is / are …
+Ich würde gern in einer Großstadt wohnen. <> I would like to live in a city.
 
 # High-frequency words
 wer? <> who?
@@ -474,6 +1874,454 @@ nichts / etwas <> nothing / something
 niemand / jemand <> nobody / somebody
 überall <> everywhere
 zusammen / allein <> together / alone
+## Numbers
+null / eins / zwei / drei <> 0 / 1 / 2 / 3
+vier / fünf / sechs / sieben <> 4 / 5 / 6 / 7
+acht / neun / zehn <> 8 / 9 / 10
+elf / zwölf / dreizehn <> 11 / 12 / 13
+vierzehn / fünfzehn / sechzehn <> 14 / 15 / 16
+siebzehn / achtzehn / neunzehn <> 17 / 18 / 19
+zwanzig / einundzwanzig / zweiundzwanzig <> 20 / 21 / 22
+dreißig / vierzig / fünfzig <> 30 / 40 / 50
+sechzig / siebzig / achtzig / neunzig <> 60 / 70 / 80 / 90
+hundert / hunderteins <> 100 / 101
+zweihundertfünfundvierzig <> 245
+tausend / zweitausend <> 1000 / 2000
+eine Million / eine Milliarde <> a million / a billion
+neunzehnhundertneunundachtzig <> 1989 (year)
+zweitausendvierundzwanzig <> 2024 (year)
+How do you say numbers 21–99 in German? :: Units first, then und, then tens, written as one word ;; 47 = siebenundvierzig ;; 63 = dreiundsechzig ;; Note: sechzehn, sechzig, siebzehn, siebzig (no -s / -en)
+How do you form ordinal numbers (first, second…)? :: 1–19: number + -te (zweite, vierte, zehnte) ;; 20+: number + -ste (zwanzigste, einunddreißigste) ;; Irregular: erste, dritte, siebte, achte ;; Written: der 3. Mai = der dritte Mai
+erste / zweite / dritte <> first / second / third
+vierte / fünfte / siebte / achte <> fourth / fifth / seventh / eighth
+zwanzigste / einunddreißigste <> twentieth / thirty-first
+das erste Mal <> the first time
+einmal / zweimal <> once / twice
+die Hälfte / halb <> half (noun) / half (adj)
+ein Viertel / drei Viertel <> a quarter / three quarters
+das Prozent <> per cent
+die Zahl (-en) / die Nummer (-n) <> number (figure) / number (phone, house)
+How do you write prices and decimals in German? :: A comma is used for the decimal point: 2,50 € = zwei Euro fünfzig ;; A full stop or space separates thousands: 1.000 / 1 000
+## Days, months, seasons and dates
+der Tag (-e) <> day
+Montag / Dienstag / Mittwoch <> Monday / Tuesday / Wednesday
+Donnerstag / Freitag <> Thursday / Friday
+Samstag (Sonnabend) / Sonntag <> Saturday / Sunday
+am Montag / montags <> on Monday / on Mondays
+die Woche (-n) <> week
+das Wochenende (-n) <> weekend
+der Monat (-e) <> month
+Januar / Februar / März <> January / February / March
+April / Mai / Juni <> April / May / June
+Juli / August / September <> July / August / September
+Oktober / November / Dezember <> October / November / December
+im Januar <> in January
+das Jahr (-e) <> year
+das Jahrhundert (-e) <> century
+die Jahreszeit (-en) <> season
+der Frühling / der Sommer <> spring / summer
+der Herbst / der Winter <> autumn / winter
+im Sommer <> in summer
+das Datum (Daten) <> date
+Der Wievielte ist heute? / Welches Datum haben wir heute? <> What is the date today?
+Heute ist der erste März. <> Today is the first of March.
+am zwanzigsten Juli <> on the twentieth of July
+Welcher Tag ist heute? <> What day is it today?
+im Jahr 2025 / 2025 <> in 2025
+## Time
+die Uhr (-en) <> clock, watch; o'clock
+Wie spät ist es? / Wie viel Uhr ist es? <> What time is it?
+Es ist ein Uhr. <> It is one o'clock.
+Es ist Viertel nach drei. <> It is quarter past three.
+Es ist Viertel vor vier. <> It is quarter to four.
+Es ist halb fünf. <> It is half past four.
+How does halb work in German times? :: halb refers to the NEXT hour: halb acht = 7.30 (half way to eight) ;; halb zwei = 1.30
+Es ist zehn nach sechs / zwanzig vor neun. <> It is ten past six / twenty to nine.
+um acht Uhr <> at eight o'clock
+um 14.30 Uhr (vierzehn Uhr dreißig) <> at 2.30 pm (24-hour clock)
+gegen zehn Uhr <> at about ten o'clock
+Mittag / Mitternacht <> midday / midnight
+die Sekunde (-n) / die Minute (-n) <> second / minute
+eine halbe Stunde / eine Viertelstunde <> half an hour / a quarter of an hour
+der Morgen / morgens <> morning / in the mornings
+der Vormittag / vormittags <> morning (before noon) / in the mornings
+der Nachmittag / nachmittags <> afternoon / in the afternoons
+der Abend / abends <> evening / in the evenings
+nachts <> at night
+heute Morgen / heute Abend <> this morning / this evening
+morgen früh <> tomorrow morning
+übermorgen / vorgestern <> the day after tomorrow / the day before yesterday
+täglich <> daily
+wöchentlich / monatlich / jährlich <> weekly / monthly / yearly
+die Zeit (-en) <> time
+das Mal (-e) <> time (occasion)
+diesmal / letztes Mal / nächstes Mal <> this time / last time / next time
+letzten Sommer / nächste Woche <> last summer / next week
+vor einer Woche / vor einem Monat <> a week ago / a month ago
+in zwei Wochen <> in two weeks' time
+seit zwei Jahren <> for two years (and still)
+zwei Wochen lang <> for two weeks
+am Anfang / am Ende <> at the beginning / at the end
+zuletzt <> last, finally
+endlich <> at last
+plötzlich <> suddenly
+sofort <> immediately
+gleich <> straight away; same
+inzwischen <> meanwhile
+damals <> at that time, back then
+neulich <> recently
+vorher / nachher <> before(hand) / afterwards
+während <> during; while
+noch <> still, yet
+noch einmal <> once more, again
+wieder <> again
+schon lange <> for a long time
+lange <> (for) a long time
+selten <> rarely
+meistens <> mostly, usually
+normalerweise <> normally
+ab und zu <> now and then
+immer noch <> still
+nicht mehr <> no longer, not any more
+kein … mehr <> no more …
+erst <> only (not until); first
+bis bald / bis später <> see you soon / see you later
+## More question words
+wie lange? <> how long?
+wie oft? <> how often?
+um wie viel Uhr? <> at what time?
+was für …? <> what kind of …?
+Was für Musik hörst du gern? <> What kind of music do you like listening to?
+wen? / wem? <> whom? (accusative) / to whom? (dative)
+wessen? <> whose?
+mit wem? <> with whom?
+wofür? / worüber? <> for what? / about what?
+wieso? / weshalb? <> why? (how come?)
+## Colours
+die Farbe (-n) <> colour
+rot / gelb / blau <> red / yellow / blue
+grün / braun / schwarz <> green / brown / black
+weiß / grau / rosa <> white / grey / pink
+lila / orange / bunt <> purple / orange / colourful
+hellblau / dunkelblau <> light blue / dark blue
+## Greetings and social phrases
+Hallo! / Grüß dich! <> Hello! (informal)
+Guten Morgen / Guten Tag / Guten Abend <> Good morning / Hello (good day) / Good evening
+Gute Nacht! <> Good night!
+Tschüs! / Auf Wiedersehen! <> Bye! / Goodbye!
+Bis morgen! <> See you tomorrow!
+Grüß Gott! / Servus! <> Hello! (southern Germany, Austria)
+bitte / danke <> please; you're welcome / thank you
+Danke schön! / Bitte schön! <> Thank you very much! / You're welcome!
+Vielen Dank! <> Many thanks!
+Entschuldigung! / Entschuldigen Sie! <> Excuse me! / Sorry!
+Es tut mir leid. <> I'm sorry.
+Kein Problem. <> No problem.
+Schönes Wochenende! <> Have a nice weekend!
+Viel Spaß! <> Have fun!
+Viel Glück! <> Good luck!
+Willkommen! <> Welcome!
+ja / nein / doch <> yes / no / yes (contradicting a negative)
+Natürlich! / Klar! <> Of course!
+Genau! <> Exactly!
+vielleicht <> perhaps
+Ach so! <> Oh, I see!
+Super! / Toll! / Prima! <> Great!
+Schade! <> What a shame!
+Lieber Max, / Liebe Anna, <> Dear Max, / Dear Anna, (letter)
+Sehr geehrte Damen und Herren, <> Dear Sir or Madam, (formal letter)
+Viele Grüße / Liebe Grüße <> Best wishes / Love (ending a letter)
+Mit freundlichen Grüßen <> Yours sincerely / faithfully
+## Common verbs
+sein / haben / werden <> to be / to have / to become
+machen / tun <> to do, make / to do
+gehen / kommen <> to go (walk) / to come
+fahren <> to go (by vehicle), drive
+bringen / holen <> to bring / to fetch
+geben / nehmen <> to give / to take
+finden <> to find; to think (opinion)
+denken (an + acc) <> to think (of)
+meinen <> to think, mean (opinion)
+sagen <> to say
+sprechen / reden <> to speak / to talk
+erzählen <> to tell (a story)
+schreiben <> to write
+hören / sehen <> to hear / to see
+schauen / gucken <> to look, watch
+zeigen <> to show
+wissen / kennen <> to know (a fact) / to know (person, place)
+können / müssen <> to be able to / to have to
+dürfen / sollen / wollen <> to be allowed to / to be supposed to / to want to
+brauchen <> to need
+bleiben <> to stay
+stehen / sitzen / liegen <> to stand / to sit / to lie
+stellen / setzen / legen <> to put (upright) / to put (sitting) / to lay
+öffnen / schließen <> to open / to close
+anfangen / beginnen <> to begin, start
+enden / beenden <> to end / to finish (something)
+dauern <> to last
+warten (auf + acc) <> to wait (for)
+versuchen <> to try
+probieren <> to try (taste)
+hoffen <> to hope
+wünschen <> to wish
+sich wünschen <> to want, wish for
+entscheiden / sich entscheiden <> to decide / to make up one's mind
+vergessen <> to forget
+sich erinnern (an + acc) <> to remember
+lachen / weinen <> to laugh / to cry
+lächeln <> to smile
+rufen <> to call, shout
+schreien <> to scream, shout
+springen <> to jump
+werfen / fangen <> to throw / to catch
+fallen <> to fall
+treffen <> to meet; to hit
+besuchen <> to visit (a person)
+leihen <> to lend, borrow
+mitnehmen <> to take with you
+mitkommen <> to come along
+zurückkommen <> to come back
+ändern / sich ändern <> to change (something) / to change
+wechseln <> to change (money, a subject)
+wachsen <> to grow
+passieren <> to happen
+geschehen <> to happen
+gelingen <> to succeed (es gelingt mir = I manage)
+schaffen <> to manage, achieve
+erreichen <> to reach, achieve
+verbessern <> to improve
+lösen <> to solve
+teilnehmen (an + dat) <> to take part (in)
+organisieren <> to organise
+vorbereiten / sich vorbereiten (auf + acc) <> to prepare / to prepare oneself (for)
+bauen <> to build
+reparieren <> to repair
+kaputt machen <> to break
+bitten (um) <> to ask (for)
+danken (+ dat) <> to thank
+gratulieren (+ dat) <> to congratulate
+sich vorstellen <> to introduce oneself; to imagine
+Ich kann mir vorstellen, dass … <> I can imagine that …
+vorhaben <> to plan, intend
+sich freuen <> to be pleased
+gefallen (+ dat) <> to please (to be liked)
+lieber haben <> to prefer
+vorziehen <> to prefer
+genießen <> to enjoy
+## Common adjectives
+gut / schlecht <> good / bad
+neu <> new
+lang / kurz <> long / short
+hoch / niedrig <> high / low
+breit / schmal <> wide / narrow
+schwer / leicht <> heavy, difficult / light, easy
+voll / leer <> full / empty
+richtig / falsch <> right, correct / wrong
+wahr <> true
+möglich / unmöglich <> possible / impossible
+wichtig <> important
+notwendig / nötig <> necessary
+gleich / anders <> same / different
+verschieden <> different, various
+ähnlich <> similar
+nah <> near
+fertig <> ready, finished
+bereit <> ready, prepared
+frei / besetzt <> free / occupied, taken
+toll / super / klasse <> great
+fantastisch / wunderbar <> fantastic / wonderful
+prima <> great, excellent
+cool <> cool
+schrecklich / furchtbar <> terrible / awful
+ausgezeichnet <> excellent
+herrlich <> marvellous, glorious
+komisch <> funny, strange
+seltsam <> strange
+merkwürdig <> strange, odd
+doof <> stupid, rubbish
+ärgerlich <> annoying
+enttäuschend <> disappointing
+enttäuscht <> disappointed
+aufgeregt <> excited, nervous
+überrascht <> surprised
+stolz (auf + acc) <> proud (of)
+deutlich / klar <> clear
+genau <> exact(ly)
+echt <> real, genuine; really
+wirklich <> real(ly)
+ganz <> whole; quite, completely
+total <> totally
+völlig <> completely
+eigentlich <> actually
+fast <> almost
+nur <> only
+auch <> also, too
+sogar <> even
+leider <> unfortunately
+hoffentlich <> hopefully
+natürlich <> naturally, of course
+wahrscheinlich <> probably
+sicherlich <> certainly
+ungefähr / etwa <> about, approximately
+genug <> enough
+mehr / weniger <> more / less, fewer
+am meisten / am wenigsten <> the most / the least
+## Small but important words
+und / oder <> and / or
+also <> so, therefore (not "also"!)
+sonst <> otherwise
+trotzdem <> nevertheless, even so
+deswegen <> that's why, therefore
+zum Beispiel (z. B.) <> for example
+das heißt (d. h.) <> that is (i.e.)
+usw. (und so weiter) <> etc.
+nämlich <> namely, you see (because)
+zwar … aber <> admittedly … but
+sowohl … als auch <> both … and
+entweder … oder <> either … or
+weder … noch <> neither … nor
+nicht nur … sondern auch <> not only … but also
+bevor / nachdem <> before / after (conjunctions)
+bis <> until; by
+sobald <> as soon as
+damit <> so that; with it
+falls <> in case, if
+seitdem <> since (then)
+dort / da <> there
+hier <> here
+oben / unten <> above, upstairs / below, downstairs
+drinnen / draußen <> inside / outside
+vorne / hinten <> at the front / at the back
+irgendwo / nirgendwo <> somewhere / nowhere
+irgendwann <> sometime
+jeder / jede / jedes <> every, each
+beide <> both
+mehrere <> several
+wenige <> few
+manche <> some
+andere <> other(s)
+die meisten <> most
+ein paar <> a few (but: ein Paar = a pair)
+das Stück (-e) <> piece
+ein Kilo / ein Pfund / ein Gramm <> a kilo / a pound (500 g) / a gram
+eine Dose / eine Packung / eine Scheibe <> a tin / a packet / a slice
+ein Liter <> a litre
+der Meter / der Kilometer <> metre / kilometre
+die Sache (-n) / das Ding (-e) <> thing
+die Art (-en) <> type, kind; way
+der Teil (-e) <> part
+der Grund (Gründe) <> reason
+die Idee (-n) <> idea
+das Beispiel (-e) <> example
+der Fehler (-) <> mistake
+die Wahrheit <> truth
+die Lüge (-n) <> lie
+das Glück <> luck, happiness
+das Pech <> bad luck
+Ich hatte Glück / Pech. <> I was lucky / unlucky.
+## Higher-tier words
+die Ahnung <> idea, notion (Keine Ahnung! = No idea!)
+die Absicht (-en) <> intention
+die Auswirkung (-en) <> effect, impact
+die Ursache (-n) <> cause
+die Wirkung (-en) <> effect
+die Lage <> situation, position
+die Situation (-en) <> situation
+die Entscheidung (-en) <> decision
+die Herausforderung (-en) <> challenge
+die Gelegenheit (-en) <> opportunity
+die Voraussetzung (-en) <> requirement, prerequisite
+die Fähigkeit (-en) <> ability, skill
+die Kenntnisse (pl) <> knowledge
+die Hoffnung (-en) <> hope
+der Wunsch (Wünsche) <> wish
+der Traum (Träume) <> dream
+träumen (von) <> to dream (of)
+die Zufriedenheit <> contentment
+die Einstellung (-en) <> attitude
+die Gewohnheit (-en) <> habit
+der Vorschlag (Vorschläge) <> suggestion
+vorschlagen <> to suggest
+die Ansicht (-en) <> view, opinion
+die Behauptung (-en) <> claim
+behaupten <> to claim, maintain
+der Zweifel (-) <> doubt
+zweifeln (an + dat) <> to doubt
+die Bedeutung (-en) <> meaning, significance
+bedeuten <> to mean
+beschreiben <> to describe
+die Beschreibung (-en) <> description
+vergleichen <> to compare
+der Vergleich (-e) <> comparison
+erwähnen <> to mention
+diskutieren <> to discuss
+die Diskussion (-en) <> discussion
+überzeugen <> to convince
+überzeugt <> convinced
+beweisen <> to prove
+erwarten <> to expect
+die Erwartung (-en) <> expectation
+verlangen <> to demand
+fordern <> to demand
+anbieten <> to offer
+das Angebot (-e) <> offer
+ablehnen <> to reject, turn down
+annehmen <> to accept; to assume
+akzeptieren <> to accept
+sich gewöhnen (an + acc) <> to get used (to)
+sich verlassen (auf + acc) <> to rely (on)
+sich befinden <> to be located
+bestehen (aus + dat) <> to consist (of)
+gehören zu <> to be part of, belong to
+betreffen <> to concern, affect
+verursachen <> to cause
+führen (zu) <> to lead (to)
+verhindern <> to prevent
+fördern <> to promote, support
+erhöhen <> to raise, increase
+sinken <> to fall, sink
+sich verbessern <> to improve, get better
+sich verschlechtern <> to get worse
+sich entwickeln <> to develop
+gründen <> to found, set up
+leiten <> to lead, manage
+herstellen <> to produce, manufacture
+liefern <> to deliver, supply
+die Ware (-n) <> goods
+die Wirtschaft <> economy
+der Fortschritt (-e) <> progress
+der Nutzen <> benefit
+der Schaden (Schäden) <> damage
+heutzutage <> nowadays
+zur Zeit / zurzeit <> at the moment
+in letzter Zeit <> lately
+ab sofort <> from now on
+vorhin <> just now, earlier
+künftig / zukünftig <> in future, future
+früher oder später <> sooner or later
+allerdings <> however, though
+jedoch <> however
+dennoch <> nevertheless
+außer (+ dat) <> except (for)
+ohne Zweifel <> without doubt
+auf jeden Fall <> definitely, in any case
+auf keinen Fall <> on no account, definitely not
+zum Glück / glücklicherweise <> luckily, fortunately
+unglücklicherweise <> unfortunately
+offensichtlich <> obviously
+eindeutig <> clearly, unambiguously
+ausreichend <> sufficient
+dringend <> urgent(ly)
+ehemalig <> former
+gesamt <> entire, total
+heftig <> violent, intense
+selbstverständlich <> of course, obviously
+überhaupt nicht <> not at all
+vor allem <> above all
+unter anderem <> among other things
+im Allgemeinen <> in general
+im Moment <> at the moment
 
 # Key phrases – opinions and exam phrases
 Ich finde, dass … <> I think that … (verb to the end)
@@ -504,3 +2352,111 @@ How long are the AQA speaking exam timings? :: Foundation about 7–9 minutes; H
 What four skills are tested in AQA GCSE German? :: Listening, speaking, reading and writing – each worth 25%; includes dictation (listening) and translation (reading/writing)
 What is the dictation task in the listening exam? :: You hear short sentences and write them down in German – tests spelling and sound–symbol links
 What are key German sound–spelling rules for dictation? :: ei = "eye" (mein), ie = "ee" (Liebe), eu/äu = "oy" (heute), w = "v", v = "f", z = "ts", sch = "sh", ß = ss, ch after a/o/u is throaty
+## Opinions and justifications
+Ich mag … / Ich mag … nicht. <> I like … / I don't like …
+Ich liebe … / Ich hasse … <> I love … / I hate …
+Ich finde es … <> I find it …
+Ich denke, dass … <> I think that …
+Ich meine, dass … <> I think / reckon that …
+Meiner Ansicht nach … <> In my view …
+Für mich ist … <> For me … is …
+Ich halte … für … <> I consider … to be …
+Was hältst du von …? <> What do you think of …?
+Was ist deine Meinung zu …? <> What's your opinion on …?
+Wie findest du …? <> What do you think of …? / How do you find …?
+Ich bin dafür / dagegen. <> I am for it / against it.
+Da hast du recht. <> You're right there.
+Das stimmt (nicht). <> That's (not) true.
+Ich bin (nicht) deiner Meinung. <> I (don't) agree with you.
+Das ist mir wichtig. <> That's important to me.
+Ich hätte lieber … <> I would rather have …
+Ich würde lieber … <> I would rather …
+Am liebsten würde ich … <> Most of all I would like to …
+Es gefällt mir (nicht), weil … <> I (don't) like it because …
+Es lohnt sich. <> It's worth it.
+Es ist Zeitverschwendung. <> It's a waste of time.
+Es hängt davon ab. <> It depends.
+Das Problem ist, dass … <> The problem is that …
+Der Vorteil / Nachteil ist, dass … <> The advantage / disadvantage is that …
+Ein Grund dafür ist, dass … <> One reason for this is that …
+Es ist wichtig, … zu … <> It is important to …
+Man muss bedenken, dass … <> One must consider that …
+Ich hoffe, dass … <> I hope that …
+Ich bin sicher, dass … <> I am sure that …
+Es ist schade, dass … <> It's a shame that …
+Ich bin froh, dass … <> I'm glad that …
+Es überrascht mich, dass … <> It surprises me that …
+Wenn ich ehrlich bin, … <> To be honest …
+Ehrlich gesagt … <> Honestly …
+Zum Schluss / Abschließend … <> In conclusion …
+Alles in allem … <> All in all …
+Im Großen und Ganzen … <> On the whole …
+Ich muss zugeben, dass … <> I have to admit that …
+im Gegensatz zu … <> in contrast to …
+im Vergleich zu … <> compared with …
+## Speaking exam – role-play and conversation
+What are the key tips for the AQA role-play? :: Five prompts (in English) – cover every one in a full German sentence with a verb ;; At least one prompt asks you to ASK a question ;; Use Sie when talking to an adult in a formal situation ;; Look out for prompts needing a past or future time frame ;; Keep answers short, clear and accurate
+How do you turn a statement into a question for the role-play? :: Put the verb first (Haben Sie …? Gibt es …? Kann ich …?) or start with a question word (Wann / Wo / Wie viel / Um wie viel Uhr …?) ;; e.g. Was kostet eine Karte? Wann fährt der nächste Zug?
+Kann ich … haben? <> Can I have …?
+Haben Sie …? <> Do you have …?
+Gibt es …? <> Is there …? / Are there …?
+Darf ich …? <> May I …?
+Ich möchte gern … <> I would like …
+Ich hätte gern eine Karte für … <> I would like a ticket for …
+Ich suche … <> I'm looking for …
+Was empfehlen Sie? <> What do you recommend?
+Wie lange dauert …? <> How long does … take / last?
+Wann fängt … an? <> When does … start?
+Können Sie mir helfen? <> Can you help me?
+Ich verstehe nicht. <> I don't understand.
+Können Sie bitte langsamer sprechen? <> Can you speak more slowly, please?
+Wie sagt man … auf Deutsch? <> How do you say … in German?
+Wie schreibt man das? <> How do you spell that?
+Moment mal … / Also … / Na ja … <> Just a moment … / Well … / Well …
+Das ist eine gute Frage. <> That's a good question.
+Lass mich mal überlegen. <> Let me think.
+Und du? / Und Sie? <> And you?
+Was machst du gern in deiner Freizeit? <> What do you like doing in your free time?
+Was hast du letztes Wochenende gemacht? <> What did you do last weekend?
+Was wirst du nächstes Jahr machen? <> What will you do next year?
+Was würdest du machen, wenn …? <> What would you do if …?
+Beschreib mir … <> Describe … to me.
+Erzähl mir von … <> Tell me about …
+How can you develop a conversation answer to reach top marks? :: Answer + opinion + reason (weil / denn) + example + another tense (past / future / conditional) + a complex structure (um … zu, wenn-clause, relative clause, obwohl) ;; Aim for 3–4 sentences per question and take the initiative
+## Speaking exam – photo card and reading aloud
+Auf dem Bild / Foto gibt es … <> In the picture / photo there is / are …
+Auf der linken / rechten Seite … <> On the left / right-hand side …
+In der Mitte … <> In the middle …
+oben / unten auf dem Bild <> at the top / bottom of the picture
+Ich sehe … <> I can see …
+Es sieht so aus, als ob … <> It looks as if …
+Sie scheinen … zu … <> They seem to …
+Vielleicht sind sie … <> Perhaps they are …
+Ich glaube, sie sind auf einer Party. <> I think they are at a party.
+Sie tragen … <> They are wearing …
+Sie sehen glücklich aus. <> They look happy.
+Das Wetter scheint schön zu sein. <> The weather seems to be nice.
+What should you describe on the AQA photo card? :: Two photos – say who is in them, where they are, what they are doing, wearing, the weather and how they seem to feel ;; Use present tense, es gibt, man sieht, and give opinions ;; Then answer unprepared questions on the theme
+What are tips for the reading-aloud task? :: Pronounce every letter of a word clearly (no silent final -e: Schule = Schu-le) ;; Watch ei/ie, w/v/z, ch/sch, umlauts and long/short vowels ;; Stress compound words on the first part ;; Read at a steady pace, then answer follow-up questions in full sentences
+How are ä, ö, ü pronounced? :: ä like "e" in "bed" (Mädchen); ö like "ur" in "fur" with rounded lips (schön); ü like "ee" with rounded lips (über)
+How are final b, d, g and -ig pronounced? :: Final b → p, d → t, g → k (gelb, Hund, Tag) ;; -ig → like "ich" (ruhig, lustig)
+How are sp, st and j pronounced? :: sp/st at the start of a word/syllable → "shp"/"sht" (Sport, Stadt, verstehen) ;; j → "y" (ja, Jahr)
+How is the German r pronounced? :: Gargled in the throat at the start of a syllable (rot, Brot) ;; Vocalised like "uh" at the end (Lehrer, Bruder, hier)
+## Writing and translation
+What are tips for the AQA writing tasks? :: Cover EVERY bullet point ;; Use a range of tenses (past, present, future, conditional) and give and justify opinions ;; Include complex structures (subordinate clauses, um … zu, relative clauses, comparatives, modal verbs) ;; Check verb position, genders, cases and adjective endings
+What are tips for translating into German? :: Translate meaning, not word for word ;; Check verb second / verb to the end, tense and auxiliary (haben/sein) ;; Check every noun has a capital letter and correct article/case ;; Watch false friends and don't leave gaps – a near-synonym scores more than nothing
+What are tips for translating into English? :: Translate every word including small ones (schon, auch, noch, sehr) ;; Watch the tense ;; Make the English natural ;; Watch false friends
+Name common false friends in German. :: also = so / therefore ;; bekommen = to get ;; Gift = poison ;; Handy = mobile ;; Rente = pension ;; aktuell = current ;; sensibel = sensitive ;; Chef = boss ;; fast = almost ;; wer = who ;; wo = where ;; will = want(s)
+Which capital-letter rule applies to German nouns? :: All nouns start with a capital letter, including verbs used as nouns (das Lesen) and adjectives used as nouns (etwas Gutes) ;; Sie (formal you) is also capitalised
+How do you write a date at the top of a letter or email? :: Berlin, den 3. Mai 2026 (or: Berlin, 03.05.2026)
+## Exam rubric words
+Beantworte die Fragen. <> Answer the questions.
+Lies den Text. <> Read the text.
+Hör zu. <> Listen.
+Schreib … Wörter. <> Write … words.
+Füll die Lücken aus. <> Fill in the gaps.
+Wähle die richtige Antwort. <> Choose the correct answer.
+Kreuze an. <> Tick / put a cross.
+richtig / falsch / nicht im Text <> true / false / not in the text
+Übersetze ins Deutsche / ins Englische. <> Translate into German / into English.
+Ergänze die Sätze. <> Complete the sentences.
