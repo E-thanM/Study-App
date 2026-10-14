@@ -20,7 +20,6 @@ What is the stopping distance of a vehicle? :: Thinking distance + braking dista
 Give factors affecting thinking distance. :: Speed; reaction time (tiredness, alcohol, drugs, distractions)
 Give factors affecting braking distance. :: Speed, mass, condition of brakes and tyres, road surface (wet/icy)
 Describe the motion of a falling object reaching terminal velocity. :: Initially accelerates at g; air resistance increases with speed; eventually air resistance = weight, resultant force zero, constant (terminal) velocity
-Describe an experiment to investigate the motion of falling objects. :: Drop e.g. cupcake cases from a height and use light gates/video to measure speed over time, or time falls with different numbers of cases
 What is Hooke's law? :: The extension of a spring is directly proportional to the force applied, provided the limit of proportionality is not exceeded
 Describe how to investigate extension of a spring. :: Hang masses on a spring, measure extension with a ruler (at eye level) each time, plot force vs extension – straight line through origin up to the limit of proportionality
 What is elastic behaviour? :: An object returns to its original shape when the force is removed
@@ -35,9 +34,6 @@ What is the centre of gravity? :: The point through which the weight of an objec
 How do upward forces on a beam change as a weight moves along it? :: The support nearer the weight carries a larger upward force
 ## 1a Units
 What is the SI unit of gravitational field strength? :: newton per kilogram (N/kg)
-C: The unit of acceleration is {{c1::metres per second squared (m/s²)}}.
-C: The unit of momentum is the {{c1::kilogram metre per second (kg m/s)}}.
-C: The unit of force is the {{c1::newton (N)}}; the unit of mass is the {{c2::kilogram (kg)}}.
 How do you convert a speed in km/h to m/s? :: Divide by 3.6 (multiply by 1000 to get metres, divide by 3600 to get seconds) ;; e.g. 72 km/h = **20 m/s**
 How do you convert grams to kilograms? :: Divide by 1000 ;; e.g. 250 g = **0.25 kg**
 ## 1b Movement and position
@@ -47,12 +43,10 @@ What does a steeper straight line on a distance–time graph show? :: A greater 
 What does a curve that gets steeper on a distance–time graph show? :: The object is accelerating (its speed is increasing)
 What does a curve that gets less steep on a distance–time graph show? :: The object is decelerating (its speed is decreasing)
 How do you find the speed at one instant from a curved distance–time graph? :: Draw a tangent to the curve at that point and calculate its gradient
-How do you calculate the gradient of a straight-line graph? :: gradient = change in y ÷ change in x (rise ÷ run), using a large triangle
 What does a horizontal line on a velocity–time graph show? :: Constant velocity (zero acceleration)
 What does a straight line sloping upwards on a velocity–time graph show? :: Constant (uniform) acceleration
 What does a straight line sloping downwards on a velocity–time graph show? :: Constant deceleration
 What does a line along the time axis (v = 0) on a velocity–time graph show? :: The object is stationary
-C: The {{c1::gradient}} of a velocity–time graph gives the acceleration; the {{c2::area under}} the graph gives the distance travelled.
 How do you find the distance travelled from a velocity–time graph made of straight lines? :: Split the area under the line into rectangles and triangles and add their areas ;; triangle = ½ × base × height
 How do you work out the average speed for a whole journey? :: Total distance ÷ total time (including any time spent stopped)
 What is deceleration? :: Negative acceleration – the velocity decreases with time
@@ -64,8 +58,6 @@ Calculate: a car accelerates from 5 m/s to 25 m/s in 4 s. What is its accelerati
 Calculate: a train travels 1.2 km in 1 minute. What is its average speed? :: Convert first: 1200 m ÷ 60 s = **20 m/s**
 Calculate: a runner moves at 8 m/s for 25 s. How far does she run? :: distance = speed × time = 8 × 25 = **200 m**
 Calculate: a ball is dropped from rest and falls 20 m. What speed does it reach (g = 10 m/s², ignore air resistance)? :: v² = u² + 2as = 0 + 2 × 10 × 20 = 400 ;; v = √400 = **20 m/s**
-Calculate: a car braking from 20 m/s to rest decelerates at 5 m/s². How far does it travel while braking? :: s = (v² − u²) ÷ 2a = (0 − 400) ÷ (2 × −5) = **40 m**
-Calculate: a car brakes from 30 m/s to 10 m/s in 5 s. What is its acceleration? :: a = (10 − 30) ÷ 5 = **−4 m/s²** (a deceleration of 4 m/s²)
 Calculate: a velocity–time graph rises in a straight line from 0 to 12 m/s in 6 s. How far does the object travel? :: Area of triangle = ½ × 6 × 12 = **36 m**
 ## 1b Practical: motion of everyday objects
 Describe how to investigate the motion of a toy car rolling down a ramp. :: Mark a start line and measure the distance to a finish line ;; Release the car from rest at the start line (don't push it) ;; Time it with a stopwatch or light gates ;; speed = distance ÷ time ;; Repeat and take a mean, then change the ramp height
@@ -79,7 +71,6 @@ How can you use measurements of a toy car at two light gates to find its acceler
 What effects can forces have on a body? :: They can change its speed, its direction of motion or its shape
 Name some types of force. :: Gravitational (weight), electrostatic, magnetic, friction, air resistance (drag), tension, upthrust, normal contact (reaction) force
 Which forces act at a distance (non-contact forces)? :: Gravitational, electrostatic and magnetic forces
-Why is force a vector quantity? :: It has both a size (magnitude) and a direction
 How do you find the resultant of two forces acting in the same direction along a line? :: Add them together
 How do you find the resultant of two forces acting in opposite directions along a line? :: Subtract the smaller from the larger; the resultant acts in the direction of the larger force
 Calculate: a car has a driving force of 5000 N forwards and drag plus friction of 3500 N backwards. What is the resultant force? :: 5000 − 3500 = **1500 N forwards**
@@ -89,7 +80,6 @@ What is the difference between mass and weight? :: **Mass** – the amount of ma
 What is gravitational field strength? :: The gravitational force (weight) acting per kilogram of mass, measured in N/kg
 Calculate: what is the weight of a 60 kg person on Earth (g = 10 N/kg)? :: W = m × g = 60 × 10 = **600 N**
 Calculate: a 1200 kg car has a resultant force of 3000 N on it. What is its acceleration? :: a = F ÷ m = 3000 ÷ 1200 = **2.5 m/s²**
-Calculate: what resultant force is needed to accelerate a 0.5 kg ball at 4 m/s²? :: F = m × a = 0.5 × 4 = **2 N**
 What energy transfer happens when friction acts on a moving object? :: Kinetic energy is transferred to thermal energy, heating the surfaces
 How does air resistance (drag) change as an object moves faster? :: It increases
 ## 1c Stopping distances
@@ -119,10 +109,8 @@ Describe the force–extension graph for a metal wire. :: A straight line throug
 Describe the force–extension graph for a rubber band. :: A curve – rubber does not obey Hooke's law (extension is not proportional to force), but it still returns to about its original length when unloaded
 Why is a long wire used when investigating the extension of a metal wire? :: The extension of a metal wire is very small; a longer wire gives a larger, more measurable extension
 In the spring extension practical, name the independent, dependent and control variables. :: **Independent:** force (weight of masses added) ;; **Dependent:** extension ;; **Control:** the same spring, temperature, how the masses are added
-What weight does a 100 g slotted mass have on Earth? :: 0.1 kg × 10 N/kg = **1 N**
 How can you make length readings more accurate in the spring practical? :: Clamp a ruler vertically next to the spring, use a fixed pointer on the bottom of the spring and read at eye level to avoid parallax error
 Give safety precautions for the spring and wire practicals. :: Wear eye protection (spring or wire may snap) ;; Clamp the stand to the bench so it can't topple ;; Keep feet away from under the masses
-How do you get the extension from your spring length readings? :: Subtract the original (unloaded) length from each loaded length
 ## 1c Momentum (Paper 2)
 C: Momentum is a {{c1::vector}} quantity – it has size and direction.
 Calculate: what is the momentum of a 1500 kg car travelling at 20 m/s? :: p = m × v = 1500 × 20 = **30 000 kg m/s**
@@ -131,7 +119,6 @@ Calculate: a 2 kg trolley moving at 3 m/s hits and sticks to a stationary 1 kg t
 Calculate: a 3 kg gun fires a 0.01 kg bullet at 300 m/s. What is the recoil velocity of the gun? :: Momentum before = 0, so the momenta after are equal and opposite ;; bullet: 0.01 × 300 = 3 kg m/s ;; gun: v = 3 ÷ 3 = **1 m/s backwards**
 What is the total momentum of a system before an explosion if everything starts at rest? :: Zero – so the parts move off with equal and opposite momenta
 Write the force and momentum equation using mass and velocities. :: F = (mv − mu) ÷ t ;; force = change in momentum ÷ time taken
-C: Force equals the {{c1::rate of change of momentum}}.
 Calculate: a 0.5 kg ball at rest is kicked and leaves the foot at 20 m/s after 0.05 s of contact. What is the average force? :: F = (mv − mu) ÷ t = (0.5 × 20 − 0) ÷ 0.05 = **200 N**
 Explain (4 marks) how a crumple zone reduces injury in a crash. :: The crumple zone deforms on impact ;; This increases the time taken for the car and passengers to stop ;; The change in momentum is the same ;; So the rate of change of momentum is smaller and the force on the passengers is smaller (F = change in momentum ÷ time)
 Give other safety features that work by increasing the time for a change in momentum. :: Cycle and motorcycle helmets, crash mats, soft playground surfaces, padded gloves, bending your knees when landing
@@ -139,7 +126,6 @@ Give other safety features that work by increasing the time for a change in mome
 What are the features of a Newton's third law force pair? :: Equal in size ;; Opposite in direction ;; Same type of force ;; Act on **different** objects
 A book rests on a table. What is the Newton's third law partner of the book's weight? :: The gravitational pull of the book on the Earth (acting upwards on the Earth)
 Why are a book's weight and the table's upward push on it NOT a Newton's third law pair? :: They act on the same object (the book) and are different types of force
-How does Newton's third law explain how a swimmer moves forward? :: The swimmer pushes the water backwards; the water pushes the swimmer forwards with an equal and opposite force
 How does Newton's third law explain the recoil of a gun? :: The gun pushes the bullet forwards; the bullet pushes the gun backwards with an equal force
 ## 1c Moments and centre of gravity
 What is the unit of a moment? :: newton metre (N m)
@@ -151,7 +137,6 @@ Where is the centre of gravity of a uniform beam or ruler? :: At its midpoint
 Describe how to find the centre of gravity of an irregular flat shape (lamina). :: Hang it from a pin so it swings freely ;; Hang a plumb line from the pin and draw along it ;; Repeat from a different hole ;; The centre of gravity is where the lines cross
 Calculate: a light 4 m beam rests on supports at each end, A and B. A 1000 N load is 1 m from A. Find the upward force at each support. :: Moments about A: F(B) × 4 = 1000 × 1, so F(B) = **250 N** ;; Upward forces = downward forces, so F(A) = 1000 − 250 = **750 N**
 How do you find the upward forces on a beam supported at both ends? :: Take moments about one support to find the force at the other ;; Then use total upward force = total downward force
-C: Moment = force × {{c1::perpendicular distance}} from the {{c2::pivot}}.
 ## 1c Practical: forces on falling objects
 Describe an experiment to investigate the forces acting on falling objects such as paper parachutes or sycamore seeds. :: Drop the object from a fixed, measured height ;; Time the fall with a stopwatch, light gates or video ;; Change one variable (e.g. canopy area, or mass by adding paper clips) and keep the rest the same ;; Repeat each drop and take a mean ;; average speed = height ÷ time
 In a paper parachute practical, how does a larger canopy area affect the fall? :: More air resistance at a given speed, so a lower terminal velocity and a longer fall time
@@ -160,33 +145,20 @@ Why is a large drop height useful in falling-object experiments? :: The fall tim
 ## 1c Stopping distance calculations
 How do you calculate thinking distance? :: thinking distance = speed × reaction time ;; e.g. 20 m/s × 0.7 s = **14 m**
 Calculate: a car at 20 m/s has a thinking distance of 14 m and a braking distance of 40 m. What is the stopping distance? :: stopping distance = thinking + braking = 14 + 40 = **54 m**
-C: Stopping distance = {{c1::thinking distance}} + {{c2::braking distance}}.
-Does a wet road affect thinking distance or braking distance? :: Braking distance only – reaction time is unchanged
-Does a heavily loaded car affect thinking distance or braking distance? :: Braking distance – a larger mass gives a smaller deceleration for the same braking force
 ## 1c More momentum and Newton's third law
 What is a closed system in momentum questions? :: A system on which no external forces act, so total momentum is conserved
-Calculate: a 1 kg trolley at 4 m/s hits a stationary 3 kg trolley and rebounds at 2 m/s. What is the velocity of the 3 kg trolley? :: Momentum before = 1 × 4 = 4 kg m/s ;; After: 1 × (−2) + 3v = 4 ;; 3v = 6, v = **2 m/s** forwards
-Calculate: what is the change in momentum when a 0.2 kg ball travelling at 10 m/s is stopped? :: Δp = m × (v − u) = 0.2 × (0 − 10) = **−2 kg m/s** (magnitude 2 kg m/s)
-Calculate: a 70 kg passenger moving at 15 m/s is stopped by a seat belt in 0.5 s. What is the average force? :: F = (mv − mu) ÷ t = (0 − 70 × 15) ÷ 0.5 = **−2100 N** (2100 N backwards)
-Explain (3 marks) why an egg dropped onto a cushion does not break but one dropped onto a hard floor does. :: The cushion increases the time taken for the egg to stop ;; The change in momentum is the same ;; So the rate of change of momentum, and the force on the egg, is smaller
 How does Newton's third law explain how a rocket accelerates? :: The rocket pushes exhaust gases backwards; the gases push the rocket forwards with an equal and opposite force
 ## 1c More moments
 Why does a crane have a counterweight? :: It provides a moment on the other side of the pivot to balance the moment of the load, so the crane does not topple
-Why does an object topple? :: Its centre of gravity moves outside its base, so its weight gives a moment that turns it over
-How can you make an object more stable? :: Give it a wider base and a lower centre of gravity
-Calculate: a uniform 1 m ruler is pivoted at its 50 cm mark. A 2 N weight hangs at the 10 cm mark. Where must a 4 N weight hang to balance it? :: Anticlockwise moment = 2 × 0.40 = 0.8 N m ;; 4 × d = 0.8, d = 0.20 m ;; so at the **70 cm mark**
 
 # 2 Electricity
 What is the difference between AC and DC? :: AC – direction of current continually reverses (mains); DC – flows in one direction only (cells/batteries)
 What is the UK mains supply? :: 230 V AC, 50 Hz
-What does the earth wire do? :: Connects metal case to earth – if the live wire touches the case, a large current flows to earth and blows the fuse
 How does a fuse work? :: Thin wire that melts if current is too high, breaking the circuit
 How does a circuit breaker work? :: Switch that trips (opens) when the current is too large; can be reset
-Why do appliances with plastic cases not need an earth wire? :: They are double insulated
 Why does current cause heating? :: Electrons collide with ions in the wire, transferring energy which heats it
 Write the equation for power using current and voltage. :: power = current × voltage ;; P = I × V
 Write the equation for energy transferred using current, voltage and time. :: energy transferred = current × voltage × time ;; E = I × V × t
-Why are lights in houses connected in parallel? :: Each gets the full voltage; can be switched independently; if one breaks the others stay on
 How does current vary with voltage for a resistor, filament lamp and diode? :: Resistor – straight line (constant R) ;; Filament lamp – curve; resistance increases as it gets hotter ;; Diode – current flows in one direction only
 How does the resistance of an LDR change? :: Decreases as light intensity increases
 How does the resistance of a thermistor change? :: Decreases as temperature increases (NTC)
@@ -199,9 +171,7 @@ What carries current in metals? :: Negatively charged electrons
 What is voltage (potential difference)? :: The energy transferred per unit charge passed
 Write the equation linking energy, charge and voltage. :: energy transferred = charge × voltage ;; E = Q × V
 Describe how to investigate how current varies with voltage for a component. :: Set up circuit with ammeter in series and voltmeter in parallel, use variable resistor to change V; record I; reverse the supply for negative values; plot I–V graph
-How do insulators become charged by friction? :: Electrons are transferred from one material to another – the one gaining electrons becomes negative
 How do you test if an object is charged? :: Bring it near small pieces of paper or a charged rod – attraction/repulsion
-Give dangers and uses of electrostatic charges. :: Dangers: sparks igniting fuel (refuelling aircraft), lightning ;; Uses: inkjet printers, photocopiers, paint spraying
 ## 2a Units
 C: The unit of electric charge is the {{c1::coulomb (C)}}.
 C: The unit of resistance is the {{c1::ohm (Ω)}}.
@@ -224,7 +194,6 @@ Give domestic uses of the heating effect of a current. :: Kettles, toasters, ele
 Why is the heating effect of current sometimes a disadvantage? :: Energy is wasted as heat in cables and in devices such as computers and chargers
 Calculate: a 230 V kettle draws 8 A. What is its power? :: P = I × V = 8 × 230 = **1840 W**
 Calculate: a 12 V heater draws 2 A for 5 minutes. How much energy is transferred? :: Convert: t = 5 × 60 = 300 s ;; E = I × V × t = 2 × 12 × 300 = **7200 J**
-Calculate: what current does a 60 W lamp draw from a 230 V supply? :: I = P ÷ V = 60 ÷ 230 = **0.26 A** (2 s.f.)
 Why must time be in seconds when using E = I × V × t? :: The joule is a watt × second, so energy comes out in joules only if time is in seconds
 ## 2c Series and parallel circuits
 Why is a parallel circuit better than a series circuit for house lighting? :: Each lamp gets the full mains voltage ;; Each can be switched on and off independently ;; If one lamp fails the others stay on
@@ -239,7 +208,6 @@ Calculate: a 4 Ω and an 8 Ω resistor are in series with a 6 V battery. Find th
 Calculate: two branches in parallel carry 0.3 A and 0.5 A. What current flows from the supply? :: 0.3 + 0.5 = **0.8 A**
 How should an ammeter and a voltmeter be connected in a circuit? :: Ammeter – in series with the component ;; Voltmeter – in parallel across the component
 ## 2c Resistance and components
-Calculate: what is the voltage across a 4 Ω resistor carrying 3 A? :: V = I × R = 3 × 4 = **12 V**
 Calculate: a component has 6 V across it and 0.2 A through it. What is its resistance? :: R = V ÷ I = 6 ÷ 0.2 = **30 Ω**
 What is the effect of increasing resistance on the current (for the same voltage)? :: The current decreases
 Describe the I–V graph for a wire or resistor at constant temperature. :: A straight line through the origin – current is directly proportional to voltage (constant resistance)
@@ -256,11 +224,7 @@ In the I–V practical, name the independent and dependent variables. :: **Indep
 Give a safety precaution for the filament lamp I–V practical. :: Don't touch the lamp – it gets hot; keep currents low and switch off between readings
 ## 2c Charge, current and energy
 Calculate: a current of 2 A flows for 1 minute. How much charge flows? :: Q = I × t = 2 × 60 = **120 C**
-Calculate: how much charge flows when 3 A flows for 2 hours? :: t = 2 × 3600 = 7200 s ;; Q = 3 × 7200 = **21 600 C**
 Calculate: 5 C of charge passes through a 12 V battery. How much energy is transferred? :: E = Q × V = 5 × 12 = **60 J**
-Calculate: 900 J of energy is transferred when 30 C flows through a lamp. What is the voltage across it? :: V = E ÷ Q = 900 ÷ 30 = **30 V**
-C: Voltage is the {{c1::energy transferred per unit charge}} passed.
-Why is an electric current in a metal a flow of electrons, not protons? :: Protons are fixed in the nuclei of the metal ions; only the free (delocalised) electrons can move
 ## 2d Electric charge (Paper 2)
 Name common electrical conductors. :: Metals (e.g. copper, aluminium) and graphite (carbon)
 Name common electrical insulators. :: Plastics (e.g. polythene, PVC), rubber, glass, dry wood
@@ -277,7 +241,6 @@ How is the danger of sparks reduced when refuelling aircraft? :: The aircraft an
 Explain how a photocopier uses electrostatic charge. :: A drum is charged ;; An image of the page is projected onto it – light areas lose their charge ;; Black toner powder is attracted to the charged (dark) areas ;; The toner is transferred to paper and heated to fix it
 Explain how an inkjet printer uses electrostatic charge. :: Tiny ink droplets are given a charge ;; They pass between charged deflecting plates ;; The plates attract or repel them so they land in the right place on the paper
 Explain how electrostatic paint spraying works. :: Paint droplets get the same charge, so they repel and form a fine spray ;; The object is given the opposite charge, so it attracts the paint ;; Gives an even coat, reaches hidden areas and wastes less paint
-C: Electrostatic effects are explained by the movement of {{c1::electrons}} – positive charges do not move.
 ## 2b Electrical hazards
 Name common electrical hazards in the home. :: Frayed cables ;; Long cables (trip hazard, easily damaged) ;; Damaged plugs ;; Water around sockets ;; Pushing metal objects into sockets
 Why is a frayed cable dangerous? :: The live wire may be exposed – touching it gives an electric shock, and it could cause a short circuit or fire
@@ -287,34 +250,22 @@ Why are long trailing cables a hazard? :: People can trip over them, and they ar
 ## 2b AC and DC
 Describe the voltage–time graph of a DC supply from a cell. :: A horizontal straight line – the voltage is constant and in one direction
 Describe the voltage–time graph of an AC supply. :: A wave (sine curve) that goes above and below zero – the voltage repeatedly reverses direction
-C: The current from cells and batteries is {{c1::direct current (DC)}}; mains electricity is {{c2::alternating current (AC)}}.
 ## 2c More circuit components
 What is an LED? :: A light-emitting diode – it gives out light when current flows through it in the forward direction only
 Why are LEDs used rather than filament lamps as indicators? :: They use much less power, waste less energy as heat and last longer
 A thermistor is in series with a fixed resistor. What happens to the current when the temperature rises? :: The thermistor's resistance falls, so the total resistance falls and the current increases
 An LDR is in series with a lamp. What happens to the lamp when the room gets darker? :: The LDR's resistance increases, so the current falls and the lamp gets dimmer
 Describe the I–V graph for a filament lamp. :: An S-shaped curve through the origin that gets less steep at higher voltages (current increases less) – resistance increases as the filament heats up ;; Same shape for negative voltages
-Calculate: a 6 Ω and a 3 Ω resistor are in series. The current is 0.5 A. What is the supply voltage? :: Total R = 6 + 3 = 9 Ω ;; V = I × R = 0.5 × 9 = **4.5 V**
-Calculate: two resistors are in series with a 12 V supply. The voltage across one is 8 V. What is the voltage across the other? :: The voltages add up to the supply: 12 − 8 = **4 V**
-Two identical lamps are connected in parallel to a 6 V battery. What is the voltage across each? :: **6 V** – the voltage across components in parallel is the same as the supply
-Explain (3 marks) why the current through a resistor causes it to heat up. :: Electrons flow through the metal and collide with the vibrating ions (lattice) ;; Energy is transferred to the ions, which vibrate more ;; So the temperature of the resistor increases
 
 # 3 Waves
 What is the difference between transverse and longitudinal waves? :: Transverse – vibrations perpendicular to direction of energy transfer (light, water) ;; Longitudinal – vibrations parallel (sound), with compressions and rarefactions
-Define amplitude, wavefront, frequency, wavelength and period. :: Amplitude – max displacement from rest ;; Wavefront – line joining points in phase ;; Frequency – waves per second (Hz) ;; Wavelength – distance between adjacent crests ;; Period – time for one wave
 Write the wave speed equation. :: wave speed = frequency × wavelength ;; v = f × λ
 Write the equation linking frequency and period. :: frequency = 1 ÷ time period ;; f = 1/T
 What do waves transfer? :: Energy and information, without transferring matter
 What is the Doppler effect? :: When a wave source moves, waves are compressed in front (higher frequency) and stretched behind (lower frequency)
-What happens when waves are reflected and refracted? :: Reflection – bounce off a surface ;; Refraction – change speed and direction when entering a different medium
 List the electromagnetic spectrum in order of increasing frequency. :: Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays
 What do all EM waves have in common? :: Transverse; travel at the same speed in a vacuum (3 × 10⁸ m/s)
-Uses of radio waves and microwaves? :: Radio – broadcasting, communications ;; Microwaves – cooking, satellite transmissions
-Uses of infrared and visible light? :: Infrared – heaters, night vision, remote controls ;; Visible – optical fibres, photography
-Uses of UV, X-rays and gamma rays? :: UV – fluorescent lamps, sterilising, security marking ;; X-rays – medical imaging, airport security ;; Gamma – sterilising food and equipment, cancer treatment
-Give the dangers of microwaves, infrared, UV and X/gamma rays. :: Microwaves – internal heating of body tissue ;; Infrared – skin burns ;; UV – damage to surface cells, eyes, skin cancer ;; X-rays and gamma – cell mutation, cancer
 State the law of reflection. :: Angle of incidence = angle of reflection
-Describe an experiment to investigate refraction in a glass block. :: Shine a ray box through a rectangular glass block, trace incident and emergent rays, draw normal, measure angles i and r with a protractor
 Write the equation for refractive index. :: n = sin i ÷ sin r
 What is total internal reflection? :: When light travels from a denser medium and the angle of incidence exceeds the critical angle, all the light is reflected
 Write the equation for the critical angle. :: sin c = 1 ÷ n
@@ -322,11 +273,8 @@ Give uses of total internal reflection. :: Optical fibres (communications, endos
 What is the frequency range of human hearing? :: 20 Hz to 20 000 Hz
 How does the pitch and loudness of a sound relate to the wave? :: Higher frequency → higher pitch ;; Larger amplitude → louder
 Describe how to measure the speed of sound in air. :: Two people a measured distance apart (e.g. 100 m): one makes a loud bang, the other times between seeing and hearing; speed = distance ÷ time ;; or use two microphones and an oscilloscope
-How do you use an oscilloscope to find the frequency of a sound? :: Measure the time period from the trace (divisions × timebase), then f = 1/T
 ## 3b Wave properties
 C: Frequency is measured in {{c1::hertz (Hz)}}, wavelength in {{c2::metres (m)}} and time period in {{c3::seconds (s)}}.
-C: In a transverse wave the vibrations are {{c1::perpendicular}} to the direction of energy transfer.
-C: In a longitudinal wave the vibrations are {{c1::parallel}} to the direction of energy transfer.
 Give examples of transverse waves. :: All electromagnetic waves (e.g. light), ripples on water, waves on a string, seismic S-waves
 Give examples of longitudinal waves. :: Sound waves, ultrasound, seismic P-waves
 What are compressions and rarefactions? :: **Compression** – region where particles are pushed close together ;; **Rarefaction** – region where particles are spread apart
@@ -338,7 +286,6 @@ C: A wavefront is a line joining points on a wave that are {{c1::in phase}}, e.g
 Calculate: a wave has a frequency of 50 Hz and a wavelength of 0.4 m. What is its speed? :: v = f × λ = 50 × 0.4 = **20 m/s**
 Calculate: a radio station broadcasts at 100 MHz. What is the wavelength (c = 3 × 10⁸ m/s)? :: λ = v ÷ f = 3 × 10⁸ ÷ 1 × 10⁸ = **3 m**
 Calculate: a wave has a time period of 0.02 s. What is its frequency? :: f = 1 ÷ T = 1 ÷ 0.02 = **50 Hz**
-Calculate: sound travels at 340 m/s and has a wavelength of 0.68 m. What is its frequency? :: f = v ÷ λ = 340 ÷ 0.68 = **500 Hz**
 How do you find the wavelength from a diagram showing several waves? :: Measure the length of a whole number of waves and divide by the number of waves
 ## 3b Reflection, refraction and the Doppler effect
 C: All waves can be {{c1::reflected}} and {{c2::refracted}}.
@@ -348,14 +295,10 @@ Which way does a ray bend when it enters a medium where it travels faster (e.g. 
 What happens to the speed, wavelength and frequency of a wave when it slows down on entering a new medium? :: Speed decreases ;; Wavelength decreases ;; Frequency stays the same
 What happens to a ray that crosses a boundary along the normal (at 0°)? :: It changes speed but not direction
 Why do water waves refract when they pass from deep to shallow water? :: They travel more slowly in shallow water, so their wavelength decreases and they change direction
-For a source moving towards an observer, what happens to the observed wavelength and frequency? :: Wavelength decreases (waves bunched up) and frequency increases
-For a source moving away from an observer, what happens to the observed wavelength and frequency? :: Wavelength increases (waves spread out) and frequency decreases
 Explain (3 marks) why the pitch of an ambulance siren changes as it passes you. :: As it approaches, the waves are bunched up – shorter wavelength, higher frequency, higher pitch ;; As it moves away, the waves are stretched – longer wavelength, lower frequency, lower pitch ;; The speed of sound does not change
 Does the Doppler effect change the speed of the wave? :: No – only the observed frequency and wavelength change
 ## 3c Electromagnetic spectrum
 List the colours of the visible spectrum in order of increasing frequency. :: Red, orange, yellow, green, blue, indigo, violet
-Which colour of visible light has the longest wavelength? :: Red
-Which colour of visible light has the highest frequency? :: Violet
 C: Going from radio waves to gamma rays, wavelength {{c1::decreases}} and frequency {{c2::increases}}.
 C: Light is part of a {{c1::continuous}} electromagnetic spectrum; all EM waves travel at the {{c2::same speed}} in free space (a vacuum).
 Which EM waves are the most dangerous, and why? :: The highest-frequency ones (UV, X-rays, gamma rays) – they carry the most energy and are ionising
@@ -372,7 +315,6 @@ C: Excessive exposure to ultraviolet damages {{c1::surface cells and eyes}}, lea
 C: Excessive exposure to X-rays and gamma rays causes {{c1::mutation or damage to cells}} in the body.
 How do microwaves heat food? :: They are absorbed by water molecules in the food, which vibrate more, increasing the thermal energy
 How does an X-ray image of a broken bone form? :: X-rays pass through soft tissue but are absorbed by bone, so bones show up as pale shadows on the detector
-How do night-vision cameras work? :: They detect the infrared radiation emitted by warm objects such as people and animals
 ## 3d Light: reflection and ray diagrams
 C: The normal is a line drawn at {{c1::90°}} to a surface where a ray meets it.
 From where are angles of incidence, reflection and refraction measured? :: From the normal (not from the surface)
@@ -400,7 +342,6 @@ What happens to light that hits a glass–air boundary at exactly the critical a
 Explain how an optical fibre transmits information. :: Light enters one end of the glass fibre ;; It hits the inside surface at an angle greater than the critical angle ;; It is totally internally reflected again and again ;; So it travels along the fibre, even round bends, carrying the signal
 How does a 45° prism turn a ray through 90° in a periscope? :: The ray enters a short face at 90° (no refraction) ;; It hits the long face at 45°, which is more than the critical angle (about 42°) ;; It is totally internally reflected through 90°
 How can a prism turn light through 180° (e.g. binoculars, bicycle reflectors)? :: The light is totally internally reflected twice, at two faces, each turning it through 90°
-Why are prisms better than mirrors in periscopes? :: Total internal reflection reflects all the light, giving a brighter image with no double images, and prisms don't tarnish
 ## 3d Sound
 C: Sound waves are {{c1::longitudinal}} waves that can be reflected and refracted.
 Why can't sound travel through a vacuum? :: Sound needs particles (a medium) to vibrate and pass on the wave
@@ -416,19 +357,12 @@ Describe how to find the frequency of a sound using an oscilloscope. :: Connect 
 Calculate: one wave on an oscilloscope spans 4 divisions and the timebase is 0.5 ms/div. What is the frequency? :: T = 4 × 0.5 = 2 ms = 0.002 s ;; f = 1 ÷ 0.002 = **500 Hz**
 How does the oscilloscope trace change for a higher-pitched sound? :: More waves fit on the screen (shorter time period, higher frequency)
 How does the oscilloscope trace change for a louder sound? :: The waves are taller (larger amplitude); their spacing is unchanged
-C: The pitch of a sound depends on the {{c1::frequency}} of vibration of the source.
-C: The loudness of a sound depends on the {{c1::amplitude}} of vibration of the source.
 ## 3b More wave properties
 How can you show that water waves transfer energy but not matter? :: A floating cork bobs up and down as waves pass but does not move along with the waves
-C: Angles in ray diagrams are measured in {{c1::degrees (°)}} from the {{c2::normal}}.
 Can electromagnetic waves travel through a vacuum? :: Yes – they need no medium (that is how light reaches us from the Sun)
-Calculate: light travels at 3 × 10⁸ m/s. How long does it take to travel 1.5 × 10¹¹ m from the Sun to the Earth? :: t = distance ÷ speed = 1.5 × 10¹¹ ÷ 3 × 10⁸ = **500 s**
-Calculate: a water wave has a speed of 0.6 m/s and a wavelength of 0.15 m. What is its time period? :: f = v ÷ λ = 0.6 ÷ 0.15 = 4 Hz ;; T = 1 ÷ f = **0.25 s**
 ## 3d More light
 How do you draw a ray diagram for refraction at an air–glass boundary? :: Draw the normal at 90° where the ray meets the boundary ;; Draw the incident ray with an arrow ;; Draw the refracted ray bending towards the normal in the glass (angle r smaller than i) ;; Label i and r from the normal
 Describe the path of a ray of light through a triangular prism. :: It bends towards the normal on entering and away from the normal on leaving, so overall it is deviated towards the base (thicker part) of the prism
-Why does a semi-circular block allow you to see total internal reflection easily? :: The ray enters along a radius without bending, so you can directly control the angle of incidence at the flat glass–air face
-Calculate: the critical angle of a material is 30°. What is its refractive index (sin 30° = 0.5)? :: n = 1 ÷ sin c = 1 ÷ 0.5 = **2.0**
 How does an endoscope use optical fibres? :: One bundle of fibres carries light into the body; another bundle carries the reflected light (the image) back out by total internal reflection
 C: The larger the refractive index, the {{c1::smaller}} the critical angle.
 
@@ -454,7 +388,6 @@ Give advantages and disadvantages of wind power. :: Renewable, no pollution when
 Give advantages and disadvantages of hydroelectric power. :: Renewable, reliable, can respond quickly to demand ;; Floods valleys/habitats, expensive to build
 Give advantages and disadvantages of tidal and wave power. :: Renewable, tides predictable ;; Expensive, affects habitats, wave power unreliable
 Give advantages and disadvantages of solar power. :: Renewable, no pollution ;; Only works in daylight, low output, expensive per unit
-How does geothermal energy work? :: Hot rocks underground heat water to steam to drive turbines; only possible where hot rocks are near enough to the surface (e.g. volcanic areas)
 ## 4b Energy stores and transfers
 Describe the energy transfers in a battery-powered torch. :: Chemical store of the battery → transferred electrically → light (radiation) and thermal store of the surroundings (heating)
 Describe the energy transfer when an object falls (with air resistance). :: Gravitational potential store → kinetic store, with some transferred to the thermal store of the air and object by air resistance
@@ -462,13 +395,11 @@ Describe the energy transfer when a car brakes to a stop. :: Kinetic store of th
 Describe the energy transfer when a stretched catapult is released. :: Elastic potential store → kinetic store of the stone
 Describe the energy transfer in an electric kettle. :: Transferred electrically to the heating element → thermal store of the water (by heating), with some to the surroundings
 What usually happens to wasted energy? :: It is dissipated (spreads out) to the thermal store of the surroundings, so it becomes less useful
-C: Energy can be transferred mechanically (by {{c1::forces doing work}}), electrically, by {{c2::heating}} and by {{c3::radiation}} (light and sound).
 Why can efficiency never be more than 100%? :: Energy cannot be created, so the useful energy output can never exceed the total energy input
 Calculate: a motor uses 200 J of electrical energy and gives 50 J of useful kinetic energy. What is its efficiency? :: efficiency = 50 ÷ 200 × 100% = **25%**
 Calculate: a lamp is 20% efficient and gives out 30 J of light. What is the total energy input? :: total input = useful output ÷ efficiency = 30 ÷ 0.20 = **150 J**
 Can efficiency be calculated using power instead of energy? :: Yes – efficiency = (useful power output ÷ total power input) × 100%
 How do you draw a Sankey diagram? :: Draw the input as a wide arrow ;; Split it into a useful arrow (straight on) and wasted arrows (bending away) ;; Make each arrow's width proportional to the energy it represents
-Calculate: a Sankey diagram shows 100 J input, 70 J of light and the rest wasted as heat. How much is wasted and what is the efficiency? :: Wasted = 100 − 70 = **30 J** ;; efficiency = 70 ÷ 100 × 100% = **70%**
 C: In a Sankey diagram, total energy in = {{c1::useful energy out + wasted energy out}}.
 ## 4b Thermal energy transfer
 Why are metals the best thermal conductors? :: They have free (delocalised) electrons that move through the metal and carry energy quickly, as well as vibrating ions
@@ -476,17 +407,14 @@ Why are gases poor thermal conductors? :: The particles are far apart, so energy
 Why can't convection happen in a solid? :: The particles can only vibrate about fixed positions – they can't move from place to place
 Give everyday examples of convection. :: Room heated by a radiator ;; Water heated in a kettle (element at the bottom) ;; Sea breezes ;; Hot air balloons ;; Cooling in a fridge
 Why is the heating element of a kettle at the bottom? :: Water heated at the bottom becomes less dense and rises, cooler denser water sinks to be heated – a convection current heats all the water
-Why is the freezer compartment at the top of a fridge? :: Air cooled at the top becomes denser and sinks, setting up a convection current that cools the whole fridge
 Explain (3 marks) how a sea breeze forms on a sunny day. :: The land heats up faster than the sea ;; Air above the land gets warmer, less dense and rises ;; Cooler, denser air from over the sea moves in to replace it
 How does the temperature of an object affect the infrared it emits? :: The hotter the object, the more infrared radiation it emits each second
 C: All objects {{c1::emit and absorb}} infrared radiation.
-Which surfaces are the best absorbers and best reflectors of infrared? :: Best absorbers – dull (matt) black ;; Best reflectors – shiny white or silver
 Describe how to use a Leslie cube to compare infrared emission from different surfaces. :: Fill the cube (faces: matt black, shiny black, white, silver) with hot water ;; Measure the infrared from each face with an infrared detector at the same distance ;; The matt black face emits the most, the shiny silver face the least
 Describe a practical to compare how well surfaces absorb infrared. :: Fix a drawing pin with wax to the back of a matt black plate and a shiny plate ;; Place them equal distances from a heater ;; The pin on the black plate falls first – it absorbs infrared faster
 Describe a practical to compare thermal conduction in different metals. :: Use rods of different metals of the same size, with a drawing pin fixed by wax at one end ;; Heat the other ends equally ;; Time how long each pin takes to fall – shortest time = best conductor
 Describe a practical to show convection currents in water. :: Place a small potassium permanganate crystal at one side of the bottom of a beaker of water ;; Heat gently under the crystal ;; The purple colour rises above the heat, moves across the top and sinks at the other side
 Describe a practical to compare insulating materials. :: Wrap identical beakers of hot water in different materials ;; Use the same volume and starting temperature ;; Record the temperature every minute ;; The material with the slowest temperature fall is the best insulator
-How does a vacuum flask reduce energy transfer? :: Vacuum between the walls – stops conduction and convection ;; Silvered walls – reduce radiation ;; Stopper – reduces convection and evaporation
 How does loft insulation reduce energy loss? :: It traps air in pockets – air is a poor conductor and, being trapped, cannot transfer energy by convection
 How does double glazing reduce energy loss? :: The gap between the two panes contains air (or a vacuum), which is a poor conductor, reducing conduction
 How does cavity wall insulation reduce energy loss? :: Foam fills the cavity and traps air in small pockets, stopping convection currents in the cavity
@@ -500,11 +428,8 @@ How is GPE linked to KE for a falling object (no air resistance)? :: GPE lost = 
 Calculate: a ball is dropped from 5 m. How fast is it going when it hits the ground (g = 10 m/s², ignore air resistance)? :: mgh = ½mv², so v² = 2gh = 2 × 10 × 5 = 100 ;; v = **10 m/s**
 Why does a falling ball hit the ground more slowly than the GPE = KE calculation predicts? :: Work is done against air resistance, so some energy is transferred to thermal energy instead of kinetic energy
 How is the work done by a car's brakes linked to its kinetic energy? :: Work done by brakes (braking force × braking distance) = kinetic energy lost
-Calculate: a 1000 kg car at 20 m/s is stopped by a braking force of 5000 N. What is the braking distance? :: KE = ½ × 1000 × 20² = 200 000 J ;; d = W ÷ F = 200 000 ÷ 5000 = **40 m**
 Describe the energy changes of a swinging pendulum. :: GPE → KE as it falls to the lowest point (fastest) → GPE as it rises; gradually some energy is transferred to thermal by air resistance, so the swings get smaller
 C: Power is the rate of {{c1::energy transfer}} or the rate of {{c2::doing work}}.
-C: 1 watt = 1 {{c1::joule per second}} of energy transferred.
-Calculate: a motor does 1200 J of work in 4 s. What is its power? :: P = W ÷ t = 1200 ÷ 4 = **300 W**
 Calculate: a 600 N student climbs 5 m of stairs in 6 s. What is their useful power? :: Work = 600 × 5 = 3000 J ;; P = 3000 ÷ 6 = **500 W**
 ## 4d Energy resources and electricity generation (Paper 2)
 Describe how wind generates electricity. :: The kinetic energy of the wind turns the turbine blades ;; The turbine turns a generator, producing electricity
@@ -526,15 +451,12 @@ What do fossil fuel, nuclear and most renewable power stations have in common? :
 ## 4a Units and more transfers
 C: Energy and work done are measured in {{c1::joules (J)}}; power is measured in {{c2::watts (W)}}.
 How do you convert kilojoules (kJ) to joules? :: Multiply by 1000 ;; e.g. 2.5 kJ = **2500 J**
-Calculate: a motor has an input power of 400 W and a useful output power of 300 W. What is its efficiency? :: efficiency = 300 ÷ 400 × 100% = **75%**
 Can efficiency be given as a decimal? :: Yes – e.g. 0.75 is the same as 75%; it has no units (it is a ratio)
 Why can radiation travel through a vacuum but conduction and convection cannot? :: Radiation is infrared electromagnetic waves, which need no medium ;; Conduction and convection need particles to pass on or carry the energy
 Explain (4 marks) how a vacuum flask keeps a hot drink hot. :: The vacuum has no particles, so no conduction or convection across it ;; The silvered surfaces reflect infrared back, reducing radiation ;; The stopper stops convection and evaporation from the top ;; So the rate of energy transfer to the surroundings is very small
 Give advantages and disadvantages of geothermal power. :: Renewable, reliable, very little pollution or CO₂ ;; Only possible in a few places (volcanic areas), expensive to drill, can release harmful gases
-Give advantages and disadvantages of solar cells. :: Renewable, no pollution or CO₂ when running, useful in remote places ;; Low power output per cell, expensive, no output at night and less on cloudy days
 Give advantages and disadvantages of biofuels. :: Renewable, and roughly carbon neutral (plants absorb CO₂ as they grow) ;; Use land that could grow food and may lead to habitats being cleared
 Why are fossil fuels described as non-renewable? :: They formed over millions of years and are being used up much faster than they can be replaced
-Calculate: a 50 kg skier descends 20 m vertically. Ignoring friction, what is her speed at the bottom (g = 10 N/kg)? :: GPE lost = 50 × 10 × 20 = 10 000 J = KE gained ;; v² = 2 × 10 000 ÷ 50 = 400 ;; v = **20 m/s**
 
 # 5 Solids, liquids and gases
 Write the equation for density. :: density = mass ÷ volume ;; ρ = m ÷ V
@@ -559,13 +481,11 @@ C: The unit of density is {{c1::kg/m³}} (or g/cm³).
 C: The unit of specific heat capacity is {{c1::J/kg °C}}.
 How do you convert a density in g/cm³ to kg/m³? :: Multiply by 1000 ;; e.g. water: 1 g/cm³ = **1000 kg/m³**
 How many cm³ are there in 1 m³? :: 1 000 000 cm³ (10⁶)
-How many cm² are there in 1 m²? :: 10 000 cm² (10⁴)
 How do you convert an area in cm² to m²? :: Divide by 10 000 ;; e.g. 50 cm² = **0.005 m²**
 C: 1 cm³ is the same volume as 1 {{c1::millilitre (ml)}}.
 C: 1 kPa = {{c1::1000}} Pa.
 ## 5b Density and pressure
 Calculate: a block has a mass of 2.7 kg and a volume of 0.001 m³. What is its density? :: ρ = m ÷ V = 2.7 ÷ 0.001 = **2700 kg/m³**
-Calculate: what is the mass of 0.5 m³ of water (density 1000 kg/m³)? :: m = ρ × V = 1000 × 0.5 = **500 kg**
 Describe how to find the density of a regular solid. :: Measure its mass on a balance ;; Measure its length, width and height with a ruler or vernier callipers ;; volume = l × w × h ;; density = mass ÷ volume
 Describe how to find the density of a liquid. :: Measure the mass of an empty measuring cylinder ;; Add a known volume of liquid and measure the mass again ;; Mass of liquid = difference ;; density = mass ÷ volume
 How do you use a eureka (displacement) can to find the volume of an irregular object? :: Fill the can until water runs out of the spout ;; Lower the object in ;; Collect the displaced water in a measuring cylinder – its volume equals the object's volume
@@ -574,7 +494,6 @@ Calculate: a 600 N person stands on an area of 0.03 m². What pressure do they e
 Why do tractors and snowshoes have a large area in contact with the ground? :: A larger area gives a smaller pressure for the same force, so they don't sink in
 Why are knives and drawing pins sharp? :: The small area gives a large pressure for a given force
 Why does pressure in a liquid increase with depth? :: There is a greater weight of liquid above pushing down
-Why is a dam thicker at the bottom than at the top? :: Water pressure is greatest at the bottom because it increases with depth
 Calculate: what is the pressure difference between the surface and 10 m deep in water (ρ = 1000 kg/m³, g = 10 N/kg)? :: p = h × ρ × g = 10 × 1000 × 10 = **100 000 Pa**
 What two things does the pressure in a liquid depend on? :: The depth and the density of the liquid (not the shape of the container)
 ## 5c Change of state (Paper 2)
@@ -590,9 +509,7 @@ Describe how to obtain a temperature–time graph showing a change of state. :: 
 Why is crushed ice used in the change of state practical? :: Small pieces give good contact with the thermometer and heat more evenly
 Give a safety precaution when using stearic acid or hot water baths. :: Wear eye protection and handle hot apparatus with care (tongs/gloves) to avoid burns
 ## 5c Specific heat capacity (Paper 2)
-C: Specific heat capacity is the energy needed to raise the temperature of {{c1::1 kg}} of a substance by {{c2::1 °C}}.
 Calculate: how much energy is needed to heat 2 kg of water by 10 °C (c = 4200 J/kg °C)? :: ΔQ = m × c × ΔT = 2 × 4200 × 10 = **84 000 J**
-Calculate: 42 000 J is supplied to 1 kg of water (c = 4200 J/kg °C). What is the temperature rise? :: ΔT = ΔQ ÷ (m × c) = 42 000 ÷ (1 × 4200) = **10 °C**
 Calculate: 18 000 J raises the temperature of a 2 kg block by 10 °C. What is its specific heat capacity? :: c = ΔQ ÷ (m × ΔT) = 18 000 ÷ (2 × 10) = **900 J/kg °C**
 Describe how to measure the specific heat capacity of a metal block. :: Measure the block's mass ;; Insulate it and put a heater and thermometer in its holes ;; Record the start temperature ;; Heat for a set time, measuring energy with a joulemeter (or E = I × V × t) ;; Record the final temperature ;; c = E ÷ (m × ΔT)
 Why is the measured specific heat capacity usually higher than the true value? :: Energy is lost to the surroundings, so not all the energy supplied heats the block – the temperature rise is smaller than it should be
@@ -602,7 +519,6 @@ In the specific heat capacity practical, how do you work out the energy supplied
 ## 5d Ideal gas molecules
 Explain why there is an absolute zero of temperature. :: As a gas cools its particles slow down and have less kinetic energy ;; At −273 °C they have the least possible kinetic energy, so the temperature cannot go any lower
 Calculate: convert 27 °C to kelvin. :: 27 + 273 = **300 K**
-Calculate: convert 100 K to °C. :: 100 − 273 = **−173 °C**
 Why does increasing the temperature of a gas increase the average speed of its molecules? :: Heating transfers energy to the molecules' kinetic energy stores, so they move faster
 C: Gas molecules move with {{c1::random}} motion and exert a force, and hence a pressure, on the walls of their container.
 Explain (3 marks) why decreasing the volume of a gas at constant temperature increases its pressure. :: The molecules are closer together ;; They hit the walls more often (the speed of the molecules is unchanged) ;; A greater force on each unit area of wall, so higher pressure
@@ -613,24 +529,16 @@ Why must temperatures be in kelvin when using p₁/T₁ = p₂/T₂? :: Pressure
 Calculate: a gas at 100 kPa is compressed from 2.0 m³ to 0.5 m³ at constant temperature. What is the new pressure? :: p₂ = p₁V₁ ÷ V₂ = 100 × 2.0 ÷ 0.5 = **400 kPa**
 Calculate: a gas at 27 °C and 100 kPa is heated to 127 °C at constant volume. What is the new pressure? :: Convert: T₁ = 300 K, T₂ = 400 K ;; p₂ = p₁ × T₂ ÷ T₁ = 100 × 400 ÷ 300 = **133 kPa**
 What condition must hold for both gas laws (p₁V₁ = p₂V₂ and p₁/T₁ = p₂/T₂) to apply? :: A fixed mass (amount) of gas; plus constant temperature for Boyle's law, or constant volume for the pressure law
-Why might a car tyre's pressure be higher after a long journey? :: The air inside gets hotter, so the molecules move faster and hit the walls harder and more often (volume roughly constant)
 ## 5b More density and pressure
 Calculate: a stone has a mass of 54 g and displaces 20 cm³ of water. What is its density in g/cm³ and kg/m³? :: ρ = 54 ÷ 20 = **2.7 g/cm³** ;; × 1000 = **2700 kg/m³**
 Calculate: the atmospheric pressure is 100 kPa. What is the total pressure on a diver 5 m below the surface of water (ρ = 1000 kg/m³, g = 10 N/kg)? :: Pressure difference = 5 × 1000 × 10 = 50 000 Pa = 50 kPa ;; Total = 100 + 50 = **150 kPa**
-Calculate: what force does a pressure of 200 000 Pa exert on an area of 0.02 m²? :: F = p × A = 200 000 × 0.02 = **4000 N**
 Why does an object denser than water sink? :: Its density is greater than the density of water (its weight is greater than the upthrust when fully submerged)
 ## 5c More changes of state
 C: Solid → liquid is {{c1::melting}}; liquid → gas is {{c2::boiling or evaporating}}; gas → liquid is {{c3::condensing}}; liquid → solid is {{c4::freezing (solidifying)}}.
-Why does the temperature stay constant while a substance boils, even though it is still being heated? :: The energy supplied is used to overcome the forces between the particles (increasing their potential energy), not to increase their kinetic energy
-Why is a burn from steam at 100 °C worse than one from water at 100 °C? :: Steam releases extra energy when it condenses on the skin, as well as the energy released as it cools
-What factors increase the rate of evaporation? :: Higher temperature, larger surface area, air moving over the surface (wind/draught), lower humidity
 Why do two objects of the same mass but different materials heat up by different amounts when given the same energy? :: They have different specific heat capacities – the one with the lower specific heat capacity has the larger temperature rise
 ## 5d More gas calculations
-Calculate: a gas syringe holds 60 cm³ of gas at 100 kPa. The gas is compressed slowly (constant temperature) to 20 cm³. What is the new pressure? :: p₂ = p₁V₁ ÷ V₂ = 100 × 60 ÷ 20 = **300 kPa**
-Calculate: a sealed can of gas at 300 K has a pressure of 150 kPa. At what temperature would the pressure be 200 kPa? :: T₂ = T₁ × p₂ ÷ p₁ = 300 × 200 ÷ 150 = **400 K** (127 °C)
 Why must a gas be compressed slowly in Boyle's law questions? :: So the temperature stays constant (rapid compression would heat the gas)
 Explain (3 marks) why heating a sealed can of gas can make it explode. :: The gas molecules gain kinetic energy and move faster ;; They hit the walls more often and with more force ;; The pressure rises until the can bursts
-What is the Kelvin temperature of the freezing point and boiling point of water? :: Freezing point 0 °C = **273 K** ;; Boiling point 100 °C = **373 K**
 
 # 6 Magnetism and electromagnetism
 Which materials are magnetic? :: Iron, steel, nickel and cobalt
@@ -643,17 +551,11 @@ How can you make an electromagnet stronger? :: More turns of wire, larger curren
 Why does a current-carrying wire in a magnetic field experience a force? :: The magnetic field of the current interacts with the external field (motor effect)
 How do you find the direction of the force on a wire (motor effect)? :: Fleming's left-hand rule: First finger – Field, seCond finger – Current, thuMb – Motion
 How can you increase the force on a wire (motor effect)? :: Increase current, increase magnetic field strength (stronger magnet), longer wire in field
-How does a DC motor work? :: Current in coil in magnetic field produces forces in opposite directions on each side → coil turns; split-ring commutator reverses current every half turn so it keeps rotating
-How does a loudspeaker work? :: AC in a coil in a magnetic field makes the coil and cone vibrate, producing sound waves
 What is electromagnetic induction? :: A voltage is induced in a conductor when it moves relative to a magnetic field (or the field changes)
-How can the induced voltage be increased? :: Move the wire/magnet faster, use a stronger magnet, more turns on the coil
-How does a generator (dynamo) work? :: Coil rotates in a magnetic field, inducing an alternating voltage; slip rings connect to the circuit (AC generator)
 How does a transformer work? :: AC in primary coil creates a changing magnetic field in the iron core, which induces an alternating voltage in the secondary coil
 Write the transformer equation. :: Vp ÷ Vs = Np ÷ Ns
 Write the power equation for a 100% efficient transformer. :: Vp × Ip = Vs × Is
-Why is electricity transmitted at high voltage? :: Step-up transformers increase voltage and reduce current, so less energy is lost as heat in the cables
 ## 6b Magnets and magnetic fields
-What do magnets attract? :: Other magnets (unlike poles) and magnetic materials – iron, steel, nickel and cobalt
 Why is repulsion the only sure test that an object is a magnet? :: A magnet attracts unmagnetised magnetic materials as well as other magnets, but only two magnets can repel each other
 What is a magnetic field? :: The region around a magnet where a magnetic material or another magnet experiences a force
 What is a magnetic field line? :: A line showing the direction of the force that would act on a north pole placed in the field (drawn with arrows from N to S)
@@ -663,8 +565,6 @@ Describe the magnetic field pattern of a bar magnet. :: Lines come out of the no
 What is induced magnetism? :: Magnetism produced in a magnetic material when it is placed in a magnetic field – the material becomes a magnet itself
 Why is an iron nail always attracted (never repelled) by either pole of a magnet? :: Magnetism is induced in the nail – the end nearest the magnet becomes the opposite pole, so it is attracted
 What happens to induced magnetism in soft iron and in steel when the magnet is removed? :: Soft iron loses it almost completely ;; Steel keeps it (becomes a permanent magnet)
-Why can a chain of iron paper clips hang from a magnet? :: Each clip has magnetism induced in it, so it attracts the next clip
-C: Magnetically {{c1::soft}} materials (e.g. iron) are easily magnetised and lose their magnetism easily; magnetically {{c2::hard}} materials (e.g. steel) are hard to magnetise but keep their magnetism.
 Give uses of magnetically soft and hard materials. :: Soft (iron) – cores of electromagnets and transformers ;; Hard (steel) – permanent magnets, e.g. in loudspeakers, motors and compasses
 ## 6b Practical: magnetic field patterns
 Describe how to plot the magnetic field of a bar magnet with a plotting compass. :: Put the magnet on paper and draw round it ;; Place a plotting compass near the N pole and mark a dot at the tip of the needle ;; Move the compass so its tail is on the dot and mark the new tip ;; Repeat until you reach the S pole, then join the dots into a line ;; Repeat from other starting points; add arrows N to S
@@ -690,15 +590,12 @@ Why does an electromagnet have a soft iron core? :: Iron is easily magnetised, m
 Why would a steel core be unsuitable for an electromagnet? :: Steel is magnetically hard – it would stay magnetised when the current was switched off
 Give advantages of an electromagnet over a permanent magnet. :: It can be switched on and off ;; Its strength can be changed by changing the current
 Give uses of electromagnets. :: Cranes for lifting scrap iron, relays, electric bells, circuit breakers, MRI scanners
-Why must electromagnet wire be insulated? :: So the current flows around every turn of the coil, rather than short-circuiting between touching turns or through the core
 How can you investigate the strength of an electromagnet? :: Count how many paper clips (or the mass of iron) it can pick up ;; Change the current or the number of turns, one at a time, keeping other variables the same
 ## 6c The motor effect
 C: A charged particle moving in a magnetic field experiences a force, as long as its motion is not {{c1::parallel}} to the field.
 When is the force on a current-carrying wire in a magnetic field largest, and when is it zero? :: Largest when the wire is at right angles (perpendicular) to the field ;; Zero when the wire is parallel to the field
 What happens to the force on a current-carrying wire if the current or the field is reversed? :: The force reverses direction ;; Reversing both leaves the force in the same direction
-How does the force on a wire depend on the current and the field? :: A larger current or a stronger magnetic field gives a larger force
 A wire carries a current from left to right across the page. The magnetic field points down the page. Which way is the force on the wire? :: Into the page (Fleming's left-hand rule: First finger down, seCond finger right, thuMb points into the page)
-C: In Fleming's left-hand rule, the first finger shows the {{c1::field}}, the second finger the {{c2::current}} and the thumb the {{c3::motion (force)}}.
 Describe a simple demonstration of the motor effect. :: Place a loose wire or metal rod across two rails between the poles of a magnet and pass a current through it ;; The rod moves (catapults) along the rails at right angles to the field and current
 ## 6c Electric motors and loudspeakers
 Explain (5 marks) how a simple DC motor works. :: Current flows through the coil, which is in a magnetic field ;; The current flows in opposite directions along the two sides of the coil ;; So the forces on the two sides are in opposite directions (left-hand rule), producing a turning effect ;; The split-ring commutator reverses the current in the coil every half turn ;; So the forces keep turning the coil in the same direction
@@ -713,7 +610,6 @@ Why does a loudspeaker need alternating current? :: The force on the coil must k
 
 # 6 Electromagnetic induction in depth
 ## Induction basics
-C: A voltage is induced in a conductor when it {{c1::cuts}} magnetic field lines, or when the magnetic field through a coil {{c2::changes}}.
 What are the two ways to induce a voltage in a coil? :: **1.** Move a magnet towards or away from the coil (or move the coil through a magnetic field) ;; **2.** Keep everything still but change the magnetic field through the coil, e.g. switch an electromagnet on or off, or vary its current
 A bar magnet is held still inside a coil connected to a sensitive voltmeter. What does the meter show and why? :: Zero – there is no relative movement (and no changing field), so no voltage is induced
 What happens to the meter when a bar magnet is pushed into a coil? :: The needle deflects briefly in one direction – a voltage is induced only while the magnet is moving
@@ -731,26 +627,19 @@ In which direction should a wire be moved through a magnetic field to induce the
 Describe an investigation into the factors affecting induced voltage. :: Connect a coil to a voltmeter or data logger ;; Push a bar magnet into the coil at a controlled speed and record the maximum reading ;; Change only one variable (speed, magnet strength or number of turns), keep the others the same ;; Repeat and take an average
 Compare the motor effect and electromagnetic induction. :: **Motor effect:** current + magnetic field → force and movement (electrical → kinetic) ;; **Induction:** movement + magnetic field → voltage and current (kinetic → electrical)
 Name some uses of electromagnetic induction. :: Generators in power stations, wind turbines and bicycle dynamos ;; Transformers ;; Moving-coil microphones ;; Wireless phone chargers and induction hobs
-How does a moving-coil microphone use electromagnetic induction? :: Sound waves make a diaphragm vibrate, moving a coil attached to it (or a magnet) relative to a magnet, which induces a small alternating voltage with the same pattern as the sound
-Why is induced voltage described as a form of 'generator effect'? :: Because moving a conductor in a magnetic field generates electricity from kinetic energy – the opposite energy transfer to the motor effect
 ## Lenz's law and energy
 State Lenz's law. :: The direction of an induced voltage (and current) is always such that it **opposes the change** that produces it
-C: By Lenz's law, an induced current produces a magnetic field that {{c1::opposes}} the {{c2::change}} that caused it.
 A north pole is pushed towards a coil. What pole forms at the end of the coil nearest the magnet? :: A north pole – it repels the approaching magnet, opposing the push
 A north pole is pulled away from a coil. What pole forms at the end of the coil nearest the magnet? :: A south pole – it attracts the magnet, opposing its removal
 How does Lenz's law show that energy is conserved? :: You must do work against the opposing force to move the magnet, and that work is transferred to electrical energy. If the induced current helped the movement, energy would be created from nothing, which is impossible
 Why is it harder to push a magnet into a coil that is part of a complete circuit than into an open coil? :: In a complete circuit a current flows, and its magnetic field opposes the magnet's movement. In an open coil there is no current, so no opposing force
-A strong magnet is dropped down a vertical copper tube and falls very slowly. Explain why. :: The moving magnet induces circulating currents in the copper ;; By Lenz's law their magnetic field opposes the magnet's motion ;; This gives an upward force, so the magnet falls more slowly than it would through air
-Why would a magnet stop falling slowly if the copper tube had a long slit cut down its side? :: The slit stops the induced current flowing around the tube, so the opposing magnetic field is much weaker
 A magnet is pushed faster into a coil. Why is more force needed? :: A bigger voltage and current are induced, so the opposing force is larger, and more work is done each second
 What happens to the energy transferred when you push a magnet into a coil connected to a lamp? :: Your work (kinetic) → electrical energy in the coil → light and heat in the lamp
-Fleming's right-hand rule (extra – not needed for Edexcel) :: Thumb = Motion of the wire, First finger = Field (N to S), Second finger = induced Current. It gives the direction of induced current in a wire moving through a field ;; In the exam use Lenz's law (opposes the change) to explain direction
 ## AC generators and dynamos
 Name the main parts of a simple AC generator. :: A coil of wire (armature), a magnet or magnets (poles N and S), slip rings, carbon brushes, and connections to an external circuit
 Explain how a simple AC generator produces a voltage. :: The coil is turned in the magnetic field, so its sides cut the field lines ;; This induces a voltage across the coil ;; The voltage is delivered to the circuit through slip rings and brushes
 What is the job of the slip rings? :: To keep the rotating coil connected to the external circuit all the time, so the wires don't twist
 What is the job of the carbon brushes? :: They press against the slip rings and carry current between the rotating coil and the fixed external circuit
-Why are carbon brushes used? :: Carbon conducts electricity and is slippery (low friction), so it makes good contact without wearing the rings away too quickly
 Why does the output of a simple generator alternate? :: Each side of the coil moves up through the field, then down. The direction in which it cuts the field lines reverses every half turn, so the induced voltage reverses
 Describe the voltage–time graph for an AC generator. :: A repeating wave (sine curve) that goes positive, then negative ;; One complete cycle for each complete rotation of the coil
 When is the voltage from an AC generator largest? :: When the coil is parallel to the field lines – its sides cut the lines at right angles and cut the most lines per second
@@ -758,15 +647,10 @@ When is the voltage from an AC generator zero? :: When the coil is perpendicular
 How is the frequency of the AC output related to the rotation of the coil? :: The frequency (Hz) equals the number of complete rotations per second – one rotation gives one cycle
 What happens to the graph if the coil is spun faster? :: Higher peak voltage (lines cut faster) and a shorter period (higher frequency), so more cycles in a given time
 What happens to the graph if the coil has more turns but spins at the same speed? :: The peak voltage is larger but the frequency is unchanged
-List the ways to increase the output voltage of a generator. :: Spin the coil faster ;; Use stronger magnets ;; Use more turns on the coil ;; Use a coil with a larger area ;; Use a soft iron core
-How does a DC generator differ from an AC generator? :: It uses a split-ring commutator instead of slip rings, so the output always flows in one direction (but rises and falls in pulses)
 How does a bicycle dynamo light a lamp? :: The wheel turns a magnet next to a fixed coil, changing the magnetic field through the coil, which induces an alternating voltage that lights the lamp
 Why does a bicycle lamp get brighter when you pedal faster and dim when you slow down? :: Faster rotation cuts the field lines more quickly, inducing a larger voltage and current. Slower rotation induces a smaller voltage; if you stop, no voltage is induced and the lamp goes out
-Describe the energy transfers in a power station generator. :: Fuel (chemical or nuclear) → thermal → steam turns a turbine (kinetic) → generator → electrical energy (with some wasted as heat)
-How do wind turbines and hydroelectric stations generate electricity? :: Moving wind or water turns a turbine, which turns a generator, using electromagnetic induction
 ## Transformers
 What are the parts of a transformer? :: A primary coil, a secondary coil, and a laminated soft iron core that links the two coils
-Explain how a transformer works, step by step. :: Alternating current in the primary coil produces a changing magnetic field ;; The iron core carries this changing field through the secondary coil ;; The changing field induces an alternating voltage across the secondary coil
 Why must the supply to a transformer be AC? :: Only a changing current makes a changing magnetic field. With DC the field is steady, so no voltage is induced in the secondary coil (apart from a brief pulse when switched on or off)
 Why is the core made of iron? :: Iron concentrates the magnetic field and guides it from the primary coil through the secondary coil
 Why is soft iron used rather than steel? :: Soft iron is easy to magnetise and demagnetise, so it keeps up with the alternating field and wastes little energy
@@ -774,14 +658,10 @@ Why is the core laminated (made of thin insulated sheets)? :: To reduce eddy cur
 What is a step-up transformer? :: A transformer that increases the voltage – the secondary coil has more turns than the primary
 What is a step-down transformer? :: A transformer that decreases the voltage – the secondary coil has fewer turns than the primary
 What does a step-up transformer do to the current? :: It reduces it: the power stays about the same, so if the voltage goes up the current goes down
-Write the turns–voltage equation for a transformer. :: Vp ÷ Vs = Np ÷ Ns ;; (voltage across primary ÷ voltage across secondary = turns on primary ÷ turns on secondary)
-Write the power equation for an ideal (100% efficient) transformer. :: Vp × Ip = Vs × Is ;; (power in = power out)
 Write the equation for the efficiency of a transformer. :: efficiency = (power out ÷ power in) × 100%
 Why are real transformers not 100% efficient? :: Heat in the coils (resistance) ;; Eddy currents in the core ;; Some magnetic field leaks and doesn't pass through the secondary ;; Energy used to keep magnetising and demagnetising the core
-How are energy losses in transformers reduced? :: Thick, low-resistance copper wire ;; Laminated core to cut eddy currents ;; Soft iron core ;; Winding coils over each other on the same core to cut leakage
 Where are transformers used in everyday life? :: Phone and laptop chargers (step down 230 V), power stations and the National Grid, substations, and mains adaptors for appliances
 ## Power transmission and the National Grid
-Write the equation for electrical power. :: power = current × voltage ;; P = I × V
 Write the equation for power wasted as heat in a cable. :: power loss = I² × R ;; (current squared × resistance of the cable)
 Why is electricity transmitted at very high voltage? :: For the same power (P = IV), a high voltage means a low current. A low current means much less heating in the cables (power loss = I²R), so less energy is wasted
 If the current in a cable is halved, what happens to the power wasted? :: It falls to one quarter, because power loss depends on I²
@@ -789,29 +669,18 @@ Why not simply use thicker cables with less resistance instead of high voltage? 
 Why is AC used for the National Grid? :: Its voltage can easily be stepped up and down with transformers (a DC supply cannot use a transformer)
 Describe how electricity gets from a power station to a home. :: Generated at about 25 kV → step-up transformer to 275–400 kV → transmission lines (pylons) → step-down transformers at substations (132 kV, 33 kV, 11 kV) → 230 V to homes
 Why is the voltage stepped down before reaching homes? :: High voltages are dangerous and unsuitable for household use. Appliances are designed for 230 V
-What is the voltage and frequency of UK mains electricity? :: 230 V, 50 Hz
-How fast must a generator coil spin to produce a 50 Hz output? :: 50 rotations per second (3000 per minute), if the generator has one pair of poles
 ## Calculations
-A transformer has 500 turns on the primary coil and 100 on the secondary. The primary voltage is 230 V. What is the secondary voltage? :: Vs = Vp × Ns ÷ Np = 230 × 100 ÷ 500 = **46 V** (step-down)
 A step-up transformer has 50 turns on the primary coil. How many turns are needed on the secondary to change 12 V to 240 V? :: Ns = Np × Vs ÷ Vp = 50 × 240 ÷ 12 = **1000 turns**
-A transformer changes 230 V to 12 V. The primary coil has 920 turns. How many turns does the secondary have? :: Ns = 920 × 12 ÷ 230 = **48 turns**
 An ideal transformer changes 240 V to 12 V. The secondary current is 2.0 A. What is the primary current? :: Power out = 12 × 2.0 = 24 W ;; Ip = 24 ÷ 240 = **0.10 A**
 A transformer takes 100 W in and gives 96 W out. What is its efficiency? :: 96 ÷ 100 × 100% = **96%**
 A power station sends 50 MW of power at 25 kV. What is the current in the cables? :: I = P ÷ V = 50 000 000 ÷ 25 000 = **2000 A**
-The same 50 MW is sent at 400 kV. What is the current? :: I = 50 000 000 ÷ 400 000 = **125 A**
 The voltage is raised from 25 kV to 400 kV (16 times higher). How many times smaller is the power lost as heat in the cables? :: The current is 16 times smaller, so the loss (I²R) is 16² = **256 times smaller**
 A cable of resistance 10 Ω carries 100 A. How much power is wasted as heat? :: P = I²R = 100² × 10 = 100 000 W = **100 kW**
 A generator coil turns 25 times each second. What is the frequency of the output? :: **25 Hz** (one cycle per rotation)
 How do you work out the turns ratio for a transformer? :: Turns ratio = Np : Ns = Vp : Vs ;; e.g. 230 V to 11.5 V is 20 : 1 (a step-down transformer)
 ## Exam-style explanations
 Explain why a voltmeter connected to a coil shows a reading when a magnet is pushed into the coil, and returns to zero when the magnet stops. :: The coil's wire cuts the magnetic field lines as the magnet moves (the magnetic field through the coil changes) ;; This induces a voltage across the coil ;; When the magnet stops, the field no longer changes, so no voltage is induced
-Explain why a transformer does not work with a direct current supply. :: A DC current gives a steady magnetic field in the core ;; The field through the secondary coil does not change ;; So no voltage is induced in the secondary coil
-Explain why a step-up transformer is used at a power station. :: It increases the voltage and reduces the current ;; Lower current means less energy lost as heat in the transmission cables (P = I²R) ;; So transmission is more efficient
-Describe how a generator produces an alternating voltage. :: A coil rotates between the poles of a magnet ;; The sides of the coil cut the magnetic field lines, inducing a voltage ;; Every half turn the sides cut the field in the opposite direction, so the voltage reverses ;; Slip rings and brushes connect the coil to the circuit
 Suggest how the voltage output of a generator can be doubled. :: Double the speed of rotation, or double the number of turns on the coil (also: stronger magnets or a larger coil)
-Explain why the output from a transformer is zero when the primary current is constant. :: A constant current produces a steady magnetic field ;; No change in field means no induced voltage in the secondary coil
-Explain why the lamp in a bicycle dynamo goes out when the cyclist stops. :: When the wheel stops, the magnet stops moving relative to the coil ;; The magnetic field through the coil no longer changes ;; No voltage is induced, so no current flows
-Explain how Lenz's law applies when a magnet is pulled out of a coil. :: The induced current flows in the direction that opposes the removal of the magnet ;; The end of the coil nearest the magnet becomes the opposite pole and attracts it ;; Work is done against this force and transferred to electrical energy
 
 ## Revision sheet: questions and mark scheme
 (2 marks) What is electromagnetic induction? :: A voltage (emf) is induced across a conductor when it moves through a magnetic field / cuts field lines, or when the magnetic field around it changes (1) ;; If the circuit is complete, a current is induced (1)
@@ -854,15 +723,9 @@ What is half-life? :: The time taken for half the undecayed nuclei in a sample t
 Why is radioactive decay described as random? :: You cannot predict which nucleus will decay or when
 Give uses of radioactivity. :: Medical tracers, radiotherapy, sterilising equipment, smoke alarms (alpha), thickness gauges (beta), carbon dating
 What is the difference between irradiation and contamination? :: Irradiation – exposed to radiation from an outside source ;; Contamination – radioactive material gets on or inside the body (more dangerous for alpha)
-How should radioactive sources be handled safely? :: Use tongs, keep at arm's length, minimise time, store in lead-lined boxes, never point at people
 What is nuclear fission? :: A large nucleus (uranium-235) absorbs a neutron, becomes unstable and splits into two smaller daughter nuclei, releasing 2–3 neutrons and energy
-What is a chain reaction? :: Neutrons released by fission go on to cause further fissions
-What is the role of control rods in a nuclear reactor? :: Absorb neutrons to control the rate of fission (e.g. boron)
-What is the role of the moderator in a nuclear reactor? :: Slows down neutrons so they can be absorbed by uranium-235 (e.g. graphite or water)
 What is nuclear fusion? :: Two light nuclei join to form a heavier nucleus, releasing energy – happens in stars
-Why is fusion hard to achieve on Earth? :: Needs extremely high temperature and pressure to overcome the electrostatic repulsion between positive nuclei
 ## 7a Units
-C: Activity is measured in {{c1::becquerels (Bq)}}; 1 Bq = 1 {{c2::decay per second}}.
 In what units can half-life be given? :: Any unit of time – seconds, minutes, hours, days or years (use whatever fits the isotope)
 ## 7b Atoms and nuclei
 Give the relative charge and mass of a proton, neutron and electron. :: Proton: charge +1, mass 1 ;; Neutron: charge 0, mass 1 ;; Electron: charge −1, mass about 1/2000 (negligible)
@@ -872,7 +735,6 @@ What is the mass (nucleon) number? :: The total number of protons and neutrons i
 In the symbol ¹⁴₆C, what do the two numbers mean? :: Top (14) = mass (nucleon) number – protons + neutrons ;; Bottom (6) = atomic (proton) number – protons ;; So carbon-14 has 6 protons and 8 neutrons
 Calculate: how many protons and neutrons are in a nucleus of ²³⁵₉₂U? :: Protons = 92 ;; Neutrons = 235 − 92 = **143**
 Give an example of a pair of isotopes. :: Carbon-12 and carbon-14 (both 6 protons; 6 and 8 neutrons) ;; or uranium-235 and uranium-238
-C: Isotopes of an element have the same {{c1::atomic (proton) number}} but different {{c2::mass (nucleon) numbers}}.
 ## 7b Radioactive decay and nuclear equations
 C: Alpha particles, beta particles and gamma rays are {{c1::ionising}} radiations emitted from {{c2::unstable nuclei}} in a {{c3::random}} process.
 What does ionising mean? :: The radiation knocks electrons out of atoms, turning them into charged ions
@@ -881,17 +743,12 @@ What are the charges of alpha, beta and gamma radiation? :: Alpha +2 ;; Beta −
 Write the nuclear symbols for an alpha particle, a beta particle, a gamma ray and a neutron. :: Alpha ⁴₂He (or ⁴₂α) ;; Beta ⁰₋₁e (or ⁰₋₁β) ;; Gamma ⁰₀γ ;; Neutron ¹₀n
 What happens to the mass and atomic numbers when a nucleus emits gamma radiation? :: Neither changes – the nucleus just loses energy
 What happens to the mass and atomic numbers when a nucleus emits a neutron? :: Mass number decreases by 1 ;; Atomic number unchanged (it becomes a different isotope of the same element)
-C: In alpha decay the mass number falls by {{c1::4}} and the atomic number falls by {{c2::2}}.
-C: In beta decay the mass number {{c1::stays the same}} and the atomic number {{c2::increases by 1}}.
 How do you balance a nuclear equation? :: The mass numbers (top) must add up to the same total on each side ;; The atomic numbers (bottom, the charge) must add up to the same total on each side
 Complete the alpha decay: ²²⁶₈₈Ra → ? + ⁴₂He :: ²²²₈₆Rn (radon) ;; 226 = 222 + 4 and 88 = 86 + 2
 Complete the beta decay: ¹⁴₆C → ? + ⁰₋₁e :: ¹⁴₇N (nitrogen) ;; 14 = 14 + 0 and 6 = 7 + (−1)
-Calculate: uranium-238 (²³⁸₉₂U) emits an alpha particle. What are the mass and atomic numbers of the new nucleus? :: Mass number 238 − 4 = **234** ;; Atomic number 92 − 2 = **90** (thorium, ²³⁴₉₀Th)
 Why does a nucleus often emit gamma rays after alpha or beta decay? :: The new nucleus is left with excess energy, which it gives out as a gamma ray
 Why does alpha or beta decay change the element? :: The number of protons (atomic number) changes, and the element is defined by its proton number
 ## 7b Detecting radiation and background
-Which is usually the largest source of background radiation in the UK? :: Radon gas from rocks such as granite
-C: Background radiation comes from natural sources on {{c1::Earth}} (rocks, radon, food) and from {{c2::space}} (cosmic rays), plus man-made sources such as medical X-rays.
 What is meant by a corrected count rate? :: The measured count rate minus the background count rate
 How does a Geiger–Müller tube detect radiation? :: Radiation entering the tube ionises the gas inside, producing a pulse of current that is counted by a counter or ratemeter
 How does photographic film detect radiation? :: Radiation darkens the film – the more radiation, the darker it gets (used in film badges worn by workers)
@@ -901,11 +758,9 @@ In the penetration practical, how do you know a source emits alpha? :: The count
 In the penetration practical, how do you know a source emits beta? :: Paper has little effect, but a few mm of aluminium reduce the count rate to (almost) background
 In the penetration practical, how do you know a source emits gamma? :: The count rate is only reduced by thick lead (or concrete); paper and aluminium have little effect
 Give safety precautions when using radioactive sources in the lab. :: Handle with tongs, never with fingers ;; Keep the source pointing away from people ;; Keep it as far away as possible and use it for as short a time as possible ;; Return it to its lead-lined box straight after use
-Why might students use a simulation for the penetration practical? :: Real sources are a health hazard and are strictly controlled in schools; a simulation gives the same pattern safely
 ## 7b Activity and half-life
 What happens to the activity of a radioactive source over time? :: It decreases, because there are fewer undecayed nuclei left
 C: Half-life is different for different radioactive {{c1::isotopes}} – from fractions of a second to billions of years.
-C: Half-life is the time taken for the {{c1::activity}} of a sample (or the number of undecayed nuclei) to {{c2::halve}}.
 How do you find the half-life from a graph of activity against time? :: Read the starting activity, halve it, and read the time it takes to fall to that value ;; Repeat from another point (e.g. half to a quarter) and take the average
 Calculate: a sample has an activity of 800 Bq and a half-life of 2 hours. What is its activity after 6 hours? :: 6 ÷ 2 = 3 half-lives ;; 800 → 400 → 200 → **100 Bq**
 Calculate: the activity of a sample falls from 400 Bq to 50 Bq in 24 days. What is its half-life? :: 400 → 200 → 100 → 50 is 3 half-lives ;; 24 ÷ 3 = **8 days**
@@ -932,8 +787,6 @@ How can workers reduce their exposure to ionising radiation? :: Increase distanc
 ## 7c Nuclear fission (Paper 2)
 C: Nuclear reactions, including {{c1::fission}}, {{c2::fusion}} and {{c3::radioactive decay}}, can be a source of energy.
 In nuclear fission, in what form is the energy released? :: As kinetic energy of the fission products (the daughter nuclei and neutrons), which heats the reactor
-What does the fission of a uranium-235 nucleus produce? :: Two radioactive daughter nuclei, two or three neutrons, and energy (also gamma rays)
-What type of neutron is most likely to cause fission of uranium-235? :: A slow-moving (thermal) neutron
 Write a typical fission equation for uranium-235. :: ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n + energy
 Explain (3 marks) how a chain reaction is set up. :: A neutron is absorbed by a U-235 nucleus, which splits ;; The fission releases 2–3 neutrons ;; These neutrons are absorbed by other U-235 nuclei, causing more fissions, and so on
 How do control rods control the rate of fission? :: They absorb neutrons (e.g. boron or cadmium) ;; Lowering them further in absorbs more neutrons, slowing the reaction; raising them speeds it up ;; Aim: on average exactly one neutron from each fission causes another fission
@@ -948,41 +801,31 @@ C: Nuclear fusion is the creation of larger nuclei from smaller nuclei, resultin
 What is the energy source of stars? :: Nuclear fusion – mainly hydrogen nuclei fusing to form helium
 What is the difference between nuclear fission and nuclear fusion? :: **Fission** – a large nucleus splits into two smaller nuclei ;; **Fusion** – two small (light) nuclei join to form a larger nucleus ;; Both release energy
 Explain (3 marks) why fusion only happens at very high temperatures and pressures. :: Nuclei are positively charged, so they repel each other (electrostatic repulsion) ;; Very high temperatures give them enough kinetic energy to get close enough to fuse ;; High pressure (density) makes collisions frequent enough
-Why is fusion not yet used to generate electricity on a large scale? :: It is very hard to reach and contain the extremely high temperatures needed ;; So far, experimental reactors use about as much energy as (or more than) they produce
 
 # 8 Astrophysics
 What is the universe made of? :: A large collection of billions of galaxies
 What is a galaxy? :: A large collection of billions of stars
 Which galaxy is our solar system in? :: The Milky Way
 What force keeps planets, moons and comets in orbit? :: Gravity
-What is the difference between the orbits of planets and comets? :: Planets – nearly circular ;; Comets – highly elliptical
 Write the equation for orbital speed. :: orbital speed = 2 × π × orbital radius ÷ time period ;; v = 2πr/T
-How does gravitational field strength vary? :: Depends on the mass of the planet/moon; g is different on other planets
 Describe the life cycle of a Sun-sized star. :: Nebula → protostar → main sequence star → red giant → white dwarf
 Describe the life cycle of a massive star. :: Nebula → protostar → main sequence → red supergiant → supernova → neutron star or black hole
 How does the colour of a star relate to its temperature? :: Red (coolest) → orange → yellow → white → blue (hottest)
-What does a Hertzsprung–Russell diagram plot? :: Absolute magnitude (luminosity) against surface temperature (hot on the left)
 What is absolute magnitude? :: The brightness a star would have at a standard distance (10 parsecs) – lower number = brighter
 What is redshift? :: Light from distant galaxies is shifted to longer wavelengths because they are moving away from us
-Write the redshift equation. :: Δλ/λ₀ = v/c
 What evidence supports the Big Bang theory? :: Redshift of galaxies (further galaxies receding faster) and cosmic microwave background radiation (CMBR)
 What is CMBR? :: Cosmic microwave background radiation – microwave radiation from all directions, the remains of energy from the Big Bang
 ## 8a Units and conversions
 What units must you use in orbital speed calculations? :: Radius in metres (m), time period in seconds (s), giving speed in m/s ;; Convert km → m (× 1000) and days → s (× 24 × 3600)
-Calculate: how many seconds are there in one year (365 days)? :: 365 × 24 × 3600 = **31 536 000 s** (about 3.2 × 10⁷ s)
 ## 8b Motion in the universe
-C: Our solar system is in the {{c1::Milky Way}} galaxy, one of {{c2::billions}} of galaxies in the universe.
 C: Gravitational force causes {{c1::moons}} to orbit planets, {{c2::planets}} to orbit the Sun, {{c3::artificial satellites}} to orbit the Earth and {{c4::comets}} to orbit the Sun.
 Why does gravitational field strength (g) differ on different planets and moons? :: g depends on the mass (and size) of the planet or moon – a body with greater mass has a stronger gravitational field at its surface
 Why does an astronaut weigh less on the Moon than on Earth, though her mass is unchanged? :: The Moon has much less mass than the Earth, so its gravitational field strength is smaller (about 1.6 N/kg); weight = m × g, so her weight is less ;; Mass is the amount of matter, which does not change
-Calculate: what is the weight of a 60 kg astronaut on the Moon (g = 1.6 N/kg)? :: W = m × g = 60 × 1.6 = **96 N**
 Describe the orbits of moons, planets and comets. :: Moons – nearly circular orbits around planets ;; Planets – nearly circular orbits around the Sun ;; Comets – highly elliptical (elongated) orbits around the Sun, with the Sun near one end, not at the centre
 How does the speed of a comet change during its orbit? :: It is fastest when closest to the Sun and slowest when furthest away ;; As it falls towards the Sun, gravity speeds it up (GPE → KE)
-Why does a comet only grow a tail when it is near the Sun? :: The Sun heats the comet's ice so it vaporises, and the gas and dust are blown away from the Sun into a tail
 Is an object moving in a circular orbit at constant speed accelerating? Why? :: Yes – its direction, and so its velocity, is constantly changing ;; The resultant force (gravity) acts towards the centre of the orbit
 How does the orbital speed and period of a satellite change if it orbits closer to the Earth? :: Higher orbital speed and shorter time period
 Calculate: a satellite orbits at a radius of 6.8 × 10⁶ m with a period of 5400 s. What is its orbital speed? :: v = 2πr ÷ T = 2 × π × 6.8 × 10⁶ ÷ 5400 = **7900 m/s** (7.9 km/s)
-Calculate: the Earth orbits the Sun at a radius of 1.5 × 10¹¹ m in 365 days. What is its orbital speed? :: T = 365 × 24 × 3600 = 3.15 × 10⁷ s ;; v = 2π × 1.5 × 10¹¹ ÷ 3.15 × 10⁷ = **about 30 000 m/s** (30 km/s)
 How do you rearrange v = 2πr/T to find the time period? :: T = 2πr ÷ v
 How do you rearrange v = 2πr/T to find the orbital radius? :: r = vT ÷ 2π
 ## 8c Stellar evolution
@@ -995,10 +838,7 @@ What is a supernova? :: The huge explosion of a red supergiant at the end of its
 What is a black hole? :: The remains of a very massive star, so dense that its gravity is strong enough to stop even light escaping
 What is a neutron star? :: The extremely dense core left behind after a supernova, made almost entirely of neutrons
 C: Stars can be classified by their {{c1::colour}}, which depends on their {{c2::surface temperature}}.
-Which colour are the hottest stars and which are the coolest? :: Hottest – blue (or blue-white) ;; Coolest – red
-What colour is the Sun and what type of star is it? :: Yellow – a main sequence star (medium surface temperature, about 5500 °C)
 Why can't you compare the true brightness of stars just by how bright they look from Earth? :: Stars are at different distances – a nearby dim star can look brighter than a distant bright one, so we compare absolute magnitude (brightness at a standard distance)
-C: On the absolute magnitude scale, the {{c1::more negative}} the number, the brighter the star.
 ## 8c The Hertzsprung–Russell diagram
 What are the axes of a Hertzsprung–Russell (HR) diagram? :: Vertical – absolute magnitude (brightest at the top, so the numbers become more negative going up) ;; Horizontal – surface temperature, decreasing from left (hot, blue) to right (cool, red)
 Where is the main sequence on an HR diagram? :: A diagonal band from top left (hot, bright) to bottom right (cool, dim); most stars, including the Sun, are on it
@@ -1041,7 +881,6 @@ Rearrange V = I × R to find I and R. :: I = V ÷ R ;; R = V ÷ I
 Rearrange P = I × V to find the current. :: I = P ÷ V
 Rearrange KE = ½mv² to find v. :: v = √(2 × KE ÷ m)
 Rearrange GPE = m × g × h to find h. :: h = GPE ÷ (m × g)
-Rearrange n = sin i ÷ sin r to find sin r. :: sin r = sin i ÷ n
 Rearrange ρ = m ÷ V to find mass and volume. :: m = ρ × V ;; V = m ÷ ρ
 Rearrange ΔQ = m × c × ΔT to find ΔT. :: ΔT = ΔQ ÷ (m × c)
 Calculate: a 1000 kg car has 200 000 J of kinetic energy. How fast is it going? :: v² = 2 × KE ÷ m = 2 × 200 000 ÷ 1000 = 400 ;; v = **20 m/s**
@@ -1067,4 +906,3 @@ What is the resolution of an instrument? :: The smallest change it can measure (
 What is the difference between accurate and precise results? :: Accurate – close to the true value ;; Precise – repeated readings are close to each other (little spread)
 How many values of the independent variable should you use? :: At least five, spread evenly over a suitable range, so a clear pattern or graph can be seen
 How do you calculate a mean from repeat readings? :: Add the readings (leaving out any anomalies) and divide by the number of readings used
-Why do we use light gates and data loggers rather than stopwatches for short time intervals? :: They remove human reaction time (about 0.2–0.3 s), which is large compared with short times, so readings are more accurate

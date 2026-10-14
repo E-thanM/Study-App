@@ -1,0 +1,162 @@
+C: The unit of acceleration is {{c1::metres per second squared (m/s²)}}.
+C: The unit of momentum is the {{c1::kilogram metre per second (kg m/s)}}.
+C: The unit of force is the {{c1::newton (N)}}; the unit of mass is the {{c2::kilogram (kg)}}.
+C: The {{c1::gradient}} of a velocity–time graph gives the acceleration; the {{c2::area under}} the graph gives the distance travelled.
+Calculate: a car braking from 20 m/s to rest decelerates at 5 m/s². How far does it travel while braking? :: s = (v² − u²) ÷ 2a = (0 − 400) ÷ (2 × −5) = **40 m**
+Calculate: a car brakes from 30 m/s to 10 m/s in 5 s. What is its acceleration? :: a = (10 − 30) ÷ 5 = **−4 m/s²** (a deceleration of 4 m/s²)
+Calculate: what resultant force is needed to accelerate a 0.5 kg ball at 4 m/s²? :: F = m × a = 0.5 × 4 = **2 N**
+C: Stopping distance = {{c1::thinking distance}} + {{c2::braking distance}}.
+Does a wet road affect thinking distance or braking distance? :: Braking distance only – reaction time is unchanged
+Does a heavily loaded car affect thinking distance or braking distance? :: Braking distance – a larger mass gives a smaller deceleration for the same braking force
+What weight does a 100 g slotted mass have on Earth? :: 0.1 kg × 10 N/kg = **1 N**
+How do you get the extension from your spring length readings? :: Subtract the original (unloaded) length from each loaded length
+Calculate: a 1 kg trolley at 4 m/s hits a stationary 3 kg trolley and rebounds at 2 m/s. What is the velocity of the 3 kg trolley? :: Momentum before = 1 × 4 = 4 kg m/s ;; After: 1 × (−2) + 3v = 4 ;; 3v = 6, v = **2 m/s** forwards
+C: Force equals the {{c1::rate of change of momentum}}.
+Calculate: a 70 kg passenger moving at 15 m/s is stopped by a seat belt in 0.5 s. What is the average force? :: F = (mv − mu) ÷ t = (0 − 70 × 15) ÷ 0.5 = **−2100 N** (2100 N backwards)
+Calculate: what is the change in momentum when a 0.2 kg ball travelling at 10 m/s is stopped? :: Δp = m × (v − u) = 0.2 × (0 − 10) = **−2 kg m/s** (magnitude 2 kg m/s)
+Explain (3 marks) why an egg dropped onto a cushion does not break but one dropped onto a hard floor does. :: The cushion increases the time taken for the egg to stop ;; The change in momentum is the same ;; So the rate of change of momentum, and the force on the egg, is smaller
+How does Newton's third law explain how a swimmer moves forward? :: The swimmer pushes the water backwards; the water pushes the swimmer forwards with an equal and opposite force
+Calculate: a uniform 1 m ruler is pivoted at its 50 cm mark. A 2 N weight hangs at the 10 cm mark. Where must a 4 N weight hang to balance it? :: Anticlockwise moment = 2 × 0.40 = 0.8 N m ;; 4 × d = 0.8, d = 0.20 m ;; so at the **70 cm mark**
+C: Moment = force × {{c1::perpendicular distance}} from the {{c2::pivot}}.
+Why does an object topple? :: Its centre of gravity moves outside its base, so its weight gives a moment that turns it over
+How can you make an object more stable? :: Give it a wider base and a lower centre of gravity
+Describe an experiment to investigate the motion of falling objects. :: Drop e.g. cupcake cases from a height and use light gates/video to measure speed over time, or time falls with different numbers of cases
+Why is force a vector quantity? :: It has both a size (magnitude) and a direction
+Explain (3 marks) why the current through a resistor causes it to heat up. :: Electrons flow through the metal and collide with the vibrating ions (lattice) ;; Energy is transferred to the ions, which vibrate more ;; So the temperature of the resistor increases
+Why are lights in houses connected in parallel? :: Each gets the full voltage; can be switched independently; if one breaks the others stay on
+What does the earth wire do? :: Connects metal case to earth – if the live wire touches the case, a large current flows to earth and blows the fuse
+Why do appliances with plastic cases not need an earth wire? :: They are double insulated
+Give dangers and uses of electrostatic charges. :: Dangers: sparks igniting fuel (refuelling aircraft), lightning ;; Uses: inkjet printers, photocopiers, paint spraying
+How do insulators become charged by friction? :: Electrons are transferred from one material to another – the one gaining electrons becomes negative
+C: Electrostatic effects are explained by the movement of {{c1::electrons}} – positive charges do not move.
+Why is an electric current in a metal a flow of electrons, not protons? :: Protons are fixed in the nuclei of the metal ions; only the free (delocalised) electrons can move
+C: Voltage is the {{c1::energy transferred per unit charge}} passed.
+Calculate: what current does a 60 W lamp draw from a 230 V supply? :: I = P ÷ V = 60 ÷ 230 = **0.26 A** (2 s.f.)
+Calculate: a 6 Ω and a 3 Ω resistor are in series. The current is 0.5 A. What is the supply voltage? :: Total R = 6 + 3 = 9 Ω ;; V = I × R = 0.5 × 9 = **4.5 V**
+Calculate: two resistors are in series with a 12 V supply. The voltage across one is 8 V. What is the voltage across the other? :: The voltages add up to the supply: 12 − 8 = **4 V**
+Two identical lamps are connected in parallel to a 6 V battery. What is the voltage across each? :: **6 V** – the voltage across components in parallel is the same as the supply
+Calculate: what is the voltage across a 4 Ω resistor carrying 3 A? :: V = I × R = 3 × 4 = **12 V**
+Calculate: how much charge flows when 3 A flows for 2 hours? :: t = 2 × 3600 = 7200 s ;; Q = 3 × 7200 = **21 600 C**
+Calculate: 900 J of energy is transferred when 30 C flows through a lamp. What is the voltage across it? :: V = E ÷ Q = 900 ÷ 30 = **30 V**
+C: The current from cells and batteries is {{c1::direct current (DC)}}; mains electricity is {{c2::alternating current (AC)}}.
+C: In a transverse wave the vibrations are {{c1::perpendicular}} to the direction of energy transfer.
+C: In a longitudinal wave the vibrations are {{c1::parallel}} to the direction of energy transfer.
+Define amplitude, wavefront, frequency, wavelength and period. :: Amplitude – max displacement from rest ;; Wavefront – line joining points in phase ;; Frequency – waves per second (Hz) ;; Wavelength – distance between adjacent crests ;; Period – time for one wave
+What happens when waves are reflected and refracted? :: Reflection – bounce off a surface ;; Refraction – change speed and direction when entering a different medium
+For a source moving towards an observer, what happens to the observed wavelength and frequency? :: Wavelength decreases (waves bunched up) and frequency increases
+For a source moving away from an observer, what happens to the observed wavelength and frequency? :: Wavelength increases (waves spread out) and frequency decreases
+Uses of radio waves and microwaves? :: Radio – broadcasting, communications ;; Microwaves – cooking, satellite transmissions
+Uses of infrared and visible light? :: Infrared – heaters, night vision, remote controls ;; Visible – optical fibres, photography
+Uses of UV, X-rays and gamma rays? :: UV – fluorescent lamps, sterilising, security marking ;; X-rays – medical imaging, airport security ;; Gamma – sterilising food and equipment, cancer treatment
+Give the dangers of microwaves, infrared, UV and X/gamma rays. :: Microwaves – internal heating of body tissue ;; Infrared – skin burns ;; UV – damage to surface cells, eyes, skin cancer ;; X-rays and gamma – cell mutation, cancer
+Which colour of visible light has the longest wavelength? :: Red
+Which colour of visible light has the highest frequency? :: Violet
+How do night-vision cameras work? :: They detect the infrared radiation emitted by warm objects such as people and animals
+Describe an experiment to investigate refraction in a glass block. :: Shine a ray box through a rectangular glass block, trace incident and emergent rays, draw normal, measure angles i and r with a protractor
+C: The pitch of a sound depends on the {{c1::frequency}} of vibration of the source.
+C: The loudness of a sound depends on the {{c1::amplitude}} of vibration of the source.
+How do you use an oscilloscope to find the frequency of a sound? :: Measure the time period from the trace (divisions × timebase), then f = 1/T
+Calculate: sound travels at 340 m/s and has a wavelength of 0.68 m. What is its frequency? :: f = v ÷ λ = 340 ÷ 0.68 = **500 Hz**
+Calculate: a water wave has a speed of 0.6 m/s and a wavelength of 0.15 m. What is its time period? :: f = v ÷ λ = 0.6 ÷ 0.15 = 4 Hz ;; T = 1 ÷ f = **0.25 s**
+Calculate: the critical angle of a material is 30°. What is its refractive index (sin 30° = 0.5)? :: n = 1 ÷ sin c = 1 ÷ 0.5 = **2.0**
+Why does a semi-circular block allow you to see total internal reflection easily? :: The ray enters along a radius without bending, so you can directly control the angle of incidence at the flat glass–air face
+Why are prisms better than mirrors in periscopes? :: Total internal reflection reflects all the light, giving a brighter image with no double images, and prisms don't tarnish
+C: Angles in ray diagrams are measured in {{c1::degrees (°)}} from the {{c2::normal}}.
+Calculate: light travels at 3 × 10⁸ m/s. How long does it take to travel 1.5 × 10¹¹ m from the Sun to the Earth? :: t = distance ÷ speed = 1.5 × 10¹¹ ÷ 3 × 10⁸ = **500 s**
+C: Energy can be transferred mechanically (by {{c1::forces doing work}}), electrically, by {{c2::heating}} and by {{c3::radiation}} (light and sound).
+Which surfaces are the best absorbers and best reflectors of infrared? :: Best absorbers – dull (matt) black ;; Best reflectors – shiny white or silver
+Give advantages and disadvantages of solar cells. :: Renewable, no pollution or CO₂ when running, useful in remote places ;; Low power output per cell, expensive, no output at night and less on cloudy days
+How does geothermal energy work? :: Hot rocks underground heat water to steam to drive turbines; only possible where hot rocks are near enough to the surface (e.g. volcanic areas)
+Calculate: a Sankey diagram shows 100 J input, 70 J of light and the rest wasted as heat. How much is wasted and what is the efficiency? :: Wasted = 100 − 70 = **30 J** ;; efficiency = 70 ÷ 100 × 100% = **70%**
+Calculate: a motor has an input power of 400 W and a useful output power of 300 W. What is its efficiency? :: efficiency = 300 ÷ 400 × 100% = **75%**
+Why is the freezer compartment at the top of a fridge? :: Air cooled at the top becomes denser and sinks, setting up a convection current that cools the whole fridge
+How does a vacuum flask reduce energy transfer? :: Vacuum between the walls – stops conduction and convection ;; Silvered walls – reduce radiation ;; Stopper – reduces convection and evaporation
+Calculate: a 50 kg skier descends 20 m vertically. Ignoring friction, what is her speed at the bottom (g = 10 N/kg)? :: GPE lost = 50 × 10 × 20 = 10 000 J = KE gained ;; v² = 2 × 10 000 ÷ 50 = 400 ;; v = **20 m/s**
+Calculate: a 1000 kg car at 20 m/s is stopped by a braking force of 5000 N. What is the braking distance? :: KE = ½ × 1000 × 20² = 200 000 J ;; d = W ÷ F = 200 000 ÷ 5000 = **40 m**
+C: 1 watt = 1 {{c1::joule per second}} of energy transferred.
+Calculate: a motor does 1200 J of work in 4 s. What is its power? :: P = W ÷ t = 1200 ÷ 4 = **300 W**
+Why does the temperature stay constant while a substance boils, even though it is still being heated? :: The energy supplied is used to overcome the forces between the particles (increasing their potential energy), not to increase their kinetic energy
+C: Specific heat capacity is the energy needed to raise the temperature of {{c1::1 kg}} of a substance by {{c2::1 °C}}.
+Why might a car tyre's pressure be higher after a long journey? :: The air inside gets hotter, so the molecules move faster and hit the walls harder and more often (volume roughly constant)
+How many cm² are there in 1 m²? :: 10 000 cm² (10⁴)
+Calculate: what is the mass of 0.5 m³ of water (density 1000 kg/m³)? :: m = ρ × V = 1000 × 0.5 = **500 kg**
+Calculate: what force does a pressure of 200 000 Pa exert on an area of 0.02 m²? :: F = p × A = 200 000 × 0.02 = **4000 N**
+Why is a dam thicker at the bottom than at the top? :: Water pressure is greatest at the bottom because it increases with depth
+What factors increase the rate of evaporation? :: Higher temperature, larger surface area, air moving over the surface (wind/draught), lower humidity
+Why is a burn from steam at 100 °C worse than one from water at 100 °C? :: Steam releases extra energy when it condenses on the skin, as well as the energy released as it cools
+Calculate: 42 000 J is supplied to 1 kg of water (c = 4200 J/kg °C). What is the temperature rise? :: ΔT = ΔQ ÷ (m × c) = 42 000 ÷ (1 × 4200) = **10 °C**
+Calculate: convert 100 K to °C. :: 100 − 273 = **−173 °C**
+What is the Kelvin temperature of the freezing point and boiling point of water? :: Freezing point 0 °C = **273 K** ;; Boiling point 100 °C = **373 K**
+Calculate: a gas syringe holds 60 cm³ of gas at 100 kPa. The gas is compressed slowly (constant temperature) to 20 cm³. What is the new pressure? :: p₂ = p₁V₁ ÷ V₂ = 100 × 60 ÷ 20 = **300 kPa**
+Calculate: a sealed can of gas at 300 K has a pressure of 150 kPa. At what temperature would the pressure be 200 kPa? :: T₂ = T₁ × p₂ ÷ p₁ = 300 × 200 ÷ 150 = **400 K** (127 °C)
+What do magnets attract? :: Other magnets (unlike poles) and magnetic materials – iron, steel, nickel and cobalt
+C: Magnetically {{c1::soft}} materials (e.g. iron) are easily magnetised and lose their magnetism easily; magnetically {{c2::hard}} materials (e.g. steel) are hard to magnetise but keep their magnetism.
+C: In Fleming's left-hand rule, the first finger shows the {{c1::field}}, the second finger the {{c2::current}} and the thumb the {{c3::motion (force)}}.
+How does the force on a wire depend on the current and the field? :: A larger current or a stronger magnetic field gives a larger force
+How does a DC motor work? :: Current in coil in magnetic field produces forces in opposite directions on each side → coil turns; split-ring commutator reverses current every half turn so it keeps rotating
+How does a loudspeaker work? :: AC in a coil in a magnetic field makes the coil and cone vibrate, producing sound waves
+Why can a chain of iron paper clips hang from a magnet? :: Each clip has magnetism induced in it, so it attracts the next clip
+Why must electromagnet wire be insulated? :: So the current flows around every turn of the coil, rather than short-circuiting between touching turns or through the core
+How can the induced voltage be increased? :: Move the wire/magnet faster, use a stronger magnet, more turns on the coil
+How does a generator (dynamo) work? :: Coil rotates in a magnetic field, inducing an alternating voltage; slip rings connect to the circuit (AC generator)
+Why is electricity transmitted at high voltage? :: Step-up transformers increase voltage and reduce current, so less energy is lost as heat in the cables
+C: A voltage is induced in a conductor when it {{c1::cuts}} magnetic field lines, or when the magnetic field through a coil {{c2::changes}}.
+How does a moving-coil microphone use electromagnetic induction? :: Sound waves make a diaphragm vibrate, moving a coil attached to it (or a magnet) relative to a magnet, which induces a small alternating voltage with the same pattern as the sound
+Why is induced voltage described as a form of 'generator effect'? :: Because moving a conductor in a magnetic field generates electricity from kinetic energy – the opposite energy transfer to the motor effect
+Fleming's right-hand rule (extra – not needed for Edexcel) :: Thumb = Motion of the wire, First finger = Field (N to S), Second finger = induced Current. It gives the direction of induced current in a wire moving through a field ;; In the exam use Lenz's law (opposes the change) to explain direction
+C: By Lenz's law, an induced current produces a magnetic field that {{c1::opposes}} the {{c2::change}} that caused it.
+A strong magnet is dropped down a vertical copper tube and falls very slowly. Explain why. :: The moving magnet induces circulating currents in the copper ;; By Lenz's law their magnetic field opposes the magnet's motion ;; This gives an upward force, so the magnet falls more slowly than it would through air
+Why would a magnet stop falling slowly if the copper tube had a long slit cut down its side? :: The slit stops the induced current flowing around the tube, so the opposing magnetic field is much weaker
+Why are carbon brushes used? :: Carbon conducts electricity and is slippery (low friction), so it makes good contact without wearing the rings away too quickly
+List the ways to increase the output voltage of a generator. :: Spin the coil faster ;; Use stronger magnets ;; Use more turns on the coil ;; Use a coil with a larger area ;; Use a soft iron core
+How does a DC generator differ from an AC generator? :: It uses a split-ring commutator instead of slip rings, so the output always flows in one direction (but rises and falls in pulses)
+Describe the energy transfers in a power station generator. :: Fuel (chemical or nuclear) → thermal → steam turns a turbine (kinetic) → generator → electrical energy (with some wasted as heat)
+How do wind turbines and hydroelectric stations generate electricity? :: Moving wind or water turns a turbine, which turns a generator, using electromagnetic induction
+Explain how a transformer works, step by step. :: Alternating current in the primary coil produces a changing magnetic field ;; The iron core carries this changing field through the secondary coil ;; The changing field induces an alternating voltage across the secondary coil
+How are energy losses in transformers reduced? :: Thick, low-resistance copper wire ;; Laminated core to cut eddy currents ;; Soft iron core ;; Winding coils over each other on the same core to cut leakage
+Write the equation for electrical power. :: power = current × voltage ;; P = I × V
+What is the voltage and frequency of UK mains electricity? :: 230 V, 50 Hz
+How fast must a generator coil spin to produce a 50 Hz output? :: 50 rotations per second (3000 per minute), if the generator has one pair of poles
+A transformer has 500 turns on the primary coil and 100 on the secondary. The primary voltage is 230 V. What is the secondary voltage? :: Vs = Vp × Ns ÷ Np = 230 × 100 ÷ 500 = **46 V** (step-down)
+A transformer changes 230 V to 12 V. The primary coil has 920 turns. How many turns does the secondary have? :: Ns = 920 × 12 ÷ 230 = **48 turns**
+The same 50 MW is sent at 400 kV. What is the current? :: I = 50 000 000 ÷ 400 000 = **125 A**
+Explain why a transformer does not work with a direct current supply. :: A DC current gives a steady magnetic field in the core ;; The field through the secondary coil does not change ;; So no voltage is induced in the secondary coil
+Explain why a step-up transformer is used at a power station. :: It increases the voltage and reduces the current ;; Lower current means less energy lost as heat in the transmission cables (P = I²R) ;; So transmission is more efficient
+Describe how a generator produces an alternating voltage. :: A coil rotates between the poles of a magnet ;; The sides of the coil cut the magnetic field lines, inducing a voltage ;; Every half turn the sides cut the field in the opposite direction, so the voltage reverses ;; Slip rings and brushes connect the coil to the circuit
+Explain why the output from a transformer is zero when the primary current is constant. :: A constant current produces a steady magnetic field ;; No change in field means no induced voltage in the secondary coil
+Explain why the lamp in a bicycle dynamo goes out when the cyclist stops. :: When the wheel stops, the magnet stops moving relative to the coil ;; The magnetic field through the coil no longer changes ;; No voltage is induced, so no current flows
+Explain how Lenz's law applies when a magnet is pulled out of a coil. :: The induced current flows in the direction that opposes the removal of the magnet ;; The end of the coil nearest the magnet becomes the opposite pole and attracts it ;; Work is done against this force and transferred to electrical energy
+Write the turns–voltage equation for a transformer. :: Vp ÷ Vs = Np ÷ Ns ;; (voltage across primary ÷ voltage across secondary = turns on primary ÷ turns on secondary)
+Write the power equation for an ideal (100% efficient) transformer. :: Vp × Ip = Vs × Is ;; (power in = power out)
+C: In alpha decay the mass number falls by {{c1::4}} and the atomic number falls by {{c2::2}}.
+C: In beta decay the mass number {{c1::stays the same}} and the atomic number {{c2::increases by 1}}.
+C: Background radiation comes from natural sources on {{c1::Earth}} (rocks, radon, food) and from {{c2::space}} (cosmic rays), plus man-made sources such as medical X-rays.
+Which is usually the largest source of background radiation in the UK? :: Radon gas from rocks such as granite
+C: Activity is measured in {{c1::becquerels (Bq)}}; 1 Bq = 1 {{c2::decay per second}}.
+C: Half-life is the time taken for the {{c1::activity}} of a sample (or the number of undecayed nuclei) to {{c2::halve}}.
+How should radioactive sources be handled safely? :: Use tongs, keep at arm's length, minimise time, store in lead-lined boxes, never point at people
+What is the role of control rods in a nuclear reactor? :: Absorb neutrons to control the rate of fission (e.g. boron)
+What is the role of the moderator in a nuclear reactor? :: Slows down neutrons so they can be absorbed by uranium-235 (e.g. graphite or water)
+What does the fission of a uranium-235 nucleus produce? :: Two radioactive daughter nuclei, two or three neutrons, and energy (also gamma rays)
+What is a chain reaction? :: Neutrons released by fission go on to cause further fissions
+Why is fusion hard to achieve on Earth? :: Needs extremely high temperature and pressure to overcome the electrostatic repulsion between positive nuclei
+C: Isotopes of an element have the same {{c1::atomic (proton) number}} but different {{c2::mass (nucleon) numbers}}.
+Calculate: uranium-238 (²³⁸₉₂U) emits an alpha particle. What are the mass and atomic numbers of the new nucleus? :: Mass number 238 − 4 = **234** ;; Atomic number 92 − 2 = **90** (thorium, ²³⁴₉₀Th)
+Why might students use a simulation for the penetration practical? :: Real sources are a health hazard and are strictly controlled in schools; a simulation gives the same pattern safely
+What type of neutron is most likely to cause fission of uranium-235? :: A slow-moving (thermal) neutron
+Why is fusion not yet used to generate electricity on a large scale? :: It is very hard to reach and contain the extremely high temperatures needed ;; So far, experimental reactors use about as much energy as (or more than) they produce
+C: Our solar system is in the {{c1::Milky Way}} galaxy, one of {{c2::billions}} of galaxies in the universe.
+What is the difference between the orbits of planets and comets? :: Planets – nearly circular ;; Comets – highly elliptical
+How does gravitational field strength vary? :: Depends on the mass of the planet/moon; g is different on other planets
+Calculate: what is the weight of a 60 kg astronaut on the Moon (g = 1.6 N/kg)? :: W = m × g = 60 × 1.6 = **96 N**
+Which colour are the hottest stars and which are the coolest? :: Hottest – blue (or blue-white) ;; Coolest – red
+What colour is the Sun and what type of star is it? :: Yellow – a main sequence star (medium surface temperature, about 5500 °C)
+What does a Hertzsprung–Russell diagram plot? :: Absolute magnitude (luminosity) against surface temperature (hot on the left)
+C: On the absolute magnitude scale, the {{c1::more negative}} the number, the brighter the star.
+Write the redshift equation. :: Δλ/λ₀ = v/c
+Calculate: how many seconds are there in one year (365 days)? :: 365 × 24 × 3600 = **31 536 000 s** (about 3.2 × 10⁷ s)
+Why does a comet only grow a tail when it is near the Sun? :: The Sun heats the comet's ice so it vaporises, and the gas and dust are blown away from the Sun into a tail
+Calculate: the Earth orbits the Sun at a radius of 1.5 × 10¹¹ m in 365 days. What is its orbital speed? :: T = 365 × 24 × 3600 = 3.15 × 10⁷ s ;; v = 2π × 1.5 × 10¹¹ ÷ 3.15 × 10⁷ = **about 30 000 m/s** (30 km/s)
+Rearrange n = sin i ÷ sin r to find sin r. :: sin r = sin i ÷ n
+How do you calculate the gradient of a straight-line graph? :: gradient = change in y ÷ change in x (rise ÷ run), using a large triangle
+Why do we use light gates and data loggers rather than stopwatches for short time intervals? :: They remove human reaction time (about 0.2–0.3 s), which is large compared with short times, so readings are more accurate
