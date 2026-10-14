@@ -225,7 +225,7 @@ describe('Quick Learn topic sets', async () => {
 
   it('builds sensible sets for every subject', () => {
     let total = 0;
-    for (const d of decks) {
+    for (const d of decks.filter((x) => x.notes.length)) {
       const sets = buildSets(d);
       total += sets.length;
       expect(new Set(sets.map((s) => s.id)).size, d.key).toBe(sets.length);

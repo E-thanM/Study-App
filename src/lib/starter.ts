@@ -76,7 +76,8 @@ export function parseStarter(key: string, text: string): StarterDeck {
   return { key, name, board, notes, topics, renames };
 }
 
-export async function loadStarterDecks(): Promise<StarterDeck[]> {
+/** Starter decks. Subjects that were removed (no cards left) are only included for clean-up (includeRemoved). */
+export async function loadStarterDecks(includeRemoved = false): Promise<StarterDeck[]> {
   const out: StarterDeck[] = [];
   for (const [path, load] of Object.entries(files)) {
     const key = path.split('/').pop()!.replace('.txt', '');
@@ -86,7 +87,7 @@ export async function loadStarterDecks(): Promise<StarterDeck[]> {
     out.push(deck);
   }
   const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german', 'geography'];
-  return out.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
+  return out.filter((d) => includeRemoved || d.notes.length > 0).sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
 function hash(s: string): string {
@@ -276,6 +277,8 @@ export function applyRetired(d: StarterDeck): number {
     const sub = (id: string): string[] => [id, ...children(id).flatMap((c) => sub(c.id))];
     const walk = (id: string) => children(id).forEach((c) => { if (!hasCards(c.id)) empty.push(...sub(c.id)); else walk(c.id); });
     walk(root.id);
+    // a subject removed entirely leaves nothing behind
+    if (!hasCards(root.id)) empty.push(root.id);
     if (empty.length) remove('deck', empty);
   }
   return notes.length;

@@ -89,45 +89,6 @@ Calculate: convert 100 K to °C. :: 100 − 273 = **−173 °C**
 What is the Kelvin temperature of the freezing point and boiling point of water? :: Freezing point 0 °C = **273 K** ;; Boiling point 100 °C = **373 K**
 Calculate: a gas syringe holds 60 cm³ of gas at 100 kPa. The gas is compressed slowly (constant temperature) to 20 cm³. What is the new pressure? :: p₂ = p₁V₁ ÷ V₂ = 100 × 60 ÷ 20 = **300 kPa**
 Calculate: a sealed can of gas at 300 K has a pressure of 150 kPa. At what temperature would the pressure be 200 kPa? :: T₂ = T₁ × p₂ ÷ p₁ = 300 × 200 ÷ 150 = **400 K** (127 °C)
-What do magnets attract? :: Other magnets (unlike poles) and magnetic materials – iron, steel, nickel and cobalt
-C: Magnetically {{c1::soft}} materials (e.g. iron) are easily magnetised and lose their magnetism easily; magnetically {{c2::hard}} materials (e.g. steel) are hard to magnetise but keep their magnetism.
-C: In Fleming's left-hand rule, the first finger shows the {{c1::field}}, the second finger the {{c2::current}} and the thumb the {{c3::motion (force)}}.
-How does the force on a wire depend on the current and the field? :: A larger current or a stronger magnetic field gives a larger force
-How does a DC motor work? :: Current in coil in magnetic field produces forces in opposite directions on each side → coil turns; split-ring commutator reverses current every half turn so it keeps rotating
-How does a loudspeaker work? :: AC in a coil in a magnetic field makes the coil and cone vibrate, producing sound waves
-Why can a chain of iron paper clips hang from a magnet? :: Each clip has magnetism induced in it, so it attracts the next clip
-Why must electromagnet wire be insulated? :: So the current flows around every turn of the coil, rather than short-circuiting between touching turns or through the core
-How can the induced voltage be increased? :: Move the wire/magnet faster, use a stronger magnet, more turns on the coil
-How does a generator (dynamo) work? :: Coil rotates in a magnetic field, inducing an alternating voltage; slip rings connect to the circuit (AC generator)
-Why is electricity transmitted at high voltage? :: Step-up transformers increase voltage and reduce current, so less energy is lost as heat in the cables
-C: A voltage is induced in a conductor when it {{c1::cuts}} magnetic field lines, or when the magnetic field through a coil {{c2::changes}}.
-How does a moving-coil microphone use electromagnetic induction? :: Sound waves make a diaphragm vibrate, moving a coil attached to it (or a magnet) relative to a magnet, which induces a small alternating voltage with the same pattern as the sound
-Why is induced voltage described as a form of 'generator effect'? :: Because moving a conductor in a magnetic field generates electricity from kinetic energy – the opposite energy transfer to the motor effect
-Fleming's right-hand rule (extra – not needed for Edexcel) :: Thumb = Motion of the wire, First finger = Field (N to S), Second finger = induced Current. It gives the direction of induced current in a wire moving through a field ;; In the exam use Lenz's law (opposes the change) to explain direction
-C: By Lenz's law, an induced current produces a magnetic field that {{c1::opposes}} the {{c2::change}} that caused it.
-A strong magnet is dropped down a vertical copper tube and falls very slowly. Explain why. :: The moving magnet induces circulating currents in the copper ;; By Lenz's law their magnetic field opposes the magnet's motion ;; This gives an upward force, so the magnet falls more slowly than it would through air
-Why would a magnet stop falling slowly if the copper tube had a long slit cut down its side? :: The slit stops the induced current flowing around the tube, so the opposing magnetic field is much weaker
-Why are carbon brushes used? :: Carbon conducts electricity and is slippery (low friction), so it makes good contact without wearing the rings away too quickly
-List the ways to increase the output voltage of a generator. :: Spin the coil faster ;; Use stronger magnets ;; Use more turns on the coil ;; Use a coil with a larger area ;; Use a soft iron core
-How does a DC generator differ from an AC generator? :: It uses a split-ring commutator instead of slip rings, so the output always flows in one direction (but rises and falls in pulses)
-Describe the energy transfers in a power station generator. :: Fuel (chemical or nuclear) → thermal → steam turns a turbine (kinetic) → generator → electrical energy (with some wasted as heat)
-How do wind turbines and hydroelectric stations generate electricity? :: Moving wind or water turns a turbine, which turns a generator, using electromagnetic induction
-Explain how a transformer works, step by step. :: Alternating current in the primary coil produces a changing magnetic field ;; The iron core carries this changing field through the secondary coil ;; The changing field induces an alternating voltage across the secondary coil
-How are energy losses in transformers reduced? :: Thick, low-resistance copper wire ;; Laminated core to cut eddy currents ;; Soft iron core ;; Winding coils over each other on the same core to cut leakage
-Write the equation for electrical power. :: power = current × voltage ;; P = I × V
-What is the voltage and frequency of UK mains electricity? :: 230 V, 50 Hz
-How fast must a generator coil spin to produce a 50 Hz output? :: 50 rotations per second (3000 per minute), if the generator has one pair of poles
-A transformer has 500 turns on the primary coil and 100 on the secondary. The primary voltage is 230 V. What is the secondary voltage? :: Vs = Vp × Ns ÷ Np = 230 × 100 ÷ 500 = **46 V** (step-down)
-A transformer changes 230 V to 12 V. The primary coil has 920 turns. How many turns does the secondary have? :: Ns = 920 × 12 ÷ 230 = **48 turns**
-The same 50 MW is sent at 400 kV. What is the current? :: I = 50 000 000 ÷ 400 000 = **125 A**
-Explain why a transformer does not work with a direct current supply. :: A DC current gives a steady magnetic field in the core ;; The field through the secondary coil does not change ;; So no voltage is induced in the secondary coil
-Explain why a step-up transformer is used at a power station. :: It increases the voltage and reduces the current ;; Lower current means less energy lost as heat in the transmission cables (P = I²R) ;; So transmission is more efficient
-Describe how a generator produces an alternating voltage. :: A coil rotates between the poles of a magnet ;; The sides of the coil cut the magnetic field lines, inducing a voltage ;; Every half turn the sides cut the field in the opposite direction, so the voltage reverses ;; Slip rings and brushes connect the coil to the circuit
-Explain why the output from a transformer is zero when the primary current is constant. :: A constant current produces a steady magnetic field ;; No change in field means no induced voltage in the secondary coil
-Explain why the lamp in a bicycle dynamo goes out when the cyclist stops. :: When the wheel stops, the magnet stops moving relative to the coil ;; The magnetic field through the coil no longer changes ;; No voltage is induced, so no current flows
-Explain how Lenz's law applies when a magnet is pulled out of a coil. :: The induced current flows in the direction that opposes the removal of the magnet ;; The end of the coil nearest the magnet becomes the opposite pole and attracts it ;; Work is done against this force and transferred to electrical energy
-Write the turns–voltage equation for a transformer. :: Vp ÷ Vs = Np ÷ Ns ;; (voltage across primary ÷ voltage across secondary = turns on primary ÷ turns on secondary)
-Write the power equation for an ideal (100% efficient) transformer. :: Vp × Ip = Vs × Is ;; (power in = power out)
 C: In alpha decay the mass number falls by {{c1::4}} and the atomic number falls by {{c2::2}}.
 C: In beta decay the mass number {{c1::stays the same}} and the atomic number {{c2::increases by 1}}.
 C: Background radiation comes from natural sources on {{c1::Earth}} (rocks, radon, food) and from {{c2::space}} (cosmic rays), plus man-made sources such as medical X-rays.

@@ -11,7 +11,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
   const [decks, setDecks] = useState<StarterDeck[]>([]);
   useVersion('note', 'set', 'settings');
   useEffect(() => {
-    void loadStarterDecks().then(setDecks);
+    void loadStarterDecks(true).then(setDecks);
   }, []);
 
   const pending = decks
@@ -40,7 +40,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
       <div className="grow" style={{ minWidth: 200 }}>
         <b>Trim flashcards that are more detailed than the exam needs</b>
         <div className="small muted">
-          {trims.map(({ d, total }) => `${d.name} (${total})`).join(' · ')} – trivia and extra detail beyond the specification. {trimStudied > 0 ? `${trimStudied} of them you've already studied; their review history will go too.` : "You haven't studied any of them."}
+          {trims.map(({ d, total }) => `${d.name}${d.notes.length ? '' : ' – whole subject removed'} (${total})`).join(' · ')} – trivia and extra detail beyond the specification. {trimStudied > 0 ? `${trimStudied} of them you've already studied; their review history will go too.` : "You haven't studied any of them."}
         </div>
       </div>
       <div className="row">
