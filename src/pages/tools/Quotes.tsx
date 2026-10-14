@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { Icon, MenuButton, Modal, Progress, TopBar, toast, useKey } from '../../components/ui';
 import {
-  MASTERED, STAGES, checkQuote, cueParts, extractQuotes, hashText, isDue, nextStage, pickSession, statusOf,
+  MASTERED, STAGES, checkQuote, cueParts, extractQuotes, hashText, isDue, nextStage, pickSession, quoteWords, statusOf,
   type BuiltinQuote, type CheckResult, type CuePart,
 } from '../../lib/quotes';
 import { parseStarter } from '../../lib/starter';
@@ -38,6 +38,22 @@ function useItems(): { items: Item[]; loading: boolean } {
     loadBuiltins().then((b) => live && setBuiltins(b));
     return () => { live = false; };
   }, []);
+  // a built-in quote that has been shortened gets a new id: carry the old record's progress across
+  useEffect(() => {
+    if (!builtins) return;
+    const ids = new Set(builtins.map((b) => b.id));
+    const has = new Set(recs.map((r) => r.id));
+    for (const r of recs) {
+      if (r.custom || ids.has(r.id)) continue;
+      const old = ` ${quoteWords(r.text).join(' ')} `;
+      const b = builtins.find((x) => x.work === r.work && !has.has(x.id) && old.includes(` ${quoteWords(x.text).join(' ')} `));
+      if (b) {
+        put({ ...r, id: b.id, text: b.text, source: b.source, updatedAt: Date.now() });
+        has.add(b.id);
+      }
+      remove('quote', r.id);
+    }
+  }, [recs, builtins]);
   const items = useMemo(() => {
     const byId = new Map(recs.map((r) => [r.id, r]));
     const out: Item[] = (builtins || []).map((b) => {
@@ -46,7 +62,7 @@ function useItems(): { items: Item[]; loading: boolean } {
       return { ...b, rec, custom: false };
     });
     // the student's own quotes (and any saved built-in that is no longer in the starter file)
-    for (const r of byId.values()) out.push({ id: r.id, work: r.work, text: r.text, source: r.source, rec: r, custom: !!r.custom });
+    for (const r of byId.values()) if (r.custom) out.push({ id: r.id, work: r.work, text: r.text, source: r.source, rec: r, custom: !!r.custom });
     return out;
   }, [recs, builtins]);
   return { items, loading: !builtins };
@@ -232,6 +248,7 @@ function QuoteEditor({ item, works, defaultWork, onClose }: { item: Item | null;
         <label className="col" style={{ gap: 0 }}>
           <span className="field-label">Quote</span>
           <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder="Type the quote exactly – use / for a line break" rows={3} autoFocus />
+          {quoteWords(text).length > 9 && <span className="hint" style={{ color: 'var(--warn)' }}>{quoteWords(text).length} words – short, sharp quotes (9 words or fewer) are quicker to learn and easier to use in an essay. Try keeping just the key phrase.</span>}
         </label>
         <label className="col" style={{ gap: 0 }}>
           <span className="field-label">Who says it / where</span>

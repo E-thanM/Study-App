@@ -1,8 +1,8 @@
-import { buildNote, ensureDeckPath } from './collection';
+import { buildNote, ensureDeckPath, updateNote } from './collection';
 import { all, get, patch, put } from './store';
 import type { StudySet } from './types';
 import { DEFAULT_PRESET, getSettings } from './seed';
-import type { AnyRec, Preset } from './types';
+import type { AnyRec, Note, Preset } from './types';
 import { escapeHtml } from './util';
 
 /*
@@ -17,7 +17,15 @@ import { escapeHtml } from './util';
 const files = import.meta.glob('../content/*.txt', { query: '?raw', import: 'default' }) as Record<string, () => Promise<string>>;
 
 export interface StarterNote { deckPath: string; type: 'basic' | 'reversed' | 'cloze'; front: string; back: string; topic: string; sub: string }
-export interface StarterDeck { key: string; name: string; board: string; notes: StarterNote[]; topics: string[] }
+export interface StarterDeck {
+  key: string;
+  name: string;
+  board: string;
+  notes: StarterNote[];
+  topics: string[];
+  /** `@renamed old front => new front`: an improved card replaces an installed one (progress kept) */
+  renames?: { from: string; to: string }[];
+}
 
 export const STARTER_PRESET_ID = 'preset-gcse-starter';
 
@@ -34,11 +42,17 @@ export function parseStarter(key: string, text: string): StarterDeck {
   let sub = '';
   const notes: StarterNote[] = [];
   const topics: string[] = [];
+  const renames: { from: string; to: string }[] = [];
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.trim();
     if (!line) continue;
     if (line.startsWith('@deck ')) { name = line.slice(6).trim(); continue; }
     if (line.startsWith('@board ')) { board = line.slice(7).trim(); continue; }
+    if (line.startsWith('@renamed ')) {
+      const [from, to] = line.slice(9).split(' => ');
+      if (from && to) renames.push({ from: fmt(from), to: fmt(to) });
+      continue;
+    }
     if (line.startsWith('## ')) { sub = line.slice(3).trim(); continue; }
     if (line.startsWith('# ')) { topic = line.slice(2).trim(); sub = ''; topics.push(topic); continue; }
     const path = [name, topic, sub].filter(Boolean).join('::');
@@ -54,7 +68,7 @@ export function parseStarter(key: string, text: string): StarterDeck {
     const j = line.indexOf(' <> ');
     if (j > 0) notes.push({ deckPath: path, type: 'reversed', front: fmt(line.slice(0, j)), back: fmt(line.slice(j + 4)), topic, sub });
   }
-  return { key, name, board, notes, topics };
+  return { key, name, board, notes, topics, renames };
 }
 
 export async function loadStarterDecks(): Promise<StarterDeck[]> {
@@ -103,9 +117,11 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
   const deckIds = new Map<string, string>();
   const recs: AnyRec[] = [];
   let notes = 0, cards = 0, skipped = 0;
+  const oldGuid = renamedFrom(deck);
   for (const n of deck.notes) {
     const guid = noteGuid(deck, n.front);
-    if (have.has(guid)) { skipped++; continue; }
+    // an installed older version of this card is upgraded via "Improved cards" instead
+    if (have.has(guid) || (oldGuid.has(guid) && have.has(oldGuid.get(guid)!))) { skipped++; continue; }
     let deckId = deckIds.get(n.deckPath);
     if (!deckId) {
       deckId = ensureDeckPath(n.deckPath, STARTER_PRESET_ID, (path) => `d-starter:${hash(path)}`);
@@ -140,6 +156,8 @@ const sig = (parts: string[]) => hash(parts.join('\u0001'));
 const cardsSig = (d: StarterDeck) => sig(d.notes.map((n) => n.front));
 const setsSig = (d: StarterDeck) => sig(buildSets(d).flatMap((s) => [s.id, ...s.terms.map((t) => t.id)]));
 const noteGuid = (d: StarterDeck, front: string) => `starter:${d.key}:${hash(front)}`;
+/** new guid → guid of the card it replaces */
+const renamedFrom = (d: StarterDeck) => new Map((d.renames || []).map((r) => [noteGuid(d, r.to), noteGuid(d, r.from)]));
 
 /** Remember that the user has seen (added or dismissed) the current content of a starter deck. */
 export function markSeen(kind: 'cards' | 'sets', d: StarterDeck) {
@@ -156,7 +174,48 @@ export function pendingCards(d: StarterDeck): number {
   const have = new Set(all('note').filter((n) => n.guid?.startsWith(prefix)).map((n) => n.guid));
   if (!have.size) return 0;
   if (getSettings().starterSig?.[`cards:${d.key}`] === cardsSig(d)) return 0;
-  return d.notes.filter((n) => !have.has(noteGuid(d, n.front))).length;
+  const old = renamedFrom(d);
+  return d.notes.filter((n) => { const g = noteGuid(d, n.front); return !have.has(g) && !have.has(old.get(g) || ''); }).length;
+}
+
+/** The fields a starter note is installed with. */
+const starterFields = (n: StarterNote): Record<string, string> => (n.type === 'cloze' ? { Text: n.front } : { Front: n.front, Back: n.back });
+
+/** Installed starter notes whose content has since been improved (same question, better answer). */
+export function changedCards(d: StarterDeck): { note: Note; fields: Record<string, string>; guid: string }[] {
+  const prefix = `starter:${d.key}:`;
+  const byGuid = new Map(all('note').filter((n) => n.guid?.startsWith(prefix)).map((n) => [n.guid!, n]));
+  const old = renamedFrom(d);
+  const out: { note: Note; fields: Record<string, string>; guid: string }[] = [];
+  for (const s of d.notes) {
+    const guid = noteGuid(d, s.front);
+    const n = byGuid.get(guid) || byGuid.get(old.get(guid) || '');
+    if (!n) continue;
+    const f = starterFields(s);
+    if (n.guid !== guid || Object.entries(f).some(([k, v]) => (n.fields[k] ?? '') !== v)) out.push({ note: n, fields: f, guid });
+  }
+  return out;
+}
+
+const fixSig = (changes: { note: Note; fields: Record<string, string>; guid: string }[]) => sig(changes.map((c) => `${c.note.guid}\u0002${Object.values(c.fields).join('\u0002')}`));
+
+/** How many installed cards have an improved version the user hasn't applied or dismissed. */
+export function pendingFixes(d: StarterDeck): number {
+  const c = changedCards(d);
+  if (!c.length || getSettings().starterSig?.[`fix:${d.key}`] === fixSig(c)) return 0;
+  return c.length;
+}
+
+/** Bring installed cards up to date. Review history and scheduling are kept. */
+export function applyFixes(d: StarterDeck): number {
+  const c = changedCards(d);
+  for (const { note, fields, guid } of c) updateNote({ ...note, guid, fields: { ...note.fields, ...fields } });
+  return c.length;
+}
+
+export function dismissFixes(d: StarterDeck) {
+  const cur = getSettings();
+  put({ ...cur, starterSig: { ...(cur.starterSig || {}), [`fix:${d.key}`]: fixSig(changedCards(d)) } });
 }
 
 /** How many topic-set terms are missing for a subject whose sets the user already added. */
@@ -168,8 +227,8 @@ export function pendingSets(d: StarterDeck): number {
     const cur = get('set', s.id);
     if (!cur) missing += s.terms.length;
     else {
-      const have = new Set(cur.terms.map((t) => t.id));
-      missing += s.terms.filter((t) => !have.has(t.id)).length;
+      const have = new Map(cur.terms.map((t) => [t.id, t.definition]));
+      missing += s.terms.filter((t) => have.get(t.id) !== t.definition).length;
     }
   }
   return missing;
@@ -269,14 +328,22 @@ export function buildSets(deck: StarterDeck): StarterSetData[] {
 export function installSets(deck: StarterDeck): { sets: number; terms: number; updated: number } {
   const out: StudySet[] = [];
   let sets = 0, terms = 0, updated = 0;
+  // a renamed card's term replaces its old version in place
+  const renamedTerm = new Map((deck.renames || []).map((r) => [`t-${hash(r.from)}`, `t-${hash(r.to)}`]));
   for (const d of buildSets(deck)) {
-    const cur = get('set', d.id);
+    const found = get('set', d.id);
+    const cur = found && { ...found, terms: found.terms.map((t) => (renamedTerm.has(t.id) && d.terms.some((x) => x.id === renamedTerm.get(t.id)) ? { ...t, id: renamedTerm.get(t.id)! } : t)) };
     if (cur) {
       const have = new Set(cur.terms.map((t) => t.id));
       const extra = d.terms.filter((t) => !have.has(t.id));
-      if (extra.length) {
-        out.push({ ...cur, terms: [...cur.terms, ...extra] });
-        terms += extra.length;
+      // improved answers replace the old ones (stars are kept)
+      const fresh = new Map(d.terms.map((t) => [t.id, t]));
+      const changed = cur.terms.filter((t) => fresh.has(t.id) && fresh.get(t.id)!.definition !== t.definition);
+      const renamed = cur.terms.filter((t, i) => t.id !== found!.terms[i].id).length;
+      if (extra.length || changed.length || renamed) {
+        const merged = cur.terms.map((t) => (fresh.has(t.id) ? { ...t, term: fresh.get(t.id)!.term, definition: fresh.get(t.id)!.definition } : t));
+        out.push({ ...cur, terms: [...merged, ...extra] });
+        terms += extra.length + Math.max(changed.length, renamed);
         updated++;
       }
       continue;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingSets, type StarterDeck } from '../lib/starter';
+import { applyFixes, dismissFixes, installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingFixes, pendingSets, type StarterDeck } from '../lib/starter';
 import { useVersion } from '../lib/store';
 import { toast } from './ui';
 
@@ -17,7 +17,22 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
   const pending = decks
     .map((d) => ({ d, n: kind === 'cards' ? pendingCards(d) : pendingSets(d) }))
     .filter((x) => x.n > 0);
-  if (!pending.length) return null;
+  const fixes = kind === 'cards' ? decks.map((d) => ({ d, n: pendingFixes(d) })).filter((x) => x.n > 0) : [];
+  if (!pending.length && !fixes.length) return null;
+  const fixTotal = fixes.reduce((s, x) => s + x.n, 0);
+  const fixBanner = fixes.length > 0 && (
+    <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+      <div className="grow" style={{ minWidth: 200 }}>
+        <b>Improved GCSE flashcards available</b>
+        <div className="small muted">{fixes.map(({ d, n }) => `${d.name} (${n})`).join(' · ')} – better answers for cards you already have. Your progress is kept; any edits you made to those cards are replaced.</div>
+      </div>
+      <div className="row">
+        <button className="btn primary sm" onClick={() => { let n = 0; for (const { d } of fixes) n += applyFixes(d); toast(`Updated ${n} cards`); }}>Update {fixTotal} cards</button>
+        <button className="btn ghost sm" onClick={() => fixes.forEach(({ d }) => dismissFixes(d))}>Not now</button>
+      </div>
+    </div>
+  );
+  if (!pending.length) return fixBanner;
 
   const total = pending.reduce((s, x) => s + x.n, 0);
   const unit = kind === 'cards' ? 'cards' : 'terms';
@@ -28,6 +43,8 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
   const dismiss = () => pending.forEach(({ d }) => markSeen(kind, d));
 
   return (
+    <>
+    {fixBanner}
     <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
       <div className="grow" style={{ minWidth: 200 }}>
         <b>New GCSE {kind === 'cards' ? 'flashcards' : 'topic sets'} available</b>
@@ -40,5 +57,6 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
         <button className="btn ghost sm" onClick={dismiss}>Not now</button>
       </div>
     </div>
+    </>
   );
 }
