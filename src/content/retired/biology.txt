@@ -1,0 +1,75 @@
+C: Living organisms show {{c1::nutrition}}, {{c2::respiration}}, {{c3::excretion}}, response to surroundings, {{c4::movement}}, control of internal conditions, {{c5::reproduction}}, and growth and development.
+Which kingdom stores carbohydrate as starch or sucrose? :: Plants
+What is a mycelium? :: The network of hyphae forming the body of a fungus
+What is saprotrophic nutrition? :: Feeding by secreting extracellular digestive enzymes onto dead/decaying matter and absorbing the soluble products
+Give an example of a bacterial pathogen. :: Pneumococcus (causes pneumonia)
+Give an example of a viral pathogen. :: Influenza virus (flu) or HIV (AIDS) or tobacco mosaic virus
+Give an example of a protoctist pathogen. :: Plasmodium (causes malaria)
+What genetic material can a virus contain? :: Either DNA or RNA
+Compare the size of viruses and bacteria. :: Viruses are much smaller than bacteria
+Which pigment do chloroplasts contain? :: Chlorophyll (green) – absorbs light
+Where are stem cells found in plants? :: Meristems – at the tips of roots and shoots
+Give one risk of using stem cells in medicine. :: The cells may divide uncontrollably and form tumours (cancer); risk of rejection; infection from contaminated cells
+Which kingdom's storage carbohydrate is glycogen and which is starch? :: Glycogen – animals and fungi ;; Starch – plants
+C: Starch and glycogen are large molecules made from many {{c1::glucose}} (simple sugar) units joined together.
+C: Proteins are made from long chains of {{c1::amino acids}}.
+Why does enzyme activity increase from 0 °C up to the optimum? :: Molecules gain more kinetic energy, move faster and collide more often, so more enzyme–substrate complexes form per second
+Is diffusion active or passive? :: Passive – it does not need energy from respiration
+Why does active transport need energy? :: It moves substances against their concentration gradient (from low to high concentration); energy from respiration is used by carrier proteins
+What are the reactants of photosynthesis? :: Carbon dioxide and water
+What are the products of photosynthesis? :: Glucose and oxygen
+Which ion is needed to make chlorophyll? :: Magnesium (Mg²⁺)
+Which ion is needed to make amino acids and proteins? :: Nitrate (NO₃⁻)
+What are the symptoms of magnesium deficiency? :: Yellowing of leaves (chlorosis), especially older leaves
+What are the symptoms of nitrate deficiency? :: Stunted growth and yellow older leaves
+What is the inverse square law for light intensity? :: Light intensity ∝ 1/distance²
+What is a deficiency disease caused by lack of vitamin C? :: Scurvy
+What is a deficiency disease caused by lack of vitamin D? :: Rickets (soft, weak bones)
+What is a deficiency disease caused by lack of iron? :: Anaemia (tiredness – less haemoglobin to carry oxygen)
+What is the deficiency effect of lack of vitamin A? :: Poor night vision (night blindness) and dry skin
+Why do males generally need more energy than females? :: They are usually larger with more muscle mass
+What is the role of the liver in digestion? :: Makes bile
+What are the products of protein digestion? :: Amino acids
+What are the products of starch digestion? :: Maltose (by amylase), then glucose (by maltase)
+What are the products of lipid digestion? :: Fatty acids and glycerol
+Where is pepsin made and what is its optimum pH? :: In the stomach wall; acidic, about pH 2
+Where is trypsin made? :: In the pancreas (acts in the small intestine)
+What is egestion? :: Removal of undigested food (faeces) from the anus
+How do you calculate energy per gram of food? :: Energy (J) = mass of water × 4.2 × ΔT, then divide by mass of food burned
+C: Respiration releases energy in the form of {{c1::ATP}}, which provides energy for cells.
+What does plasma transport? :: Carbon dioxide, digested food (glucose, amino acids), urea, hormones, and heat
+Why do red blood cells have no nucleus? :: More space for haemoglobin, so more oxygen can be carried
+Name the protein that forms a mesh in a blood clot. :: Fibrin (made from soluble fibrinogen)
+Why is blood clotting important? :: Stops blood loss and prevents pathogens entering through a wound; forms a scab
+Name the valves between the atria and ventricles. :: Atrioventricular valves – tricuspid (right) and bicuspid/mitral (left)
+Explain why heart rate increases during exercise. :: Muscles respire faster and need more oxygen and glucose and must remove more CO₂; a faster heart rate increases blood flow to the muscles
+Describe the path of blood from the gut to the liver. :: Gut capillaries → hepatic portal vein → liver
+Name the blood vessels carrying blood to and from the lungs. :: Pulmonary artery (to), pulmonary vein (from)
+Why is blood in the glomerulus at high pressure? :: The afferent arteriole bringing blood in is wider than the efferent arteriole taking it away
+Where does the CO₂ excreted by plants come from? :: Respiration
+Where does the O₂ excreted by plants come from? :: Photosynthesis
+C: ADH makes the walls of the {{c1::collecting duct}} more {{c2::permeable}} to water, so more water is reabsorbed into the blood.
+How is glucose reabsorbed in the proximal convoluted tubule? :: By active transport (cells have many mitochondria and microvilli)
+C: To focus on a near object, the ciliary muscles {{c1::contract}}, the suspensory ligaments {{c2::slacken}} and the lens becomes {{c3::fatter}}.
+C: To focus on a distant object, the ciliary muscles {{c1::relax}}, the suspensory ligaments {{c2::tighten}} and the lens becomes {{c3::thinner}}.
+What are the adrenal glands? :: Glands on top of the kidneys that secrete adrenaline
+Which hormones cause secondary sexual characteristics at puberty? :: Testosterone (males) and oestrogen (females)
+Name the hormones made by the pituitary gland in the menstrual cycle. :: FSH and LH
+Name harmful substances that can cross the placenta. :: Nicotine, alcohol, some drugs, carbon monoxide and some viruses (e.g. rubella, HIV)
+Why is rooting powder used on cuttings? :: Contains auxin (plant hormone) that stimulates root growth
+Where are chromosomes found in a cell? :: In the nucleus
+Which bases pair together in DNA? :: A with T; C with G (complementary base pairing)
+How many cells does mitosis produce and are they identical? :: Two genetically identical diploid daughter cells
+Give four uses of mitosis. :: Growth, repair of damaged tissue, asexual reproduction and cloning
+How many divisions happen in meiosis? :: Two – producing four haploid cells
+Which sex chromosomes do the gametes of a man contain? :: Half of sperm carry X, half carry Y
+Which sex chromosome do all eggs contain? :: X
+Why does natural selection cause allele frequencies to change? :: Better-adapted individuals reproduce more, so their advantageous alleles are passed on to more offspring
+Which process removes CO₂ from the atmosphere? :: Photosynthesis
+How does carbon pass between organisms? :: As carbon compounds (e.g. carbohydrates, proteins) through feeding
+Why do plants under an algal bloom die? :: Algae block the light, so plants cannot photosynthesise
+How are genes inserted into plants? :: Using a bacterium (Agrobacterium) or virus as a vector carrying the recombinant plasmid
+Write the equation for the respiration of yeast in bread making. :: glucose → ethanol + carbon dioxide (anaerobic)
+How can you test the gas produced by yeast? :: Bubble it through limewater – turns milky/cloudy (CO₂)
+How are plants cloned by micropropagation? :: Small pieces (explants) of a plant are grown on agar with nutrients and hormones in sterile conditions – many identical plants quickly
+What are the advantages of cloned transgenic animals? :: Large numbers of identical animals that all make a useful human protein (e.g. in milk) can be produced quickly

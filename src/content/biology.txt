@@ -27,13 +27,9 @@ Give two examples of viruses. :: Tobacco mosaic virus (discolours leaves) and in
 What is a pathogen? :: A microorganism that causes disease
 Name the four types of pathogen. :: Fungi, bacteria, protoctists and viruses
 ## Extra detail
-C: Living organisms show {{c1::nutrition}}, {{c2::respiration}}, {{c3::excretion}}, response to surroundings, {{c4::movement}}, control of internal conditions, {{c5::reproduction}}, and growth and development.
-Which kingdom stores carbohydrate as starch or sucrose? :: Plants
 Which two kingdoms store carbohydrate as glycogen? :: Animals and fungi
 Do fungi photosynthesise? :: No – they have no chloroplasts
 What are hyphae? :: Thread-like structures that make up the body (mycelium) of a fungus; contain many nuclei
-What is a mycelium? :: The network of hyphae forming the body of a fungus
-What is saprotrophic nutrition? :: Feeding by secreting extracellular digestive enzymes onto dead/decaying matter and absorbing the soluble products
 Name the bacterium used to make yoghurt and its shape. :: Lactobacillus bulgaricus – rod-shaped
 Name the bacterium that causes pneumonia and its shape. :: Pneumococcus – spherical
 Which kingdom has members with no nucleus? :: Bacteria (prokaryotes) – DNA is a circular chromosome plus plasmids
@@ -42,11 +38,6 @@ What does Chlorella have that Amoeba does not? :: Chloroplasts – Chlorella pho
 What does tobacco mosaic virus do to plants? :: Causes discolouration (mosaic pattern) of leaves by preventing chloroplast formation, reducing photosynthesis
 What disease does HIV cause? :: AIDS
 Why are viruses not considered living? :: They are not cells and can only reproduce inside living host cells (no metabolism of their own)
-Give an example of a bacterial pathogen. :: Pneumococcus (causes pneumonia)
-Give an example of a viral pathogen. :: Influenza virus (flu) or HIV (AIDS) or tobacco mosaic virus
-Give an example of a protoctist pathogen. :: Plasmodium (causes malaria)
-What genetic material can a virus contain? :: Either DNA or RNA
-Compare the size of viruses and bacteria. :: Viruses are much smaller than bacteria
 
 # 2a–b Cells and organisation
 List the levels of organisation in an organism, smallest first. :: Organelles → cells → tissues → organs → organ systems
@@ -74,7 +65,6 @@ Give an example of a tissue in a plant and in an animal. :: Plant: xylem, phloem
 What is an organelle? :: A specialised structure inside a cell with a particular function (e.g. nucleus, mitochondrion)
 Which structures are found in both plant and animal cells? :: Nucleus, cytoplasm, cell membrane, mitochondria and ribosomes
 What is the cell membrane described as? :: Partially (selectively) permeable – lets some substances through but not others
-Which pigment do chloroplasts contain? :: Chlorophyll (green) – absorbs light
 Why do root hair cells have no chloroplasts? :: They are underground and receive no light, so cannot photosynthesise
 Why do muscle cells contain many mitochondria? :: To carry out lots of aerobic respiration, releasing energy for contraction
 Why does a large permanent vacuole help support a plant? :: Cell sap pushes the cytoplasm against the cell wall, making the cell turgid and supporting the plant
@@ -82,11 +72,9 @@ How do you calculate magnification? :: Magnification = image size ÷ actual size
 How do you calculate the actual size of a cell from a micrograph? :: Actual size = image size ÷ magnification
 How many micrometres (µm) are in 1 mm? :: 1000
 Why do multicellular organisms need differentiated cells? :: Different cells are specialised to carry out different functions efficiently (division of labour)
-Where are stem cells found in plants? :: Meristems – at the tips of roots and shoots
 What are embryonic stem cells able to do? :: Differentiate into any type of cell in the body
 How do adult stem cells differ from embryonic stem cells? :: Adult stem cells (e.g. bone marrow) can only differentiate into a limited range of cell types
 Give one reason why stem cells taken from a patient's own body reduce problems. :: They are genetically identical to the patient, so they are not rejected by the immune system
-Give one risk of using stem cells in medicine. :: The cells may divide uncontrollably and form tumours (cancer); risk of rejection; infection from contaminated cells
 
 # 2c Biological molecules
 Which elements are in carbohydrates? :: Carbon, hydrogen and oxygen
@@ -105,9 +93,6 @@ Explain the effect of increasing temperature on enzyme activity. :: Rate rises a
 Explain how pH affects enzymes. :: Each enzyme has an optimum pH; pH far from the optimum changes the shape of the active site (denaturing it), so the substrate can't bind
 Describe an investigation into the effect of temperature on enzyme activity. :: E.g. amylase + starch in water baths at different temperatures; take samples every 30 s onto spotting tile with iodine; time until no blue-black; keep pH, concentrations and volumes constant
 ## Molecules – extra detail
-Which kingdom's storage carbohydrate is glycogen and which is starch? :: Glycogen – animals and fungi ;; Starch – plants
-C: Starch and glycogen are large molecules made from many {{c1::glucose}} (simple sugar) units joined together.
-C: Proteins are made from long chains of {{c1::amino acids}}.
 C: A lipid (fat or oil) molecule is made of {{c1::glycerol}} joined to three {{c2::fatty acids}}.
 Which element is found in proteins but not in carbohydrates or lipids? :: Nitrogen
 ## Food tests practical
@@ -132,7 +117,6 @@ What does denatured mean? :: The shape of the enzyme's active site has permanent
 What is the optimum temperature of most human enzymes? :: About 37 °C
 What is the optimum pH of pepsin? :: About pH 2 (acidic, in the stomach)
 What is the optimum pH of most enzymes in the small intestine? :: Slightly alkaline – about pH 7–8 (e.g. pancreatic amylase, trypsin, lipase)
-Why does enzyme activity increase from 0 °C up to the optimum? :: Molecules gain more kinetic energy, move faster and collide more often, so more enzyme–substrate complexes form per second
 Does a low temperature denature enzymes? :: No – low temperatures slow enzymes down (fewer collisions) but the active site is not damaged; activity returns when warmed
 Sketch the graph of enzyme activity against temperature. :: Rises gradually to a peak (optimum) then falls steeply to zero as the enzyme denatures
 ## Enzyme practicals
@@ -162,9 +146,7 @@ What happens to an animal cell in pure water? :: Water enters by osmosis; it swe
 What happens to a plant cell in pure water? :: Water enters; the cell becomes turgid but the cell wall stops it bursting
 What happens to a plant cell in a concentrated solution? :: Water leaves; it becomes flaccid and then plasmolysed (membrane pulls away from wall)
 ## Extra detail
-Is diffusion active or passive? :: Passive – it does not need energy from respiration
 Is osmosis active or passive? :: Passive – no energy from respiration needed
-Why does active transport need energy? :: It moves substances against their concentration gradient (from low to high concentration); energy from respiration is used by carrier proteins
 Why do root hair cells contain many mitochondria? :: To release energy by respiration for active transport of mineral ions from the soil
 What is a partially permeable membrane? :: A membrane that allows small molecules (e.g. water) through but not larger ones (e.g. sucrose)
 How does increasing temperature affect the rate of diffusion? :: Increases it – particles have more kinetic energy and move faster
@@ -204,7 +186,6 @@ How can you show that chlorophyll is needed for photosynthesis? :: Test a varieg
 How can you show that light is needed for photosynthesis? :: Destarch a plant, cover part of a leaf with foil, leave in light, test for starch – covered part stays orange-brown
 How can you show that CO₂ is needed for photosynthesis? :: Destarch plant, enclose a leaf in a bag with soda lime (absorbs CO₂), leave in light, test for starch – no starch
 Describe an investigation into the effect of light intensity on photosynthesis. :: Pondweed in water with sodium hydrogencarbonate; lamp at different distances; count bubbles or measure gas volume per minute; keep temperature constant (heat shield/water bath)
-What is the inverse square law for light intensity? :: Light intensity ∝ 1/distance²
 ## Leaf structure
 List the layers of a leaf from top to bottom. :: Waxy cuticle → upper epidermis → palisade mesophyll → spongy mesophyll (with air spaces, veins) → lower epidermis with stomata and guard cells
 What is the function of the waxy cuticle? :: Reduces water loss by evaporation; it is transparent so light passes through
@@ -217,8 +198,6 @@ Why are leaves broad and flat? :: Large surface area to absorb more light and CO
 Why are leaves thin? :: Short diffusion distance for gases
 What is the role of veins (vascular bundles) in a leaf? :: Xylem brings water and minerals; phloem carries away sugars (sucrose)
 ## Photosynthesis – extra detail
-What are the reactants of photosynthesis? :: Carbon dioxide and water
-What are the products of photosynthesis? :: Glucose and oxygen
 Where in the cell does photosynthesis happen? :: In the chloroplasts
 Where does a plant get the carbon dioxide and water for photosynthesis? :: CO₂ diffuses in from the air through stomata; water is absorbed from soil by root hairs and carried in xylem
 Give five uses of the glucose made in photosynthesis. :: Respiration; converted to starch for storage; cellulose for cell walls; sucrose for transport; combined with nitrates to make amino acids/proteins; lipids for storage in seeds
@@ -229,10 +208,6 @@ Explain the effect of temperature on the rate of photosynthesis. :: Rate increas
 On a graph of rate against light intensity, what is limiting on the rising part? :: Light intensity
 On a graph of rate against light intensity, what is limiting on the flat (plateau) part? :: Not light – another factor such as CO₂ concentration or temperature
 How would you show on a graph that CO₂ is limiting? :: A higher CO₂ concentration gives a higher plateau than a lower CO₂ concentration at the same light intensity
-Which ion is needed to make chlorophyll? :: Magnesium (Mg²⁺)
-Which ion is needed to make amino acids and proteins? :: Nitrate (NO₃⁻)
-What are the symptoms of magnesium deficiency? :: Yellowing of leaves (chlorosis), especially older leaves
-What are the symptoms of nitrate deficiency? :: Stunted growth and yellow older leaves
 ## Photosynthesis practicals
 Why must a plant be destarched before a starch test experiment? :: To remove any starch already present, so any starch found must have been made during the experiment
 How is a plant destarched? :: Keep it in the dark for 24–48 hours so it uses up its starch stores
@@ -280,17 +255,11 @@ Why does the stomach contain hydrochloric acid? :: Kills bacteria and provides t
 How is the small intestine (ileum) adapted for absorption? :: Very long; villi and microvilli give a large surface area; walls one cell thick; good blood supply (capillaries) maintains concentration gradient; lacteals absorb fatty acids and glycerol
 What is absorbed in the large intestine (colon)? :: Water
 Describe how to measure the energy in a food sample. :: Burn a known mass of food under a boiling tube containing a known volume of water; measure temperature rise ;; energy (J) = mass of water (g) × 4.2 × temperature change
-How do you calculate energy per gram of food? :: Energy (J) = mass of water × 4.2 × ΔT, then divide by mass of food burned
 ## Diet – extra detail
-What is a deficiency disease caused by lack of vitamin C? :: Scurvy
-What is a deficiency disease caused by lack of vitamin D? :: Rickets (soft, weak bones)
-What is a deficiency disease caused by lack of iron? :: Anaemia (tiredness – less haemoglobin to carry oxygen)
-What is the deficiency effect of lack of vitamin A? :: Poor night vision (night blindness) and dry skin
 Why is water needed in the diet? :: For chemical reactions in cells, as a solvent, for transport in blood and to replace water lost in sweat, urine and breath
 Why does a pregnant woman need more energy and nutrients? :: To support the growth of the fetus (and extra iron and calcium for its blood and bones)
 Why does an active person need more energy than an inactive person? :: Muscles respire more to release energy for contraction
 Why do teenagers need more energy than young children or the elderly? :: They are growing rapidly and are usually more active
-Why do males generally need more energy than females? :: They are usually larger with more muscle mass
 ## Digestion – extra detail
 Why does food need to be digested? :: Large insoluble molecules must be broken into small soluble molecules that can be absorbed into the blood
 What happens to food in the mouth? :: Teeth chew it (mechanical digestion) increasing surface area; saliva contains amylase to start digesting starch; food is formed into a bolus
@@ -300,12 +269,6 @@ What is the role of the pancreas in digestion? :: Secretes pancreatic juice cont
 What is the role of the duodenum? :: First part of the small intestine – receives bile and pancreatic juice; digestion continues
 What is the role of the ileum? :: Last part of small intestine – digestion completed and digested food absorbed into the blood via villi
 What is the role of the rectum? :: Stores faeces before egestion
-What is the role of the liver in digestion? :: Makes bile
-What are the products of protein digestion? :: Amino acids
-What are the products of starch digestion? :: Maltose (by amylase), then glucose (by maltase)
-What are the products of lipid digestion? :: Fatty acids and glycerol
-Where is pepsin made and what is its optimum pH? :: In the stomach wall; acidic, about pH 2
-Where is trypsin made? :: In the pancreas (acts in the small intestine)
 What is emulsification? :: Breaking large fat droplets into many small droplets (by bile), giving a larger surface area for lipase to act on
 Does bile contain enzymes? :: No – it emulsifies fats and neutralises acid but does not digest chemically
 What is a villus? :: A finger-like projection of the small intestine wall that increases surface area for absorption
@@ -315,7 +278,6 @@ Why is the wall of a villus only one cell thick? :: Short diffusion distance so 
 Why do villus cells have microvilli and many mitochondria? :: Microvilli increase surface area further; mitochondria release energy for active transport of glucose and amino acids
 Where do absorbed glucose and amino acids go after absorption? :: Into the capillaries, then the hepatic portal vein to the liver
 What is assimilation? :: When absorbed food molecules are used by body cells to build new molecules (e.g. amino acids → proteins)
-What is egestion? :: Removal of undigested food (faeces) from the anus
 How are circular and longitudinal muscles involved in peristalsis? :: Circular muscle contracts behind the food (squeezing it), longitudinal muscle contracts in front (widening the gut), pushing food along
 ## Energy in food practical
 In the food-burning practical, what is the independent variable? :: Type of food
@@ -345,7 +307,6 @@ Where in the cell does aerobic respiration take place? :: Mitochondria
 Where in the cell does anaerobic respiration take place? :: Cytoplasm
 Is respiration the same as breathing? :: No – respiration is a chemical reaction in cells releasing energy; breathing (ventilation) moves air in and out of the lungs
 Give uses of the energy released by respiration. :: Muscle contraction (movement), active transport, making large molecules (e.g. proteins), cell division, keeping warm (mammals and birds), nerve impulses
-C: Respiration releases energy in the form of {{c1::ATP}}, which provides energy for cells.
 Is respiration exothermic or endothermic? :: Exothermic – it releases energy, some as heat
 Why does anaerobic respiration release less energy than aerobic? :: Glucose is only partly broken down – energy remains in the lactic acid (or ethanol)
 What is oxygen debt? :: The extra oxygen needed after exercise to break down the lactic acid produced by anaerobic respiration
@@ -464,9 +425,7 @@ How can you change each condition when investigating transpiration with a potome
 In the potometer practical, name control variables. :: Same shoot (or same number/size of leaves), all other conditions (temperature, light, humidity, air flow), same time
 Why is water uptake not exactly equal to transpiration? :: Some water is used in photosynthesis and to keep cells turgid
 ## Blood and immunity – extra detail
-What does plasma transport? :: Carbon dioxide, digested food (glucose, amino acids), urea, hormones, and heat
 What is haemoglobin? :: A red protein in red blood cells that combines with oxygen to form oxyhaemoglobin in the lungs and releases it in tissues
-Why do red blood cells have no nucleus? :: More space for haemoglobin, so more oxygen can be carried
 Why are red blood cells biconcave? :: Large surface area to volume ratio for faster diffusion of oxygen; flexible to fit through capillaries
 What is an antigen? :: A molecule (usually protein) on the surface of a cell or pathogen that triggers an immune response
 What is an antibody? :: A protein made by lymphocytes that binds to a specific antigen, helping to destroy the pathogen
@@ -476,8 +435,6 @@ Describe the secondary immune response. :: Faster, produces many more antibodies
 Explain why a person rarely catches the same disease twice. :: Memory cells recognise the antigen and quickly make large numbers of antibodies before the pathogen can cause illness
 What is in a vaccine? :: Dead or weakened (attenuated) pathogens, or their antigens
 How does gaining immunity by vaccination differ from catching the disease? :: Vaccination gives immunity without having the disease; the body still makes its own antibodies and memory cells
-Name the protein that forms a mesh in a blood clot. :: Fibrin (made from soluble fibrinogen)
-Why is blood clotting important? :: Stops blood loss and prevents pathogens entering through a wound; forms a scab
 ## Heart and circulation – extra detail
 What is the function of the atria? :: Receive blood from veins and pump it into the ventricles
 What is the function of the ventricles? :: Pump blood out of the heart into arteries (right to lungs, left to body)
@@ -489,19 +446,15 @@ What is the aorta? :: The main artery carrying oxygenated blood from the left ve
 What is the vena cava? :: The main vein bringing deoxygenated blood from the body to the right atrium
 What do the coronary arteries do? :: Supply the heart muscle itself with oxygenated blood (glucose and oxygen)
 Why are the atrial walls thinner than the ventricle walls? :: Atria only pump blood a short distance into the ventricles
-Name the valves between the atria and ventricles. :: Atrioventricular valves – tricuspid (right) and bicuspid/mitral (left)
 Name the valves at the base of the aorta and pulmonary artery. :: Semilunar valves – prevent backflow into the ventricles
 What is coronary heart disease? :: Fatty deposits (cholesterol) build up in the coronary arteries, narrowing them and reducing blood flow (and oxygen) to the heart muscle – can cause a heart attack
 Explain how CHD can cause a heart attack. :: Narrowed coronary arteries or a blood clot block blood flow; heart muscle gets no oxygen, cannot respire and dies
 How does adrenaline affect heart rate? :: Increases heart rate (and stroke volume) to supply more oxygen and glucose to muscles
-Explain why heart rate increases during exercise. :: Muscles respire faster and need more oxygen and glucose and must remove more CO₂; a faster heart rate increases blood flow to the muscles
 Why do arteries have thick muscular and elastic walls? :: To withstand and maintain high blood pressure; elastic fibres stretch and recoil to even out the pressure
 Why do veins have valves? :: To prevent backflow of blood, because blood pressure in veins is low
 Why do veins have a large lumen? :: Reduces resistance to the flow of low-pressure blood
 How are capillaries adapted for exchange? :: Walls one cell thick (short diffusion distance); narrow, so close to cells; large network gives a big surface area
 Why is a double circulation an advantage? :: Blood returns to the heart after the lungs so it can be pumped at high pressure to the body – faster delivery of oxygen
-Describe the path of blood from the gut to the liver. :: Gut capillaries → hepatic portal vein → liver
-Name the blood vessels carrying blood to and from the lungs. :: Pulmonary artery (to), pulmonary vein (from)
 
 # 2i Excretion
 What are the excretory organs in humans? :: Lungs (CO₂), kidneys (urea, water, salts) and skin (sweat)
@@ -516,8 +469,6 @@ How does ADH control the water content of the blood? :: If blood is too concentr
 What does urine contain? :: Water, urea and salts
 ## Extra detail
 What is excretion? :: Removal of waste products of metabolism (e.g. CO₂, urea) from the body
-Where does the CO₂ excreted by plants come from? :: Respiration
-Where does the O₂ excreted by plants come from? :: Photosynthesis
 Where is urea made? :: In the liver, from the breakdown of excess amino acids
 What does the skin excrete? :: Sweat – water, salts and a little urea
 What is the function of the ureters? :: Carry urine from the kidneys to the bladder
@@ -527,15 +478,12 @@ Name the three main regions of a kidney. :: Cortex (outer), medulla (inner), pel
 What is a nephron? :: A kidney tubule – the functional unit of the kidney that filters blood and produces urine
 List the parts of a nephron in order. :: Bowman's capsule (around glomerulus) → proximal convoluted tubule → loop of Henle → distal convoluted tubule → collecting duct
 What is the glomerulus? :: A knot of capillaries inside the Bowman's capsule where ultrafiltration happens
-Why is blood in the glomerulus at high pressure? :: The afferent arteriole bringing blood in is wider than the efferent arteriole taking it away
 Which substances are not filtered into the Bowman's capsule? :: Blood cells and large proteins – too big to pass through
 What is the glomerular filtrate made of? :: Water, glucose, salts (ions) and urea
 Why is there no glucose in the urine of a healthy person? :: All glucose is selectively reabsorbed into the blood in the proximal convoluted tubule
-How is glucose reabsorbed in the proximal convoluted tubule? :: By active transport (cells have many mitochondria and microvilli)
 What is the role of the loop of Henle? :: Creates a high salt concentration in the medulla, so water can be reabsorbed from the collecting duct by osmosis
 What happens to ADH if the blood is too dilute (too much water)? :: Less ADH released; collecting duct less permeable; less water reabsorbed – large volume of dilute urine
 What detects the water content of the blood? :: The hypothalamus in the brain (signals the pituitary gland)
-C: ADH makes the walls of the {{c1::collecting duct}} more {{c2::permeable}} to water, so more water is reabsorbed into the blood.
 Why might urine be more concentrated on a hot day? :: More water lost in sweat, so blood becomes more concentrated; more ADH released and more water reabsorbed
 What is osmoregulation? :: Controlling the water content (and salt concentration) of the blood
 Why does the renal vein contain less urea than the renal artery? :: Urea is filtered out of the blood by the kidney and excreted in urine
@@ -601,8 +549,6 @@ What is the difference between rods and cones? :: Rods – sensitive to dim ligh
 How does the eye respond to dim light? :: Radial muscles of the iris contract, circular muscles relax – pupil dilates to let more light in
 Why is the pupil reflex important? :: Bright light could damage the retina; dim light – letting in more light improves vision
 What is accommodation? :: Changing the shape of the lens to focus on near or distant objects
-C: To focus on a near object, the ciliary muscles {{c1::contract}}, the suspensory ligaments {{c2::slacken}} and the lens becomes {{c3::fatter}}.
-C: To focus on a distant object, the ciliary muscles {{c1::relax}}, the suspensory ligaments {{c2::tighten}} and the lens becomes {{c3::thinner}}.
 ## Thermoregulation – extra detail
 What is normal human core body temperature? :: About 37 °C
 Which part of the brain monitors body temperature? :: The hypothalamus (thermoregulatory centre)
@@ -625,7 +571,6 @@ What happens to blood glucose in an untreated person with Type 1 diabetes? :: It
 Why must people with Type 1 diabetes monitor their diet and blood glucose? :: To match insulin doses to carbohydrate intake and activity, avoiding blood glucose going too high or too low
 Why is insulin injected rather than taken by mouth? :: It is a protein and would be digested in the gut
 What are the effects of adrenaline on the body? :: Increases heart rate and breathing rate, increases blood glucose (glycogen → glucose), dilates pupils, diverts blood to muscles
-What are the adrenal glands? :: Glands on top of the kidneys that secrete adrenaline
 
 # 3a Reproduction
 Compare sexual and asexual reproduction. :: Sexual – two parents, gametes fuse, offspring genetically varied ;; Asexual – one parent, no gametes, offspring genetically identical (clones)
@@ -677,7 +622,6 @@ Why use many seeds in each tube in the germination practical? :: Some seeds may 
 ## Asexual reproduction in plants
 What is a runner? :: A sideways stem growing along the ground that forms new plants (e.g. strawberry)
 Why do gardeners take cuttings? :: Quick and cheap way to produce many genetically identical plants with desirable characteristics
-Why is rooting powder used on cuttings? :: Contains auxin (plant hormone) that stimulates root growth
 Why are cuttings covered with a plastic bag? :: Keeps humidity high to reduce water loss by transpiration (they have no roots yet)
 ## Human reproduction – extra detail
 What are the functions of the testes? :: Produce sperm and the hormone testosterone
@@ -697,13 +641,10 @@ What is the role of LH in the menstrual cycle? :: Made by pituitary; triggers ov
 What happens if the egg is not fertilised? :: Progesterone levels fall, so the uterus lining breaks down (menstruation)
 What happens to progesterone if pregnancy occurs? :: Stays high, maintaining the uterus lining so menstruation does not happen
 What is implantation? :: When the embryo (ball of cells) embeds in the uterus lining
-Name the hormones made by the pituitary gland in the menstrual cycle. :: FSH and LH
 Which hormone stimulates the release of LH? :: Oestrogen
 How is the placenta adapted for exchange? :: Large surface area (villi); thin walls (short diffusion distance); good blood supply from mother and fetus maintains concentration gradients
 Why does the mother's blood not mix with the fetus's blood? :: Prevents blood pressure damage, mixing of different blood groups and transfer of some pathogens
 What is the umbilical cord? :: Connects the fetus to the placenta; contains blood vessels (artery and vein)
-Name harmful substances that can cross the placenta. :: Nicotine, alcohol, some drugs, carbon monoxide and some viruses (e.g. rubella, HIV)
-Which hormones cause secondary sexual characteristics at puberty? :: Testosterone (males) and oestrogen (females)
 
 # 3b Inheritance
 What is a gene? :: A section of DNA that codes for a specific protein
@@ -731,9 +672,7 @@ Explain how antibiotic resistance develops in bacteria. :: A random mutation mak
 What does a pedigree diagram show? :: How a characteristic (often a genetic disorder) is inherited through generations of a family
 ## DNA and protein synthesis
 What is the genome? :: The entire DNA of an organism
-Where are chromosomes found in a cell? :: In the nucleus
 Name the four bases in DNA. :: Adenine (A), thymine (T), cytosine (C) and guanine (G)
-Which bases pair together in DNA? :: A with T; C with G (complementary base pairing)
 How does a gene code for a protein? :: The sequence of bases in the gene determines the order of amino acids in the protein
 How many bases code for one amino acid? :: Three – a triplet (codon)
 What is RNA? :: A single-stranded molecule similar to DNA; contains uracil (U) instead of thymine
@@ -760,17 +699,12 @@ What are the possible genotypes for blood group B? :: IᴮIᴮ or IᴮIᴼ
 What is the genotype for blood group O? :: IᴼIᴼ
 What is the genotype for blood group AB? :: IᴬIᴮ – both alleles expressed (codominance)
 Can parents with blood groups A and B have a child with blood group O? :: Yes – if they are IᴬIᴼ and IᴮIᴼ (1 in 4 chance)
-Which sex chromosomes do the gametes of a man contain? :: Half of sperm carry X, half carry Y
-Which sex chromosome do all eggs contain? :: X
 What is a diploid cell? :: A cell with two sets of chromosomes (46 in humans) – body cells
 What is a haploid cell? :: A cell with one set of chromosomes (23 in humans) – gametes
 Why must gametes be haploid? :: So when they fuse at fertilisation the zygote has the normal diploid number
 ## Cell division – extra detail
-How many cells does mitosis produce and are they identical? :: Two genetically identical diploid daughter cells
 What happens to chromosomes before mitosis? :: Each chromosome is copied (DNA replicates) to form two identical chromatids
 Describe what happens during mitosis. :: Chromosomes are copied, line up in the middle of the cell, the copies are pulled to opposite ends, and the cell divides into two identical cells
-Give four uses of mitosis. :: Growth, repair of damaged tissue, asexual reproduction and cloning
-How many divisions happen in meiosis? :: Two – producing four haploid cells
 Give the differences between mitosis and meiosis. :: Mitosis – 1 division, 2 cells, diploid, identical, growth/repair ;; Meiosis – 2 divisions, 4 cells, haploid, genetically different, gametes
 Why does random fertilisation increase variation? :: Any male gamete can fuse with any female gamete, giving huge numbers of possible combinations of alleles
 ## Variation and evolution – extra detail
@@ -784,7 +718,6 @@ Can a mutation be beneficial? :: Rarely – it may give an advantage (e.g. antib
 What is an adaptation? :: A feature that helps an organism survive and reproduce in its environment
 Who proposed the theory of evolution by natural selection? :: Charles Darwin (and Alfred Russel Wallace)
 What does 'survival of the fittest' mean? :: Individuals best adapted to the environment are more likely to survive and reproduce
-Why does natural selection cause allele frequencies to change? :: Better-adapted individuals reproduce more, so their advantageous alleles are passed on to more offspring
 Why does antibiotic resistance spread quickly? :: Bacteria reproduce very rapidly (and can transfer plasmids), so resistant bacteria soon form large populations
 How can the development of antibiotic resistance be reduced? :: Only prescribe antibiotics when needed (not for viruses); complete the full course; avoid overuse in farming
 Why don't antibiotics cure viral infections? :: Viruses live inside cells and have no cell structures for antibiotics to act on
@@ -833,10 +766,8 @@ Worked example: grass 10 000 kJ, rabbit 1000 kJ. Efficiency? :: 1000 ÷ 10 000 �
 What is the role of decomposers in ecosystems? :: Break down dead organisms and waste, releasing CO₂ and recycling mineral ions (e.g. nitrates) back into the soil
 Name two types of decomposer. :: Bacteria and fungi
 ## Carbon cycle – extra detail
-Which process removes CO₂ from the atmosphere? :: Photosynthesis
 Which processes return CO₂ to the atmosphere? :: Respiration (plants, animals, decomposers) and combustion (burning fossil fuels and wood)
 How are fossil fuels formed? :: Dead organisms that did not decay were compressed over millions of years, locking up carbon as coal, oil and gas
-How does carbon pass between organisms? :: As carbon compounds (e.g. carbohydrates, proteins) through feeding
 ## Nitrogen cycle – extra detail
 Why do plants and animals need nitrogen? :: To make proteins (amino acids) and DNA
 Why can't plants use nitrogen gas from the air? :: It is very unreactive; plants can only absorb nitrogen as nitrate (or ammonium) ions
@@ -857,7 +788,6 @@ Give a source of CFCs. :: Old aerosols, refrigerators and air conditioning
 How does acid rain affect lakes? :: Lowers pH of water, killing fish and other aquatic organisms (also releases toxic aluminium)
 How can sulfur dioxide pollution be reduced? :: Remove sulfur from fuels; use scrubbers in power-station chimneys; use renewable energy
 Explain why fish die during eutrophication. :: Dead plants and algae are broken down by aerobic bacteria (decomposers), which use up dissolved oxygen; fish cannot respire
-Why do plants under an algal bloom die? :: Algae block the light, so plants cannot photosynthesise
 How does untreated sewage cause water pollution? :: Adds nutrients (eutrophication) and organic matter for bacteria to decompose (uses up oxygen); also contains pathogens
 How can eutrophication be reduced? :: Use less fertiliser; don't apply before rain; leave buffer strips by rivers; treat sewage
 How does deforestation increase atmospheric CO₂? :: Fewer trees to remove CO₂ by photosynthesis; burning or decay of trees releases CO₂
@@ -884,7 +814,6 @@ What is a vector in genetic modification? :: Something that carries the gene int
 Describe how human insulin is made using bacteria. :: Insulin gene cut out with restriction enzyme; plasmid cut with same enzyme; gene inserted with ligase (recombinant plasmid); plasmid put into bacteria; bacteria grown in fermenter and produce insulin
 What is a transgenic organism? :: An organism that contains genes from a different species
 Give an example of a GM crop and its advantage. :: Insect-resistant crops (Bt gene) – higher yield, less pesticide; or crops resistant to herbicide
-How are plants cloned by micropropagation? :: Small pieces (explants) of a plant are grown on agar with nutrients and hormones in sterile conditions – many identical plants quickly
 Describe how Dolly the sheep was cloned. :: Nucleus removed from an egg cell; nucleus from a body (udder) cell of the donor inserted; electric shock to make it divide; embryo implanted into a surrogate mother
 Give uses of cloned transgenic animals. :: Producing human proteins/antibodies in their milk; organs for transplantation
 ## Food production – extra detail
@@ -901,7 +830,6 @@ Give the advantages of biological control. :: Specific to the pest; no chemicals
 Give the disadvantages of biological control. :: Slow; doesn't eradicate the pest completely; the introduced organism may become a pest or eat other species
 What is bioaccumulation? :: When a substance (e.g. pesticide) builds up in concentration along a food chain, reaching toxic levels in top predators
 ## Microorganisms – extra detail
-Write the equation for the respiration of yeast in bread making. :: glucose → ethanol + carbon dioxide (anaerobic)
 What happens to the ethanol produced by yeast during baking? :: It evaporates during baking
 Why is bread dough left in a warm place to rise? :: Yeast enzymes work best at warm temperatures, so respiration and CO₂ production are faster
 Why does baking stop the bread rising? :: High temperature kills the yeast (denatures enzymes)
@@ -912,7 +840,6 @@ In the yeast respiration practical, what are the control variables? :: Mass/conc
 Why is a layer of oil put on the yeast mixture? :: To stop oxygen entering, so respiration is anaerobic
 Why should the yeast mixture be left to acclimatise before measuring? :: So it reaches the water bath temperature and the rate becomes steady
 Describe the expected results of the yeast temperature practical. :: CO₂ production increases up to an optimum (about 35–40 °C) then falls as enzymes denature
-How can you test the gas produced by yeast? :: Bubble it through limewater – turns milky/cloudy (CO₂)
 What does pasteurising milk do in yoghurt making? :: Heats it (about 85–95 °C) to kill harmful bacteria that would compete or cause disease
 Why is milk cooled to about 40 °C before adding the bacteria? :: It's the optimum temperature for Lactobacillus enzymes; hotter would kill them
 Why does lactic acid help preserve yoghurt? :: The low pH stops the growth of most harmful microorganisms
@@ -941,7 +868,6 @@ What are sticky ends? :: Short single-stranded overhanging sections of DNA left 
 Why must the same restriction enzyme be used to cut the gene and the plasmid? :: So they have complementary sticky ends that can pair up
 What is recombinant DNA? :: DNA formed by joining DNA from two different sources (e.g. human gene + bacterial plasmid)
 Why are bacteria used to make human insulin? :: They reproduce rapidly, so large amounts of insulin are made quickly and cheaply; the insulin is identical to human insulin
-How are genes inserted into plants? :: Using a bacterium (Agrobacterium) or virus as a vector carrying the recombinant plasmid
 Give advantages of GM crops. :: Higher yields; resistance to pests, herbicides or drought; improved nutrition (e.g. Golden Rice with vitamin A)
 Give concerns about GM crops. :: Genes may spread to wild plants (e.g. herbicide-resistant weeds); effects on insects and food chains; possible long-term health effects; seed costs for farmers
 ## Cloning – extra detail
@@ -953,4 +879,3 @@ Give a disadvantage of micropropagation. :: No genetic variation – all could b
 Why is Dolly genetically identical to the udder-cell donor and not the egg donor? :: The nucleus (containing the DNA) came from the udder cell; the egg's own nucleus was removed
 Why was an electric shock used in cloning Dolly? :: To stimulate the egg cell (with its new nucleus) to divide and form an embryo
 Give concerns about cloning animals. :: Low success rate; cloned animals may have health problems and shorter lives; ethical concerns; reduced genetic variation
-What are the advantages of cloned transgenic animals? :: Large numbers of identical animals that all make a useful human protein (e.g. in milk) can be produced quickly
