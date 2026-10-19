@@ -713,3 +713,7 @@ td.browse-first { max-width: 360px; }
 .wb-tools { position: absolute; top: 8px; right: 8px; display: flex; gap: 6px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 5px 6px; box-shadow: var(--shadow); }
 .wb-color { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line-strong); cursor: pointer; padding: 0; }
 .wb-color.on { box-shadow: 0 0 0 2px var(--accent); }
+
+/* Quick Learn set tree: same rows as the deck list, without the time column */
+/* on phones the deck list already has these five columns */
+@media (min-width: 641px) { .deck-row.set-row { grid-template-columns: 1fr 52px 52px 52px 36px; } }
