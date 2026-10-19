@@ -53,3 +53,8 @@
   .plan-check-row > .grow { flex: 1 1 calc(100% - 60px); }
   .plan-check-row > .row { margin-left: 50px; }
 }
+.plan-topic-links { gap: 2px; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .plan-topic { flex-wrap: wrap; }
+  .plan-topic-links { width: 100%; justify-content: flex-end; }
+}

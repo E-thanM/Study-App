@@ -90,7 +90,7 @@ export async function loadStarterDecks(includeRemoved = false): Promise<StarterD
   return out.filter((d) => includeRemoved || d.notes.length > 0).sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
-function hash(s: string): string {
+export function hash(s: string): string {
   let h1 = 0x811c9dc5, h2 = 0;
   for (let i = 0; i < s.length; i++) {
     h1 = Math.imul(h1 ^ s.charCodeAt(i), 16777619) >>> 0;
@@ -98,6 +98,9 @@ function hash(s: string): string {
   }
   return h1.toString(36) + h2.toString(36);
 }
+
+/** The tag every starter note gets for its topic, e.g. "biology::2h_transport". */
+export const topicTag = (deckName: string, topic: string) => `${slug(deckName)}::${slug(topic)}`;
 
 const slug = (s: string) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
 
@@ -136,7 +139,7 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
       deckId = ensureDeckPath(n.deckPath, STARTER_PRESET_ID, (path) => `d-starter:${hash(path)}`);
       deckIds.set(n.deckPath, deckId);
     }
-    const tags = [slug(deck.name), `${slug(deck.name)}::${slug(n.topic)}`];
+    const tags = [slug(deck.name), topicTag(deck.name, n.topic)];
     const r =
       n.type === 'cloze'
         ? buildNote({ noteTypeId: 'nt-cloze', deckId, fields: { Text: n.front, 'Back Extra': '' }, tags, guid })
@@ -348,6 +351,12 @@ export interface StarterSetData {
   terms: { id: string; term: string; definition: string }[];
 }
 
+/** A starter card as a Quick Learn term; the id ties it back to the long-term note. */
+export function starterTerm(n: StarterNote): { id: string; term: string; definition: string } {
+  const t = n.type === 'cloze' ? clozeToTerm(n.front) : { term: htmlToText(n.front), definition: htmlToText(n.back) };
+  return { id: `t-${hash(n.front)}`, ...t };
+}
+
 /** One set per topic (or topic + subtopic); tiny neighbouring topics are joined so no set is trivially small. */
 export function buildSets(deck: StarterDeck): StarterSetData[] {
   const groups: { title: string; topics: string[]; notes: StarterNote[] }[] = [];
@@ -388,12 +397,7 @@ export function buildSets(deck: StarterDeck): StarterSetData[] {
     subject: deck.name,
     board: deck.board,
     title: g.title,
-    terms: g.notes
-      .map((n) => {
-        const t = n.type === 'cloze' ? clozeToTerm(n.front) : { term: htmlToText(n.front), definition: htmlToText(n.back) };
-        return { id: `t-${hash(n.front)}`, ...t };
-      })
-      .filter((t) => t.term && t.definition),
+    terms: g.notes.map(starterTerm).filter((t) => t.term && t.definition),
   }));
 }
 

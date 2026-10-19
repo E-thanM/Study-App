@@ -4,6 +4,7 @@ import { speak } from '../../components/CardView';
 import { Icon, MenuButton, Progress, TopBar, toast } from '../../components/ui';
 import { get, put, remove } from '../../lib/store';
 import { deckPath } from '../../lib/collection';
+import { linkedCards, setDeckKey } from '../../lib/quicksync';
 import { download, uid } from '../../lib/util';
 import { FlipText, isVocabLike, resetProgress, toggleStar, useProgress, useSet } from './common';
 
@@ -21,6 +22,9 @@ export function SetView() {
   const learning = levels.filter((l) => l > 0 && l < 3).length;
   const t = set.terms[Math.min(idx, set.terms.length - 1)];
   const convertedDeck = set.convertedDeckId ? get('deck', set.convertedDeckId) : undefined;
+  // GCSE topic sets are the same cards as the long-term starter decks, so there's nothing to convert
+  const linkedKey = setDeckKey(id);
+  const linked = linkedKey ? set.terms.some((x) => linkedCards(id, x.id).length > 0) : false;
 
   const modes = [
     { to: 'flashcards', icon: 'cards', label: 'Flashcards' },
@@ -36,12 +40,16 @@ export function SetView() {
       <TopBar crumbs={[{ to: '/quick', label: 'Quick Learn' }, { label: set.title }]} />
       <div className="page-head">
         <div>
-          {set.folder && <div className="muted small">{set.folder}</div>}
+          {set.folder && <div className="muted small">{set.folder.split('::').join(' › ')}</div>}
           <h1>{set.title}</h1>
           {set.description && <div className="sub">{set.description}</div>}
         </div>
         <div className="row">
-          <Link to={`/quick/${id}/convert`} className="btn accent"><Icon name="sparkle" /> Make long-term</Link>
+          {linkedKey ? (
+            linked
+              ? <span className="pill good" title="Know / don't know answers here also count as reviews of the same cards in Flashcards">Linked to Flashcards</span>
+              : <Link to="/cards" className="btn" title="Add this subject's GCSE exam deck and your answers here will count there too">Link to Flashcards</Link>
+          ) : <Link to={`/quick/${id}/convert`} className="btn accent"><Icon name="sparkle" /> Make long-term</Link>}
           <MenuButton className="btn icon" items={[
             { label: 'Edit', icon: 'edit', onClick: () => nav(`/quick/${id}/edit`) },
             { label: 'Duplicate', icon: 'copy', onClick: () => { const n = { ...set, id: uid(), title: `${set.title} (copy)`, createdAt: Date.now(), convertedDeckId: undefined }; put(n); nav(`/quick/${n.id}`); } },

@@ -8,7 +8,7 @@ import {
   novemberSchedule, priority, savePlan, sessionSplit, sprintEnd, subjectHours, topicChecklist, weeks, type PlanDates, type Task,
 } from '../../lib/plan';
 import { deckCounts } from '../../lib/collection';
-import { CHECKLIST, NOT_ON_TEST, NOV_DECK_ID, syncNovemberSection } from '../../lib/novtest';
+import { CHECKLIST, NOT_ON_TEST, Y910_ID, syncNovemberSection, topicDeckId, topicSetId } from '../../lib/novtest';
 import { subjectStrengths } from '../../lib/strength';
 import { get, useAll, useRec } from '../../lib/store';
 import { durationMin, sessionsOn } from '../../lib/timetable';
@@ -257,14 +257,15 @@ function NovemberTab({ today }: { today: string }) {
   const schedule = useSchedule(today);
   const onCount = rows.filter((r) => r.on).length;
   const toggle = (name: string, on: boolean) => savePlan({ onTest: { ...plan.onTest, [name]: on } });
-  const novDeck = useRec('deck', NOV_DECK_ID);
+  const novDeck = useRec('deck', Y910_ID);
+  useAll('set');
   useAll('card');
-  const counts = novDeck && !novDeck.deleted ? deckCounts(NOV_DECK_ID) : null;
+  const counts = novDeck && !novDeck.deleted ? deckCounts(Y910_ID) : null;
   const studyCards = async () => {
     await syncNovemberSection(today, sprintEnd(d));
-    const deck = get('deck', NOV_DECK_ID);
-    if (!deck || deck.deleted) { toast(deck ? 'You removed the November test deck' : 'Add the Biology deck in Flashcards first'); return; }
-    nav(`/cards/deck/${NOV_DECK_ID}`);
+    const deck = get('deck', Y910_ID);
+    if (!deck || deck.deleted) { toast(deck ? 'You removed the Year 9–10 test folder' : 'Add the Biology deck in Flashcards first'); return; }
+    nav(`/cards/deck/${Y910_ID}`);
   };
 
   const skill = (id: string) => plan.skills[id] || { done: 0 };
@@ -289,10 +290,13 @@ function NovemberTab({ today }: { today: string }) {
 
       <section className="panel pad row between wrap" style={{ gap: 12 }}>
         <div className="small">
-          <b>Flashcards → {NOV_DECK_ID && 'November test – Biology'}</b>
-          <div className="muted tiny">{counts ? <>{counts.review + counts.learn} due · {counts.new} new – only the cards on your checklist. They go back to the Biology deck after the test.</> : 'Gathers just the Biology cards on your checklist into their own deck.'}</div>
+          <b>Biology › Year 9–10 test</b>
+          <div className="muted tiny">{counts ? <>{counts.review + counts.learn} due · {counts.new} new in Flashcards – only the cards on your checklist, one subsection per topic. </> : 'Just the Biology cards on your checklist, one subsection per topic, in Flashcards and Quick Learn. '}Quick Learn answers count in Flashcards too.</div>
         </div>
-        <button className="btn primary" onClick={() => void studyCards()}><Icon name="cards" /> Study November test cards</button>
+        <div className="row wrap" style={{ gap: 8 }}>
+          <Link to="/quick" className="btn"><Icon name="bolt" /> Quick Learn</Link>
+          <button className="btn primary" onClick={() => void studyCards()}><Icon name="cards" /> Flashcards</button>
+        </div>
       </section>
 
       <section className="panel">
@@ -312,7 +316,11 @@ function NovemberTab({ today }: { today: string }) {
               </label>
               <Dots n={t.confidence} />
               <span className="tiny muted nowrap hide-sm" style={{ width: 62, textAlign: 'right' }}>{t.blurt === null ? 'no blurt' : `blurt ${t.blurt}%`}</span>
-              {t.on && <Link to={`/tools/blurt?subject=Biology&topic=${encodeURIComponent(t.name)}`} className="btn sm ghost">Blurt</Link>}
+              {t.on && <span className="row plan-topic-links">
+                <Link to={`/tools/blurt?subject=Biology&topic=${encodeURIComponent(t.name)}`} className="btn sm ghost">Blurt</Link>
+                {get('set', topicSetId(t.name)) && <Link to={`/quick/${topicSetId(t.name)}`} className="btn sm ghost" title="Quick Learn set">Quick</Link>}
+                {get('deck', topicDeckId(t.name)) && !get('deck', topicDeckId(t.name))!.deleted && <Link to={`/cards/deck/${topicDeckId(t.name)}`} className="btn sm ghost" title="Flashcards">Cards</Link>}
+              </span>}
             </div>
           ))}
         </div>

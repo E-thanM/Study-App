@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { syncQuickAnswer } from '../../lib/quicksync';
 import { get, patch, put, useRec } from '../../lib/store';
 import type { SetProgress, StudySet, Term } from '../../lib/types';
 import { uid } from '../../lib/util';
@@ -20,6 +21,8 @@ export function recordAnswer(setId: string, termId: string, correct: boolean, wr
   if (correct) level = written ? 3 : Math.max(level, 2);
   else level = level > 0 ? 1 : 1;
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, level, correct: t.correct + (correct ? 1 : 0), wrong: t.wrong + (correct ? 0 : 1) } } });
+  // GCSE topic sets: the same answer counts in long-term flashcards
+  syncQuickAnswer(setId, termId, correct);
 }
 
 export function setKnown(setId: string, termId: string, known: boolean) {
@@ -27,6 +30,7 @@ export function setKnown(setId: string, termId: string, known: boolean) {
   const cur = get('setprogress', id) || { id, kind: 'setprogress' as const, updatedAt: 0, setId, terms: {} };
   const t = cur.terms[termId] || { level: 0, correct: 0, wrong: 0 };
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, known, level: known ? Math.max(t.level, 2) : Math.min(t.level || 1, 1) } } });
+  syncQuickAnswer(setId, termId, known);
 }
 
 export function resetProgress(setId: string) {

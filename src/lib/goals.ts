@@ -145,7 +145,7 @@ export function deckSubtree(deckId: string, decks: DeckLite[]): Set<string> {
 export function setsForSubject<S extends Pick<StudySet, 'id' | 'title' | 'folder' | 'createdAt' | 'lastStudied'>>(subject: string, sets: S[]): S[] {
   if (!normSubject(subject)) return [];
   return sets
-    .filter((s) => (s.folder && sameSubject(subject, s.folder)) || subjectScore(subject, s.title) >= 60)
+    .filter((s) => (s.folder && sameSubject(subject, s.folder.split('::')[0])) || subjectScore(subject, s.title) >= 60)
     .sort((a, b) => (a.lastStudied || 0) - (b.lastStudied || 0) || a.createdAt - b.createdAt);
 }
 

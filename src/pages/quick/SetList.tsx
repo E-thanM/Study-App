@@ -1,10 +1,18 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon, Progress, TopBar } from '../../components/ui';
 import { all, useAll } from '../../lib/store';
 import type { StudySet } from '../../lib/types';
 import { StarterSetsModal } from './StarterSets';
 import { StarterUpdates } from '../../components/StarterUpdates';
+import { studyToday } from '../../lib/goals';
+import { syncNovemberSection } from '../../lib/novtest';
+import { getPlan, sprintEnd } from '../../lib/plan';
+
+/** Folders can be nested with "::" (e.g. "Biology::Year 9–10 test"); the filter pills show the top level. */
+const topFolder = (f: string) => f.split('::')[0];
+const inFolder = (f: string, top: string) => f === top || f.startsWith(`${top}::`);
+const folderLabel = (f: string) => f.split('::').join(' › ');
 
 export function SetList() {
   const sets = useAll('set');
@@ -12,14 +20,16 @@ export function SetList() {
   const [q, setQ] = useState('');
   const [folder, setFolder] = useState('');
   const [starterOpen, setStarterOpen] = useState(false);
+  // builds the Biology › Year 9–10 test topic sets
+  useEffect(() => { void syncNovemberSection(studyToday(), sprintEnd(getPlan().dates)); }, []);
   const folderCounts = useMemo(() => {
     const m = new Map<string, number>();
-    for (const s of sets) if (s.folder) m.set(s.folder, (m.get(s.folder) || 0) + 1);
+    for (const s of sets) if (s.folder) m.set(topFolder(s.folder), (m.get(topFolder(s.folder)) || 0) + 1);
     return [...m].sort((a, b) => a[0].localeCompare(b[0]));
   }, [sets]);
   const searching = q.trim().length > 0;
   const shown = sets
-    .filter((s) => (!folder || s.folder === folder) && (!searching || (s.title + ' ' + s.description + ' ' + s.folder).toLowerCase().includes(q.toLowerCase())))
+    .filter((s) => (!folder || inFolder(s.folder, folder)) && (!searching || (s.title + ' ' + s.description + ' ' + s.folder).toLowerCase().includes(q.toLowerCase())))
     .sort((a, b) => (b.lastStudied || 0) - (a.lastStudied || 0) || a.createdAt - b.createdAt);
 
   // grouped by subject unless the list is filtered/searched
@@ -39,7 +49,7 @@ export function SetList() {
       <Link key={s.id} to={`/quick/${s.id}`} className="panel pad col" style={{ gap: 10 }}>
         <div className="row between">
           <span className="pill">{s.terms.length} terms</span>
-          {s.folder && (folder || searching || recent.length) ? <span className="muted tiny ellipsis">{s.folder}</span> : null}
+          {s.folder && (folder || searching || recent.length) ? <span className="muted tiny ellipsis">{folderLabel(s.folder)}</span> : null}
         </div>
         <h3 style={{ overflowWrap: 'anywhere' }}>{s.title || 'Untitled set'}</h3>
         {s.description && !s.id.startsWith('starter-set:') && <p className="muted small ellipsis">{s.description}</p>}
@@ -97,7 +107,7 @@ export function SetList() {
           )}
           {groups.map(([name, list]) => (
             <section key={name}>
-              {(groups.length > 1 || recent.length > 0) && <div className="section-title" style={{ marginTop: 0 }}>{name} · {list.length}</div>}
+              {(groups.length > 1 || recent.length > 0 || name.includes("::")) && <div className="section-title" style={{ marginTop: 0 }}>{folderLabel(name)} · {list.length}</div>}
               <div className="grid-3">{list.map(card)}</div>
             </section>
           ))}

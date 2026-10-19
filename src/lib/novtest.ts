@@ -1,21 +1,28 @@
 import { emptyFiltered, syncFiltered } from './collection';
-import { compileSearch } from './search';
-import { STARTER_PRESET_ID, loadStarterDecks, starterGuids, type StarterDeck, type StarterNote } from './starter';
+import { STARTER_PRESET_ID, hash, loadStarterDecks, starterGuids, starterTerm, topicTag, type StarterDeck, type StarterNote } from './starter';
 import { DEFAULT_PRESET } from './seed';
-import { all, get, put, remove } from './store';
-import type { Deck, Note } from './types';
+import { all, get, getRaw, patch, put } from './store';
+import type { Card, Deck, Note, StudySet } from './types';
 
 /*
  * The Year 9–10 Biology test in November: exactly the statements on the school's checklist
  * (Edexcel IGCSE 4BI1 – everything except stem cells, the nervous system, eye and plant
  * responses, inheritance, and selective breeding / genetic modification / cloning).
- * Cards in scope are tagged and gathered into a "November test" filtered deck while the
- * sprint lasts; afterwards they go back home to the Biology deck.
+ * Cards in scope are tagged and gathered into Biology › Year 9–10 test › <topic> (filtered
+ * decks, so progress stays on the real cards) while the sprint lasts; afterwards they go back
+ * to their Biology topics. Quick Learn gets the same cards as one set per topic.
  */
 
 export const NOV_TAG = 'november_test';
-export const NOV_DECK_ID = 'd-test-november';
-export const NOV_DECK_NAME = 'November test – Biology';
+/** "Year 9–10 test" folder inside the Biology deck, one subsection per topic */
+export const Y910_ID = 'd-y910';
+export const Y910_NAME = 'Year 9–10 test';
+/** Quick Learn folder for the same cards, one set per topic */
+export const Y910_FOLDER = 'Biology::Year 9–10 test';
+export const topicDeckId = (topic: string) => `d-y910:${hash(topic)}`;
+export const topicSetId = (topic: string) => `y910-set:${hash(topic)}`;
+/** the first version kept everything in one deck at the top level */
+const OLD_DECK_ID = 'd-test-november';
 
 /** [spec point, deck topic, statement] in specification order. */
 export const CHECKLIST: [string, string, string][] = [
@@ -178,25 +185,70 @@ export const testTopics = () => [...new Set(CHECKLIST.map((c) => c[1]))];
 
 let running = false;
 
+const liveDeck = (id: string) => { const d = get('deck', id); return d && !d.deleted ? d : undefined; };
+
+/** Sends a deck's borrowed cards home and removes it, marked as removed by the app (not the student). */
+function dissolve(id: string) {
+  if (!liveDeck(id)) return;
+  emptyFiltered(id);
+  put({ id, kind: 'deck', deleted: true, auto: true } as unknown as Deck);
+}
+
+/** Deleted by the student (rather than tidied away by the app after a test)? */
+const deletedByUser = (kind: 'deck' | 'set', id: string) => {
+  const r = getRaw(kind, id) as { deleted?: boolean; auto?: boolean } | undefined;
+  return !!r?.deleted && !r.auto;
+};
+
+/** One Quick Learn set per test topic in Biology › Year 9–10 test. Sets the student deleted stay deleted. */
+export function ensureY910Sets(bio: StarterDeck): number {
+  const out: StudySet[] = [];
+  for (const topic of testTopics()) {
+    const terms = bio.notes.filter((n) => n.topic === topic && onNovemberTest(n)).map(starterTerm).filter((t) => t.term && t.definition);
+    if (!terms.length) continue;
+    const id = topicSetId(topic);
+    if (deletedByUser('set', id)) continue;
+    const cur = get('set', id);
+    if (!cur) {
+      out.push({ id, kind: 'set', updatedAt: 0, title: topic, description: 'Year 9–10 Biology test', folder: Y910_FOLDER, terms, createdAt: Date.now() });
+      continue;
+    }
+    // new cards are added and improved answers replace old ones; stars and progress are kept
+    const fresh = new Map(terms.map((t) => [t.id, t]));
+    const have = new Set(cur.terms.map((t) => t.id));
+    const extra = terms.filter((t) => !have.has(t.id));
+    const changed = cur.terms.some((t) => fresh.has(t.id) && (fresh.get(t.id)!.definition !== t.definition || fresh.get(t.id)!.term !== t.term));
+    if (extra.length || changed) out.push({ ...cur, terms: [...cur.terms.map((t) => (fresh.has(t.id) ? { ...t, term: fresh.get(t.id)!.term, definition: fresh.get(t.id)!.definition } : t)), ...extra] });
+  }
+  if (out.length) put(out);
+  return out.length;
+}
+
 /**
- * Keeps the November test section up to date: tags the Biology cards that are on the test and
- * gathers them into the filtered deck, moving only cards that changed. After the last test day the
- * cards go home and the deck is removed. If the student deletes the deck it stays deleted.
+ * Keeps the Year 9–10 test section up to date: tags the Biology cards that are on the test, builds
+ * the topic sets in Quick Learn, and gathers the cards into Biology › Year 9–10 test › <topic>,
+ * moving only cards that changed. After the last test day the long-term folder is dissolved (the
+ * cards go back to their Biology topics with all their progress); the Quick Learn sets stay.
+ * Anything the student deletes stays deleted. Returns the number of cards in the folder.
  */
 export async function syncNovemberSection(today: string, sprintEnd: string, decks?: StarterDeck[]): Promise<number> {
   if (running) return 0;
   running = true;
   try {
-    const deck = get('deck', NOV_DECK_ID);
+    dissolve(OLD_DECK_ID);
+    const topics = testTopics();
     if (today > sprintEnd) {
-      if (deck && !deck.deleted) { emptyFiltered(NOV_DECK_ID); remove('deck', NOV_DECK_ID); }
+      for (const t of topics) dissolve(topicDeckId(t));
+      dissolve(Y910_ID);
       return 0;
     }
-    if (deck?.deleted) return 0;
     const bio = (decks || (await loadStarterDecks())).find((d) => d.key === 'biology');
     if (!bio) return 0;
-    const notes = all('note').filter((n) => n.guid?.startsWith('starter:biology:'));
-    if (!notes.length) return 0;
+    ensureY910Sets(bio);
+
+    const notes = all('note').filter((n) => n.guid?.startsWith('starter:biology:') && !n.deleted);
+    const root = all('deck').find((d) => !d.parentId && !d.filtered && !d.deleted && d.name === bio.name);
+    if (!notes.length || !root) return 0;
     const inScope = starterGuids(bio, onNovemberTest);
     const changed: Note[] = [];
     for (const n of notes) {
@@ -204,16 +256,29 @@ export async function syncNovemberSection(today: string, sprintEnd: string, deck
       if (want !== n.tags.includes(NOV_TAG)) changed.push({ ...n, tags: want ? [...n.tags, NOV_TAG] : n.tags.filter((t) => t !== NOV_TAG) });
     }
     if (changed.length) put(changed);
-    if (!deck) {
-      const d: Deck = {
-        id: NOV_DECK_ID, kind: 'deck', updatedAt: 0, name: NOV_DECK_NAME, parentId: null,
-        presetId: get('preset', STARTER_PRESET_ID) ? STARTER_PRESET_ID : DEFAULT_PRESET.id,
-        description: 'Every Biology card on your Year 9–10 test checklist. Cards go back to the Biology deck after the test.',
-        filtered: { search: `tag:${NOV_TAG}`, limit: 9999, order: 'added', reschedule: true }, createdAt: Date.now(),
-      };
-      put(d);
+
+    if (deletedByUser('deck', Y910_ID)) return 0;
+    const folder = get('deck', Y910_ID);
+    const presetId = get('preset', STARTER_PRESET_ID) ? STARTER_PRESET_ID : DEFAULT_PRESET.id;
+    const make: Deck[] = [];
+    if (!folder) {
+      make.push({ id: Y910_ID, kind: 'deck', updatedAt: 0, name: Y910_NAME, parentId: root.id, presetId, createdAt: Date.now(),
+        description: 'Every Biology card on your Year 9–10 test checklist, by topic. The cards go back to their Biology topics after the test, with all their progress.' });
+    } else if (folder.parentId !== root.id) patch('deck', Y910_ID, { parentId: root.id });
+    for (const t of topics) {
+      if (get('deck', topicDeckId(t)) || deletedByUser('deck', topicDeckId(t))) continue;
+      make.push({ id: topicDeckId(t), kind: 'deck', updatedAt: 0, name: t, parentId: Y910_ID, presetId, createdAt: Date.now(),
+        filtered: { search: `tag:${NOV_TAG} tag:${topicTag(bio.name, t)}`, limit: 9999, order: 'added', reschedule: true } });
     }
-    return syncFiltered(NOV_DECK_ID, compileSearch(`tag:${NOV_TAG}`));
+    if (make.length) put(make);
+
+    let count = 0;
+    for (const t of topics) {
+      if (!liveDeck(topicDeckId(t))) continue;
+      const tag = topicTag(bio.name, t);
+      count += syncFiltered(topicDeckId(t), (c: Card) => { const tags = get('note', c.noteId)?.tags; return !!tags && tags.includes(NOV_TAG) && tags.includes(tag); });
+    }
+    return count;
   } finally {
     running = false;
   }

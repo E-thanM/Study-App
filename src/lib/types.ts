@@ -163,6 +163,8 @@ export interface RevLog extends BaseRec {
   ease: number;
   /** snapshot of card before answer for undo */
   prev?: Partial<Card>;
+  /** answered in Quick Learn, not in a long-term review */
+  quick?: boolean;
 }
 
 export interface Media extends BaseRec {

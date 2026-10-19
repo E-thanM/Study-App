@@ -439,7 +439,7 @@ export function nextCard(deckId: string, now = Date.now(), skipId?: string): Car
 
 /* ───────────── answering ───────────── */
 
-export function answerCard(card: Card, rating: Rating, timeMs: number, now = Date.now()): { card: Card; log: RevLog; leech: boolean } {
+export function answerCard(card: Card, rating: Rating, timeMs: number, now = Date.now(), opts: { quick?: boolean } = {}): { card: Card; log: RevLog; leech: boolean } {
   const deckForPreset = get('deck', card.odid || card.deckId) || get('deck', card.deckId);
   const preset = getPreset(deckForPreset?.presetId);
   const res = schedule(card, preset, rating, now);
@@ -482,6 +482,7 @@ export function answerCard(card: Card, rating: Rating, timeMs: number, now = Dat
     lastInterval: card.scheduledDays,
     ease: updated.ease || 0,
     prev: prevSnapshot,
+    ...(opts.quick ? { quick: true } : {}),
   };
 
   // bury siblings until tomorrow
@@ -501,7 +502,8 @@ export function answerCard(card: Card, rating: Rating, timeMs: number, now = Dat
 export function undoLastReview(): Card | null {
   const logs = all('revlog');
   let last: RevLog | undefined;
-  for (const l of logs) if (l.prev && (!last || l.review > last.review)) last = l;
+  // answers from Quick Learn aren't undone here – they belong to that set's session
+  for (const l of logs) if (l.prev && !l.quick && (!last || l.review > last.review)) last = l;
   if (!last?.prev) return null;
   const cur = get('card', last.cardId);
   if (!cur) return null;
