@@ -6,7 +6,7 @@ import { get, put, remove } from '../../lib/store';
 import { deckPath } from '../../lib/collection';
 import { linkedCards, setDeckKey } from '../../lib/quicksync';
 import { download, uid } from '../../lib/util';
-import { FlipText, isVocabLike, resetProgress, toggleStar, useProgress, useSet } from './common';
+import { FlipText, isVocabLike, resetProgress, resumePoint, toggleStar, useProgress, useSet } from './common';
 
 export function SetView() {
   const { id = '' } = useParams();
@@ -27,9 +27,9 @@ export function SetView() {
   const linked = linkedKey ? set.terms.some((x) => linkedCards(id, x.id).length > 0) : false;
 
   // Flashcards mode remembers where it was left
-  const flash = prog.flash;
-  const roundSize = flash ? set.terms.filter((x) => (!flash.starredOnly || x.starred) && (!flash.round || flash.round.includes(x.id))).length : 0;
-  const resumeAt = flash && flash.idx > 0 && flash.idx < roundSize ? `${flash.idx + 1} / ${roundSize}` : '';
+  void prog.flash; // re-render when the saved place changes
+  const rp = resumePoint(set);
+  const resumeAt = rp ? `${rp.card} / ${rp.of}` : '';
 
   const modes = [
     { to: 'flashcards', icon: 'cards', label: 'Flashcards' },

@@ -4,6 +4,7 @@ import { Icon, MenuButton, TopBar } from '../../components/ui';
 import { get, remove, useAll } from '../../lib/store';
 import type { StudySet } from '../../lib/types';
 import { StarterSetsModal } from './StarterSets';
+import { resumePoint } from './common';
 import { StarterUpdates } from '../../components/StarterUpdates';
 import { studyToday } from '../../lib/goals';
 import { syncNovemberSection } from '../../lib/novtest';
@@ -125,6 +126,18 @@ export function SetList() {
         </div>
       </div>
       <StarterUpdates kind="sets" />
+      {(() => {
+        const latest = sets.map((s) => ({ s, rp: resumePoint(s) })).filter((x) => x.rp).sort((a, b) => b.rp!.at - a.rp!.at)[0];
+        return latest && !searching ? (
+          <Link to={`/quick/${latest.s.id}/flashcards`} className="panel pad row between mb continue-strip">
+            <span className="col" style={{ gap: 2, minWidth: 0 }}>
+              <span className="tiny muted">Pick up where you left off</span>
+              <b className="ellipsis">{latest.s.folder ? `${latest.s.folder.split('::').slice(-1)[0]} › ` : ''}{latest.s.title}</b>
+            </span>
+            <span className="btn primary sm nowrap"><Icon name="cards" size={14} /> Continue · card {latest.rp!.card} of {latest.rp!.of}</span>
+          </Link>
+        ) : null;
+      })()}
       {sets.length > 0 && <input type="search" className="mb" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search sets" style={{ maxWidth: 360 }} />}
       {!sets.length ? (
         <div className="panel pad">
@@ -173,7 +186,10 @@ function FolderRow({ folder, depth, isOpen, toggle, labels }: { folder: Folder; 
           <button className={`twisty ${open ? 'open' : ''}`} onClick={(e) => { e.stopPropagation(); toggle(folder.path); }} aria-label={open ? 'Collapse' : 'Expand'} aria-expanded={open}>
             <Icon name="chevron" />
           </button>
-          <span className="label">{folder.name}</span>
+          <span className="set-label">
+            <span className="label">{folder.name}</span>
+            {folder.own && <ContinueButton set={folder.own} />}
+          </span>
         </div>
         {n(c.fresh, 'n-new')}
         {n(c.learning, 'n-learn')}
@@ -185,6 +201,18 @@ function FolderRow({ folder, depth, isOpen, toggle, labels }: { folder: Folder; 
   );
 }
 
+/** "Continue" on a set whose Flashcards were left part-way through. */
+function ContinueButton({ set }: { set: StudySet }) {
+  const nav = useNavigate();
+  const rp = resumePoint(set);
+  if (!rp) return null;
+  return (
+    <button className="btn sm continue-btn" title={`Carry on from card ${rp.card} of ${rp.of}`} onClick={(e) => { e.stopPropagation(); nav(`/quick/${set.id}/flashcards`); }}>
+      <Icon name="cards" size={14} /> Continue <span className="faint">{rp.card}/{rp.of}</span>
+    </button>
+  );
+}
+
 function SetRow({ set, depth, label }: { set: StudySet; depth: number; label?: string }) {
   const nav = useNavigate();
   const c = setCounts(set);
@@ -192,7 +220,10 @@ function SetRow({ set, depth, label }: { set: StudySet; depth: number; label?: s
     <div className="deck-row set-row">
       <div className="name" style={{ paddingLeft: depth * 20 }} onClick={() => nav(`/quick/${set.id}`)}>
         <span style={{ width: 20, flex: 'none' }} />
-        <span className="label">{label || set.title || 'Untitled set'}</span>
+        <span className="set-label">
+          <span className="label">{label || set.title || 'Untitled set'}</span>
+          <ContinueButton set={set} />
+        </span>
       </div>
       {n(c.fresh, 'n-new')}
       {n(c.learning, 'n-learn')}

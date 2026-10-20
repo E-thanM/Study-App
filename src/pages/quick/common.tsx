@@ -42,6 +42,16 @@ export function saveFlashSession(setId: string, flash: FlashSession | null) {
   put(flash ? { ...rest, flash } : rest);
 }
 
+/** Where Flashcards mode stopped part-way through a set (card number and round size), if it did. */
+export function resumePoint(set: StudySet): { card: number; of: number; at: number } | null {
+  const flash = get('setprogress', `prog-${set.id}`)?.flash;
+  if (!flash) return null;
+  const ids = new Set(set.terms.map((t) => t.id));
+  const of = set.terms.filter((t) => (!flash.starredOnly || t.starred) && (!flash.round || flash.round.includes(t.id))).length;
+  if (!of || flash.idx <= 0 || flash.idx >= of || ![...(flash.order || ids)].some((x) => ids.has(x))) return null;
+  return { card: flash.idx + 1, of, at: flash.at };
+}
+
 export function loadFlashSession(setId: string): FlashSession | undefined {
   return get('setprogress', `prog-${setId}`)?.flash;
 }

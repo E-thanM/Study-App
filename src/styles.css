@@ -719,3 +719,12 @@ td.browse-first { max-width: 360px; }
 /* Quick Learn set tree: same rows as the deck list, without the time column */
 /* on phones the deck list already has these five columns */
 @media (min-width: 641px) { .deck-row.set-row { grid-template-columns: 1fr 52px 52px 52px 36px; } }
+.set-label { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
+.set-label .label { min-width: 0; }
+.continue-btn { margin-left: auto; flex: none; padding: 3px 9px; font-size: 12px; gap: 5px; color: var(--accent); border-color: var(--accent-soft); background: var(--accent-soft); }
+.continue-strip { gap: 12px; }
+@media (max-width: 640px) {
+  .set-label { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .continue-btn { margin-left: 0; }
+  .continue-strip { flex-wrap: wrap; }
+}
