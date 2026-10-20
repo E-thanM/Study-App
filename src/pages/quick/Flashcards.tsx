@@ -123,7 +123,8 @@ export function FlashcardsMode() {
       ) : cur ? (
         <>
           <div className="flip-stage" ref={stage}>
-            <div className={anim} style={drag ? { transform: `translateX(${drag}px) rotate(${drag / 30}deg)`, transition: 'none' } : undefined}>
+            {/* keyed by card: the next card appears front up instead of flipping back (which flashed its answer) */}
+            <div key={`${idx}:${cur.id}`} className={anim} style={drag ? { transform: `translateX(${drag}px) rotate(${drag / 30}deg)`, transition: 'none' } : undefined}>
               <div
                 className={`flipcard ${flipped ? 'flipped' : ''}`}
                 style={track && Math.abs(drag) > 30 ? { boxShadow: `0 0 0 3px ${drag > 0 ? 'var(--good)' : 'var(--warn)'}`, borderRadius: 24 } : undefined}

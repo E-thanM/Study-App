@@ -69,7 +69,7 @@ export function SetView() {
 
       {t && (
         <div className="flip-stage mb" style={{ maxWidth: 720, margin: '0 0 18px' }}>
-          <div className={`flipcard preview ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
+          <div key={t.id} className={`flipcard preview ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
             <div className="side"><span className="corner">Term</span><FlipText text={t.term} /></div>
             <div className="side back"><span className="corner">Definition</span><FlipText text={t.definition} /></div>
           </div>
