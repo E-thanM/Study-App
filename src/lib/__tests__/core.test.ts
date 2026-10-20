@@ -314,3 +314,17 @@ describe('starter content updates', async () => {
     expect(pendingSets(full)).toBe(0);
   });
 });
+
+import { fmtHours as fmtTime } from '../util';
+describe('study time', () => {
+  it('reads as hours and minutes', () => {
+    const min = 60_000;
+    expect(fmtTime(70 * min)).toBe('1 hour 10 minutes');
+    expect(fmtTime(45 * min)).toBe('45 minutes');
+    expect(fmtTime(120 * min)).toBe('2 hours');
+    expect(fmtTime(61 * min)).toBe('1 hour 1 minute');
+    expect(fmtTime(0)).toBe('0 minutes');
+    expect(fmtTime(150 * min, true)).toBe('2h 30m');
+    expect(fmtTime(20 * min, true)).toBe('20m');
+  });
+});

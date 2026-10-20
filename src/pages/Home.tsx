@@ -99,7 +99,7 @@ export function Home() {
           <div className="stat" style={{ minWidth: 190 }}>
             <div className="label row between">
               <span className="row" style={{ gap: 5 }}><Icon name="clock" size={14} /> This week</span>
-              <span className="faint">goal {settings.weeklyGoalHours}h</span>
+              <span className="faint">goal {fmtHours(settings.weeklyGoalHours * HOUR)}</span>
             </div>
             <div className="value">
               {fmtHours(data.wk.total)}

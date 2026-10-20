@@ -140,7 +140,7 @@ function DeckRow({ deck, depth, onOptions, onNewSub, onFiltered }: { deck: Deck;
         {n(c.new, 'n-new')}
         {n(c.learn, 'n-learn')}
         {n(c.review, 'n-review')}
-        <span className="num hide-sm muted small" title={`${totals.reviews} reviews`}>{totals.ms ? fmtHours(totals.ms) : '–'}</span>
+        <span className="num hide-sm muted small" title={`${totals.reviews} reviews`}>{totals.ms ? fmtHours(totals.ms, true) : '–'}</span>
         <MenuButton
           items={[
             { label: 'Study', icon: 'cards', onClick: () => nav(`/cards/review/${deck.id}`) },

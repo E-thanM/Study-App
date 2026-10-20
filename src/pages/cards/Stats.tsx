@@ -161,7 +161,7 @@ export function StatsPage() {
       <div className="section-title">Time spent by deck</div>
       <div className="panel" style={{ overflow: 'auto' }}>
         <table className="tbl">
-          <thead><tr><th>Deck</th><th>Cards</th><th>Reviews</th><th>Hours (total)</th><th>This week</th><th>Next review</th></tr></thead>
+          <thead><tr><th>Deck</th><th>Cards</th><th>Reviews</th><th>Time (total)</th><th>This week</th><th>Next review</th></tr></thead>
           <tbody>
             {perDeck.map((r) => (
               <Fragment key={r.deck.id}>
@@ -169,8 +169,8 @@ export function StatsPage() {
                   <td><Link to={`/cards/deck/${r.deck.id}`}><b>{r.deck.name}</b></Link></td>
                   <td>{r.cards}</td>
                   <td>{r.reviews}</td>
-                  <td>{(r.time / 3600000).toFixed(1)}h</td>
-                  <td>{fmtHours(r.week)}</td>
+                  <td className="nowrap">{fmtHours(r.time, true)}</td>
+                  <td className="nowrap">{fmtHours(r.week, true)}</td>
                   <td className="nowrap">{Number.isFinite(r.nextDue) ? (r.nextDue <= Date.now() ? 'due now' : `in ${fmtInterval(r.nextDue - Date.now())}`) : '–'}</td>
                 </tr>
                 {r.children.filter((k) => k.reviews).map((k) => (
@@ -178,7 +178,7 @@ export function StatsPage() {
                     <td style={{ paddingLeft: 28 }} className="muted">{k.deck.name}</td>
                     <td></td>
                     <td className="muted">{k.reviews}</td>
-                    <td className="muted">{(k.time / 3600000).toFixed(1)}h</td>
+                    <td className="muted nowrap">{fmtHours(k.time, true)}</td>
                     <td></td><td></td>
                   </tr>
                 ))}

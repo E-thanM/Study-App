@@ -87,10 +87,18 @@ export function fmtInterval(ms: number): string {
   return `${(d / 365).toFixed(1)}y`;
 }
 
-export function fmtHours(ms: number): string {
-  const h = ms / HOUR;
-  if (h < 1) return `${Math.round(ms / MIN)}m`;
-  return `${h.toFixed(h < 10 ? 1 : 0)}h`;
+/**
+ * Study time in hours and minutes: "1 hour 10 minutes", "45 minutes", "2 hours".
+ * `short` gives "1h 10m" for narrow table columns.
+ */
+export function fmtHours(ms: number, short = false): string {
+  const total = Math.max(0, Math.round(ms / MIN));
+  const h = Math.floor(total / 60);
+  const m = total % 60;
+  if (short) return h ? (m ? `${h}h ${m}m` : `${h}h`) : `${m}m`;
+  const hs = `${h} ${h === 1 ? 'hour' : 'hours'}`;
+  const ms_ = `${m} ${m === 1 ? 'minute' : 'minutes'}`;
+  return h ? (m ? `${hs} ${ms_}` : hs) : ms_;
 }
 
 export function shuffle<T>(arr: T[]): T[] {

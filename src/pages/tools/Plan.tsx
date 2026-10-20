@@ -12,7 +12,7 @@ import { CHECKLIST, NOT_ON_TEST, Y910_ID, syncNovemberSection, topicDeckId, topi
 import { subjectStrengths } from '../../lib/strength';
 import { get, useAll, useRec } from '../../lib/store';
 import { durationMin, sessionsOn } from '../../lib/timetable';
-import { addDays, isoDate, parseIso, subjectColor, weekdayMon } from '../../lib/util';
+import { HOUR, addDays, fmtHours, isoDate, parseIso, subjectColor, weekdayMon } from '../../lib/util';
 import { Dots } from './Strengths';
 import './tools.css';
 import './plan.css';
@@ -283,7 +283,7 @@ function NovemberTab({ today }: { today: string }) {
             <div className="muted tiny">Biology: every statement on your Year 9–10 checklist – all of the course except stem cells, the nervous system / eye / plant responses, inheritance, and selective breeding / GM / cloning. Everything else is on flashcards only until the tests.</div>
           </div>
           <div className="row wrap" style={{ gap: 6 }}>
-            {NOVEMBER_HOURS.map((h) => <span key={h.subject} className="pill">{h.subject}: {h.hours} h/week</span>)}
+            {NOVEMBER_HOURS.map((h) => <span key={h.subject} className="pill">{h.subject}: {fmtHours(h.hours * HOUR)} a week</span>)}
           </div>
         </div>
       </section>
@@ -523,7 +523,7 @@ function SubjectsTab() {
                 <select value={String(h.weight)} onChange={(e) => savePlan({ weights: { ...plan.weights, [s.subject]: Number(e.target.value) } })} aria-label="Priority">
                   {WEIGHTS.map((w) => <option key={w.v} value={String(w.v)}>{w.l} priority</option>)}
                 </select>
-                <span className="pill accent">{h.hours.toFixed(1)} h/week</span>
+                <span className="pill accent">{fmtHours(h.hours * HOUR)} a week</span>
               </div>
             </div>
             <div className="tiny muted">{s.board}</div>
