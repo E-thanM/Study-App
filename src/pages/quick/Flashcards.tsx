@@ -3,22 +3,25 @@ import { Link, useParams } from 'react-router-dom';
 import { speak } from '../../components/CardView';
 import { Icon, Progress, Seg, TopBar, useKey } from '../../components/ui';
 import { shuffle } from '../../lib/util';
-import { FlipText, setKnown, toggleStar, useSet, useStudyTimer } from './common';
+import { FlipText, loadFlashSession, saveFlashSession, setKnown, toggleStar, useSet, useStudyTimer } from './common';
 
 export function FlashcardsMode() {
   const { id = '' } = useParams();
   const set = useSet(id);
   useStudyTimer(id);
-  const [order, setOrder] = useState<string[] | null>(null);
-  const [starredOnly, setStarredOnly] = useState(false);
-  const [front, setFront] = useState<'term' | 'definition'>('term');
-  const [track, setTrack] = useState(true);
-  const [idx, setIdx] = useState(0);
+  // carry on from where this set was left last time (saved with the set's progress, so it syncs)
+  const [saved] = useState(() => loadFlashSession(id));
+  const [order, setOrder] = useState<string[] | null>(saved?.order ?? null);
+  const [starredOnly, setStarredOnly] = useState(saved?.starredOnly ?? false);
+  const [front, setFront] = useState<'term' | 'definition'>(saved?.front ?? 'term');
+  const [track, setTrack] = useState(saved?.track ?? true);
+  const [idx, setIdx] = useState(saved?.idx ?? 0);
   const [flipped, setFlipped] = useState(false);
-  const [known, setKnownIds] = useState<Set<string>>(new Set());
-  const [learning, setLearning] = useState<Set<string>>(new Set());
+  const [known, setKnownIds] = useState<Set<string>>(() => new Set(saved?.known));
+  const [learning, setLearning] = useState<Set<string>>(() => new Set(saved?.learning));
   const [anim, setAnim] = useState('');
-  const [round, setRound] = useState<string[] | null>(null);
+  const [round, setRound] = useState<string[] | null>(saved?.round ?? null);
+  const [resumed, setResumed] = useState(!!saved && saved.idx > 0);
   const touch = useRef<{ x: number; y: number; swiped: boolean; axis: 'x' | 'y' | null } | null>(null);
   const [drag, setDrag] = useState(0);
   const dragRef = useRef(0);
@@ -35,9 +38,25 @@ export function FlashcardsMode() {
   const cur = set?.terms.find((t) => t.id === deckIds[idx]);
   const finished = idx >= deckIds.length && deckIds.length > 0;
 
-  const go = (d: number) => { setIdx((i) => Math.max(0, Math.min(deckIds.length - (track ? 0 : 1), i + d))); setFlipped(false); };
+  // the set may have changed since last time: don't point past its end
+  useEffect(() => { if (deckIds.length && idx > deckIds.length) setIdx(deckIds.length); }, [deckIds.length, idx]);
+
+  const lastSaved = useRef('');
+  useEffect(() => {
+    if (!set) return;
+    const session = { idx, order, round, known: [...known], learning: [...learning], starredOnly, front, track };
+    const sig = JSON.stringify(session);
+    if (sig === lastSaved.current) return;
+    const first = !lastSaved.current;
+    lastSaved.current = sig;
+    if (first) return; // opening the set isn't a change
+    saveFlashSession(id, { ...session, at: Date.now() });
+  }, [set, id, idx, order, round, known, learning, starredOnly, front, track]);
+
+  const go = (d: number) => { setResumed(false); setIdx((i) => Math.max(0, Math.min(deckIds.length - (track ? 0 : 1), i + d))); setFlipped(false); };
   const mark = (k: boolean) => {
     if (!cur) return;
+    setResumed(false);
     setKnown(id, cur.id, k);
     (k ? setKnownIds : setLearning)((s) => new Set(s).add(cur.id));
     (k ? setLearning : setKnownIds)((s) => { const n = new Set(s); n.delete(cur.id); return n; });
@@ -93,7 +112,7 @@ export function FlashcardsMode() {
   }, [cur, track, deckIds]);
 
   if (!set) return null;
-  const restartWith = (ids: string[] | null) => { setRound(ids); setIdx(0); setFlipped(false); setKnownIds(new Set()); setLearning(new Set()); };
+  const restartWith = (ids: string[] | null) => { setRound(ids); setIdx(0); setFlipped(false); setKnownIds(new Set()); setLearning(new Set()); setResumed(false); };
   const showFront = front === 'term' ? cur?.term : cur?.definition;
   const showBack = front === 'term' ? cur?.definition : cur?.term;
 
@@ -109,6 +128,12 @@ export function FlashcardsMode() {
         <label className="check small"><input type="checkbox" checked={track} onChange={(e) => setTrack(e.target.checked)} /> <span className="hide-sm">Track progress</span><span className="show-sm">Track</span></label>
       </div>
 
+      {resumed && !finished && cur && (
+        <div className="callout small row between" style={{ gap: 10, padding: '6px 6px 6px 14px', marginBottom: 12 }}>
+          <span>Picked up at card {idx + 1} of {deckIds.length}</span>
+          <button className="btn sm ghost" onClick={() => restartWith(null)}>Start over</button>
+        </div>
+      )}
       {finished ? (
         <div className="panel pad center col" style={{ maxWidth: 560, margin: '30px auto', gap: 14, padding: 32 }}>
           <div style={{ fontSize: 36 }}>🎯</div>

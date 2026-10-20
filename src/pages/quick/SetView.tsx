@@ -26,6 +26,11 @@ export function SetView() {
   const linkedKey = setDeckKey(id);
   const linked = linkedKey ? set.terms.some((x) => linkedCards(id, x.id).length > 0) : false;
 
+  // Flashcards mode remembers where it was left
+  const flash = prog.flash;
+  const roundSize = flash ? set.terms.filter((x) => (!flash.starredOnly || x.starred) && (!flash.round || flash.round.includes(x.id))).length : 0;
+  const resumeAt = flash && flash.idx > 0 && flash.idx < roundSize ? `${flash.idx + 1} / ${roundSize}` : '';
+
   const modes = [
     { to: 'flashcards', icon: 'cards', label: 'Flashcards' },
     { to: 'learn', icon: 'learn', label: 'Learn' },
@@ -63,7 +68,7 @@ export function SetView() {
 
       <div className="mode-grid mb">
         {modes.map((m) => (
-          <Link key={m.to} to={`/quick/${id}/${m.to}`} className="mode-card"><Icon name={m.icon} /> {m.label}</Link>
+          <Link key={m.to} to={`/quick/${id}/${m.to}`} className="mode-card"><Icon name={m.icon} /> {m.label}{m.to === 'flashcards' && resumeAt && <span className="tiny muted" style={{ fontWeight: 400, marginLeft: 'auto' }}>card {resumeAt}</span>}</Link>
         ))}
       </div>
 

@@ -199,6 +199,23 @@ export interface SetProgress extends BaseRec {
   kind: 'setprogress';
   setId: string;
   terms: Record<string, { level: number; correct: number; wrong: number; known?: boolean }>;
+  /** where Flashcards mode was left, so it can carry on from the same card */
+  flash?: FlashSession;
+}
+
+export interface FlashSession {
+  /** position in the current round */
+  idx: number;
+  /** shuffled order, or null for the set's order */
+  order: string[] | null;
+  /** "keep reviewing" round: only these terms, or null for all */
+  round: string[] | null;
+  known: string[];
+  learning: string[];
+  starredOnly: boolean;
+  front: 'term' | 'definition';
+  track: boolean;
+  at: number;
 }
 
 export interface StudyLog extends BaseRec {

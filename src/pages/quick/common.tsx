@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { syncQuickAnswer } from '../../lib/quicksync';
 import { get, patch, put, useRec } from '../../lib/store';
-import type { SetProgress, StudySet, Term } from '../../lib/types';
+import type { FlashSession, SetProgress, StudySet, Term } from '../../lib/types';
 import { uid } from '../../lib/util';
 
 export function useSet(id: string | undefined): StudySet | undefined {
@@ -31,6 +31,19 @@ export function setKnown(setId: string, termId: string, known: boolean) {
   const t = cur.terms[termId] || { level: 0, correct: 0, wrong: 0 };
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, known, level: known ? Math.max(t.level, 2) : Math.min(t.level || 1, 1) } } });
   syncQuickAnswer(setId, termId, known);
+}
+
+/** Remembers (or with null, forgets) where Flashcards mode was left in a set. */
+export function saveFlashSession(setId: string, flash: FlashSession | null) {
+  const id = `prog-${setId}`;
+  const cur = get('setprogress', id) || { id, kind: 'setprogress' as const, updatedAt: 0, setId, terms: {} };
+  if (!flash && !cur.flash) return;
+  const { flash: _old, ...rest } = cur;
+  put(flash ? { ...rest, flash } : rest);
+}
+
+export function loadFlashSession(setId: string): FlashSession | undefined {
+  return get('setprogress', `prog-${setId}`)?.flash;
 }
 
 export function resetProgress(setId: string) {
