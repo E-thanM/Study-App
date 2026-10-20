@@ -71,6 +71,8 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+/* a card dragged or swiped off screen mustn't make the page wider (and pannable) */
+html, body { overflow-x: clip; }
 body {
   background: var(--bg);
   color: var(--ink);
@@ -377,7 +379,7 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .mode-card { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); cursor: pointer; font-weight: 600; box-shadow: var(--shadow); transition: transform 0.1s, border-color 0.15s; }
 .mode-card:hover { border-color: var(--accent); transform: translateY(-1px); }
 .mode-card svg { width: 20px; height: 20px; color: var(--accent); }
-.flip-stage { perspective: 1600px; width: 100%; max-width: 760px; margin: 0 auto; }
+.flip-stage { perspective: 1600px; width: 100%; max-width: 760px; margin: 0 auto; touch-action: pan-y; overscroll-behavior-x: none; }
 .flipcard { position: relative; width: 100%; aspect-ratio: 16 / 10; cursor: pointer; transform-style: preserve-3d; transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.3, 1); }
 .flipcard.flipped { transform: rotateX(180deg); }
 .flipcard .side { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); display: flex; flex-direction: column; padding: 40px 32px 28px; text-align: center; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; overflow-wrap: anywhere; }

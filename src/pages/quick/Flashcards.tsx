@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { speak } from '../../components/CardView';
 import { Icon, Progress, Seg, TopBar, useKey } from '../../components/ui';
@@ -19,8 +19,11 @@ export function FlashcardsMode() {
   const [learning, setLearning] = useState<Set<string>>(new Set());
   const [anim, setAnim] = useState('');
   const [round, setRound] = useState<string[] | null>(null);
-  const touch = useRef<{ x: number; y: number; swiped: boolean } | null>(null);
+  const touch = useRef<{ x: number; y: number; swiped: boolean; axis: 'x' | 'y' | null } | null>(null);
   const [drag, setDrag] = useState(0);
+  const dragRef = useRef(0);
+  const stage = useRef<HTMLDivElement>(null);
+  const swipeEnd = useRef<(dx: number) => void>(() => {});
 
   const deckIds = useMemo(() => {
     if (!set) return [];
@@ -41,6 +44,46 @@ export function FlashcardsMode() {
     setAnim(k ? 'swipe-right' : 'swipe-left');
     setTimeout(() => { setAnim(''); setFlipped(false); setIdx((i) => i + 1); }, 220);
   };
+
+  swipeEnd.current = (dx) => { if (track) mark(dx > 0); else go(dx > 0 ? -1 : 1); };
+
+  // Swiping: once a drag is clearly sideways, only the card moves – the page doesn't scroll or pan.
+  // Native listeners because React's touchmove is passive and can't cancel scrolling.
+  const hasCard = !!cur;
+  useEffect(() => {
+    const el = stage.current;
+    if (!el) return;
+    const setD = (v: number) => { dragRef.current = v; setDrag(v); };
+    const start = (e: TouchEvent) => { touch.current = { x: e.touches[0].clientX, y: e.touches[0].clientY, swiped: false, axis: null }; };
+    const move = (e: TouchEvent) => {
+      const t = touch.current;
+      if (!t) return;
+      const dx = e.touches[0].clientX - t.x;
+      const dy = e.touches[0].clientY - t.y;
+      if (!t.axis && Math.max(Math.abs(dx), Math.abs(dy)) > 8) t.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (t.axis !== 'x') return; // vertical: let the card text / page scroll as normal
+      if (e.cancelable) e.preventDefault();
+      setD(dx);
+    };
+    const end = () => {
+      const dx = dragRef.current;
+      if (touch.current && Math.abs(dx) > 70) {
+        touch.current.swiped = true;
+        swipeEnd.current(dx);
+      }
+      setD(0);
+    };
+    el.addEventListener('touchstart', start, { passive: true });
+    el.addEventListener('touchmove', move, { passive: false });
+    el.addEventListener('touchend', end);
+    el.addEventListener('touchcancel', end);
+    return () => {
+      el.removeEventListener('touchstart', start);
+      el.removeEventListener('touchmove', move);
+      el.removeEventListener('touchend', end);
+      el.removeEventListener('touchcancel', end);
+    };
+  }, [hasCard]);
 
   useKey((e) => {
     if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') { e.preventDefault(); setFlipped((f) => !f); }
@@ -79,23 +122,7 @@ export function FlashcardsMode() {
         </div>
       ) : cur ? (
         <>
-          <div
-            className="flip-stage"
-            onTouchStart={(e) => { touch.current = { x: e.touches[0].clientX, y: e.touches[0].clientY, swiped: false }; }}
-            onTouchMove={(e) => {
-              if (!touch.current) return;
-              const dx = e.touches[0].clientX - touch.current.x;
-              const dy = e.touches[0].clientY - touch.current.y;
-              if (Math.abs(dx) > Math.abs(dy)) setDrag(dx);
-            }}
-            onTouchEnd={() => {
-              if (touch.current && Math.abs(drag) > 70) {
-                touch.current.swiped = true;
-                if (track) mark(drag > 0); else go(drag > 0 ? -1 : 1);
-              }
-              setDrag(0);
-            }}
-          >
+          <div className="flip-stage" ref={stage}>
             <div className={anim} style={drag ? { transform: `translateX(${drag}px) rotate(${drag / 30}deg)`, transition: 'none' } : undefined}>
               <div
                 className={`flipcard ${flipped ? 'flipped' : ''}`}
