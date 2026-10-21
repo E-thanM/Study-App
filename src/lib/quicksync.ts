@@ -1,7 +1,7 @@
 import { answerCard, cardsOfNote } from './collection';
-import { all, get, remove } from './store';
+import { all, get, put, remove } from './store';
 import type { Rating } from './scheduler';
-import type { Card } from './types';
+import type { Card, SetProgress } from './types';
 import { dayNumber } from './util';
 
 /*
@@ -58,4 +58,76 @@ export function syncQuickAnswer(setId: string, termId: string, correct: boolean,
     n++;
   }
   return n;
+}
+
+/*
+ * The same card can sit in more than one GCSE set – e.g. "Biology › 2e Plant nutrition" and
+ * "Biology › Year 9–10 test › 2e Plant nutrition". Its Quick Learn progress is shared between
+ * them, so finishing one set counts in the other.
+ */
+
+type TermProgress = SetProgress['terms'][string];
+
+/** Other sets from the same GCSE subject that contain this card. */
+export function linkedSets(setId: string, termId: string): string[] {
+  const key = setDeckKey(setId);
+  if (!key || !termId.startsWith('t-')) return [];
+  return all('set').filter((s) => s.id !== setId && setDeckKey(s.id) === key && s.terms.some((t) => t.id === termId)).map((s) => s.id);
+}
+
+function writeTerms(updates: Map<string, Record<string, TermProgress>>) {
+  const recs: SetProgress[] = [];
+  for (const [setId, terms] of updates) {
+    const id = `prog-${setId}`;
+    const cur = get('setprogress', id) || { id, kind: 'setprogress' as const, updatedAt: 0, setId, terms: {} };
+    recs.push({ ...cur, terms: { ...cur.terms, ...terms } });
+  }
+  if (recs.length) put(recs);
+}
+
+/** Copies a card's progress in one set to every other set it's in. */
+export function shareTermProgress(setId: string, termId: string): number {
+  const entry = get('setprogress', `prog-${setId}`)?.terms[termId];
+  if (!entry) return 0;
+  const others = linkedSets(setId, termId).filter((id) => JSON.stringify(get('setprogress', `prog-${id}`)?.terms[termId]) !== JSON.stringify(entry));
+  writeTerms(new Map(others.map((id) => [id, { [termId]: entry }])));
+  return others.length;
+}
+
+/** The fuller record of the same card: more answers wins, then the higher level. */
+const better = (a: TermProgress, b: TermProgress) => {
+  const na = a.correct + a.wrong, nb = b.correct + b.wrong;
+  return nb !== na ? (nb > na ? b : a) : b.level > a.level ? b : a;
+};
+
+/**
+ * Brings progress made before sharing existed into line: for each card in more than one set of a
+ * subject, every set gets the fullest record of it. Returns how many sets were updated.
+ */
+export function mergeLinkedProgress(): number {
+  const groups = new Map<string, string[]>(); // subject + card → sets
+  for (const s of all('set')) {
+    const key = setDeckKey(s.id);
+    if (!key) continue;
+    for (const t of s.terms) if (t.id.startsWith('t-')) {
+      const g = `${key}|${t.id}`;
+      const list = groups.get(g);
+      if (list) list.push(s.id); else groups.set(g, [s.id]);
+    }
+  }
+  const progress = new Map(all('setprogress').map((p) => [p.setId, p.terms]));
+  const updates = new Map<string, Record<string, TermProgress>>();
+  for (const [g, setIds] of groups) {
+    if (setIds.length < 2) continue;
+    const termId = g.slice(g.indexOf('|') + 1);
+    const entries = setIds.map((id) => progress.get(id)?.[termId]).filter(Boolean) as TermProgress[];
+    if (!entries.length) continue;
+    const best = entries.reduce(better);
+    for (const id of setIds) {
+      if (JSON.stringify(progress.get(id)?.[termId]) === JSON.stringify(best)) continue;
+      updates.set(id, { ...(updates.get(id) || {}), [termId]: best });
+    }
+  }
+  writeTerms(updates);
+  return updates.size;
 }

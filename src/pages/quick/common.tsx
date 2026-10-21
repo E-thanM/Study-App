@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { syncQuickAnswer } from '../../lib/quicksync';
+import { shareTermProgress, syncQuickAnswer } from '../../lib/quicksync';
 import { get, patch, put, useRec } from '../../lib/store';
 import type { FlashSession, SetProgress, StudySet, Term } from '../../lib/types';
 import { uid } from '../../lib/util';
@@ -21,8 +21,9 @@ export function recordAnswer(setId: string, termId: string, correct: boolean, wr
   if (correct) level = written ? 3 : Math.max(level, 2);
   else level = level > 0 ? 1 : 1;
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, level, correct: t.correct + (correct ? 1 : 0), wrong: t.wrong + (correct ? 0 : 1) } } });
-  // GCSE topic sets: the same answer counts in long-term flashcards
+  // GCSE topic sets: the same answer counts in long-term flashcards and in other sets with this card
   syncQuickAnswer(setId, termId, correct);
+  shareTermProgress(setId, termId);
 }
 
 export function setKnown(setId: string, termId: string, known: boolean) {
@@ -31,6 +32,7 @@ export function setKnown(setId: string, termId: string, known: boolean) {
   const t = cur.terms[termId] || { level: 0, correct: 0, wrong: 0 };
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, known, level: known ? Math.max(t.level, 2) : Math.min(t.level || 1, 1) } } });
   syncQuickAnswer(setId, termId, known);
+  shareTermProgress(setId, termId);
 }
 
 /** Remembers (or with null, forgets) where Flashcards mode was left in a set. */

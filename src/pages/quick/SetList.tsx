@@ -8,6 +8,7 @@ import { resumePoint } from './common';
 import { StarterUpdates } from '../../components/StarterUpdates';
 import { studyToday } from '../../lib/goals';
 import { syncNovemberSection } from '../../lib/novtest';
+import { mergeLinkedProgress } from '../../lib/quicksync';
 import { getPlan, sprintEnd } from '../../lib/plan';
 
 /*
@@ -97,7 +98,8 @@ export function SetList() {
   const [open, setOpen] = useState(loadOpen);
   const [starterOpen, setStarterOpen] = useState(false);
   // builds the Biology › Year 9–10 test topic sets
-  useEffect(() => { void syncNovemberSection(studyToday(), sprintEnd(getPlan().dates)); }, []);
+  // also brings progress on cards shared between sets (e.g. Year 9–10 and the main topics) into line
+  useEffect(() => { void syncNovemberSection(studyToday(), sprintEnd(getPlan().dates)).then(() => mergeLinkedProgress()); }, []);
 
   const searching = q.trim().length > 0;
   const shown = searching ? sets.filter((s) => `${s.title} ${s.description} ${s.folder}`.toLowerCase().includes(q.trim().toLowerCase())) : sets;
