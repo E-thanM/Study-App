@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { shareTermProgress, syncQuickAnswer } from '../../lib/quicksync';
+import { shareTermProgress, snapshotAnswer, syncQuickAnswer } from '../../lib/quicksync';
 import { get, patch, put, useRec } from '../../lib/store';
 import type { FlashSession, SetProgress, StudySet, Term } from '../../lib/types';
 import { uid } from '../../lib/util';
@@ -26,13 +26,16 @@ export function recordAnswer(setId: string, termId: string, correct: boolean, wr
   shareTermProgress(setId, termId);
 }
 
-export function setKnown(setId: string, termId: string, known: boolean) {
+/** Marks a card Know / Still learning; returns a function that undoes exactly this answer. */
+export function setKnown(setId: string, termId: string, known: boolean): () => void {
+  const undo = snapshotAnswer(setId, termId);
   const id = `prog-${setId}`;
   const cur = get('setprogress', id) || { id, kind: 'setprogress' as const, updatedAt: 0, setId, terms: {} };
   const t = cur.terms[termId] || { level: 0, correct: 0, wrong: 0 };
   put({ ...cur, terms: { ...cur.terms, [termId]: { ...t, known, level: known ? Math.max(t.level, 2) : Math.min(t.level || 1, 1) } } });
   syncQuickAnswer(setId, termId, known);
   shareTermProgress(setId, termId);
+  return undo;
 }
 
 /** Remembers (or with null, forgets) where Flashcards mode was left in a set. */

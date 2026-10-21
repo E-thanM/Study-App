@@ -55,14 +55,33 @@ export function FlashcardsMode() {
   }, [set, id, idx, order, round, known, learning, starredOnly, front, track]);
 
   const go = (d: number) => { setResumed(false); setIdx((i) => Math.max(0, Math.min(deckIds.length - (track ? 0 : 1), i + d))); setFlipped(false); };
+  // swipes this visit, newest last, so a wrong one can be taken back
+  const history = useRef<{ idx: number; termId: string; wasKnown: boolean; wasLearning: boolean; undo: () => void }[]>([]);
+  const [canUndo, setCanUndo] = useState(false);
   const mark = (k: boolean) => {
-    if (!cur) return;
+    if (!cur || anim) return;
     setResumed(false);
-    setKnown(id, cur.id, k);
+    const undo = setKnown(id, cur.id, k);
+    history.current.push({ idx, termId: cur.id, wasKnown: known.has(cur.id), wasLearning: learning.has(cur.id), undo });
+    setCanUndo(true);
     (k ? setKnownIds : setLearning)((s) => new Set(s).add(cur.id));
     (k ? setLearning : setKnownIds)((s) => { const n = new Set(s); n.delete(cur.id); return n; });
     setAnim(k ? 'swipe-right' : 'swipe-left');
     setTimeout(() => { setAnim(''); setFlipped(false); setIdx((i) => i + 1); }, 220);
+  };
+
+  /** Back to the previous card, taking back its Know / Still learning everywhere it counted. */
+  const back = () => {
+    const last = history.current.pop();
+    setCanUndo(history.current.length > 0);
+    if (!last) return;
+    last.undo();
+    const put = (has: boolean) => (s: Set<string>) => { const n = new Set(s); if (has) n.add(last.termId); else n.delete(last.termId); return n; };
+    setKnownIds(put(last.wasKnown));
+    setLearning(put(last.wasLearning));
+    setAnim('');
+    setFlipped(false);
+    setIdx(last.idx);
   };
 
   swipeEnd.current = (dx) => { if (track) mark(dx > 0); else go(dx > 0 ? -1 : 1); };
@@ -106,14 +125,15 @@ export function FlashcardsMode() {
   }, [hasCard]);
 
   useKey((e) => {
+    if (track && (e.key === 'Backspace' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z'))) { e.preventDefault(); back(); return; }
     if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') { e.preventDefault(); setFlipped((f) => !f); }
     else if (e.key === 'ArrowRight') track ? mark(true) : go(1);
     else if (e.key === 'ArrowLeft') track ? mark(false) : go(-1);
     else if (e.key.toLowerCase() === 's' && cur && set) toggleStar(set, cur.id);
-  }, [cur, track, deckIds]);
+  }, [cur, track, deckIds, known, learning, anim, idx]);
 
   if (!set) return null;
-  const restartWith = (ids: string[] | null) => { setRound(ids); setIdx(0); setFlipped(false); setKnownIds(new Set()); setLearning(new Set()); setResumed(false); };
+  const restartWith = (ids: string[] | null) => { history.current = []; setCanUndo(false); setRound(ids); setIdx(0); setFlipped(false); setKnownIds(new Set()); setLearning(new Set()); setResumed(false); };
   const showFront = front === 'term' ? cur?.term : cur?.definition;
   const showBack = front === 'term' ? cur?.definition : cur?.term;
 
@@ -142,6 +162,7 @@ export function FlashcardsMode() {
           {track && <Progress parts={[{ value: known.size, color: 'var(--good)' }, { value: learning.size, color: 'var(--warn)' }]} />}
           <div className="row" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
             {track && learning.size > 0 && <button className="btn primary" onClick={() => restartWith([...learning])}>Keep reviewing {learning.size} terms</button>}
+            {track && canUndo && <button className="btn" onClick={back}><Icon name="undo" /> Back</button>}
             <button className="btn" onClick={() => restartWith(null)}>Restart</button>
             <Link className="btn" to={`/quick/${id}/learn`}>Go to Learn</Link>
           </div>
@@ -173,7 +194,8 @@ export function FlashcardsMode() {
                 <button className="btn lg" style={{ color: 'var(--warn)', minWidth: 150 }} onClick={() => mark(false)}>
                   <span className="pill warn">{learning.size}</span> Still learning
                 </button>
-                <button className="btn ghost icon" onClick={() => speak(showFront || '')} aria-label="Speak"><Icon name="speaker" /></button>
+                <button className="btn ghost icon" onClick={back} disabled={!canUndo} aria-label="Back – undo the last card" title="Back – undo the last card (Backspace)"><Icon name="undo" /></button>
+                <button className="btn ghost icon" onClick={() => speak(showFront || "")} aria-label="Speak"><Icon name="speaker" /></button>
                 <button className="btn lg" style={{ color: 'var(--good)', minWidth: 150 }} onClick={() => mark(true)}>
                   Know <span className="pill good">{known.size}</span>
                 </button>
@@ -189,7 +211,7 @@ export function FlashcardsMode() {
           <div className="center muted small mt">
             {idx + 1} / {deckIds.length}
             <span className="hide-touch"> · <kbd>Space</kbd> flip · <kbd>←</kbd><kbd>→</kbd> {track ? 'still learning / know' : 'navigate'} · <kbd>S</kbd> star</span>
-            <span className="show-touch"> · tap to flip · swipe {track ? 'right if you know it, left if not' : 'to move'}</span>
+            <span className="show-touch"> · tap to flip · swipe {track ? 'right if you know it, left if not · ↶ to go back' : 'to move'}</span>
           </div>
           <div style={{ maxWidth: 760, margin: '14px auto 0' }}><Progress parts={[{ value: idx, color: 'var(--ink)' }, { value: deckIds.length - idx, color: 'transparent' }]} /></div>
         </>

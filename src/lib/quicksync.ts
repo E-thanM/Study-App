@@ -131,3 +131,36 @@ export function mergeLinkedProgress(): number {
   writeTerms(updates);
   return updates.size;
 }
+
+/*
+ * Undo for a Quick Learn answer: everything one answer can change – the card's progress in every
+ * set that has it, and the long-term cards and today's Quick Learn reviews – is snapshotted first
+ * and can be put back exactly.
+ */
+export function snapshotAnswer(setId: string, termId: string): () => void {
+  const setIds = [setId, ...linkedSets(setId, termId)];
+  const progress = setIds.map((id) => ({ id, entry: get('setprogress', `prog-${id}`)?.terms[termId] }));
+  const noteIds = [...new Set(linkedCards(setId, termId).map((c) => c.noteId))];
+  const cards = noteIds.flatMap((n) => cardsOfNote(n)).map((c) => ({ ...c }));
+  const cardIds = new Set(cards.map((c) => c.id));
+  const logsBefore = all('revlog').filter((l) => cardIds.has(l.cardId)).map((l) => ({ ...l }));
+  return () => {
+    // progress in each set
+    const recs: SetProgress[] = [];
+    for (const { id, entry } of progress) {
+      const cur = get('setprogress', `prog-${id}`);
+      if (!cur) continue;
+      const terms = { ...cur.terms };
+      if (entry) terms[termId] = entry; else delete terms[termId];
+      recs.push({ ...cur, terms });
+    }
+    if (recs.length) put(recs);
+    // long-term cards and their reviews
+    const before = new Set(logsBefore.map((l) => l.id));
+    const now = all('revlog').filter((l) => cardIds.has(l.cardId));
+    const added = now.filter((l) => !before.has(l.id)).map((l) => l.id);
+    const gone = logsBefore.filter((l) => !now.some((x) => x.id === l.id));
+    if (added.length) remove('revlog', added);
+    if (cards.length || gone.length) put([...cards, ...gone]);
+  };
+}
