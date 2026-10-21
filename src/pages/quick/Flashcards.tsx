@@ -3,14 +3,15 @@ import { Link, useParams } from 'react-router-dom';
 import { speak } from '../../components/CardView';
 import { Icon, Progress, Seg, TopBar, useKey } from '../../components/ui';
 import { shuffle } from '../../lib/util';
-import { FlipText, loadFlashSession, saveFlashSession, setKnown, toggleStar, useSet, useStudyTimer } from './common';
+import { get } from '../../lib/store';
+import { FlipText, resumeSession, saveFlashSession, setKnown, toggleStar, useSet, useStudyTimer } from './common';
 
 export function FlashcardsMode() {
   const { id = '' } = useParams();
   const set = useSet(id);
   useStudyTimer(id);
   // carry on from where this set was left last time (saved with the set's progress, so it syncs)
-  const [saved] = useState(() => loadFlashSession(id));
+  const [saved] = useState(() => { const st = get('set', id); return st ? resumeSession(st) : null; });
   const [order, setOrder] = useState<string[] | null>(saved?.order ?? null);
   const [starredOnly, setStarredOnly] = useState(saved?.starredOnly ?? false);
   const [front, setFront] = useState<'term' | 'definition'>(saved?.front ?? 'term');
@@ -21,7 +22,7 @@ export function FlashcardsMode() {
   const [learning, setLearning] = useState<Set<string>>(() => new Set(saved?.learning));
   const [anim, setAnim] = useState('');
   const [round, setRound] = useState<string[] | null>(saved?.round ?? null);
-  const [resumed, setResumed] = useState(!!saved && saved.idx > 0);
+  const [resumed, setResumed] = useState(!!saved && (saved.idx > 0 || !!saved.round));
   const touch = useRef<{ x: number; y: number; swiped: boolean; axis: 'x' | 'y' | null } | null>(null);
   const [drag, setDrag] = useState(0);
   const dragRef = useRef(0);
@@ -130,7 +131,7 @@ export function FlashcardsMode() {
 
       {resumed && !finished && cur && (
         <div className="callout small row between" style={{ gap: 10, padding: '6px 6px 6px 14px', marginBottom: 12 }}>
-          <span>Picked up at card {idx + 1} of {deckIds.length}</span>
+          <span>{round ? `Going over the ${deckIds.length} you're still learning – card ${idx + 1}` : `Picked up at card ${idx + 1} of ${deckIds.length}`}</span>
           <button className="btn sm ghost" onClick={() => restartWith(null)}>Start over</button>
         </div>
       )}

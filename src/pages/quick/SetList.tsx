@@ -134,7 +134,7 @@ export function SetList() {
               <span className="tiny muted">Pick up where you left off</span>
               <b className="ellipsis">{latest.s.folder ? `${latest.s.folder.split('::').slice(-1)[0]} › ` : ''}{latest.s.title}</b>
             </span>
-            <span className="btn primary sm nowrap"><Icon name="cards" size={14} /> Continue · card {latest.rp!.card} of {latest.rp!.of}</span>
+            <span className="btn primary sm nowrap"><Icon name="cards" size={14} /> Continue · {latest.rp!.review ? `${latest.rp!.of} still learning` : `card ${latest.rp!.card} of ${latest.rp!.of}`}</span>
           </Link>
         ) : null;
       })()}
@@ -208,7 +208,7 @@ function ContinueButton({ set }: { set: StudySet }) {
   if (!rp) return null;
   return (
     <button className="btn sm continue-btn" title={`Carry on from card ${rp.card} of ${rp.of}`} onClick={(e) => { e.stopPropagation(); nav(`/quick/${set.id}/flashcards`); }}>
-      <Icon name="cards" size={14} /> Continue <span className="faint">{rp.card}/{rp.of}</span>
+      <Icon name="cards" size={14} /> Continue <span className="faint">{rp.review ? `${rp.of} left` : `${rp.card}/${rp.of}`}</span>
     </button>
   );
 }

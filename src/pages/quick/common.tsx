@@ -42,18 +42,51 @@ export function saveFlashSession(setId: string, flash: FlashSession | null) {
   put(flash ? { ...rest, flash } : rest);
 }
 
-/** Where Flashcards mode stopped part-way through a set (card number and round size), if it did. */
-export function resumePoint(set: StudySet): { card: number; of: number; at: number } | null {
-  const flash = get('setprogress', `prog-${set.id}`)?.flash;
-  if (!flash) return null;
-  const ids = new Set(set.terms.map((t) => t.id));
-  const of = set.terms.filter((t) => (!flash.starredOnly || t.starred) && (!flash.round || flash.round.includes(t.id))).length;
-  if (!of || flash.idx <= 0 || flash.idx >= of || ![...(flash.order || ids)].some((x) => ids.has(x))) return null;
-  return { card: flash.idx + 1, of, at: flash.at };
+/**
+ * A Flashcards place rebuilt from a set's progress, for sets studied before places were saved (or
+ * in Learn): cards marked Know (or mastered) count as known, other studied cards as still learning,
+ * and it carries on at the first card not studied yet – or, if every card has been seen, with a
+ * round of the ones still being learnt. Null if the set hasn't been started or is all known.
+ */
+export function derivedSession(set: StudySet): FlashSession | null {
+  const prog = get('setprogress', `prog-${set.id}`);
+  if (!prog || !set.terms.length) return null;
+  const known: string[] = [];
+  const learning: string[] = [];
+  for (const t of set.terms) {
+    const p = prog.terms[t.id];
+    if (!p) continue;
+    if (p.known === true || (p.known === undefined && p.level >= 3)) known.push(t.id);
+    else if (p.known === false || p.level > 0) learning.push(t.id);
+  }
+  if (!known.length && !learning.length) return null;
+  if (known.length === set.terms.length) return null;
+  const seen = new Set([...known, ...learning]);
+  const next = set.terms.findIndex((t) => !seen.has(t.id));
+  const base = { order: null, starredOnly: false, front: 'term' as const, track: true, at: prog.updatedAt || 0, known, learning };
+  return next >= 0 ? { ...base, idx: next, round: null } : { ...base, idx: 0, round: learning, known: [], learning: [] };
 }
 
-export function loadFlashSession(setId: string): FlashSession | undefined {
-  return get('setprogress', `prog-${setId}`)?.flash;
+/** Where to carry on in a set's Flashcards: the saved place, or one rebuilt from progress. */
+export function resumeSession(set: StudySet): FlashSession | null {
+  const flash = get('setprogress', `prog-${set.id}`)?.flash;
+  if (flash) {
+    const of = roundSize(set, flash);
+    return flash.idx < of ? flash : null; // a finished round has nothing to continue
+  }
+  return derivedSession(set);
+}
+
+const roundSize = (set: StudySet, f: FlashSession) => set.terms.filter((t) => (!f.starredOnly || t.starred) && (!f.round || f.round.includes(t.id))).length;
+
+/** Card number to show on a Continue button, if the set was left part-way through. */
+export function resumePoint(set: StudySet): { card: number; of: number; at: number; review: boolean } | null {
+  const f = resumeSession(set);
+  if (!f) return null;
+  const of = roundSize(set, f);
+  // a saved place at card 1 with nothing marked yet isn't worth a button
+  if (!of || (f.idx === 0 && !f.round && !f.known.length && !f.learning.length)) return null;
+  return { card: f.idx + 1, of, at: f.at, review: !!f.round };
 }
 
 export function resetProgress(setId: string) {
