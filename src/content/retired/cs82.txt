@@ -1,0 +1,10 @@
+@deck Computer Science::Unit 8.2 Advanced Programming
+# Python file handling – replaced by pseudocode
+How do you open a file for reading in Python? :: file = open("scores.txt", "r")
+How do you open a file for writing (overwrite) in Python? :: file = open("scores.txt", "w")
+How do you open a file to add to the end (append) in Python? :: file = open("scores.txt", "a")
+How do you read one line from a file in Python? :: line = file.readline() – often with .strip() to remove the newline
+How do you read every line of a file in Python? :: for line in file: … (or lines = file.readlines())
+How do you write a line to a file in Python? :: file.write(text + "\n") – write() needs a string and doesn't add a new line itself
+How do you close a file in Python? :: file.close() – or use with open("f.txt") as file: which closes it automatically
+How do you write a number to a text file in Python? :: Convert it to a string first: file.write(str(score) + "\n")

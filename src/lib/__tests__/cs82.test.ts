@@ -6,6 +6,7 @@ import { all, put, remove } from '../store';
 import { deckPath } from '../collection';
 
 const cs82 = parseStarter('cs82', fs.readFileSync('src/content/cs82.txt', 'utf8'));
+cs82.retired = parseStarter('cs82', fs.readFileSync('src/content/retired/cs82.txt', 'utf8')).notes;
 
 describe('Unit 8.2 Advanced Programming cards', () => {
   it('covers the five assessment topics, all as question → answer cards', () => {
@@ -18,6 +19,12 @@ describe('Unit 8.2 Advanced Programming cards', () => {
     const text = cs82.notes.map((n) => `${n.front} ${n.back}`).join('\n');
     for (const term of ['DIV', 'MOD', 'ROUND', 'RANDOM', 'local variable', 'global variable', 'OPENFILE', 'READFILE', 'WRITEFILE', 'CLOSEFILE', 'meaningful identifier', 'comment',
       'NAND', 'NOR', 'XOR', 'primary key', 'validation', 'Boolean', 'date/time', 'character', 'ORDER BY', 'DESC', 'ASC', 'SUM', 'COUNT', 'WHERE']) expect(text, term).toContain(term);
+  });
+
+  it('has file handling in pseudocode only', () => {
+    const files = cs82.notes.filter((n) => n.topic === '2 File handling');
+    expect(files.length).toBeGreaterThanOrEqual(25);
+    expect(files.map((n) => `${n.front} ${n.back}`).join('\n')).not.toMatch(/python|open\(|readline|\.write\(|int\(/i);
   });
 
   it('makes Quick Learn sets that each stay within one topic', () => {
@@ -40,5 +47,30 @@ describe('Unit 8.2 Advanced Programming cards', () => {
     remove('set', sets.map((s) => s.id));
     expect(await autoInstallStarter([cs82])).toBe(0);
     expect(all('set').some((s) => s.id.startsWith('starter-set:cs82:'))).toBe(false);
+  });
+});
+
+describe('updating an installed Unit 8.2 section', () => {
+  it('swaps the Python file-handling cards for pseudocode ones in Flashcards and Quick Learn', async () => {
+    for (const d of all('deck').filter((x) => deckPath(x).startsWith('Computer Science'))) remove('deck', d.id);
+    // the first version, as installed on the student's device
+    const v1text = fs.readFileSync('src/content/cs82.txt', 'utf8').replace('## More file handling examples (pseudocode)', `## File handling in Python\n${fs.readFileSync('src/content/retired/cs82.txt', 'utf8').split('\n').filter((l) => l.includes(' :: ')).join('\n')}\n## More file handling examples (pseudocode)`);
+    const v1 = parseStarter('cs82', v1text);
+    v1.notes = v1.notes.filter((n) => n.sub !== 'More file handling examples (pseudocode)');
+    const { installStarter, installSets } = await import('../starter');
+    installStarter(v1); installSets(v1);
+    const pyNotes = () => all('note').filter((n) => n.guid?.startsWith('starter:cs82:') && /Python/.test(n.fields.Front || ''));
+    expect(pyNotes().some((n) => /file/i.test(n.fields.Front))).toBe(true);
+    expect(all('set').some((s) => s.title.includes('File handling in Python'))).toBe(true);
+    // the update
+    await autoInstallStarter([cs82]);
+    expect(pyNotes().filter((n) => /file/i.test(n.fields.Front))).toHaveLength(0);
+    expect(all('note').some((n) => n.fields.Front?.startsWith('Write pseudocode to count how many lines'))).toBe(true);
+    expect(all('set').some((s) => s.title.includes('File handling in Python'))).toBe(false);
+    expect(all('set').some((s) => s.title.includes('More file handling examples'))).toBe(true);
+    const conv = all('note').find((n) => n.fields.Front?.startsWith('Why might a number read from a text file'))!;
+    expect(conv.fields.Back).not.toContain('Python');
+    // nothing left to do
+    expect(await autoInstallStarter([cs82])).toBe(0);
   });
 });

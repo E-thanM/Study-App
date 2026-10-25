@@ -81,17 +81,18 @@ Write pseudocode to read and output every line of Names.txt. :: OPENFILE "Names.
 Write pseudocode to write a name entered by the user to Names.txt. :: OPENFILE "Names.txt" FOR WRITE ;; INPUT Name ;; WRITEFILE "Names.txt", Name ;; CLOSEFILE "Names.txt"
 Write pseudocode to read the first line of Data.txt into Line and output it. :: OPENFILE "Data.txt" FOR READ ;; READFILE "Data.txt", Line ;; OUTPUT Line ;; CLOSEFILE "Data.txt"
 What is the difference between reading a single item of data and reading a line of text? :: A single item is one value (e.g. a number or a name) stored on its own; a line of text is a whole line (which may hold several words or values) read in one go
-Why might a number read from a text file need converting? :: Files store text, so a number is read as a string – it must be converted (e.g. int() in Python) before doing arithmetic
+Why might a number read from a text file need converting? :: Text files store everything as characters, so a number may be read as a STRING – it must be stored in (or converted to) an INTEGER or REAL variable before doing arithmetic
 
-## File handling in Python
-How do you open a file for reading in Python? :: file = open("scores.txt", "r")
-How do you open a file for writing (overwrite) in Python? :: file = open("scores.txt", "w")
-How do you open a file to add to the end (append) in Python? :: file = open("scores.txt", "a")
-How do you read one line from a file in Python? :: line = file.readline() – often with .strip() to remove the newline
-How do you read every line of a file in Python? :: for line in file: … (or lines = file.readlines())
-How do you write a line to a file in Python? :: file.write(text + "\n") – write() needs a string and doesn't add a new line itself
-How do you close a file in Python? :: file.close() – or use with open("f.txt") as file: which closes it automatically
-How do you write a number to a text file in Python? :: Convert it to a string first: file.write(str(score) + "\n")
+## More file handling examples (pseudocode)
+What does each WRITEFILE statement add to a file? :: The data as a new line – each WRITEFILE writes one line (or single item) after the last one written since the file was opened
+Write pseudocode to store a new high score in HighScore.txt, replacing the old one. :: OPENFILE "HighScore.txt" FOR WRITE ;; WRITEFILE "HighScore.txt", HighScore ;; CLOSEFILE "HighScore.txt" ;; (FOR WRITE overwrites the old score)
+Write pseudocode to write the three names in the array Names[1:3] to Names.txt. :: OPENFILE "Names.txt" FOR WRITE ;; FOR Index ← 1 TO 3 ;;   WRITEFILE "Names.txt", Names[Index] ;; NEXT Index ;; CLOSEFILE "Names.txt"
+Write pseudocode to count how many lines are in Data.txt. :: Count ← 0 ;; OPENFILE "Data.txt" FOR READ ;; WHILE NOT EOF("Data.txt") DO ;;   READFILE "Data.txt", Line ;;   Count ← Count + 1 ;; ENDWHILE ;; CLOSEFILE "Data.txt" ;; OUTPUT Count
+Write pseudocode to read the numbers in Scores.txt (one per line) and output their total. :: Total ← 0 ;; OPENFILE "Scores.txt" FOR READ ;; WHILE NOT EOF("Scores.txt") DO ;;   READFILE "Scores.txt", Score ;;   Total ← Total + Score ;; ENDWHILE ;; CLOSEFILE "Scores.txt" ;; OUTPUT Total
+Write pseudocode to copy every line of Old.txt into New.txt. :: OPENFILE "Old.txt" FOR READ ;; OPENFILE "New.txt" FOR WRITE ;; WHILE NOT EOF("Old.txt") DO ;;   READFILE "Old.txt", Line ;;   WRITEFILE "New.txt", Line ;; ENDWHILE ;; CLOSEFILE "Old.txt" ;; CLOSEFILE "New.txt"
+Write pseudocode to check whether a name entered by the user is in Names.txt. :: INPUT Target ;; Found ← FALSE ;; OPENFILE "Names.txt" FOR READ ;; WHILE NOT EOF("Names.txt") AND Found = FALSE DO ;;   READFILE "Names.txt", Name ;;   IF Name = Target THEN Found ← TRUE ENDIF ;; ENDWHILE ;; CLOSEFILE "Names.txt" ;; IF Found THEN OUTPUT "Found" ELSE OUTPUT "Not found" ENDIF
+Why is a WHILE NOT EOF loop used to read a file instead of a FOR loop? :: The number of lines in the file usually isn't known in advance – the loop keeps reading until the end of the file is reached
+What is wrong with: OPENFILE "Data.txt" FOR READ then WRITEFILE "Data.txt", Name? :: The file was opened for reading, so it can't be written to – it must be opened FOR WRITE (and closed afterwards)
 
 # 3 Maintainable programs
 ## What and why

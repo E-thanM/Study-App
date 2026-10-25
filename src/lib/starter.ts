@@ -183,8 +183,8 @@ export const starterLabel = (d: Pick<StarterDeck, 'name'>) => d.name.split('::')
 
 /**
  * Sections the student asked for (e.g. a school unit before an assessment) are added to
- * Flashcards and Quick Learn automatically, once. If they're removed later they stay removed,
- * and later additions come through the usual "new cards" banner.
+ * Flashcards and Quick Learn automatically, once, and later changes to them (cards added,
+ * improved or removed) are applied automatically too. If removed, they stay removed.
  */
 const AUTO_INSTALL = ['cs82'];
 
@@ -195,19 +195,24 @@ export function autoInstallStarter(decks?: StarterDeck[]): Promise<number> {
 }
 
 async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
-  const seen = getSettings().starterSig || {};
-  const todo = AUTO_INSTALL.filter((k) => !(`cards:${k}` in seen) || !(`sets:${k}` in seen));
-  if (!todo.length) return 0;
-  const list = decks || (await loadStarterDecks());
+  const list = decks || (await loadStarterDecks(true));
   let n = 0;
-  for (const key of todo) {
+  for (const key of AUTO_INSTALL) {
     const d = list.find((x) => x.key === key);
     if (!d) continue;
+    const seen = getSettings().starterSig || {};
+    // first time: add it to Flashcards and Quick Learn
     if (!(`cards:${key}` in seen)) {
       if (!get('preset', STARTER_PRESET_ID)) ensureStarterPreset(NO_LIMIT);
       n += installStarter(d).cards;
     }
     if (!(`sets:${key}` in seen)) n += installSets(d).terms;
+    // afterwards: changes the student asked for apply straight away (each check is a no-op once
+    // applied, and if the section was deleted there is nothing to update)
+    if (pendingRetired(d).total) n += applyRetired(d);
+    if (pendingFixes(d)) n += applyFixes(d);
+    if (pendingCards(d)) n += installStarter(d).cards;
+    if (pendingSets(d)) n += installSets(d).terms;
   }
   return n;
 }
