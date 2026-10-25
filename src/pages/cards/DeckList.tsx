@@ -12,6 +12,7 @@ import { StarterDecksModal } from './StarterDecks';
 import { StarterUpdates } from '../../components/StarterUpdates';
 import { studyToday } from '../../lib/goals';
 import { syncNovemberSection } from '../../lib/novtest';
+import { autoInstallStarter } from '../../lib/starter';
 import { getPlan, sprintEnd } from '../../lib/plan';
 
 export function DeckList() {
@@ -24,7 +25,7 @@ export function DeckList() {
   const top = useMemo(() => childDecks(null), [v]); // eslint-disable-line react-hooks/exhaustive-deps
   const done = useMemo(() => todayDone(), [v]); // eslint-disable-line react-hooks/exhaustive-deps
   // keep the November test section in step with the checklist (and pull in newly due cards)
-  useEffect(() => { void syncNovemberSection(studyToday(), sprintEnd(getPlan().dates)); }, [top.length]);
+  useEffect(() => { void autoInstallStarter().then(() => syncNovemberSection(studyToday(), sprintEnd(getPlan().dates))); }, [top.length]);
   const totalCards = useMemo(() => all('card').length, [v]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const newDeck = (parent?: Deck) => {

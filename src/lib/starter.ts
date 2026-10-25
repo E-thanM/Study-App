@@ -1,7 +1,7 @@
 import { buildNote, deleteNotes, ensureDeckPath, updateNote } from './collection';
 import { all, get, patch, put, remove } from './store';
 import type { StudySet } from './types';
-import { DEFAULT_PRESET, getSettings } from './seed';
+import { DEFAULT_PRESET, NO_LIMIT, getSettings } from './seed';
 import type { AnyRec, Note, Preset } from './types';
 import { escapeHtml } from './util';
 
@@ -86,7 +86,7 @@ export async function loadStarterDecks(includeRemoved = false): Promise<StarterD
     if (r) deck.retired = parseStarter(key, r).notes;
     out.push(deck);
   }
-  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'englishlit', 'german', 'geography'];
+  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'cs82', 'englishlit', 'german', 'geography'];
   return out.filter((d) => includeRemoved || d.notes.length > 0).sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
@@ -176,6 +176,40 @@ export function starterGuids(d: StarterDeck, keep: (n: StarterNote) => boolean):
   const out = new Set(d.notes.filter(keep).map((n) => noteGuid(d, n.front)));
   for (const [to, from] of renamedFrom(d)) if (out.has(to)) out.add(from);
   return out;
+}
+
+/** A starter deck's name for display: "Computer Science::Unit 8.2 …" → "Computer Science › Unit 8.2 …". */
+export const starterLabel = (d: Pick<StarterDeck, 'name'>) => d.name.split('::').join(' › ');
+
+/**
+ * Sections the student asked for (e.g. a school unit before an assessment) are added to
+ * Flashcards and Quick Learn automatically, once. If they're removed later they stay removed,
+ * and later additions come through the usual "new cards" banner.
+ */
+const AUTO_INSTALL = ['cs82'];
+
+let autoRunning: Promise<number> | null = null;
+export function autoInstallStarter(decks?: StarterDeck[]): Promise<number> {
+  autoRunning ??= runAutoInstall(decks).finally(() => { autoRunning = null; });
+  return autoRunning;
+}
+
+async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
+  const seen = getSettings().starterSig || {};
+  const todo = AUTO_INSTALL.filter((k) => !(`cards:${k}` in seen) || !(`sets:${k}` in seen));
+  if (!todo.length) return 0;
+  const list = decks || (await loadStarterDecks());
+  let n = 0;
+  for (const key of todo) {
+    const d = list.find((x) => x.key === key);
+    if (!d) continue;
+    if (!(`cards:${key}` in seen)) {
+      if (!get('preset', STARTER_PRESET_ID)) ensureStarterPreset(NO_LIMIT);
+      n += installStarter(d).cards;
+    }
+    if (!(`sets:${key}` in seen)) n += installSets(d).terms;
+  }
+  return n;
 }
 
 /** Remember that the user has seen (added or dismissed) the current content of a starter deck. */

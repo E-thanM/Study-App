@@ -1,0 +1,229 @@
+@deck Computer Science::Unit 8.2 Advanced Programming
+@board Unit 8.2 Advanced Programming – procedures and functions, file handling, maintainable programs, Boolean logic, databases and SQL
+
+# 1 Procedures and functions
+## Key terms
+What is a subprogram (subroutine)? :: A named, self-contained block of code that performs a specific task and can be called from elsewhere in the program
+What is a procedure? :: A subprogram that performs a task but does **not return a value**
+What is a function? :: A subprogram that performs a task and **returns a single value** to the point where it was called
+What is the key difference between a procedure and a function? :: A function returns a value (so it is used in an expression or assignment); a procedure does not return a value (it is called as a statement)
+What is a parameter? :: A variable named in a subprogram's definition that receives a value passed in when the subprogram is called
+What is an argument? :: The actual value (or variable) passed to a subprogram when it is called
+What does "calling" a subprogram mean? :: Running it by using its name (with any arguments) – the program jumps to the subprogram, runs it, then returns to where it was called
+How many parameters can a procedure or function have in the exam? :: Up to three (or none)
+Give three advantages of using procedures and functions. :: Code is written once and reused (shorter programs) ;; Easier to test and debug – each subprogram can be tested on its own ;; Easier to read and maintain; tasks can be shared between programmers ;; Can be reused in other programs (libraries)
+Why does using subprograms reduce errors? :: Each subprogram is written and tested once, so a fix in one place corrects every call; less repeated code means fewer places for mistakes
+What is decomposition and how do subprograms support it? :: Breaking a problem into smaller sub-problems – each sub-problem can be solved by its own procedure or function
+
+## Writing procedures and functions (pseudocode)
+How do you start and end a procedure in pseudocode? :: PROCEDURE Name(Parameter : DATATYPE) ;; … statements … ;; ENDPROCEDURE
+How do you call a procedure in pseudocode? :: CALL Name(Argument) – e.g. CALL ShowStars(5)
+How do you start and end a function in pseudocode? :: FUNCTION Name(Parameter : DATATYPE) RETURNS DATATYPE ;; … statements … ;; RETURN Value ;; ENDFUNCTION
+What does the RETURNS part of a function header state? :: The data type of the value the function sends back, e.g. RETURNS INTEGER
+How do you use a function's result in pseudocode? :: In an assignment or expression, e.g. Area ← CircleArea(Radius) or OUTPUT Square(4) – functions are not called with CALL
+Write a pseudocode procedure ShowStars that outputs a given number of stars on one line. :: PROCEDURE ShowStars(Number : INTEGER) ;; DECLARE Line : STRING ;; Line ← "" ;; FOR Count ← 1 TO Number ;;   Line ← Line & "*" ;; NEXT Count ;; OUTPUT Line ;; ENDPROCEDURE
+Write a pseudocode function Square that returns the square of an integer. :: FUNCTION Square(Number : INTEGER) RETURNS INTEGER ;;   RETURN Number * Number ;; ENDFUNCTION
+Write a pseudocode function Max that returns the larger of two integers. :: FUNCTION Max(A : INTEGER, B : INTEGER) RETURNS INTEGER ;;   IF A > B THEN RETURN A ;;   ELSE RETURN B ;;   ENDIF ;; ENDFUNCTION
+Write a pseudocode function IsEven that returns TRUE if a number is even. :: FUNCTION IsEven(Number : INTEGER) RETURNS BOOLEAN ;;   RETURN MOD(Number, 2) = 0 ;; ENDFUNCTION
+How are multiple parameters separated in a subprogram header? :: With commas, each with its own data type – e.g. PROCEDURE Greet(Name : STRING, Times : INTEGER)
+How do you define a procedure with no parameters? :: With empty brackets (or none) – e.g. PROCEDURE ShowMenu() … ENDPROCEDURE, called with CALL ShowMenu()
+What is the Python equivalent of a pseudocode procedure? :: def name(parameters): with an indented body and no return value – called as name(arguments)
+What is the Python equivalent of a pseudocode function? :: def name(parameters): whose body uses return value – e.g. def square(n): return n * n
+In what order must the arguments in a call match the parameters? :: The same order and number as the parameters, with matching data types – the first argument goes to the first parameter, and so on
+What happens to a function's RETURN value if the call isn't stored or used? :: It is lost – a function call should be part of an assignment, output or condition
+
+## Local and global variables
+What is a local variable? :: A variable declared inside a subprogram – it can only be used inside that subprogram and exists only while the subprogram runs
+What is a global variable? :: A variable declared in the main program (outside any subprogram) – it can be accessed anywhere in the program
+What is the scope of a variable? :: The part of the program in which the variable can be accessed
+Why are local variables usually better than global variables? :: They can't be changed accidentally by other parts of the program; the same name can be reused in different subprograms; memory is freed when the subprogram ends; subprograms are self-contained and easier to test and reuse
+Give one disadvantage of global variables. :: Any part of the program can change them, so errors are hard to trace; they use memory for the whole run; subprograms that rely on them are harder to reuse
+When might a global variable be appropriate? :: For a value many parts of the program need throughout the run, e.g. a running score or a setting – though passing it as a parameter is usually better
+Are parameters local or global? :: Local – a parameter can only be used inside its subprogram
+If a local and a global variable share a name, which is used inside the subprogram? :: The local variable
+In Python, how does a function change a global variable? :: Declare it with the global keyword inside the function, e.g. global score – otherwise assigning to it creates a new local variable
+
+## Library routines
+What is a library routine? :: A ready-made, pre-tested subprogram supplied with the programming language that can be called in any program
+Give two advantages of using library routines. :: Saves time (no need to write and test the code); already tested so reliable; written by experts so efficient
+What does DIV do? :: Integer division – returns the whole-number part of a division, e.g. DIV(13, 4) = 3
+What does MOD do? :: Returns the remainder after integer division, e.g. MOD(13, 4) = 1
+What is DIV(17, 5) and MOD(17, 5)? :: DIV(17, 5) = 3 ;; MOD(17, 5) = 2
+What is DIV(20, 4) and MOD(20, 4)? :: DIV(20, 4) = 5 ;; MOD(20, 4) = 0
+How can MOD test if a number is even? :: MOD(Number, 2) = 0 means even (remainder 1 means odd)
+How can MOD test whether X is a multiple of Y? :: MOD(X, Y) = 0
+How do DIV and MOD convert 135 minutes to hours and minutes? :: Hours ← DIV(135, 60) = 2 ;; Minutes ← MOD(135, 60) = 15
+What does ROUND do? :: Rounds a real number to a given number of decimal places, e.g. ROUND(3.14159, 2) = 3.14
+What is ROUND(7.856, 1) and ROUND(7.5, 0)? :: 7.9 and 8
+What does RANDOM() return? :: A random real number between 0 and 1
+How do you generate a random whole number from 1 to 6 in pseudocode? :: ROUND(RANDOM() * 5, 0) + 1 – RANDOM() * 5 gives 0 to 5, rounding gives a whole number, adding 1 gives 1 to 6
+What are the Python equivalents of DIV, MOD, ROUND and RANDOM? :: DIV → // ;; MOD → % ;; ROUND → round(x, places) ;; RANDOM → random.random() (and random.randint(1, 6) for a whole number)
+What do 17 // 5 and 17 % 5 give in Python? :: 3 and 2
+
+# 2 File handling
+## Why use files
+Why do programs store data in files? :: So data is kept permanently (persists) after the program closes or the computer is switched off, and can be loaded again next time
+Give three reasons for storing data in a file. :: Data isn't lost when the program ends ;; Data doesn't have to be typed in again each time ;; Data can be shared with or used by other programs or users ;; Large amounts of data can be stored
+Where is the data in variables held, and what happens to it when the program ends? :: In RAM – it is lost when the program ends, unlike data saved to a file on secondary storage
+Give an example of data a program would store in a file. :: High scores in a game, user settings, a list of customers, a log of results
+
+## Opening, reading, writing and closing (pseudocode)
+How do you open a file for reading in pseudocode? :: OPENFILE "Scores.txt" FOR READ
+How do you open a file for writing in pseudocode? :: OPENFILE "Scores.txt" FOR WRITE
+What happens to the existing contents when a file is opened FOR WRITE? :: They are overwritten – the file starts empty (it is created if it doesn't exist)
+How do you read one line from a file into a variable in pseudocode? :: READFILE "Scores.txt", Line
+How do you write a line or a single item of data to a file in pseudocode? :: WRITEFILE "Scores.txt", Score
+How do you close a file in pseudocode? :: CLOSEFILE "Scores.txt"
+Why must a file always be closed after use? :: To make sure all data is saved (written from the buffer), to free the file so other programs can use it, and to release resources
+What is the order of steps to use a file? :: Open the file (in the right mode) → read from or write to it → close it
+What does EOF() do? :: Returns TRUE when the end of the file has been reached – used to stop reading, e.g. WHILE NOT EOF("Data.txt")
+Write pseudocode to read and output every line of Names.txt. :: OPENFILE "Names.txt" FOR READ ;; WHILE NOT EOF("Names.txt") DO ;;   READFILE "Names.txt", Name ;;   OUTPUT Name ;; ENDWHILE ;; CLOSEFILE "Names.txt"
+Write pseudocode to write a name entered by the user to Names.txt. :: OPENFILE "Names.txt" FOR WRITE ;; INPUT Name ;; WRITEFILE "Names.txt", Name ;; CLOSEFILE "Names.txt"
+Write pseudocode to read the first line of Data.txt into Line and output it. :: OPENFILE "Data.txt" FOR READ ;; READFILE "Data.txt", Line ;; OUTPUT Line ;; CLOSEFILE "Data.txt"
+What is the difference between reading a single item of data and reading a line of text? :: A single item is one value (e.g. a number or a name) stored on its own; a line of text is a whole line (which may hold several words or values) read in one go
+Why might a number read from a text file need converting? :: Files store text, so a number is read as a string – it must be converted (e.g. int() in Python) before doing arithmetic
+
+## File handling in Python
+How do you open a file for reading in Python? :: file = open("scores.txt", "r")
+How do you open a file for writing (overwrite) in Python? :: file = open("scores.txt", "w")
+How do you open a file to add to the end (append) in Python? :: file = open("scores.txt", "a")
+How do you read one line from a file in Python? :: line = file.readline() – often with .strip() to remove the newline
+How do you read every line of a file in Python? :: for line in file: … (or lines = file.readlines())
+How do you write a line to a file in Python? :: file.write(text + "\n") – write() needs a string and doesn't add a new line itself
+How do you close a file in Python? :: file.close() – or use with open("f.txt") as file: which closes it automatically
+How do you write a number to a text file in Python? :: Convert it to a string first: file.write(str(score) + "\n")
+
+# 3 Maintainable programs
+## What and why
+What is a maintainable program? :: A program written so that it is easy for other programmers (or you, later) to read, understand, correct and update
+Why do programs need to be maintainable? :: Programs are updated, fixed and extended over time, often by different people – clear code makes this quicker, cheaper and less likely to introduce errors
+List four features that make a program maintainable. :: Meaningful identifiers ;; Comments ;; Procedures and functions ;; Consistent indentation and white space (and constants instead of fixed values)
+
+## Meaningful identifiers
+What is an identifier? :: The name given to a variable, constant, array, procedure or function
+What is a meaningful identifier? :: A name that describes what the item stores or does, e.g. TotalScore rather than X
+Which items should be given meaningful identifiers? :: Variables, constants, arrays, procedures and functions
+Give a meaningful identifier for: a variable holding the number of students, an array of test marks, a function that calculates VAT. :: NumberOfStudents ;; TestMarks ;; CalculateVAT
+Why do meaningful identifiers make a program easier to maintain? :: The code explains itself – a programmer can see what each variable or subprogram is for without working it out
+Give two rules for valid identifiers in most languages. :: Must start with a letter; no spaces (use CamelCase or underscores); can't be a reserved keyword such as IF or PRINT
+What is a constant and why does it help maintenance? :: A named value that can't change while the program runs (e.g. CONSTANT VATRate ← 0.2) – if the value changes, it is updated in one place instead of everywhere it's used
+
+## Comments and layout
+What is a comment? :: Text in a program that explains the code; it is ignored by the translator and not executed
+How is a comment written in pseudocode and in Python? :: Pseudocode: // comment ;; Python: # comment
+What should comments explain? :: The purpose of the program and of each subprogram, what complex or non-obvious code does, and the meaning of key variables – not every simple line
+Give an example of a relevant comment. :: // Calculate the average mark, rounded to 1 decimal place – above the lines that do it
+Why can too many comments be a problem? :: They clutter the code and hide the important explanations; comments that state the obvious add nothing and can become out of date
+How do indentation and white space help maintenance? :: They show the structure (which statements are inside loops, IF statements and subprograms), making code easier to read and errors easier to spot
+How do procedures and functions make a program maintainable? :: Code is split into named, self-contained tasks that can be understood, tested and changed one at a time, without repeating code
+
+## Improving code
+Suggest three ways to make this code easier to maintain: X ← Y * 0.2 :: Use meaningful identifiers, e.g. VAT ← Price * VATRate ;; Replace 0.2 with a named constant: CONSTANT VATRate ← 0.2 ;; Add a comment explaining the calculation
+A program repeats the same 10 lines to print a receipt in three places. How should it be improved? :: Put the lines in a procedure, e.g. PROCEDURE PrintReceipt(…), and call it in each place – one copy to test and update
+What are CamelCase and snake_case? :: Ways to write identifiers made of several words without spaces: CamelCase – TotalScore ;; snake_case – total_score
+Why should a program use a constant such as CONSTANT MaxPlayers ← 4 instead of typing 4 throughout? :: The name explains what 4 means, and if the limit changes it is updated in one place, so no occurrence is missed
+How do maintainable programs help when working in a team? :: Other programmers can quickly understand, test and change each other's code, and subprograms can be shared out between team members
+
+# 4 Boolean logic
+## Logic gates
+What is a logic gate? :: An electronic component that takes one or more binary inputs (0 or 1) and produces a single binary output according to a rule
+Which logic gate has only one input? :: NOT – all the other gates (AND, OR, NAND, NOR, XOR) have two inputs in the exam
+What does a NOT gate do? :: Inverts the input – output is 1 if the input is 0, and 0 if the input is 1
+What does an AND gate do? :: Output is 1 only if **both** inputs are 1
+What does an OR gate do? :: Output is 1 if **either or both** inputs are 1
+What does a NAND gate do? :: NOT AND – output is 0 only if both inputs are 1; otherwise 1
+What does a NOR gate do? :: NOT OR – output is 1 only if both inputs are 0; otherwise 0
+What does an XOR (EOR) gate do? :: Exclusive OR – output is 1 if the inputs are **different**; 0 if they are the same
+Describe the symbols for NOT, AND and OR. :: NOT: a triangle with a small circle at the point ;; AND: a D shape (flat back, round front) ;; OR: a curved shield shape (curved back, pointed front)
+Describe the symbols for NAND, NOR and XOR. :: NAND: AND symbol with a small circle on the output ;; NOR: OR symbol with a small circle on the output ;; XOR: OR symbol with an extra curved line across the inputs
+What does the small circle on a gate symbol mean? :: NOT – the output is inverted (as on NOT, NAND and NOR)
+Truth table for AND (A B → X). :: 0 0 → 0 ;; 0 1 → 0 ;; 1 0 → 0 ;; 1 1 → 1
+Truth table for OR (A B → X). :: 0 0 → 0 ;; 0 1 → 1 ;; 1 0 → 1 ;; 1 1 → 1
+Truth table for NAND (A B → X). :: 0 0 → 1 ;; 0 1 → 1 ;; 1 0 → 1 ;; 1 1 → 0
+Truth table for NOR (A B → X). :: 0 0 → 1 ;; 0 1 → 0 ;; 1 0 → 0 ;; 1 1 → 0
+Truth table for XOR (A B → X). :: 0 0 → 0 ;; 0 1 → 1 ;; 1 0 → 1 ;; 1 1 → 0
+Truth table for NOT (A → X). :: 0 → 1 ;; 1 → 0
+Which gate's output column is 0, 0, 0, 1? :: AND
+Which gate's output column is 0, 1, 1, 1? :: OR
+Which gate's output column is 1, 1, 1, 0? :: NAND
+Which gate's output column is 1, 0, 0, 0? :: NOR
+Which gate's output column is 0, 1, 1, 0? :: XOR
+
+## Truth tables, expressions and circuits
+How many rows does a truth table need for 2 inputs and for 3 inputs? :: 2 inputs: 4 rows ;; 3 inputs: 8 rows (2ⁿ rows for n inputs)
+In what order are the inputs listed in a 3-input truth table? :: Counting up in binary: 000, 001, 010, 011, 100, 101, 110, 111 (A changes slowest, C fastest)
+What is the maximum size of a logic circuit in the exam? :: Three inputs and one output
+Should you simplify a logic expression before drawing its circuit? :: No – draw the circuit exactly as the statement is given, without simplification
+What is a logic expression? :: A statement using inputs and the operators AND, OR, NOT, NAND, NOR and XOR, e.g. X = (A AND B) OR NOT C
+How should you work out a truth table for a complex expression? :: Add a column for each part (e.g. A AND B, NOT C), fill these in row by row, then combine them for the final output
+Complete the output column for X = (A AND B) OR NOT C (rows 000 to 111). :: 1, 0, 1, 0, 1, 0, 1, 1
+Complete the output column for X = NOT (A OR B) AND C (rows 000 to 111). :: 0, 1, 0, 0, 0, 0, 0, 0 – only 1 when A = 0, B = 0, C = 1
+Complete the output column for X = (A XOR B) AND C (rows 000 to 111). :: 0, 0, 0, 1, 0, 1, 0, 0
+Complete the output column for X = (A OR B) AND (NOT C) (rows 000 to 111). :: 0, 0, 1, 0, 1, 0, 1, 0
+Write the logic expression: "A heater (X) is on if the temperature is low (T) AND it is daytime (D), OR the override switch (S) is on." :: X = (T AND D) OR S
+Write the logic expression: "An alarm (X) sounds if the alarm is set (S) AND either the door (D) OR the window (W) is open." :: X = S AND (D OR W)
+Write the logic expression: "A light (X) is on when the switch (S) is on AND it is NOT daylight (L)." :: X = S AND NOT L
+How do you write a logic expression from a truth table? :: For each row where the output is 1, AND the inputs together (with NOT for any input that is 0), then OR these terms together
+Write the expression for a 2-input table with output 1 only when A = 1, B = 0. :: X = A AND NOT B
+Write the expression for a 2-input table with output 1 when A = 0, B = 1 and when A = 1, B = 0. :: X = (NOT A AND B) OR (A AND NOT B) – which is the same as A XOR B
+How do you write an expression from a logic circuit? :: Start at the inputs and work towards the output, writing each gate's output as an expression and putting brackets round each part
+A circuit has A and B into an AND gate, C into a NOT gate, and both results into an OR gate. Write its expression. :: X = (A AND B) OR (NOT C)
+A circuit has A and B into a NOR gate, and its output with C into an AND gate. Write its expression. :: X = (A NOR B) AND C – also written NOT (A OR B) AND C
+How do you draw a circuit from an expression? :: Draw a gate for each operator, starting with the innermost brackets; connect the inputs on the left and finish with one gate giving the output on the right
+How do you check a completed truth table? :: Check the rows where the output is 1 against the problem statement or expression, and make sure every input combination appears once
+
+# 5 Databases and SQL
+## Database key terms
+What is a database? :: A structured, persistent collection of related data that can be searched, sorted and updated
+What is a single-table database? :: A database where all the data is held in one table (one set of fields and records)
+What is a table? :: A set of data about one type of thing (entity), arranged in rows (records) and columns (fields)
+What is a field? :: One item of data about each record – a column in the table, e.g. Surname
+What is a record? :: All the data about one item or person – a row in the table
+What is a primary key? :: A field that holds a unique value for every record, so each record can be identified
+Why must every record have a different primary key? :: So each record can be uniquely identified – no two records can be confused, and the right one can be found, updated or deleted
+How do you choose a suitable primary key? :: Pick a field whose values are always unique and never empty, e.g. StudentID or ProductCode – not a name or date of birth (these can repeat)
+Why is Surname not a suitable primary key? :: Two people can have the same surname, so it isn't unique
+What is validation in a database? :: Automatic checks that data entered is sensible and follows rules (e.g. within a range, the right length or type) before it is accepted
+Give the main types of validation check. :: Range ;; Length ;; Type ;; Presence ;; Format ;; Check digit
+Give a suitable validation check for: an age field, a postcode field, a surname field that must be filled in. :: Age: range check (e.g. 11 to 18) ;; Postcode: format check ;; Surname: presence check
+Does validation make sure data is correct? :: No – it only checks data is reasonable and follows the rules; a valid value can still be wrong (e.g. a mistyped but realistic age)
+What is the difference between validation and verification? :: Validation checks data is sensible and follows rules; verification checks data has been copied or entered accurately (e.g. double entry or visual check)
+How do you define a single-table database from given requirements? :: Choose a table name, list the fields with a suitable data type for each, choose the primary key, and add validation where needed
+
+## Data types
+What are the six basic data types for database fields? :: Text/alphanumeric ;; Character ;; Boolean ;; Integer ;; Real ;; Date/time
+What is the text/alphanumeric data type? :: Any mix of letters, numbers and symbols, e.g. a name or postcode
+What is the character data type? :: A single letter, digit or symbol, e.g. a grade "A" or gender "F"
+What is the Boolean data type? :: One of two values – TRUE/FALSE or Yes/No, e.g. Paid
+What is the integer data type? :: A whole number, e.g. a quantity or age
+What is the real data type? :: A number with a decimal (fractional) part, e.g. a price 4.99 or a height 1.72
+What is the date/time data type? :: A date and/or time, e.g. DateOfBirth or ArrivalTime
+What data type should a phone number be stored as, and why? :: Text – it can start with 0, may contain spaces or +, and no arithmetic is done on it
+Choose data types for: StudentID (e.g. S1042), Age, Height in metres, HasPaid, DateJoined, Grade (a single letter). :: StudentID: text ;; Age: integer ;; Height: real ;; HasPaid: Boolean ;; DateJoined: date/time ;; Grade: character
+
+## SQL
+What is SQL? :: Structured Query Language – a language used to search (query) and manage data in a database
+What does SELECT do in SQL? :: Chooses which fields (columns) to show in the results
+What does FROM do in SQL? :: States which table the data comes from
+What does WHERE do in SQL? :: Gives the condition(s) a record must meet to be included in the results
+What does ORDER BY do in SQL? :: Sorts the results by a field – ASC for ascending (A–Z, smallest first) or DESC for descending (Z–A, largest first)
+What does SELECT * do? :: Selects every field in the table
+What does SUM do in SQL? :: Adds up the values in a numeric field for the records selected, e.g. SELECT SUM(Price) FROM Products
+What does COUNT do in SQL? :: Counts how many records match, e.g. SELECT COUNT(*) FROM Students WHERE Form = '10A'
+What do AND and OR do in a WHERE clause? :: AND: both conditions must be true ;; OR: at least one condition must be true
+What is the order of the clauses in an SQL query? :: SELECT … FROM … WHERE … ORDER BY …
+Write SQL to show the Name and Score of all students in the Students table. :: SELECT Name, Score ;; FROM Students;
+Write SQL to show the names of students with a Score over 80, highest score first. :: SELECT Name ;; FROM Students ;; WHERE Score > 80 ;; ORDER BY Score DESC;
+Write SQL to show all fields for students in form 10B, sorted by Surname A–Z. :: SELECT * ;; FROM Students ;; WHERE Form = '10B' ;; ORDER BY Surname ASC;
+Write SQL to count the products that cost less than £5. :: SELECT COUNT(*) ;; FROM Products ;; WHERE Price < 5;
+Write SQL to find the total Quantity of all products in the Stationery category. :: SELECT SUM(Quantity) ;; FROM Products ;; WHERE Category = 'Stationery';
+Write SQL to show the Title of books by 'Orwell' OR published before 1950. :: SELECT Title ;; FROM Books ;; WHERE Author = 'Orwell' OR Year < 1950;
+Write SQL to show the Name of members aged 16 or over AND who have paid. :: SELECT Name ;; FROM Members ;; WHERE Age >= 16 AND Paid = TRUE;
+Which comparison operators can be used in a WHERE clause? :: = equal ;; > greater than ;; < less than ;; >= greater than or equal ;; <= less than or equal ;; <> not equal
+How are text values written in an SQL condition, and numbers? :: Text in quotes, e.g. Form = '10A' ;; Numbers without quotes, e.g. Score > 50
+Table Pets (PetID, Name, Type, Age): 1 Rex Dog 4 · 2 Tom Cat 2 · 3 Bella Dog 7 · 4 Coco Rabbit 1 · 5 Max Dog 2. What is the output of: SELECT Name FROM Pets WHERE Type = 'Dog' ORDER BY Age DESC; ? :: Bella ;; Rex ;; Max
+Table Pets (PetID, Name, Type, Age): 1 Rex Dog 4 · 2 Tom Cat 2 · 3 Bella Dog 7 · 4 Coco Rabbit 1 · 5 Max Dog 2. What is the output of: SELECT COUNT(*) FROM Pets WHERE Age < 3; ? :: 3 (Tom, Coco and Max)
+Table Pets (PetID, Name, Type, Age): 1 Rex Dog 4 · 2 Tom Cat 2 · 3 Bella Dog 7 · 4 Coco Rabbit 1 · 5 Max Dog 2. What is the output of: SELECT SUM(Age) FROM Pets WHERE Type = 'Dog'; ? :: 13 (4 + 7 + 2)
+Table Pets (PetID, Name, Type, Age): 1 Rex Dog 4 · 2 Tom Cat 2 · 3 Bella Dog 7 · 4 Coco Rabbit 1 · 5 Max Dog 2. What is the output of: SELECT Name, Type FROM Pets WHERE Type = 'Cat' OR Age > 5; ? :: Tom, Cat ;; Bella, Dog
+Table Pets (PetID, Name, Type, Age): 1 Rex Dog 4 · 2 Tom Cat 2 · 3 Bella Dog 7 · 4 Coco Rabbit 1 · 5 Max Dog 2. Which field is the primary key, and why? :: PetID – it is unique for every pet (names or types could repeat)
+What is the most common mistake when completing an SQL statement in the exam? :: Missing or misspelt keywords and field names, missing commas between fields, or text not in quotes – field and table names must match the table exactly

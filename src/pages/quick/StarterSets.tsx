@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Modal, toast } from '../../components/ui';
-import { buildSets, installSets, installedSetCount, loadStarterDecks, type StarterDeck } from '../../lib/starter';
+import { buildSets, installSets, installedSetCount, loadStarterDecks, starterLabel, type StarterDeck } from '../../lib/starter';
 import { useAll } from '../../lib/store';
 
 /** Adds one Quick Learn set per exam-board topic, filed under each subject. */
@@ -58,7 +58,7 @@ export function StarterSetsModal({ onClose }: { onClose: () => void }) {
                 <label key={d.key} className="list-row" style={{ cursor: 'pointer', alignItems: 'flex-start' }}>
                   <input type="checkbox" checked={chosen.has(d.key)} onChange={() => setChosen((c) => { const n = new Set(c); if (n.has(d.key)) n.delete(d.key); else n.add(d.key); return n; })} style={{ marginTop: 3 }} />
                   <div className="grow">
-                    <div className="row between"><b>{d.name}</b><span className="muted small">{i.sets} sets · {i.terms} terms{i.installed ? ` · ${i.installed} added` : ''}</span></div>
+                    <div className="row between"><b>{starterLabel(d)}</b><span className="muted small">{i.sets} sets · {i.terms} terms{i.installed ? ` · ${i.installed} added` : ''}</span></div>
                     <div className="muted small">{d.board}</div>
                   </div>
                 </label>

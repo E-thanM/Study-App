@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Modal, toast } from '../../components/ui';
-import { ensureStarterPreset, installStarter, loadStarterDecks, type StarterDeck } from '../../lib/starter';
+import { ensureStarterPreset, installStarter, loadStarterDecks, starterLabel, type StarterDeck } from '../../lib/starter';
 import { all } from '../../lib/store';
 import { NO_LIMIT } from '../../lib/seed';
 
@@ -64,7 +64,7 @@ export function StarterDecksModal({ onClose }: { onClose: () => void }) {
                 <label key={d.key} className="list-row" style={{ cursor: 'pointer', alignItems: 'flex-start' }}>
                   <input type="checkbox" checked={chosen.has(d.key)} onChange={() => setChosen((c) => { const n = new Set(c); if (n.has(d.key)) n.delete(d.key); else n.add(d.key); return n; })} style={{ marginTop: 3 }} />
                   <div className="grow">
-                    <div className="row between"><b>{d.name}</b><span className="muted small">{d.notes.length} notes{inst ? ` · ${inst} installed` : ''}</span></div>
+                    <div className="row between"><b>{starterLabel(d)}</b><span className="muted small">{d.notes.length} notes{inst ? ` · ${inst} installed` : ''}</span></div>
                     <div className="muted small">{d.board}</div>
                     <div className="faint tiny" style={{ marginTop: 2 }}>{d.topics.join(' · ')}</div>
                   </div>

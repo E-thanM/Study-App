@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { applyFixes, applyRetired, dismissFixes, dismissRetired, pendingRetired, installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingFixes, pendingSets, type StarterDeck } from '../lib/starter';
+import { applyFixes, applyRetired, dismissFixes, dismissRetired, pendingRetired, installSets, installStarter, loadStarterDecks, markSeen, pendingCards, pendingFixes, pendingSets, starterLabel, type StarterDeck } from '../lib/starter';
 import { useVersion } from '../lib/store';
 import { toast } from './ui';
 
@@ -25,7 +25,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
     <div className="callout mb" role="status" style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
       <div className="grow" style={{ minWidth: 200 }}>
         <b>Improved GCSE flashcards available</b>
-        <div className="small muted">{fixes.map(({ d, n }) => `${d.name} (${n})`).join(' · ')} – better answers for cards you already have. Your progress is kept; any edits you made to those cards are replaced.</div>
+        <div className="small muted">{fixes.map(({ d, n }) => `${starterLabel(d)} (${n})`).join(' · ')} – better answers for cards you already have. Your progress is kept; any edits you made to those cards are replaced.</div>
       </div>
       <div className="row">
         <button className="btn primary sm" onClick={() => { let n = 0; for (const { d } of fixes) n += applyFixes(d); toast(`Updated ${n} cards`); }}>Update {fixTotal} cards</button>
@@ -40,7 +40,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
       <div className="grow" style={{ minWidth: 200 }}>
         <b>Trim flashcards that are more detailed than the exam needs</b>
         <div className="small muted">
-          {trims.map(({ d, total }) => `${d.name}${d.notes.length ? '' : ' – whole subject removed'} (${total})`).join(' · ')} – trivia and extra detail beyond the specification. {trimStudied > 0 ? `${trimStudied} of them you've already studied; their review history will go too.` : "You haven't studied any of them."}
+          {trims.map(({ d, total }) => `${starterLabel(d)}${d.notes.length ? '' : ' – whole subject removed'} (${total})`).join(' · ')} – trivia and extra detail beyond the specification. {trimStudied > 0 ? `${trimStudied} of them you've already studied; their review history will go too.` : "You haven't studied any of them."}
         </div>
       </div>
       <div className="row">
@@ -67,7 +67,7 @@ export function StarterUpdates({ kind }: { kind: 'cards' | 'sets' }) {
       <div className="grow" style={{ minWidth: 200 }}>
         <b>New GCSE {kind === 'cards' ? 'flashcards' : 'topic sets'} available</b>
         <div className="small muted">
-          {pending.map(({ d, n }) => `${d.name} (+${n})`).join(' · ')}
+          {pending.map(({ d, n }) => `${starterLabel(d)} (+${n})`).join(' · ')}
         </div>
       </div>
       <div className="row">
