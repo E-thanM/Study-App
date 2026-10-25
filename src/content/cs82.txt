@@ -122,6 +122,7 @@ Suggest three ways to make this code easier to maintain: X ← Y * 0.2 :: Use me
 A program repeats the same 10 lines to print a receipt in three places. How should it be improved? :: Put the lines in a procedure, e.g. PROCEDURE PrintReceipt(…), and call it in each place – one copy to test and update
 What are CamelCase and snake_case? :: Ways to write identifiers made of several words without spaces: CamelCase – TotalScore ;; snake_case – total_score
 Why should a program use a constant such as CONSTANT MaxPlayers ← 4 instead of typing 4 throughout? :: The name explains what 4 means, and if the limit changes it is updated in one place, so no occurrence is missed
+A program stores a name, an age and a score in variables called a, b and c. Why is this poor, and how should it be fixed? :: The names don't say what the variables hold, so the code is hard to follow and easy to get wrong – rename them meaningfully, e.g. StudentName, Age and Score
 How do maintainable programs help when working in a team? :: Other programmers can quickly understand, test and change each other's code, and subprograms can be shared out between team members
 
 # 4 Boolean logic
