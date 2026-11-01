@@ -1,5 +1,5 @@
 import { buildNote, deleteNotes, ensureDeckPath, updateNote } from './collection';
-import { all, get, patch, put, remove } from './store';
+import { all, get, getRaw, patch, put, remove } from './store';
 import type { StudySet } from './types';
 import { DEFAULT_PRESET, NO_LIMIT, getSettings } from './seed';
 import type { AnyRec, Note, Preset } from './types';
@@ -123,7 +123,7 @@ export function ensureStarterPreset(newPerDay: number) {
 }
 
 /** Install a starter deck. Notes already installed (matched by guid) are skipped. Returns cards added. */
-export function installStarter(deck: StarterDeck): { notes: number; cards: number; skipped: number } {
+export function installStarter(deck: StarterDeck, opts: { skipDeleted?: boolean } = {}): { notes: number; cards: number; skipped: number } {
   const have = new Set(all('note').map((n) => n.guid).filter(Boolean));
   const firstInstall = !deck.notes.some((n) => have.has(noteGuid(deck, n.front)));
   const deckIds = new Map<string, string>();
@@ -134,6 +134,8 @@ export function installStarter(deck: StarterDeck): { notes: number; cards: numbe
     const guid = noteGuid(deck, n.front);
     // an installed older version of this card is upgraded via "Improved cards" instead
     if (have.has(guid) || (oldGuid.has(guid) && have.has(oldGuid.get(guid)!))) { skipped++; continue; }
+    // automatic updates never bring back a card the student deleted (or one that was retired)
+    if (opts.skipDeleted && (getRaw('note', `n-${guid}`) as { deleted?: boolean } | undefined)?.deleted) { skipped++; continue; }
     let deckId = deckIds.get(n.deckPath);
     if (!deckId) {
       deckId = ensureDeckPath(n.deckPath, STARTER_PRESET_ID, (path) => `d-starter:${hash(path)}`);
@@ -188,6 +190,12 @@ export const starterLabel = (d: Pick<StarterDeck, 'name'>) => d.name.split('::')
  */
 const AUTO_INSTALL = ['cs82'];
 
+/**
+ * Decks the student already has that get new cards (and new Quick Learn terms) automatically.
+ * Nothing is removed or overwritten, and cards or sets the student deleted stay deleted.
+ */
+const AUTO_ADD = ['history'];
+
 let autoRunning: Promise<number> | null = null;
 export function autoInstallStarter(decks?: StarterDeck[]): Promise<number> {
   autoRunning ??= runAutoInstall(decks).finally(() => { autoRunning = null; });
@@ -211,8 +219,14 @@ async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
     // applied, and if the section was deleted there is nothing to update)
     if (pendingRetired(d).total) n += applyRetired(d);
     if (pendingFixes(d)) n += applyFixes(d);
-    if (pendingCards(d)) n += installStarter(d).cards;
-    if (pendingSets(d)) n += installSets(d).terms;
+    if (pendingCards(d)) n += installStarter(d, { skipDeleted: true }).cards;
+    if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
+  }
+  for (const key of AUTO_ADD) {
+    const d = list.find((x) => x.key === key);
+    if (!d) continue;
+    if (pendingCards(d)) n += installStarter(d, { skipDeleted: true }).cards;
+    if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
   }
   return n;
 }
@@ -441,12 +455,13 @@ export function buildSets(deck: StarterDeck): StarterSetData[] {
 }
 
 /** Install a subject's topic sets. Existing sets keep their progress and edits; only missing terms are added. */
-export function installSets(deck: StarterDeck): { sets: number; terms: number; updated: number } {
+export function installSets(deck: StarterDeck, opts: { skipDeleted?: boolean } = {}): { sets: number; terms: number; updated: number } {
   const out: StudySet[] = [];
   let sets = 0, terms = 0, updated = 0;
   // a renamed card's term replaces its old version in place
   const renamedTerm = new Map((deck.renames || []).map((r) => [`t-${hash(r.from)}`, `t-${hash(r.to)}`]));
   for (const d of buildSets(deck)) {
+    if (opts.skipDeleted && (getRaw('set', d.id) as { deleted?: boolean } | undefined)?.deleted) continue;
     const found = get('set', d.id);
     const cur = found && { ...found, terms: found.terms.map((t) => (renamedTerm.has(t.id) && d.terms.some((x) => x.id === renamedTerm.get(t.id)) ? { ...t, id: renamedTerm.get(t.id)! } : t)) };
     if (cur) {

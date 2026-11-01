@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS } from '../seed';
 import { autoInstallStarter, buildSets, parseStarter } from '../starter';
-import { all, put, remove } from '../store';
+import { all, clearAll, put, remove } from '../store';
 import { deckPath } from '../collection';
 
 const cs82 = parseStarter('cs82', fs.readFileSync('src/content/cs82.txt', 'utf8'));
@@ -52,7 +52,9 @@ describe('Unit 8.2 Advanced Programming cards', () => {
 
 describe('updating an installed Unit 8.2 section', () => {
   it('swaps the Python file-handling cards for pseudocode ones in Flashcards and Quick Learn', async () => {
-    for (const d of all('deck').filter((x) => deckPath(x).startsWith('Computer Science'))) remove('deck', d.id);
+    // a fresh device: nothing left over from the other tests (which delete sets on purpose)
+    await clearAll();
+    put([...BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS], { keepUpdatedAt: true });
     // the first version, as installed on the student's device
     const v1text = fs.readFileSync('src/content/cs82.txt', 'utf8').replace('## More file handling examples (pseudocode)', `## File handling in Python\n${fs.readFileSync('src/content/retired/cs82.txt', 'utf8').split('\n').filter((l) => l.includes(' :: ')).join('\n')}\n## More file handling examples (pseudocode)`);
     const v1 = parseStarter('cs82', v1text);
