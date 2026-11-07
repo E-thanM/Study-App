@@ -1,0 +1,73 @@
+@deck IGCSE CS 8.2 – Advanced Programming, Databases & Boolean Logic
+@board Unit 8.2 – procedures and functions, file handling, maintainable programs, databases and SQL, Boolean logic (Cambridge IGCSE Computer Science)
+
+# 1 Procedures, functions and library routines
+What is a procedure? :: A named set of instructions that performs a task but does NOT return a value. Called using CALL.
+What is a function? :: A named set of instructions that performs a task and RETURNS a single value. Used in an expression, never with CALL.
+What is a parameter? :: A variable in a subroutine header that receives a value passed in when the subroutine is called.
+What is an argument? :: The actual value passed to a parameter when a subroutine is called.
+Maximum number of parameters in Cambridge IGCSE questions? :: Three.
+Pseudocode to define a procedure with a parameter :: PROCEDURE Name(Param : TYPE) ... ENDPROCEDURE
+Pseudocode to call a procedure :: CALL Name(Argument)
+Pseudocode to define a function :: FUNCTION Name(Param : TYPE) RETURNS TYPE ... RETURN Value ... ENDFUNCTION
+How do you call a function? :: Assign or output it, e.g. Result ← Square(5) or OUTPUT Square(5)
+Give 4 benefits of using subroutines :: Code reused (shorter programs); each tested separately; easier to read and maintain; change made in one place; tasks split between programmers.
+What is a local variable? :: A variable declared inside a subroutine; it can only be used inside that subroutine and exists only while it runs.
+What is a global variable? :: A variable declared in the main program; it can be used anywhere in the program for the whole time it runs.
+Why are local variables preferred? :: They can't be changed accidentally elsewhere, names can be reused in different subroutines, memory is freed, and subroutines are self-contained.
+What is a library routine? :: A pre-written, pre-tested subroutine built into the language that programmers can call.
+Benefits of library routines :: Save time, already tested so fewer errors, written by experts, reusable.
+What does MOD(a, b) do? :: Returns the remainder after dividing a by b. MOD(17, 5) = 2
+What does DIV(a, b) do? :: Returns the whole-number quotient of a ÷ b. DIV(17, 5) = 3
+What does ROUND(value, places) do? :: Rounds value to the given number of decimal places. ROUND(6.97354, 2) = 6.97
+What does RANDOM() return? :: A random real number between 0 and 1 inclusive.
+How do you test if a number is even? :: IF MOD(Number, 2) = 0 THEN ...
+How do you get a random whole number from 1 to 6? :: ROUND(RANDOM() * 5, 0) + 1
+
+# 2 File handling and maintainable programs
+Why store data in a file? :: Data is kept permanently after the program closes, can be reused next time, and can be shared with other programs/users.
+Pseudocode to open a file for reading :: OPENFILE "Name.txt" FOR READ
+Pseudocode to open a file for writing :: OPENFILE "Name.txt" FOR WRITE
+Pseudocode to read a line from a file :: READFILE "Name.txt", Variable
+Pseudocode to write to a file :: WRITEFILE "Name.txt", Variable
+Pseudocode to close a file :: CLOSEFILE "Name.txt"
+What happens when you open an existing file FOR WRITE? :: Its existing contents are overwritten.
+Correct order of file operations :: Open → read/write → close
+What is a maintainable program? :: One that other programmers can easily read, understand, debug, update and extend.
+4 ways to make a program maintainable :: Meaningful identifiers, comments, procedures and functions, relevant commenting of syntax (plus indentation and constants).
+What is a meaningful identifier? :: A name that describes what a variable, constant, array, procedure or function stores or does, e.g. TotalCost.
+How do you write a comment in Cambridge pseudocode? :: Start it with //
+
+# 3 Databases and SQL
+What is a field? :: One column in a database table: one item of data stored about every record.
+What is a record? :: One row in a database table: all the data about one item or person.
+What is a primary key? :: A field whose value is unique for every record, used to uniquely identify each record.
+What is validation? :: Automatic checking that data entered is reasonable and follows rules (it cannot check data is correct).
+Name 6 validation checks :: Range, length, type, presence, format, check digit.
+Name the 6 basic data types :: Text/alphanumeric, character, Boolean, integer, real, date/time.
+Data type for a phone number? :: Text, because it may start with 0 and is not used in calculations.
+Data type for a price? :: Real.
+Data type for a yes/no field? :: Boolean.
+Correct order of SQL clauses :: SELECT → FROM → WHERE → ORDER BY
+What does SELECT * do? :: Selects all fields.
+How do you sort in SQL? :: ORDER BY Field ASC (ascending, A→Z) or ORDER BY Field DESC (descending, Z→A).
+What does SUM do in SQL? :: Adds up the values in a numeric field, giving one value.
+What does COUNT do in SQL? :: Counts how many records match the query, giving one value.
+SQL: AND vs OR :: AND: both conditions must be true. OR: at least one must be true.
+How are text values written in SQL conditions? :: In quotes, e.g. Form = '11A'. Numbers have no quotes.
+SQL to show names of students in 11A, sorted by Surname Z→A :: SELECT FirstName, Surname FROM STUDENT WHERE Form = '11A' ORDER BY Surname DESC;
+
+# 4 Boolean logic
+NOT gate output :: Opposite of the input: 0 → 1, 1 → 0. Only gate with one input.
+AND gate output :: 1 only when both inputs are 1.
+OR gate output :: 1 when at least one input is 1.
+NAND gate output :: 0 only when both inputs are 1 (opposite of AND).
+NOR gate output :: 1 only when both inputs are 0 (opposite of OR).
+XOR (EOR) gate output :: 1 when the inputs are different.
+What does the small circle (bubble) on a gate mean? :: NOT – the output is inverted.
+XOR symbol :: OR shape with an extra curved line across the inputs.
+How many rows in a 3-input truth table? :: 8 (000 to 111 in binary order).
+How many inputs can each gate have at IGCSE? :: NOT has 1; all other gates have exactly 2.
+Rule for drawing a circuit from an expression :: One gate per operator, work from the inner brackets out, do NOT simplify.
+How do you write an expression from a truth table? :: For each row with output 1, AND the inputs (NOT for any 0), then OR all those terms together.
+Expression: alarm X sounds if door open (A) and armed (B), or window broken (C) :: X = (A AND B) OR C

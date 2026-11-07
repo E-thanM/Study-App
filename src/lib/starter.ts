@@ -86,7 +86,7 @@ export async function loadStarterDecks(includeRemoved = false): Promise<StarterD
     if (r) deck.retired = parseStarter(key, r).notes;
     out.push(deck);
   }
-  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'cs82', 'englishlit', 'german', 'geography'];
+  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'cs82', 'igcsecs82', 'englishlit', 'german', 'geography'];
   return out.filter((d) => includeRemoved || d.notes.length > 0).sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
@@ -188,7 +188,7 @@ export const starterLabel = (d: Pick<StarterDeck, 'name'>) => d.name.split('::')
  * Flashcards and Quick Learn automatically, once, and later changes to them (cards added,
  * improved or removed) are applied automatically too. If removed, they stay removed.
  */
-const AUTO_INSTALL = ['cs82'];
+const AUTO_INSTALL = ['cs82', 'igcsecs82'];
 
 /**
  * Decks the student already has that get new cards (and new Quick Learn terms) automatically.
