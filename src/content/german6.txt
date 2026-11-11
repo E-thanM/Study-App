@@ -288,3 +288,34 @@ er/sie/es könnte :: he/she/it could
 wir könnten :: we could
 ihr könntet :: you (all) could
 sie/Sie könnten :: they could / you could (polite)
+
+# 9 Connectives
+und :: and – **no change** to word order (verb stays 2nd) ;; Ich fahre nach Berlin **und** ich besuche die Museen.
+aber :: but – **no change** to word order ;; Das Hotel war schön, **aber** das Zimmer **war** schmutzig.
+oder :: or – **no change** to word order ;; Wir fahren mit dem Zug **oder** wir fliegen.
+denn :: because / for – **no change** to word order (unlike weil) ;; Ich bleibe zu Hause, **denn** ich **habe** kein Geld.
+sondern :: but rather (after a negative) – **no change** to word order ;; Ich fahre nicht nach Spanien, **sondern** ich **fahre** nach Italien.
+weil :: because – sends the verb to the **end** ;; Ich fahre gern ans Meer, **weil** ich gern **schwimme**.
+da :: since / as – sends the verb to the **end** ;; **Da** es zu teuer **war**, haben wir gezeltet.
+dass :: that – sends the verb to the **end** ;; Ich denke, **dass** das eine gute Idee **ist**.
+obwohl :: although – sends the verb to the **end** ;; **Obwohl** es geregnet **hat**, war der Urlaub toll.
+wenn :: if / when / whenever – sends the verb to the **end** ;; **Wenn** ich Zeit **habe**, gehe ich wandern.
+als :: when (one time in the past) – sends the verb to the **end** ;; **Als** ich in Berlin **war**, habe ich viel gesehen.
+ob :: whether / if – sends the verb to the **end** ;; Ich weiß nicht, **ob** das Hotel WLAN **hat**.
+bevor :: before – sends the verb to the **end** ;; **Bevor** ich nach Hause **fahre**, kaufe ich Souvenirs.
+nachdem :: after – sends the verb to the **end**, usually with a past tense ;; **Nachdem** wir gegessen **hatten**, sind wir spazieren gegangen.
+damit :: so that – sends the verb to the **end** ;; Ich spare Geld, **damit** ich nach Amerika reisen **kann**.
+What happens when a sentence starts with weil, wenn, obwohl or als? :: Its verb goes to the **end** of that clause, then the main verb comes straight after the comma (verb, comma, verb) ;; **Weil** es sonnig **war**, **sind** wir an den Strand gegangen.
+How does a verb-to-the-end clause work with the perfect or a modal? :: The **helper verb** goes last, after the participle or infinitive ;; ..., weil ich meinen Schlüssel verloren **habe**. / ..., weil man dort schwimmen **kann**.
+deshalb :: so / therefore – **inversion**: verb comes straight after it ;; Es war teuer, **deshalb sind** wir zu Hause geblieben.
+trotzdem :: nevertheless / anyway – **inversion**: verb comes straight after it ;; Es hat geregnet. **Trotzdem hatten** wir viel Spaß.
+dann :: then – **inversion**: verb comes straight after it ;; Zuerst sind wir angekommen, **dann haben** wir gegessen.
+danach :: afterwards – **inversion**: verb comes straight after it ;; **Danach sind** wir ins Museum gegangen.
+außerdem :: also / furthermore – **inversion**: verb comes straight after it ;; **Außerdem war** das Essen lecker.
+zuerst :: first(ly) – **inversion**: verb comes straight after it ;; **Zuerst habe** ich mein Ticket verloren.
+schließlich :: finally – **inversion**: verb comes straight after it ;; **Schließlich haben** wir ein Hotel gefunden.
+leider :: unfortunately – **inversion** at the start ;; **Leider war** das Zimmer schmutzig.
+zum Glück :: luckily – **inversion** at the start ;; **Zum Glück hatte** ich meine Kreditkarte.
+sowohl ... als auch ... :: both ... and ... – **no change** to word order ;; Wir haben **sowohl** Berlin **als auch** Köln besucht.
+nicht nur ..., sondern auch ... :: not only ..., but also ... – **no change** to word order ;; Das Hotel war **nicht nur** billig, **sondern auch** bequem.
+um ... zu + infinitive :: in order to – **zu + infinitive at the end** ;; Ich fahre nach Berlin, **um** die Kultur **zu erleben**.

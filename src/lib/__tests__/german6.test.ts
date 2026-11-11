@@ -13,7 +13,7 @@ describe('German Unit 6 topic test', () => {
     expect(deck.topics).toEqual([
       '1 Im Urlaub und unterwegs', '2 Wo fahren wir hin?', '3 Wo werden wir wohnen?', '4 Mein schrecklicher Urlaub',
       '5 Wie waren die Schulferien?', '6 Ich möchte um die Welt reisen!', '7 Time phrases',
-      '8 Conditional (würde, wäre, hätte, möchte, könnte)',
+      '8 Conditional (würde, wäre, hätte, möchte, könnte)', '9 Connectives',
     ]);
     const fronts = deck.notes.map((n) => n.front);
     expect(new Set(fronts).size).toBe(fronts.length);
@@ -24,6 +24,12 @@ describe('German Unit 6 topic test', () => {
     const time = deck.notes.filter((n) => n.topic === '7 Time phrases');
     expect(time.length).toBeGreaterThanOrEqual(25);
     for (const n of time) expect(text(n.back), n.front).toMatch(/verb|end|after the comma|Time – Manner – Place/);
+  });
+
+  it('says what each connective does to word order', () => {
+    const c = deck.notes.filter((n) => n.topic === '9 Connectives');
+    expect(c.length).toBeGreaterThanOrEqual(25);
+    for (const n of c) expect(text(n.back), n.front).toMatch(/word order|to the \*?\*?end|end of that clause|inversion|helper verb goes last|infinitive at the end/i);
   });
 
   it('gives würde, wäre, hätte, möchte and könnte in every person, not just the infinitive', () => {
