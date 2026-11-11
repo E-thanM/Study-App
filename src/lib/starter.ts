@@ -86,7 +86,7 @@ export async function loadStarterDecks(includeRemoved = false): Promise<StarterD
     if (r) deck.retired = parseStarter(key, r).notes;
     out.push(deck);
   }
-  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'cs82', 'igcsecs82', 'englishlit', 'german', 'geography'];
+  const order = ['biology', 'chemistry', 'physics', 'history', 'dt', 'computerscience', 'cs82', 'igcsecs82', 'englishlit', 'german', 'german6', 'geography'];
   return out.filter((d) => includeRemoved || d.notes.length > 0).sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 }
 
@@ -196,6 +196,12 @@ const AUTO_INSTALL = ['cs82', 'igcsecs82'];
  */
 const AUTO_ADD = ['history'];
 
+/**
+ * Sections that only go into Quick Learn (no long-term Flashcards), e.g. vocabulary for a
+ * topic test. Added once, then kept up to date; sets the student deleted stay deleted.
+ */
+const AUTO_SETS = ['german6'];
+
 let autoRunning: Promise<number> | null = null;
 export function autoInstallStarter(decks?: StarterDeck[]): Promise<number> {
   autoRunning ??= runAutoInstall(decks).finally(() => { autoRunning = null; });
@@ -227,6 +233,12 @@ async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
     if (!d) continue;
     if (pendingCards(d)) n += installStarter(d, { skipDeleted: true }).cards;
     if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
+  }
+  for (const key of AUTO_SETS) {
+    const d = list.find((x) => x.key === key);
+    if (!d) continue;
+    if (!(`sets:${key}` in (getSettings().starterSig || {}))) n += installSets(d).terms;
+    else if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
   }
   return n;
 }
