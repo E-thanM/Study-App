@@ -2,7 +2,6 @@
 @board Kapitel 6 Wörter (holidays) – every section of the vocabulary list, plus time phrases and the conditional
 
 # 1 Im Urlaub und unterwegs
-## Reiseziele (travel destinations)
 Reiseziele :: travel destinations
 alt :: old
 bekannt :: well-known, famous
@@ -18,7 +17,6 @@ spannend :: exciting, thrilling, tense
 traditionell :: traditional
 unglaublich :: incredible
 wunderbar :: wonderful
-## Activities and places
 bauen :: to build
 wandern :: to hike
 klettern :: to climb
@@ -30,7 +28,6 @@ die Burg :: castle
 das Schloss :: castle
 
 # 2 Wo fahren wir hin?
-## Giving and discussing opinions
 Vorteile und Nachteile :: advantages and disadvantages
 Was denkst du? :: What do you think?
 Ich denke, dass ... :: I think that ...
@@ -47,7 +44,6 @@ Ich finde das ... :: I think that is ...
 ... eine gute/schlechte Idee. :: ... a good/bad idea.
 ... ein guter/schlechter Vorschlag. :: ... a good/bad suggestion.
 weil/da es ... ist. :: because/since it is ...
-## Intensifiers and adjectives
 besonders :: particularly
 ein bisschen :: a little
 echt :: really
@@ -59,7 +55,6 @@ günstig :: cheap, good
 hübsch :: pretty
 interessant :: interesting
 langweilig :: boring
-## Reasons and activities
 weil/da man ... kann. :: because/since you can ...
 leckeres Essen probieren :: try delicious food
 (nicht) (Tennis) spielen :: (not) play (tennis)
@@ -68,7 +63,6 @@ in den Bergen wandern :: hike in the mountains
 am Strand liegen :: lie on the beach
 
 # 3 Wo werden wir wohnen?
-## Accommodation and places
 die Ferienunterkunft :: holiday accommodation
 einen Ferienpark :: a holiday park
 eine Ferienwohnung :: a holiday apartment
@@ -81,7 +75,6 @@ auf dem Land. :: in the countryside.
 am Meer. :: at the seaside / by the sea.
 in den Bergen. :: in the mountains.
 am See. :: at/on a lake.
-## Describing a photo
 Auf dem ersten/zweiten Foto gibt es ... :: In the first/second photo, there is ...
 Auf der linken/rechten Seite sehe ich ... :: On the left-hand/right-hand side I see ...
 Vorne / Im Hintergrund sieht man ... :: At the front / In the background we/you can see ...
@@ -101,7 +94,6 @@ schlecht/kalt. :: bad/cold.
 Die Leute sehen ... aus. :: The people look ...
 glücklich/traurig :: happy/sad
 müde/ernst :: tired/serious
-## Preferences and what you need
 Am liebsten möchte ich in ... wohnen. :: Most of all I would like to stay in ...
 Ich möchte nie in ... wohnen, ... :: I would never like to stay in ...
 einem Ferienpark :: a holiday park (after in)
@@ -125,7 +117,6 @@ draußen sein. :: to be outside.
 nicht viel Geld ausgeben. :: to not spend much money.
 
 # 4 Mein schrecklicher Urlaub
-## Things lost and forgotten
 Probleme im Urlaub :: problems on holiday
 Was ist das Problem? :: What is the problem?
 Ich habe ... vergessen/verloren. :: I have forgotten/lost ...
@@ -133,7 +124,6 @@ meinen Schlüssel :: my key
 meine Kreditkarte/Tasche :: my credit card/bag
 mein Handy/Tablet/Ticket :: my mobile phone/tablet/ticket
 meine Taschen :: my bags
-## Complaints
 Mein Stuhl war ... :: My chair was ...
 Meine Tür war ... :: My door was ...
 Mein Bett/Fenster/Zimmer war ... :: My bed/window/room was ...
@@ -145,7 +135,6 @@ unhöflich :: impolite
 unangenehm :: unpleasant
 
 # 5 Wie waren die Schulferien?
-## Where you stayed
 Schulferien :: school holidays
 Wo hast du gewohnt? :: Where did you stay?
 Ich habe / Er hat / Sie hat / Wir haben ... gewohnt. :: I / He / She / We stayed ...
@@ -158,7 +147,6 @@ auf einer Insel. :: on an island.
 an der Küste. :: at the coast.
 an einem See. :: at/by a lake.
 Ich bin zu Hause geblieben. :: I stayed at home.
-## What you did
 Was hast du gemacht? :: What did you do?
 Ich habe / Er hat / Sie hat / Wir haben ... :: I / He / She / We ...
 einen Ausflug gemacht. :: went on an excursion.
@@ -166,7 +154,6 @@ Fußball gespielt. :: played football.
 die Museen besucht. :: visited the museums.
 leckeres Essen gegessen. :: ate some delicious food.
 Bücher gelesen. :: read some books.
-## Weather
 das Wetter :: weather
 heiß :: hot
 kalt :: cold
@@ -178,7 +165,6 @@ Es hat geregnet. :: It rained.
 Es hat geschneit. :: It snowed.
 
 # 6 Ich möchte um die Welt reisen!
-## Future and dream holidays
 Urlaube :: holidays
 Was wirst du in den Ferien machen? :: What will you do in the holidays?
 Wie wäre dein Traumurlaub? :: What would your dream holiday be like?
@@ -191,7 +177,6 @@ in der Zukunft :: in future
 nach den Prüfungen :: after the exams
 nächstes Jahr :: next year
 zu Hause bleiben. :: stay at home.
-## Travel and destinations
 mit dem Boot :: by boat
 mit dem Flugzeug :: by aeroplane
 mit dem Zug :: by train
@@ -200,7 +185,6 @@ Afrika :: Africa
 Amerika :: America
 Berlin :: Berlin
 Deutschland :: Germany
-## Who with
 Welche Aktivitäten wirst/würdest du dort machen? :: What activities will/would you do there?
 Was wirst/würdest du dort machen? :: What will/would you do there?
 Ich werde/würde ... :: I will/would ...
@@ -209,7 +193,6 @@ mit meinem Freund / mit meiner Freundin :: with my friend
 mit meiner Familie :: with my family
 mit meinen Eltern :: with my parents
 mit meinen Freunden / mit meinen Freundinnen :: with my friends
-## Holiday activities
 (zehn) Tage in (Köln) bleiben. :: stay in (Cologne) for (ten) days.
 (zehn) Tage in (Köln) verbringen. :: spend (ten) days in (Cologne).
 durch (Amerika) fahren/reisen/wandern. :: go/travel/hike through (America).
@@ -224,7 +207,6 @@ in der Sonne liegen. :: lie in the sun.
 mich entspannen. :: relax.
 
 # 7 Time phrases
-## 1 Word order rules and the past
 What happens to the verb when a sentence starts with a time phrase? :: The verb comes **2nd** – straight after the time phrase – and the subject moves after it (inversion) ;; Nächstes Jahr **werde ich** ... (not "Nächstes Jahr ich werde")
 Where does a time phrase go in the middle of a sentence? :: Time – Manner – Place (when, how, where) ;; Ich fahre **nächstes Jahr mit dem Zug nach Berlin**.
 What do wenn and als do to the verb? :: They send the verb to the **end** of their clause, then the next part starts with its verb (verb, comma, verb) ;; Wenn ich älter **bin**, **werde** ich ...
@@ -235,7 +217,6 @@ Gestern ... :: yesterday – **verb 2nd** · past tense ;; Gestern **hat** es ge
 Vor zwei Jahren ... :: two years ago – **verb 2nd** · past tense ;; Vor zwei Jahren **bin** ich nach Italien gefahren.
 Früher ... :: in the past / I used to – **verb 2nd** · past tense ;; Früher **habe** ich oft im Zelt geschlafen.
 Als ich klein war, ... :: when I was little – **war goes to the end**, then the next verb comes straight after the comma ;; Als ich klein **war**, **bin** ich jedes Jahr an die Küste gefahren.
-## 2 Present and how often
 Normalerweise ... :: usually – **verb 2nd** · present tense ;; Normalerweise **fahre** ich mit meiner Familie nach Frankreich.
 Jeden Tag ... :: every day – **verb 2nd** · present tense ;; Jeden Tag **schwimme** ich im Meer.
 Jedes Jahr ... :: every year – **verb 2nd** · present tense ;; Jedes Jahr **fahren** wir nach Österreich.
@@ -248,7 +229,6 @@ Manchmal ... :: sometimes – **verb 2nd** · present tense ;; Manchmal **bleibe
 Ab und zu ... :: now and then – **verb 2nd** · present tense ;; Ab und zu **gehe** ich einkaufen.
 immer :: always – usually goes straight **after the verb** ;; Ich **fahre immer** mit dem Zug.
 nie :: never – usually goes straight **after the verb** ;; Ich **fahre nie** mit dem Flugzeug.
-## 3 Future
 Morgen ... :: tomorrow – **verb 2nd** (werde), infinitive at the **end** · future ;; Morgen **werde** ich ins Museum **gehen**.
 Nächstes Jahr ... :: next year – **verb 2nd** (werde), infinitive at the **end** · future ;; Nächstes Jahr **werde** ich nach Amerika **fahren**.
 Nächste Woche ... :: next week – **verb 2nd** (werden), infinitive at the **end** · future ;; Nächste Woche **werden** wir in den Bergen **wandern**.
@@ -260,7 +240,6 @@ Eines Tages ... :: one day – **verb 2nd** · future or conditional ;; Eines Ta
 Wenn ich älter bin, ... :: when I'm older – **bin goes to the end**, then the next verb comes straight after the comma ;; Wenn ich älter **bin**, **werde** ich in Berlin wohnen.
 
 # 8 Conditional (würde, wäre, hätte, möchte, könnte)
-## 1 würde in every person
 ich würde :: I would – würde comes 2nd, the infinitive goes to the **end** ;; Ich würde nach Spanien **fahren**.
 du würdest :: you would (one friend) ;; Du würdest in einem Hotel **wohnen**.
 er/sie/es würde :: he/she/it would ;; Er würde zu Hause **bleiben**.
@@ -268,7 +247,6 @@ man würde :: you/one would ;; Man würde viel Geld **ausgeben**.
 wir würden :: we would ;; Wir würden mit dem Zug **reisen**.
 ihr würdet :: you would (two or more friends) ;; Ihr würdet in der Sonne **liegen**.
 sie/Sie würden :: they would / you would (polite) ;; Sie würden zehn Tage in Köln **verbringen**.
-## 2 würde + verb
 ich würde nach Amerika fahren :: I would go to America
 du würdest in einem Ferienhaus wohnen :: you would stay in a holiday house
 er würde zu Hause bleiben :: he would stay at home
@@ -284,7 +262,6 @@ sie würde in der Sonne liegen :: she would lie in the sun
 ich würde nie in einem Zelt schlafen :: I would never sleep in a tent
 Was würdest du dort machen? :: What would you do there?
 Ich würde gern um die Welt reisen. :: I would like to travel round the world.
-## 3 wäre and hätte (would be, would have)
 ich wäre :: I would be ;; Das wäre toll – that would be great
 du wärst :: you would be
 er/sie/es wäre :: he/she/it would be
@@ -299,7 +276,6 @@ ihr hättet :: you (all) would have
 sie/Sie hätten :: they would have / you would have (polite)
 Wenn ich reich wäre, würde ich um die Welt reisen. :: If I were rich, I would travel round the world. ;; wenn sends **wäre** to the end, then **würde** comes straight after the comma
 Wenn ich mehr Zeit hätte, würde ich Deutschland besuchen. :: If I had more time, I would visit Germany. ;; wenn sends **hätte** to the end, then **würde** comes straight after the comma
-## 4 möchte and könnte (would like, could)
 ich möchte :: I would like – the infinitive goes to the **end** ;; Ich möchte nach Berlin **fahren**.
 du möchtest :: you would like
 er/sie/es möchte :: he/she/it would like

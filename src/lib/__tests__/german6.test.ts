@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS } from '../seed';
-import { autoInstallStarter, buildSets, parseStarter } from '../starter';
+import { autoInstallStarter, buildSets, parseStarter, type StarterDeck } from '../starter';
 import { all, clearAll, put } from '../store';
 
 const deck = parseStarter('german6', fs.readFileSync('src/content/german6.txt', 'utf8'));
@@ -32,14 +32,12 @@ describe('German Unit 6 topic test', () => {
       expect(fronts, f).toContain(f);
   });
 
-  it('makes Quick Learn sets that each stay within one section', () => {
+  it('makes one Quick Learn set per section, with no sub-folders', () => {
     const sets = buildSets(deck);
-    for (const s of sets) {
-      expect(s.subject).toBe('German::Unit 6 topic test');
-      expect(s.terms.length).toBeGreaterThanOrEqual(6);
-      const topics = new Set(s.terms.map((t) => deck.notes.find((n) => text(n.front) === t.term || n.front === t.term)?.topic).filter(Boolean));
-      expect(topics.size, s.title).toBeLessThanOrEqual(1);
-    }
+    expect(sets.map((s) => s.title)).toEqual(deck.topics);
+    expect(sets.every((s) => s.subject === 'German::Unit 6 topic test')).toBe(true);
+    expect(sets[0].terms).toHaveLength(24);
+    expect(sets.reduce((a, s) => a + s.terms.length, 0)).toBe(deck.notes.length);
   });
 
   it('is added to Quick Learn only, once, and deleted sets stay deleted', async () => {
@@ -53,5 +51,18 @@ describe('German Unit 6 topic test', () => {
     put({ id: sets[0].id, kind: 'set', deleted: true } as never);
     expect(await autoInstallStarter([deck])).toBe(0);
     expect(all('set').some((s) => s.id === sets[0].id)).toBe(false);
+  });
+
+  it('replaces the earlier split-up sets with one set per section', async () => {
+    await clearAll();
+    put([...BUILTIN_NOTETYPES, DEFAULT_PRESET, DEFAULT_SETTINGS], { keepUpdatedAt: true });
+    // the earlier version: each section split into parts
+    const split: StarterDeck = { ...deck, notes: deck.notes.map((n, i) => ({ ...n, sub: `Part ${Math.floor(i / 8)}` })) };
+    await autoInstallStarter([split]);
+    const ids = () => all('set').filter((s) => s.id.startsWith('starter-set:german6:')).map((s) => s.id).sort();
+    expect(ids().length).toBeGreaterThan(8);
+    await autoInstallStarter([deck]);
+    expect(ids()).toEqual(buildSets(deck).map((s) => s.id).sort());
+    expect(await autoInstallStarter([deck])).toBe(0);
   });
 });

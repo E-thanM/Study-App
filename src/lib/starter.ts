@@ -237,10 +237,21 @@ async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
   for (const key of AUTO_SETS) {
     const d = list.find((x) => x.key === key);
     if (!d) continue;
-    if (!(`sets:${key}` in (getSettings().starterSig || {}))) n += installSets(d).terms;
+    const first = !(`sets:${key}` in (getSettings().starterSig || {}));
+    if (first) n += installSets(d).terms;
     else if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
+    // sets the section no longer has (e.g. parts merged into one set per section) are tidied away
+    if (!first) n += dropOldSets(d);
   }
   return n;
+}
+
+/** Remove installed sets of a deck that its current content no longer makes. */
+function dropOldSets(d: StarterDeck): number {
+  const ids = new Set(buildSets(d).map((s) => s.id));
+  const old = all('set').filter((s) => s.id.startsWith(`starter-set:${d.key}:`) && !ids.has(s.id));
+  if (old.length) put(old.map((s) => ({ id: s.id, kind: 'set', deleted: true, auto: true }) as unknown as StudySet));
+  return old.length;
 }
 
 /** Remember that the user has seen (added or dismissed) the current content of a starter deck. */
