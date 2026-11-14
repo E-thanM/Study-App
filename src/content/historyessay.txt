@@ -1,8 +1,9 @@
 @deck History::Essay evidence (12 & 16 markers)
+@combined
 @board Edexcel GCSE History – precise evidence to recall and use in 12-mark 'Explain why' and 16-mark 'How far do you agree' answers. Each card: the fact, then → what it proves.
 
 # Medicine c1250–present
-## Medieval: why was there so little progress? (Church, ideas, government)
+## 1 Medieval: why was there so little progress? (Church, ideas, government)
 When did the Black Death reach England, and where? :: **June 1348**, at **Melcombe** (Weymouth), Dorset ;; → a sudden crisis that doctors could not explain or treat
 Roughly what share of England's population did the Black Death kill (1348–50)? :: About **a third to a half** ;; → shows how helpless medieval medicine was against epidemic disease
 Who were the two ancient doctors whose ideas still dominated medicine c1250–1500, and their theories? :: **Hippocrates** (Four Humours) and **Galen** (Theory of Opposites, c.AD 129–216) ;; → medicine relied on books over 1,000 years old, not observation
@@ -17,7 +18,7 @@ How many hospitals were there in England by about 1500, and who ran most of them
 How did monasteries show good public health? :: Piped fresh water, separate latrines, washing rules – e.g. **Christ Church Priory, Canterbury** (water system c.1160s) ;; → the Church could improve health where it had money and organisation
 Judgement: was the Church the main reason for little progress c1250–1500? :: Strong case – it **controlled training and books** and protected Galen ;; Counter: lack of science/technology (no microscope) and weak government mattered too ;; → the Church was the most important because it shaped what doctors were ALLOWED to think
 
-## Renaissance c1500–1700: how much changed? (individuals, technology, continuity)
+## 2 Renaissance c1500–1700: how much changed? (individuals, technology, continuity)
 When did Vesalius publish *The Fabric of the Human Body*, and what did he show? :: **1543** – about **300 mistakes** in Galen, e.g. the human **jawbone is one bone**, not two ;; → dissection + observation challenged ancient authority
 How did printing help Vesalius's ideas spread? :: Printing press (Gutenberg c.1450; **Caxton in England 1476**) – accurate detailed drawings copied exactly ;; → technology spread new ideas fast across Europe
 When did Harvey publish his work on the circulation of the blood? :: **1628**, *De Motu Cordis* – blood **circulates**, pumped by the **heart** (Galen said it was made in the liver and used up) ;; → huge discovery in understanding
@@ -32,7 +33,7 @@ How many people did Charles II 'touch' for scrofula (the King's Evil)? :: About 
 What happened to hospitals when Henry VIII closed the monasteries (1536–41)? :: Most monastery hospitals closed; **St Bartholomew's** refounded by **Henry VIII** in **1546**; hospitals started to treat more than just care ;; → Church's role in medicine shrank
 Judgement: how far did the Renaissance change medicine? :: **Knowledge** changed (Vesalius 1543, Harvey 1628) but **causes, treatment and prevention** barely did (bleeding, miasma, 1665 shut-ins) ;; → big change in ideas, little change for ordinary patients
 
-## 1700–1900: why did prevention improve? (Jenner, government, public health)
+## 3 1700–1900: why did prevention improve? (Jenner, government, public health)
 When did Edward Jenner test vaccination, and on whom? :: **1796**, **James Phipps** (aged 8) – cowpox, then smallpox; he didn't catch it ;; → scientific method (experiment) by an individual
 When did Jenner publish, and how did the government respond? :: Published **1798**; Parliament gave him **£10,000 in 1802** and **£20,000 in 1807** ;; → government backing for an individual's discovery
 How did the government enforce smallpox vaccination? :: **1840** free vaccination for infants (inoculation banned); **1853 compulsory**; **1871** enforced with fines ;; → government action turned a discovery into prevention for everyone
@@ -49,7 +50,7 @@ What did the 1875 Public Health Act do? :: **Compulsory**: councils had to provi
 Which other 1875 laws improved health? :: **Artisans' Dwellings Act** (clear slums) and **Sale of Food and Drugs Act** (stop adulteration) ;; → government tackled the causes of poor health, not just disease
 Judgement: was government the main reason public health improved in the 1800s? :: Yes – only **1875 compulsory** laws worked across the country ;; But science (Snow 1854, Pasteur 1861) gave the reason, and cholera/Great Stink gave the push ;; → government was decisive, but needed science first
 
-## 1700–1900: why did understanding and surgery improve? (germ theory, Lister, Simpson)
+## 4 1700–1900: why did understanding and surgery improve? (germ theory, Lister, Simpson)
 When did Louis Pasteur publish germ theory? :: **1861** – microbes in the air cause decay (swan-necked flask experiment) ;; → first time the real cause of disease was understood
 What did Robert Koch identify, and when? :: Bacteria for **anthrax (1876)**, **TB (1882)** and **cholera (1883)**; used dyes to stain bacteria and photographed them ;; → proved specific germs cause specific diseases
 How did rivalry between France and Germany help? :: After the **Franco-Prussian War (1870–71)** Pasteur and Koch competed, with government funding and research teams ;; → war/nationalism sped up science
@@ -68,7 +69,7 @@ What did Florence Nightingale achieve at Scutari (1854–56)? :: Death rate fell
 What did Nightingale do after the Crimean War? :: *Notes on Nursing* (**1859**); Nightingale School of Nursing at **St Thomas'** (**1860**); pavilion-style hospital design ;; → nursing became a trained profession
 Judgement: was Pasteur's germ theory the most important development 1700–1900? :: It explained **why** Snow, Lister and public health worked and led to Koch and vaccines ;; Counter: Jenner and Simpson succeeded without it; government made prevention reach everyone ;; → most important because later breakthroughs depended on it
 
-## 1900–present: why did treatment improve? (penicillin, science, war, chance)
+## 5 1900–present: why did treatment improve? (penicillin, science, war, chance)
 What was Ehrlich's 'magic bullet'? :: **Salvarsan 606** (**1909**, with **Hata**) – first chemical cure, for **syphilis** ;; → science and teamwork, building on Koch
 What was Prontosil? :: First sulphonamide drug, **Gerhard Domagk** (**1932**) – cured his daughter's blood poisoning; British **M&B 693** (**1938**) treated Churchill's pneumonia in **1943** ;; → drug treatments before penicillin
 When did Alexander Fleming discover penicillin? :: **September 1928** – mould killed bacteria in a dish left while he was on holiday; published **1929** ;; → chance, but he could not produce it
@@ -83,7 +84,7 @@ When were X-rays and CT scans developed? :: X-rays **Röntgen 1895**; first CT s
 When were lung cancer and smoking first linked? :: **Richard Doll and Austin Bradford Hill, 1950** ;; → science identified lifestyle causes of disease
 Judgement: was chance the main reason penicillin was developed? :: Chance only started it (**1928**); it needed **science** (Florey and Chain), **war** and **US government money** (2.3 million doses by 1944) ;; → war and government were more important than chance
 
-## 1900–present: why did government do more? (Liberal reforms, NHS, lifestyle)
+## 6 1900–present: why did government do more? (Liberal reforms, NHS, lifestyle)
 What did the Liberal reforms do for health (1906–11)? :: **Free school meals 1906**, school medical inspections **1907**, old age pensions **1908**, **National Insurance Act 1911** ;; → government took responsibility for health
 What did the 1911 National Insurance Act offer workers? :: Sick pay and free GP care; worker paid **4d**, employer **3d**, state **2d** ('9d for 4d') ;; → but only for workers, not wives or children
 Why did the Boer War push government to act? :: About **40%** of volunteers were unfit to fight (1899–1902) ;; → war revealed poor health
@@ -98,7 +99,7 @@ When was a national diphtheria immunisation campaign started? :: **1942** ;; →
 Judgement: was government the most important factor in 20th-century medicine? :: Yes for prevention and access (**NHS 1948**, 1956, 2007) ;; But science/technology made the cures (penicillin, DNA) and war sped them up ;; → government most important for ordinary people because it made care free and universal
 
 # Elizabethan England 1558–88
-## Why did Elizabeth face problems in 1558? (legitimacy, gender, money, foreign threat)
+## 1 Why did Elizabeth face problems in 1558? (legitimacy, gender, money, foreign threat)
 When did Elizabeth become queen, and how old was she? :: **17 November 1558**, aged **25** ;; → young, unmarried woman in a male-dominated world
 Why did Catholics see Elizabeth as illegitimate? :: The Pope never accepted Henry VIII's **divorce** from Catherine of Aragon, so Elizabeth (Anne Boleyn's daughter) was illegitimate ;; → Mary Queen of Scots had a rival claim
 How much debt did Elizabeth inherit? :: About **£300,000** – roughly a year's Crown income ;; → couldn't afford war, needed Parliament for taxes
@@ -109,7 +110,7 @@ When did William Cecil become Secretary of State? :: **1558**; became **Lord Bur
 Why did Elizabeth not marry? :: A **foreign** husband could drag England into wars; an **English** one would cause rivalry at court; risk of **death in childbirth** ;; → unsettled succession was a long-term problem
 Judgement: what was Elizabeth's biggest problem in 1558? :: **Religion** – a divided country (Catholic north, Protestant exiles returning) plus a Catholic rival claim (**Mary Queen of Scots**) ;; Others: **£300,000** debt, **Calais** lost, being a **woman** ;; → religion was the biggest because it linked to her legitimacy AND to France and Spain
 
-## Why was the religious settlement of 1559 successful? (and its challenges)
+## 2 Why was the religious settlement of 1559 successful? (and its challenges)
 What did the 1559 Act of Supremacy do? :: Made Elizabeth **Supreme Governor** (not 'Head') of the Church; clergy had to swear an oath ;; → 'Governor' calmed Catholics and those against a woman leading the Church
 What did the 1559 Act of Uniformity do? :: Set churches' appearance and services; **Book of Common Prayer**; church attendance compulsory – fine of **1 shilling a week** for recusants ;; → a 'middle way'
 How close was the vote on the Act of Uniformity in the House of Lords? :: Passed by only **3 votes (21–18)** ;; → showed strong Catholic opposition among bishops/nobles
@@ -119,7 +120,7 @@ What were the 1559 Royal Injunctions? :: Instructions to clergy, e.g. a Bible in
 What was the 1566 vestment controversy? :: Archbishop **Parker's Book of Advertisements** enforced clerical dress; **37 London clergy** refused and lost their posts ;; → Puritans challenged the settlement but Elizabeth won
 Judgement: why was the settlement successful by 1569? :: Most clergy conformed (only ~250 refused), fines were low, it was a **middle way** ;; But the Catholic north and Puritans resisted ;; → successful in the short term because it was flexible
 
-## Why did Mary Queen of Scots pose such a threat? (1568–87)
+## 3 Why did Mary Queen of Scots pose such a threat? (1568–87)
 When did Mary Queen of Scots flee to England? :: **May 1568**, after defeat at **Langside** ;; → Elizabeth faced a Catholic rival inside England
 Why had Mary lost the Scottish throne? :: Husband **Darnley** murdered (**Feb 1567**); she married **Bothwell** (May 1567), suspected killer; forced to abdicate for son **James VI** (July 1567) ;; → scandal, but still a queen
 What were the Casket Letters, and what was the result of the 1568–69 inquiry? :: Letters suggesting Mary helped murder Darnley; inquiry found **nothing proven** ;; → Elizabeth kept her prisoner without condemning her
@@ -128,7 +129,7 @@ When and where was Mary executed? :: **8 February 1587**, **Fotheringhay Castle*
 What evidence condemned Mary in the Babington Plot (1586)? :: Her letter of **July 1586** approving the plan, sent in **beer barrels**, decoded by **Thomas Phelippes** for **Walsingham** ;; → Walsingham's spy network trapped her
 Judgement: why was Mary Queen of Scots such a threat? :: Strong **claim to the throne** (Henry VII's great-granddaughter) and **Catholic** – a focus for every plot (**1569, 1571, 1583, 1586**) and for France and Spain ;; → she was a threat because others could use her, which is why plots only ended with her execution in **1587**
 
-## Why were there plots and rebellion against Elizabeth? (1569–86)
+## 4 Why were there plots and rebellion against Elizabeth? (1569–86)
 When was the Revolt of the Northern Earls, and who led it? :: **November 1569**, Earls of **Northumberland** (Percy) and **Westmorland** (Neville) ;; → Catholic nobles lost influence at court
 What did the rebels do at Durham Cathedral? :: Held a **Catholic Mass** (14 Nov 1569) ;; → religion was a key cause
 What was the plan of the Revolt of the Northern Earls? :: Free Mary and **marry her to the Duke of Norfolk**; make her heir or queen ;; → Mary was the focus for rebellion
@@ -139,7 +140,7 @@ What was the Throckmorton Plot (1583)? :: **Francis Throckmorton**: French invas
 What laws did Parliament pass after the Throckmorton Plot? :: **Bond of Association 1584**; **Act for the Preservation of the Queen's Safety 1585** – anyone plotting on behalf of a claimant would be executed ;; → laid legal ground for Mary's execution
 Judgement: was religion the main reason for plots against Elizabeth? :: Religion: Papal Bull **1570**, Mass in Durham ;; But: power/ambition (Norfolk), **Mary's claim**, foreign support (Spain, Guise) ;; → religion linked all of them, but Mary made them possible
 
-## How did Elizabeth deal with the Catholic threat? (Jesuits, Walsingham, laws)
+## 5 How did Elizabeth deal with the Catholic threat? (Jesuits, Walsingham, laws)
 When was the seminary at Douai founded, and by whom? :: **1568**, **William Allen** – trained English Catholic priests ;; → missionary threat from abroad
 When did the first Jesuits arrive, and what happened to Edmund Campion? :: **1580**; **Campion executed December 1581** ;; → Elizabeth treated priests as traitors
 Who was the first seminary priest executed? :: **Cuthbert Mayne**, **1577** ;; → harsher policy after 1570
@@ -150,7 +151,7 @@ When did Walsingham become Secretary of State? :: **1573** ;; → ran spies, age
 How were the Babington plotters punished? :: **14** executed (September 1586), Babington hanged, drawn and quartered ;; → plots crushed by surveillance
 Judgement: was Walsingham's spy network the main reason Elizabeth defeated the Catholic threat? :: Walsingham uncovered **Throckmorton (1583)** and **Babington (1586)** ;; But **laws** (£20 fine 1581, treason 1585) and most Catholics staying **loyal** mattered too ;; → spies stopped the plots, but loyalty of ordinary Catholics meant there was never a mass rising after **1569**
 
-## Why did England go to war with Spain? (1568–88)
+## 6 Why did England go to war with Spain? (1568–88)
 What happened with the Spanish treasure ships in 1568? :: Elizabeth seized Genoese gold (about **£85,000**) meant to pay Spain's army in the Netherlands ;; → trade embargo between England and Spain until 1573
 Why did the Duke of Alba's arrival in the Netherlands worry Elizabeth? :: **1567**, about **10,000** troops; Council of Troubles ('**Council of Blood**') executed over **1,000** ;; → a Catholic army across the Channel
 What was the attack at San Juan de Ulúa (1568)? :: Spanish attacked **Hawkins and Drake** in Mexico – most English ships lost ;; → personal grudge and push for privateering
@@ -159,7 +160,7 @@ What was the Treaty of Nonsuch (August 1585)? :: Elizabeth sent about **7,400 tr
 What did Drake do at Cadiz in April 1587? :: Destroyed about **30 ships** and barrel-making supplies – '**singeing the King of Spain's beard**' ;; → delayed the Armada by a year
 Judgement: what was the main reason for war with Spain? :: Religion (Catholic Spain v Protestant England), trade/**privateers** (£400,000), the **Netherlands** (Nonsuch 1585), Mary's execution **1587** ;; → Netherlands was decisive: Nonsuch made war official
 
-## Why was the Spanish Armada defeated? (1588)
+## 7 Why was the Spanish Armada defeated? (1588)
 How big was the Armada? :: About **130 ships**, about **30,000 men** (around **18,000 soldiers**) ;; → huge invasion force
 Who led the Armada, and why was he a weakness? :: **Duke of Medina Sidonia** – little naval experience, got seasick ;; → Spanish leadership was poor
 What was the Armada's plan with the Duke of Parma? :: Meet Parma's army of about **27,000** in the Netherlands and escort it across ;; → no deep-water port and no way to communicate quickly = flaw in plan
@@ -170,7 +171,7 @@ How many Armada ships returned to Spain? :: About **65** of 130 – storms wreck
 When was Elizabeth's Tilbury speech? :: **August 1588** – 'I have the **heart and stomach of a king**' ;; → propaganda, boosted her image
 Judgement: was English naval skill the main reason the Armada failed? :: English: **fireships**, **Gravelines**, **culverins** ;; Spanish mistakes: **Medina Sidonia**, **Parma** plan ;; Weather: about half the ships lost on the way home ;; → Spanish planning was the root cause – the plan to meet Parma could never work
 
-## Why did poverty and vagabondage increase? (and how did government respond?)
+## 8 Why did poverty and vagabondage increase? (and how did government respond?)
 How much did England's population grow under Elizabeth? :: From about **3 million (1550s)** to about **4 million (1600)** ;; → more demand, higher prices, lower wages
 Why did prices and real wages make poverty worse? :: Prices rose faster than wages – **real wages fell** sharply; **bad harvests** (e.g. **1586–87**) ;; → even working people slipped into poverty
 How did enclosure cause poverty? :: Landowners fenced off land for **sheep**, which needed fewer workers ;; → rural unemployment, people moved to towns
@@ -181,7 +182,7 @@ What did the 1576 Poor Relief Act do? :: Towns had to provide **raw materials** 
 Which towns took action before national laws? :: **Norwich** – census of the poor (**1570**), begging banned, poor given work; London's **Bridewell** house of correction ;; → local government led the way
 Judgement: why did government attitudes to the poor change? :: Fear of **disorder**; growing numbers; town schemes worked (**Norwich 1570**); **Puritan** ideas of charity ;; → fear of rebellion was the strongest reason
 
-## Why did the Age of Exploration happen, and why did Roanoke fail?
+## 9 Why did the Age of Exploration happen, and why did Roanoke fail?
 What technology helped English exploration? :: Galleons (larger, better armed); navigation: **astrolabe**, **Mercator's map (1569)** ;; → longer voyages possible
 When did John Hawkins begin the English slave trade? :: **1562** – 'triangular trade' between England, West Africa and the Americas ;; → profit drove exploration
 How many of Drake's 5 ships completed the voyage around the world (1577–80)? :: Only **1 – the Golden Hind** ;; → dangerous, but hugely profitable
@@ -192,7 +193,7 @@ Why did the Armada contribute to Roanoke's failure? :: Ships were kept in Englan
 Judgement: what was the main reason Roanoke failed? :: Poor relations with **Native Americans**; lack of **supplies**; **Armada (1588)**; bad planning (arrived too late to plant) ;; → lack of supplies was key – every other problem made it worse
 
 # Weimar and Nazi Germany 1918–39
-## Why was the Weimar Republic weak 1918–23? (Versailles, constitution, uprisings)
+## 1 Why was the Weimar Republic weak 1918–23? (Versailles, constitution, uprisings)
 When did the Kaiser abdicate, and when was the armistice? :: **9 November 1918**; armistice **11 November 1918** ;; → new republic linked to defeat ('November criminals')
 When was the Treaty of Versailles signed? :: **28 June 1919** – a '**Diktat**' (dictated peace) ;; → republic blamed for the treaty
 What did Article 231 say? :: **War guilt** – Germany accepted blame for the war ;; → humiliation, justified reparations
@@ -211,7 +212,7 @@ How bad did hyperinflation get by November 1923? :: A loaf of bread cost **250 m
 Who gained from hyperinflation? :: People with **debts or mortgages**, businessmen (e.g. **Hugo Stinnes**) ;; → losers (savers, pensioners) blamed the republic
 Judgement: was Versailles the main reason Weimar was weak 1919–23? :: Versailles caused **reparations → Ruhr → hyperinflation** and the 'November criminals' label ;; But the **constitution** (PR, Article 48) and violence from left and right ;; → Versailles most important because it led to the other crises
 
-## How far did Weimar recover 1924–29? (Stresemann – 'golden age'?)
+## 2 How far did Weimar recover 1924–29? (Stresemann – 'golden age'?)
 When was Stresemann chancellor, and then what? :: Chancellor **August–November 1923**; foreign minister **1923–29** (died **3 October 1929**) ;; → stability came from one man
 What did Stresemann do about passive resistance and the currency? :: Ended passive resistance (**Sept 1923**); **Rentenmark** (**Nov 1923**), then the **Reichsmark (1924)** ;; → ended hyperinflation
 What was the Dawes Plan (1924)? :: US loan of **800 million marks**; reparations reduced to **£50 million a year** for 5 years; French left the Ruhr (1925) ;; → recovery, but on **borrowed American money**
@@ -228,7 +229,7 @@ What % of the vote did the Nazis get in May 1928? :: Only **2.6%** (12 seats) ;;
 What evidence shows the recovery was fragile? :: Depended on **short-term US loans**; farmers in difficulty from **1927**; unemployment still over **1 million**; coalitions still fell ;; → 'dancing on a volcano' (Stresemann)
 Judgement: was 1924–29 a 'golden age'? :: Yes: stable currency, Dawes, Locarno, 2 million homes, Nazis 2.6% ;; No: built on **US loans**, farmers struggling, political system unchanged ;; → recovery was real but not secure – it collapsed in 1929
 
-## Why did Hitler become chancellor in January 1933?
+## 3 Why did Hitler become chancellor in January 1933?
 When did Hitler join the German Workers' Party (DAP)? :: **September 1919** ;; → became leader **July 1921**
 When was the Munich Putsch, and what happened? :: **8–9 November 1923**, Bürgerbräukeller; **16 Nazis** killed; Hitler sentenced to **5 years**, served **9 months** ;; → used his trial for publicity; wrote *Mein Kampf*
 What did Hitler decide after the Munich Putsch? :: Win power **legally through elections**; Bamberg Conference **1926** confirmed his control ;; → reorganised party for the long term
@@ -249,7 +250,7 @@ When did industrialists petition Hindenburg to appoint Hitler? :: **November 193
 When was Hitler appointed chancellor? :: **30 January 1933** ;; → legally, by Hindenburg
 Judgement: was the Depression the main reason Hitler became chancellor? :: Depression made the Nazis the largest party (**12 → 230 seats**) ;; But votes were falling (**Nov 1932**), and **Papen's intrigue** put him in power ;; → the Depression made it possible, but backstairs intrigue made it happen
 
-## How did the Nazis remove opposition and create a dictatorship 1933–34?
+## 4 How did the Nazis remove opposition and create a dictatorship 1933–34?
 When was the Reichstag fire, and who was blamed? :: **27 February 1933**; **Marinus van der Lubbe**, a Dutch communist ;; → excuse to attack communists
 What did the Decree for the Protection of the People and the State do? :: **28 February 1933** – suspended civil rights; about **4,000** communists arrested ;; → legal cover for terror
 What was the result of the March 1933 election? :: Nazis **43.9%**, **288 seats** – still not a majority ;; → needed the Enabling Act
@@ -261,7 +262,7 @@ How big was the SA in 1934? :: About **3 million** ;; → a threat to the army a
 What happened when Hindenburg died? :: **2 August 1934** – Hitler became **Führer**; army swore a personal **oath of loyalty** ;; → total power
 Judgement: was the Reichstag fire the most important step to dictatorship? :: It led to the **Decree** and arrests ;; But the **Enabling Act** gave legal power and the **Night of the Long Knives** won the army ;; → Enabling Act most important – it made everything else legal
 
-## How did the Nazis control Germany? (terror v propaganda, 1933–39)
+## 5 How did the Nazis control Germany? (terror v propaganda, 1933–39)
 When was Dachau opened? :: **March 1933** – the first concentration camp ;; → terror from the very start
 Who led the SS, and how big was it by 1939? :: **Heinrich Himmler**; about **240,000** members ;; → main instrument of terror
 How did the Gestapo find opponents? :: Relied heavily on **informers** and denunciations from ordinary Germans ;; → people policed each other – fear was everywhere
@@ -275,7 +276,7 @@ What did the 1936 Berlin Olympics show? :: Germany won the **most medals** (**33
 Which film glorified the 1934 Nuremberg Rally? :: ***Triumph of the Will*** (**Leni Riefenstahl**, **1935**) ;; → cult of the Führer
 Judgement: was terror more important than propaganda in controlling Germany? :: Terror: Dachau 1933, **162,734** in custody, 3 → 46 capital crimes ;; Propaganda: **70%** radios, Olympics ;; → terror stopped opposition; propaganda won support – terror was the foundation
 
-## How did the Nazis deal with the Churches and opposition?
+## 6 How did the Nazis deal with the Churches and opposition?
 What was the Concordat (July 1933)? :: Agreement with the **Pope**: Church kept schools, Nazis kept out of Church affairs if it kept out of politics ;; → broken by the Nazis within months
 What did Pope Pius XI publish in 1937? :: ***Mit brennender Sorge*** ('With Burning Concern'), read in Catholic churches, criticising the Nazis ;; → Catholic opposition
 What was the Reich Church? :: Nazi-controlled Protestant Church under **Reich Bishop Ludwig Müller** (**1933**) ;; → Nazis tried to take over religion
@@ -285,7 +286,7 @@ How many Confessing Church pastors were arrested in 1937? :: About **800** ;; �
 What were the Edelweiss Pirates and the Swing Youth? :: Youth groups who rejected the Hitler Youth – Pirates fought HJ patrols; Swing Youth listened to **jazz** ;; → limits of Nazi control over young people
 Judgement: how far was there opposition to the Nazis 1933–39? :: Some: Churches (**800** pastors, *Mit brennender Sorge*), youth groups ;; But no mass opposition – parties and unions banned **1933** ;; → opposition was small and mostly about protecting their own freedom, not overthrowing Hitler
 
-## How successful were Nazi policies towards women?
+## 7 How successful were Nazi policies towards women?
 What were the 'three Ks'? :: ***Kinder, Küche, Kirche*** – children, kitchen, church ;; → women's role was at home
 What did the Law for the Encouragement of Marriage (1933) offer? :: A loan of **1,000 marks**; **25%** cancelled for each child ;; → encouraged marriage and children
 What was the Mother's Cross (1938)? :: **Bronze** for 4–5 children, **silver** 6–7, **gold** 8+ ;; → rewarded large families
@@ -294,7 +295,7 @@ What was Lebensborn (1935)? :: **SS** programme for '**racially pure**' births, 
 How did Nazi policy on women's work change after 1937? :: Labour shortages from **rearmament** meant **more women in work by 1939** than in 1933 ;; → policy failed / was reversed by economic needs
 Judgement: were Nazi policies towards women successful? :: Success: births up (**970,000 → 1.4m**), marriage loans ;; Failure: more women in work by 1939; many women didn't change ;; → partly successful – the economy forced a U-turn
 
-## How successful were Nazi policies towards young people?
+## 8 How successful were Nazi policies towards young people?
 How did Hitler Youth membership grow? :: About **2.3 million (1933)** to over **7 million (1939)** ;; → most young people involved
 When did the Hitler Youth become effectively compulsory? :: Law of **December 1936**; compulsory from **1939** ;; → shows not everyone joined willingly
 What was the girls' organisation? :: **League of German Maidens (BDM)** ;; → prepared girls to be wives and mothers
@@ -304,7 +305,7 @@ What were the Adolf Hitler Schools (1937)? :: Elite schools for **12–18-year-o
 How did the Nazis change the curriculum? :: New subjects like **race studies** (eugenics); history glorified Germany; maths questions on military and racial topics ;; → indoctrination
 Judgement: were Nazi policies towards young people successful? :: Success: **7 million** in HJ, **97%** teachers ;; Limits: compulsory by law (1936, 1939), Edelweiss Pirates, Swing Youth ;; → largely successful, but needed force to keep everyone involved
 
-## How did Nazi policies affect workers and living standards?
+## 9 How did Nazi policies affect workers and living standards?
 How much did unemployment fall 1933–39? :: From about **6 million** to about **0.3 million** (1939) ;; → biggest Nazi success claim
 What was the Reich Labour Service (RAD)? :: **Compulsory** 6 months' work for men aged 18–25 from **1935** ;; → cut unemployment with low-paid work
 How much autobahn had been built by 1938? :: About **3,000 km** ;; → public works created jobs
@@ -315,7 +316,7 @@ What was the Volkswagen scheme? :: Workers paid **5 marks a week**; about **336,
 What were Strength Through Joy (KdF) and Beauty of Labour (SdA)? :: **KdF**: cheap holidays, **cruises**, concerts; **SdA**: better workplaces (**canteens, showers**) ;; → won support, kept workers loyal
 Judgement: did Nazi economic policy improve living standards? :: Better: jobs (**6m → 0.3m**), KdF ;; Worse: hours **43 → 49**, wages frozen, no trade unions, VW cars never delivered ;; → more jobs but not better lives
 
-## How did persecution of minorities increase 1933–39?
+## 10 How did persecution of minorities increase 1933–39?
 When was the boycott of Jewish shops? :: **1 April 1933** ;; → persecution began immediately
 What did the April 1933 Civil Service law do? :: Jews **dismissed from the civil service** (**7 April 1933**) ;; → removed from public life
 How many Jews lived in Germany in 1933? :: About **500,000** – under **1%** of the population ;; → a small minority used as scapegoats

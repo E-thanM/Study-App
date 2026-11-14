@@ -1,4 +1,5 @@
-import { buildNote, deleteNotes, ensureDeckPath, updateNote } from './collection';
+import { buildNote, deckPath, deleteNotes, ensureDeckPath, updateNote } from './collection';
+import { mergeLinkedProgress } from './quicksync';
 import { all, get, getRaw, patch, put, remove } from './store';
 import type { StudySet } from './types';
 import { DEFAULT_PRESET, NO_LIMIT, getSettings } from './seed';
@@ -30,6 +31,8 @@ export interface StarterDeck {
   renames?: { from: string; to: string }[];
   /** cards retired from this deck (see content/retired/) */
   retired?: StarterNote[];
+  /** `@combined`: each topic also gets one Quick Learn set with all its cards (its parts stay too) */
+  combined?: boolean;
 }
 
 export const STARTER_PRESET_ID = 'preset-gcse-starter';
@@ -48,11 +51,13 @@ export function parseStarter(key: string, text: string): StarterDeck {
   const notes: StarterNote[] = [];
   const topics: string[] = [];
   const renames: { from: string; to: string }[] = [];
+  let combined = false;
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.trim();
     if (!line) continue;
     if (line.startsWith('@deck ')) { name = line.slice(6).trim(); continue; }
     if (line.startsWith('@board ')) { board = line.slice(7).trim(); continue; }
+    if (line === '@combined') { combined = true; continue; }
     if (line.startsWith('@renamed ')) {
       const [from, to] = line.slice(9).split(' => ');
       if (from && to) renames.push({ from: fmt(from), to: fmt(to) });
@@ -73,7 +78,7 @@ export function parseStarter(key: string, text: string): StarterDeck {
     const j = line.indexOf(' <> ');
     if (j > 0) notes.push({ deckPath: path, type: 'reversed', front: fmt(line.slice(0, j)), back: fmt(line.slice(j + 4)), topic, sub });
   }
-  return { key, name, board, notes, topics, renames };
+  return { key, name, board, notes, topics, renames, ...(combined ? { combined } : {}) };
 }
 
 /** Starter decks. Subjects that were removed (no cards left) are only included for clean-up (includeRemoved). */
@@ -220,13 +225,18 @@ async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
       if (!get('preset', STARTER_PRESET_ID)) ensureStarterPreset(NO_LIMIT);
       n += installStarter(d).cards;
     }
-    if (!(`sets:${key}` in seen)) n += installSets(d).terms;
+    const firstSets = !(`sets:${key}` in seen);
+    if (firstSets) n += installSets(d).terms;
+    // subdecks renamed in the content keep their cards (before anything new is added to them)
+    n += renameSubdecks(d);
     // afterwards: changes the student asked for apply straight away (each check is a no-op once
     // applied, and if the section was deleted there is nothing to update)
     if (pendingRetired(d).total) n += applyRetired(d);
     if (pendingFixes(d)) n += applyFixes(d);
     if (pendingCards(d)) n += installStarter(d, { skipDeleted: true }).cards;
     if (pendingSets(d)) n += installSets(d, { skipDeleted: true }).terms;
+    // sets whose parts were renamed (e.g. numbered so they sort in order) follow along
+    if (!firstSets) n += dropOldSets(d);
   }
   for (const key of AUTO_ADD) {
     const d = list.find((x) => x.key === key);
@@ -250,8 +260,29 @@ async function runAutoInstall(decks?: StarterDeck[]): Promise<number> {
 function dropOldSets(d: StarterDeck): number {
   const ids = new Set(buildSets(d).map((s) => s.id));
   const old = all('set').filter((s) => s.id.startsWith(`starter-set:${d.key}:`) && !ids.has(s.id));
-  if (old.length) put(old.map((s) => ({ id: s.id, kind: 'set', deleted: true, auto: true }) as unknown as StudySet));
+  if (!old.length) return 0;
+  // progress on their terms carries over to the sets that now hold them
+  mergeLinkedProgress();
+  put(old.map((s) => ({ id: s.id, kind: 'set', deleted: true, auto: true }) as unknown as StudySet));
   return old.length;
+}
+
+/** A subdeck renamed in the content (e.g. "Medieval: …" → "1 Medieval: …") is renamed in Flashcards too. */
+function renameSubdecks(d: StarterDeck): number {
+  const wanted = new Map<string, string>(); // old path → new name
+  for (const n of d.notes) {
+    const m = /^\d+ (.+)$/.exec(n.sub);
+    if (m) wanted.set(`${d.name}::${n.topic}::${m[1]}`, n.sub);
+  }
+  if (!wanted.size) return 0;
+  const taken = new Set(all('deck').map((x) => deckPath(x)));
+  const renames = all('deck').flatMap((x) => {
+    const path = deckPath(x);
+    const name = wanted.get(path);
+    return name && !taken.has(path.slice(0, -x.name.length) + name) ? [{ ...x, name }] : [];
+  });
+  if (renames.length) put(renames);
+  return renames.length;
 }
 
 /** Remember that the user has seen (added or dismissed) the current content of a starter deck. */
@@ -468,13 +499,25 @@ export function buildSets(deck: StarterDeck): StarterSetData[] {
       last.notes = [...last.notes, ...carry.notes];
     } else merged.push(carry);
   }
-  return merged.map((g) => ({
+  const sets = merged.map((g) => ({
     id: `starter-set:${deck.key}:${hash(g.topics[0])}`,
     subject: deck.name,
     board: deck.board,
     title: g.title,
     terms: g.notes.map(starterTerm).filter((t) => t.term && t.definition),
   }));
+  if (!deck.combined) return sets;
+  // the whole topic as one set as well: it becomes the topic's row in Quick Learn, with the parts under it
+  const whole = deck.topics
+    .filter((topic) => sets.some((s) => s.title.startsWith(`${topic} – `)))
+    .map((topic) => ({
+      id: `starter-set:${deck.key}:all:${hash(topic)}`,
+      subject: deck.name,
+      board: deck.board,
+      title: topic,
+      terms: deck.notes.filter((n) => n.topic === topic).map(starterTerm).filter((t) => t.term && t.definition),
+    }));
+  return [...sets, ...whole];
 }
 
 /** Install a subject's topic sets. Existing sets keep their progress and edits; only missing terms are added. */

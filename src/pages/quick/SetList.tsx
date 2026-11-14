@@ -81,12 +81,27 @@ function setCounts(s: StudySet): Counts {
   return c;
 }
 
+/** Counts for a folder: each term once, even when a topic's whole set and its parts both hold it. */
 function folderCounts(f: Folder): Counts {
+  const level = new Map<string, number>();
+  const visit = (x: Folder) => {
+    for (const s of [...(x.own ? [x.own] : []), ...x.sets]) {
+      const prog = get('setprogress', `prog-${s.id}`);
+      for (const t of s.terms) {
+        // ids of starter terms repeat across sets of the same deck; user terms only within their own set
+        const key = t.id.startsWith('t-') && s.id.startsWith('starter-set:') ? `${s.id.split(':')[1]}:${t.id}` : `${s.id}:${t.id}`;
+        level.set(key, Math.max(level.get(key) ?? 0, prog?.terms[t.id]?.level || 0));
+      }
+    }
+    x.folders.forEach(visit);
+  };
+  visit(f);
   const c = { fresh: 0, learning: 0, mastered: 0 };
-  const add = (x: Counts) => { c.fresh += x.fresh; c.learning += x.learning; c.mastered += x.mastered; };
-  if (f.own) add(setCounts(f.own));
-  f.sets.forEach((s) => add(setCounts(s)));
-  f.folders.forEach((sub) => add(folderCounts(sub)));
+  for (const l of level.values()) {
+    if (l >= 3) c.mastered++;
+    else if (l > 0) c.learning++;
+    else c.fresh++;
+  }
   return c;
 }
 

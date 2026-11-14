@@ -239,9 +239,10 @@ describe('Quick Learn topic sets', async () => {
           expect(t.definition.length).toBeGreaterThan(0);
         }
       }
-      // nothing is lost: every note ends up in exactly one set
-      expect(sets.reduce((n, s) => n + s.terms.length, 0), d.key).toBeLessThanOrEqual(d.notes.length);
-      expect(sets.reduce((n, s) => n + s.terms.length, 0), d.key).toBeGreaterThan(d.notes.length * 0.97);
+      // nothing is lost: every note ends up in exactly one set (plus its topic's whole set, for @combined decks)
+      const parts = sets.filter((s) => !s.id.includes(':all:'));
+      expect(parts.reduce((n, s) => n + s.terms.length, 0), d.key).toBeLessThanOrEqual(d.notes.length);
+      expect(parts.reduce((n, s) => n + s.terms.length, 0), d.key).toBeGreaterThan(d.notes.length * 0.97);
     }
     expect(total).toBeGreaterThan(80);
   });
